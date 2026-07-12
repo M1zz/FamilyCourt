@@ -40,8 +40,8 @@
 
 ## 앱 내용 수정하기
 
-앱의 모든 화면과 기능은 `FamilyCourt/index.html` 파일 하나에 들어 있습니다.
-이 파일을 수정하고 다시 Run 하면 바로 반영됩니다. (법전 기본 조문, 재판 대본, 색상 등)
+앱은 100% SwiftUI 네이티브입니다. 재판 대본과 기본 법전 조문은 `Store.swift`와
+`Models.swift`에, 화면은 각 View 파일에 있습니다. 수정 후 다시 Run 하면 반영됩니다.
 
 ## 구조
 
@@ -50,7 +50,17 @@ FamilyCourt/
 ├── FamilyCourt.xcodeproj      ← Xcode에서 여는 파일
 └── FamilyCourt/
     ├── FamilyCourtApp.swift   ← 앱 진입점 (SwiftUI)
-    ├── ContentView.swift      ← WKWebView 래퍼 + 백업 공유 시트
-    ├── index.html             ← 앱 본체 (화면·기능 전부)
+    ├── ContentView.swift      ← 탭 구성 (법원·법전·가족·설정)
+    ├── Models.swift           ← 데이터 모델 (사건·법·가족·판결)
+    ├── Store.swift            ← 상태 저장(JSON)·재판 대본
+    ├── Sound.swift            ← 의사봉·타이머 소리 합성
+    ├── HomeView.swift         ← 홈 액션 런처 + 소환/판례 목록
+    ├── FilingView.swift       ← 소송 접수 (역할 지정)
+    ├── CaseDetailView.swift   ← 사건 허브 (진행 단계·판결·약속)
+    ├── TrialView.swift        ← 재판 진행 (대본·타이머·판결 선고)
+    ├── SupportViews.swift     ← 법전·가족·설정·법원 공부
     └── Assets.xcassets        ← 앱 아이콘 (⚖️ 저울)
 ```
+
+> 데이터는 앱 문서 폴더의 `familycourt.json`에 저장되며, 예전 웹뷰 버전에서
+> 내보낸 백업 파일도 [설정 → 기록 불러오기]로 그대로 읽을 수 있습니다.

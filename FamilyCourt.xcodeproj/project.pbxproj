@@ -10,15 +10,29 @@
 		AB0000000000000000000001 /* FamilyCourtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000001 /* FamilyCourtApp.swift */; };
 		AB0000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000002 /* ContentView.swift */; };
 		AB0000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000003 /* Assets.xcassets */; };
-		AB0000000000000000000004 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000004 /* index.html */; };
+		AB0000000000000000000006 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000006 /* Models.swift */; };
+		AB0000000000000000000007 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000007 /* Store.swift */; };
+		AB0000000000000000000008 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000008 /* Sound.swift */; };
+		AB0000000000000000000009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000009 /* HomeView.swift */; };
+		AB0000000000000000000010 /* FilingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000010 /* FilingView.swift */; };
+		AB0000000000000000000011 /* CaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000011 /* CaseDetailView.swift */; };
+		AB0000000000000000000012 /* TrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000012 /* TrialView.swift */; };
+		AB0000000000000000000013 /* SupportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000013 /* SupportViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF0000000000000000000001 /* FamilyCourtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCourtApp.swift; sourceTree = "<group>"; };
 		AF0000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF0000000000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF0000000000000000000004 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		AF0000000000000000000005 /* FamilyCourt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyCourt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0000000000000000000006 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		AF0000000000000000000007 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		AF0000000000000000000008 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		AF0000000000000000000009 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AF0000000000000000000010 /* FilingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilingView.swift; sourceTree = "<group>"; };
+		AF0000000000000000000011 /* CaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetailView.swift; sourceTree = "<group>"; };
+		AF0000000000000000000012 /* TrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialView.swift; sourceTree = "<group>"; };
+		AF0000000000000000000013 /* SupportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +59,14 @@
 			children = (
 				AF0000000000000000000001 /* FamilyCourtApp.swift */,
 				AF0000000000000000000002 /* ContentView.swift */,
-				AF0000000000000000000004 /* index.html */,
+				AF0000000000000000000006 /* Models.swift */,
+				AF0000000000000000000007 /* Store.swift */,
+				AF0000000000000000000008 /* Sound.swift */,
+				AF0000000000000000000009 /* HomeView.swift */,
+				AF0000000000000000000010 /* FilingView.swift */,
+				AF0000000000000000000011 /* CaseDetailView.swift */,
+				AF0000000000000000000012 /* TrialView.swift */,
+				AF0000000000000000000013 /* SupportViews.swift */,
 				AF0000000000000000000003 /* Assets.xcassets */,
 			);
 			path = FamilyCourt;
@@ -119,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB0000000000000000000003 /* Assets.xcassets in Resources */,
-				AB0000000000000000000004 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +152,14 @@
 			files = (
 				AB0000000000000000000001 /* FamilyCourtApp.swift in Sources */,
 				AB0000000000000000000002 /* ContentView.swift in Sources */,
+				AB0000000000000000000006 /* Models.swift in Sources */,
+				AB0000000000000000000007 /* Store.swift in Sources */,
+				AB0000000000000000000008 /* Sound.swift in Sources */,
+				AB0000000000000000000009 /* HomeView.swift in Sources */,
+				AB0000000000000000000010 /* FilingView.swift in Sources */,
+				AB0000000000000000000011 /* CaseDetailView.swift in Sources */,
+				AB0000000000000000000012 /* TrialView.swift in Sources */,
+				AB0000000000000000000013 /* SupportViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
