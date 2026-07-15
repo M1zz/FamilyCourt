@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지원 & 사용법 — 땅땅! 우리집 법정</title>
+  <meta name="description" content="땅땅! 우리집 법정(Gavel Kids) 사용법, 자주 묻는 질문, 데이터 백업 방법과 문의 안내.">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>지원 & 사용법</h1>
+    <div class="sub">땅땅! 우리집 법정 (Gavel Kids)</div>
+    <div class="nav">
+      <a href="index.html">홈</a>
+      <a href="privacy.html">개인정보 처리방침</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>도움이 필요하신가요?</h2>
+      <p>버그 신고, 기능 제안, 그 외 무엇이든 편하게 문의해 주세요.</p>
+      <a href="mailto:mizzking75@gmail.com">mizzking75@gmail.com 로 문의하기</a>
+    </div>
+
+    <section>
+      <h2>자주 묻는 질문</h2>
+
+      <details>
+        <summary>이 앱은 무엇인가요?</summary>
+        <p>가족이 함께 역할극으로 재판 놀이를 하며 아이가 법과 공정함, 규칙의 의미를 자연스럽게
+        배우도록 돕는 앱입니다. 억울한 일은 민사 소송으로, 우리 집 규칙을 어긴 일은 형사 기소로
+        접수하고, 판사·변호인 역할을 나눠 재판을 진행합니다.</p>
+      </details>
+
+      <details>
+        <summary>몇 살부터 사용할 수 있나요?</summary>
+        <p>글을 읽을 수 있는 어린이라면 부모와 함께 즐길 수 있습니다. 재판 대본과 안내가 있어
+        어른의 도움을 받으면 더 어린 아이도 참여할 수 있어요.</p>
+      </details>
+
+      <details>
+        <summary>인터넷 연결이 필요한가요?</summary>
+        <p>필요 없습니다. 앱은 완전히 오프라인으로 동작하며, 어떤 데이터도 인터넷으로 전송하지 않습니다.</p>
+      </details>
+
+      <details>
+        <summary>내 기록은 어디에 저장되나요?</summary>
+        <p>가족·법전·재판·판결 등 모든 기록은 기기 안의 <code>familycourt.json</code> 파일에만
+        저장됩니다. 외부 서버로 전송되지 않으며, 자세한 내용은
+        <a href="privacy.html">개인정보 처리방침</a>을 참고하세요.</p>
+      </details>
+
+      <details>
+        <summary>기록을 백업하거나 다른 기기로 옮길 수 있나요?</summary>
+        <ul>
+          <li>홈 화면 또는 설정의 <b>[기록 저장]</b>으로 데이터를 파일로 내보낼 수 있습니다.</li>
+          <li>다른 기기에서 <b>[설정 → 기록 불러오기]</b>로 그 파일을 읽으면 그대로 복원됩니다.</li>
+          <li>예전 웹뷰 버전에서 내보낸 백업 파일도 그대로 불러올 수 있습니다.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>무료 Apple ID로 설치했더니 앱이 안 열려요.</summary>
+        <p>무료 Apple ID로 설치한 앱은 7일마다 다시 실행(재설치)해 주어야 합니다.
+        데이터는 재설치해도 유지되지만, 안전을 위해 <b>[기록 저장]</b>으로 미리 백업해 두는 것을
+        권장합니다. 유료 개발자 계정($99/년)이면 1년간 유지됩니다.</p>
+      </details>
+
+      <details>
+        <summary>아이패드에 어떻게 설치하나요?</summary>
+        <ul>
+          <li>Mac에서 Xcode로 <code>FamilyCourt.xcodeproj</code>를 엽니다.</li>
+          <li>Signing &amp; Capabilities에서 본인 Apple ID(Team)를 선택합니다.</li>
+          <li>아이패드를 연결하고 ▶ 실행(Run)을 누르면 설치됩니다.</li>
+          <li>자세한 단계는 <a href="https://github.com/M1zz/FamilyCourt">GitHub 저장소 README</a>를 참고하세요.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>데이터를 완전히 지우고 싶어요.</summary>
+        <p>앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다. 개인정보를 수집하지 않으므로
+        외부에 남는 기록은 없습니다.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>앱 정보</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">이름</b> · 땅땅! 우리집 법정 (Gavel Kids)</li>
+        <li><b style="color:var(--ink)">플랫폼</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">가격</b> · 무료 · 광고 없음 · 인앱 결제 없음</li>
+        <li><b style="color:var(--ink)">소스 코드</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 땅땅! 우리집 법정 (Gavel Kids) · <a href="index.html">홈</a> · <a href="privacy.html">개인정보 처리방침</a>
+  </footer>
+</body>
+</html>
