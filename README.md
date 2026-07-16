@@ -65,7 +65,7 @@ FamilyCourt/
     ├── CaseDetailView.swift   ← 사건 허브 (진행 단계·판결·약속)
     ├── TrialView.swift        ← 재판 진행 (대본·타이머·판결 선고)
     ├── SupportViews.swift     ← 법전·가족·설정·법원 공부
-    └── Assets.xcassets        ← 앱 아이콘 (⚖️ 저울)
+    └── Assets.xcassets        ← 앱 아이콘 (귀여운 판사봉 캐릭터)
 ```
 
 > 데이터는 앱 문서 폴더의 `familycourt.json`에 저장되며, 예전 웹뷰 버전에서
