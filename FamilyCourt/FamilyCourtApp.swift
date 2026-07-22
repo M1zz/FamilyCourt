@@ -1,15 +1,21 @@
 import SwiftUI
 import UIKit
+import LeeoKit
 
 @main
 struct FamilyCourtApp: App {
     @StateObject private var store = Store()
+
+    init() {
+        LeeoEngagement.shared.registerLaunch()
+    }
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
                 .onAppear { UIApplication.shared.installKeyboardDismissTap() }
+                .leeoSatisfactionCheck(FamilyCourtSpec.self)
         }
     }
 }

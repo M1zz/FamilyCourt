@@ -1,5 +1,6 @@
 import SwiftUI
 import UniformTypeIdentifiers
+import LeeoKit
 
 // MARK: - 법전
 
@@ -231,6 +232,12 @@ struct SettingsView: View {
             Section("우리 법원은 이렇게 움직여요") {
                 Text("이 법원에는 정해진 대장(마스터)이 없어요.\n① 억울한 사람이 직접 소송을 접수하면서 → ② 누구를 고소할지, 누가 판사를 볼지 스스로 정해요.\n③ 접수하는 순간 소송이 시작되고 → ④ 재판을 열어 공정하게 해결해요.\n재판이 끝나면 꼭 서로 안아주고 화해해요. 🤗")
                     .font(.system(size: 15))
+            }
+
+            Section {
+                LeeoSupportSection<FamilyCourtSpec>()
+            } header: {
+                Text("지원")
             }
         }
         .navigationTitle("설정")
