@@ -198,11 +198,9 @@ struct SettingsView: View {
     /// 메일 문의 주소 — 제목에 앱 이름과 버전을 붙여 어느 앱 문의인지 바로 알 수 있게 한다.
     private static var contactMailURL: URL? {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
-        var c = URLComponents()
-        c.scheme = "mailto"
-        c.path = FamilyCourtSpec.developerEmail
-        c.queryItems = [URLQueryItem(name: "subject", value: "[\(FamilyCourtSpec.appName) \(version)] 문의")]
-        return c.url
+        let subject = "[\(FamilyCourtSpec.appName) \(version)] 문의"
+            .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        return URL(string: "mailto:\(FamilyCourtSpec.developerEmail)?subject=\(subject)")
     }
 
     var body: some View {
