@@ -16,6 +16,7 @@ struct HomeView: View {
     @EnvironmentObject var store: Store
     @Binding var path: NavigationPath
     @State private var filingType: CaseType?
+    @ObservedObject private var router = ShortcutRouter.shared
 
     var body: some View {
         VStack(spacing: 12) {
@@ -57,6 +58,19 @@ struct HomeView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
         .toolbar(.hidden, for: .navigationBar)
+        .onReceive(router.$pending) { action in
+            guard let action else { return }
+            // 다른 구독자(ContentView 의 탭 전환)도 같은 값을 받은 뒤에 비운다.
+            DispatchQueue.main.async { router.pending = nil }
+            switch action {
+            case .file(let type):
+                filingType = type
+            case .summons:
+                filingType = nil
+                path = NavigationPath()
+                path.append(HomeDest.summons)
+            }
+        }
         .sheet(item: $filingType) { type in
             FilingView(type: type) { newId in
                 path.append(HomeDest.caseDetail(newId))

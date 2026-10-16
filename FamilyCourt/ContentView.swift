@@ -4,6 +4,8 @@ struct ContentView: View {
     @EnvironmentObject var store: Store
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
     @State private var showOnboarding = false
+    @ObservedObject private var router = ShortcutRouter.shared
+    @State private var tab = 0
 
     var body: some View {
         tabs
@@ -16,6 +18,10 @@ struct ContentView: View {
                     showOnboarding = true
                 }
             }
+            // 단축어로 열리면 [법원] 탭으로 — 접수·소환 화면은 HomeView 가 연다.
+            .onReceive(router.$pending) { action in
+                if action != nil { tab = 0 }
+            }
             .fullScreenCover(isPresented: $showOnboarding) {
                 FamilyCourtOnboardingView {
                     hasSeenOnboarding = true
@@ -25,15 +31,19 @@ struct ContentView: View {
     }
 
     private var tabs: some View {
-        TabView {
+        TabView(selection: $tab) {
             HomeTab()
                 .tabItem { Label("법원", systemImage: "building.columns.fill") }
+                .tag(0)
             NavigationStack { LawsView() }
                 .tabItem { Label("법전", systemImage: "book.closed.fill") }
+                .tag(1)
             NavigationStack { FamilyView() }
                 .tabItem { Label("가족", systemImage: "person.3.fill") }
+                .tag(2)
             NavigationStack { SettingsView() }
                 .tabItem { Label("설정", systemImage: "gearshape.fill") }
+                .tag(3)
         }
     }
 }
