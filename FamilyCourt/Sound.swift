@@ -1,5 +1,6 @@
 import AVFoundation
 import UIKit
+import LeeoKit
 
 /// 의사봉(탕탕탕)과 타이머 종료음을 합성해서 재생해요.
 final class SoundPlayer {
@@ -30,6 +31,8 @@ final class SoundPlayer {
     }
 
     private func play(_ buffer: AVAudioPCMBuffer) {
+        // 원격 킬스위치 — 끄면 소리만 쉬고 진동은 위에서 이미 났다.
+        guard LeeoRemoteFlags.isEnabled(FamilyCourtFlag.synthSoundEnabled) else { return }
         try? AVAudioSession.sharedInstance().setActive(true)
         if !engine.isRunning { try? engine.start() }
         player.stop()

@@ -7,8 +7,13 @@ struct FamilyCourtApp: App {
     @StateObject private var store = Store()
 
     init() {
-        // 사용량 기록 · 익명 사용 통계 · 크래시 진단 (FeedbackHub).
-        LeeoKit.bootstrap(FamilyCourtSpec.self)
+        // 사용량 기록 · 익명 사용 통계 · 원격 킬스위치 갱신 (FeedbackHub).
+        // 크래시 진단은 킬스위치로 끌 수 있게 아래에서 따로 켠다.
+        LeeoKit.bootstrap(FamilyCourtSpec.self, flags: FamilyCourtFlag.self, diagnostics: false)
+        LeeoDiagnostics.shared.start(
+            spec: FamilyCourtSpec.self,
+            isEnabled: { LeeoRemoteFlags.isEnabled(FamilyCourtFlag.diagnosticsEnabled) }
+        )
     }
 
     var body: some Scene {
@@ -16,7 +21,20 @@ struct FamilyCourtApp: App {
             ContentView()
                 .environmentObject(store)
                 .onAppear { UIApplication.shared.installKeyboardDismissTap() }
-                .leeoSatisfactionCheck(FamilyCourtSpec.self)
+                .modifier(SatisfactionCheckIfEnabled())
+        }
+    }
+}
+
+/// 만족도 질문 — 원격 킬스위치로 끌 수 있다. 플래그는 실행 중 캐시 값이라 화면이 흔들리지 않는다.
+private struct SatisfactionCheckIfEnabled: ViewModifier {
+    private let enabled = LeeoRemoteFlags.isEnabled(FamilyCourtFlag.satisfactionPromptEnabled)
+
+    func body(content: Content) -> some View {
+        if enabled {
+            content.leeoSatisfactionCheck(FamilyCourtSpec.self)
+        } else {
+            content
         }
     }
 }

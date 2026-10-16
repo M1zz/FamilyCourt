@@ -20,6 +20,7 @@
 		AB0000000000000000000011 /* CaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000011 /* CaseDetailView.swift */; };
 		AB0000000000000000000012 /* TrialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000012 /* TrialView.swift */; };
 		AB0000000000000000000013 /* SupportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000013 /* SupportViews.swift */; };
+		AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000014 /* FamilyCourtFlags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AF0000000000000000000011 /* CaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseDetailView.swift; sourceTree = "<group>"; };
 		AF0000000000000000000012 /* TrialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialView.swift; sourceTree = "<group>"; };
 		AF0000000000000000000013 /* SupportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViews.swift; sourceTree = "<group>"; };
+		AF0000000000000000000014 /* FamilyCourtFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCourtFlags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				AF0000000000000000000013 /* SupportViews.swift */,
 				AF0000000000000000000003 /* Assets.xcassets */,
 				1069729DA885377BE9BF60F4 /* FamilyCourtSpec.swift */,
+				AF0000000000000000000014 /* FamilyCourtFlags.swift */,
 			);
 			path = FamilyCourt;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				AB0000000000000000000012 /* TrialView.swift in Sources */,
 				AB0000000000000000000013 /* SupportViews.swift in Sources */,
 				835C4AE9D62759E7027C5D43 /* FamilyCourtSpec.swift in Sources */,
+				AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
