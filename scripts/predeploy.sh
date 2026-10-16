@@ -41,9 +41,9 @@ if [ -z "$DEST_ID" ]; then
 fi
 DEST="platform=iOS Simulator,id=$DEST_ID"
 
-# 이 앱에는 테스트 타겟이 없다 — 시뮬레이터 빌드가 깨지지 않는지만 본다.
-echo "🔨 빌드 확인 ($SCHEME)"
-xcodebuild build \
+# 단위 테스트(FamilyCourtTests) — 조사 규칙 · 어휘 난이도 · 백업 파일 호환을 본다.
+echo "🧪 테스트 ($SCHEME)"
+xcodebuild test \
   "$PROJECT_FLAG" "$PROJECT" \
   -scheme "$SCHEME" \
   -destination "$DEST" \
