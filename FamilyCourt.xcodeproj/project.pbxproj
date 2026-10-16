@@ -22,6 +22,7 @@
 		AB0000000000000000000013 /* SupportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000013 /* SupportViews.swift */; };
 		AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000014 /* FamilyCourtFlags.swift */; };
 		AB0000000000000000000015 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000015 /* Onboarding.swift */; };
+		AB0000000000000000000016 /* FeatureTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000016 /* FeatureTips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AF0000000000000000000013 /* SupportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViews.swift; sourceTree = "<group>"; };
 		AF0000000000000000000014 /* FamilyCourtFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCourtFlags.swift; sourceTree = "<group>"; };
 		AF0000000000000000000015 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		AF0000000000000000000016 /* FeatureTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				AF0000000000000000000013 /* SupportViews.swift */,
 				AF0000000000000000000003 /* Assets.xcassets */,
 				1069729DA885377BE9BF60F4 /* FamilyCourtSpec.swift */,
+				AF0000000000000000000016 /* FeatureTips.swift */,
 				AF0000000000000000000015 /* Onboarding.swift */,
 				AF0000000000000000000014 /* FamilyCourtFlags.swift */,
 			);
@@ -178,6 +181,7 @@
 				AB0000000000000000000012 /* TrialView.swift in Sources */,
 				AB0000000000000000000013 /* SupportViews.swift in Sources */,
 				835C4AE9D62759E7027C5D43 /* FamilyCourtSpec.swift in Sources */,
+				AB0000000000000000000016 /* FeatureTips.swift in Sources */,
 				AB0000000000000000000015 /* Onboarding.swift in Sources */,
 				AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */,
 			);

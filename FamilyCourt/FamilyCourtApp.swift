@@ -1,6 +1,7 @@
 import SwiftUI
 import UIKit
 import LeeoKit
+import TipKit
 
 @main
 struct FamilyCourtApp: App {
@@ -14,6 +15,9 @@ struct FamilyCourtApp: App {
             spec: FamilyCourtSpec.self,
             isEnabled: { LeeoRemoteFlags.isEnabled(FamilyCourtFlag.diagnosticsEnabled) }
         )
+
+        // 사용 팁 (FeatureTips.swift) — 표시 빈도는 TipKit 이 관리한다.
+        try? Tips.configure()
     }
 
     var body: some Scene {

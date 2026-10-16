@@ -1,4 +1,5 @@
 import SwiftUI
+import TipKit
 import UniformTypeIdentifiers
 import LeeoKit
 
@@ -8,9 +9,15 @@ struct LawsView: View {
     @EnvironmentObject var store: Store
     @State private var editingLaw: Law?
     @State private var showAdd = false
+    private let swipeTip = LawSwipeTip()
 
     var body: some View {
         List {
+            if !store.data.laws.isEmpty {
+                TipView(swipeTip)
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets())
+            }
             Section(footer: Text("가족 모두가 함께 정한 우리 집의 법이에요. 형사 소송은 이 법전의 법을 어겼을 때 열 수 있어요. 가족회의에서 모두 동의하면 법을 만들거나 고칠 수 있어요.")) {
                 if store.data.laws.isEmpty {
                     EmptyNotice(emoji: "📜", text: "법전이 비어 있어요.")
@@ -26,11 +33,13 @@ struct LawsView: View {
                     .padding(.vertical, 2)
                     .swipeActions {
                         Button(role: .destructive) {
+                            swipeTip.invalidate(reason: .actionPerformed)
                             store.deleteLaw(law.id)
                         } label: {
                             Label("없애기", systemImage: "trash")
                         }
                         Button {
+                            swipeTip.invalidate(reason: .actionPerformed)
                             editingLaw = law
                         } label: {
                             Label("고치기", systemImage: "pencil")
@@ -209,7 +218,10 @@ struct SettingsView: View {
                     footer: Text(store.data.vocabLevel.caption)) {
                 Picker("어휘 난이도", selection: Binding(
                     get: { store.data.vocabLevel },
-                    set: { store.data.vocabLevel = $0 }
+                    set: {
+                        store.data.vocabLevel = $0
+                        VocabLevelTip().invalidate(reason: .actionPerformed)
+                    }
                 )) {
                     ForEach(VocabLevel.allCases) { level in
                         Text(level.title).tag(level)
@@ -351,8 +363,13 @@ struct LearnView: View {
         "재판이 끝나면 꼭 안아주고 화해해요 🤗"
     ]
 
+    private let vocabTip = VocabLevelTip()
+
     var body: some View {
         List {
+            TipView(vocabTip)
+                .listRowBackground(Color.clear)
+                .listRowInsets(EdgeInsets())
             Section("🎭 누가 무엇을 하나요?") {
                 ForEach(roles, id: \.0) { role, description in
                     VStack(alignment: .leading, spacing: 3) {
