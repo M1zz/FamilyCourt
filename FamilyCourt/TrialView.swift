@@ -231,19 +231,24 @@ struct TrialRunView: View {
                 .font(.system(size: 56, weight: .bold, design: .rounded))
                 .monospacedDigit()
                 .foregroundColor(remaining <= 10 && remaining > 0 && timerOn ? .red : .primary)
+                .accessibilityLabel("남은 시간")
+                .accessibilityValue("\(remaining / 60)분 \(remaining % 60)초")
             HStack(spacing: 8) {
                 Button(timerOn ? "⏸ 멈춤" : "▶ 시작") {
                     if !timerOn && remaining == 0 { resetTimer() }
                     timerOn.toggle()
                 }
                 .buttonStyle(.borderedProminent)
+                .accessibilityLabel(timerOn ? "타이머 멈추기" : "타이머 시작")
                 Button("↺ 다시") {
                     timerOn = false
                     resetTimer()
                 }
                 .buttonStyle(.bordered)
+                .accessibilityLabel("타이머 처음부터")
                 Button("+30초") { remaining += 30 }
                     .buttonStyle(.bordered)
+                    .accessibilityLabel("30초 더하기")
             }
             .font(.system(size: 14, weight: .semibold))
         }
@@ -261,6 +266,7 @@ struct TrialRunView: View {
                     .background(Color.blue.opacity(0.14))
                     .clipShape(Circle())
             }
+            .accessibilityLabel("의사봉 두드리기")
             Text("의사봉을 눌러 보세요! (탕탕탕)")
                 .font(.caption)
                 .foregroundColor(.secondary)
@@ -424,6 +430,7 @@ struct PenaltySuggestionsView: View {
                                         .foregroundColor(.blue)
                                 }
                             }
+                            .accessibilityHint("이 벌칙을 판결에 넣어요")
                         }
                     }
                 }

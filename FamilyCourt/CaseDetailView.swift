@@ -294,6 +294,10 @@ struct StepTrack: View {
                 .font(.system(size: 11, weight: i == current ? .bold : .medium))
                 .foregroundColor(labelColor(i))
         }
+        // VoiceOver: 그림 글자와 체크 표시 대신 "재판, 지금 단계"처럼 읽어 준다.
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(steps[i].label)
+        .accessibilityValue(i < current ? "끝남" : (i == current ? "지금 단계" : "아직"))
     }
 
     private func dotColor(_ i: Int) -> Color {

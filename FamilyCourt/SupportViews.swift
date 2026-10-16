@@ -53,6 +53,7 @@ struct LawsView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button { showAdd = true } label: { Image(systemName: "plus") }
+                    .accessibilityLabel("새로운 법 만들기")
             }
         }
         .sheet(isPresented: $showAdd) { LawFormView(law: nil) }
@@ -162,6 +163,8 @@ struct FamilyView: View {
                                 )
                         }
                         .buttonStyle(.plain)
+                        .accessibilityAddTraits(pickedEmoji == e ? .isSelected : [])
+                        .accessibilityHint("이 가족을 나타낼 그림으로 골라요")
                     }
                 }
                 .padding(.vertical, 4)

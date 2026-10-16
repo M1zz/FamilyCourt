@@ -77,6 +77,7 @@ struct FilingView: View {
                                 }
                             }
                         }
+                        .accessibilityAddTraits(pickedLaws.contains(law.id) ? .isSelected : [])
                     }
                 }
 
