@@ -181,6 +181,7 @@ struct SettingsView: View {
     @State private var courtName = ""
     @State private var importing = false
     @State private var importMessage: String?
+    @State private var showOnboarding = false
 
     /// 메일 문의 주소 — 제목에 앱 이름과 버전을 붙여 어느 앱 문의인지 바로 알 수 있게 한다.
     private static var contactMailURL: URL? {
@@ -245,6 +246,14 @@ struct SettingsView: View {
             }
 
             Section {
+                Button {
+                    showOnboarding = true
+                } label: {
+                    Label("사용법 다시 보기", systemImage: "book.fill")
+                }
+            }
+
+            Section {
                 LeeoSupportSection<FamilyCourtSpec>()
             } header: {
                 Text("지원")
@@ -264,6 +273,9 @@ struct SettingsView: View {
         }
         .navigationTitle("설정")
         .onAppear { courtName = store.data.courtName }
+        .sheet(isPresented: $showOnboarding) {
+            FamilyCourtOnboardingView { showOnboarding = false }
+        }
         .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in
             switch result {
             case .success(let url):

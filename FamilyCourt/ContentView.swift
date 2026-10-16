@@ -1,7 +1,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var store: Store
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    @State private var showOnboarding = false
+
     var body: some View {
+        tabs
+            .onAppear {
+                guard !hasSeenOnboarding else { return }
+                // 이미 기록이 있는 가족(업데이트로 온 사용자)에게는 안내를 띄우지 않는다.
+                if !store.data.members.isEmpty || !store.data.cases.isEmpty {
+                    hasSeenOnboarding = true
+                } else {
+                    showOnboarding = true
+                }
+            }
+            .fullScreenCover(isPresented: $showOnboarding) {
+                FamilyCourtOnboardingView {
+                    hasSeenOnboarding = true
+                    showOnboarding = false
+                }
+            }
+    }
+
+    private var tabs: some View {
         TabView {
             HomeTab()
                 .tabItem { Label("법원", systemImage: "building.columns.fill") }
