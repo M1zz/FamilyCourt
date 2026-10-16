@@ -182,6 +182,16 @@ struct SettingsView: View {
     @State private var importing = false
     @State private var importMessage: String?
 
+    /// 메일 문의 주소 — 제목에 앱 이름과 버전을 붙여 어느 앱 문의인지 바로 알 수 있게 한다.
+    private static var contactMailURL: URL? {
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+        var c = URLComponents()
+        c.scheme = "mailto"
+        c.path = FamilyCourtSpec.developerEmail
+        c.queryItems = [URLQueryItem(name: "subject", value: "[\(FamilyCourtSpec.appName) \(version)] 문의")]
+        return c.url
+    }
+
     var body: some View {
         Form {
             Section("법원 이름") {
@@ -238,6 +248,18 @@ struct SettingsView: View {
                 LeeoSupportSection<FamilyCourtSpec>()
             } header: {
                 Text("지원")
+            }
+
+            Section(header: Text("개발자에게 직접 묻기"),
+                    footer: Text("답장이 필요한 문의는 메일로, 가벼운 이야기는 인스타그램 DM으로 보내 주세요.")) {
+                if let mail = Self.contactMailURL {
+                    Link(destination: mail) {
+                        Label("메일로 문의하기 (\(FamilyCourtSpec.developerEmail))", systemImage: "envelope.fill")
+                    }
+                }
+                Link(destination: URL(string: "https://instagram.com/lee25_ios")!) {
+                    Label("인스타그램 DM (@lee25_ios)", systemImage: "paperplane.fill")
+                }
             }
         }
         .navigationTitle("설정")
