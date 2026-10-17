@@ -25,6 +25,7 @@
 		AB0000000000000000000016 /* FeatureTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000016 /* FeatureTips.swift */; };
 		AB0000000000000000000017 /* AppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000017 /* AppShortcuts.swift */; };
 		AB0000000000000000000T01 /* FamilyCourtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0000000000000000000T01 /* FamilyCourtTests.swift */; };
+		B85CE49C0268AC480C8F6FC0 /* FamilyCourtRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3B8A76FB59A4B52C1AC2B /* FamilyCourtRoadmap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1069729DA885377BE9BF60F4 /* FamilyCourtSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilyCourtSpec.swift; sourceTree = "<group>"; };
+		4FC3B8A76FB59A4B52C1AC2B /* FamilyCourtRoadmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilyCourtRoadmap.swift; sourceTree = "<group>"; };
 		AF0000000000000000000001 /* FamilyCourtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCourtApp.swift; sourceTree = "<group>"; };
 		AF0000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF0000000000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				AF0000000000000000000016 /* FeatureTips.swift */,
 				AF0000000000000000000015 /* Onboarding.swift */,
 				AF0000000000000000000014 /* FamilyCourtFlags.swift */,
+				4FC3B8A76FB59A4B52C1AC2B /* FamilyCourtRoadmap.swift */,
 			);
 			path = FamilyCourt;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				AB0000000000000000000016 /* FeatureTips.swift in Sources */,
 				AB0000000000000000000015 /* Onboarding.swift in Sources */,
 				AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */,
+				B85CE49C0268AC480C8F6FC0 /* FamilyCourtRoadmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +312,6 @@
 		AX0000000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FamilyCourt/FamilyCourt.entitlements;
@@ -317,6 +320,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "억울해요";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,7 +344,6 @@
 		AX0000000000000000000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FamilyCourt/FamilyCourt.entitlements;
@@ -349,6 +352,7 @@
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "억울해요";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
