@@ -670,3 +670,64 @@ Casi passati e lezioni sul tribunale
 I casi conclusi restano come precedenti, e la sezione Scopri il tribunale spiega cosa fanno giudici, attori, pubblici ministeri e difensori e come si svolge un processo.
 
 Tutti i dati restano su questo dispositivo e non serve alcun account. Puoi esportare i dati in un file e importarli di nuovo in seguito.
+
+## pt-BR
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/pt-BR/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/pt-BR/
+
+### 이름
+
+Tribunal da Família
+
+### 부제
+
+Julgamentos de brincadeira
+
+### 키워드
+
+crianças,juiz,advogado,justiça,irmãos,regras,tarefas,educação,martelo,veredito,lei,promotor
+
+### 프로모션 텍스트
+
+Sentiu uma injustiça? Resolva em julgamento, não em lágrimas. A criança abre o processo, a família faz de juiz e defensor, e todos aprendem lei e justiça.
+
+### 설명
+
+Quando os irmãos brigam ou uma promessa é quebrada, em vez de gritar, abram o tribunal da sua família.
+O Tribunal da Família é um app de brincadeira de papéis em que a família faz de juiz, autor, réu e defensor, ouve todos os lados e chega a um veredito, como num julgamento de verdade.
+
+Caso civil: quando algo parece injusto
+Quem se sente prejudicado apresenta a queixa como autor. Escolhe contra quem é o caso e quem será o juiz. As crianças podem até processar o papai e a mamãe.
+
+Caso penal: quando uma regra da casa é quebrada
+Quem viu a regra ser quebrada vira promotor e leva o caso a julgamento. O juiz escolhe entre culpado, inocente e clemência.
+
+Siga o roteiro e vira um julgamento de verdade
+Da abertura da audiência ao relato de cada lado, à defesa, à declaração final e ao veredito, um roteiro mostra a todos de quem é a vez e o que dizer. Bata o martelo para ouvir uma boa batida, e um cronômetro cuida do tempo de cada um.
+
+Regras que garantem a justiça
+Só quem não é autor nem réu pode ser juiz. Quem vai a julgamento pode escolher um defensor para ajudar antes da audiência.
+
+Vereditos que terminam em promessa, não só em castigo
+Junto com o veredito, combina-se uma promessa ou penalidade a cumprir, e ela é marcada até ser feita. As penalidades sugeridas buscam reparar mais do que punir, como colocar as coisas de volta no lugar ou fazer um gesto gentil por alguém.
+
+Nosso livro de leis da família
+Anote as regras que a família combinou, como respeito, arrumação e cumprir promessas, e acrescente ou mude quando quiser.
+
+Palavras na medida da idade
+Troque a linguagem entre três níveis, Simples, Padrão e Tribunal, para que todos joguem, dos pequenos aos maiores.
+
+Casos anteriores e aulas sobre o tribunal
+Os casos encerrados ficam guardados como precedentes, e a seção Conheça o Tribunal explica o que fazem juízes, autores, promotores e defensores e como funciona um julgamento.
+
+Todos os registros ficam neste dispositivo e não é preciso conta. Você pode exportar seus registros para um arquivo e importá-los de novo depois.

@@ -81,3 +81,10 @@ L’icona del martelletto è più carina
 Puoi inviare commenti dentro l’app
 Nuove pagine di guida e informazioni
 Rifinita per un uso più fluido
+
+### 앱스토어 (Português (Brasil))
+
+O ícone do martelo ficou ainda mais fofo
+Envie feedback direto pelo app
+Novas páginas de ajuda e de informações
+Ajustes para o app ficar mais estável

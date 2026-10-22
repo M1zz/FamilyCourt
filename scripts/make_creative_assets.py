@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -42,6 +42,7 @@ SEARCH = {
     "de": ("Familiengericht", "Ungerecht behandelt?<br>Gericht eröffnen", "Eure Familie spielt<br>Richter und Verteidiger"),
     "fr": ("Tribunal Familial", "Une injustice ?<br>Ouvrez l’audience", "Votre famille joue<br>juge et avocat"),
     "it": ("Tribunale di Famiglia", "Un torto?<br>Aprite l’udienza", "La famiglia fa<br>giudice e difensore"),
+    "pt-BR": ("Tribunal da Família", "Sentiu injustiça?<br>Abra o tribunal", "Sua família faz de<br>juiz e defensor"),
 }
 
 # 헤더는 한 가지 약속: 다툼을 가족 역할극 재판으로 공정하게 푼다.
@@ -55,6 +56,7 @@ HEADER = {
     "de": ("Ein Familiengericht für Kinder", "Klärt es vor Gericht,<br>nicht im Streit"),
     "fr": ("Un tribunal familial pour enfants", "Réglez ça par un procès,<br>pas par une dispute"),
     "it": ("Un tribunale di famiglia per bambini", "Risolvetelo con un processo,<br>non con una lite"),
+    "pt-BR": ("Um tribunal da família para crianças", "Resolva em julgamento,<br>não em briga"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(크림빛 바탕의 나무 망치)과 AccentColor(#C9A227) 에서 왔다.
