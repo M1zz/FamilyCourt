@@ -1280,3 +1280,64 @@ Eerdere zaken en lessen over de rechtbank
 Afgeronde zaken blijven bewaard als jurisprudentie en het onderdeel Leer over de rechtbank legt uit wat rechters, eisers, officieren en raadslieden doen en hoe een rechtszaak verloopt.
 
 Alle gegevens blijven op dit apparaat en een account is niet nodig. Je kunt je gegevens naar een bestand exporteren en later weer importeren.
+
+## pl
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/pl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/pl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/pl/
+
+### 이름
+
+Sąd Rodzinny: gra w proces
+
+### 부제
+
+Domowe procesy dla rodziny
+
+### 키워드
+
+dzieci,sędzia,adwokat,sprawiedliwość,rodzeństwo,zasady,wychowanie,młotek,wyrok,prawo,prokurator
+
+### 프로모션 텍스트
+
+Coś niesprawiedliwego? Rozwiążcie to procesem, nie łzami. Dziecko składa pozew, rodzina gra sędziego i obrońcę, a wszyscy uczą się prawa i sprawiedliwości.
+
+### 설명
+
+Gdy rodzeństwo się kłóci albo ktoś łamie obietnicę, zamiast krzyczeć, otwórzcie własny sąd rodzinny.
+Sąd Rodzinny to aplikacja z zabawą w role, w której rodzina gra sędziego, powoda, oskarżonego i obrońcę, wysłuchuje wszystkich stron i dochodzi do wyroku, jak w prawdziwym procesie.
+
+Sprawa cywilna: gdy coś wydaje się niesprawiedliwe
+Osoba, która czuje się skrzywdzona, składa pozew jako powód. Sama wybiera, przeciwko komu toczy się sprawa i kto będzie sędzią. Dzieci mogą nawet pozwać mamę i tatę.
+
+Sprawa karna: gdy złamano zasadę domową
+Kto zobaczył złamanie zasady, zostaje prokuratorem i wnosi sprawę. Sędzia wybiera między winnym, niewinnym a łagodnym wymiarem.
+
+Idź za scenariuszem, a poczujesz się jak na prawdziwym procesie
+Od otwarcia rozprawy przez wystąpienie każdej strony, obronę i ostatnie słowo aż po wyrok scenariusz podpowiada wszystkim, czyja jest kolej i co powiedzieć. Uderz młotkiem, by usłyszeć satysfakcjonujący stuk, a stoper pilnuje czasu wypowiedzi każdego.
+
+Zasady, które dbają o uczciwość
+Sędzią może być tylko ktoś, kto nie jest powodem ani oskarżonym. Każdy, kogo postawiono przed sądem, może przed rozprawą wybrać obrońcę, który mu pomoże.
+
+Wyroki, które kończą się obietnicą, a nie tylko karą
+Razem z wyrokiem ustalacie obietnicę lub karę do wykonania i odhaczacie ją, aż będzie zrobiona. Proponowane kary stawiają bardziej na naprawienie szkody niż na karanie, na przykład odłożenie rzeczy na miejsce albo miły gest wobec kogoś.
+
+Nasz rodzinny kodeks
+Zapisz zasady, na które zgadza się rodzina, takie jak szacunek, porządek i dotrzymywanie obietnic, i dodawaj lub zmieniaj je, kiedy chcesz.
+
+Słowa dopasowane do wieku dziecka
+Przełączaj język między trzema poziomami: Prosty, Standardowy i Sądowy, żeby mogli bawić się wszyscy, od przedszkolaków po starsze dzieci.
+
+Dawne sprawy i lekcje o sądzie
+Zakończone sprawy są zachowywane jako precedensy, a dział Poznaj sąd wyjaśnia, co robią sędziowie, powodowie, prokuratorzy i obrońcy oraz jak przebiega proces.
+
+Wszystkie zapisy zostają na tym urządzeniu i nie trzeba mieć konta. Możesz wyeksportować zapisy do pliku i później zaimportować je ponownie.

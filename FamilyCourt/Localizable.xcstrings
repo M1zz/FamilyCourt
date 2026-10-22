@@ -129,6 +129,12 @@
             "state" : "translated",
             "value" : "Face ID-vergrendeling"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blokada Face ID"
+          }
         }
       }
     },
@@ -259,6 +265,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vergrendel de app met Face ID of Touch ID om de gegevens van je gezin privé te houden."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zablokuj aplikację za pomocą Face ID lub Touch ID, by zapisy Twojej rodziny pozostały prywatne."
           }
         }
       }
@@ -391,6 +403,12 @@
             "state" : "translated",
             "value" : "Betere VoiceOver-ondersteuning"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lepsza obsługa VoiceOver"
+          }
         }
       }
     },
@@ -521,6 +539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Schermen worden netjes opnieuw ingedeeld in plaats van afgesneden als je de tekst vergroot."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekrany układają się porządnie na nowo zamiast się obcinać po powiększeniu tekstu."
           }
         }
       }
@@ -653,6 +677,12 @@
             "state" : "translated",
             "value" : "Synchroniseren tussen apparaten"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronizacja między urządzeniami"
+          }
         }
       }
     },
@@ -783,6 +813,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Al mijn gegevens wissen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń wszystkie moje dane"
           }
         }
       }
@@ -915,6 +951,12 @@
             "state" : "translated",
             "value" : "Donkere modus"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryb ciemny"
+          }
         }
       }
     },
@@ -1045,6 +1087,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lees alles gemakkelijk, ook met Contrast vergroten aan of als kleuren moeilijk te onderscheiden zijn."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czytaj wszystko bez trudu, nawet przy włączonym zwiększonym kontraście albo gdy trudno rozróżniać kolory."
           }
         }
       }
@@ -1177,6 +1225,12 @@
             "state" : "translated",
             "value" : "Gebruik de app in meer talen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korzystaj z aplikacji w większej liczbie języków."
+          }
         }
       }
     },
@@ -1307,6 +1361,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meer talen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Więcej języków"
           }
         }
       }
@@ -1439,6 +1499,12 @@
             "state" : "translated",
             "value" : "Prettigere kleuren en contrast"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wygodniejsze kolory i kontrast"
+          }
         }
       }
     },
@@ -1569,6 +1635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wat je in een zaak aan het schrijven was, blijft staan, ook als de app halverwege sluit."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To, co pisałeś(-aś) w sprawie, zostaje, nawet jeśli aplikacja zamknie się w połowie."
           }
         }
       }
@@ -1701,6 +1773,12 @@
             "state" : "translated",
             "value" : "Ga verder waar je gebleven was"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontynuuj od miejsca, w którym skończyłeś(-aś)"
+          }
         }
       }
     },
@@ -1831,6 +1909,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik de belangrijkste functies op de iPad met alleen een toetsenbord."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korzystaj z głównych funkcji na iPadzie, używając samej klawiatury."
           }
         }
       }
@@ -1963,6 +2047,12 @@
             "state" : "translated",
             "value" : "Houd dezelfde gegevens op je iPhone en iPad."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Miej te same zapisy na iPhonie i iPadzie."
+          }
         }
       }
     },
@@ -2093,6 +2183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Herinneringen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przypomnienia"
           }
         }
       }
@@ -2225,6 +2321,12 @@
             "state" : "translated",
             "value" : "Bekijk lopende zaken direct op het beginscherm, zonder de app te openen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprawdzaj toczące się sprawy na ekranie głównym bez otwierania aplikacji."
+          }
         }
       }
     },
@@ -2355,6 +2457,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik de hele app ook in het Engels."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korzystaj z całej aplikacji także po angielsku."
           }
         }
       }
@@ -2487,6 +2595,12 @@
             "state" : "translated",
             "value" : "Tekst en knoppen blijven scherp en duidelijk in de donkere modus."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst i przyciski pozostają wyraźne i czytelne w trybie ciemnym."
+          }
         }
       }
     },
@@ -2617,6 +2731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "De eerste keer dat je de app na een update opent, zie je wat er nieuw is."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gdy po aktualizacji pierwszy raz otworzysz aplikację, zobaczysz, co nowego."
           }
         }
       }
@@ -2749,6 +2869,12 @@
             "state" : "translated",
             "value" : "Wat is er nieuw"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co nowego"
+          }
         }
       }
     },
@@ -2879,6 +3005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volledige ondersteuning voor Engels"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pełna obsługa języka angielskiego"
           }
         }
       }
@@ -3011,6 +3143,12 @@
             "state" : "translated",
             "value" : "Beweging verminderen"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redukcja ruchu"
+          }
         }
       }
     },
@@ -3141,6 +3279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Met Beweging verminderen aan worden schermeffecten rustiger."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gdy włączysz Redukcję ruchu, efekty na ekranie stają się spokojniejsze."
           }
         }
       }
@@ -3273,6 +3417,12 @@
             "state" : "translated",
             "value" : "Wis al je gegevens in één keer vanuit de app wanneer je wilt."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usuń wszystkie zapisy naraz w aplikacji, kiedy chcesz."
+          }
         }
       }
     },
@@ -3403,6 +3553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indelingen voor grotere tekst"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Układy dla większego tekstu"
           }
         }
       }
@@ -3535,6 +3691,12 @@
             "state" : "translated",
             "value" : "Bediening met toetsenbord"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sterowanie klawiaturą"
+          }
         }
       }
     },
@@ -3665,6 +3827,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krijg op het juiste moment een herinnering, zodat niemand vergeet wat het vonnis heeft bepaald."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dostaniesz przypomnienie we właściwym czasie, by nikt nie zapomniał, co postanowił wyrok."
           }
         }
       }
@@ -3797,6 +3965,12 @@
             "state" : "translated",
             "value" : "Indeling voor opvouwbare iPhone"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Układ dla składanego iPhone’a"
+          }
         }
       }
     },
@@ -3927,6 +4101,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gebruik het brede scherm van een opvouwbare iPhone als twee panelen naast elkaar."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Użyj szerokiego ekranu składanego iPhone’a jako dwóch paneli obok siebie."
           }
         }
       }
@@ -4059,6 +4239,12 @@
             "state" : "translated",
             "value" : "Widgets op het beginscherm"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widżety na ekranie głównym"
+          }
         }
       }
     },
@@ -4189,6 +4375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver leest elke knop en elk detail voor, in de juiste volgorde."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver czyta każdy przycisk i szczegół w odpowiedniej kolejności."
           }
         }
       }

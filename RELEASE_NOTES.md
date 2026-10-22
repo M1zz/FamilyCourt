@@ -151,3 +151,10 @@ Het hamericoon is nog schattiger
 Stuur feedback direct in de app
 Nieuwe hulp- en infopagina’s geopend
 Verfijnd voor een soepeler gebruik
+
+### 앱스토어 (Polski)
+
+Ikona młotka jest jeszcze słodsza
+Opinię wyślesz prosto z aplikacji
+Otworzyliśmy nowe strony pomocy i opisu
+Dopracowaliśmy aplikację dla płynności
