@@ -45,6 +45,12 @@
             "state" : "translated",
             "value" : "Блокировка по Face ID"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloqueo con Face ID"
+          }
         }
       }
     },
@@ -91,6 +97,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Заблокируйте приложение с помощью Face ID или Touch ID, чтобы записи вашей семьи оставались личными."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquea la app con Face ID o Touch ID para mantener privados los registros de tu familia."
           }
         }
       }
@@ -139,6 +151,12 @@
             "state" : "translated",
             "value" : "Удобнее с VoiceOver"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mejor compatibilidad con VoiceOver"
+          }
         }
       }
     },
@@ -185,6 +203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экраны аккуратно перестраиваются, а не обрезаются, когда вы увеличиваете текст."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las pantallas se reorganizan con orden en lugar de cortarse cuando amplías el texto."
           }
         }
       }
@@ -233,6 +257,12 @@
             "state" : "translated",
             "value" : "Синхронизация между устройствами"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronización entre dispositivos"
+          }
         }
       }
     },
@@ -279,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить все мои данные"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar todos mis datos"
           }
         }
       }
@@ -327,6 +363,12 @@
             "state" : "translated",
             "value" : "Тёмная тема"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo oscuro"
+          }
         }
       }
     },
@@ -373,6 +415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Всё хорошо видно, даже если включена повышенная контрастность или трудно различать цвета."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lee todo con facilidad, incluso con Aumentar contraste activado o si te cuesta distinguir los colores."
           }
         }
       }
@@ -421,6 +469,12 @@
             "state" : "translated",
             "value" : "Пользуйтесь приложением на большем числе языков."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la app en más idiomas."
+          }
         }
       }
     },
@@ -467,6 +521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Больше языков"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más idiomas"
           }
         }
       }
@@ -515,6 +575,12 @@
             "state" : "translated",
             "value" : "Удобные цвета и контраст"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colores y contraste más cómodos"
+          }
         }
       }
     },
@@ -561,6 +627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "То, что вы писали в деле, не пропадёт, даже если приложение закроется на полпути."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lo que escribías en un caso se conserva, aunque la app se cierre a mitad."
           }
         }
       }
@@ -609,6 +681,12 @@
             "state" : "translated",
             "value" : "Продолжить с того же места"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retoma lo que dejaste a medias"
+          }
         }
       }
     },
@@ -655,6 +733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пользуйтесь основными функциями на iPad только с клавиатуры."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa las funciones principales en el iPad solo con el teclado."
           }
         }
       }
@@ -703,6 +787,12 @@
             "state" : "translated",
             "value" : "Ведите одни и те же записи на iPhone и iPad."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén los mismos registros en tu iPhone y tu iPad."
+          }
         }
       }
     },
@@ -749,6 +839,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Напоминания"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recordatorios"
           }
         }
       }
@@ -797,6 +893,12 @@
             "state" : "translated",
             "value" : "Следите за текущими делами прямо на экране «Домой», не открывая приложение."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulta los casos en curso desde la pantalla de inicio, sin abrir la app."
+          }
         }
       }
     },
@@ -843,6 +945,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Всё приложение можно использовать и на английском."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa toda la app en inglés."
           }
         }
       }
@@ -891,6 +999,12 @@
             "state" : "translated",
             "value" : "В тёмной теме текст и кнопки остаются чёткими и ясными."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El texto y los botones se ven nítidos y claros en el modo oscuro."
+          }
         }
       }
     },
@@ -937,6 +1051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Когда вы впервые откроете приложение после обновления, вы увидите, что нового."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La primera vez que abras la app tras una actualización, verás las novedades."
           }
         }
       }
@@ -985,6 +1105,12 @@
             "state" : "translated",
             "value" : "Что нового"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novedades"
+          }
         }
       }
     },
@@ -1031,6 +1157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полная поддержка английского"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidad total con inglés"
           }
         }
       }
@@ -1079,6 +1211,12 @@
             "state" : "translated",
             "value" : "Уменьшение движения"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducir movimiento"
+          }
         }
       }
     },
@@ -1125,6 +1263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con Reducir movimiento activado, los efectos de pantalla se suavizan."
           }
         }
       }
@@ -1173,6 +1317,12 @@
             "state" : "translated",
             "value" : "В любой момент можно стереть все записи сразу, не выходя из приложения."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borra todos tus registros de una vez desde la app cuando quieras."
+          }
         }
       }
     },
@@ -1219,6 +1369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экраны для крупного текста"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diseños para texto más grande"
           }
         }
       }
@@ -1267,6 +1423,12 @@
             "state" : "translated",
             "value" : "Управление с клавиатуры"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control con teclado"
+          }
         }
       }
     },
@@ -1313,6 +1475,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вовремя напомним, чтобы никто не забыл, что решил приговор."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recibe un recordatorio a tiempo para que nadie olvide lo que decidió el veredicto."
           }
         }
       }
@@ -1361,6 +1529,12 @@
             "state" : "translated",
             "value" : "Экран для складного iPhone"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diseño para iPhone plegable"
+          }
         }
       }
     },
@@ -1407,6 +1581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Широкий экран складного iPhone делится на две панели рядом."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la pantalla ancha de un iPhone plegable como dos paneles en paralelo."
           }
         }
       }
@@ -1455,6 +1635,12 @@
             "state" : "translated",
             "value" : "Виджеты на экране «Домой»"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets de la pantalla de inicio"
+          }
         }
       }
     },
@@ -1501,6 +1687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver читает каждую кнопку и каждую подробность в правильном порядке."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver lee cada botón y cada detalle, en el orden correcto."
           }
         }
       }

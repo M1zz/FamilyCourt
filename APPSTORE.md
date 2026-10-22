@@ -426,3 +426,64 @@ https://m1zz.github.io/FamilyCourt/ru/
 Завершённые дела сохраняются как прецеденты, а в разделе «Узнать о суде» объясняется, что делают судья, истец, прокурор и защитник и как проходит заседание.
 
 Все записи хранятся на этом устройстве, учётная запись не нужна. Записи можно выгрузить в файл и позже загрузить обратно.
+
+## es
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/es/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/es/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/es/
+
+### 이름
+
+Tribunal Familiar: en casa
+
+### 부제
+
+Juicios de rol en familia
+
+### 키워드
+
+niños,juez,abogado,justicia,hermanos,normas,tareas,crianza,mazo,veredicto,ley,fiscal,educación
+
+### 프로모션 텍스트
+
+¿Algo injusto? Resolvedlo con un juicio, no con lágrimas. Los niños presentan la demanda y la familia hace de juez y abogado, aprendiendo juntos ley y justicia.
+
+### 설명
+
+Cuando los hermanos se pelean o se rompe una promesa, en vez de gritar, abrid vuestro propio tribunal familiar.
+Tribunal Familiar es una app de juegos de rol en la que la familia hace de juez, demandante, acusado y abogado, escucha a todas las partes y llega a un veredicto, igual que en un juicio de verdad.
+
+Caso civil: cuando algo parece injusto
+Quien se siente perjudicado presenta la demanda como demandante. Elige contra quién va el caso y quién será el juez. Los niños incluso pueden demandar a mamá y papá.
+
+Caso penal: cuando se rompe una norma de la casa
+Quien vio que se rompía la norma se convierte en fiscal y lleva el caso. El juez elige entre culpable, inocente y clemencia.
+
+Sigue el guion y parecerá un juicio de verdad
+Desde la apertura de la sesión hasta el relato de cada parte, la defensa, la declaración final y el veredicto, un guion indica a todos a quién le toca y qué decir. Golpea el mazo para oír un buen golpe, y un temporizador controla el tiempo de cada uno.
+
+Normas que garantizan la justicia
+Solo quien no es demandante ni acusado puede ser juez. Quien llega a juicio puede elegir un abogado que le ayude antes de la vista.
+
+Veredictos que terminan en una promesa, no solo en un castigo
+Junto con el veredicto, se fija una promesa o sanción que cumplir y se va marcando hasta que está hecha. Las sanciones sugeridas buscan reparar más que castigar, como devolver las cosas a su sitio o tener un detalle amable con alguien.
+
+Nuestro libro de leyes familiar
+Anota las normas que acordáis en familia, como el respeto, la limpieza y el cumplimiento de las promesas, y añade o cambia lo que quieras cuando quieras.
+
+Palabras a la medida de la edad
+Cambia el lenguaje entre tres niveles, Sencillo, Estándar y Tribunal, para que jueguen todos, desde los más pequeños hasta los mayores.
+
+Casos anteriores y lecciones sobre los tribunales
+Los casos terminados se guardan como precedentes, y la sección Conoce el tribunal explica qué hacen jueces, demandantes, fiscales y abogados y cómo transcurre un juicio.
+
+Todos los registros se quedan en este dispositivo y no hace falta cuenta. Puedes exportar tus registros a un archivo e importarlos de nuevo más adelante.

@@ -53,3 +53,10 @@ Polished for a smoother experience
 Отзыв можно отправить из приложения
 Открыли новые страницы помощи и описания
 Сделали работу приложения стабильнее
+
+### 앱스토어 (Español)
+
+El icono del mazo es aún más simpático
+Puedes enviar comentarios desde la app
+Nuevas páginas de ayuda e información
+Pulimos la app para que vaya más fluida

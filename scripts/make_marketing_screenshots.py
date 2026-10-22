@@ -17,7 +17,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -27,42 +27,48 @@ SHOTS = [
         "ja": ("「ずるい！」は<br>裁判で解決", "子どもも親も、訴えを起こせます"),
         "zh-Hans": ("觉得委屈？<br>开庭解决", "孩子和家长都可以提起诉讼"),
         "zh-Hant": ("覺得委屈？<br>開庭解決", "孩子和家長都可以提起訴訟"),
-        "ru": ("Обидно?<br>Открывайте суд", "Подать иск могут и дети, и родители")}),
+        "ru": ("Обидно?<br>Открывайте суд", "Подать иск могут и дети, и родители"),
+        "es": ("¿Algo injusto?<br>Abrid sesión", "Niños y padres pueden presentar un caso")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "ja": ("訴状は<br>自分で書こう", "被告も裁判官も、提出する人が選びます"),
         "zh-Hans": ("起诉状<br>自己来写", "被告和法官由提交的人选"),
         "zh-Hant": ("起訴狀<br>自己來寫", "被告和法官由提出的人選"),
-        "ru": ("Иск пишете<br>сами", "Ответчика и судью выбирает подавший иск")}),
+        "ru": ("Иск пишете<br>сами", "Ответчика и судью выбирает подавший иск"),
+        "es": ("Presenta la demanda<br>tú mismo", "Quien presenta elige acusado y juez")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "ja": ("せりふをまねして<br>本格的な裁判に", "誰が何を言う番か、教えてくれます"),
         "zh-Hans": ("照着台词念<br>就是真庭审", "每句台词都提示轮到谁"),
         "zh-Hant": ("照著台詞念<br>就是真庭審", "每句台詞都提示輪到誰"),
-        "ru": ("По репликам —<br>как в настоящем суде", "Каждая реплика подскажет, чья очередь")}),
+        "ru": ("По репликам —<br>как в настоящем суде", "Каждая реплика подскажет, чья очередь"),
+        "es": ("Sigue el guion<br>y será un juicio real", "Cada línea indica a quién le toca")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
         "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
         "ja": ("判決は罰より<br>約束で", "守る約束を決めて、最後までチェック"),
         "zh-Hans": ("判决以承诺<br>代替惩罚", "定下承诺，勾选到完成"),
         "zh-Hant": ("判決以承諾<br>代替處罰", "訂下承諾，勾選到完成"),
-        "ru": ("Приговор —<br>это обещание", "Дайте обещание и отмечайте его до конца")}),
+        "ru": ("Приговор —<br>это обещание", "Дайте обещание и отмечайте его до конца"),
+        "es": ("Los veredictos acaban<br>en una promesa", "Fija una promesa y márcala hasta el final")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
         "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
         "ja": ("わが家の法律は<br>家族で決めよう", "条文はいつでも追加・修正できます"),
         "zh-Hans": ("家里的法律<br>全家一起定", "条文随时可以增加和修改"),
         "zh-Hant": ("家裡的法律<br>全家一起訂", "條文隨時可以新增和修改"),
-        "ru": ("Законы семьи<br>пишем вместе", "Статьи можно добавлять и менять")}),
+        "ru": ("Законы семьи<br>пишем вместе", "Статьи можно добавлять и менять"),
+        "es": ("Escribid juntos<br>las leyes de casa", "Añade y edita artículos cuando quieras")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "ja": ("裁判官、原告、弁護人<br>全部学べます", "役割と裁判の流れをやさしい言葉で"),
         "zh-Hans": ("法官、原告、辩护人<br>全都学会", "用浅显的话讲解角色和流程"),
         "zh-Hant": ("法官、原告、辯護人<br>全都學會", "用淺顯的話講解角色和流程"),
-        "ru": ("Судья, истец, защитник:<br>узнайте все роли", "Роли и этапы суда простыми словами")}),
+        "ru": ("Судья, истец, защитник:<br>узнайте все роли", "Роли и этапы суда простыми словами"),
+        "es": ("Juez, demandante, abogado:<br>aprende cada papel", "Papeles y pasos del juicio, en palabras sencillas")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.
