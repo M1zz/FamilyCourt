@@ -691,7 +691,7 @@ Tribunal da Família
 
 ### 부제
 
-Julgamentos de brincadeira
+Brincadeira de julgamento
 
 ### 키워드
 
