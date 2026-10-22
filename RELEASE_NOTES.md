@@ -109,3 +109,10 @@ Ikona kladívka je ještě roztomilejší
 Zpětnou vazbu pošlete přímo v aplikaci
 Otevřeli jsme nové stránky nápovědy
 Vyladěno pro plynulejší používání
+
+### 앱스토어 (Dansk)
+
+Hammer-ikonet er blevet endnu sødere
+Send feedback direkte i appen
+Nye hjælpe- og infosider
+Finpudset for en jævnere oplevelse

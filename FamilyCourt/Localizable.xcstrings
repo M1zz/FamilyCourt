@@ -93,6 +93,12 @@
             "state" : "translated",
             "value" : "Zámek přes Face ID"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
+          }
         }
       }
     },
@@ -187,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zamkněte aplikaci přes Face ID nebo Touch ID a ochraňte záznamy své rodiny."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID, så jeres familieoptegnelser forbliver private."
           }
         }
       }
@@ -283,6 +295,12 @@
             "state" : "translated",
             "value" : "Lepší podpora VoiceOveru"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre understøttelse af VoiceOver"
+          }
         }
       }
     },
@@ -377,6 +395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Obrazovky se při zvětšení textu úhledně přeskládají, místo aby se ořízly."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skærme omarrangeres pænt i stedet for at blive beskåret, når du gør teksten større."
           }
         }
       }
@@ -473,6 +497,12 @@
             "state" : "translated",
             "value" : "Synchronizace mezi zařízeními"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellem enheder"
+          }
         }
       }
     },
@@ -567,6 +597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat všechna moje data"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle mine data"
           }
         }
       }
@@ -663,6 +699,12 @@
             "state" : "translated",
             "value" : "Tmavý režim"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk tilstand"
+          }
         }
       }
     },
@@ -757,6 +799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Čtěte vše snadno, i když máte zapnuté Zvýšit kontrast nebo se barvy špatně rozlišují."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læs alt nemt, selv med Øget kontrast slået til, eller hvis farver er svære at skelne."
           }
         }
       }
@@ -853,6 +901,12 @@
             "state" : "translated",
             "value" : "Používejte aplikaci ve více jazycích."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug appen på flere sprog."
+          }
         }
       }
     },
@@ -947,6 +1001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Další jazyky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere sprog"
           }
         }
       }
@@ -1043,6 +1103,12 @@
             "state" : "translated",
             "value" : "Příjemnější barvy a kontrast"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mere behagelige farver og kontrast"
+          }
         }
       }
     },
@@ -1137,6 +1203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "To, co jste v případu psali, zůstane, i když se aplikace uprostřed zavře."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det, du skrev i en sag, bliver, selv hvis appen lukker midtvejs."
           }
         }
       }
@@ -1233,6 +1305,12 @@
             "state" : "translated",
             "value" : "Pokračujte tam, kde jste skončili"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsæt, hvor du slap"
+          }
         }
       }
     },
@@ -1327,6 +1405,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hlavní funkce na iPadu ovládejte jen klávesnicí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug de vigtigste funktioner på iPad kun med et tastatur."
           }
         }
       }
@@ -1423,6 +1507,12 @@
             "state" : "translated",
             "value" : "Mějte stejné záznamy na iPhonu i iPadu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hav de samme optegnelser på din iPhone og iPad."
+          }
         }
       }
     },
@@ -1517,6 +1607,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Připomenutí"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelser"
           }
         }
       }
@@ -1613,6 +1709,12 @@
             "state" : "translated",
             "value" : "Sledujte probíhající případy přímo na ploše, aniž byste otevírali aplikaci."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se verserende sager direkte på hjemmeskærmen uden at åbne appen."
+          }
         }
       }
     },
@@ -1707,6 +1809,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Používejte celou aplikaci i v angličtině."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug hele appen på engelsk."
           }
         }
       }
@@ -1803,6 +1911,12 @@
             "state" : "translated",
             "value" : "Text a tlačítka zůstávají v tmavém režimu ostré a jasné."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst og knapper forbliver skarpe og tydelige i mørk tilstand."
+          }
         }
       }
     },
@@ -1897,6 +2011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Při prvním otevření aplikace po aktualizaci uvidíte, co je nového."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
           }
         }
       }
@@ -1993,6 +2113,12 @@
             "state" : "translated",
             "value" : "Novinky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad er nyt"
+          }
         }
       }
     },
@@ -2087,6 +2213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plná podpora angličtiny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuld understøttelse af engelsk"
           }
         }
       }
@@ -2183,6 +2315,12 @@
             "state" : "translated",
             "value" : "Omezit pohyb"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducer bevægelse"
+          }
         }
       }
     },
@@ -2277,6 +2415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Se zapnutým Omezit pohyb jsou efekty na obrazovce klidnější."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Reducer bevægelse slået til bliver skærmeffekter mere rolige."
           }
         }
       }
@@ -2373,6 +2517,12 @@
             "state" : "translated",
             "value" : "Kdykoli smažte všechny záznamy najednou přímo v aplikaci."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet alle dine optegnelser på én gang i appen, når du vil."
+          }
         }
       }
     },
@@ -2467,6 +2617,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozvržení pro větší text"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout til større tekst"
           }
         }
       }
@@ -2563,6 +2719,12 @@
             "state" : "translated",
             "value" : "Ovládání klávesnicí"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betjening med tastatur"
+          }
         }
       }
     },
@@ -2657,6 +2819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dostanete připomenutí ve správný čas, aby nikdo nezapomněl, co rozsudek určil."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påmindelse på det rette tidspunkt, så ingen glemmer, hvad dommen bestemte."
           }
         }
       }
@@ -2753,6 +2921,12 @@
             "state" : "translated",
             "value" : "Rozvržení pro skládací iPhone"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout til foldbar iPhone"
+          }
         }
       }
     },
@@ -2847,6 +3021,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Širokou obrazovku skládacího iPhonu využijte jako dva panely vedle sebe."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug den brede skærm på en foldbar iPhone som to ruder side om side."
           }
         }
       }
@@ -2943,6 +3123,12 @@
             "state" : "translated",
             "value" : "Widgety na ploše"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets på hjemmeskærmen"
+          }
         }
       }
     },
@@ -3037,6 +3223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver čte každé tlačítko a podrobnost ve správném pořadí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver læser hver knap og detalje i den rigtige rækkefølge."
           }
         }
       }

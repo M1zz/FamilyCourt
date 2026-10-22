@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -46,6 +46,7 @@ SEARCH = {
     "th": ("ศาลครอบครัว", "รู้สึกไม่ยุติธรรม<br>เปิดศาลกันเลย", "ทั้งบ้านเป็นผู้พิพากษา<br>และทนายความ"),
     "vi": ("Tòa Án Gia Đình", "Thấy bất công?<br>Mở phiên tòa", "Cả nhà làm thẩm phán<br>và luật sư"),
     "cs": ("Rodinný soud", "Křivda?<br>Zahajte jednání", "Rodina hraje<br>soudce a obhájce"),
+    "da": ("Familieretten", "Noget uretfærdigt?<br>Åbn retten", "Familien spiller<br>dommer og forsvarer"),
 }
 
 # 헤더는 한 가지 약속: 다툼을 가족 역할극 재판으로 공정하게 푼다.
@@ -63,6 +64,7 @@ HEADER = {
     "th": ("ศาลครอบครัวสำหรับเด็ก ๆ", "ไม่ต้องทะเลาะ<br>ให้ศาลตัดสิน"),
     "vi": ("Tòa án gia đình cho trẻ em", "Đừng cãi nhau,<br>hãy để tòa xử"),
     "cs": ("Rodinný soud pro děti", "Řešte to soudem,<br>ne hádkou"),
+    "da": ("En familieret for børn", "Løs det i retten,<br>ikke med skænderi"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(크림빛 바탕의 나무 망치)과 AccentColor(#C9A227) 에서 왔다.

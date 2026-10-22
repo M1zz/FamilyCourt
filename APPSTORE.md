@@ -914,3 +914,64 @@ Dřívější případy a lekce o soudu
 Uzavřené případy se uchovávají jako precedenty a část Poznejte soud vysvětluje, co dělají soudci, žalobci, státní zástupci a obhájci a jak probíhá líčení.
 
 Všechny záznamy zůstávají v tomto zařízení a účet není potřeba. Záznamy můžete exportovat do souboru a později znovu importovat.
+
+## da
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/da/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/da/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/da/
+
+### 이름
+
+Familieretten: Leg retssag
+
+### 부제
+
+Rollespilsretssager i familien
+
+### 키워드
+
+børn,dommer,advokat,retfærdighed,søskende,regler,opdragelse,hammer,dom,lov,anklager,sagsøger,spil
+
+### 프로모션 텍스트
+
+Noget uretfærdigt? Løs det med en retssag, ikke med tårer. Barnet indgiver stævning, familien er dommer og forsvarer, og I lærer om lov og retfærdighed.
+
+### 설명
+
+Når søskende skændes, eller et løfte bliver brudt, så råb ikke, men åbn jeres egen familieret.
+Familieretten er en rollespils-app, hvor familien spiller dommer, sagsøger, tiltalt og forsvarer, hører alle sider og når frem til en dom, ligesom i en rigtig retssag.
+
+Civil sag: når noget føles uretfærdigt
+Den, der føler sig forurettet, indgiver stævning som sagsøger. Vedkommende vælger, hvem sagen er mod, og hvem der skal være dommer. Børn kan endda sagsøge mor og far.
+
+Straffesag: når en husregel er brudt
+Den, der så reglen blive brudt, bliver anklager og fører sagen. Dommeren vælger mellem skyldig, ikke skyldig og mildhed.
+
+Følg manuskriptet, så føles det som en rigtig retssag
+Fra retsmødets åbning til hver parts forklaring, forsvaret, den afsluttende udtalelse og dommen fortæller et manuskript alle, hvis tur det er, og hvad de skal sige. Slå med hammeren for et tilfredsstillende brag, og en timer holder styr på hver talers tid.
+
+Regler, der sikrer retfærdighed
+Kun en, der hverken er sagsøger eller tiltalt, kan være dommer. Den, der stilles for retten, kan vælge en forsvarer, som hjælper før retsmødet.
+
+Domme, der slutter med et løfte, ikke kun en straf
+Sammen med dommen aftales et løfte eller en bod, der skal overholdes, og den afkrydses, til den er opfyldt. De foreslåede bodsforslag handler mere om at gøre ting godt igen end om at straffe, som at sætte ting på plads eller gøre noget rart for en anden.
+
+Vores familielovbog
+Skriv de regler ned, familien er enige om, som respekt, oprydning og at holde løfter, og tilføj eller ændr dem når som helst.
+
+Ord, der passer til barnets alder
+Skift sproget mellem tre niveauer, Enkelt, Standard og Retssal, så alle fra børnehavebørn til større børn kan være med.
+
+Tidligere sager og lektioner om retten
+Afsluttede sager gemmes som præcedens, og afsnittet Lær om retten forklarer, hvad dommere, sagsøgere, anklagere og forsvarere gør, og hvordan en retssag forløber.
+
+Alle optegnelser bliver på denne enhed, og ingen konto er nødvendig. Du kan eksportere dine optegnelser til en fil og importere dem igen senere.
