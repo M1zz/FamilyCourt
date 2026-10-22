@@ -25,3 +25,10 @@ The gavel icon got even cuter
 You can send feedback inside the app
 We opened new help and about pages
 Polished for a smoother experience
+
+### 앱스토어 (日本語)
+
+判事の木槌アイコンがもっとかわいくなりました
+アプリの中からご意見を送れるようになりました
+ヘルプと紹介のページを新しく公開しました
+より安定して使えるように整えました

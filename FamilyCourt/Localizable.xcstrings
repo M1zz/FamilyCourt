@@ -21,6 +21,12 @@
             "state" : "translated",
             "value" : "Face ID lock"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face IDロック"
+          }
         }
       }
     },
@@ -43,6 +49,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lock the app with Face ID or Touch ID to keep your family’s records private."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face IDやTouch IDでアプリをロックして、わが家の記録を守ります。"
           }
         }
       }
@@ -67,6 +79,12 @@
             "state" : "translated",
             "value" : "Better VoiceOver support"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOverでもっと使いやすく"
+          }
         }
       }
     },
@@ -89,6 +107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Screens rearrange neatly instead of getting cut off when you enlarge text."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文字サイズを大きくしても、切れずにきれいに配置し直されます。"
           }
         }
       }
@@ -113,6 +137,12 @@
             "state" : "translated",
             "value" : "Sync across devices"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末間の同期"
+          }
         }
       }
     },
@@ -135,6 +165,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delete all my data"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データをまとめて削除"
           }
         }
       }
@@ -159,6 +195,12 @@
             "state" : "translated",
             "value" : "Dark Mode"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダークモード"
+          }
         }
       }
     },
@@ -181,6 +223,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Read everything easily, even with Increase Contrast on or if colours are hard to tell apart."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コントラストを上げたときや色の区別がつきにくいときでも、内容が見やすくなります。"
           }
         }
       }
@@ -205,6 +253,12 @@
             "state" : "translated",
             "value" : "Use the app in more languages."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もっと多くの言語でアプリを使えるようにします。"
+          }
         }
       }
     },
@@ -227,6 +281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "More languages"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "対応言語の追加"
           }
         }
       }
@@ -251,6 +311,12 @@
             "state" : "translated",
             "value" : "Easier colours and contrast"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見やすい色とコントラスト"
+          }
         }
       }
     },
@@ -273,6 +339,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "What you were writing in a case stays put, even if the app closes mid-way."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "事件の入力中にアプリが終了しても、書きかけの内容が残ります。"
           }
         }
       }
@@ -297,6 +369,12 @@
             "state" : "translated",
             "value" : "Pick up where you left off"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "書きかけの事件を続きから"
+          }
         }
       }
     },
@@ -319,6 +397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use the main features on iPad with just a keyboard."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPadで、キーボードだけで主な機能を使えます。"
           }
         }
       }
@@ -343,6 +427,12 @@
             "state" : "translated",
             "value" : "Keep the same records on your iPhone and iPad."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhoneとiPadで同じ記録を続けて使えます。"
+          }
         }
       }
     },
@@ -365,6 +455,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reminders"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
           }
         }
       }
@@ -389,6 +485,12 @@
             "state" : "translated",
             "value" : "Check ongoing cases right on the Home Screen, without opening the app."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを開かなくても、ホーム画面で進行中の事件を確認できます。"
+          }
         }
       }
     },
@@ -411,6 +513,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use the whole app in English."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ全体を英語でも使えます。"
           }
         }
       }
@@ -435,6 +543,12 @@
             "state" : "translated",
             "value" : "Text and buttons stay crisp and clear in Dark Mode."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暗い画面でも、文字とボタンがくっきり見えます。"
+          }
         }
       }
     },
@@ -457,6 +571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "The first time you open the app after an update, see what’s new."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート後に初めて開いたとき、新しくなった点をお知らせします。"
           }
         }
       }
@@ -481,6 +601,12 @@
             "state" : "translated",
             "value" : "What’s new"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート情報"
+          }
         }
       }
     },
@@ -503,6 +629,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Full English support"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "英語に対応"
           }
         }
       }
@@ -527,6 +659,12 @@
             "state" : "translated",
             "value" : "Reduce Motion"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "視差効果を減らす"
+          }
         }
       }
     },
@@ -549,6 +687,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "With Reduce Motion on, screen effects calm down."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「視差効果を減らす」をオンにすると、画面効果が穏やかになります。"
           }
         }
       }
@@ -573,6 +717,12 @@
             "state" : "translated",
             "value" : "Erase all your records at once from inside the app whenever you want."
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "必要なときは、アプリの中ですべての記録をまとめて消せます。"
+          }
         }
       }
     },
@@ -595,6 +745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layouts for larger text"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大きな文字に合わせた画面"
           }
         }
       }
@@ -619,6 +775,12 @@
             "state" : "translated",
             "value" : "Keyboard control"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キーボードで操作"
+          }
         }
       }
     },
@@ -641,6 +803,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get a timely reminder so no one forgets what the verdict decided."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "判決で決めたことを忘れないよう、ちょうどよいタイミングでお知らせします。"
           }
         }
       }
@@ -665,6 +833,12 @@
             "state" : "translated",
             "value" : "Foldable iPhone layout"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折りたたみiPhoneの画面"
+          }
         }
       }
     },
@@ -687,6 +861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use the wide screen of a foldable iPhone as two side-by-side panes."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折りたたみiPhoneでは、広い画面を2つに分けて使えます。"
           }
         }
       }
@@ -711,6 +891,12 @@
             "state" : "translated",
             "value" : "Home Screen widgets"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面ウィジェット"
+          }
         }
       }
     },
@@ -733,6 +919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver reads every button and detail, in the right order."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面読み上げ機能が、ボタンと内容を漏れなく、正しい順序で読み上げます。"
           }
         }
       }

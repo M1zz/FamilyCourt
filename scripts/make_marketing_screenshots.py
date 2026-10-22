@@ -17,28 +17,34 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
     ("01-home.png",    "hero-bleed",  {"ko": ("억울하면<br>재판을 열어요", "아이도 부모도 직접 소송을 걸 수 있어요"),
         "en": ("Feeling wronged?<br>Open court", "Kids and parents can both file a case"),
-        "en-GB": ("Feeling wronged?<br>Open court", "Children and parents can both file a case")}),
+        "en-GB": ("Feeling wronged?<br>Open court", "Children and parents can both file a case"),
+        "ja": ("「ずるい！」は<br>裁判で解決", "子どもも親も、訴えを起こせます")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
-        "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge")}),
+        "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
+        "ja": ("訴状は<br>自分で書こう", "被告も裁判官も、提出する人が選びます")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
-        "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is")}),
+        "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
+        "ja": ("せりふをまねして<br>本格的な裁判に", "誰が何を言う番か、教えてくれます")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
-        "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end")}),
+        "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
+        "ja": ("判決は罰より<br>約束で", "守る約束を決めて、最後までチェック")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
-        "en-GB": ("Write your family<br>laws together", "Add and edit articles any time")}),
+        "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
+        "ja": ("わが家の法律は<br>家族で決めよう", "条文はいつでも追加・修正できます")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
-        "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words")}),
+        "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
+        "ja": ("裁判官、原告、弁護人<br>全部学べます", "役割と裁判の流れをやさしい言葉で")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.
