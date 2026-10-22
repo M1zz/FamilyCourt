@@ -74,3 +74,10 @@ L’icône du marteau est plus mignonne
 Envoyez vos retours depuis l’app
 Nouvelles pages d’aide et d’infos
 Peaufiné pour une expérience plus fluide
+
+### 앱스토어 (Italiano)
+
+L’icona del martelletto è più carina
+Puoi inviare commenti dentro l’app
+Nuove pagine di guida e informazioni
+Rifinita per un uso più fluido

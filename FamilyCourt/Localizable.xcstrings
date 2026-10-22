@@ -63,6 +63,12 @@
             "state" : "translated",
             "value" : "Verrouillage Face ID"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocco con Face ID"
+          }
         }
       }
     },
@@ -127,6 +133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verrouillez l’app avec Face ID ou Touch ID pour garder privées les données de votre famille."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blocca l’app con Face ID o Touch ID per tenere privati i dati della tua famiglia."
           }
         }
       }
@@ -193,6 +205,12 @@
             "state" : "translated",
             "value" : "Meilleure prise en charge de VoiceOver"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Migliore supporto per VoiceOver"
+          }
         }
       }
     },
@@ -257,6 +275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les écrans se réorganisent proprement au lieu d’être tronqués quand vous agrandissez le texte."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le schermate si riorganizzano in modo ordinato invece di essere tagliate quando ingrandisci il testo."
           }
         }
       }
@@ -323,6 +347,12 @@
             "state" : "translated",
             "value" : "Synchronisation entre appareils"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizzazione tra dispositivi"
+          }
         }
       }
     },
@@ -387,6 +417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer toutes mes données"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutti i miei dati"
           }
         }
       }
@@ -453,6 +489,12 @@
             "state" : "translated",
             "value" : "Mode sombre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità scura"
+          }
         }
       }
     },
@@ -517,6 +559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisez tout facilement, même avec Augmenter le contraste activé ou si les couleurs sont difficiles à distinguer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi tutto con facilità, anche con Aumenta contrasto attivo o se fai fatica a distinguere i colori."
           }
         }
       }
@@ -583,6 +631,12 @@
             "state" : "translated",
             "value" : "Utilisez l’app dans plus de langues."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa l’app in più lingue."
+          }
         }
       }
     },
@@ -647,6 +701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus de langues"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più lingue"
           }
         }
       }
@@ -713,6 +773,12 @@
             "state" : "translated",
             "value" : "Couleurs et contraste plus confortables"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori e contrasto più comodi"
+          }
         }
       }
     },
@@ -777,6 +843,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce que vous écriviez dans une affaire est conservé, même si l’app se ferme en cours de route."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quello che stavi scrivendo in un caso resta lì, anche se l’app si chiude a metà."
           }
         }
       }
@@ -843,6 +915,12 @@
             "state" : "translated",
             "value" : "Reprendre là où vous en étiez"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riprendi da dove avevi lasciato"
+          }
         }
       }
     },
@@ -907,6 +985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez les principales fonctions sur iPad avec le seul clavier."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa le funzioni principali su iPad con la sola tastiera."
           }
         }
       }
@@ -973,6 +1057,12 @@
             "state" : "translated",
             "value" : "Retrouvez les mêmes données sur votre iPhone et votre iPad."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantieni gli stessi dati su iPhone e iPad."
+          }
         }
       }
     },
@@ -1037,6 +1127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rappels"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria"
           }
         }
       }
@@ -1103,6 +1199,12 @@
             "state" : "translated",
             "value" : "Consultez les affaires en cours directement sur l’écran d’accueil, sans ouvrir l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla i casi in corso direttamente dalla schermata Home, senza aprire l’app."
+          }
         }
       }
     },
@@ -1167,6 +1269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez toute l’app en anglais."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa tutta l’app anche in inglese."
           }
         }
       }
@@ -1233,6 +1341,12 @@
             "state" : "translated",
             "value" : "Le texte et les boutons restent nets et lisibles en mode sombre."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testo e pulsanti restano nitidi e chiari in modalità scura."
+          }
         }
       }
     },
@@ -1297,6 +1411,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La première fois que vous ouvrez l’app après une mise à jour, découvrez les nouveautés."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prima volta che apri l’app dopo un aggiornamento, scopri le novità."
           }
         }
       }
@@ -1363,6 +1483,12 @@
             "state" : "translated",
             "value" : "Nouveautés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novità"
+          }
         }
       }
     },
@@ -1427,6 +1553,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prise en charge complète de l’anglais"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto completo per l’inglese"
           }
         }
       }
@@ -1493,6 +1625,12 @@
             "state" : "translated",
             "value" : "Réduire les animations"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riduci movimento"
+          }
         }
       }
     },
@@ -1557,6 +1695,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avec Réduire les animations activé, les effets à l’écran se font plus calmes."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con Riduci movimento attivo, gli effetti sullo schermo diventano più calmi."
           }
         }
       }
@@ -1623,6 +1767,12 @@
             "state" : "translated",
             "value" : "Effacez toutes vos données d’un coup depuis l’app quand vous le voulez."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella tutti i tuoi dati in una volta dall’app quando vuoi."
+          }
         }
       }
     },
@@ -1687,6 +1837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mises en page pour texte plus grand"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout per testo più grande"
           }
         }
       }
@@ -1753,6 +1909,12 @@
             "state" : "translated",
             "value" : "Commande au clavier"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controllo da tastiera"
+          }
         }
       }
     },
@@ -1817,6 +1979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Recevez un rappel au bon moment pour que personne n’oublie ce que le verdict a décidé."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi un promemoria al momento giusto così nessuno dimentica cosa ha deciso il verdetto."
           }
         }
       }
@@ -1883,6 +2051,12 @@
             "state" : "translated",
             "value" : "Mise en page pour iPhone pliable"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout per iPhone pieghevole"
+          }
         }
       }
     },
@@ -1947,6 +2121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez le grand écran d’un iPhone pliable en deux volets côte à côte."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa lo schermo ampio di un iPhone pieghevole come due riquadri affiancati."
           }
         }
       }
@@ -2013,6 +2193,12 @@
             "state" : "translated",
             "value" : "Widgets de l’écran d’accueil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget della schermata Home"
+          }
         }
       }
     },
@@ -2077,6 +2263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver lit chaque bouton et chaque détail, dans le bon ordre."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver legge ogni pulsante e ogni dettaglio, nell’ordine giusto."
           }
         }
       }

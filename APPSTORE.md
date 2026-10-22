@@ -609,3 +609,64 @@ Anciennes affaires et leçons sur la justice
 Les affaires terminées sont conservées comme précédents, et la rubrique Découvrir le tribunal explique ce que font juges, demandeurs, procureurs et avocats et comment se déroule un procès.
 
 Toutes les données restent sur cet appareil et aucun compte n’est nécessaire. Vous pouvez exporter vos données dans un fichier et les réimporter plus tard.
+
+## it
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/it/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/it/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/it/
+
+### 이름
+
+Tribunale di Famiglia
+
+### 부제
+
+Processi di ruolo in famiglia
+
+### 키워드
+
+bambini,giudice,avvocato,equità,fratelli,regole,compiti,educazione,martelletto,verdetto,legge,pm
+
+### 프로모션 텍스트
+
+Hai subito un torto? Risolvetelo con un processo, non con le lacrime. I bambini fanno causa, la famiglia fa il giudice e il difensore e impara legge ed equità.
+
+### 설명
+
+Quando i fratelli litigano o si rompe una promessa, invece di urlare aprite il vostro tribunale di famiglia.
+Tribunale di Famiglia è un’app di gioco di ruolo in cui la famiglia interpreta giudice, attore, imputato e difensore, ascolta tutte le parti e arriva a un verdetto, proprio come in un vero processo.
+
+Causa civile: quando qualcosa sembra ingiusto
+Chi si sente danneggiato presenta la denuncia come attore. Sceglie contro chi fare causa e chi sarà il giudice. I bambini possono perfino fare causa a mamma e papà.
+
+Causa penale: quando si infrange una regola di casa
+Chi ha visto infrangere la regola diventa pubblico ministero e porta il caso in aula. Il giudice sceglie tra colpevole, non colpevole e clemenza.
+
+Segui il copione e sembra un vero processo
+Dall’apertura dell’udienza al racconto di ogni parte, alla difesa, alla dichiarazione finale e al verdetto, un copione dice a tutti a chi tocca e cosa dire. Batti il martelletto per un bel colpo e un timer tiene il tempo di chi parla.
+
+Regole che garantiscono l’equità
+Solo chi non è né attore né imputato può fare il giudice. Chi viene portato in giudizio può scegliere un difensore che lo aiuti prima dell’udienza.
+
+Verdetti che finiscono con una promessa, non solo con una punizione
+Insieme al verdetto si stabilisce una promessa o una sanzione da rispettare, e la si spunta fino al termine. Le sanzioni suggerite puntano più a rimediare che a punire, per esempio rimettere a posto le cose o fare un gesto gentile verso qualcuno.
+
+Il nostro codice di famiglia
+Scrivi le regole su cui la famiglia è d’accordo, come rispetto, ordine e promesse mantenute, e aggiungile o modificale quando vuoi.
+
+Parole adatte all’età
+Cambia il linguaggio tra tre livelli, Semplice, Standard e Tribunale, così possono giocare tutti, dai più piccoli ai più grandi.
+
+Casi passati e lezioni sul tribunale
+I casi conclusi restano come precedenti, e la sezione Scopri il tribunale spiega cosa fanno giudici, attori, pubblici ministeri e difensori e come si svolge un processo.
+
+Tutti i dati restano su questo dispositivo e non serve alcun account. Puoi esportare i dati in un file e importarli di nuovo in seguito.
