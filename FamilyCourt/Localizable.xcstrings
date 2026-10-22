@@ -117,6 +117,12 @@
             "state" : "translated",
             "value" : "Kunci Face ID"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
+          }
         }
       }
     },
@@ -235,6 +241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunci aplikasi dengan Face ID atau Touch ID agar catatan keluarga Anda tetap pribadi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID, så familiens oppføringer holdes private."
           }
         }
       }
@@ -355,6 +367,12 @@
             "state" : "translated",
             "value" : "Dukungan VoiceOver yang lebih baik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre støtte for VoiceOver"
+          }
         }
       }
     },
@@ -473,6 +491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layar tertata ulang dengan rapi, bukan terpotong, saat Anda memperbesar teks."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skjermer ordnes pent på nytt i stedet for å bli kuttet når du gjør teksten større."
           }
         }
       }
@@ -593,6 +617,12 @@
             "state" : "translated",
             "value" : "Sinkronisasi antar perangkat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellom enheter"
+          }
         }
       }
     },
@@ -711,6 +741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus semua data saya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle dataene mine"
           }
         }
       }
@@ -831,6 +867,12 @@
             "state" : "translated",
             "value" : "Mode Gelap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk modus"
+          }
         }
       }
     },
@@ -949,6 +991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Baca semuanya dengan mudah, bahkan saat Tingkatkan Kontras aktif atau warna sulit dibedakan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les alt enkelt, selv med Øk kontrast slått på eller hvis farger er vanskelige å skille."
           }
         }
       }
@@ -1069,6 +1117,12 @@
             "state" : "translated",
             "value" : "Pakai aplikasi dalam lebih banyak bahasa."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk appen på flere språk."
+          }
         }
       }
     },
@@ -1187,6 +1241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lebih banyak bahasa"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere språk"
           }
         }
       }
@@ -1307,6 +1367,12 @@
             "state" : "translated",
             "value" : "Warna dan kontras yang lebih nyaman"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behagelige farger og kontrast"
+          }
         }
       }
     },
@@ -1425,6 +1491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang sedang Anda tulis dalam kasus tetap ada, meski aplikasi tertutup di tengah jalan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det du skrev i en sak, blir værende, selv om appen lukkes underveis."
           }
         }
       }
@@ -1545,6 +1617,12 @@
             "state" : "translated",
             "value" : "Lanjutkan dari terakhir kali"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett der du slapp"
+          }
         }
       }
     },
@@ -1663,6 +1741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai fitur utama di iPad hanya dengan keyboard."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk hovedfunksjonene på iPad med bare tastatur."
           }
         }
       }
@@ -1783,6 +1867,12 @@
             "state" : "translated",
             "value" : "Gunakan catatan yang sama di iPhone dan iPad."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha de samme oppføringene på iPhone og iPad."
+          }
         }
       }
     },
@@ -1901,6 +1991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengingat"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påminnelser"
           }
         }
       }
@@ -2021,6 +2117,12 @@
             "state" : "translated",
             "value" : "Lihat kasus yang berjalan langsung di Layar Utama tanpa membuka aplikasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se pågående saker rett på hjem-skjermen uten å åpne appen."
+          }
         }
       }
     },
@@ -2139,6 +2241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai seluruh aplikasi dalam bahasa Inggris."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk hele appen på engelsk."
           }
         }
       }
@@ -2259,6 +2367,12 @@
             "state" : "translated",
             "value" : "Teks dan tombol tetap tajam dan jelas di Mode Gelap."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst og knapper forblir skarpe og tydelige i mørk modus."
+          }
         }
       }
     },
@@ -2377,6 +2491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat pertama kali membuka aplikasi setelah pembaruan, lihat apa yang baru."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
           }
         }
       }
@@ -2497,6 +2617,12 @@
             "state" : "translated",
             "value" : "Yang baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva er nytt"
+          }
         }
       }
     },
@@ -2615,6 +2741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dukungan bahasa Inggris penuh"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full støtte for engelsk"
           }
         }
       }
@@ -2735,6 +2867,12 @@
             "state" : "translated",
             "value" : "Kurangi Gerakan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduser bevegelse"
+          }
         }
       }
     },
@@ -2853,6 +2991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dengan Kurangi Gerakan aktif, efek layar jadi lebih tenang."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Reduser bevegelse slått på blir skjermeffektene roligere."
           }
         }
       }
@@ -2973,6 +3117,12 @@
             "state" : "translated",
             "value" : "Hapus semua catatan sekaligus dari dalam aplikasi kapan saja."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett alle oppføringene dine på én gang i appen når du vil."
+          }
         }
       }
     },
@@ -3091,6 +3241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tata letak untuk teks lebih besar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett for større tekst"
           }
         }
       }
@@ -3211,6 +3367,12 @@
             "state" : "translated",
             "value" : "Kontrol dengan keyboard"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betjening med tastatur"
+          }
         }
       }
     },
@@ -3329,6 +3491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dapatkan pengingat tepat waktu agar tidak ada yang lupa apa yang diputuskan dalam putusan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påminnelse til rett tid, så ingen glemmer hva dommen bestemte."
           }
         }
       }
@@ -3449,6 +3617,12 @@
             "state" : "translated",
             "value" : "Tata letak iPhone lipat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett for foldbar iPhone"
+          }
         }
       }
     },
@@ -3567,6 +3741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai layar lebar iPhone lipat sebagai dua panel berdampingan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk den brede skjermen på en foldbar iPhone som to ruter side om side."
           }
         }
       }
@@ -3687,6 +3867,12 @@
             "state" : "translated",
             "value" : "Widget Layar Utama"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgeter på hjem-skjermen"
+          }
         }
       }
     },
@@ -3805,6 +3991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver membacakan setiap tombol dan detail dengan urutan yang benar."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver leser hver knapp og detalj i riktig rekkefølge."
           }
         }
       }

@@ -1158,3 +1158,64 @@ Kasus lama dan pelajaran tentang pengadilan
 Kasus yang selesai disimpan sebagai yurisprudensi, dan bagian Kenali Pengadilan menjelaskan tugas hakim, penggugat, jaksa, dan pembela serta jalannya sidang.
 
 Semua catatan tetap ada di perangkat ini dan tidak perlu akun. Anda bisa mengekspor catatan ke berkas dan mengimpornya lagi nanti.
+
+## nb
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/nb/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/nb/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/nb/
+
+### 이름
+
+Familieretten: Lek rettssak
+
+### 부제
+
+Rollespill-rettssaker hjemme
+
+### 키워드
+
+barn,dommer,advokat,rettferdighet,søsken,regler,oppdragelse,hammer,dom,lov,aktor,saksøker,spill
+
+### 프로모션 텍스트
+
+Noe urettferdig? Løs det med en rettssak, ikke med tårer. Barnet leverer søksmål, familien er dommer og forsvarer, og dere lærer om lov og rettferdighet.
+
+### 설명
+
+Når søsken krangler, eller et løfte blir brutt, ikke rop, men åpne deres egen familierett.
+Familieretten er en rollespill-app der familien spiller dommer, saksøker, tiltalt og forsvarer, hører alle sider og kommer fram til en dom, akkurat som i en ekte rettssak.
+
+Sivil sak: når noe føles urettferdig
+Den som føler seg urettferdig behandlet, leverer søksmål som saksøker. Vedkommende velger hvem saken er mot, og hvem som skal være dommer. Barn kan til og med saksøke mamma og pappa.
+
+Straffesak: når en husregel er brutt
+Den som så regelen bli brutt, blir aktor og fører saken. Dommeren velger mellom skyldig, ikke skyldig og mildhet.
+
+Følg manuset, så føles det som en ekte rettssak
+Fra rettsmøtets åpning til hver parts forklaring, forsvaret, den avsluttende uttalelsen og dommen forteller et manus alle hvem sin tur det er, og hva de skal si. Slå med hammeren for et tilfredsstillende smell, og en tidtaker holder styr på hver talers tid.
+
+Regler som sikrer rettferdighet
+Bare den som verken er saksøker eller tiltalt, kan være dommer. Den som stilles for retten, kan velge en forsvarer som hjelper før rettsmøtet.
+
+Dommer som ender med et løfte, ikke bare en straff
+Sammen med dommen settes det et løfte eller en bot som skal holdes, og den krysses av til den er oppfylt. De foreslåtte botene handler mer om å gjøre opp for seg enn å straffe, som å sette ting tilbake eller gjøre noe hyggelig for en annen.
+
+Vår familielovbok
+Skriv ned reglene familien er enig om, som respekt, rydding og å holde løfter, og legg til eller endre dem når som helst.
+
+Ord som passer barnets alder
+Bytt språket mellom tre nivåer, Enkelt, Standard og Rettssal, slik at alle fra barnehagebarn til større barn kan være med.
+
+Tidligere saker og leksjoner om retten
+Avsluttede saker lagres som presedens, og delen Lær om retten forklarer hva dommere, saksøkere, aktorer og forsvarere gjør, og hvordan en rettssak forløper.
+
+Alle oppføringer blir på denne enheten, og ingen konto trengs. Du kan eksportere oppføringene dine til en fil og importere dem igjen senere.

@@ -137,3 +137,10 @@ Ikon palunya jadi makin imut
 Kirim masukan langsung di aplikasi
 Halaman bantuan dan info yang baru
 Disempurnakan agar lebih stabil
+
+### 앱스토어 (Norsk bokmål)
+
+Hammer-ikonet er blitt enda søtere
+Send tilbakemelding rett i appen
+Nye hjelpe- og infosider
+Finpusset for en jevnere opplevelse
