@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &amp; How to Play — Family Court</title>
+  <meta name="description" content="How to use Family Court, frequently asked questions, backing up your data and how to contact us.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>Support &amp; How to Play</h1>
+    <div class="sub">Family Court</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="../support.html">한국어</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>Need a hand?</h2>
+      <p>Bug reports, feature ideas or anything else, we would love to hear from you.</p>
+      <a href="mailto:leeo@kakao.com">Email leeo@kakao.com</a>
+    </div>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>What is this app?</summary>
+        <p>Family Court lets families hold playful role-play trials at home, so children naturally learn
+        what law, fairness and rules mean. File something unfair as a civil case, or a broken house rule
+        as a criminal case, then share out the roles of judge and counsel and hold the trial.</p>
+      </details>
+
+      <details>
+        <summary>How old do you need to be?</summary>
+        <p>Any child who can read can play with a parent. The trial script and guidance mean even younger
+        children can join in with a grown-up's help.</p>
+      </details>
+
+      <details>
+        <summary>Do I need an internet connection?</summary>
+        <p>No. Trials, records and everything else work offline. You only need internet access and an
+        iCloud sign-in when you send feedback to the developer with Send Feedback in Settings.</p>
+      </details>
+
+      <details>
+        <summary>Where is my data stored?</summary>
+        <p>Your family members, law book, trials and verdicts are saved only in a
+        <code>familycourt.json</code> file on your device. Nothing is sent to an outside server.
+        See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+      </details>
+
+      <details>
+        <summary>Can I back up my records or move them to another device?</summary>
+        <ul>
+          <li>Use <b>Save Records</b> on the Home screen or in Settings to export your data to a file.</li>
+          <li>On another device, choose <b>Settings → Import Records</b> and open that file to restore everything.</li>
+          <li>Backup files exported from the older web version can be imported too.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>I installed the app with a free Apple ID and it won't open.</summary>
+        <p>Apps installed with a free Apple ID have to be run (reinstalled) again every 7 days. Your data
+        is kept when you reinstall, but we recommend backing up first with <b>Save Records</b>. With a
+        paid developer account ($99/year) the app stays valid for a year.</p>
+      </details>
+
+      <details>
+        <summary>How do I install it on an iPad?</summary>
+        <ul>
+          <li>On a Mac, open <code>FamilyCourt.xcodeproj</code> in Xcode.</li>
+          <li>Under Signing &amp; Capabilities, choose your own Apple ID (Team).</li>
+          <li>Connect the iPad and press ▶ Run to install.</li>
+          <li>For the full steps, see the <a href="https://github.com/M1zz/FamilyCourt">README on GitHub</a>.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>How do I delete my data completely?</summary>
+        <p>Deleting the app removes all data stored on your device. Family and trial records never leave
+        the device, so nothing remains elsewhere. If you want feedback you sent with Send Feedback to be
+        deleted, email <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>About the app</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">Name</b> · Family Court (억울해요)</li>
+        <li><b style="color:var(--ink)">Platform</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">Price</b> · Free · No ads · No in-app purchases</li>
+        <li><b style="color:var(--ink)">Source code</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Family Court (억울해요) · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>

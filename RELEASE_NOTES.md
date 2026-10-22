@@ -11,3 +11,10 @@ App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이
 앱 안에서 바로 의견을 보낼 수 있어요
 도움말과 소개 페이지를 새로 열었어요
 더 안정적으로 쓸 수 있게 다듬었어요
+
+### 앱스토어 (English)
+
+The gavel icon got even cuter
+You can send feedback inside the app
+We opened new help and about pages
+Polished for a smoother experience

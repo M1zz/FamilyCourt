@@ -60,3 +60,64 @@ https://m1zz.github.io/FamilyCourt/
 끝난 사건은 판례로 쌓이고, 법원 공부하기에서 판사, 원고, 검사, 변호인이 하는 일과 재판 순서를 배울 수 있습니다.
 
 모든 기록은 이 기기 안에 저장되며 계정이 필요 없습니다. 기록 파일로 내보내고 다시 불러올 수 있습니다.
+
+## en
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/en/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/en/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/en/
+
+### 이름
+
+Family Court: Home Trials
+
+### 부제
+
+Role-play trials for families
+
+### 키워드
+
+kids,judge,lawyer,fairness,siblings,rules,chores,parenting,gavel,verdict,justice,law,teach,civics
+
+### 프로모션 텍스트
+
+Feeling wronged? Settle it with a trial, not tears. Kids file as the plaintiff while the family plays judge and counsel, learning about law and fairness together.
+
+### 설명
+
+When siblings squabble or a promise gets broken, skip the shouting and open your own family courtroom.
+Family Court is a role-play app where your family takes the parts of judge, plaintiff, defendant and counsel, hears every side and reaches a verdict, just like a real trial.
+
+Civil case: when something feels unfair
+The person who feels wronged files the complaint as plaintiff. They choose who to bring the case against and who will be the judge. Kids can even file against Mom and Dad.
+
+Criminal case: when a house rule is broken
+Whoever saw the rule broken becomes the prosecutor and brings the case. The judge chooses between guilty, not guilty and leniency.
+
+Follow the script and it feels like a real trial
+From the opening of court to each side of the story, the defense, the final statement and the verdict, a script tells everyone whose turn it is and what to say. Strike the gavel for a satisfying bang, and a timer keeps each speaker to time.
+
+Rules that keep it fair
+Only someone who is not the plaintiff or the defendant can be the judge. Anyone brought to trial can pick a counsel to help them before the hearing.
+
+Verdicts that end with a promise, not just a punishment
+Along with the verdict, set a promise or penalty to keep, and tick it off until it is done. Suggested penalties lean toward making things right rather than punishing, such as putting things back or giving someone a kind gesture.
+
+Our family law book
+Write down the rules your family agrees on, such as respect, tidying up and keeping promises, and add or change them any time.
+
+Words that fit your child's age
+Switch the wording between three levels, Simple, Standard and Courtroom, so everyone from kindergarteners to older kids can play along.
+
+Past cases and court lessons
+Finished cases are kept as precedents, and the Learn about Court section explains what judges, plaintiffs, prosecutors and counsel do and how a trial runs.
+
+All records stay on this device and no account is needed. You can export your records to a file and import them again later.
