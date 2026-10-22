@@ -18,3 +18,10 @@ The gavel icon got even cuter
 You can send feedback inside the app
 We opened new help and about pages
 Polished for a smoother experience
+
+### 앱스토어 (English (UK))
+
+The gavel icon got even cuter
+You can send feedback inside the app
+We opened new help and about pages
+Polished for a smoother experience
