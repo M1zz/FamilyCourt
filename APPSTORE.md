@@ -1097,3 +1097,64 @@ Aiemmat asiat ja oikeussalioppitunnit
 Päättyneet asiat tallentuvat ennakkotapauksiksi, ja Tutustu oikeuteen -osio kertoo, mitä tuomarit, kantajat, syyttäjät ja avustajat tekevät ja miten oikeudenkäynti etenee.
 
 Kaikki tiedot pysyvät tällä laitteella, eikä tiliä tarvita. Voit viedä tietosi tiedostoon ja tuoda ne myöhemmin takaisin.
+
+## id
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/id/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/id/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/id/
+
+### 이름
+
+Pengadilan Keluarga: Sidang
+
+### 부제
+
+Main peran sidang di rumah
+
+### 키워드
+
+anak,hakim,pengacara,keadilan,saudara,aturan,mendidik,palu,putusan,hukum,jaksa,penggugat,tergugat
+
+### 프로모션 텍스트
+
+Merasa tidak adil? Selesaikan lewat sidang, bukan air mata. Anak mengajukan gugatan, keluarga jadi hakim dan pembela, lalu belajar hukum dan keadilan bersama.
+
+### 설명
+
+Saat kakak beradik bertengkar atau janji dilanggar, jangan berteriak, buka saja pengadilan keluarga Anda sendiri.
+Pengadilan Keluarga adalah aplikasi bermain peran tempat keluarga menjadi hakim, penggugat, tergugat, dan pembela, mendengarkan semua pihak, lalu mengambil putusan, seperti sidang sungguhan.
+
+Kasus perdata: saat ada yang terasa tidak adil
+Orang yang merasa dirugikan mengajukan gugatan sebagai penggugat. Ia memilih siapa yang digugat dan siapa yang menjadi hakim. Anak bahkan bisa menggugat ayah dan ibu.
+
+Kasus pidana: saat aturan rumah dilanggar
+Siapa pun yang melihat aturan dilanggar menjadi jaksa dan membawa kasusnya. Hakim memilih antara bersalah, tidak bersalah, dan keringanan.
+
+Ikuti naskahnya, rasanya seperti sidang sungguhan
+Dari pembukaan sidang, cerita tiap pihak, pembelaan, pernyataan akhir, sampai putusan, naskah memberi tahu semua orang giliran siapa dan apa yang harus diucapkan. Ketuk palu untuk bunyi yang memuaskan, dan pengatur waktu menjaga waktu bicara tiap orang.
+
+Aturan yang menjaga keadilan
+Hanya orang yang bukan penggugat atau tergugat yang bisa menjadi hakim. Siapa pun yang diajukan ke sidang boleh memilih pembela untuk membantu sebelum persidangan.
+
+Putusan yang berakhir dengan janji, bukan sekadar hukuman
+Bersama putusan, tetapkan janji atau sanksi yang harus dipenuhi, lalu centang sampai selesai. Sanksi yang disarankan lebih condong memperbaiki daripada menghukum, seperti mengembalikan barang ke tempatnya atau berbuat baik pada seseorang.
+
+Kitab hukum keluarga kita
+Tulis aturan yang disepakati keluarga, seperti saling menghormati, merapikan barang, dan menepati janji, lalu tambah atau ubah kapan saja.
+
+Bahasa yang sesuai usia anak
+Ganti gaya bahasa di antara tiga tingkat, Sederhana, Standar, dan Ruang Sidang, supaya semua bisa ikut main, dari anak TK sampai yang lebih besar.
+
+Kasus lama dan pelajaran tentang pengadilan
+Kasus yang selesai disimpan sebagai yurisprudensi, dan bagian Kenali Pengadilan menjelaskan tugas hakim, penggugat, jaksa, dan pembela serta jalannya sidang.
+
+Semua catatan tetap ada di perangkat ini dan tidak perlu akun. Anda bisa mengekspor catatan ke berkas dan mengimpornya lagi nanti.

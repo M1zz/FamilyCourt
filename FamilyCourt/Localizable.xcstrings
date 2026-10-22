@@ -111,6 +111,12 @@
             "state" : "translated",
             "value" : "Face ID -lukitus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci Face ID"
+          }
         }
       }
     },
@@ -223,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lukitse sovellus Face ID:llä tai Touch ID:llä, jotta perheesi tiedot pysyvät yksityisinä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci aplikasi dengan Face ID atau Touch ID agar catatan keluarga Anda tetap pribadi."
           }
         }
       }
@@ -337,6 +349,12 @@
             "state" : "translated",
             "value" : "Parempi VoiceOver-tuki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukungan VoiceOver yang lebih baik"
+          }
         }
       }
     },
@@ -449,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näkymät järjestyvät siististi uudelleen sen sijaan, että ne leikkautuisivat, kun suurennat tekstiä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layar tertata ulang dengan rapi, bukan terpotong, saat Anda memperbesar teks."
           }
         }
       }
@@ -563,6 +587,12 @@
             "state" : "translated",
             "value" : "Synkronointi laitteiden välillä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sinkronisasi antar perangkat"
+          }
         }
       }
     },
@@ -675,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poista kaikki tietoni"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus semua data saya"
           }
         }
       }
@@ -789,6 +825,12 @@
             "state" : "translated",
             "value" : "Tumma tila"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode Gelap"
+          }
         }
       }
     },
@@ -901,6 +943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lue kaikki helposti, vaikka Lisää kontrastia olisi päällä tai värejä olisi vaikea erottaa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baca semuanya dengan mudah, bahkan saat Tingkatkan Kontras aktif atau warna sulit dibedakan."
           }
         }
       }
@@ -1015,6 +1063,12 @@
             "state" : "translated",
             "value" : "Käytä sovellusta useammalla kielellä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai aplikasi dalam lebih banyak bahasa."
+          }
         }
       }
     },
@@ -1127,6 +1181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää kieliä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebih banyak bahasa"
           }
         }
       }
@@ -1241,6 +1301,12 @@
             "state" : "translated",
             "value" : "Miellyttävämmät värit ja kontrasti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna dan kontras yang lebih nyaman"
+          }
         }
       }
     },
@@ -1353,6 +1419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asiaan kirjoittamasi säilyy, vaikka sovellus sulkeutuisi kesken."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang sedang Anda tulis dalam kasus tetap ada, meski aplikasi tertutup di tengah jalan."
           }
         }
       }
@@ -1467,6 +1539,12 @@
             "state" : "translated",
             "value" : "Jatka siitä, mihin jäit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan dari terakhir kali"
+          }
         }
       }
     },
@@ -1579,6 +1657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä iPadilla tärkeimpiä toimintoja pelkällä näppäimistöllä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai fitur utama di iPad hanya dengan keyboard."
           }
         }
       }
@@ -1693,6 +1777,12 @@
             "state" : "translated",
             "value" : "Pidä samat tiedot iPhonessa ja iPadissa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan catatan yang sama di iPhone dan iPad."
+          }
         }
       }
     },
@@ -1805,6 +1895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muistutukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat"
           }
         }
       }
@@ -1919,6 +2015,12 @@
             "state" : "translated",
             "value" : "Katso vireillä olevat asiat suoraan Koti-valikosta avaamatta sovellusta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lihat kasus yang berjalan langsung di Layar Utama tanpa membuka aplikasi."
+          }
         }
       }
     },
@@ -2031,6 +2133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä koko sovellusta myös englanniksi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai seluruh aplikasi dalam bahasa Inggris."
           }
         }
       }
@@ -2145,6 +2253,12 @@
             "state" : "translated",
             "value" : "Teksti ja painikkeet pysyvät terävinä ja selkeinä tummassa tilassa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teks dan tombol tetap tajam dan jelas di Mode Gelap."
+          }
         }
       }
     },
@@ -2257,6 +2371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun avaat sovelluksen päivityksen jälkeen ensimmäistä kertaa, näet, mitä uutta on."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat pertama kali membuka aplikasi setelah pembaruan, lihat apa yang baru."
           }
         }
       }
@@ -2371,6 +2491,12 @@
             "state" : "translated",
             "value" : "Mitä uutta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang baru"
+          }
         }
       }
     },
@@ -2483,6 +2609,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Täysi englannin tuki"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukungan bahasa Inggris penuh"
           }
         }
       }
@@ -2597,6 +2729,12 @@
             "state" : "translated",
             "value" : "Vähennä liikettä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurangi Gerakan"
+          }
         }
       }
     },
@@ -2709,6 +2847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun Vähennä liikettä on päällä, näytön tehosteet rauhoittuvat."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan Kurangi Gerakan aktif, efek layar jadi lebih tenang."
           }
         }
       }
@@ -2823,6 +2967,12 @@
             "state" : "translated",
             "value" : "Poista kaikki tietosi kerralla sovelluksessa milloin haluat."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus semua catatan sekaligus dari dalam aplikasi kapan saja."
+          }
         }
       }
     },
@@ -2935,6 +3085,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asettelut suuremmalle tekstille"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata letak untuk teks lebih besar"
           }
         }
       }
@@ -3049,6 +3205,12 @@
             "state" : "translated",
             "value" : "Ohjaus näppäimistöllä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrol dengan keyboard"
+          }
         }
       }
     },
@@ -3161,6 +3323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat muistutuksen sopivaan aikaan, jotta kukaan ei unohda, mitä tuomio määräsi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan pengingat tepat waktu agar tidak ada yang lupa apa yang diputuskan dalam putusan."
           }
         }
       }
@@ -3275,6 +3443,12 @@
             "state" : "translated",
             "value" : "Taittuvan iPhonen asettelu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata letak iPhone lipat"
+          }
         }
       }
     },
@@ -3387,6 +3561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä taittuvan iPhonen leveää näyttöä kahtena rinnakkaisena ruutuna."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai layar lebar iPhone lipat sebagai dua panel berdampingan."
           }
         }
       }
@@ -3501,6 +3681,12 @@
             "state" : "translated",
             "value" : "Koti-valikon widgetit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget Layar Utama"
+          }
         }
       }
     },
@@ -3613,6 +3799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver lukee jokaisen painikkeen ja tiedon oikeassa järjestyksessä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver membacakan setiap tombol dan detail dengan urutan yang benar."
           }
         }
       }

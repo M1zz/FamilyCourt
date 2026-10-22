@@ -130,3 +130,10 @@ Nuijakuvake on entistä söpömpi
 Palautteen voi lähettää sovelluksessa
 Uudet ohje- ja esittelysivut avattu
 Viimeistelty sujuvampaan käyttöön
+
+### 앱스토어 (Bahasa Indonesia)
+
+Ikon palunya jadi makin imut
+Kirim masukan langsung di aplikasi
+Halaman bantuan dan info yang baru
+Disempurnakan agar lebih stabil
