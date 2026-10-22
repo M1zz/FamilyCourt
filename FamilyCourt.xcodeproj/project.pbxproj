@@ -205,6 +205,7 @@
 				"zh-Hant",
 				ru,
 				es,
+				de,
 				Base,
 			);
 			mainGroup = AG0000000000000000000001;

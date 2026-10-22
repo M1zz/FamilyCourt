@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support und Spielanleitung — Familiengericht</title>
+  <meta name="description" content="So benutzt du Familiengericht: häufige Fragen, Datensicherung und Kontakt.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>Support und Spielanleitung</h1>
+    <div class="sub">Familiengericht</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>Brauchst du Hilfe?</h2>
+      <p>Fehlermeldungen, Ideen für neue Funktionen oder alles andere: Wir freuen uns über deine Nachricht.</p>
+      <a href="mailto:leeo@kakao.com">E-Mail an leeo@kakao.com</a>
+    </div>
+
+    <section>
+      <h2>Häufig gestellte Fragen</h2>
+
+      <details>
+        <summary>Worum geht es in der App?</summary>
+        <p>Mit Familiengericht halten Familien zu Hause spielerische Rollenspiel-Prozesse ab, damit Kinder ganz nebenbei verstehen, was Recht, Fairness und Regeln bedeuten. Reiche etwas Ungerechtes als Zivilfall ein oder eine gebrochene Hausregel als Straffall, verteile dann die Rollen von Richter und Verteidiger und führe die Verhandlung.</p>
+      </details>
+
+      <details>
+        <summary>Wie alt muss man sein?</summary>
+        <p>Jedes Kind, das lesen kann, kann mit einem Elternteil spielen. Dank Verhandlungsskript und Anleitung können auch jüngere Kinder mit Hilfe eines Erwachsenen mitmachen.</p>
+      </details>
+
+      <details>
+        <summary>Brauche ich eine Internetverbindung?</summary>
+        <p>Nein. Verhandlungen, Protokolle und alles andere funktionieren offline. Internet und eine iCloud-Anmeldung brauchst du nur, wenn du dem Entwickler über „Feedback senden“ in den Einstellungen Feedback schickst.</p>
+      </details>
+
+      <details>
+        <summary>Wo werden meine Daten gespeichert?</summary>
+        <p>Familienmitglieder, Gesetzbuch, Verhandlungen und Urteile werden nur in einer Datei <code>familycourt.json</code> auf deinem Gerät gespeichert. Es wird nichts an einen externen Server gesendet. Details findest du in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+      </details>
+
+      <details>
+        <summary>Kann ich meine Protokolle sichern oder auf ein anderes Gerät übertragen?</summary>
+        <ul>
+          <li>Mit <b>Protokolle sichern</b> auf dem Startbildschirm oder in den Einstellungen exportierst du deine Daten in eine Datei.</li>
+          <li>Wähle auf einem anderen Gerät <b>Einstellungen → Protokolle importieren</b> und öffne diese Datei, um alles wiederherzustellen.</li>
+          <li>Auch Sicherungsdateien, die aus der älteren Webversion exportiert wurden, lassen sich importieren.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Ich habe die App mit einer kostenlosen Apple-ID installiert und sie lässt sich nicht öffnen.</summary>
+        <p>Mit einer kostenlosen Apple-ID installierte Apps müssen alle 7 Tage neu gestartet (neu installiert) werden. Deine Daten bleiben bei der Neuinstallation erhalten, wir empfehlen aber, vorher mit <b>Protokolle sichern</b> eine Sicherung anzulegen. Mit einem kostenpflichtigen Entwicklerkonto (99 $ pro Jahr) bleibt die App ein Jahr lang gültig.</p>
+      </details>
+
+      <details>
+        <summary>Wie installiere ich die App auf einem iPad?</summary>
+        <ul>
+          <li>Öffne auf einem Mac <code>FamilyCourt.xcodeproj</code> in Xcode.</li>
+          <li>Wähle unter Signing &amp; Capabilities deine eigene Apple-ID (Team).</li>
+          <li>Verbinde das iPad und tippe auf ▶ Run, um die App zu installieren.</li>
+          <li>Alle Schritte findest du in der <a href="https://github.com/M1zz/FamilyCourt">README auf GitHub</a>.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Wie lösche ich meine Daten vollständig?</summary>
+        <p>Wenn du die App löschst, werden alle auf deinem Gerät gespeicherten Daten entfernt. Familien- und Verhandlungsdaten verlassen das Gerät nie, daher bleibt nirgendwo sonst etwas zurück. Wenn du über „Feedback senden“ gesendetes Feedback löschen lassen möchtest, schreib an <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Über die App</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">Name</b> · Familiengericht (억울해요)</li>
+        <li><b style="color:var(--ink)">Plattform</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">Preis</b> · Kostenlos · Keine Werbung · Keine In-App-Käufe</li>
+        <li><b style="color:var(--ink)">Quellcode</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../support.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/support.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/support.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/support.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/support.html" hreflang="es" lang="es">Español</a> <b>Deutsch</b></div><!--/langs-->
+    © 2026 Familiengericht (억울해요) · <a href="index.html">Startseite</a> · <a href="privacy.html">Datenschutzerklärung</a></footer>
+</body>
+</html>

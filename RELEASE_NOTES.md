@@ -60,3 +60,10 @@ El icono del mazo es aún más simpático
 Puedes enviar comentarios desde la app
 Nuevas páginas de ayuda e información
 Pulimos la app para que vaya más fluida
+
+### 앱스토어 (Deutsch)
+
+Das Hammer-Symbol ist noch süßer
+Feedback direkt in der App senden
+Neue Hilfe- und Infoseiten sind da
+Für noch mehr Stabilität optimiert

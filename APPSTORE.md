@@ -487,3 +487,64 @@ Casos anteriores y lecciones sobre los tribunales
 Los casos terminados se guardan como precedentes, y la sección Conoce el tribunal explica qué hacen jueces, demandantes, fiscales y abogados y cómo transcurre un juicio.
 
 Todos los registros se quedan en este dispositivo y no hace falta cuenta. Puedes exportar tus registros a un archivo e importarlos de nuevo más adelante.
+
+## de
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/de/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/de/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/de/
+
+### 이름
+
+Familiengericht: Spielprozess
+
+### 부제
+
+Gerichtsspiel für die Familie
+
+### 키워드
+
+Kinder,Richter,Anwalt,Fairness,Geschwister,Streit,Regeln,Erziehung,Hammer,Urteil,Recht,Gesetz
+
+### 프로모션 텍스트
+
+Ungerecht behandelt? Klärt es vor Gericht statt unter Tränen. Kinder klagen selbst, die Familie spielt Richter und Verteidiger und lernt Recht und Fairness.
+
+### 설명
+
+Wenn Geschwister streiten oder ein Versprechen gebrochen wird, muss niemand schreien: Eröffnet einfach euren eigenen Familiengerichtssaal.
+Familiengericht ist eine Rollenspiel-App, in der deine Familie die Rollen von Richter, Kläger, Angeklagtem und Verteidiger übernimmt, alle Seiten anhört und ein Urteil fällt, ganz wie bei einem echten Prozess.
+
+Zivilfall: wenn etwas ungerecht scheint
+Wer sich ungerecht behandelt fühlt, reicht als Kläger die Klage ein. Er bestimmt, gegen wen sich der Fall richtet und wer Richter ist. Kinder können sogar gegen Mama und Papa klagen.
+
+Straffall: wenn eine Hausregel gebrochen wurde
+Wer den Regelbruch gesehen hat, wird Staatsanwalt und bringt den Fall vor Gericht. Der Richter wählt zwischen schuldig, nicht schuldig und Milde.
+
+Mit dem Skript wird es wie ein echter Prozess
+Von der Eröffnung der Verhandlung über die Darstellung jeder Seite, die Verteidigung und das Schlusswort bis zum Urteil sagt ein Skript allen, wer an der Reihe ist und was zu sagen ist. Schlag mit dem Hammer, damit es schön knallt, und ein Timer achtet auf die Redezeit.
+
+Regeln für Fairness
+Nur wer weder Kläger noch Angeklagter ist, kann Richter sein. Wer vor Gericht steht, kann sich vor der Verhandlung einen Verteidiger wählen.
+
+Urteile, die mit einem Versprechen enden, nicht nur mit einer Strafe
+Zusammen mit dem Urteil legst du ein Versprechen oder eine Auflage fest und hakst sie ab, bis sie erfüllt ist. Die vorgeschlagenen Auflagen zielen eher auf Wiedergutmachung als auf Bestrafung, etwa Dinge wieder aufräumen oder jemandem etwas Gutes tun.
+
+Unser Familiengesetzbuch
+Schreibt die Regeln auf, auf die ihr euch als Familie einigt, etwa Respekt, Aufräumen und Versprechen halten, und ergänzt oder ändert sie jederzeit.
+
+Worte passend zum Alter
+Stelle die Sprache auf drei Stufen um, Einfach, Standard und Gerichtssaal, damit vom Kindergartenkind bis zum älteren Kind alle mitspielen können.
+
+Frühere Fälle und Gerichtskunde
+Abgeschlossene Fälle bleiben als Präzedenzfälle erhalten, und der Bereich „Das Gericht kennenlernen“ erklärt, was Richter, Kläger, Staatsanwälte und Verteidiger tun und wie ein Prozess abläuft.
+
+Alle Protokolle bleiben auf diesem Gerät, ein Konto ist nicht nötig. Du kannst deine Protokolle in eine Datei exportieren und später wieder importieren.
