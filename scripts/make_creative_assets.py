@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -37,6 +37,7 @@ SEARCH = {
     "en": ("Family Court", "Feeling wronged?<br>Open court", "Your family plays<br>judge and counsel"),
     "en-GB": ("Family Court", "Feeling wronged?<br>Open court", "Your family plays<br>judge and counsel"),
     "ja": ("ファミリーコート", "「ずるい！」は<br>裁判で解決", "裁判官も弁護人も<br>家族みんなで演じよう"),
+    "ru": ("Семейный суд", "Обидно?<br>Открывайте суд", "Судью и защитника<br>играет ваша семья"),
 }
 
 # 헤더는 한 가지 약속: 다툼을 가족 역할극 재판으로 공정하게 푼다.
@@ -45,6 +46,7 @@ HEADER = {
     "en": ("A family court for kids", "Settle it with<br>a trial, not a fight"),
     "en-GB": ("A family court for children", "Settle it with<br>a trial, not a row"),
     "ja": ("子どものための家族裁判所", "けんかしないで<br>裁判で解決しよう"),
+    "ru": ("Семейный суд для детей", "Не ссоримся —<br>решаем судом"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(크림빛 바탕의 나무 망치)과 AccentColor(#C9A227) 에서 왔다.

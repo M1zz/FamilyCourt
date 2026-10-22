@@ -39,6 +39,12 @@
             "state" : "translated",
             "value" : "Face ID 鎖定"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Блокировка по Face ID"
+          }
         }
       }
     },
@@ -79,6 +85,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用 Face ID 或 Touch ID 鎖定 App，守護我們家的紀錄。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заблокируйте приложение с помощью Face ID или Touch ID, чтобы записи вашей семьи оставались личными."
           }
         }
       }
@@ -121,6 +133,12 @@
             "state" : "translated",
             "value" : "VoiceOver 更好用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобнее с VoiceOver"
+          }
         }
       }
     },
@@ -161,6 +179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "放大字體後，畫面會自動重新排版，不再被截斷。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экраны аккуратно перестраиваются, а не обрезаются, когда вы увеличиваете текст."
           }
         }
       }
@@ -203,6 +227,12 @@
             "state" : "translated",
             "value" : "跨裝置同步"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Синхронизация между устройствами"
+          }
         }
       }
     },
@@ -243,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一次刪除我的資料"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить все мои данные"
           }
         }
       }
@@ -285,6 +321,12 @@
             "state" : "translated",
             "value" : "深色模式"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная тема"
+          }
         }
       }
     },
@@ -325,6 +367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開啟「提高對比」或不易分辨顏色時，也能輕鬆看清內容。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всё хорошо видно, даже если включена повышенная контрастность или трудно различать цвета."
           }
         }
       }
@@ -367,6 +415,12 @@
             "state" : "translated",
             "value" : "讓 App 支援更多語言。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользуйтесь приложением на большем числе языков."
+          }
         }
       }
     },
@@ -407,6 +461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更多語言"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше языков"
           }
         }
       }
@@ -449,6 +509,12 @@
             "state" : "translated",
             "value" : "更易讀的顏色與對比"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобные цвета и контраст"
+          }
         }
       }
     },
@@ -489,6 +555,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "提出案件時即使 App 中途關閉，寫到一半的內容也會保留。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "То, что вы писали в деле, не пропадёт, даже если приложение закроется на полпути."
           }
         }
       }
@@ -531,6 +603,12 @@
             "state" : "translated",
             "value" : "接著寫未完成的案件"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить с того же места"
+          }
         }
       }
     },
@@ -571,6 +649,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在 iPad 上只用鍵盤就能使用主要功能。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользуйтесь основными функциями на iPad только с клавиатуры."
           }
         }
       }
@@ -613,6 +697,12 @@
             "state" : "translated",
             "value" : "在 iPhone 和 iPad 上接著使用同一份紀錄。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ведите одни и те же записи на iPhone и iPad."
+          }
         }
       }
     },
@@ -653,6 +743,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "提醒"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминания"
           }
         }
       }
@@ -695,6 +791,12 @@
             "state" : "translated",
             "value" : "不用開啟 App，在主畫面上就能查看進行中的案件。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следите за текущими делами прямо на экране «Домой», не открывая приложение."
+          }
         }
       }
     },
@@ -735,6 +837,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "整個 App 也可以使用英文。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всё приложение можно использовать и на английском."
           }
         }
       }
@@ -777,6 +885,12 @@
             "state" : "translated",
             "value" : "深色畫面下，文字和按鈕依然清晰分明。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В тёмной теме текст и кнопки остаются чёткими и ясными."
+          }
         }
       }
     },
@@ -817,6 +931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新後第一次開啟 App 時，告訴你有哪些新內容。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Когда вы впервые откроете приложение после обновления, вы увидите, что нового."
           }
         }
       }
@@ -859,6 +979,12 @@
             "state" : "translated",
             "value" : "更新內容"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового"
+          }
         }
       }
     },
@@ -899,6 +1025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完整英文支援"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полная поддержка английского"
           }
         }
       }
@@ -941,6 +1073,12 @@
             "state" : "translated",
             "value" : "減少動態效果"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уменьшение движения"
+          }
         }
       }
     },
@@ -981,6 +1119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開啟「減少動態效果」後，畫面特效會更平緩。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
           }
         }
       }
@@ -1023,6 +1167,12 @@
             "state" : "translated",
             "value" : "需要時，可以在 App 內一次清除所有紀錄。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В любой момент можно стереть все записи сразу, не выходя из приложения."
+          }
         }
       }
     },
@@ -1063,6 +1213,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適應大字體的版面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экраны для крупного текста"
           }
         }
       }
@@ -1105,6 +1261,12 @@
             "state" : "translated",
             "value" : "用鍵盤操作"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управление с клавиатуры"
+          }
         }
       }
     },
@@ -1145,6 +1307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在適當的時間提醒，讓大家不會忘記判決裡訂下的事。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вовремя напомним, чтобы никто не забыл, что решил приговор."
           }
         }
       }
@@ -1187,6 +1355,12 @@
             "state" : "translated",
             "value" : "摺疊式 iPhone 版面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран для складного iPhone"
+          }
         }
       }
     },
@@ -1227,6 +1401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在摺疊式 iPhone 上，把寬大的螢幕分成左右兩欄使用。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Широкий экран складного iPhone делится на две панели рядом."
           }
         }
       }
@@ -1269,6 +1449,12 @@
             "state" : "translated",
             "value" : "主畫面小工具"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виджеты на экране «Домой»"
+          }
         }
       }
     },
@@ -1309,6 +1495,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旁白會依正確的順序，完整朗讀每個按鈕和內容。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver читает каждую кнопку и каждую подробность в правильном порядке."
           }
         }
       }

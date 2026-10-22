@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Семейный суд — домашние суды для детей и семьи</title>
+  <meta name="description" content="«Семейный суд» — приложение для iOS, в котором семья играет в домашние судебные заседания, а дети узнают о законе и справедливости. Все записи хранятся только на вашем устройстве.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
+  <style>
+    :root {
+      --bg: #fdf9f0;
+      --card: #ffffff;
+      --ink: #2b2118;
+      --muted: #6f6152;
+      --accent: #c8892e;
+      --accent-soft: #f5e6c8;
+      --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712;
+        --card: #26201a;
+        --ink: #f3ebde;
+        --muted: #b4a48f;
+        --accent: #e6ac52;
+        --accent-soft: #3a2f20;
+        --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+    header.hero {
+      text-align: center;
+      padding: 80px 24px 64px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    .badge {
+      font-size: 72px;
+      display: inline-block;
+      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
+      animation: tap 2.4s ease-in-out infinite;
+    }
+    @keyframes tap {
+      0%, 88%, 100% { transform: rotate(0deg); }
+      92% { transform: rotate(-18deg); }
+      96% { transform: rotate(4deg); }
+    }
+    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
+    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
+    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+    .btn {
+      display: inline-block; padding: 13px 24px; border-radius: 14px;
+      font-weight: 700; text-decoration: none; font-size: 1rem;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
+    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
+    section { padding: 40px 0; }
+    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 24px; box-shadow: var(--shadow);
+    }
+    .card .ico { font-size: 32px; margin-bottom: 10px; }
+    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 0.96rem; }
+    .steps { counter-reset: step; list-style: none; }
+    .steps li {
+      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
+    }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before {
+      counter-increment: step; content: counter(step);
+      position: absolute; left: 0; top: 12px;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent);
+      font-weight: 800; display: grid; place-items: center;
+    }
+    .safe {
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
+    }
+    .safe .lock { font-size: 40px; }
+    footer {
+      text-align: center; padding: 48px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="badge">⚖️</div>
+    <h1>Семейный суд</h1>
+    <div class="en">Несправедливость решаем в суде</div>
+    <p class="tagline">Учимся закону и справедливости в семейной ролевой игре — приложение для iOS, где дети становятся судьями и адвокатами</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="support.html">Поддержка и правила игры</a>
+      <a class="btn btn-ghost" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Что это за приложение?</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="ico">😤</div>
+          <h3>Кажется, что несправедливо</h3>
+          <p>Ребёнок может стать <b>истцом</b> и подать иск. Гражданский процесс помогает облечь обиду в слова.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🚨</div>
+          <h3>Нарушено правило дома</h3>
+          <p>Если нарушено семейное правило, дело возбуждает <b>прокурор</b>. Судья выносит решение: виновен, невиновен или снисхождение.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🧑‍⚖️</div>
+          <h3>Честные роли для всех</h3>
+          <p>Судьёй может быть только тот, кто не истец и не ответчик. Каждый вправе выбрать защитника.</p>
+        </div>
+        <div class="card">
+          <div class="ico">📖</div>
+          <h3>Наш семейный кодекс</h3>
+          <p>Вместе придумайте семейные правила и проведите каждое дело от заседания до приговора и обещания.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Как это работает</h2>
+      <ol class="steps">
+        <li>Вместе решите, какие у вас <b>семейные законы</b>, и запишите их в кодекс.</li>
+        <li>Подайте <b>гражданский иск</b>, если что-то несправедливо, или <b>уголовное дело</b>, если нарушено правило.</li>
+        <li>Распределите <b>роли</b> истца, ответчика, судьи и защитника и откройте заседание.</li>
+        <li>Выслушайте каждую сторону, и судья вынесет <b>приговор</b>.</li>
+        <li>Составьте по приговору <b>обещание</b> и отметьте его, когда оно выполнено.</li>
+      </ol>
+    </section>
+
+    <section>
+      <div class="safe">
+        <div class="lock">🔒</div>
+        <div>
+          <h2 style="margin-bottom:6px;">Безопасно для детей</h2>
+          <p style="color:var(--muted);">Без регистрации, рекламы и слежки. Ваша семья, кодекс и записи заседаний хранятся <b>только на вашем устройстве</b> и никуда не отправляются. Разработчик получает только отзывы, которые вы сами отправляете из настроек, и анонимную статистику использования, по которой никого нельзя узнать. Подробности — в <a href="privacy.html" style="color:var(--accent);font-weight:700;">Политике конфиденциальности</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <b>Русский</b></div><!--/langs-->
+    <div class="foot-links"> <a href="index.html">Главная</a> <a href="privacy.html">Политика конфиденциальности</a> <a href="support.html">Поддержка</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Семейный суд (억울해요) · Связаться с нами: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+</body>
+</html>
