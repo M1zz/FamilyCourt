@@ -893,13 +893,13 @@ Civilní případ: když se zdá, že se stala křivda
 Ten, kdo se cítí poškozen, podá žalobu jako žalobce. Sám si vybere, koho bude žalovat a kdo bude soudcem. Děti mohou žalovat i maminku a tatínka.
 
 Trestní případ: když je porušeno pravidlo domácnosti
-Kdo viděl porušení pravidla, stane se žalobcem a předloží případ. Soudce volí mezi vinen, nevinen a shovívavost.
+Kdo viděl porušení pravidla, stane se státním zástupcem a předloží případ. Soudce volí mezi vinen, nevinen a shovívavost.
 
 Podle scénáře je to jako skutečný soud
 Od zahájení jednání přes příběh každé strany, obhajobu a závěrečnou řeč až po rozsudek scénář všem říká, kdo je na řadě a co říct. Udeřte kladívkem a ozve se pořádná rána, přičemž časovač hlídá čas každého řečníka.
 
 Pravidla, která zaručují spravedlnost
-Soudcem může být jen ten, kdo není žalobce ani obžalovaný. Kdo stane před soudem, si před líčením může vybrat obhájce, který mu pomůže.
+Soudcem může být jen ten, kdo není žalobce ani obžalovaný. Kdo stojí před soudem, si před líčením může vybrat obhájce, který mu pomůže.
 
 Rozsudky, které končí slibem, ne jen trestem
 Spolu s rozsudkem se stanoví slib nebo sankce, které je třeba splnit, a odškrtávají se, dokud nejsou hotové. Navrhované sankce míří spíš k nápravě než k trestání, třeba vrátit věci na místo nebo někomu udělat radost.
