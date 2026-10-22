@@ -135,6 +135,12 @@
             "state" : "translated",
             "value" : "Blokada Face ID"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID-lås"
+          }
         }
       }
     },
@@ -271,6 +277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zablokuj aplikację za pomocą Face ID lub Touch ID, by zapisy Twojej rodziny pozostały prywatne."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås appen med Face ID eller Touch ID så att familjens uppgifter förblir privata."
           }
         }
       }
@@ -409,6 +421,12 @@
             "state" : "translated",
             "value" : "Lepsza obsługa VoiceOver"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bättre stöd för VoiceOver"
+          }
         }
       }
     },
@@ -545,6 +563,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ekrany układają się porządnie na nowo zamiast się obcinać po powiększeniu tekstu."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skärmar ordnas snyggt om i stället för att klippas när du förstorar texten."
           }
         }
       }
@@ -683,6 +707,12 @@
             "state" : "translated",
             "value" : "Synchronizacja między urządzeniami"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synkronisering mellan enheter"
+          }
         }
       }
     },
@@ -819,6 +849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Usuń wszystkie moje dane"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera alla mina data"
           }
         }
       }
@@ -957,6 +993,12 @@
             "state" : "translated",
             "value" : "Tryb ciemny"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mörkt läge"
+          }
         }
       }
     },
@@ -1093,6 +1135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Czytaj wszystko bez trudu, nawet przy włączonym zwiększonym kontraście albo gdy trudno rozróżniać kolory."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läs allt lätt, även med Öka kontrast på eller om färger är svåra att skilja åt."
           }
         }
       }
@@ -1231,6 +1279,12 @@
             "state" : "translated",
             "value" : "Korzystaj z aplikacji w większej liczbie języków."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd appen på fler språk."
+          }
         }
       }
     },
@@ -1367,6 +1421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Więcej języków"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fler språk"
           }
         }
       }
@@ -1505,6 +1565,12 @@
             "state" : "translated",
             "value" : "Wygodniejsze kolory i kontrast"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behagligare färger och kontrast"
+          }
         }
       }
     },
@@ -1641,6 +1707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "To, co pisałeś(-aś) w sprawie, zostaje, nawet jeśli aplikacja zamknie się w połowie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det du höll på att skriva i ett mål finns kvar, även om appen stängs mitt i."
           }
         }
       }
@@ -1779,6 +1851,12 @@
             "state" : "translated",
             "value" : "Kontynuuj od miejsca, w którym skończyłeś(-aś)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsätt där du slutade"
+          }
         }
       }
     },
@@ -1915,6 +1993,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Korzystaj z głównych funkcji na iPadzie, używając samej klawiatury."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd huvudfunktionerna på iPad med bara ett tangentbord."
           }
         }
       }
@@ -2053,6 +2137,12 @@
             "state" : "translated",
             "value" : "Miej te same zapisy na iPhonie i iPadzie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ha samma uppgifter på iPhone och iPad."
+          }
         }
       }
     },
@@ -2189,6 +2279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przypomnienia"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påminnelser"
           }
         }
       }
@@ -2327,6 +2423,12 @@
             "state" : "translated",
             "value" : "Sprawdzaj toczące się sprawy na ekranie głównym bez otwierania aplikacji."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se pågående mål direkt på hemskärmen utan att öppna appen."
+          }
         }
       }
     },
@@ -2463,6 +2565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Korzystaj z całej aplikacji także po angielsku."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd hela appen även på engelska."
           }
         }
       }
@@ -2601,6 +2709,12 @@
             "state" : "translated",
             "value" : "Tekst i przyciski pozostają wyraźne i czytelne w trybie ciemnym."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text och knappar förblir skarpa och tydliga i mörkt läge."
+          }
         }
       }
     },
@@ -2737,6 +2851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gdy po aktualizacji pierwszy raz otworzysz aplikację, zobaczysz, co nowego."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
           }
         }
       }
@@ -2875,6 +2995,12 @@
             "state" : "translated",
             "value" : "Co nowego"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheter"
+          }
         }
       }
     },
@@ -3011,6 +3137,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pełna obsługa języka angielskiego"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fullt stöd för engelska"
           }
         }
       }
@@ -3149,6 +3281,12 @@
             "state" : "translated",
             "value" : "Redukcja ruchu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minska rörelse"
+          }
         }
       }
     },
@@ -3285,6 +3423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gdy włączysz Redukcję ruchu, efekty na ekranie stają się spokojniejsze."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Minska rörelse på blir skärmeffekterna lugnare."
           }
         }
       }
@@ -3423,6 +3567,12 @@
             "state" : "translated",
             "value" : "Usuń wszystkie zapisy naraz w aplikacji, kiedy chcesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Radera alla dina uppgifter på en gång i appen när du vill."
+          }
         }
       }
     },
@@ -3559,6 +3709,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Układy dla większego tekstu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layouter för större text"
           }
         }
       }
@@ -3697,6 +3853,12 @@
             "state" : "translated",
             "value" : "Sterowanie klawiaturą"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Styrning med tangentbord"
+          }
         }
       }
     },
@@ -3833,6 +3995,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dostaniesz przypomnienie we właściwym czasie, by nikt nie zapomniał, co postanowił wyrok."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påminnelse i rätt tid så att ingen glömmer vad domen bestämde."
           }
         }
       }
@@ -3971,6 +4139,12 @@
             "state" : "translated",
             "value" : "Układ dla składanego iPhone’a"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout för vikbar iPhone"
+          }
         }
       }
     },
@@ -4107,6 +4281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Użyj szerokiego ekranu składanego iPhone’a jako dwóch paneli obok siebie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd den breda skärmen på en vikbar iPhone som två rutor bredvid varandra."
           }
         }
       }
@@ -4245,6 +4425,12 @@
             "state" : "translated",
             "value" : "Widżety na ekranie głównym"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgetar på hemskärmen"
+          }
         }
       }
     },
@@ -4381,6 +4567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver czyta każdy przycisk i szczegół w odpowiedniej kolejności."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver läser upp varje knapp och detalj i rätt ordning."
           }
         }
       }

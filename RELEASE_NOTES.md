@@ -158,3 +158,10 @@ Ikona młotka jest jeszcze słodsza
 Opinię wyślesz prosto z aplikacji
 Otworzyliśmy nowe strony pomocy i opisu
 Dopracowaliśmy aplikację dla płynności
+
+### 앱스토어 (Svenska)
+
+Klubbikonen har blivit ännu sötare
+Skicka feedback direkt i appen
+Nya hjälp- och informationssidor
+Finslipad för smidigare användning

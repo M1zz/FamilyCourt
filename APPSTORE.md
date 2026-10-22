@@ -1341,3 +1341,64 @@ Dawne sprawy i lekcje o sądzie
 Zakończone sprawy są zachowywane jako precedensy, a dział Poznaj sąd wyjaśnia, co robią sędziowie, powodowie, prokuratorzy i obrońcy oraz jak przebiega proces.
 
 Wszystkie zapisy zostają na tym urządzeniu i nie trzeba mieć konta. Możesz wyeksportować zapisy do pliku i później zaimportować je ponownie.
+
+## sv
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/sv/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/sv/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/sv/
+
+### 이름
+
+Familjerätten: Lek rättegång
+
+### 부제
+
+Rättegångsspel för familjen
+
+### 키워드
+
+barn,domare,advokat,rättvisa,syskon,regler,uppfostran,klubba,dom,lag,åklagare,käranden,spel
+
+### 프로모션 텍스트
+
+Något orättvist? Lös det med en rättegång, inte med tårar. Barnet lämnar in ett mål, familjen är domare och försvarare, och ni lär er om lag och rättvisa.
+
+### 설명
+
+När syskon bråkar eller ett löfte bryts, skrik inte, öppna er egen familjerätt.
+Familjerätten är en rollspelsapp där familjen spelar domare, kärande, åtalad och försvarare, hör alla sidor och kommer fram till en dom, precis som i en riktig rättegång.
+
+Tvistemål: när något känns orättvist
+Den som känner sig förorättad lämnar in målet som kärande. Hen väljer vem målet riktas mot och vem som ska vara domare. Barn kan till och med stämma mamma och pappa.
+
+Brottmål: när en husregel har brutits
+Den som såg regeln brytas blir åklagare och för målet. Domaren väljer mellan skyldig, oskyldig och mildhet.
+
+Följ manuset så känns det som en riktig rättegång
+Från att förhandlingen öppnas till varje parts berättelse, försvaret, slutanförandet och domen talar ett manus om för alla vems tur det är och vad de ska säga. Slå med klubban för ett härligt brak, och en timer håller koll på varje talares tid.
+
+Regler som håller det rättvist
+Bara den som varken är kärande eller åtalad kan vara domare. Den som ställs inför rätta kan välja en försvarare som hjälper till före förhandlingen.
+
+Domar som slutar med ett löfte, inte bara ett straff
+Tillsammans med domen bestäms ett löfte eller en påföljd som ska hållas, och den bockas av tills den är klar. De föreslagna påföljderna handlar mer om att gottgöra än att straffa, som att lägga tillbaka saker eller göra något snällt för någon.
+
+Vår familjelagbok
+Skriv ner reglerna som familjen är överens om, som respekt, att städa och att hålla löften, och lägg till eller ändra dem när som helst.
+
+Ord som passar barnets ålder
+Växla språket mellan tre nivåer, Enkel, Standard och Rättssal, så att alla från förskolebarn till större barn kan vara med.
+
+Tidigare mål och lektioner om rätten
+Avslutade mål sparas som prejudikat, och avsnittet Lär dig om rätten förklarar vad domare, kärande, åklagare och försvarare gör och hur en rättegång går till.
+
+Alla uppgifter stannar på den här enheten och inget konto behövs. Du kan exportera dina uppgifter till en fil och importera dem igen senare.
