@@ -165,3 +165,10 @@ Klubbikonen har blivit ännu sötare
 Skicka feedback direkt i appen
 Nya hjälp- och informationssidor
 Finslipad för smidigare användning
+
+### 앱스토어 (Türkçe)
+
+Tokmak simgesi daha da sevimli oldu
+Uygulama içinden geri bildirim gönderin
+Yeni yardım ve tanıtım sayfaları açıldı
+Daha akıcı kullanım için cilalandı

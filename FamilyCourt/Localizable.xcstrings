@@ -141,6 +141,12 @@
             "state" : "translated",
             "value" : "Face ID-lås"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kilidi"
+          }
         }
       }
     },
@@ -283,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås appen med Face ID eller Touch ID så att familjens uppgifter förblir privata."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ailenizin kayıtlarını gizli tutmak için uygulamayı Face ID veya Touch ID ile kilitleyin."
           }
         }
       }
@@ -427,6 +439,12 @@
             "state" : "translated",
             "value" : "Bättre stöd för VoiceOver"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha iyi VoiceOver desteği"
+          }
         }
       }
     },
@@ -569,6 +587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skärmar ordnas snyggt om i stället för att klippas när du förstorar texten."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metni büyüttüğünüzde ekranlar kesilmek yerine düzgünce yeniden yerleşir."
           }
         }
       }
@@ -713,6 +737,12 @@
             "state" : "translated",
             "value" : "Synkronisering mellan enheter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihazlar arası eşitleme"
+          }
         }
       }
     },
@@ -855,6 +885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera alla mina data"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm verilerimi sil"
           }
         }
       }
@@ -999,6 +1035,12 @@
             "state" : "translated",
             "value" : "Mörkt läge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu Mod"
+          }
         }
       }
     },
@@ -1141,6 +1183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Läs allt lätt, även med Öka kontrast på eller om färger är svåra att skilja åt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrastı Artır açıkken ya da renkleri ayırt etmek zorsa bile her şeyi kolayca okuyun."
           }
         }
       }
@@ -1285,6 +1333,12 @@
             "state" : "translated",
             "value" : "Använd appen på fler språk."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı daha fazla dilde kullanın."
+          }
         }
       }
     },
@@ -1427,6 +1481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fler språk"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla dil"
           }
         }
       }
@@ -1571,6 +1631,12 @@
             "state" : "translated",
             "value" : "Behagligare färger och kontrast"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha rahat renkler ve kontrast"
+          }
         }
       }
     },
@@ -1713,6 +1779,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det du höll på att skriva i ett mål finns kvar, även om appen stängs mitt i."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir davada yazdıklarınız, uygulama yarıda kapansa bile yerinde kalır."
           }
         }
       }
@@ -1857,6 +1929,12 @@
             "state" : "translated",
             "value" : "Fortsätt där du slutade"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaldığınız yerden devam edin"
+          }
         }
       }
     },
@@ -1999,6 +2077,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd huvudfunktionerna på iPad med bara ett tangentbord."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPad’de ana özellikleri yalnızca klavyeyle kullanın."
           }
         }
       }
@@ -2143,6 +2227,12 @@
             "state" : "translated",
             "value" : "Ha samma uppgifter på iPhone och iPad."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iPhone ve iPad’inizde aynı kayıtları kullanın."
+          }
         }
       }
     },
@@ -2285,6 +2375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påminnelser"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hatırlatıcılar"
           }
         }
       }
@@ -2429,6 +2525,12 @@
             "state" : "translated",
             "value" : "Se pågående mål direkt på hemskärmen utan att öppna appen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı açmadan devam eden davaları doğrudan Ana Ekran’dan kontrol edin."
+          }
         }
       }
     },
@@ -2571,6 +2673,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd hela appen även på engelska."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamanın tamamını İngilizce de kullanın."
           }
         }
       }
@@ -2715,6 +2823,12 @@
             "state" : "translated",
             "value" : "Text och knappar förblir skarpa och tydliga i mörkt läge."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metin ve düğmeler Koyu Mod’da net ve belirgin kalır."
+          }
         }
       }
     },
@@ -2857,6 +2971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güncellemeden sonra uygulamayı ilk açışınızda nelerin yeni olduğunu görün."
           }
         }
       }
@@ -3001,6 +3121,12 @@
             "state" : "translated",
             "value" : "Nyheter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenilikler"
+          }
         }
       }
     },
@@ -3143,6 +3269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fullt stöd för engelska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam İngilizce desteği"
           }
         }
       }
@@ -3287,6 +3419,12 @@
             "state" : "translated",
             "value" : "Minska rörelse"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareketi Azalt"
+          }
         }
       }
     },
@@ -3429,6 +3567,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med Minska rörelse på blir skärmeffekterna lugnare."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareketi Azalt açıkken ekran efektleri sakinleşir."
           }
         }
       }
@@ -3573,6 +3717,12 @@
             "state" : "translated",
             "value" : "Radera alla dina uppgifter på en gång i appen när du vill."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstediğiniz zaman tüm kayıtlarınızı uygulama içinden tek seferde silin."
+          }
         }
       }
     },
@@ -3715,6 +3865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layouter för större text"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük metne uygun düzenler"
           }
         }
       }
@@ -3859,6 +4015,12 @@
             "state" : "translated",
             "value" : "Styrning med tangentbord"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klavyeyle kontrol"
+          }
         }
       }
     },
@@ -4001,6 +4163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Få en påminnelse i rätt tid så att ingen glömmer vad domen bestämde."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kararın neye hükmettiğini kimse unutmasın diye doğru zamanda hatırlatma alın."
           }
         }
       }
@@ -4145,6 +4313,12 @@
             "state" : "translated",
             "value" : "Layout för vikbar iPhone"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone düzeni"
+          }
         }
       }
     },
@@ -4287,6 +4461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd den breda skärmen på en vikbar iPhone som två rutor bredvid varandra."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone’un geniş ekranını yan yana iki bölme olarak kullanın."
           }
         }
       }
@@ -4431,6 +4611,12 @@
             "state" : "translated",
             "value" : "Widgetar på hemskärmen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekran widget’ları"
+          }
         }
       }
     },
@@ -4573,6 +4759,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver läser upp varje knapp och detalj i rätt ordning."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver her düğmeyi ve ayrıntıyı doğru sırayla okur."
           }
         }
       }

@@ -1402,3 +1402,64 @@ Tidigare mål och lektioner om rätten
 Avslutade mål sparas som prejudikat, och avsnittet Lär dig om rätten förklarar vad domare, kärande, åklagare och försvarare gör och hur en rättegång går till.
 
 Alla uppgifter stannar på den här enheten och inget konto behövs. Du kan exportera dina uppgifter till en fil och importera dem igen senare.
+
+## tr
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/tr/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/tr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/tr/
+
+### 이름
+
+Aile Mahkemesi: Evde Dava
+
+### 부제
+
+Aileyle rol yapma davaları
+
+### 키워드
+
+çocuk,hakim,avukat,adalet,kardeş,kurallar,eğitim,tokmak,karar,hukuk,savcı,davacı,oyun
+
+### 프로모션 텍스트
+
+Haksızlığa mı uğradın? Gözyaşıyla değil dava ile çöz. Çocuk dava açar, aile hakim ve savunma avukatı olur; hep birlikte hukuku ve adaleti öğrenirsiniz.
+
+### 설명
+
+Kardeşler kavga ettiğinde ya da bir söz tutulmadığında bağırmak yerine kendi aile mahkemenizi açın.
+Aile Mahkemesi, ailenin hakim, davacı, sanık ve savunma avukatı rollerini üstlendiği, her tarafı dinleyip gerçek bir dava gibi karar verdiği bir rol yapma uygulamasıdır.
+
+Hukuk davası: bir şey haksız geldiğinde
+Haksızlığa uğradığını düşünen kişi davacı olarak dilekçesini verir. Davanın kime karşı açılacağını ve kimin hakim olacağını o seçer. Çocuklar anneyi ve babayı bile dava edebilir.
+
+Ceza davası: bir ev kuralı çiğnendiğinde
+Kuralın çiğnendiğini gören kişi savcı olur ve davayı getirir. Hakim; suçlu, suçsuz ve hoşgörü arasından seçim yapar.
+
+Metni izleyin, gerçek bir dava gibi olsun
+Duruşmanın açılışından her tarafın anlatımına, savunmaya, son sözlere ve karara kadar bir metin herkese sıranın kimde olduğunu ve ne söyleyeceğini gösterir. Tokmağa vurun, güzel bir ses çıksın; bir zamanlayıcı da her konuşmacının süresini tutar.
+
+Adaleti koruyan kurallar
+Yalnızca davacı ya da sanık olmayan biri hakim olabilir. Yargılanan kişi, duruşmadan önce kendisine yardım edecek bir savunma avukatı seçebilir.
+
+Yalnızca cezayla değil, sözle biten kararlar
+Kararla birlikte tutulacak bir söz ya da yaptırım belirlenir ve tamamlanana kadar işaretlenir. Önerilen yaptırımlar cezalandırmaktan çok telafiye yöneliktir; örneğin eşyaları yerine koymak ya da birine iyilik yapmak gibi.
+
+Aile kanun kitabımız
+Saygı, toplanma düzeni ve söz tutma gibi ailenin üzerinde anlaştığı kuralları yazın; istediğiniz zaman ekleyin veya değiştirin.
+
+Çocuğun yaşına uygun sözcükler
+Dili Basit, Standart ve Mahkeme olmak üzere üç düzey arasında değiştirin; anaokulundan büyük çocuklara kadar herkes oynayabilsin.
+
+Geçmiş davalar ve mahkeme dersleri
+Biten davalar emsal olarak saklanır; Mahkemeyi Öğren bölümü hakimlerin, davacıların, savcıların ve avukatların ne yaptığını ve bir davanın nasıl ilerlediğini anlatır.
+
+Tüm kayıtlar bu cihazda kalır ve hesap gerekmez. Kayıtlarınızı bir dosyaya aktarabilir ve daha sonra yeniden içe aktarabilirsiniz.

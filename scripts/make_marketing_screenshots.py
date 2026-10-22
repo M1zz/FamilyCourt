@@ -17,7 +17,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -43,7 +43,8 @@ SHOTS = [
         "nb": ("Noe urettferdig?<br>Åpne retten", "Både barn og foreldre kan levere sak"),
         "nl": ("Iets oneerlijk?<br>Open de zitting", "Kinderen en ouders kunnen een zaak aanspannen"),
         "pl": ("Coś niesprawiedliwego?<br>Otwórzcie rozprawę", "Dzieci i rodzice mogą wnieść sprawę"),
-        "sv": ("Något orättvist?<br>Öppna rätten", "Både barn och föräldrar kan väcka talan")}),
+        "sv": ("Något orättvist?<br>Öppna rätten", "Både barn och föräldrar kan väcka talan"),
+        "tr": ("Haksızlık mı var?<br>Duruşmayı açın", "Çocuklar da ebeveynler de dava açabilir")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
@@ -66,7 +67,8 @@ SHOTS = [
         "nb": ("Skriv søksmålet<br>selv", "Den som leverer, velger tiltalt og dommer"),
         "nl": ("Schrijf de dagvaarding<br>zelf", "Wie indient, kiest verdachte en rechter"),
         "pl": ("Pozew napiszesz<br>sam", "Składający wybiera pozwanego i sędziego"),
-        "sv": ("Skriv stämningen<br>själv", "Den som lämnar in väljer åtalad och domare")}),
+        "sv": ("Skriv stämningen<br>själv", "Den som lämnar in väljer åtalad och domare"),
+        "tr": ("Dilekçeyi<br>kendin yaz", "Davayı açan sanığı ve hakimi seçer")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
@@ -89,7 +91,8 @@ SHOTS = [
         "nb": ("Følg manuset<br>for en ekte rettssak", "Hver replikk viser hvem sin tur det er"),
         "nl": ("Volg het script<br>voor een echt proces", "Elke regel zegt wie er aan de beurt is"),
         "pl": ("Idź za scenariuszem<br>jak na prawdziwym procesie", "Każda kwestia mówi, czyja kolej"),
-        "sv": ("Följ manuset<br>för en riktig rättegång", "Varje replik visar vems tur det är")}),
+        "sv": ("Följ manuset<br>för en riktig rättegång", "Varje replik visar vems tur det är"),
+        "tr": ("Metni izle,<br>gerçek dava olsun", "Her satır sıranın kimde olduğunu söyler")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
         "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
@@ -112,7 +115,8 @@ SHOTS = [
         "nb": ("Dommer ender<br>med et løfte", "Sett et løfte og kryss det av til slutt"),
         "nl": ("Vonnissen eindigen<br>met een belofte", "Spreek een belofte af en vink af tot het einde"),
         "pl": ("Wyrok kończy się<br>obietnicą", "Ustal obietnicę i odhaczaj ją do końca"),
-        "sv": ("Domen slutar<br>med ett löfte", "Bestäm ett löfte och bocka av det hela vägen")}),
+        "sv": ("Domen slutar<br>med ett löfte", "Bestäm ett löfte och bocka av det hela vägen"),
+        "tr": ("Karar bir sözle<br>biter", "Bir söz belirle, sonuna kadar işaretle")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
         "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
@@ -135,7 +139,8 @@ SHOTS = [
         "nb": ("Skriv husets lover<br>sammen", "Legg til og endre paragrafer når som helst"),
         "nl": ("Schrijf samen de<br>wetten van het huis", "Voeg artikelen toe en pas ze aan wanneer je wilt"),
         "pl": ("Prawa domu<br>spiszcie razem", "Dodawaj i zmieniaj artykuły, kiedy chcesz"),
-        "sv": ("Skriv husets lagar<br>tillsammans", "Lägg till och ändra paragrafer när som helst")}),
+        "sv": ("Skriv husets lagar<br>tillsammans", "Lägg till och ändra paragrafer när som helst"),
+        "tr": ("Evin kanunlarını<br>birlikte yazın", "Maddeleri istediğiniz zaman ekleyin ve değiştirin")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
@@ -158,7 +163,8 @@ SHOTS = [
         "nb": ("Dommer, saksøker, forsvarer:<br>lær alle rollene", "Roller og trinn i rettssaken med enkle ord"),
         "nl": ("Rechter, eiser, raadsman:<br>leer elke rol", "Rollen en stappen van het proces in gewone taal"),
         "pl": ("Sędzia, powód, obrońca:<br>poznaj każdą rolę", "Role i etapy procesu prostymi słowami"),
-        "sv": ("Domare, kärande, försvarare:<br>lär dig varje roll", "Roller och steg i rättegången med enkla ord")}),
+        "sv": ("Domare, kärande, försvarare:<br>lär dig varje roll", "Roller och steg i rättegången med enkla ord"),
+        "tr": ("Hakim, davacı, avukat:<br>her rolü öğren", "Roller ve dava adımları sade sözlerle")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.
