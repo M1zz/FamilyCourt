@@ -206,6 +206,7 @@
 				ru,
 				es,
 				de,
+				fr,
 				Base,
 			);
 			mainGroup = AG0000000000000000000001;

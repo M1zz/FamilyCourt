@@ -548,3 +548,64 @@ Frühere Fälle und Gerichtskunde
 Abgeschlossene Fälle bleiben als Präzedenzfälle erhalten, und der Bereich „Das Gericht kennenlernen“ erklärt, was Richter, Kläger, Staatsanwälte und Verteidiger tun und wie ein Prozess abläuft.
 
 Alle Protokolle bleiben auf diesem Gerät, ein Konto ist nicht nötig. Du kannst deine Protokolle in eine Datei exportieren und später wieder importieren.
+
+## fr
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/fr/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/fr/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/fr/
+
+### 이름
+
+Tribunal Familial : Procès
+
+### 부제
+
+Jeux de procès en famille
+
+### 키워드
+
+enfants,juge,avocat,équité,fratrie,règles,tâches,éducation,marteau,verdict,justice,loi,procureur
+
+### 프로모션 텍스트
+
+Une injustice ? Réglez-la par un procès, pas par des larmes. L’enfant porte plainte, la famille joue juge et avocat, et tous apprennent la loi et l’équité.
+
+### 설명
+
+Quand les frères et sœurs se disputent ou qu’une promesse est brisée, plutôt que de crier, ouvrez votre propre tribunal familial.
+Tribunal Familial est une app de jeu de rôle où la famille tient les rôles de juge, demandeur, défendeur et avocat, écoute chaque partie et rend un verdict, comme dans un vrai procès.
+
+Affaire civile : quand quelque chose semble injuste
+La personne qui s’estime lésée dépose la plainte en tant que demandeur. Elle choisit contre qui porter l’affaire et qui sera juge. Les enfants peuvent même porter plainte contre papa et maman.
+
+Affaire pénale : quand une règle de la maison est brisée
+Celui qui a vu la règle brisée devient procureur et porte l’affaire. Le juge choisit entre coupable, non coupable et clémence.
+
+Suivez le texte et c’est un vrai procès
+De l’ouverture de l’audience au récit de chaque partie, à la défense, à la déclaration finale et au verdict, un texte indique à chacun son tour et ce qu’il doit dire. Frappez le marteau pour un joli bruit, et un minuteur veille au temps de parole.
+
+Des règles qui garantissent l’équité
+Seule une personne qui n’est ni demandeur ni défendeur peut être juge. Toute personne jugée peut choisir un avocat pour l’aider avant l’audience.
+
+Des verdicts qui se terminent par une promesse, pas seulement par une punition
+Avec le verdict, fixez une promesse ou une sanction à tenir, et cochez-la jusqu’au bout. Les sanctions proposées visent à réparer plutôt qu’à punir, comme remettre les choses en place ou faire un geste gentil envers quelqu’un.
+
+Notre code de la famille
+Notez les règles sur lesquelles votre famille s’accorde, comme le respect, le rangement et les promesses tenues, et ajoutez-en ou modifiez-les à tout moment.
+
+Des mots adaptés à l’âge de l’enfant
+Passez le vocabulaire d’un niveau à l’autre, Simple, Standard et Tribunal, pour que chacun joue, de la maternelle aux plus grands.
+
+Anciennes affaires et leçons sur la justice
+Les affaires terminées sont conservées comme précédents, et la rubrique Découvrir le tribunal explique ce que font juges, demandeurs, procureurs et avocats et comment se déroule un procès.
+
+Toutes les données restent sur cet appareil et aucun compte n’est nécessaire. Vous pouvez exporter vos données dans un fichier et les réimporter plus tard.

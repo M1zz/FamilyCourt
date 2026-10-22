@@ -67,3 +67,10 @@ Das Hammer-Symbol ist noch süßer
 Feedback direkt in der App senden
 Neue Hilfe- und Infoseiten sind da
 Für noch mehr Stabilität optimiert
+
+### 앱스토어 (Français)
+
+L’icône du marteau est plus mignonne
+Envoyez vos retours depuis l’app
+Nouvelles pages d’aide et d’infos
+Peaufiné pour une expérience plus fluide

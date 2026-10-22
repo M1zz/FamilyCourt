@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistance et règles du jeu — Tribunal Familial</title>
+  <meta name="description" content="Comment utiliser Tribunal Familial, questions fréquentes, sauvegarde de vos données et moyens de nous contacter.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/support.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>Assistance et règles du jeu</h1>
+    <div class="sub">Tribunal Familial</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>Besoin d’un coup de main ?</h2>
+      <p>Signalement de bug, idée de fonction ou autre chose : nous serons ravis de vous lire.</p>
+      <a href="mailto:leeo@kakao.com">Écrire à leeo@kakao.com</a>
+    </div>
+
+    <section>
+      <h2>Questions fréquentes</h2>
+
+      <details>
+        <summary>De quoi s’agit-il ?</summary>
+        <p>Tribunal Familial permet aux familles d’organiser à la maison des procès ludiques en jeu de rôle, pour que les enfants comprennent naturellement ce que sont la loi, l’équité et les règles. Déposez une injustice comme affaire civile, ou une règle de la maison brisée comme affaire pénale, puis répartissez les rôles de juge et d’avocat et tenez le procès.</p>
+      </details>
+
+      <details>
+        <summary>Quel âge faut-il avoir ?</summary>
+        <p>Tout enfant qui sait lire peut jouer avec un parent. Grâce au texte du procès et aux consignes, même les plus jeunes peuvent participer avec l’aide d’un adulte.</p>
+      </details>
+
+      <details>
+        <summary>Faut-il une connexion Internet ?</summary>
+        <p>Non. Les procès, les enregistrements et tout le reste fonctionnent hors ligne. Vous n’avez besoin d’Internet et d’une connexion à iCloud que pour envoyer un retour au développeur avec Envoyer un retour dans les Réglages.</p>
+      </details>
+
+      <details>
+        <summary>Où sont enregistrées mes données ?</summary>
+        <p>Les membres de votre famille, le code, les procès et les verdicts sont enregistrés uniquement dans un fichier <code>familycourt.json</code> sur votre appareil. Rien n’est envoyé à un serveur externe. Consultez la <a href="privacy.html">Politique de confidentialité</a> pour en savoir plus.</p>
+      </details>
+
+      <details>
+        <summary>Puis-je sauvegarder mes données ou les transférer sur un autre appareil ?</summary>
+        <ul>
+          <li>Utilisez <b>Enregistrer les données</b> sur l’écran d’accueil ou dans les Réglages pour exporter vos données dans un fichier.</li>
+          <li>Sur un autre appareil, choisissez <b>Réglages → Importer les données</b> et ouvrez ce fichier pour tout restaurer.</li>
+          <li>Les fichiers de sauvegarde exportés depuis l’ancienne version web peuvent aussi être importés.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>J’ai installé l’app avec un identifiant Apple gratuit et elle ne s’ouvre plus.</summary>
+        <p>Les apps installées avec un identifiant Apple gratuit doivent être relancées (réinstallées) tous les 7 jours. Vos données sont conservées à la réinstallation, mais nous vous conseillons de sauvegarder d’abord avec <b>Enregistrer les données</b>. Avec un compte développeur payant (99 $ par an), l’app reste valide un an.</p>
+      </details>
+
+      <details>
+        <summary>Comment l’installer sur un iPad ?</summary>
+        <ul>
+          <li>Sur un Mac, ouvrez <code>FamilyCourt.xcodeproj</code> dans Xcode.</li>
+          <li>Dans Signing &amp; Capabilities, choisissez votre propre identifiant Apple (Team).</li>
+          <li>Branchez l’iPad et appuyez sur ▶ Run pour installer.</li>
+          <li>Pour toutes les étapes, consultez le <a href="https://github.com/M1zz/FamilyCourt">README sur GitHub</a>.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Comment supprimer complètement mes données ?</summary>
+        <p>Supprimer l’app efface toutes les données enregistrées sur votre appareil. Les données de la famille et des procès ne quittent jamais l’appareil, donc il n’en reste rien ailleurs. Si vous voulez faire supprimer un retour envoyé avec Envoyer un retour, écrivez à <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>À propos de l’app</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">Nom</b> · Tribunal Familial (억울해요)</li>
+        <li><b style="color:var(--ink)">Plateforme</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">Prix</b> · Gratuit · Sans publicité · Sans achats intégrés</li>
+        <li><b style="color:var(--ink)">Code source</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../support.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/support.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/support.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/support.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/support.html" hreflang="es" lang="es">Español</a> <a href="../de/support.html" hreflang="de" lang="de">Deutsch</a> <b>Français</b></div><!--/langs-->
+    © 2026 Tribunal Familial (억울해요) · <a href="index.html">Accueil</a> · <a href="privacy.html">Politique de confidentialité</a></footer>
+</body>
+</html>
