@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách quyền riêng tư — Tòa Án Gia Đình</title>
+  <meta name="description" content="Chính sách quyền riêng tư của Tòa Án Gia Đình. Dữ liệu gia đình và phiên tòa nằm trên thiết bị của bạn; nhà phát triển chỉ nhận góp ý do bạn tự gửi và thống kê sử dụng ẩn danh.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10); --ok: #4a8f4f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4); --ok: #7bbf80;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 0.92rem; }
+    .highlight {
+      background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--ok);
+      border-radius: 14px; padding: 22px 24px; margin: 32px 0; box-shadow: var(--shadow);
+    }
+    .highlight strong { color: var(--ok); }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.25rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    p, li { color: var(--ink); }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🔒</div>
+    <h1>Chính sách quyền riêng tư</h1>
+    <div class="updated">Tòa Án Gia Đình · Cập nhật lần cuối: 16 tháng 10, 2026</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="highlight"><strong>Tóm lại: dữ liệu gia đình và phiên tòa của bạn không bao giờ rời khỏi thiết bị.</strong><br> Tòa Án Gia Đình không cần đăng ký, đăng nhập, không có quảng cáo và không theo dõi. Mọi thứ bạn nhập, như gia đình, bộ luật, phiên tòa và phán quyết, chỉ được lưu trên thiết bị của bạn. Thông tin duy nhất đến được nhà phát triển là nội dung bạn tự gửi bằng <b>Gửi góp ý</b>, cùng thống kê sử dụng ẩn danh và báo cáo sự cố không thể xác định bạn (xem mục 5).</div>
+
+    <section>
+      <h2>1. Thông tin chúng tôi thu thập</h2>
+      <p>Khi bạn dùng ứng dụng, ứng dụng <b>không tự động thu thập</b> thông tin cá nhân như tên, email, vị trí, danh bạ, ảnh hay mã nhận dạng thiết bị. Bạn không cần tạo tài khoản hay đăng nhập.</p>
+      <p>Có hai loại thông tin có thể đến nhà phát triển: góp ý do bạn tự gửi từ Gửi góp ý trong Cài đặt (mục 4), và thống kê sử dụng ẩn danh cùng báo cáo sự cố không thể xác định một người (mục 5).</p>
+    </section>
+
+    <section>
+      <h2>2. Dữ liệu của bạn được lưu ở đâu</h2>
+      <p>Những gì bạn nhập vào ứng dụng, như tên thành viên gia đình, các điều khoản trong bộ luật và hồ sơ phiên tòa, phán quyết, chỉ được lưu trong tệp <code>familycourt.json</code> ở thư mục tài liệu của ứng dụng trên thiết bị của bạn.</p>
+      <ul>
+        <li>Dữ liệu này <b>không bao giờ rời khỏi thiết bị của bạn.</b></li>
+        <li>Dữ liệu không được gửi đến bất kỳ máy chủ bên ngoài nào, kể cả máy chủ của chúng tôi, và không đồng bộ qua iCloud.</li>
+        <li>Xóa ứng dụng cũng sẽ xóa dữ liệu này.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Sao lưu và chuyển dữ liệu</h2>
+      <p>Với Lưu hồ sơ trong ứng dụng, bạn có thể xuất dữ liệu ra một tệp và nhập lại sau. Tệp sao lưu này do bạn tự quản lý và tự chọn nơi lưu hoặc chia sẻ. Chúng tôi không bao giờ truy cập được tệp đó.</p>
+    </section>
+
+    <section>
+      <h2>4. Gửi góp ý (chỉ khi bạn gửi)</h2>
+      <p>Nếu bạn viết và gửi tin nhắn từ Gửi góp ý trong Cài đặt, hoặc chọn “Có thể tốt hơn” khi ứng dụng thỉnh thoảng hỏi “Bạn có thích Tòa Án Gia Đình không?”, thông tin sau sẽ đến nhà phát triển qua cơ sở dữ liệu công khai của Apple iCloud (CloudKit). Thiết bị của bạn phải đăng nhập iCloud mới gửi được, và không có gì được gửi cho đến khi bạn nhấn nút gửi.</p>
+      <ul>
+        <li>Loại góp ý và nội dung bạn đã viết</li>
+        <li>Thông tin thiết bị: phiên bản ứng dụng, kiểu máy, phiên bản iOS, cài đặt ngôn ngữ và khu vực</li>
+        <li>Tên và email của bạn để được trả lời, chỉ khi bạn chọn nhập (không bắt buộc)</li>
+      </ul>
+      <p>Chúng tôi chỉ dùng thông tin này để trả lời tin nhắn của bạn và cải thiện ứng dụng. Chúng tôi không dùng cho mục đích nào khác và không chia sẻ với bên thứ ba. Nếu nhà phát triển trả lời, ứng dụng chỉ lấy đúng câu trả lời đó bằng số của góp ý bạn đã gửi. Để xóa góp ý đã gửi, hãy liên hệ chúng tôi theo địa chỉ bên dưới.</p>
+    </section>
+
+    <section>
+      <h2>5. Thống kê sử dụng ẩn danh</h2>
+      <p>Để biết có bao nhiêu người dùng ứng dụng và sửa lỗi, ứng dụng gửi các thống kê ẩn danh sau đến Apple iCloud (CloudKit). Chỉ nhà phát triển đọc được.</p>
+      <ul>
+        <li>Một ID ngẫu nhiên tạo khi cài đặt (không liên kết với thiết bị, Apple ID hay ứng dụng khác của bạn, và được thay mới khi cài lại)</li>
+        <li>Phiên bản ứng dụng, phiên bản iOS, cài đặt khu vực và ngôn ngữ</li>
+        <li>Số lần và những ngày ứng dụng được mở, ngày cài đặt và số ngày kể từ khi cài</li>
+        <li>Báo cáo chẩn đoán khi ứng dụng bị treo hoặc tự thoát bất ngờ (phiên bản ứng dụng, phiên bản iOS, loại thiết bị và chi tiết lỗi kỹ thuật)</li>
+      </ul>
+      <p>Chúng không bao giờ gồm những gì bạn nhập, như tên, danh bạ, vị trí hay hồ sơ gia đình và phiên tòa. Chúng chỉ được gửi khi bạn đang đăng nhập iCloud.</p>
+    </section>
+
+    <section>
+      <h2>6. Bên thứ ba và dịch vụ bên ngoài</h2>
+      <p>Ứng dụng không dùng mạng quảng cáo, dịch vụ phân tích bên ngoài, đăng nhập mạng xã hội hay công cụ theo dõi, và không cung cấp thông tin cho bên thứ ba. iCloud, dùng cho Gửi góp ý và thống kê sử dụng ẩn danh, do Apple vận hành và theo chính sách quyền riêng tư của Apple. Khi ứng dụng xin đánh giá sao, nó dùng hộp thoại đánh giá chuẩn của Apple và chúng tôi không nhận nội dung đó. Ngoài Gửi góp ý và thống kê sử dụng ẩn danh, mọi tính năng đều hoạt động mà không cần kết nối internet.</p>
+    </section>
+
+    <section>
+      <h2>7. Quyền riêng tư của trẻ em</h2>
+      <p>Ứng dụng được thiết kế để cả gia đình cùng dùng và an toàn cho trẻ em. Những gì nhập vào ứng dụng, như tên thành viên gia đình, nằm lại trên thiết bị, và cha mẹ hoặc người giám hộ có thể sửa hoặc xóa trong ứng dụng bất cứ lúc nào. Góp ý chỉ được gửi nếu thiết bị đã đăng nhập iCloud và người dùng tự nhấn nút gửi. Nếu trẻ gửi góp ý, hãy cùng xem lại. Thống kê sử dụng ẩn danh ở mục 5 không có gì cho biết ai đang dùng ứng dụng.</p>
+    </section>
+
+    <section>
+      <h2>8. Quyền của bạn</h2>
+      <p>Bạn có thể sửa hoặc xóa hồ sơ lưu trên thiết bị trong ứng dụng bất cứ lúc nào, và xóa ứng dụng sẽ xóa tất cả. Để xem hoặc xóa góp ý bạn đã gửi, hãy liên hệ chúng tôi theo địa chỉ bên dưới.</p>
+    </section>
+
+    <section>
+      <h2>9. Thay đổi chính sách này</h2>
+      <p>Nếu chính sách này thay đổi, chúng tôi sẽ cập nhật trang này và ngày “Cập nhật lần cuối” ở đầu trang.</p>
+    </section>
+
+    <section>
+      <h2>10. Liên hệ</h2>
+      <p>Nếu có câu hỏi về Chính sách quyền riêng tư này, hãy liên hệ chúng tôi tại đây.<br> <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../privacy.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/privacy.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/privacy.html" hreflang="es" lang="es">Español</a> <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a> <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a> <b>Tiếng Việt</b></div><!--/langs-->
+    © 2026 Tòa Án Gia Đình (억울해요) · <a href="index.html">Trang chủ</a> · <a href="support.html">Hỗ trợ</a></footer>
+</body>
+</html>

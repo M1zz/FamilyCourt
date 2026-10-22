@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hỗ trợ và cách chơi — Tòa Án Gia Đình</title>
+  <meta name="description" content="Cách dùng Tòa Án Gia Đình, câu hỏi thường gặp, sao lưu dữ liệu và cách liên hệ với chúng tôi.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/support.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/support.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/support.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/support.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/support.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>Hỗ trợ và cách chơi</h1>
+    <div class="sub">Tòa Án Gia Đình</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>Cần giúp đỡ?</h2>
+      <p>Báo lỗi, ý tưởng tính năng hay bất cứ điều gì khác, chúng tôi rất muốn nghe từ bạn.</p>
+      <a href="mailto:leeo@kakao.com">Gửi email tới leeo@kakao.com</a>
+    </div>
+
+    <section>
+      <h2>Câu hỏi thường gặp</h2>
+
+      <details>
+        <summary>Ứng dụng này là gì?</summary>
+        <p>Tòa Án Gia Đình giúp các gia đình tổ chức những phiên tòa đóng vai vui vẻ tại nhà, để trẻ hiểu một cách tự nhiên luật, sự công bằng và quy tắc là gì. Đưa chuyện bất công thành vụ án dân sự, hoặc nội quy bị phá vỡ thành vụ án hình sự, rồi chia vai thẩm phán và luật sư và mở phiên tòa.</p>
+      </details>
+
+      <details>
+        <summary>Bao nhiêu tuổi thì chơi được?</summary>
+        <p>Bé nào biết đọc đều có thể chơi cùng cha mẹ. Nhờ có lời thoại và hướng dẫn, các bé nhỏ hơn cũng có thể tham gia với sự giúp đỡ của người lớn.</p>
+      </details>
+
+      <details>
+        <summary>Có cần kết nối internet không?</summary>
+        <p>Không. Phiên tòa, hồ sơ và mọi thứ khác đều hoạt động ngoại tuyến. Bạn chỉ cần internet và đăng nhập iCloud khi gửi góp ý cho nhà phát triển bằng Gửi góp ý trong Cài đặt.</p>
+      </details>
+
+      <details>
+        <summary>Dữ liệu của tôi được lưu ở đâu?</summary>
+        <p>Thành viên gia đình, bộ luật, phiên tòa và phán quyết chỉ được lưu trong tệp <code>familycourt.json</code> trên thiết bị của bạn. Không có gì được gửi đến máy chủ bên ngoài. Xem <a href="privacy.html">Chính sách quyền riêng tư</a> để biết chi tiết.</p>
+      </details>
+
+      <details>
+        <summary>Tôi có thể sao lưu hồ sơ hoặc chuyển sang thiết bị khác không?</summary>
+        <ul>
+          <li>Dùng <b>Lưu hồ sơ</b> ở màn hình chính hoặc trong Cài đặt để xuất dữ liệu ra tệp.</li>
+          <li>Trên thiết bị khác, chọn <b>Cài đặt → Nhập hồ sơ</b> và mở tệp đó để khôi phục mọi thứ.</li>
+          <li>Tệp sao lưu xuất từ phiên bản web cũ cũng nhập được.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Tôi cài ứng dụng bằng Apple ID miễn phí và không mở được.</summary>
+        <p>Ứng dụng cài bằng Apple ID miễn phí phải chạy lại (cài lại) sau mỗi 7 ngày. Dữ liệu vẫn được giữ khi cài lại, nhưng bạn nên sao lưu trước bằng <b>Lưu hồ sơ</b>. Với tài khoản nhà phát triển trả phí (99 USD/năm), ứng dụng có hiệu lực một năm.</p>
+      </details>
+
+      <details>
+        <summary>Làm sao cài lên iPad?</summary>
+        <ul>
+          <li>Trên máy Mac, mở <code>FamilyCourt.xcodeproj</code> trong Xcode.</li>
+          <li>Trong Signing &amp; Capabilities, chọn Apple ID (Team) của bạn.</li>
+          <li>Kết nối iPad và nhấn ▶ Run để cài đặt.</li>
+          <li>Xem đầy đủ các bước trong <a href="https://github.com/M1zz/FamilyCourt">README trên GitHub</a>.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Làm sao xóa hoàn toàn dữ liệu của tôi?</summary>
+        <p>Xóa ứng dụng sẽ xóa mọi dữ liệu lưu trên thiết bị. Hồ sơ gia đình và phiên tòa không bao giờ rời khỏi thiết bị nên không còn gì ở nơi khác. Nếu muốn xóa góp ý đã gửi bằng Gửi góp ý, hãy gửi email tới <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Về ứng dụng</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">Tên</b> · Tòa Án Gia Đình (억울해요)</li>
+        <li><b style="color:var(--ink)">Nền tảng</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">Giá</b> · Miễn phí · Không quảng cáo · Không mua trong ứng dụng</li>
+        <li><b style="color:var(--ink)">Mã nguồn</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../support.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/support.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/support.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/support.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/support.html" hreflang="es" lang="es">Español</a> <a href="../de/support.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/support.html" hreflang="fr" lang="fr">Français</a> <a href="../it/support.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/support.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/support.html" hreflang="th" lang="th">ไทย</a> <b>Tiếng Việt</b></div><!--/langs-->
+    © 2026 Tòa Án Gia Đình (억울해요) · <a href="index.html">Trang chủ</a> · <a href="privacy.html">Chính sách quyền riêng tư</a></footer>
+</body>
+</html>

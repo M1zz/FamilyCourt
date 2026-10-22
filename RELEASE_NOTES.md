@@ -95,3 +95,10 @@ Ajustes para o app ficar mais estável
 ส่งความคิดเห็นในแอปได้เลย
 เปิดหน้าช่วยเหลือและหน้าแนะนำใหม่
 ปรับปรุงให้ใช้งานเสถียรขึ้น
+
+### 앱스토어 (Tiếng Việt)
+
+Biểu tượng búa đã dễ thương hơn
+Gửi góp ý ngay trong ứng dụng
+Mở trang trợ giúp và giới thiệu mới
+Tinh chỉnh để dùng ổn định hơn

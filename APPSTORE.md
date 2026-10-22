@@ -792,3 +792,64 @@ https://m1zz.github.io/FamilyCourt/th/
 คดีที่จบแล้วเก็บไว้เป็นคดีตัวอย่าง และส่วนเรียนรู้เรื่องศาลอธิบายหน้าที่ของผู้พิพากษา โจทก์ อัยการ ทนายความ และขั้นตอนการพิจารณาคดี
 
 ข้อมูลทั้งหมดอยู่ในอุปกรณ์เครื่องนี้ ไม่ต้องมีบัญชี ส่งออกข้อมูลเป็นไฟล์และนำเข้ามาใหม่ภายหลังได้
+
+## vi
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/vi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/vi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/vi/
+
+### 이름
+
+Tòa Án Gia Đình: Xử án
+
+### 부제
+
+Đóng vai xử án cả nhà
+
+### 키워드
+
+trẻ em,thẩm phán,luật sư,công bằng,anh chị em,nội quy,dạy con,búa,phán quyết,luật,công tố
+
+### 프로모션 텍스트
+
+Thấy bất công? Hãy để phiên tòa giải quyết, đừng khóc. Bé làm nguyên đơn, cả nhà làm thẩm phán và luật sư, cùng học về luật và sự công bằng.
+
+### 설명
+
+Khi anh chị em cãi nhau hoặc có người thất hứa, đừng quát tháo, hãy mở tòa án của riêng gia đình bạn.
+Tòa Án Gia Đình là ứng dụng đóng vai, nơi cả nhà làm thẩm phán, nguyên đơn, bị đơn và luật sư, nghe mọi bên rồi đưa ra phán quyết, y như một phiên tòa thật.
+
+Vụ án dân sự: khi thấy bất công
+Người thấy mình bị thiệt nộp đơn kiện với tư cách nguyên đơn. Họ chọn kiện ai và ai sẽ làm thẩm phán. Trẻ em thậm chí có thể kiện cả bố mẹ.
+
+Vụ án hình sự: khi nội quy nhà bị phá vỡ
+Ai thấy nội quy bị phá vỡ sẽ làm công tố viên và đưa vụ việc ra tòa. Thẩm phán chọn giữa có tội, vô tội và khoan hồng.
+
+Đọc theo lời thoại, như một phiên tòa thật
+Từ khai mạc phiên tòa, lời kể của mỗi bên, phần bào chữa, lời nói cuối cùng đến phán quyết, lời thoại cho mọi người biết đến lượt ai và nói gì. Gõ búa nghe thật đã tai, và bộ hẹn giờ giữ thời gian phát biểu cho từng người.
+
+Quy tắc giữ sự công bằng
+Chỉ người không phải nguyên đơn hay bị đơn mới được làm thẩm phán. Người bị đưa ra tòa có thể chọn luật sư giúp mình trước phiên xử.
+
+Phán quyết kết thúc bằng lời hứa, không chỉ là hình phạt
+Cùng với phán quyết, hãy đặt một lời hứa hoặc hình phạt cần giữ, rồi đánh dấu cho đến khi hoàn thành. Các hình phạt gợi ý thiên về sửa sai hơn là trừng phạt, như đặt đồ về chỗ cũ hoặc làm điều tử tế cho ai đó.
+
+Bộ luật của gia đình mình
+Ghi lại những quy tắc cả nhà đồng ý, như tôn trọng, dọn dẹp và giữ lời hứa, và thêm hoặc sửa bất cứ lúc nào.
+
+Lời lẽ hợp với độ tuổi
+Chuyển cách diễn đạt giữa ba mức Đơn giản, Tiêu chuẩn và Tòa án, để từ bé mẫu giáo đến các bạn lớn hơn đều chơi được.
+
+Vụ án cũ và bài học về tòa án
+Các vụ đã xong được lưu thành án lệ, và mục Tìm hiểu về tòa án giải thích thẩm phán, nguyên đơn, công tố viên và luật sư làm gì cũng như một phiên tòa diễn ra thế nào.
+
+Mọi hồ sơ đều nằm trên thiết bị này và không cần tài khoản. Bạn có thể xuất hồ sơ ra tệp và nhập lại sau.
