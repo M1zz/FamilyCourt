@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Πολιτική απορρήτου — Οικογενειακό Δικαστήριο</title>
+  <meta name="description" content="Πολιτική απορρήτου του Οικογενειακού Δικαστηρίου. Τα δεδομένα της οικογένειας και των δικών μένουν στη συσκευή σας· ο προγραμματιστής λαμβάνει μόνο τα σχόλια που στέλνετε εσείς και ανώνυμα στατιστικά χρήσης.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/FamilyCourt/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/FamilyCourt/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/FamilyCourt/el/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10); --ok: #4a8f4f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4); --ok: #7bbf80;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 0.92rem; }
+    .highlight {
+      background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--ok);
+      border-radius: 14px; padding: 22px 24px; margin: 32px 0; box-shadow: var(--shadow);
+    }
+    .highlight strong { color: var(--ok); }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.25rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    p, li { color: var(--ink); }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🔒</div>
+    <h1>Πολιτική απορρήτου</h1>
+    <div class="updated">Οικογενειακό Δικαστήριο · Τελευταία ενημέρωση: 16 Οκτωβρίου 2026</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="highlight"><strong>Εν συντομία: τα δεδομένα της οικογένειας και των δικών σας δεν φεύγουν ποτέ από τη συσκευή σας.</strong><br> Το Οικογενειακό Δικαστήριο δεν έχει εγγραφή, σύνδεση, διαφημίσεις ή παρακολούθηση. Ό,τι καταχωρίζετε, όπως η οικογένεια, ο κώδικας, οι δίκες και οι αποφάσεις, αποθηκεύεται μόνο στη συσκευή σας. Οι μόνες πληροφορίες που φτάνουν στον προγραμματιστή είναι όσες στέλνετε εσείς με την <b>Αποστολή σχολίων</b>, καθώς και ανώνυμα στατιστικά χρήσης και αναφορές κατάρρευσης που δεν σας ταυτοποιούν (βλ. ενότητα 5).</div>
+
+    <section>
+      <h2>1. Ποιες πληροφορίες συλλέγουμε</h2>
+      <p>Κατά τη χρήση της εφαρμογής, αυτή <b>δεν συλλέγει αυτόματα</b> προσωπικά δεδομένα όπως όνομα, email, τοποθεσία, επαφές, φωτογραφίες ή αναγνωριστικά συσκευής. Δεν χρειάζεται ποτέ να δημιουργήσετε λογαριασμό ή να συνδεθείτε.</p>
+      <p>Δύο είδη πληροφοριών μπορούν να φτάσουν στον προγραμματιστή: τα σχόλια που στέλνετε εσείς από την Αποστολή σχολίων στις Ρυθμίσεις (ενότητα 4) και ανώνυμα στατιστικά χρήσης και αναφορές κατάρρευσης που δεν ταυτοποιούν κάποιο άτομο (ενότητα 5).</p>
+    </section>
+
+    <section>
+      <h2>2. Πού αποθηκεύονται τα δεδομένα σας</h2>
+      <p>Ό,τι καταχωρίζετε στην εφαρμογή, όπως ονόματα μελών της οικογένειας, εγγραφές του κώδικα και αρχεία δικών και αποφάσεων, αποθηκεύεται μόνο στο αρχείο <code>familycourt.json</code> στον φάκελο εγγράφων της εφαρμογής στη συσκευή σας.</p>
+      <ul>
+        <li>Αυτά τα δεδομένα <b>δεν φεύγουν ποτέ από τη συσκευή σας.</b></li>
+        <li>Δεν στέλνονται σε κανέναν εξωτερικό διακομιστή, ούτε στον δικό μας, και δεν συγχρονίζονται μέσω iCloud.</li>
+        <li>Αν διαγράψετε την εφαρμογή, διαγράφονται και αυτά τα δεδομένα.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Αντίγραφο ασφαλείας και μεταφορά δεδομένων</h2>
+      <p>Με την Αποθήκευση αρχείων στην εφαρμογή μπορείτε να εξαγάγετε τα δεδομένα σας σε αρχείο και να τα εισαγάγετε ξανά αργότερα. Αυτό το αρχείο αντιγράφου το διαχειρίζεστε εσείς και επιλέγετε πού αποθηκεύεται ή με ποιον μοιράζεται. Εμείς δεν έχουμε ποτέ πρόσβαση σε αυτό.</p>
+    </section>
+
+    <section>
+      <h2>4. Αποστολή σχολίων (μόνο όταν τα στείλετε)</h2>
+      <p>Αν γράψετε και στείλετε μήνυμα από την Αποστολή σχολίων στις Ρυθμίσεις ή επιλέξετε «Θα μπορούσε να είναι καλύτερο» όταν η εφαρμογή ρωτά περιστασιακά «Σας αρέσει το Οικογενειακό Δικαστήριο;», οι παρακάτω πληροφορίες φτάνουν στον προγραμματιστή μέσω της δημόσιας βάσης δεδομένων του Apple iCloud (CloudKit). Η συσκευή σας πρέπει να είναι συνδεδεμένη στο iCloud για να στείλετε και δεν στέλνεται τίποτα μέχρι να πατήσετε το κουμπί αποστολής.</p>
+      <ul>
+        <li>Ο τύπος των σχολίων και όσα γράψατε</li>
+        <li>Πληροφορίες συσκευής: έκδοση εφαρμογής, μοντέλο συσκευής, έκδοση iOS, ρυθμίσεις γλώσσας και περιοχής</li>
+        <li>Το όνομα και το email σας για απάντηση, μόνο αν επιλέξατε να τα καταχωρίσετε (προαιρετικό)</li>
+      </ul>
+      <p>Χρησιμοποιούμε αυτές τις πληροφορίες μόνο για να απαντήσουμε στο μήνυμά σας και να βελτιώσουμε την εφαρμογή. Δεν τις χρησιμοποιούμε για κανέναν άλλο σκοπό ούτε τις μοιραζόμαστε με τρίτους. Αν ο προγραμματιστής απαντήσει, η εφαρμογή ανακτά μόνο αυτή την απάντηση με τον αριθμό των σχολίων που στείλατε. Για να διαγραφούν σχόλια που στείλατε, επικοινωνήστε μαζί μας στη διεύθυνση παρακάτω.</p>
+    </section>
+
+    <section>
+      <h2>5. Ανώνυμα στατιστικά χρήσης</h2>
+      <p>Για να ξέρουμε πόσοι χρησιμοποιούν την εφαρμογή και για να διορθώνουμε σφάλματα, η εφαρμογή στέλνει τα παρακάτω ανώνυμα στατιστικά στο Apple iCloud (CloudKit). Μπορεί να τα διαβάσει μόνο ο προγραμματιστής.</p>
+      <ul>
+        <li>Ένα τυχαίο αναγνωριστικό που δημιουργείται κατά την εγκατάσταση (δεν συνδέεται με τη συσκευή, το Apple ID ή άλλες εφαρμογές σας και αλλάζει όταν κάνετε επανεγκατάσταση)</li>
+        <li>Έκδοση εφαρμογής, έκδοση iOS και ρυθμίσεις περιοχής και γλώσσας</li>
+        <li>Πόσες φορές και ποιες ημέρες άνοιξε η εφαρμογή, η ημερομηνία εγκατάστασης και οι ημέρες από την εγκατάσταση</li>
+        <li>Διαγνωστικές αναφορές όταν η εφαρμογή παγώνει ή κλείνει απρόσμενα (έκδοση εφαρμογής, έκδοση iOS, τύπος συσκευής και τεχνικές λεπτομέρειες του σφάλματος)</li>
+      </ul>
+      <p>Δεν περιλαμβάνουν ποτέ όσα καταχωρίζετε, όπως ονόματα, επαφές, τοποθεσία ή δεδομένα οικογένειας και δικών. Στέλνονται μόνο όσο είστε συνδεδεμένοι στο iCloud.</p>
+    </section>
+
+    <section>
+      <h2>6. Τρίτα μέρη και εξωτερικές υπηρεσίες</h2>
+      <p>Η εφαρμογή δεν χρησιμοποιεί διαφημιστικά δίκτυα, εξωτερικές υπηρεσίες ανάλυσης, σύνδεση μέσω κοινωνικών δικτύων ή εργαλεία παρακολούθησης και δεν παρέχει πληροφορίες σε τρίτους. Το iCloud, που χρησιμοποιείται για την Αποστολή σχολίων και τα ανώνυμα στατιστικά χρήσης, λειτουργεί από την Apple και διέπεται από την πολιτική απορρήτου της Apple. Όταν η εφαρμογή ζητά βαθμολογία με αστέρια, χρησιμοποιεί το τυπικό παράθυρο βαθμολόγησης της Apple και δεν λαμβάνουμε το περιεχόμενό του. Εκτός από την Αποστολή σχολίων και τα ανώνυμα στατιστικά χρήσης, όλες οι λειτουργίες δουλεύουν χωρίς σύνδεση στο διαδίκτυο.</p>
+    </section>
+
+    <section>
+      <h2>7. Απόρρητο των παιδιών</h2>
+      <p>Η εφαρμογή έχει σχεδιαστεί για να τη χρησιμοποιεί η οικογένεια μαζί και είναι ασφαλής για παιδιά. Ό,τι καταχωρίζεται στην εφαρμογή, όπως τα ονόματα μελών της οικογένειας, μένει στη συσκευή και ένας γονέας ή κηδεμόνας μπορεί να το επεξεργαστεί ή να το διαγράψει στην εφαρμογή ανά πάσα στιγμή. Τα σχόλια στέλνονται μόνο αν η συσκευή είναι συνδεδεμένη στο iCloud και ο χρήστης πατήσει ο ίδιος το κουμπί αποστολής. Αν ένα παιδί στείλει σχόλια, δείτε τα μαζί. Τα ανώνυμα στατιστικά χρήσης της ενότητας 5 δεν περιέχουν τίποτα που να δείχνει ποιος χρησιμοποιεί την εφαρμογή.</p>
+    </section>
+
+    <section>
+      <h2>8. Τα δικαιώματά σας</h2>
+      <p>Μπορείτε να επεξεργαστείτε ή να διαγράψετε ανά πάσα στιγμή στην εφαρμογή τα αρχεία που είναι αποθηκευμένα στη συσκευή σας και η διαγραφή της εφαρμογής τα αφαιρεί όλα. Για να δείτε ή να διαγράψετε σχόλια που στείλατε, επικοινωνήστε μαζί μας στη διεύθυνση παρακάτω.</p>
+    </section>
+
+    <section>
+      <h2>9. Αλλαγές σε αυτή την πολιτική</h2>
+      <p>Αν αλλάξει αυτή η πολιτική, θα ενημερώσουμε αυτή τη σελίδα και την ημερομηνία «Τελευταία ενημέρωση» στο επάνω μέρος.</p>
+    </section>
+
+    <section>
+      <h2>10. Επικοινωνία</h2>
+      <p>Για ερωτήσεις σχετικά με αυτή την Πολιτική απορρήτου, επικοινωνήστε μαζί μας εδώ.<br> <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../privacy.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/privacy.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/privacy.html" hreflang="es" lang="es">Español</a> <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a> <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/privacy.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/privacy.html" hreflang="da" lang="da">Dansk</a> <b>Ελληνικά</b></div><!--/langs-->
+    © 2026 Οικογενειακό Δικαστήριο (억울해요) · <a href="index.html">Αρχική</a> · <a href="support.html">Υποστήριξη</a></footer>
+</body>
+</html>

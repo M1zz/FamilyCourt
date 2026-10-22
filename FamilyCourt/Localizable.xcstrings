@@ -99,6 +99,12 @@
             "state" : "translated",
             "value" : "Face ID-lås"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλείδωμα με Face ID"
+          }
         }
       }
     },
@@ -199,6 +205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lås appen med Face ID eller Touch ID, så jeres familieoptegnelser forbliver private."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδώστε την εφαρμογή με Face ID ή Touch ID για να μένουν ιδιωτικά τα αρχεία της οικογένειάς σας."
           }
         }
       }
@@ -301,6 +313,12 @@
             "state" : "translated",
             "value" : "Bedre understøttelse af VoiceOver"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καλύτερη υποστήριξη VoiceOver"
+          }
         }
       }
     },
@@ -401,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skærme omarrangeres pænt i stedet for at blive beskåret, når du gør teksten større."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι οθόνες αναδιατάσσονται ωραία αντί να κόβονται όταν μεγεθύνετε το κείμενο."
           }
         }
       }
@@ -503,6 +527,12 @@
             "state" : "translated",
             "value" : "Synkronisering mellem enheder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγχρονισμός μεταξύ συσκευών"
+          }
         }
       }
     },
@@ -603,6 +633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet alle mine data"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή όλων των δεδομένων μου"
           }
         }
       }
@@ -705,6 +741,12 @@
             "state" : "translated",
             "value" : "Mørk tilstand"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σκούρα λειτουργία"
+          }
         }
       }
     },
@@ -805,6 +847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Læs alt nemt, selv med Øget kontrast slået til, eller hvis farver er svære at skelne."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαβάστε τα πάντα εύκολα, ακόμη και με ενεργή την Αύξηση αντίθεσης ή αν δυσκολεύεστε να ξεχωρίσετε τα χρώματα."
           }
         }
       }
@@ -907,6 +955,12 @@
             "state" : "translated",
             "value" : "Brug appen på flere sprog."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε την εφαρμογή σε περισσότερες γλώσσες."
+          }
         }
       }
     },
@@ -1007,6 +1061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flere sprog"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περισσότερες γλώσσες"
           }
         }
       }
@@ -1109,6 +1169,12 @@
             "state" : "translated",
             "value" : "Mere behagelige farver og kontrast"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πιο άνετα χρώματα και αντίθεση"
+          }
         }
       }
     },
@@ -1209,6 +1275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det, du skrev i en sag, bliver, selv hvis appen lukker midtvejs."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ό,τι γράφατε σε μια υπόθεση μένει, ακόμη κι αν η εφαρμογή κλείσει στη μέση."
           }
         }
       }
@@ -1311,6 +1383,12 @@
             "state" : "translated",
             "value" : "Fortsæt, hvor du slap"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνεχίστε από εκεί που μείνατε"
+          }
         }
       }
     },
@@ -1411,6 +1489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brug de vigtigste funktioner på iPad kun med et tastatur."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε τις βασικές λειτουργίες στο iPad μόνο με πληκτρολόγιο."
           }
         }
       }
@@ -1513,6 +1597,12 @@
             "state" : "translated",
             "value" : "Hav de samme optegnelser på din iPhone og iPad."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έχετε τα ίδια αρχεία στο iPhone και στο iPad."
+          }
         }
       }
     },
@@ -1613,6 +1703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Påmindelser"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υπενθυμίσεις"
           }
         }
       }
@@ -1715,6 +1811,12 @@
             "state" : "translated",
             "value" : "Se verserende sager direkte på hjemmeskærmen uden at åbne appen."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δείτε τις εκκρεμείς υποθέσεις απευθείας στην Αρχική οθόνη, χωρίς να ανοίξετε την εφαρμογή."
+          }
         }
       }
     },
@@ -1815,6 +1917,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brug hele appen på engelsk."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε ολόκληρη την εφαρμογή και στα αγγλικά."
           }
         }
       }
@@ -1917,6 +2025,12 @@
             "state" : "translated",
             "value" : "Tekst og knapper forbliver skarpe og tydelige i mørk tilstand."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το κείμενο και τα κουμπιά παραμένουν καθαρά και ευανάγνωστα στη σκούρα λειτουργία."
+          }
         }
       }
     },
@@ -2017,6 +2131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Την πρώτη φορά που ανοίγετε την εφαρμογή μετά από μια ενημέρωση, δείτε τι νέο υπάρχει."
           }
         }
       }
@@ -2119,6 +2239,12 @@
             "state" : "translated",
             "value" : "Hvad er nyt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι νέο υπάρχει"
+          }
         }
       }
     },
@@ -2219,6 +2345,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fuld understøttelse af engelsk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρης υποστήριξη αγγλικών"
           }
         }
       }
@@ -2321,6 +2453,12 @@
             "state" : "translated",
             "value" : "Reducer bevægelse"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μείωση κίνησης"
+          }
         }
       }
     },
@@ -2421,6 +2559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Med Reducer bevægelse slået til bliver skærmeffekter mere rolige."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με ενεργή τη Μείωση κίνησης, τα εφέ της οθόνης γίνονται πιο ήρεμα."
           }
         }
       }
@@ -2523,6 +2667,12 @@
             "state" : "translated",
             "value" : "Slet alle dine optegnelser på én gang i appen, når du vil."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγράψτε όλα τα αρχεία σας με μιας από την εφαρμογή όποτε θέλετε."
+          }
         }
       }
     },
@@ -2623,6 +2773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout til større tekst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διατάξεις για μεγαλύτερο κείμενο"
           }
         }
       }
@@ -2725,6 +2881,12 @@
             "state" : "translated",
             "value" : "Betjening med tastatur"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έλεγχος με πληκτρολόγιο"
+          }
         }
       }
     },
@@ -2825,6 +2987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Få en påmindelse på det rette tidspunkt, så ingen glemmer, hvad dommen bestemte."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λάβετε υπενθύμιση την κατάλληλη στιγμή, ώστε κανείς να μη ξεχάσει τι όρισε η απόφαση."
           }
         }
       }
@@ -2927,6 +3095,12 @@
             "state" : "translated",
             "value" : "Layout til foldbar iPhone"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάταξη για αναδιπλούμενο iPhone"
+          }
         }
       }
     },
@@ -3027,6 +3201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brug den brede skærm på en foldbar iPhone som to ruder side om side."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε τη φαρδιά οθόνη ενός αναδιπλούμενου iPhone ως δύο πλαϊνά τμήματα."
           }
         }
       }
@@ -3129,6 +3309,12 @@
             "state" : "translated",
             "value" : "Widgets på hjemmeskærmen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γραφικά στοιχεία Αρχικής οθόνης"
+          }
         }
       }
     },
@@ -3229,6 +3415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver læser hver knap og detalje i den rigtige rækkefølge."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το VoiceOver διαβάζει κάθε κουμπί και λεπτομέρεια με τη σωστή σειρά."
           }
         }
       }

@@ -116,3 +116,10 @@ Hammer-ikonet er blevet endnu sødere
 Send feedback direkte i appen
 Nye hjælpe- og infosider
 Finpudset for en jævnere oplevelse
+
+### 앱스토어 (Ελληνικά)
+
+Το σφυρί στο εικονίδιο γλύκανε
+Στείλτε σχόλια μέσα από την εφαρμογή
+Νέες σελίδες βοήθειας και πληροφοριών
+Βελτιώσεις για πιο ομαλή χρήση
