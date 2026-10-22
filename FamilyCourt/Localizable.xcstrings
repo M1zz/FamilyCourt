@@ -33,6 +33,12 @@
             "state" : "translated",
             "value" : "Face ID 锁定"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID 鎖定"
+          }
         }
       }
     },
@@ -68,6 +74,12 @@
             "state" : "translated",
             "value" : "用 Face ID 或 Touch ID 锁定应用，守护我们家的记录。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用 Face ID 或 Touch ID 鎖定 App，守護我們家的紀錄。"
+          }
         }
       }
     },
@@ -99,6 +111,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver 更好用"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver 更好用"
@@ -138,6 +156,12 @@
             "state" : "translated",
             "value" : "放大字体后，画面会自动重新排版，不再被截断。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放大字體後，畫面會自動重新排版，不再被截斷。"
+          }
         }
       }
     },
@@ -172,6 +196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "跨设备同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跨裝置同步"
           }
         }
       }
@@ -208,6 +238,12 @@
             "state" : "translated",
             "value" : "一键删除我的数据"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一次刪除我的資料"
+          }
         }
       }
     },
@@ -239,6 +275,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "深色模式"
@@ -278,6 +320,12 @@
             "state" : "translated",
             "value" : "开启“增强对比度”或不易分辨颜色时，也能轻松看清内容。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟「提高對比」或不易分辨顏色時，也能輕鬆看清內容。"
+          }
         }
       }
     },
@@ -312,6 +360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "让应用支持更多语言。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "讓 App 支援更多語言。"
           }
         }
       }
@@ -348,6 +402,12 @@
             "state" : "translated",
             "value" : "更多语言"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多語言"
+          }
         }
       }
     },
@@ -382,6 +442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更易读的颜色与对比度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更易讀的顏色與對比"
           }
         }
       }
@@ -418,6 +484,12 @@
             "state" : "translated",
             "value" : "提交案件时即使应用中途关闭，写到一半的内容也会保留。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提出案件時即使 App 中途關閉，寫到一半的內容也會保留。"
+          }
         }
       }
     },
@@ -452,6 +524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "接着写未完成的案件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接著寫未完成的案件"
           }
         }
       }
@@ -488,6 +566,12 @@
             "state" : "translated",
             "value" : "在 iPad 上只用键盘就能使用主要功能。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 iPad 上只用鍵盤就能使用主要功能。"
+          }
         }
       }
     },
@@ -523,6 +607,12 @@
             "state" : "translated",
             "value" : "在 iPhone 和 iPad 上接着使用同一份记录。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 iPhone 和 iPad 上接著使用同一份紀錄。"
+          }
         }
       }
     },
@@ -554,6 +644,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提醒"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "提醒"
@@ -593,6 +689,12 @@
             "state" : "translated",
             "value" : "不用打开应用，在主屏幕上就能查看进行中的案件。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不用開啟 App，在主畫面上就能查看進行中的案件。"
+          }
         }
       }
     },
@@ -627,6 +729,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "整个应用也可以使用英语。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "整個 App 也可以使用英文。"
           }
         }
       }
@@ -663,6 +771,12 @@
             "state" : "translated",
             "value" : "深色画面下，文字和按钮依然清晰分明。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色畫面下，文字和按鈕依然清晰分明。"
+          }
         }
       }
     },
@@ -697,6 +811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新后第一次打开应用时，告诉你有哪些新内容。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新後第一次開啟 App 時，告訴你有哪些新內容。"
           }
         }
       }
@@ -733,6 +853,12 @@
             "state" : "translated",
             "value" : "更新内容"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新內容"
+          }
         }
       }
     },
@@ -767,6 +893,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完整英语支持"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整英文支援"
           }
         }
       }
@@ -803,6 +935,12 @@
             "state" : "translated",
             "value" : "减少动态效果"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "減少動態效果"
+          }
         }
       }
     },
@@ -837,6 +975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "开启“减少动态效果”后，画面特效会更平缓。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟「減少動態效果」後，畫面特效會更平緩。"
           }
         }
       }
@@ -873,6 +1017,12 @@
             "state" : "translated",
             "value" : "需要时，可以在应用内一次性清除所有记录。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要時，可以在 App 內一次清除所有紀錄。"
+          }
         }
       }
     },
@@ -907,6 +1057,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "适配大字体的布局"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適應大字體的版面"
           }
         }
       }
@@ -943,6 +1099,12 @@
             "state" : "translated",
             "value" : "用键盘操作"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用鍵盤操作"
+          }
         }
       }
     },
@@ -977,6 +1139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在合适的时间提醒，让大家不会忘记判决里定下的事。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在適當的時間提醒，讓大家不會忘記判決裡訂下的事。"
           }
         }
       }
@@ -1013,6 +1181,12 @@
             "state" : "translated",
             "value" : "折叠屏 iPhone 布局"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "摺疊式 iPhone 版面"
+          }
         }
       }
     },
@@ -1047,6 +1221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在折叠屏 iPhone 上，把宽大的屏幕分成左右两栏使用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在摺疊式 iPhone 上，把寬大的螢幕分成左右兩欄使用。"
           }
         }
       }
@@ -1083,6 +1263,12 @@
             "state" : "translated",
             "value" : "主屏幕小组件"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面小工具"
+          }
         }
       }
     },
@@ -1117,6 +1303,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旁白会按正确的顺序，完整朗读每个按钮和内容。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旁白會依正確的順序，完整朗讀每個按鈕和內容。"
           }
         }
       }
