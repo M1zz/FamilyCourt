@@ -88,3 +88,10 @@ O ícone do martelo ficou ainda mais fofo
 Envie feedback direto pelo app
 Novas páginas de ajuda e de informações
 Ajustes para o app ficar mais estável
+
+### 앱스토어 (ไทย)
+
+ไอคอนค้อนน่ารักขึ้นอีก
+ส่งความคิดเห็นในแอปได้เลย
+เปิดหน้าช่วยเหลือและหน้าแนะนำใหม่
+ปรับปรุงให้ใช้งานเสถียรขึ้น

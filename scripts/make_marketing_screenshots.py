@@ -17,7 +17,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -32,7 +32,8 @@ SHOTS = [
         "de": ("Ungerecht behandelt?<br>Gericht eröffnen", "Kinder und Eltern können Klage einreichen"),
         "fr": ("Une injustice ?<br>Ouvrez l’audience", "Enfants et parents peuvent porter plainte"),
         "it": ("Un torto?<br>Aprite l’udienza", "Bambini e genitori possono fare causa"),
-        "pt-BR": ("Sentiu injustiça?<br>Abra o tribunal", "Crianças e pais podem abrir um caso")}),
+        "pt-BR": ("Sentiu injustiça?<br>Abra o tribunal", "Crianças e pais podem abrir um caso"),
+        "th": ("รู้สึกไม่ยุติธรรม<br>เปิดศาลกันเลย", "ทั้งเด็กและผู้ใหญ่ยื่นฟ้องได้")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
@@ -44,7 +45,8 @@ SHOTS = [
         "de": ("Die Klage<br>schreibst du selbst", "Wer klagt, wählt Angeklagten und Richter"),
         "fr": ("Rédigez la plainte<br>vous-même", "Celui qui dépose choisit défendeur et juge"),
         "it": ("La denuncia<br>la scrivi tu", "Chi la presenta sceglie imputato e giudice"),
-        "pt-BR": ("A queixa<br>é você que escreve", "Quem registra escolhe réu e juiz")}),
+        "pt-BR": ("A queixa<br>é você que escreve", "Quem registra escolhe réu e juiz"),
+        "th": ("เขียนคำฟ้อง<br>ด้วยตัวเอง", "ผู้ยื่นเลือกจำเลยและผู้พิพากษา")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
@@ -56,7 +58,8 @@ SHOTS = [
         "de": ("Mit dem Skript wird<br>es ein echter Prozess", "Jede Zeile sagt, wer an der Reihe ist"),
         "fr": ("Suivez le texte :<br>un vrai procès", "Chaque réplique indique qui doit parler"),
         "it": ("Segui il copione<br>per un vero processo", "Ogni battuta dice a chi tocca parlare"),
-        "pt-BR": ("Siga o roteiro:<br>julgamento de verdade", "Cada fala mostra de quem é a vez")}),
+        "pt-BR": ("Siga o roteiro:<br>julgamento de verdade", "Cada fala mostra de quem é a vez"),
+        "th": ("พูดตามบท<br>เหมือนศาลจริง", "ทุกบทบอกว่าถึงตาใคร")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
         "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
@@ -68,7 +71,8 @@ SHOTS = [
         "de": ("Urteile enden<br>mit einem Versprechen", "Versprechen festlegen und bis zum Ende abhaken"),
         "fr": ("Le verdict se finit<br>par une promesse", "Fixez une promesse et cochez-la jusqu’au bout"),
         "it": ("I verdetti finiscono<br>con una promessa", "Stabilisci una promessa e spuntala fino in fondo"),
-        "pt-BR": ("O veredito termina<br>em promessa", "Combine uma promessa e marque até o fim")}),
+        "pt-BR": ("O veredito termina<br>em promessa", "Combine uma promessa e marque até o fim"),
+        "th": ("คำตัดสินจบ<br>ด้วยคำสัญญา", "กำหนดคำสัญญาแล้วติ๊กจนจบ")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
         "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
@@ -80,7 +84,8 @@ SHOTS = [
         "de": ("Familiengesetze<br>gemeinsam schreiben", "Artikel jederzeit ergänzen und ändern"),
         "fr": ("Écrivez ensemble<br>les lois de la famille", "Ajoutez et modifiez les articles à tout moment"),
         "it": ("Scrivete insieme<br>le leggi di casa", "Aggiungi e modifica gli articoli quando vuoi"),
-        "pt-BR": ("Escrevam juntos<br>as leis da casa", "Acrescente e edite artigos quando quiser")}),
+        "pt-BR": ("Escrevam juntos<br>as leis da casa", "Acrescente e edite artigos quando quiser"),
+        "th": ("กฎของบ้าน<br>ช่วยกันกำหนด", "เพิ่มและแก้ข้อกฎหมายได้ทุกเมื่อ")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
@@ -92,7 +97,8 @@ SHOTS = [
         "de": ("Richter, Kläger, Verteidiger:<br>alle Rollen lernen", "Rollen und Ablauf in einfachen Worten"),
         "fr": ("Juge, demandeur, avocat :<br>apprenez chaque rôle", "Rôles et étapes du procès en mots simples"),
         "it": ("Giudice, attore, difensore:<br>impara ogni ruolo", "Ruoli e fasi del processo in parole semplici"),
-        "pt-BR": ("Juiz, autor, defensor:<br>aprenda cada papel", "Papéis e etapas do julgamento em palavras simples")}),
+        "pt-BR": ("Juiz, autor, defensor:<br>aprenda cada papel", "Papéis e etapas do julgamento em palavras simples"),
+        "th": ("ผู้พิพากษา โจทก์ ทนาย<br>เรียนรู้ทุกบทบาท", "บทบาทและขั้นตอนด้วยภาษาง่าย ๆ")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.

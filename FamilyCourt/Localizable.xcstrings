@@ -75,6 +75,12 @@
             "state" : "translated",
             "value" : "Bloqueio com Face ID"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ล็อกด้วย Face ID"
+          }
         }
       }
     },
@@ -151,6 +157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloqueie o app com Face ID ou Touch ID para manter privados os registros da sua família."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ล็อกแอปด้วย Face ID หรือ Touch ID เพื่อปกป้องบันทึกของครอบครัว"
           }
         }
       }
@@ -229,6 +241,12 @@
             "state" : "translated",
             "value" : "Melhor suporte ao VoiceOver"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ VoiceOver ได้สะดวกขึ้น"
+          }
         }
       }
     },
@@ -305,6 +323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "As telas se reorganizam direitinho em vez de ficarem cortadas quando você aumenta o texto."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อขยายขนาดตัวอักษร หน้าจอจะจัดเรียงใหม่อย่างสวยงามแทนที่จะถูกตัด"
           }
         }
       }
@@ -383,6 +407,12 @@
             "state" : "translated",
             "value" : "Sincronização entre dispositivos"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ซิงค์ข้ามอุปกรณ์"
+          }
         }
       }
     },
@@ -459,6 +489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apagar todos os meus dados"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบข้อมูลของฉันทั้งหมด"
           }
         }
       }
@@ -537,6 +573,12 @@
             "state" : "translated",
             "value" : "Modo Escuro"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โหมดมืด"
+          }
         }
       }
     },
@@ -613,6 +655,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leia tudo com facilidade, mesmo com Aumentar Contraste ativado ou se for difícil distinguir as cores."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อ่านทุกอย่างได้ง่าย แม้เปิดเพิ่มความคมชัดหรือแยกสีได้ยาก"
           }
         }
       }
@@ -691,6 +739,12 @@
             "state" : "translated",
             "value" : "Use o app em mais idiomas."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้แอปได้หลายภาษามากขึ้น"
+          }
         }
       }
     },
@@ -767,6 +821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mais idiomas"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ภาษาเพิ่มเติม"
           }
         }
       }
@@ -845,6 +905,12 @@
             "state" : "translated",
             "value" : "Cores e contraste mais confortáveis"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีและความคมชัดที่ดูสบายขึ้น"
+          }
         }
       }
     },
@@ -921,6 +987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O que você estava escrevendo num caso continua lá, mesmo que o app feche no meio."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่เขียนค้างไว้ในคดียังอยู่ แม้แอปปิดไปกลางคัน"
           }
         }
       }
@@ -999,6 +1071,12 @@
             "state" : "translated",
             "value" : "Continue de onde parou"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนคดีต่อจากที่ค้างไว้"
+          }
         }
       }
     },
@@ -1075,6 +1153,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use os principais recursos no iPad só com o teclado."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ฟีเจอร์หลักบน iPad ด้วยคีย์บอร์ดอย่างเดียว"
           }
         }
       }
@@ -1153,6 +1237,12 @@
             "state" : "translated",
             "value" : "Mantenha os mesmos registros no iPhone e no iPad."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้บันทึกชุดเดียวกันต่อเนื่องบน iPhone และ iPad"
+          }
         }
       }
     },
@@ -1229,6 +1319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lembretes"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การแจ้งเตือน"
           }
         }
       }
@@ -1307,6 +1403,12 @@
             "state" : "translated",
             "value" : "Veja os casos em andamento direto na Tela de Início, sem abrir o app."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูคดีที่กำลังดำเนินอยู่บนหน้าจอโฮมได้เลยโดยไม่ต้องเปิดแอป"
+          }
         }
       }
     },
@@ -1383,6 +1485,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use o app todo também em inglês."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ทั้งแอปเป็นภาษาอังกฤษได้"
           }
         }
       }
@@ -1461,6 +1569,12 @@
             "state" : "translated",
             "value" : "Texto e botões continuam nítidos e claros no Modo Escuro."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวอักษรและปุ่มยังคมชัดในโหมดมืด"
+          }
         }
       }
     },
@@ -1537,6 +1651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Na primeira vez que abrir o app depois de uma atualização, veja as novidades."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเปิดแอปครั้งแรกหลังอัปเดต จะเห็นว่ามีอะไรใหม่"
           }
         }
       }
@@ -1615,6 +1735,12 @@
             "state" : "translated",
             "value" : "Novidades"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "มีอะไรใหม่"
+          }
         }
       }
     },
@@ -1691,6 +1817,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suporte completo ao inglês"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รองรับภาษาอังกฤษเต็มรูปแบบ"
           }
         }
       }
@@ -1769,6 +1901,12 @@
             "state" : "translated",
             "value" : "Reduzir Movimento"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลดการเคลื่อนไหว"
+          }
         }
       }
     },
@@ -1845,6 +1983,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Com Reduzir Movimento ativado, os efeitos de tela ficam mais calmos."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมื่อเปิดลดการเคลื่อนไหว เอฟเฟกต์บนหน้าจอจะนุ่มนวลขึ้น"
           }
         }
       }
@@ -1923,6 +2067,12 @@
             "state" : "translated",
             "value" : "Apague todos os seus registros de uma vez, de dentro do app, quando quiser."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ลบบันทึกทั้งหมดในครั้งเดียวจากในแอปได้เมื่อต้องการ"
+          }
         }
       }
     },
@@ -1999,6 +2149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layouts para texto maior"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลย์เอาต์สำหรับตัวอักษรขนาดใหญ่"
           }
         }
       }
@@ -2077,6 +2233,12 @@
             "state" : "translated",
             "value" : "Controle pelo teclado"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ควบคุมด้วยคีย์บอร์ด"
+          }
         }
       }
     },
@@ -2153,6 +2315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Receba um lembrete na hora certa para ninguém esquecer o que o veredito decidiu."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "รับการเตือนในเวลาที่เหมาะสม จะได้ไม่มีใครลืมสิ่งที่คำตัดสินกำหนดไว้"
           }
         }
       }
@@ -2231,6 +2399,12 @@
             "state" : "translated",
             "value" : "Layout para iPhone dobrável"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลย์เอาต์สำหรับ iPhone แบบพับได้"
+          }
         }
       }
     },
@@ -2307,6 +2481,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use a tela larga de um iPhone dobrável como dois painéis lado a lado."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้หน้าจอกว้างของ iPhone แบบพับได้เป็นสองส่วนเคียงข้างกัน"
           }
         }
       }
@@ -2385,6 +2565,12 @@
             "state" : "translated",
             "value" : "Widgets da Tela de Início"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วิดเจ็ตหน้าจอโฮม"
+          }
         }
       }
     },
@@ -2461,6 +2647,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O VoiceOver lê todos os botões e detalhes, na ordem certa."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver อ่านทุกปุ่มและรายละเอียดตามลำดับที่ถูกต้อง"
           }
         }
       }
