@@ -87,6 +87,12 @@
             "state" : "translated",
             "value" : "Khóa bằng Face ID"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zámek přes Face ID"
+          }
         }
       }
     },
@@ -175,6 +181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Khóa ứng dụng bằng Face ID hoặc Touch ID để giữ riêng tư hồ sơ của gia đình bạn."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamkněte aplikaci přes Face ID nebo Touch ID a ochraňte záznamy své rodiny."
           }
         }
       }
@@ -265,6 +277,12 @@
             "state" : "translated",
             "value" : "VoiceOver dễ dùng hơn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lepší podpora VoiceOveru"
+          }
         }
       }
     },
@@ -353,6 +371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Màn hình sắp xếp lại gọn gàng thay vì bị cắt khi bạn phóng to chữ."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrazovky se při zvětšení textu úhledně přeskládají, místo aby se ořízly."
           }
         }
       }
@@ -443,6 +467,12 @@
             "state" : "translated",
             "value" : "Đồng bộ giữa các thiết bị"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronizace mezi zařízeními"
+          }
         }
       }
     },
@@ -531,6 +561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xóa toàn bộ dữ liệu của tôi"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smazat všechna moje data"
           }
         }
       }
@@ -621,6 +657,12 @@
             "state" : "translated",
             "value" : "Chế độ tối"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tmavý režim"
+          }
         }
       }
     },
@@ -709,6 +751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đọc mọi thứ dễ dàng, kể cả khi bật Tăng độ tương phản hoặc khó phân biệt màu."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čtěte vše snadno, i když máte zapnuté Zvýšit kontrast nebo se barvy špatně rozlišují."
           }
         }
       }
@@ -799,6 +847,12 @@
             "state" : "translated",
             "value" : "Dùng ứng dụng bằng nhiều ngôn ngữ hơn."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Používejte aplikaci ve více jazycích."
+          }
         }
       }
     },
@@ -887,6 +941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thêm ngôn ngữ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Další jazyky"
           }
         }
       }
@@ -977,6 +1037,12 @@
             "state" : "translated",
             "value" : "Màu sắc và độ tương phản dễ nhìn hơn"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Příjemnější barvy a kontrast"
+          }
         }
       }
     },
@@ -1065,6 +1131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nội dung bạn đang viết trong vụ án vẫn còn, kể cả khi ứng dụng đóng giữa chừng."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To, co jste v případu psali, zůstane, i když se aplikace uprostřed zavře."
           }
         }
       }
@@ -1155,6 +1227,12 @@
             "state" : "translated",
             "value" : "Viết tiếp vụ án dở dang"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokračujte tam, kde jste skončili"
+          }
         }
       }
     },
@@ -1243,6 +1321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng các tính năng chính trên iPad chỉ với bàn phím."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hlavní funkce na iPadu ovládejte jen klávesnicí."
           }
         }
       }
@@ -1333,6 +1417,12 @@
             "state" : "translated",
             "value" : "Dùng cùng một bộ hồ sơ trên iPhone và iPad."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mějte stejné záznamy na iPhonu i iPadu."
+          }
         }
       }
     },
@@ -1421,6 +1511,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lời nhắc"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Připomenutí"
           }
         }
       }
@@ -1511,6 +1607,12 @@
             "state" : "translated",
             "value" : "Xem các vụ án đang diễn ra ngay trên Màn hình chính mà không cần mở ứng dụng."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sledujte probíhající případy přímo na ploše, aniž byste otevírali aplikaci."
+          }
         }
       }
     },
@@ -1599,6 +1701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng toàn bộ ứng dụng bằng tiếng Anh."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Používejte celou aplikaci i v angličtině."
           }
         }
       }
@@ -1689,6 +1797,12 @@
             "state" : "translated",
             "value" : "Chữ và nút vẫn sắc nét, rõ ràng ở chế độ tối."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text a tlačítka zůstávají v tmavém režimu ostré a jasné."
+          }
         }
       }
     },
@@ -1777,6 +1891,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lần đầu mở ứng dụng sau khi cập nhật, bạn sẽ thấy có gì mới."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Při prvním otevření aplikace po aktualizaci uvidíte, co je nového."
           }
         }
       }
@@ -1867,6 +1987,12 @@
             "state" : "translated",
             "value" : "Có gì mới"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novinky"
+          }
         }
       }
     },
@@ -1955,6 +2081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hỗ trợ tiếng Anh đầy đủ"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plná podpora angličtiny"
           }
         }
       }
@@ -2045,6 +2177,12 @@
             "state" : "translated",
             "value" : "Giảm chuyển động"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omezit pohyb"
+          }
         }
       }
     },
@@ -2133,6 +2271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Khi bật Giảm chuyển động, hiệu ứng trên màn hình sẽ dịu hơn."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se zapnutým Omezit pohyb jsou efekty na obrazovce klidnější."
           }
         }
       }
@@ -2223,6 +2367,12 @@
             "state" : "translated",
             "value" : "Xóa toàn bộ hồ sơ cùng lúc ngay trong ứng dụng bất cứ khi nào bạn muốn."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kdykoli smažte všechny záznamy najednou přímo v aplikaci."
+          }
         }
       }
     },
@@ -2311,6 +2461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bố cục cho chữ lớn hơn"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozvržení pro větší text"
           }
         }
       }
@@ -2401,6 +2557,12 @@
             "state" : "translated",
             "value" : "Điều khiển bằng bàn phím"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ovládání klávesnicí"
+          }
         }
       }
     },
@@ -2489,6 +2651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nhận lời nhắc đúng lúc để không ai quên những gì phán quyết đã quyết định."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dostanete připomenutí ve správný čas, aby nikdo nezapomněl, co rozsudek určil."
           }
         }
       }
@@ -2579,6 +2747,12 @@
             "state" : "translated",
             "value" : "Bố cục cho iPhone gập"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozvržení pro skládací iPhone"
+          }
         }
       }
     },
@@ -2667,6 +2841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng màn hình rộng của iPhone gập thành hai ngăn cạnh nhau."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Širokou obrazovku skládacího iPhonu využijte jako dva panely vedle sebe."
           }
         }
       }
@@ -2757,6 +2937,12 @@
             "state" : "translated",
             "value" : "Tiện ích Màn hình chính"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgety na ploše"
+          }
         }
       }
     },
@@ -2845,6 +3031,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver đọc từng nút và chi tiết theo đúng thứ tự."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver čte každé tlačítko a podrobnost ve správném pořadí."
           }
         }
       }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zásady ochrany soukromí — Rodinný soud</title>
+  <meta name="description" content="Zásady ochrany soukromí aplikace Rodinný soud. Záznamy o rodině a procesech zůstávají ve vašem zařízení; vývojář dostává jen zpětnou vazbu, kterou sami odešlete, a anonymní statistiky používání.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/FamilyCourt/cs/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10); --ok: #4a8f4f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4); --ok: #7bbf80;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 0.92rem; }
+    .highlight {
+      background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--ok);
+      border-radius: 14px; padding: 22px 24px; margin: 32px 0; box-shadow: var(--shadow);
+    }
+    .highlight strong { color: var(--ok); }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.25rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    p, li { color: var(--ink); }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🔒</div>
+    <h1>Zásady ochrany soukromí</h1>
+    <div class="updated">Rodinný soud · Poslední aktualizace: 16. října 2026</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="highlight"><strong>Stručně: záznamy o vaší rodině a procesech nikdy neopustí vaše zařízení.</strong><br> Rodinný soud nemá registraci, přihlašování, reklamy ani sledování. Vše, co zadáte, tedy rodinu, zákoník, procesy a rozsudky, se ukládá jen ve vašem zařízení. Vývojáři se dostanou jen informace, které odešlete sami přes <b>Odeslat zpětnou vazbu</b>, a anonymní statistiky používání a zprávy o pádech, podle kterých vás nelze identifikovat (viz část 5).</div>
+
+    <section>
+      <h2>1. Jaké informace shromažďujeme</h2>
+      <p>Při používání aplikace <b>nesbírá automaticky</b> osobní údaje, jako je jméno, e-mail, poloha, kontakty, fotky nebo identifikátory zařízení. Nemusíte si vytvářet účet ani se přihlašovat.</p>
+      <p>K vývojáři se mohou dostat dva druhy informací: zpětná vazba, kterou odešlete sami přes Odeslat zpětnou vazbu v Nastavení (část 4), a anonymní statistiky používání a zprávy o pádech, podle kterých nelze identifikovat osobu (část 5).</p>
+    </section>
+
+    <section>
+      <h2>2. Kde se vaše data ukládají</h2>
+      <p>To, co do aplikace zadáte, například jména členů rodiny, položky zákoníku a záznamy o procesech a rozsudcích, se ukládá jen do souboru <code>familycourt.json</code> ve složce dokumentů aplikace ve vašem zařízení.</p>
+      <ul>
+        <li>Tato data <b>nikdy neopustí vaše zařízení.</b></li>
+        <li>Neodesílají se na žádný externí server, ani na ten náš, a nesynchronizují se přes iCloud.</li>
+        <li>Smazáním aplikace se tato data smažou také.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Zálohování a přenos dat</h2>
+      <p>Pomocí Uložit záznamy v aplikaci můžete data exportovat do souboru a později je znovu importovat. Tento záložní soubor spravujete sami a sami si vyberete, kam se uloží nebo s kým se sdílí. My k němu nikdy nemáme přístup.</p>
+    </section>
+
+    <section>
+      <h2>4. Odeslání zpětné vazby (jen když ji odešlete)</h2>
+      <p>Pokud napíšete a odešlete zprávu přes Odeslat zpětnou vazbu v Nastavení, nebo vyberete „Mohlo by to být lepší“, když se vás aplikace občas zeptá „Líbí se vám Rodinný soud?“, dostanou se následující informace k vývojáři přes veřejnou databázi Apple iCloud (CloudKit). K odeslání musí být zařízení přihlášené k iCloudu a dokud nepoklepete na tlačítko odeslat, nic se neodešle.</p>
+      <ul>
+        <li>Typ zpětné vazby a to, co jste napsali</li>
+        <li>Informace o zařízení: verze aplikace, model zařízení, verze iOS, nastavení jazyka a oblasti</li>
+        <li>Vaše jméno a e-mail pro odpověď, jen pokud je zadáte (nepovinné)</li>
+      </ul>
+      <p>Tyto informace používáme jen k odpovědi na vaši zprávu a ke zlepšení aplikace. Nepoužíváme je k žádnému jinému účelu ani je nesdílíme s třetími stranami. Pokud vývojář odpoví, aplikace stáhne jen tuto odpověď podle čísla vámi odeslané zpětné vazby. Chcete-li odeslanou zpětnou vazbu nechat smazat, napište nám na adresu níže.</p>
+    </section>
+
+    <section>
+      <h2>5. Anonymní statistiky používání</h2>
+      <p>Aby se vědělo, kolik lidí aplikaci používá, a aby se opravovaly chyby, aplikace odesílá do Apple iCloud (CloudKit) následující anonymní statistiky. Přečíst je může jen vývojář.</p>
+      <ul>
+        <li>Náhodné ID vytvořené při instalaci (není spojeno s vaším zařízením, Apple ID ani jinými aplikacemi a při přeinstalaci se změní)</li>
+        <li>Verze aplikace, verze iOS a nastavení oblasti a jazyka</li>
+        <li>Kolikrát a v které dny byla aplikace otevřena, datum instalace a počet dní od instalace</li>
+        <li>Diagnostické zprávy, když aplikace zamrzne nebo se neočekávaně ukončí (verze aplikace, verze iOS, typ zařízení a technické podrobnosti o chybě)</li>
+      </ul>
+      <p>Nikdy neobsahují to, co zadáváte, například jména, kontakty, polohu nebo záznamy o rodině a procesech. Odesílají se, jen když jste přihlášeni k iCloudu.</p>
+    </section>
+
+    <section>
+      <h2>6. Třetí strany a externí služby</h2>
+      <p>Aplikace nepoužívá žádné reklamní sítě, externí analytické služby, přihlašování přes sociální sítě ani sledovací nástroje a neposkytuje informace třetím stranám. iCloud, který se používá pro Odeslat zpětnou vazbu a anonymní statistiky používání, provozuje Apple a vztahují se na něj zásady ochrany soukromí společnosti Apple. Když aplikace požádá o hodnocení hvězdičkami, použije standardní výzvu k hodnocení od Applu a její obsah nedostáváme. Kromě Odeslat zpětnou vazbu a anonymních statistik používání fungují všechny funkce bez připojení k internetu.</p>
+    </section>
+
+    <section>
+      <h2>7. Soukromí dětí</h2>
+      <p>Aplikace je určena ke společnému používání v rodině a je pro děti bezpečná. To, co se do aplikace zadá, například jména členů rodiny, zůstává v zařízení a rodič nebo zákonný zástupce to může kdykoli v aplikaci upravit nebo smazat. Zpětná vazba se odešle, jen pokud je zařízení přihlášené k iCloudu a uživatel sám poklepe na tlačítko odeslat. Pokud dítě odesílá zpětnou vazbu, projděte ji společně. Anonymní statistiky používání z části 5 neobsahují nic, z čeho by bylo poznat, kdo aplikaci používá.</p>
+    </section>
+
+    <section>
+      <h2>8. Vaše práva</h2>
+      <p>Záznamy uložené ve vašem zařízení můžete kdykoli v aplikaci upravit nebo smazat a smazáním aplikace zmizí všechny. Chcete-li si prohlédnout nebo smazat zpětnou vazbu, kterou jste odeslali, napište nám na adresu níže.</p>
+    </section>
+
+    <section>
+      <h2>9. Změny těchto zásad</h2>
+      <p>Pokud se tyto zásady změní, aktualizujeme tuto stránku a datum „Poslední aktualizace“ nahoře.</p>
+    </section>
+
+    <section>
+      <h2>10. Kontakt</h2>
+      <p>S dotazy k těmto Zásadám ochrany soukromí se na nás obraťte zde.<br> <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../privacy.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/privacy.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/privacy.html" hreflang="es" lang="es">Español</a> <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a> <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a> <b>Čeština</b></div><!--/langs-->
+    © 2026 Rodinný soud (억울해요) · <a href="index.html">Domů</a> · <a href="support.html">Podpora</a></footer>
+</body>
+</html>

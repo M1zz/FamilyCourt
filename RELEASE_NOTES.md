@@ -102,3 +102,10 @@ Biểu tượng búa đã dễ thương hơn
 Gửi góp ý ngay trong ứng dụng
 Mở trang trợ giúp và giới thiệu mới
 Tinh chỉnh để dùng ổn định hơn
+
+### 앱스토어 (Čeština)
+
+Ikona kladívka je ještě roztomilejší
+Zpětnou vazbu pošlete přímo v aplikaci
+Otevřeli jsme nové stránky nápovědy
+Vyladěno pro plynulejší používání

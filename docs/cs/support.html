@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podpora a jak hrát — Rodinný soud</title>
+  <meta name="description" content="Jak používat Rodinný soud, časté dotazy, zálohování dat a jak nás kontaktovat.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/support.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/support.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/support.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/support.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/support.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/support.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/support.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/support.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/support.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/support.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/support.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/support.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/FamilyCourt/cs/support.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/support.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    .contact-card {
+      background: var(--accent); color: #fff; border-radius: 18px; padding: 26px 28px;
+      margin: 32px 0; box-shadow: var(--shadow); text-align: center;
+    }
+    .contact-card h2 { color: #fff; margin-bottom: 6px; }
+    .contact-card a {
+      display: inline-block; margin-top: 10px; background: #fff; color: var(--accent);
+      padding: 11px 22px; border-radius: 12px; text-decoration: none; font-weight: 800;
+    }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 14px; letter-spacing: -0.01em; }
+    details {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 4px 20px; margin-bottom: 12px; box-shadow: var(--shadow);
+    }
+    summary {
+      cursor: pointer; font-weight: 700; padding: 16px 0; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "＋"; color: var(--accent); font-size: 1.3rem; }
+    details[open] summary::after { content: "－"; }
+    details p, details ul { padding-bottom: 16px; color: var(--muted); }
+    details ul { padding-left: 20px; }
+    a { color: var(--accent); font-weight: 600; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    footer a { text-decoration: none; }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🛟</div>
+    <h1>Podpora a jak hrát</h1>
+    <div class="sub">Rodinný soud</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="contact-card">
+      <h2>Potřebujete poradit?</h2>
+      <p>Hlášení chyb, nápady na funkce nebo cokoli jiného – rádi si to přečteme.</p>
+      <a href="mailto:leeo@kakao.com">Napsat na leeo@kakao.com</a>
+    </div>
+
+    <section>
+      <h2>Často kladené dotazy</h2>
+
+      <details>
+        <summary>Co je to za aplikaci?</summary>
+        <p>Rodinný soud umožňuje rodinám pořádat doma hravé soudní procesy na role, aby děti přirozeně pochopily, co je právo, spravedlnost a pravidla. Křivdu podejte jako civilní případ, porušené pravidlo domácnosti jako trestní případ, rozdělte role soudce a obhájce a uspořádejte líčení.</p>
+      </details>
+
+      <details>
+        <summary>Kolik let je potřeba mít?</summary>
+        <p>Hrát s rodičem může každé dítě, které umí číst. Díky scénáři líčení a nápovědě se mohou zapojit i menší děti s pomocí dospělého.</p>
+      </details>
+
+      <details>
+        <summary>Potřebuji připojení k internetu?</summary>
+        <p>Ne. Líčení, záznamy a všechno ostatní funguje offline. Internet a přihlášení k iCloudu potřebujete jen při odeslání zpětné vazby vývojáři přes Odeslat zpětnou vazbu v Nastavení.</p>
+      </details>
+
+      <details>
+        <summary>Kde se ukládají moje data?</summary>
+        <p>Členové rodiny, zákoník, procesy a rozsudky se ukládají jen do souboru <code>familycourt.json</code> ve vašem zařízení. Nic se neodesílá na externí server. Podrobnosti najdete v <a href="privacy.html">Zásadách ochrany soukromí</a>.</p>
+      </details>
+
+      <details>
+        <summary>Mohu zálohovat záznamy nebo je přenést do jiného zařízení?</summary>
+        <ul>
+          <li>Pomocí <b>Uložit záznamy</b> na domovské obrazovce nebo v Nastavení exportujete data do souboru.</li>
+          <li>V jiném zařízení zvolte <b>Nastavení → Importovat záznamy</b> a otevřete tento soubor, čímž se vše obnoví.</li>
+          <li>Importovat lze i záložní soubory exportované ze starší webové verze.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Nainstaloval(a) jsem aplikaci s bezplatným Apple ID a nejde otevřít.</summary>
+        <p>Aplikace nainstalované s bezplatným Apple ID je nutné každých 7 dní znovu spustit (přeinstalovat). Data se při přeinstalaci zachovají, ale doporučujeme nejdřív zálohovat přes <b>Uložit záznamy</b>. S placeným vývojářským účtem (99 USD ročně) zůstane aplikace platná rok.</p>
+      </details>
+
+      <details>
+        <summary>Jak ji nainstaluji na iPad?</summary>
+        <ul>
+          <li>Na Macu otevřete <code>FamilyCourt.xcodeproj</code> v Xcode.</li>
+          <li>V Signing &amp; Capabilities zvolte své vlastní Apple ID (Team).</li>
+          <li>Připojte iPad a klepnutím na ▶ Run aplikaci nainstalujte.</li>
+          <li>Úplný postup najdete v <a href="https://github.com/M1zz/FamilyCourt">README na GitHubu</a>.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Jak úplně smažu svá data?</summary>
+        <p>Smazáním aplikace se odstraní všechna data uložená ve vašem zařízení. Záznamy o rodině a procesech zařízení nikdy neopustí, takže jinde nic nezůstane. Pokud chcete smazat zpětnou vazbu odeslanou přes Odeslat zpětnou vazbu, napište na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>O aplikaci</h2>
+      <ul style="list-style:none; color:var(--muted); line-height:2;">
+        <li><b style="color:var(--ink)">Název</b> · Rodinný soud (억울해요)</li>
+        <li><b style="color:var(--ink)">Platforma</b> · iPhone, iPad (iOS)</li>
+        <li><b style="color:var(--ink)">Cena</b> · Zdarma · Bez reklam · Bez nákupů v aplikaci</li>
+        <li><b style="color:var(--ink)">Zdrojový kód</b> · <a href="https://github.com/M1zz/FamilyCourt">github.com/M1zz/FamilyCourt</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../support.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/support.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/support.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/support.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/support.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/support.html" hreflang="es" lang="es">Español</a> <a href="../de/support.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/support.html" hreflang="fr" lang="fr">Français</a> <a href="../it/support.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/support.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/support.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/support.html" hreflang="vi" lang="vi">Tiếng Việt</a> <b>Čeština</b></div><!--/langs-->
+    © 2026 Rodinný soud (억울해요) · <a href="index.html">Domů</a> · <a href="privacy.html">Zásady ochrany soukromí</a></footer>
+</body>
+</html>

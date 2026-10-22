@@ -853,3 +853,64 @@ Vụ án cũ và bài học về tòa án
 Các vụ đã xong được lưu thành án lệ, và mục Tìm hiểu về tòa án giải thích thẩm phán, nguyên đơn, công tố viên và luật sư làm gì cũng như một phiên tòa diễn ra thế nào.
 
 Mọi hồ sơ đều nằm trên thiết bị này và không cần tài khoản. Bạn có thể xuất hồ sơ ra tệp và nhập lại sau.
+
+## cs
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/cs/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/cs/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/cs/
+
+### 이름
+
+Rodinný soud: Hra na soud
+
+### 부제
+
+Hrajeme si doma na soud
+
+### 키워드
+
+děti,soudce,právník,spravedlnost,sourozenci,pravidla,výchova,kladívko,rozsudek,zákon,žalobce,hra
+
+### 프로모션 텍스트
+
+Něco se zdá nespravedlivé? Řešte to soudem, ne slzami. Dítě podá žalobu, rodina hraje soudce a obhájce a společně se učí právo a spravedlnost.
+
+### 설명
+
+Když se sourozenci pohádají nebo někdo nedodrží slib, nekřičte, ale otevřete vlastní rodinný soud.
+Rodinný soud je aplikace pro hru na role, kde rodina hraje soudce, žalobce, obžalovaného a obhájce, vyslechne všechny strany a vynese rozsudek jako u skutečného soudu.
+
+Civilní případ: když se zdá, že se stala křivda
+Ten, kdo se cítí poškozen, podá žalobu jako žalobce. Sám si vybere, koho bude žalovat a kdo bude soudcem. Děti mohou žalovat i maminku a tatínka.
+
+Trestní případ: když je porušeno pravidlo domácnosti
+Kdo viděl porušení pravidla, stane se žalobcem a předloží případ. Soudce volí mezi vinen, nevinen a shovívavost.
+
+Podle scénáře je to jako skutečný soud
+Od zahájení jednání přes příběh každé strany, obhajobu a závěrečnou řeč až po rozsudek scénář všem říká, kdo je na řadě a co říct. Udeřte kladívkem a ozve se pořádná rána, přičemž časovač hlídá čas každého řečníka.
+
+Pravidla, která zaručují spravedlnost
+Soudcem může být jen ten, kdo není žalobce ani obžalovaný. Kdo stane před soudem, si před líčením může vybrat obhájce, který mu pomůže.
+
+Rozsudky, které končí slibem, ne jen trestem
+Spolu s rozsudkem se stanoví slib nebo sankce, které je třeba splnit, a odškrtávají se, dokud nejsou hotové. Navrhované sankce míří spíš k nápravě než k trestání, třeba vrátit věci na místo nebo někomu udělat radost.
+
+Náš rodinný zákoník
+Zapište si pravidla, na kterých se rodina shodla, třeba úctu, úklid a dodržování slibů, a kdykoli je doplňte nebo změňte.
+
+Slova podle věku dítěte
+Přepínejte jazyk mezi třemi úrovněmi, Jednoduchá, Standardní a Soudní, aby si mohli hrát všichni od předškoláků po starší děti.
+
+Dřívější případy a lekce o soudu
+Uzavřené případy se uchovávají jako precedenty a část Poznejte soud vysvětluje, co dělají soudci, žalobci, státní zástupci a obhájci a jak probíhá líčení.
+
+Všechny záznamy zůstávají v tomto zařízení a účet není potřeba. Záznamy můžete exportovat do souboru a později znovu importovat.
