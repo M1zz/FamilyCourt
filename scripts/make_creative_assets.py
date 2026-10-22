@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -51,6 +51,7 @@ SEARCH = {
     "fi": ("Perhetuomioistuin", "Epäreilua?<br>Avaa istunto", "Perhe toimii<br>tuomarina ja avustajana"),
     "id": ("Pengadilan Keluarga", "Merasa tidak adil?<br>Buka sidang", "Keluarga jadi<br>hakim dan pembela"),
     "nb": ("Familieretten", "Noe urettferdig?<br>Åpne retten", "Familien spiller<br>dommer og forsvarer"),
+    "nl": ("Familierechtbank", "Iets oneerlijk?<br>Open de zitting", "Het gezin speelt<br>rechter en raadsman"),
 }
 
 # 헤더는 한 가지 약속: 다툼을 가족 역할극 재판으로 공정하게 푼다.
@@ -73,6 +74,7 @@ HEADER = {
     "fi": ("Perhetuomioistuin lapsille", "Ratkaise oikeudessa,<br>älä riitelemällä"),
     "id": ("Pengadilan keluarga untuk anak", "Selesaikan lewat sidang,<br>bukan bertengkar"),
     "nb": ("En familierett for barn", "Løs det i retten,<br>ikke med krangel"),
+    "nl": ("Een familierechtbank voor kinderen", "Los het op met een proces,<br>niet met ruzie"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(크림빛 바탕의 나무 망치)과 AccentColor(#C9A227) 에서 왔다.

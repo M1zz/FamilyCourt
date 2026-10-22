@@ -144,3 +144,10 @@ Hammer-ikonet er blitt enda søtere
 Send tilbakemelding rett i appen
 Nye hjelpe- og infosider
 Finpusset for en jevnere opplevelse
+
+### 앱스토어 (Nederlands)
+
+Het hamericoon is nog schattiger
+Stuur feedback direct in de app
+Nieuwe hulp- en infopagina’s geopend
+Verfijnd voor een soepeler gebruik

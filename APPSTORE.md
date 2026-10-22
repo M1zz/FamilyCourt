@@ -1219,3 +1219,64 @@ Tidligere saker og leksjoner om retten
 Avsluttede saker lagres som presedens, og delen Lær om retten forklarer hva dommere, saksøkere, aktorer og forsvarere gjør, og hvordan en rettssak forløper.
 
 Alle oppføringer blir på denne enheten, og ingen konto trengs. Du kan eksportere oppføringene dine til en fil og importere dem igjen senere.
+
+## nl
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/nl/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/nl/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/nl/
+
+### 이름
+
+Familierechtbank: Thuisproces
+
+### 부제
+
+Rechtbankspel voor het gezin
+
+### 키워드
+
+kinderen,rechter,advocaat,eerlijkheid,broers,zussen,regels,opvoeding,hamer,vonnis,wet,officier,eiser
+
+### 프로모션 텍스트
+
+Iets oneerlijk? Los het op met een proces, niet met tranen. Je kind dient een zaak in, het gezin speelt rechter en raadsman en leert samen over wetten en eerlijkheid.
+
+### 설명
+
+Als broers en zussen ruziën of een belofte wordt gebroken, hoef je niet te schreeuwen. Open gewoon je eigen familierechtbank.
+Familierechtbank is een rollenspel-app waarin je gezin de rollen van rechter, eiser, verdachte en raadsman speelt, alle kanten hoort en tot een vonnis komt, net als bij een echte rechtszaak.
+
+Civiele zaak: als iets oneerlijk voelt
+Wie zich benadeeld voelt, dient de zaak in als eiser. Die kiest tegen wie de zaak wordt gevoerd en wie de rechter wordt. Kinderen kunnen zelfs papa en mama aanklagen.
+
+Strafzaak: als een huisregel is gebroken
+Wie zag dat de regel werd gebroken, wordt officier van justitie en brengt de zaak voor. De rechter kiest tussen schuldig, niet schuldig en clementie.
+
+Volg het script en het voelt als een echte rechtszaak
+Van de opening van de zitting tot het verhaal van elke partij, het pleidooi, het laatste woord en het vonnis: een script vertelt iedereen wie aan de beurt is en wat er gezegd moet worden. Sla met de hamer voor een lekkere knal, en een timer houdt de spreektijd van iedereen bij.
+
+Regels die het eerlijk houden
+Alleen iemand die geen eiser of verdachte is, kan rechter zijn. Wie voor de rechter komt, kan vóór de zitting een raadsman kiezen die helpt.
+
+Vonnissen die eindigen met een belofte, niet alleen met een straf
+Samen met het vonnis spreek je een belofte of straf af die moet worden nagekomen, en die vink je af tot hij klaar is. De voorgestelde straffen zijn meer gericht op het goedmaken dan op straffen, zoals dingen terugleggen of iets aardigs voor iemand doen.
+
+Ons gezinswetboek
+Schrijf de regels op waar je gezin het over eens is, zoals respect, opruimen en beloftes nakomen, en voeg ze op elk moment toe of pas ze aan.
+
+Woorden die passen bij de leeftijd van je kind
+Schakel de taal tussen drie niveaus: Eenvoudig, Standaard en Rechtszaal, zodat iedereen van kleuter tot ouder kind kan meedoen.
+
+Eerdere zaken en lessen over de rechtbank
+Afgeronde zaken blijven bewaard als jurisprudentie en het onderdeel Leer over de rechtbank legt uit wat rechters, eisers, officieren en raadslieden doen en hoe een rechtszaak verloopt.
+
+Alle gegevens blijven op dit apparaat en een account is niet nodig. Je kunt je gegevens naar een bestand exporteren en later weer importeren.
