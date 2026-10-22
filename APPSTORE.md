@@ -1036,3 +1036,64 @@ https://m1zz.github.io/FamilyCourt/el/
 Οι ολοκληρωμένες υποθέσεις φυλάσσονται ως νομολογία και η ενότητα Μάθε για το δικαστήριο εξηγεί τι κάνουν οι δικαστές, οι ενάγοντες, οι εισαγγελείς και οι συνήγοροι και πώς εξελίσσεται μια δίκη.
 
 Όλα τα αρχεία μένουν σε αυτή τη συσκευή και δεν χρειάζεται λογαριασμός. Μπορείτε να εξαγάγετε τα αρχεία σας σε αρχείο και να τα εισαγάγετε ξανά αργότερα.
+
+## fi
+
+### 지원 URL
+
+https://m1zz.github.io/FamilyCourt/fi/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/FamilyCourt/fi/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/FamilyCourt/fi/
+
+### 이름
+
+Perhetuomioistuin: kotioikeus
+
+### 부제
+
+Oikeudenkäyntipeli perheelle
+
+### 키워드
+
+lapset,tuomari,asianajaja,oikeudenmukaisuus,sisarukset,säännöt,kasvatus,nuija,tuomio,laki,syyttäjä
+
+### 프로모션 텍스트
+
+Tuntuuko epäreilulta? Ratkaise se oikeudenkäynnillä, älä kyynelillä. Lapsi jättää haasteen, perhe toimii tuomarina ja avustajana ja oppii lakia ja oikeudenmukaisuutta.
+
+### 설명
+
+Kun sisarukset riitelevät tai lupaus rikotaan, älkää huutako vaan avatkaa oma perheoikeutenne.
+Perhetuomioistuin on roolipelisovellus, jossa perhe toimii tuomarina, kantajana, vastaajana ja avustajana, kuuntelee kaikkia osapuolia ja päätyy tuomioon aivan kuin oikeassa oikeudenkäynnissä.
+
+Riita-asia: kun jokin tuntuu epäreilulta
+Se, joka kokee tulleensa kohdelluksi väärin, jättää haasteen kantajana. Hän valitsee, ketä vastaan asia viedään ja kuka on tuomari. Lapset voivat haastaa jopa äidin ja isän.
+
+Rikosasia: kun kotisääntö on rikottu
+Se, joka näki säännön rikkomisen, ryhtyy syyttäjäksi ja tuo asian oikeuteen. Tuomari valitsee syyllisen, syyttömän ja armon väliltä.
+
+Seuraa käsikirjoitusta, niin se tuntuu oikealta oikeudenkäynniltä
+Istunnon avaamisesta kunkin osapuolen kertomukseen, puolustukseen, loppulausuntoon ja tuomioon asti käsikirjoitus kertoo kaikille, kenen vuoro on ja mitä sanoa. Lyö nuijaa, niin kuuluu mukava pamaus, ja ajastin pitää huolen jokaisen puheajasta.
+
+Säännöt, jotka pitävät pelin reiluna
+Tuomarina voi toimia vain se, joka ei ole kantaja eikä vastaaja. Oikeuteen viety voi valita avustajan auttamaan ennen istuntoa.
+
+Tuomiot, jotka päättyvät lupaukseen, eivät pelkkään rangaistukseen
+Tuomion yhteydessä sovitaan pidettävä lupaus tai seuraamus, ja se merkitään tehdyksi, kunnes se on hoidettu. Ehdotetut seuraamukset pyrkivät korjaamaan eikä rankaisemaan, esimerkiksi viemällä tavarat takaisin paikoilleen tai tekemällä jotain kivaa toiselle.
+
+Perheemme lakikirja
+Kirjoita ylös säännöt, joista perhe on sopinut, kuten kunnioitus, siivous ja lupausten pitäminen, ja lisää tai muuta niitä milloin tahansa.
+
+Sanat lapsen ikään sopiviksi
+Vaihda sanamuoto kolmen tason välillä: Helppo, Perus ja Oikeussali, jotta kaikki päiväkoti-ikäisistä isompiin lapsiin voivat olla mukana.
+
+Aiemmat asiat ja oikeussalioppitunnit
+Päättyneet asiat tallentuvat ennakkotapauksiksi, ja Tutustu oikeuteen -osio kertoo, mitä tuomarit, kantajat, syyttäjät ja avustajat tekevät ja miten oikeudenkäynti etenee.
+
+Kaikki tiedot pysyvät tällä laitteella, eikä tiliä tarvita. Voit viedä tietosi tiedostoon ja tuoda ne myöhemmin takaisin.

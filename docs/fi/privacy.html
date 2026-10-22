@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tietosuojakäytäntö — Perhetuomioistuin</title>
+  <meta name="description" content="Perhetuomioistuimen tietosuojakäytäntö. Perheen ja oikeudenkäyntien tiedot pysyvät laitteellasi; kehittäjä saa vain itse lähettämäsi palautteen ja nimettömiä käyttötilastoja.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/privacy.html">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/privacy.html">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/FamilyCourt/ru/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/FamilyCourt/es/privacy.html">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/FamilyCourt/de/privacy.html">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/FamilyCourt/fr/privacy.html">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/FamilyCourt/it/privacy.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/FamilyCourt/th/privacy.html">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/FamilyCourt/vi/privacy.html">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/FamilyCourt/cs/privacy.html">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/FamilyCourt/da/privacy.html">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/FamilyCourt/el/privacy.html">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/FamilyCourt/fi/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/privacy.html">
+  <style>
+    :root {
+      --bg: #fdf9f0; --card: #ffffff; --ink: #2b2118; --muted: #6f6152;
+      --accent: #c8892e; --accent-soft: #f5e6c8; --line: #eaddc4;
+      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10); --ok: #4a8f4f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1712; --card: #26201a; --ink: #f3ebde; --muted: #b4a48f;
+        --accent: #e6ac52; --accent-soft: #3a2f20; --line: #3a3025;
+        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4); --ok: #7bbf80;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+      background: var(--bg); color: var(--ink); line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      text-align: center; padding: 56px 24px 40px;
+      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+    header .ico { font-size: 48px; }
+    h1 { font-size: 2rem; margin: 10px 0 4px; letter-spacing: -0.02em; }
+    .updated { color: var(--muted); font-size: 0.92rem; }
+    .highlight {
+      background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--ok);
+      border-radius: 14px; padding: 22px 24px; margin: 32px 0; box-shadow: var(--shadow);
+    }
+    .highlight strong { color: var(--ok); }
+    section { margin: 34px 0; }
+    h2 { font-size: 1.25rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+    p, li { color: var(--ink); }
+    p { margin-bottom: 10px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    .nav { display: flex; gap: 18px; justify-content: center; padding-top: 18px; }
+    footer {
+      text-align: center; padding: 40px 24px; color: var(--muted);
+      border-top: 1px solid var(--line); margin-top: 40px; font-size: 0.9rem;
+    }
+    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
+    .langs a { color: var(--muted); text-decoration: none; }
+    .langs a:hover { text-decoration: underline; }
+    .langs b { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="ico">🔒</div>
+    <h1>Tietosuojakäytäntö</h1>
+    <div class="updated">Perhetuomioistuin · Päivitetty viimeksi: 16. lokakuuta 2026</div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="highlight"><strong>Lyhyesti: perheesi ja oikeudenkäyntiesi tiedot eivät poistu koskaan laitteeltasi.</strong><br> Perhetuomioistuin ei vaadi rekisteröitymistä tai kirjautumista, eikä siinä ole mainoksia tai seurantaa. Kaikki syöttämäsi, kuten perhe, lakikirja, oikeudenkäynnit ja tuomiot, tallennetaan vain laitteellesi. Kehittäjälle päätyy vain se, minkä itse lähetät kohdasta <b>Lähetä palautetta</b>, sekä nimettömiä käyttötilastoja ja kaatumisraportteja, joista sinua ei voi tunnistaa (ks. kohta 5).</div>
+
+    <section>
+      <h2>1. Mitä tietoja keräämme</h2>
+      <p>Sovellus <b>ei kerää automaattisesti</b> henkilötietoja, kuten nimeä, sähköpostiosoitetta, sijaintia, yhteystietoja, kuvia tai laitetunnisteita. Sinun ei tarvitse luoda tiliä tai kirjautua.</p>
+      <p>Kehittäjälle voi päätyä kahdenlaista tietoa: palaute, jonka lähetät itse Asetusten kohdasta Lähetä palautetta (kohta 4), sekä nimettömät käyttötilastot ja kaatumisraportit, joista ei voi tunnistaa henkilöä (kohta 5).</p>
+    </section>
+
+    <section>
+      <h2>2. Missä tietosi säilytetään</h2>
+      <p>Se, mitä sovellukseen syötät, kuten perheenjäsenten nimet, lakikirjan kohdat sekä oikeudenkäyntien ja tuomioiden tiedot, tallennetaan vain tiedostoon <code>familycourt.json</code> sovelluksen asiakirjakansiossa laitteellasi.</p>
+      <ul>
+        <li>Nämä tiedot <b>eivät poistu koskaan laitteeltasi.</b></li>
+        <li>Niitä ei lähetetä millekään ulkoiselle palvelimelle, ei edes omallemme, eikä niitä synkronoida iCloudin kautta.</li>
+        <li>Kun poistat sovelluksen, nämä tiedot poistuvat myös.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Varmuuskopiointi ja tietojen siirtäminen</h2>
+      <p>Sovelluksen Tallenna tiedot -toiminnolla voit viedä tietosi tiedostoon ja tuoda ne myöhemmin takaisin. Hallitset tätä varmuuskopiotiedostoa itse ja päätät, minne se tallennetaan tai jaetaan. Meillä ei ole siihen koskaan pääsyä.</p>
+    </section>
+
+    <section>
+      <h2>4. Palautteen lähettäminen (vain kun lähetät sen)</h2>
+      <p>Jos kirjoitat ja lähetät viestin Asetusten kohdasta Lähetä palautetta tai valitset ”Voisi olla parempi”, kun sovellus joskus kysyy ”Pidätkö Perhetuomioistuimesta?”, seuraavat tiedot päätyvät kehittäjälle Applen iCloudin (CloudKit) julkisen tietokannan kautta. Laitteen on oltava kirjautuneena iCloudiin, jotta voit lähettää, eikä mitään lähetetä ennen kuin napautat lähetyspainiketta.</p>
+      <ul>
+        <li>Palautteen tyyppi ja se, mitä kirjoitit</li>
+        <li>Laitetiedot: sovelluksen versio, laitemalli, iOS-versio sekä kieli- ja alueasetukset</li>
+        <li>Nimesi ja sähköpostiosoitteesi vastausta varten, vain jos päätit antaa ne (valinnainen)</li>
+      </ul>
+      <p>Käytämme näitä tietoja vain viestiisi vastaamiseen ja sovelluksen parantamiseen. Emme käytä niitä mihinkään muuhun tarkoitukseen emmekä jaa niitä kolmansille osapuolille. Jos kehittäjä vastaa, sovellus hakee vain tuon vastauksen lähettämäsi palautteen numeron perusteella. Jos haluat poistattaa lähettämäsi palautteen, ota meihin yhteyttä alla olevaan osoitteeseen.</p>
+    </section>
+
+    <section>
+      <h2>5. Nimettömät käyttötilastot</h2>
+      <p>Selvittääkseen, kuinka moni käyttää sovellusta, ja korjatakseen virheitä sovellus lähettää seuraavat nimettömät tilastot Apple iCloudiin (CloudKit). Vain kehittäjä voi lukea ne.</p>
+      <ul>
+        <li>Asennuksen yhteydessä luotu satunnainen tunnus (ei liity laitteeseesi, Apple ID:hesi tai muihin sovelluksiin, ja se vaihtuu uudelleenasennuksessa)</li>
+        <li>Sovelluksen versio, iOS-versio sekä alue- ja kieliasetukset</li>
+        <li>Kuinka monta kertaa ja minä päivinä sovellus avattiin, asennuspäivä ja asennuksesta kuluneet päivät</li>
+        <li>Diagnostiikkaraportit, kun sovellus jumiutuu tai sulkeutuu odottamatta (sovelluksen versio, iOS-versio, laitetyyppi ja teknisiä virhetietoja)</li>
+      </ul>
+      <p>Niihin ei koskaan sisälly syöttämääsi tietoa, kuten nimiä, yhteystietoja, sijaintia tai perheen ja oikeudenkäyntien tietoja. Ne lähetetään vain, kun olet kirjautuneena iCloudiin.</p>
+    </section>
+
+    <section>
+      <h2>6. Kolmannet osapuolet ja ulkoiset palvelut</h2>
+      <p>Sovellus ei käytä mainosverkostoja, ulkoisia analytiikkapalveluja, sosiaalisen median kirjautumista tai seurantatyökaluja, eikä se anna tietoja kolmansille osapuolille. Palautteen lähettämiseen ja nimettömiin käyttötilastoihin käytettävää iCloudia ylläpitää Apple, ja siihen sovelletaan Applen tietosuojakäytäntöä. Kun sovellus pyytää tähtiarvostelua, se käyttää Applen vakioarvostelukehotetta, emmekä saa sen sisältöä. Palautteen lähettämistä ja nimettömiä käyttötilastoja lukuun ottamatta kaikki toiminnot toimivat ilman internetyhteyttä.</p>
+    </section>
+
+    <section>
+      <h2>7. Lasten yksityisyys</h2>
+      <p>Sovellus on suunniteltu perheen yhteiseen käyttöön ja on turvallinen lapsille. Sovellukseen syötetyt tiedot, kuten perheenjäsenten nimet, pysyvät laitteella, ja vanhempi tai huoltaja voi muokata tai poistaa ne sovelluksessa milloin tahansa. Palaute lähetetään vain, jos laite on kirjautuneena iCloudiin ja käyttäjä itse napauttaa lähetyspainiketta. Jos lapsi lähettää palautetta, katsokaa se yhdessä. Kohdan 5 nimettömät käyttötilastot eivät sisällä mitään, mistä näkyisi, kuka sovellusta käyttää.</p>
+    </section>
+
+    <section>
+      <h2>8. Oikeutesi</h2>
+      <p>Voit muokata tai poistaa laitteellesi tallennettuja tietoja sovelluksessa milloin tahansa, ja sovelluksen poistaminen poistaa ne kaikki. Jos haluat nähdä tai poistattaa lähettämäsi palautteen, ota meihin yhteyttä alla olevaan osoitteeseen.</p>
+    </section>
+
+    <section>
+      <h2>9. Tämän käytännön muutokset</h2>
+      <p>Jos tämä käytäntö muuttuu, päivitämme tämän sivun ja ylhäällä olevan ”Päivitetty viimeksi” -päivämäärän.</p>
+    </section>
+
+    <section>
+      <h2>10. Yhteystiedot</h2>
+      <p>Jos sinulla on kysyttävää tästä tietosuojakäytännöstä, ota yhteyttä tästä.<br> <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <!--langs--><div class="langs"><a href="../privacy.html" hreflang="ko" lang="ko">한국어</a> <a href="../en/privacy.html" hreflang="en" lang="en">English</a> <a href="../zh-Hans/privacy.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a> <a href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a> <a href="../es/privacy.html" hreflang="es" lang="es">Español</a> <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a> <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a> <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/privacy.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/privacy.html" hreflang="th" lang="th">ไทย</a> <a href="../vi/privacy.html" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/privacy.html" hreflang="cs" lang="cs">Čeština</a> <a href="../da/privacy.html" hreflang="da" lang="da">Dansk</a> <a href="../el/privacy.html" hreflang="el" lang="el">Ελληνικά</a> <b>Suomi</b></div><!--/langs-->
+    © 2026 Perhetuomioistuin (억울해요) · <a href="index.html">Etusivu</a> · <a href="support.html">Tuki</a></footer>
+</body>
+</html>

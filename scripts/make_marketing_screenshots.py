@@ -17,7 +17,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -37,7 +37,8 @@ SHOTS = [
         "vi": ("Thấy bất công?<br>Mở phiên tòa", "Trẻ em và cha mẹ đều có thể kiện"),
         "cs": ("Křivda?<br>Zahajte jednání", "Žalobu mohou podat děti i rodiče"),
         "da": ("Noget uretfærdigt?<br>Åbn retten", "Både børn og forældre kan indgive sag"),
-        "el": ("Κάτι άδικο;<br>Ανοίξτε συνεδρίαση", "Παιδιά και γονείς μπορούν να κάνουν αγωγή")}),
+        "el": ("Κάτι άδικο;<br>Ανοίξτε συνεδρίαση", "Παιδιά και γονείς μπορούν να κάνουν αγωγή"),
+        "fi": ("Epäreilua?<br>Avaa istunto", "Sekä lapset että vanhemmat voivat haastaa")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
@@ -54,7 +55,8 @@ SHOTS = [
         "vi": ("Tự viết<br>đơn kiện", "Người nộp đơn chọn bị đơn và thẩm phán"),
         "cs": ("Žalobu si<br>napíšete sami", "Žalovaného i soudce vybírá žalobce"),
         "da": ("Skriv stævningen<br>selv", "Den, der indgiver, vælger tiltalt og dommer"),
-        "el": ("Γράψτε μόνοι<br>την αγωγή", "Όποιος καταθέτει διαλέγει κατηγορούμενο και δικαστή")}),
+        "el": ("Γράψτε μόνοι<br>την αγωγή", "Όποιος καταθέτει διαλέγει κατηγορούμενο και δικαστή"),
+        "fi": ("Haaste<br>kirjoitetaan itse", "Haastaja valitsee vastaajan ja tuomarin")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
@@ -71,7 +73,8 @@ SHOTS = [
         "vi": ("Đọc lời thoại,<br>như tòa thật", "Mỗi câu cho biết đến lượt ai"),
         "cs": ("Podle scénáře<br>jako u pravého soudu", "Každá replika říká, kdo je na řadě"),
         "da": ("Følg manuskriptet<br>til en rigtig retssag", "Hver replik viser, hvis tur det er"),
-        "el": ("Ακολουθήστε το σενάριο<br>για πραγματική δίκη", "Κάθε ατάκα δείχνει ποιανού η σειρά")}),
+        "el": ("Ακολουθήστε το σενάριο<br>για πραγματική δίκη", "Κάθε ατάκα δείχνει ποιανού η σειρά"),
+        "fi": ("Seuraa käsikirjoitusta<br>oikeaa oikeudenkäyntiä varten", "Jokainen repliikki kertoo, kenen vuoro on")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
         "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
@@ -88,7 +91,8 @@ SHOTS = [
         "vi": ("Phán quyết kết thúc<br>bằng lời hứa", "Đặt lời hứa và đánh dấu đến cùng"),
         "cs": ("Rozsudek končí<br>slibem", "Stanovte slib a odškrtávejte ho do konce"),
         "da": ("Domme slutter<br>med et løfte", "Aftal et løfte, og afkryds det til sidst"),
-        "el": ("Οι αποφάσεις τελειώνουν<br>με υπόσχεση", "Ορίστε υπόσχεση και τσεκάρετέ την ως το τέλος")}),
+        "el": ("Οι αποφάσεις τελειώνουν<br>με υπόσχεση", "Ορίστε υπόσχεση και τσεκάρετέ την ως το τέλος"),
+        "fi": ("Tuomio päättyy<br>lupaukseen", "Sovi lupaus ja merkitse se loppuun asti")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
         "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
@@ -105,7 +109,8 @@ SHOTS = [
         "vi": ("Cùng đặt<br>luật của nhà", "Thêm và sửa điều khoản bất cứ lúc nào"),
         "cs": ("Zákony domácnosti<br>sepište společně", "Články kdykoli doplníte a upravíte"),
         "da": ("Skriv familiens love<br>sammen", "Tilføj og ret paragraffer når som helst"),
-        "el": ("Γράψτε μαζί τους<br>νόμους του σπιτιού", "Προσθέστε και αλλάξτε άρθρα όποτε θέλετε")}),
+        "el": ("Γράψτε μαζί τους<br>νόμους του σπιτιού", "Προσθέστε και αλλάξτε άρθρα όποτε θέλετε"),
+        "fi": ("Kirjoittakaa kodin lait<br>yhdessä", "Lisää ja muokkaa pykäliä milloin vain")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
@@ -122,7 +127,8 @@ SHOTS = [
         "vi": ("Thẩm phán, nguyên đơn, luật sư:<br>học mọi vai", "Vai trò và các bước xử án bằng lời dễ hiểu"),
         "cs": ("Soudce, žalobce, obhájce:<br>poznejte všechny role", "Role a průběh líčení jednoduše"),
         "da": ("Dommer, sagsøger, forsvarer:<br>lær alle rollerne", "Roller og retsmødets trin i enkle ord"),
-        "el": ("Δικαστής, ενάγων, συνήγορος:<br>μάθετε κάθε ρόλο", "Ρόλοι και στάδια της δίκης με απλά λόγια")}),
+        "el": ("Δικαστής, ενάγων, συνήγορος:<br>μάθετε κάθε ρόλο", "Ρόλοι και στάδια της δίκης με απλά λόγια"),
+        "fi": ("Tuomari, kantaja, avustaja:<br>opi kaikki roolit", "Roolit ja oikeudenkäynnin vaiheet selkeästi")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.

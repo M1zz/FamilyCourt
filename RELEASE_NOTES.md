@@ -123,3 +123,10 @@ Finpudset for en jævnere oplevelse
 Στείλτε σχόλια μέσα από την εφαρμογή
 Νέες σελίδες βοήθειας και πληροφοριών
 Βελτιώσεις για πιο ομαλή χρήση
+
+### 앱스토어 (Suomi)
+
+Nuijakuvake on entistä söpömpi
+Palautteen voi lähettää sovelluksessa
+Uudet ohje- ja esittelysivut avattu
+Viimeistelty sujuvampaan käyttöön
