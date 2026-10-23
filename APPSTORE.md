@@ -878,7 +878,7 @@ Hrajeme si doma na soud
 
 ### 키워드
 
-děti,soudce,právník,spravedlnost,sourozenci,pravidla,výchova,kladívko,rozsudek,zákon,žalobce,hra
+děti,soudce,právník,spravedlnost,sourozenci,pravidla,výchova,kladívko,rozsudek,zákon,žalobce,hádky
 
 ### 프로모션 텍스트
 

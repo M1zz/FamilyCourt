@@ -11,12 +11,24 @@ struct CaseDetailView: View {
 
     var body: some View {
         if let c = store.courtCase(caseId) {
+            ScrollViewReader { proxy in
             List {
                 headerSection(c)
                 rolesSection(c)
                 contentSection(c)
-                if let v = c.verdict { verdictSection(c, v) }
+                if let v = c.verdict { verdictSection(c, v).id("verdict") }
                 actionSection(c)
+            }
+            #if DEBUG
+            .onAppear {
+                switch ScreenshotScene.current {
+                case .trial: showTrial = true
+                case .verdict:
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { proxy.scrollTo("verdict", anchor: .center) }
+                default: break
+                }
+            }
+            #endif
             }
             .navigationTitle(c.caseNo)
             .navigationBarTitleDisplayMode(.inline)
@@ -41,7 +53,7 @@ struct CaseDetailView: View {
         Section {
             VStack(alignment: .leading, spacing: 10) {
                 HStack(spacing: 6) {
-                    Text("\(c.caseNo) · \(c.createdAt)")
+                    Text(verbatim: "\(c.caseNo) · \(c.createdAt)")
                         .font(.caption)
                         .foregroundColor(.secondary)
                     TypeBadge(type: c.type)
@@ -73,14 +85,14 @@ struct CaseDetailView: View {
         let v = store.vocab
         switch c.status {
         case .waiting:
-            return "👉 다음 할 일: 가족을 모아 재판을 열어요. \(v.judge) \(store.memName(c.roles.judge)) 님이 진행해요."
+            return String(localized: "👉 다음 할 일: 가족을 모아 재판을 열어요. \(v.judge) \(store.memName(c.roles.judge)) 님이 진행해요.")
         case .inTrial:
-            return "👉 재판이 진행 중이에요. 이어서 진행해 주세요!"
+            return String(localized: "👉 재판이 진행 중이에요. 이어서 진행해 주세요!")
         case .decided:
             if let verdict = c.verdict, !verdict.penalty.isEmpty, !verdict.penaltyDone {
-                return "👉 다음 할 일: \(store.memName(c.roles.accused)) 님이 약속을 지키면 아래에 체크해요."
+                return String(localized: "👉 다음 할 일: \(store.memName(c.roles.accused)) 님이 약속을 지키면 아래에 체크해요.")
             }
-            return "🎉 이 사건은 모두 끝났어요. 서로 안아주고 화해했나요?"
+            return String(localized: "🎉 이 사건은 모두 끝났어요. 서로 안아주고 화해했나요?")
         }
     }
 
@@ -105,9 +117,9 @@ struct CaseDetailView: View {
 
     private func contentSection(_ c: CourtCase) -> some View {
         Section("사건 내용") {
-            InfoRow(icon: "📄", text: c.desc.isEmpty ? "(적은 내용이 없어요)" : c.desc)
+            InfoRow(icon: "📄", text: c.desc.isEmpty ? String(localized: "(적은 내용이 없어요)") : c.desc)
             if !c.lawIds.isEmpty {
-                InfoRow(icon: "📜", text: "어긴 법: \(store.lawLabels(c.lawIds))")
+                InfoRow(icon: "📜", text: String(localized: "어긴 법: \(store.lawLabels(c.lawIds))"))
             }
             if !c.want.isEmpty {
                 InfoRow(icon: "🎯", text: "\(store.vocab.wantShort(c.type)): \(c.want)")
@@ -126,7 +138,7 @@ struct CaseDetailView: View {
                         .foregroundColor(.secondary)
                     VerdictBadge(courtCase: c)
                 }
-                Text("📜 \(v.text)")
+                Text(verbatim: "📜 \(v.text)")
                     .font(.system(size: 15))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(10)
@@ -141,7 +153,7 @@ struct CaseDetailView: View {
                     set: { done in store.update(caseId) { $0.verdict?.penaltyDone = done } }
                 )) {
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("\(store.vocab.penaltyShort(c.type)): \(v.penalty)")
+                        Text(verbatim: "\(store.vocab.penaltyShort(c.type)): \(v.penalty)")
                             .font(.system(size: 14))
                             .strikethrough(v.penaltyDone)
                             .foregroundColor(v.penaltyDone ? .secondary : .primary)
@@ -218,7 +230,7 @@ struct TypeBadge: View {
     let type: CaseType
 
     var body: some View {
-        Text("\(type.badgeEmoji) \(store.vocab.typeName(type))")
+        Text(verbatim: "\(type.badgeEmoji) \(store.vocab.typeName(type))")
             .font(.system(size: 12, weight: .semibold))
             .foregroundColor(type == .criminal ? .red : .blue)
             .padding(.horizontal, 9)
@@ -257,7 +269,10 @@ struct StepTrack: View {
     let current: Int   // 0...4 (4면 모두 완료)
 
     private let steps: [(emoji: String, label: String)] = [
-        ("📮", "접수"), ("🔨", "재판"), ("📜", "판결"), ("🤝", "약속")
+        ("📮", String(localized: "접수", comment: "Case progress step: filed")),
+        ("🔨", String(localized: "재판", comment: "Case progress step: trial")),
+        ("📜", String(localized: "판결", comment: "Case progress step: verdict")),
+        ("🤝", String(localized: "약속", comment: "Case progress step: promise kept"))
     ]
 
     var body: some View {
@@ -293,11 +308,13 @@ struct StepTrack: View {
             Text(steps[i].label)
                 .font(.system(size: 11, weight: i == current ? .bold : .medium))
                 .foregroundColor(labelColor(i))
+                .lineLimit(1)
+                .fixedSize()   // 긴 말(독일어 등)이 "…" 로 잘리지 않게 — 잇는 선이 대신 줄어든다
         }
         // VoiceOver: 그림 글자와 체크 표시 대신 "재판, 지금 단계"처럼 읽어 준다.
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(steps[i].label)
-        .accessibilityValue(i < current ? "끝남" : (i == current ? "지금 단계" : "아직"))
+        .accessibilityValue(i < current ? Text("끝남") : (i == current ? Text("지금 단계") : Text("아직")))
     }
 
     private func dotColor(_ i: Int) -> Color {

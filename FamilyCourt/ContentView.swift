@@ -22,6 +22,9 @@ struct ContentView: View {
             .onReceive(router.$pending) { action in
                 if action != nil { tab = 0 }
             }
+            #if DEBUG
+            .onAppear { if ScreenshotScene.current == .laws { tab = 1 } }
+            #endif
             .fullScreenCover(isPresented: $showOnboarding) {
                 FamilyCourtOnboardingView {
                     hasSeenOnboarding = true
@@ -51,6 +54,9 @@ struct ContentView: View {
 /// 법원 탭 — 홈 런처에서 접수·소환·판례·공부·사건 화면으로 이동해요.
 struct HomeTab: View {
     @State private var path = NavigationPath()
+    #if DEBUG
+    @EnvironmentObject private var store: Store
+    #endif
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -65,5 +71,31 @@ struct HomeTab: View {
                     }
                 }
         }
+        #if DEBUG
+        .onAppear {
+            switch ScreenshotScene.current {
+            case .learn: path.append(HomeDest.learn)
+            case .trial, .verdict, .caseTop:
+                if let id = ScreenshotScene.caseId ?? store.data.cases.first?.id {
+                    path.append(HomeDest.caseDetail(id))
+                }
+            default: break
+            }
+        }
+        #endif
     }
 }
+
+#if DEBUG
+/// 스토어 스크린샷 촬영용 — 실행 인자 `-FCScene <장면>` 으로 바로 그 화면을 연다 (디버그 빌드 전용).
+/// 기록은 촬영 스크립트가 Documents/familycourt.json 에 미리 넣어 둔다.
+enum ScreenshotScene: String {
+    case home, filing, trial, verdict, caseTop, laws, learn
+
+    static var current: ScreenshotScene? {
+        UserDefaults.standard.string(forKey: "FCScene").flatMap(ScreenshotScene.init(rawValue:))
+    }
+    static var caseId: String? { UserDefaults.standard.string(forKey: "FCCase") }
+    static func arg(_ key: String) -> String? { UserDefaults.standard.string(forKey: key) }
+}
+#endif

@@ -17,6 +17,10 @@ struct FamilyCourtApp: App {
         )
 
         // 사용 팁 (FeatureTips.swift) — 표시 빈도는 TipKit 이 관리한다.
+        #if DEBUG
+        // 스토어 스크린샷 촬영 중에는 팁 풍선을 띄우지 않는다.
+        if ScreenshotScene.current != nil { Tips.hideAllTipsForTesting() }
+        #endif
         try? Tips.configure()
     }
 
@@ -32,7 +36,13 @@ struct FamilyCourtApp: App {
 
 /// 만족도 질문 — 원격 킬스위치로 끌 수 있다. 플래그는 실행 중 캐시 값이라 화면이 흔들리지 않는다.
 private struct SatisfactionCheckIfEnabled: ViewModifier {
+    #if DEBUG
+    // 스토어 스크린샷 촬영 중에는 묻지 않는다.
+    private let enabled = ScreenshotScene.current == nil
+        && LeeoRemoteFlags.isEnabled(FamilyCourtFlag.satisfactionPromptEnabled)
+    #else
     private let enabled = LeeoRemoteFlags.isEnabled(FamilyCourtFlag.satisfactionPromptEnabled)
+    #endif
 
     func body(content: Content) -> some View {
         if enabled {

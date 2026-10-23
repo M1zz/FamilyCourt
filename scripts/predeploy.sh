@@ -20,7 +20,9 @@ PROJECT="FamilyCourt.xcodeproj"
 # 시뮬레이터는 **가장 최신 iOS 런타임의 iPhone** 으로 고른다.
 # `grep iPhone | head -1` 로 고르면 구버전 런타임 기기가 먼저 잡혀
 # "Unable to find a destination matching..." (exit 70) 로 죽는다.
-DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
+# PREDEPLOY_SIM_ID 를 주면 그 시뮬레이터를 쓴다 (여러 작업이 한 Mac 을 나눠 쓸 때).
+DEST_ID="${PREDEPLOY_SIM_ID:-}"
+[ -n "$DEST_ID" ] || DEST_ID="$(xcrun simctl list devices available --json | python3 -c '
 import json, re, sys
 best = None
 for runtime, devices in json.load(sys.stdin)["devices"].items():
@@ -42,11 +44,13 @@ fi
 DEST="platform=iOS Simulator,id=$DEST_ID"
 
 # 단위 테스트(FamilyCourtTests) — 조사 규칙 · 어휘 난이도 · 백업 파일 호환을 본다.
+# 테스트는 원문 언어(한국어)로 돈다 — 조사 규칙과 표준 용어는 한국어 화면의 계약이다.
 echo "🧪 테스트 ($SCHEME)"
 xcodebuild test \
   "$PROJECT_FLAG" "$PROJECT" \
   -scheme "$SCHEME" \
   -destination "$DEST" \
+  -testLanguage ko -testRegion KR \
   -quiet
 
 echo ""

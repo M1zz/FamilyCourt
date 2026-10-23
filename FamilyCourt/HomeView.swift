@@ -45,8 +45,8 @@ struct HomeView: View {
             }
             HStack(spacing: 12) {
                 NavigationLink(value: HomeDest.learn) {
-                    ActionTile(emoji: "🎓", title: "법원 공부하기",
-                               subtitle: "역할과 재판 순서 배우기")
+                    ActionTile(emoji: "🎓", title: String(localized: "법원 공부하기"),
+                               subtitle: String(localized: "역할과 재판 순서 배우기"))
                 }
                 NavigationLink(value: HomeDest.laws) {
                     ActionTile(emoji: "📜", title: store.vocab.lawsTileTitle,
@@ -71,6 +71,9 @@ struct HomeView: View {
                 path.append(HomeDest.summons)
             }
         }
+        #if DEBUG
+        .onAppear { if ScreenshotScene.current == .filing { filingType = .civil } }
+        #endif
         .sheet(item: $filingType) { type in
             FilingView(type: type) { newId in
                 path.append(HomeDest.caseDetail(newId))
@@ -115,7 +118,7 @@ struct ActionTile: View {
         .cornerRadius(16)
         .overlay(alignment: .topTrailing) {
             if badge > 0 {
-                Text("\(badge)")
+                Text(verbatim: "\(badge)")
                     .font(.system(size: 13, weight: .bold))
                     .foregroundColor(.white)
                     .padding(.horizontal, 7)
@@ -141,7 +144,7 @@ struct CaseRow: View {
                 Text(courtCase.title)
                     .font(.system(size: 16, weight: .semibold))
                     .lineLimit(1)
-                Text("\(courtCase.caseNo) · \(store.memName(courtCase.roles.accuser)) vs \(store.memName(courtCase.roles.accused))")
+                Text(String(localized: "\(courtCase.caseNo) · \(store.memName(courtCase.roles.accuser)) vs \(store.memName(courtCase.roles.accused))", comment: "Case row: case number, plaintiff vs defendant"))
                     .font(.system(size: 13))
                     .foregroundColor(.secondary)
                     .lineLimit(1)
@@ -185,7 +188,7 @@ struct SummonsView: View {
     var body: some View {
         List {
             if store.openCases.isEmpty {
-                EmptyNotice(emoji: "🕊️", text: "재판을 기다리는 사건이 없어요.\n평화로운 우리 집!")
+                EmptyNotice(emoji: "🕊️", text: String(localized: "재판을 기다리는 사건이 없어요.\n평화로운 우리 집!"))
             } else {
                 Section(footer: Text("소환된 가족은 모두 모여 재판을 열어 주세요!")) {
                     ForEach(store.openCases) { c in
@@ -208,7 +211,7 @@ struct ArchiveView: View {
     var body: some View {
         List {
             if store.doneCases.isEmpty {
-                EmptyNotice(emoji: "📚", text: "아직 끝난 사건이 없어요.")
+                EmptyNotice(emoji: "📚", text: String(localized: "아직 끝난 사건이 없어요."))
             } else {
                 Section(footer: Text("기록이 쌓이면 우리 집 판례가 됩니다!")) {
                     ForEach(store.doneCases) { c in

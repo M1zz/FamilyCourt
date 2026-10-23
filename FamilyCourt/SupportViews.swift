@@ -20,7 +20,7 @@ struct LawsView: View {
             }
             Section(footer: Text("가족 모두가 함께 정한 우리 집의 법이에요. 형사 소송은 이 법전의 법을 어겼을 때 열 수 있어요. 가족회의에서 모두 동의하면 법을 만들거나 고칠 수 있어요.")) {
                 if store.data.laws.isEmpty {
-                    EmptyNotice(emoji: "📜", text: "법전이 비어 있어요.")
+                    EmptyNotice(emoji: "📜", text: String(localized: "법전이 비어 있어요."))
                 }
                 ForEach(Array(store.data.laws.enumerated()), id: \.element.id) { index, law in
                     VStack(alignment: .leading, spacing: 3) {
@@ -88,20 +88,22 @@ struct LawFormView: View {
                         }
                 }
             }
-            .navigationTitle(law == nil ? "➕ 새로운 법 만들기" : "✏️ 법 고치기")
+            .navigationTitle(law == nil ? Text("➕ 새로운 법 만들기") : Text("✏️ 법 고치기"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("취소") { dismiss() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button(law == nil ? "법전에 올리기" : "저장") {
+                    Button {
                         let t = title.trimmingCharacters(in: .whitespaces)
                         let x = text.trimmingCharacters(in: .whitespacesAndNewlines)
                         guard !t.isEmpty, !x.isEmpty else { return }
                         if let law { store.updateLaw(law.id, title: t, text: x) }
                         else { store.addLaw(title: t, text: x) }
                         dismiss()
+                    } label: {
+                        if law == nil { Text("법전에 올리기") } else { Text("저장") }
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty ||
                               text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
@@ -132,7 +134,7 @@ struct FamilyView: View {
             Section(header: Text("우리 가족 등록부"),
                     footer: Text("재판에 참여할 가족을 모두 등록해 주세요. 누구든 사건에 따라 원고도, 검사도, 판사도 될 수 있어요!")) {
                 if store.data.members.isEmpty {
-                    EmptyNotice(emoji: "🪑", text: "아직 등록된 가족이 없어요.\n아래에서 가족을 추가해 주세요!")
+                    EmptyNotice(emoji: "🪑", text: String(localized: "아직 등록된 가족이 없어요.\n아래에서 가족을 추가해 주세요!"))
                 }
                 ForEach(store.data.members) { m in
                     HStack(spacing: 12) {
@@ -198,7 +200,7 @@ struct SettingsView: View {
     /// 메일 문의 주소 — 제목에 앱 이름과 버전을 붙여 어느 앱 문의인지 바로 알 수 있게 한다.
     private static var contactMailURL: URL? {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
-        let subject = "[\(FamilyCourtSpec.appName) \(version)] 문의"
+        let subject = String(localized: "[\(FamilyCourtSpec.displayName) \(version)] 문의", comment: "Mail subject: app name, version")
             .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         return URL(string: "mailto:\(FamilyCourtSpec.developerEmail)?subject=\(subject)")
     }
@@ -233,7 +235,7 @@ struct SettingsView: View {
                     Text("미리보기")
                         .font(.caption)
                         .foregroundColor(.secondary)
-                    Text("\(store.vocab.judge) · \(store.vocab.accuser(.civil)) · \(store.vocab.accused(.civil)) · \(store.vocab.accuser(.criminal)) · \(store.vocab.lawyer)")
+                    Text(verbatim: "\(store.vocab.judge) · \(store.vocab.accuser(.civil)) · \(store.vocab.accused(.civil)) · \(store.vocab.accuser(.criminal)) · \(store.vocab.lawyer)")
                         .font(.system(size: 15, weight: .semibold))
                 }
                 .padding(.vertical, 2)
@@ -296,12 +298,12 @@ struct SettingsView: View {
             case .success(let url):
                 do {
                     try store.importBackup(from: url)
-                    importMessage = "기록을 불러왔어요!"
+                    importMessage = String(localized: "기록을 불러왔어요!")
                 } catch {
-                    importMessage = "파일을 읽을 수 없어요"
+                    importMessage = String(localized: "파일을 읽을 수 없어요")
                 }
             case .failure:
-                importMessage = "파일을 읽을 수 없어요"
+                importMessage = String(localized: "파일을 읽을 수 없어요")
             }
         }
         .alert(importMessage ?? "", isPresented: Binding(
@@ -321,49 +323,49 @@ struct LearnView: View {
     private var roles: [(String, String)] {
         let v = store.vocab
         return [
-            ("👨‍⚖️ \(v.judge)", "양쪽 이야기를 끝까지 듣고 공정하게 정해요. 사건과 관련 없는 사람이 맡고, 재판을 신청하는 사람이 골라요."),
-            ("🙋 \(v.accuser(.civil))", "억울한 일을 겪어서 재판을 신청한 사람이에요. \(v.typeName(.civil)) 재판에서 이야기를 시작해요."),
-            ("🕵️ \(v.accuser(.criminal))", "우리 집 법을 어긴 일을 밝히는 사람이에요. \(v.typeName(.criminal)) 재판을 열고 벌칙을 정해 달라고 해요. 부모님도 될 수 있어요!"),
-            ("🙇 \(v.accused(.civil))", "재판에 불려 나온 사람이에요. 자기 생각을 이야기할 권리가 있고, \(v.eul(v.lawyer)) 고를 수 있어요."),
-            ("🛡️ \(v.lawyer)", "재판에 불려 나온 사람 편에서 도와줘요. 지켜 주는 좋은 이유를 찾아 줘요."),
-            ("✍️ \(v.clerk)", "재판에서 나온 이야기를 기록하는 사람이에요. 없어도 재판은 열 수 있어요.")
+            ("👨‍⚖️ \(v.judge)", String(localized: "양쪽 이야기를 끝까지 듣고 공정하게 정해요. 사건과 관련 없는 사람이 맡고, 재판을 신청하는 사람이 골라요.")),
+            ("🙋 \(v.accuser(.civil))", String(localized: "억울한 일을 겪어서 재판을 신청한 사람이에요. \(v.typeName(.civil)) 재판에서 이야기를 시작해요.")),
+            ("🕵️ \(v.accuser(.criminal))", String(localized: "우리 집 법을 어긴 일을 밝히는 사람이에요. \(v.typeName(.criminal)) 재판을 열고 벌칙을 정해 달라고 해요. 부모님도 될 수 있어요!")),
+            ("🙇 \(v.accused(.civil))", String(localized: "재판에 불려 나온 사람이에요. 자기 생각을 이야기할 권리가 있고, \(v.eul(v.lawyer)) 고를 수 있어요.")),
+            ("🛡️ \(v.lawyer)", String(localized: "재판에 불려 나온 사람 편에서 도와줘요. 지켜 주는 좋은 이유를 찾아 줘요.")),
+            ("✍️ \(v.clerk)", String(localized: "재판에서 나온 이야기를 기록하는 사람이에요. 없어도 재판은 열 수 있어요."))
         ]
     }
 
     private var civilSteps: [String] {
         let v = store.vocab
         return [
-            "\(v.ga(v.judge)) 재판 시작을 알려요 (\(v.openingTitle)) 🔨",
-            "사건을 소개해요",
-            "\(v.ga(v.accuser(.civil))) 억울한 이야기를 해요",
-            "\(v.ga(v.accused(.civil))) 자기 이야기를 해요",
-            "서로 묻고 답해요",
-            "\(v.ga(v.lawyer)) 도와줘요",
-            "마지막 한마디씩 해요 (\(v.lastWordTitle))",
-            "\(v.ga(v.judge)) 정해요: \(v.verdictBadge("원고 승소")) · \(v.verdictBadge("피고 승소")) · \(v.verdictBadge("화해 권고"))"
+            String(localized: "\(v.ga(v.judge)) 재판 시작을 알려요 (\(v.openingTitle)) 🔨"),
+            String(localized: "사건을 소개해요"),
+            String(localized: "\(v.ga(v.accuser(.civil))) 억울한 이야기를 해요"),
+            String(localized: "\(v.ga(v.accused(.civil))) 자기 이야기를 해요"),
+            String(localized: "서로 묻고 답해요"),
+            String(localized: "\(v.ga(v.lawyer)) 도와줘요"),
+            String(localized: "마지막 한마디씩 해요 (\(v.lastWordTitle))"),
+            String(localized: "\(v.ga(v.judge)) 정해요: \(v.verdictBadge("원고 승소")) · \(v.verdictBadge("피고 승소")) · \(v.verdictBadge("화해 권고"))")
         ]
     }
 
     private var criminalSteps: [String] {
         let v = store.vocab
         return [
-            "\(v.ga(v.judge)) 재판 시작을 알려요 🔨",
-            "\(v.ga(v.accuser(.criminal))) 어긴 법을 읽어요 (\(v.indictmentTitle))",
-            "\(v.ga(v.accused(.criminal))) 자기 이야기를 해요",
-            "\(v.ga(v.accuser(.criminal))) 질문해요",
-            "\(v.ga(v.lawyer)) 도와줘요",
-            "\(v.ga(v.accuser(.criminal))) 바라는 벌칙을 말해요 (\(v.demandTitle))",
-            "\(v.lastWordTitle)를 해요",
-            "\(v.ga(v.judge)) 정해요: \(v.verdictBadge("유죄")) · \(v.verdictBadge("무죄")) · \(v.verdictBadge("선처"))"
+            String(localized: "\(v.ga(v.judge)) 재판 시작을 알려요 🔨"),
+            String(localized: "\(v.ga(v.accuser(.criminal))) 어긴 법을 읽어요 (\(v.indictmentTitle))"),
+            String(localized: "\(v.ga(v.accused(.criminal))) 자기 이야기를 해요"),
+            String(localized: "\(v.ga(v.accuser(.criminal))) 질문해요"),
+            String(localized: "\(v.ga(v.lawyer)) 도와줘요"),
+            String(localized: "\(v.ga(v.accuser(.criminal))) 바라는 벌칙을 말해요 (\(v.demandTitle))"),
+            String(localized: "\(v.eul(v.lastWordTitle)) 해요"),
+            String(localized: "\(v.ga(v.judge)) 정해요: \(v.verdictBadge("유죄")) · \(v.verdictBadge("무죄")) · \(v.verdictBadge("선처"))")
         ]
     }
 
     private let manners = [
-        "다른 사람 이야기는 끝까지 들어요",
-        "소리 지르지 않아요",
-        "사실만 말해요",
-        "판결이 나면 승복해요",
-        "재판이 끝나면 꼭 안아주고 화해해요 🤗"
+        String(localized: "다른 사람 이야기는 끝까지 들어요"),
+        String(localized: "소리 지르지 않아요"),
+        String(localized: "사실만 말해요"),
+        String(localized: "판결이 나면 승복해요"),
+        String(localized: "재판이 끝나면 꼭 안아주고 화해해요 🤗")
     ]
 
     private let vocabTip = VocabLevelTip()
@@ -395,11 +397,11 @@ struct LearnView: View {
         .navigationTitle("법원 공부하기")
     }
 
-    private func stepsSection(title: String, footer: String?, steps: [String]) -> some View {
+    private func stepsSection(title: LocalizedStringKey, footer: LocalizedStringKey?, steps: [String]) -> some View {
         Section(header: Text(title), footer: footer.map { Text($0) }) {
             ForEach(Array(steps.enumerated()), id: \.offset) { index, step in
                 HStack(alignment: .top, spacing: 10) {
-                    Text("\(index + 1)")
+                    Text(verbatim: "\(index + 1)")
                         .font(.system(size: 13, weight: .bold))
                         .foregroundColor(.white)
                         .frame(width: 22, height: 22)

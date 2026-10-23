@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -37,22 +37,24 @@ SEARCH = {
     "en": ("Family Court", "Feeling wronged?<br>Open court", "Your family plays<br>judge and counsel"),
     "en-GB": ("Family Court", "Feeling wronged?<br>Open court", "Your family plays<br>judge and counsel"),
     "ja": ("ファミリーコート", "「ずるい！」は<br>裁判で解決", "裁判官も弁護人も<br>家族みんなで演じよう"),
+    "zh-Hans": ("家庭法庭", "觉得委屈？<br>开庭解决", "法官和辩护人<br>全家一起来演"),
+    "zh-Hant": ("家庭法庭", "覺得委屈？<br>開庭解決", "法官和辯護人<br>全家一起來演"),
     "ru": ("Семейный суд", "Обидно?<br>Открывайте суд", "Судью и защитника<br>играет ваша семья"),
     "es": ("Tribunal Familiar", "¿Algo injusto?<br>Abrid sesión", "Vuestra familia hace de<br>juez y abogado"),
-    "de": ("Familiengericht", "Ungerecht behandelt?<br>Gericht eröffnen", "Eure Familie spielt<br>Richter und Verteidiger"),
+    "de": ("Familiengericht", "Ungerecht?<br>Ab vor Gericht!", "Eure Familie spielt<br>Richter und Verteidiger"),
     "fr": ("Tribunal Familial", "Une injustice ?<br>Ouvrez l’audience", "Votre famille joue<br>juge et avocat"),
     "it": ("Tribunale di Famiglia", "Un torto?<br>Aprite l’udienza", "La famiglia fa<br>giudice e difensore"),
     "pt-BR": ("Tribunal da Família", "Sentiu injustiça?<br>Abra o tribunal", "Sua família faz de<br>juiz e defensor"),
     "th": ("ศาลครอบครัว", "รู้สึกไม่ยุติธรรม<br>เปิดศาลกันเลย", "ทั้งบ้านเป็นผู้พิพากษา<br>และทนายความ"),
     "vi": ("Tòa Án Gia Đình", "Thấy bất công?<br>Mở phiên tòa", "Cả nhà làm thẩm phán<br>và luật sư"),
     "cs": ("Rodinný soud", "Křivda?<br>Zahajte jednání", "Rodina hraje<br>soudce a obhájce"),
-    "da": ("Familieretten", "Noget uretfærdigt?<br>Åbn retten", "Familien spiller<br>dommer og forsvarer"),
-    "el": ("Οικογενειακό Δικαστήριο", "Κάτι άδικο;<br>Ανοίξτε συνεδρίαση", "Η οικογένεια παίζει<br>δικαστή και συνήγορο"),
+    "da": ("Familieretten", "Uretfærdigt?<br>Åbn retten", "Familien spiller<br>dommer og forsvarer"),
+    "el": ("Οικογενειακό Δικαστήριο", "Κάτι άδικο;<br>Στο δικαστήριο!", "Η οικογένεια παίζει<br>δικαστή και συνήγορο"),
     "fi": ("Perhetuomioistuin", "Epäreilua?<br>Avaa istunto", "Perhe toimii<br>tuomarina ja avustajana"),
     "id": ("Pengadilan Keluarga", "Merasa tidak adil?<br>Buka sidang", "Keluarga jadi<br>hakim dan pembela"),
     "nb": ("Familieretten", "Noe urettferdig?<br>Åpne retten", "Familien spiller<br>dommer og forsvarer"),
     "nl": ("Familierechtbank", "Iets oneerlijk?<br>Open de zitting", "Het gezin speelt<br>rechter en raadsman"),
-    "pl": ("Sąd Rodzinny", "Coś niesprawiedliwego?<br>Otwórzcie rozprawę", "Rodzina gra<br>sędziego i obrońcę"),
+    "pl": ("Sąd Rodzinny", "Niesprawiedliwie?<br>Do sądu!", "Rodzina gra<br>sędziego i obrońcę"),
     "sv": ("Familjerätten", "Något orättvist?<br>Öppna rätten", "Familjen spelar<br>domare och försvarare"),
     "tr": ("Aile Mahkemesi", "Haksızlık mı var?<br>Duruşmayı açın", "Aile hakim ve<br>avukat olur"),
 }
@@ -63,6 +65,8 @@ HEADER = {
     "en": ("A family court for kids", "Settle it with<br>a trial, not a fight"),
     "en-GB": ("A family court for children", "Settle it with<br>a trial, not a row"),
     "ja": ("子どものための家族裁判所", "けんかしないで<br>裁判で解決しよう"),
+    "zh-Hans": ("陪孩子一起玩的家庭法庭", "别吵架<br>开庭来解决"),
+    "zh-Hant": ("陪孩子一起玩的家庭法庭", "別吵架<br>開庭來解決"),
     "ru": ("Семейный суд для детей", "Не ссоримся —<br>решаем судом"),
     "es": ("Un tribunal familiar para niños", "Resolvedlo con<br>un juicio, no con una pelea"),
     "de": ("Ein Familiengericht für Kinder", "Klärt es vor Gericht,<br>nicht im Streit"),
@@ -90,6 +94,11 @@ BASE_CSS = """
 html,body { width:%(W)dpx; height:%(H)dpx; overflow:hidden; }
 body { background:linear-gradient(160deg,#FFF6E4 0%%,#FDE7BC 60%%,#F8D48E 100%%); position:relative;
   font-family:-apple-system, "SF Pro Rounded", "Apple SD Gothic Neo", sans-serif; }
+/* 헤드리스 Chrome 이 -apple-system 을 못 찾으면 Apple SD Gothic Neo 로 떨어져 그리스어·폴란드어 글자가 깨진다 */
+body:not(:lang(ko)) { font-family:system-ui, "Helvetica Neue", sans-serif; }
+body:lang(ja) { font-family:"Hiragino Sans", system-ui, sans-serif; }
+body:lang(zh-Hans) { font-family:"PingFang SC", system-ui, sans-serif; }
+body:lang(zh-Hant) { font-family:"PingFang TC", system-ui, sans-serif; }
 .glow { position:absolute; border-radius:50%%; filter:blur(160px); pointer-events:none; }
 .text { position:absolute; display:flex; flex-direction:column; justify-content:center; }
 .eyebrow { font-weight:800; color:#C76A12; letter-spacing:-0.01em; line-height:1.15; }

@@ -60,8 +60,7 @@ struct FamilyCourtShortcuts: AppShortcutsProvider {
             intent: FileCivilCaseIntent(),
             phrases: [
                 "\(.applicationName) 재판 신청",
-                "\(.applicationName)에서 억울한 일 접수",
-                "\(.applicationName) 억울한 일 접수하기"
+                "\(.applicationName)에서 억울한 일 접수"
             ],
             shortTitle: "억울한 일 접수",
             systemImageName: "exclamationmark.bubble"

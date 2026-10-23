@@ -8,7 +8,11 @@ struct TrialFlowView: View {
     let caseId: String
 
     private enum Phase { case prep, run, verdict }
+    #if DEBUG
+    @State private var phase: Phase = ScreenshotScene.current == .trial ? .run : .prep
+    #else
     @State private var phase: Phase = .prep
+    #endif
 
     var body: some View {
         NavigationStack {
@@ -72,18 +76,18 @@ struct TrialPrepView: View {
             }
 
             Section("도와주는 역할 (없어도 돼요)") {
-                Picker("🛡️ \(store.vocab.lawyer)", selection: $lawyer) {
+                Picker("🛡️ " + store.vocab.lawyer, selection: $lawyer) {
                     Text("— 없음 —").tag("")
                     ForEach(helperCandidates) { m in
-                        Text("\(m.emoji) \(m.name)").tag(m.id)
+                        Text(verbatim: "\(m.emoji) \(m.name)").tag(m.id)
                     }
                 }
-                Picker("✍️ \(store.vocab.clerk)", selection: $clerk) {
+                Picker("✍️ " + store.vocab.clerk, selection: $clerk) {
                     Text("— 없음 —").tag("")
                     ForEach(store.data.members.filter {
                         $0.id != courtCase.roles.accuser && $0.id != courtCase.roles.accused
                     }) { m in
-                        Text("\(m.emoji) \(m.name)").tag(m.id)
+                        Text(verbatim: "\(m.emoji) \(m.name)").tag(m.id)
                     }
                 }
             }
@@ -159,7 +163,7 @@ struct TrialRunView: View {
                 .background(Color.blue.opacity(0.14))
                 .clipShape(Capsule())
 
-            Text("\(stepIdx + 1). \(step.title)")
+            Text(verbatim: "\(stepIdx + 1). \(step.title)")
                 .font(.headline)
 
             ScrollView {
@@ -195,8 +199,10 @@ struct TrialRunView: View {
                 Button {
                     move(1)
                 } label: {
-                    Text(stepIdx == steps.count - 1 ? "판결 내리러 가기 📜" : "다음 →")
-                        .frame(maxWidth: .infinity)
+                    Group {
+                        if stepIdx == steps.count - 1 { Text("판결 내리러 가기 📜") } else { Text("다음 →") }
+                    }
+                    .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
             }
@@ -234,12 +240,14 @@ struct TrialRunView: View {
                 .accessibilityLabel("남은 시간")
                 .accessibilityValue("\(remaining / 60)분 \(remaining % 60)초")
             HStack(spacing: 8) {
-                Button(timerOn ? "⏸ 멈춤" : "▶ 시작") {
+                Button {
                     if !timerOn && remaining == 0 { resetTimer() }
                     timerOn.toggle()
+                } label: {
+                    if timerOn { Text("⏸ 멈춤") } else { Text("▶ 시작") }
                 }
                 .buttonStyle(.borderedProminent)
-                .accessibilityLabel(timerOn ? "타이머 멈추기" : "타이머 시작")
+                .accessibilityLabel(timerOn ? Text("타이머 멈추기") : Text("타이머 시작"))
                 Button("↺ 다시") {
                     timerOn = false
                     resetTimer()
@@ -337,12 +345,7 @@ struct VerdictFormView: View {
 
             Section(header: Text(store.vocab.penaltyLabel(courtCase.type)),
                     footer: Text("벌칙은 짧고 지킬 수 있게! \(store.vocab.ga(store.vocab.accused(courtCase.type))) 스스로 제안한 벌칙이 가장 잘 지켜져요.")) {
-                TextField(
-                    courtCase.type == .criminal && !courtCase.want.isEmpty
-                        ? "\(store.vocab.accuser(.criminal))의 \(store.vocab.wantShort(.criminal)): \(courtCase.want)"
-                        : "예: 사과 편지 쓰기, 설거지 3번 돕기",
-                    text: $penalty
-                )
+                TextField(penaltyPrompt, text: $penalty)
                 Button {
                     showSuggestions = true
                 } label: {
@@ -375,6 +378,15 @@ struct VerdictFormView: View {
                 penalty = picked
             }
         }
+    }
+
+    private var penaltyPrompt: String {
+        guard courtCase.type == .criminal, !courtCase.want.isEmpty else {
+            return String(localized: "예: 사과 편지 쓰기, 설거지 3번 돕기")
+        }
+        let v = store.vocab
+        return String(localized: "\(v.accuser(.criminal))의 \(v.wantShort(.criminal)): \(courtCase.want)",
+                      comment: "Placeholder: prosecutor's demanded penalty")
     }
 
     private func saveVerdict() {
@@ -414,7 +426,7 @@ struct PenaltySuggestionsView: View {
                         .foregroundColor(.secondary)
                 }
                 ForEach(PenaltyCategory.all) { category in
-                    Section(header: Text("\(category.emoji) \(category.title)"),
+                    Section(header: Text(verbatim: "\(category.emoji) \(category.title)"),
                             footer: Text(category.hint)) {
                         ForEach(category.items, id: \.self) { item in
                             Button {

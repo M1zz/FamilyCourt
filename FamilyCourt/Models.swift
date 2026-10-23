@@ -11,17 +11,17 @@ enum VocabLevel: String, Codable, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .easy: return "쉬운 말"
-        case .standard: return "기본"
-        case .formal: return "법정 용어"
+        case .easy: return String(localized: "쉬운 말", comment: "Vocabulary level: simplest words for little kids")
+        case .standard: return String(localized: "기본", comment: "Vocabulary level: standard (default)")
+        case .formal: return String(localized: "법정 용어", comment: "Vocabulary level: real courtroom terms")
         }
     }
 
     var caption: String {
         switch self {
-        case .easy: return "어린아이도 알 수 있는 쉬운 말로 보여줘요.\n예) 판사 → 심판, 원고 → 억울한 사람, 판결 → 결정"
-        case .standard: return "기본 법원 용어에 쉬운 설명을 곁들여요.\n예) 원고 승소 (원고 말이 맞아요)"
-        case .formal: return "실제 법원에서 쓰는 용어 그대로 보여줘요.\n예) 재판장, 최후 진술, 구형, 공소사실 낭독"
+        case .easy: return String(localized: "어린아이도 알 수 있는 쉬운 말로 보여줘요.\n예) 판사 → 심판, 원고 → 억울한 사람, 판결 → 결정")
+        case .standard: return String(localized: "기본 법원 용어에 쉬운 설명을 곁들여요.\n예) 원고 승소 (원고 말이 맞아요)")
+        case .formal: return String(localized: "실제 법원에서 쓰는 용어 그대로 보여줘요.\n예) 재판장, 최후 진술, 구형, 공소사실 낭독")
         }
     }
 }
@@ -39,16 +39,25 @@ extension VocabLevel {
 struct Vocab {
     let level: VocabLevel
 
-    private func pick(_ easy: String, _ standard: String, _ formal: String) -> String {
+    /// 난이도별 말 세 개 중 하나를 그 기기 언어로 골라요.
+    /// (LocalizedStringResource 로 받아서 컴파일러가 세 말을 모두 String Catalog 에 올린다.)
+    private func pick(_ easy: LocalizedStringResource, _ standard: LocalizedStringResource,
+                      _ formal: LocalizedStringResource) -> String {
         switch level {
-        case .easy: return easy
-        case .standard: return standard
-        case .formal: return formal
+        case .easy: return String(localized: easy)
+        case .standard: return String(localized: standard)
+        case .formal: return String(localized: formal)
         }
+    }
+
+    /// 한국어 화면에서만 조사를 붙인다. 다른 언어 문장은 조사 없는 낱말을 그대로 받는다.
+    static var usesKoreanParticles: Bool {
+        (Bundle.main.preferredLocalizations.first ?? "ko").hasPrefix("ko")
     }
 
     // 받침에 따라 조사를 골라 붙여요 (심판이 / 판사가)
     private func particle(_ word: String, _ open: String, _ closed: String) -> String {
+        guard Vocab.usesKoreanParticles else { return "" }
         guard let scalar = word.unicodeScalars.last?.value,
               scalar >= 0xAC00, scalar <= 0xD7A3 else { return open }
         return (scalar - 0xAC00) % 28 == 0 ? open : closed
@@ -92,7 +101,7 @@ struct Vocab {
     }
     var summonsTileTitle: String { pick("재판에 모여요", "소환 요청 보기", "소환장 확인") }
     func summonsTileSub(_ n: Int) -> String {
-        n == 0 ? "지금은 조용해요 🕊️"
+        n == 0 ? String(localized: "지금은 조용해요 🕊️")
         : pick("기다리는 재판 \(n)개", "재판을 기다리는 사건 \(n)건", "계류 중인 사건 \(n)건")
     }
     var archiveTileTitle: String { pick("지난 재판 보기", "판례 보기", "판례 열람") }
@@ -129,7 +138,7 @@ struct Vocab {
         ? pick("🙇 대답하는 사람 (억울하게 한 사람)", "🙇 피고 (고소당하는 사람)", "🙇 피고")
         : pick("🙇 대답하는 사람 (약속 어긴 사람)", "🙇 피고인 (법을 어긴 사람)", "🙇 피고인")
     }
-    var judgeFieldLabel: String { "👨‍⚖️ \(judge)" }
+    var judgeFieldLabel: String { "👨‍⚖️ " + judge }
     var judgeFieldFooter: String {
         pick("심판도 신청하는 사람이 직접 골라요. 싸움과 상관없는 사람이 좋아요!",
              "판사도 접수하는 사람이 직접 골라요. 사건과 관련 없는 사람이 좋아요!",
@@ -149,7 +158,7 @@ struct Vocab {
         : pick("⚡ 벌칙", "⚡ 벌칙 (지켜야 할 일)", "⚡ 처분 (벌칙)")
     }
     func penaltyShort(_ t: CaseType) -> String {
-        t == .civil ? "🤙 약속" : "⚡ 벌칙"
+        t == .civil ? String(localized: "🤙 약속") : String(localized: "⚡ 벌칙")
     }
 
     // MARK: 상태 · 판결
@@ -223,12 +232,18 @@ enum CaseType: String, Codable, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    var korean: String { self == .civil ? "민사" : "형사" }     // 사건번호에 쓰는 표준 이름
+    /// 사건번호 — 접수할 때 그 기기 언어로 한 번 만들어 저장한다 (예: 2026민사3호).
+    func caseNumber(year: Int, seq: Int) -> String {
+        self == .civil
+        ? String(localized: "\(year)민사\(seq)호", comment: "Civil case number: year, sequence")
+        : String(localized: "\(year)형사\(seq)호", comment: "Criminal case number: year, sequence")
+    }
     var badgeEmoji: String { self == .civil ? "⚖️" : "🚨" }
     var accuserEmoji: String { self == .civil ? "🙋" : "🕵️" }
     var accusedEmoji: String { "🙇" }
     var wantPrompt: String {
-        self == .civil ? "예: 사과받고 싶어요 / 과자 물어내기" : "예: 일주일 게임 금지 / 설거지 3번 돕기"
+        self == .civil ? String(localized: "예: 사과받고 싶어요 / 과자 물어내기")
+                       : String(localized: "예: 일주일 게임 금지 / 설거지 3번 돕기")
     }
 }
 
@@ -343,7 +358,7 @@ extension CourtCase {
 // MARK: - 전체 앱 상태
 
 struct AppState: Codable {
-    var courtName: String = "우리 집 가정법원"
+    var courtName: String = AppState.defaultCourtName
     var members: [Member] = []
     var laws: [Law] = []
     var cases: [CourtCase] = []
@@ -351,19 +366,26 @@ struct AppState: Codable {
     var caseSeq: Int = 0
     var vocabLevel: VocabLevel = .standard
 
+    static var defaultCourtName: String { String(localized: "우리 집 가정법원", comment: "Default court name") }
+
     static let defaultLaws: [Law] = [
-        Law(id: "l1", title: "존중", text: "가족은 서로에게 나쁜 말이나 상처 주는 말을 하지 않는다."),
-        Law(id: "l2", title: "내 물건과 남의 물건", text: "다른 사람의 물건은 주인에게 허락을 받고 사용한다."),
-        Law(id: "l3", title: "정리정돈", text: "자기가 어지른 것은 자기가 정리한다."),
-        Law(id: "l4", title: "약속", text: "한 번 한 약속은 지킨다. 지키기 어려울 때는 미리 말한다."),
-        Law(id: "l5", title: "화해", text: "재판이 끝나면 결과와 상관없이 서로 안아주고 화해한다.")
+        Law(id: "l1", title: String(localized: "존중", comment: "Default house law title"),
+            text: String(localized: "가족은 서로에게 나쁜 말이나 상처 주는 말을 하지 않는다.")),
+        Law(id: "l2", title: String(localized: "내 물건과 남의 물건", comment: "Default house law title"),
+            text: String(localized: "다른 사람의 물건은 주인에게 허락을 받고 사용한다.")),
+        Law(id: "l3", title: String(localized: "정리정돈", comment: "Default house law title"),
+            text: String(localized: "자기가 어지른 것은 자기가 정리한다.")),
+        Law(id: "l4", title: String(localized: "약속", comment: "Default house law title"),
+            text: String(localized: "한 번 한 약속은 지킨다. 지키기 어려울 때는 미리 말한다.")),
+        Law(id: "l5", title: String(localized: "화해", comment: "Default house law title"),
+            text: String(localized: "재판이 끝나면 결과와 상관없이 서로 안아주고 화해한다."))
     ]
 }
 
 extension AppState {
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
-        courtName = try c.decodeIfPresent(String.self, forKey: .courtName) ?? "우리 집 가정법원"
+        courtName = try c.decodeIfPresent(String.self, forKey: .courtName) ?? AppState.defaultCourtName
         members = try c.decodeIfPresent([Member].self, forKey: .members) ?? []
         laws = try c.decodeIfPresent([Law].self, forKey: .laws) ?? []
         cases = try c.decodeIfPresent([CourtCase].self, forKey: .cases) ?? []
@@ -395,49 +417,49 @@ struct PenaltyCategory: Identifiable {
     /// 교육 효과가 큰 순서대로 — 특권 제한은 마지막 수단이에요.
     static let all: [PenaltyCategory] = [
         PenaltyCategory(
-            emoji: "🔧", title: "되돌려 놓기",
-            hint: "잘못과 연결된 벌칙이 가장 교육적이에요.",
+            emoji: "🔧", title: String(localized: "되돌려 놓기"),
+            hint: String(localized: "잘못과 연결된 벌칙이 가장 교육적이에요."),
             items: [
-                "망가뜨리거나 먹은 것 물어주기",
-                "어지른 곳 스스로 정리하기",
-                "망가진 것 같이 고치기"
+                String(localized: "망가뜨리거나 먹은 것 물어주기"),
+                String(localized: "어지른 곳 스스로 정리하기"),
+                String(localized: "망가진 것 같이 고치기")
             ]),
         PenaltyCategory(
-            emoji: "💌", title: "마음 돌려주기",
-            hint: "상대의 마음을 돌보면 공감하는 힘이 자라요.",
+            emoji: "💌", title: String(localized: "마음 돌려주기"),
+            hint: String(localized: "상대의 마음을 돌보면 공감하는 힘이 자라요."),
             items: [
-                "진심을 담은 사과 편지나 그림 선물하기",
-                "상대가 좋아하는 놀이 30분 같이 하기",
-                "상대의 좋은 점 3가지 말해주기"
+                String(localized: "진심을 담은 사과 편지나 그림 선물하기"),
+                String(localized: "상대가 좋아하는 놀이 30분 같이 하기"),
+                String(localized: "상대의 좋은 점 3가지 말해주기")
             ]),
         PenaltyCategory(
-            emoji: "🌱", title: "다시 안 그러기 약속",
-            hint: "스스로 세운 계획은 오래 남아요.",
+            emoji: "🌱", title: String(localized: "다시 안 그러기 약속"),
+            hint: String(localized: "스스로 세운 계획은 오래 남아요."),
             items: [
-                "다음에 화가 나면 어떻게 할지 계획 세워서 가족 앞에서 발표하기",
-                "이번 일로 배운 점을 우리 집 새 법으로 제안하기"
+                String(localized: "다음에 화가 나면 어떻게 할지 계획 세워서 가족 앞에서 발표하기"),
+                String(localized: "이번 일로 배운 점을 우리 집 새 법으로 제안하기")
             ]),
         PenaltyCategory(
-            emoji: "👀", title: "입장 바꿔보기",
-            hint: "상대 마음을 상상해 보는 연습이 돼요.",
+            emoji: "👀", title: String(localized: "입장 바꿔보기"),
+            hint: String(localized: "상대 마음을 상상해 보는 연습이 돼요."),
             items: [
-                "상대 입장에서 그날 일을 다시 이야기해보기",
-                "다음 재판에서 상대편 도와주는 역할 맡기"
+                String(localized: "상대 입장에서 그날 일을 다시 이야기해보기"),
+                String(localized: "다음 재판에서 상대편 도와주는 역할 맡기")
             ]),
         PenaltyCategory(
-            emoji: "🧺", title: "가족 돕기",
-            hint: "횟수를 정해서 짧고 구체적으로!",
+            emoji: "🧺", title: String(localized: "가족 돕기"),
+            hint: String(localized: "횟수를 정해서 짧고 구체적으로!"),
             items: [
-                "설거지 3번 돕기",
-                "빨래 개기 2번 돕기",
-                "3일 동안 신발 정리하기"
+                String(localized: "설거지 3번 돕기"),
+                String(localized: "빨래 개기 2번 돕기"),
+                String(localized: "3일 동안 신발 정리하기")
             ]),
         PenaltyCategory(
-            emoji: "🎮", title: "아껴 쓰기",
-            hint: "게임·TV 줄이기는 짧게, 마지막 수단으로만!",
+            emoji: "🎮", title: String(localized: "아껴 쓰기"),
+            hint: String(localized: "게임·TV 줄이기는 짧게, 마지막 수단으로만!"),
             items: [
-                "오늘 게임 시간 절반으로 줄이기",
-                "내일 하루 TV 쉬기"
+                String(localized: "오늘 게임 시간 절반으로 줄이기"),
+                String(localized: "내일 하루 TV 쉬기")
             ])
     ]
 }

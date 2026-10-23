@@ -44,7 +44,7 @@ struct FilingView: View {
                     Picker(store.vocab.judgeFieldLabel, selection: $judge) {
                         Text("골라 주세요").tag("")
                         ForEach(judgeCandidates) { m in
-                            Text("\(m.emoji) \(m.name)").tag(m.id)
+                            Text(verbatim: "\(m.emoji) \(m.name)").tag(m.id)
                         }
                     }
                 }
@@ -95,13 +95,24 @@ struct FilingView: View {
                     }
                 }
             }
-            .navigationTitle("\(type.badgeEmoji) \(store.vocab.fileTitle(type))")
+            .navigationTitle(type.badgeEmoji + " " + store.vocab.fileTitle(type))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("취소") { dismiss() }
                 }
             }
+            #if DEBUG
+            .onAppear {
+                guard ScreenshotScene.current == .filing else { return }
+                title = ScreenshotScene.arg("FCTitle") ?? ""
+                desc = ScreenshotScene.arg("FCDesc") ?? ""
+                accuser = ScreenshotScene.arg("FCAccuser") ?? ""
+                accused = ScreenshotScene.arg("FCAccused") ?? ""
+                judge = ScreenshotScene.arg("FCJudge") ?? ""
+                if let law = ScreenshotScene.arg("FCLaw") { pickedLaws = [law] }
+            }
+            #endif
             .onChange(of: accuser) { _ in clearJudgeIfInvalid() }
             .onChange(of: accused) { _ in clearJudgeIfInvalid() }
             .alert("잠깐만요!", isPresented: Binding(
@@ -119,7 +130,7 @@ struct FilingView: View {
         Picker(label, selection: selection) {
             Text("골라 주세요").tag("")
             ForEach(store.data.members) { m in
-                Text("\(m.emoji) \(m.name)").tag(m.id)
+                Text(verbatim: "\(m.emoji) \(m.name)").tag(m.id)
             }
         }
     }
@@ -132,22 +143,22 @@ struct FilingView: View {
         let v = store.vocab
         let trimmedTitle = title.trimmingCharacters(in: .whitespaces)
         if store.data.members.count < 3 {
-            alertMessage = "먼저 [가족] 탭에서 가족을 3명 이상 등록해 주세요 (\(v.judge)도 필요해요!)"
+            alertMessage = String(localized: "먼저 [가족] 탭에서 가족을 3명 이상 등록해 주세요 (\(v.judge)도 필요해요!)")
             return
         }
-        if trimmedTitle.isEmpty { alertMessage = "사건 제목을 써 주세요"; return }
+        if trimmedTitle.isEmpty { alertMessage = String(localized: "사건 제목을 써 주세요"); return }
         if accuser.isEmpty || accused.isEmpty {
-            alertMessage = "\(v.wa(v.accuser(type))) \(v.eul(v.accused(type))) 골라 주세요"; return
+            alertMessage = String(localized: "\(v.wa(v.accuser(type))) \(v.eul(v.accused(type))) 골라 주세요"); return
         }
         if accuser == accused {
-            alertMessage = "\(v.wa(v.accuser(type))) \(v.neun(v.accused(type))) 다른 사람이어야 해요"; return
+            alertMessage = String(localized: "\(v.wa(v.accuser(type))) \(v.neun(v.accused(type))) 다른 사람이어야 해요"); return
         }
-        if judge.isEmpty { alertMessage = "\(v.eul(v.judge)) 골라 주세요"; return }
+        if judge.isEmpty { alertMessage = String(localized: "\(v.eul(v.judge)) 골라 주세요"); return }
         if judge == accuser || judge == accused {
-            alertMessage = "\(v.neun(v.judge)) 사건과 관련 없는 사람이어야 해요"; return
+            alertMessage = String(localized: "\(v.neun(v.judge)) 사건과 관련 없는 사람이어야 해요"); return
         }
         if type == .criminal && pickedLaws.isEmpty {
-            alertMessage = "형사 소송은 어긴 법을 꼭 골라야 해요"; return
+            alertMessage = String(localized: "형사 소송은 어긴 법을 꼭 골라야 해요"); return
         }
 
         let orderedLaws = store.data.laws.map(\.id).filter { pickedLaws.contains($0) }
