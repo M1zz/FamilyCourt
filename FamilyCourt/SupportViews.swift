@@ -271,6 +271,7 @@ struct SettingsView: View {
             Section {
                 // 앞으로 만들 기능 — 원본은 FamilyCourtRoadmap.swift
                 NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
+                LeeoShareAppLink<FamilyCourtSpec>()
                 LeeoSupportSection<FamilyCourtSpec>()
             } header: {
                 Text("지원")
