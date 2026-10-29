@@ -1463,3 +1463,16 @@ Geçmiş davalar ve mahkeme dersleri
 Biten davalar emsal olarak saklanır; Mahkemeyi Öğren bölümü hakimlerin, davacıların, savcıların ve avukatların ne yaptığını ve bir davanın nasıl ilerlediğini anlatır.
 
 Tüm kayıtlar bu cihazda kalır ve hesap gerekmez. Kayıtlarınızı bir dosyaya aktarabilir ve daha sonra yeniden içe aktarabilirsiniz.
+
+## 손쉬운 사용
+
+<!-- DeployBar 가 App Store Connect '앱의 손쉬운 사용' 에 올린다. 실제로 확인한 것만 적는다. -->
+
+### iPhone
+voiceOver
+voiceControl
+largerText
+darkInterface
+differentiateWithoutColor
+sufficientContrast
+reducedMotion

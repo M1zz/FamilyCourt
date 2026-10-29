@@ -25,12 +25,13 @@ struct LawsView: View {
                 ForEach(Array(store.data.laws.enumerated()), id: \.element.id) { index, law in
                     VStack(alignment: .leading, spacing: 3) {
                         Text("제\(index + 1)조 (\(law.title))")
-                            .font(.system(size: 15, weight: .bold))
+                            .scaledFont(15, weight: .bold, relativeTo: .subheadline)
                         Text(law.text)
-                            .font(.system(size: 15))
+                            .scaledFont(15, relativeTo: .subheadline)
                             .foregroundColor(.secondary)
                     }
                     .padding(.vertical, 2)
+                    .accessibilityElement(children: .combine)
                     .swipeActions {
                         Button(role: .destructive) {
                             swipeTip.invalidate(reason: .actionPerformed)
@@ -77,6 +78,7 @@ struct LawFormView: View {
                 }
                 Section("내용") {
                     TextEditor(text: $text)
+                        .accessibilityLabel(Text("내용"))
                         .frame(minHeight: 80)
                         .overlay(alignment: .topLeading) {
                             if text.isEmpty {
@@ -128,6 +130,7 @@ struct FamilyView: View {
 
     @State private var name = ""
     @State private var pickedEmoji = "👨"
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
         List {
@@ -138,8 +141,9 @@ struct FamilyView: View {
                 }
                 ForEach(store.data.members) { m in
                     HStack(spacing: 12) {
-                        Text(m.emoji).font(.system(size: 28))
-                        Text(m.name).font(.system(size: 16, weight: .semibold))
+                        Text(m.emoji).scaledFont(28, relativeTo: .largeTitle)
+                            .accessibilityHidden(true)
+                        Text(m.name).scaledFont(16, weight: .semibold, relativeTo: .callout)
                     }
                 }
                 .onDelete { offsets in
@@ -149,13 +153,13 @@ struct FamilyView: View {
 
             Section("가족 추가하기") {
                 TextField("이름 (별명도 좋아요)", text: $name)
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 8), spacing: 8) {
+                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: typeSize.isAccessibilitySize ? 4 : 8), spacing: 8) {
                     ForEach(Self.emojis, id: \.self) { e in
                         Button {
                             pickedEmoji = e
                         } label: {
                             Text(e)
-                                .font(.system(size: 24))
+                                .scaledFont(24, relativeTo: .title2)
                                 .frame(maxWidth: .infinity, minHeight: 40)
                                 .background(pickedEmoji == e ? Color.blue.opacity(0.15) : Color(.tertiarySystemFill))
                                 .cornerRadius(10)
@@ -236,7 +240,7 @@ struct SettingsView: View {
                         .font(.caption)
                         .foregroundColor(.secondary)
                     Text(verbatim: "\(store.vocab.judge) · \(store.vocab.accuser(.civil)) · \(store.vocab.accused(.civil)) · \(store.vocab.accuser(.criminal)) · \(store.vocab.lawyer)")
-                        .font(.system(size: 15, weight: .semibold))
+                        .scaledFont(15, weight: .semibold, relativeTo: .subheadline)
                 }
                 .padding(.vertical, 2)
             }
@@ -257,7 +261,7 @@ struct SettingsView: View {
 
             Section("우리 법원은 이렇게 움직여요") {
                 Text("이 법원에는 정해진 대장(마스터)이 없어요.\n① 억울한 사람이 직접 소송을 접수하면서 → ② 누구를 고소할지, 누가 판사를 볼지 스스로 정해요.\n③ 접수하는 순간 소송이 시작되고 → ④ 재판을 열어 공정하게 해결해요.\n재판이 끝나면 꼭 서로 안아주고 화해해요. 🤗")
-                    .font(.system(size: 15))
+                    .scaledFont(15, relativeTo: .subheadline)
             }
 
             Section {
@@ -380,12 +384,13 @@ struct LearnView: View {
             Section("🎭 누가 무엇을 하나요?") {
                 ForEach(roles, id: \.0) { role, description in
                     VStack(alignment: .leading, spacing: 3) {
-                        Text(role).font(.system(size: 15, weight: .bold))
+                        Text(role).scaledFont(15, weight: .bold, relativeTo: .subheadline)
                         Text(description)
-                            .font(.system(size: 14))
+                            .scaledFont(14, relativeTo: .subheadline)
                             .foregroundColor(.secondary)
                     }
                     .padding(.vertical, 2)
+                    .accessibilityElement(children: .combine)
                 }
             }
             stepsSection(title: "⚖️ 민사 재판은 이렇게 진행돼요",
@@ -404,14 +409,16 @@ struct LearnView: View {
             ForEach(Array(steps.enumerated()), id: \.offset) { index, step in
                 HStack(alignment: .top, spacing: 10) {
                     Text(verbatim: "\(index + 1)")
-                        .font(.system(size: 13, weight: .bold))
+                        .scaledFont(13, weight: .bold, relativeTo: .footnote)
                         .foregroundColor(.white)
-                        .frame(width: 22, height: 22)
+                        .padding(4)
+                        .frame(minWidth: 22, minHeight: 22)
                         .background(Color.blue)
                         .clipShape(Circle())
-                    Text(step).font(.system(size: 15))
+                    Text(step).scaledFont(15, relativeTo: .subheadline)
                 }
                 .padding(.vertical, 1)
+                .accessibilityElement(children: .combine)
             }
         }
     }

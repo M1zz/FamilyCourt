@@ -160,7 +160,7 @@ struct CaseDetailView: View {
                     VerdictBadge(courtCase: c)
                 }
                 Text(verbatim: "📜 \(v.text)")
-                    .font(.system(size: 15))
+                    .scaledFont(15, relativeTo: .subheadline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(10)
                     .background(Color(.tertiarySystemFill))
@@ -175,7 +175,7 @@ struct CaseDetailView: View {
                 )) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(verbatim: "\(store.vocab.penaltyShort(c.type)): \(v.penalty)")
-                            .font(.system(size: 14))
+                            .scaledFont(14, relativeTo: .subheadline)
                             .strikethrough(v.penaltyDone)
                             .foregroundColor(v.penaltyDone ? .secondary : .primary)
                         if v.penaltyDone {
@@ -216,19 +216,57 @@ struct CaseDetailView: View {
 
 // MARK: - 작은 부품들
 
+/// 크기를 정해 둔 글씨도 '더 큰 텍스트'를 따라 커지게 — 평소 크기와 비율은 그대로.
+private struct ScaledFont: ViewModifier {
+    @ScaledMetric private var size: CGFloat
+    let weight: Font.Weight
+    let design: Font.Design
+
+    init(size: CGFloat, weight: Font.Weight, design: Font.Design, relativeTo style: Font.TextStyle) {
+        _size = ScaledMetric(wrappedValue: size, relativeTo: style)
+        self.weight = weight
+        self.design = design
+    }
+
+    func body(content: Content) -> some View {
+        content.font(.system(size: size, weight: weight, design: design))
+    }
+}
+
+extension View {
+    func scaledFont(_ size: CGFloat, weight: Font.Weight = .regular, design: Font.Design = .default,
+                    relativeTo style: Font.TextStyle = .body) -> some View {
+        modifier(ScaledFont(size: size, weight: weight, design: design, relativeTo: style))
+    }
+
+    /// 화면에 다 들어가면 그대로, 아주 큰 글씨로 넘치면 스크롤되게
+    func scrollIfNeeded() -> some View {
+        ViewThatFits(in: .vertical) {
+            self
+            ScrollView { self }
+        }
+    }
+}
+
 struct RoleRow: View {
     let role: String
     let name: String
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     var body: some View {
-        HStack {
+        // 아주 큰 글씨에서는 역할을 이름 위에 얹는다 (좁은 칸에서 한 글자씩 꺾이지 않게)
+        let layout = typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 2))
+            : AnyLayout(HStackLayout())
+        layout {
             Text(role)
-                .font(.system(size: 13, weight: .bold))
+                .scaledFont(13, weight: .bold, relativeTo: .footnote)
                 .foregroundColor(.secondary)
-                .frame(width: 96, alignment: .leading)
+                .frame(width: typeSize.isAccessibilitySize ? nil : 96, alignment: .leading)
             Text(name)
-                .font(.system(size: 16, weight: .semibold))
+                .scaledFont(16, weight: .semibold, relativeTo: .callout)
         }
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -239,8 +277,9 @@ struct InfoRow: View {
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
             Text(icon)
+                .accessibilityHidden(true)
             Text(text)
-                .font(.system(size: 14))
+                .scaledFont(14, relativeTo: .subheadline)
                 .foregroundColor(.secondary)
         }
     }
@@ -252,7 +291,7 @@ struct TypeBadge: View {
 
     var body: some View {
         Text(verbatim: "\(type.badgeEmoji) \(store.vocab.typeName(type))")
-            .font(.system(size: 12, weight: .semibold))
+            .scaledFont(12, weight: .semibold, relativeTo: .caption)
             .foregroundColor(type == .criminal ? .red : .blue)
             .padding(.horizontal, 9)
             .padding(.vertical, 3)
@@ -276,7 +315,7 @@ struct VerdictBadge: View {
             }
         }()
         Text(store.vocab.verdictBadge(result))
-            .font(.system(size: 12, weight: .semibold))
+            .scaledFont(12, weight: .semibold, relativeTo: .caption)
             .foregroundColor(color)
             .padding(.horizontal, 9)
             .padding(.vertical, 3)
@@ -310,6 +349,8 @@ struct StepTrack: View {
                 dot(i)
             }
         }
+        // 네 칸이 한 줄에 서야 하는 트랙 — 큰 글씨에서도 여기까지만 키운다 (VoiceOver 는 단계마다 읽어 준다)
+        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
     }
 
     private func dot(_ i: Int) -> some View {
@@ -320,14 +361,14 @@ struct StepTrack: View {
                     .frame(width: 28, height: 28)
                 if i < current {
                     Image(systemName: "checkmark")
-                        .font(.system(size: 12, weight: .bold))
+                        .scaledFont(12, weight: .bold, relativeTo: .caption)
                         .foregroundColor(.white)
                 } else {
-                    Text(steps[i].emoji).font(.system(size: 13))
+                    Text(steps[i].emoji).scaledFont(13, relativeTo: .footnote)
                 }
             }
             Text(steps[i].label)
-                .font(.system(size: 11, weight: i == current ? .bold : .medium))
+                .scaledFont(11, weight: i == current ? .bold : .medium, relativeTo: .caption2)
                 .foregroundColor(labelColor(i))
                 .lineLimit(1)
                 .fixedSize()   // 긴 말(독일어 등)이 "…" 로 잘리지 않게 — 잇는 선이 대신 줄어든다

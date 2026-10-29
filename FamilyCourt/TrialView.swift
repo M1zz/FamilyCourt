@@ -153,10 +153,14 @@ struct TrialRunView: View {
                 }
             }
             .padding(.top, 6)
+            // 점 색 대신 "몇 번째 단계"로 읽어 준다
+            .accessibilityElement()
+            .accessibilityLabel(Text("진행"))
+            .accessibilityValue(Text(verbatim: "\(stepIdx + 1)/\(steps.count)"))
 
             // 지금 말할 사람
             Text(step.role)
-                .font(.system(size: 14, weight: .bold))
+                .scaledFont(14, weight: .bold, relativeTo: .subheadline)
                 .foregroundColor(.blue)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 6)
@@ -165,10 +169,11 @@ struct TrialRunView: View {
 
             Text(verbatim: "\(stepIdx + 1). \(step.title)")
                 .font(.headline)
+                .accessibilityAddTraits(.isHeader)
 
             ScrollView {
                 Text(step.script)
-                    .font(.system(size: 16))
+                    .scaledFont(16, relativeTo: .callout)
                     .lineSpacing(5)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(16)
@@ -195,6 +200,8 @@ struct TrialRunView: View {
                 .buttonStyle(.bordered)
                 .opacity(stepIdx == 0 ? 0 : 1)
                 .disabled(stepIdx == 0)
+                .accessibilityHidden(stepIdx == 0)
+                .accessibilityLabel(Text("이전"))
 
                 Button {
                     move(1)
@@ -205,6 +212,7 @@ struct TrialRunView: View {
                     .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
+                .accessibilityLabel(stepIdx == steps.count - 1 ? Text("판결 내리러 가기 📜") : Text("다음"))
             }
             .padding(.horizontal, 16)
 
@@ -234,7 +242,7 @@ struct TrialRunView: View {
     private var timerView: some View {
         VStack(spacing: 8) {
             Text(timeText)
-                .font(.system(size: 56, weight: .bold, design: .rounded))
+                .scaledFont(56, weight: .bold, design: .rounded, relativeTo: .largeTitle)
                 .monospacedDigit()
                 .foregroundColor(remaining <= 10 && remaining > 0 && timerOn ? .red : .primary)
                 .accessibilityLabel("남은 시간")
@@ -258,7 +266,7 @@ struct TrialRunView: View {
                     .buttonStyle(.bordered)
                     .accessibilityLabel("30초 더하기")
             }
-            .font(.system(size: 14, weight: .semibold))
+            .scaledFont(14, weight: .semibold, relativeTo: .subheadline)
         }
         .padding(.top, 12)
     }
@@ -269,7 +277,8 @@ struct TrialRunView: View {
                 SoundPlayer.shared.gavel()
             } label: {
                 Text("🔨")
-                    .font(.system(size: 40))
+                    .scaledFont(40, relativeTo: .largeTitle)
+                    .minimumScaleFactor(0.5)
                     .frame(width: 88, height: 88)
                     .background(Color.blue.opacity(0.14))
                     .clipShape(Circle())
@@ -332,6 +341,7 @@ struct VerdictFormView: View {
 
             Section(store.vocab.verdictTextLabel) {
                 TextEditor(text: $text)
+                    .accessibilityLabel(Text(verbatim: store.vocab.verdictTextLabel))
                     .frame(minHeight: 100)
                     .overlay(alignment: .topLeading) {
                         if text.isEmpty {

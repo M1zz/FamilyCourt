@@ -51,6 +51,7 @@ struct FilingView: View {
 
                 Section("무슨 일이 있었나요?") {
                     TextEditor(text: $desc)
+                        .accessibilityLabel(Text("무슨 일이 있었나요?"))
                         .frame(minHeight: 90)
                         .overlay(alignment: .topLeading) {
                             if desc.isEmpty {

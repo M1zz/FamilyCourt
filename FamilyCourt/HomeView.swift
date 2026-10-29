@@ -17,45 +17,16 @@ struct HomeView: View {
     @Binding var path: NavigationPath
     @State private var filingType: CaseType?
     @ObservedObject private var router = ShortcutRouter.shared
+    @Environment(\.dynamicTypeSize) private var typeSize
+
+    /// 타일 두 개씩 한 줄 — 아주 큰 글씨에서는 한 줄에 하나씩, 화면을 넘치면 스크롤
+    private var row: AnyLayout {
+        typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing: 12)) : AnyLayout(HStackLayout(spacing: 12))
+    }
 
     var body: some View {
-        VStack(spacing: 12) {
-            HStack(spacing: 12) {
-                Button { filingType = .civil } label: {
-                    ActionTile(emoji: "😤", title: store.vocab.civilTileTitle,
-                               subtitle: store.vocab.civilTileSub,
-                               gradient: [Color(red: 0, green: 0.48, blue: 1), Color(red: 0.35, green: 0.34, blue: 0.84)])
-                }
-                Button { filingType = .criminal } label: {
-                    ActionTile(emoji: "🚨", title: store.vocab.criminalTileTitle,
-                               subtitle: store.vocab.criminalTileSub,
-                               gradient: [Color(red: 1, green: 0.23, blue: 0.19), Color(red: 1, green: 0.58, blue: 0)])
-                }
-            }
-            HStack(spacing: 12) {
-                NavigationLink(value: HomeDest.summons) {
-                    ActionTile(emoji: "📨", title: store.vocab.summonsTileTitle,
-                               subtitle: store.vocab.summonsTileSub(store.openCases.count),
-                               badge: store.openCases.count)
-                }
-                NavigationLink(value: HomeDest.archive) {
-                    ActionTile(emoji: "📚", title: store.vocab.archiveTileTitle,
-                               subtitle: store.vocab.archiveTileSub(store.doneCases.count))
-                }
-            }
-            HStack(spacing: 12) {
-                NavigationLink(value: HomeDest.learn) {
-                    ActionTile(emoji: "🎓", title: String(localized: "법원 공부하기"),
-                               subtitle: String(localized: "역할과 재판 순서 배우기"))
-                }
-                NavigationLink(value: HomeDest.laws) {
-                    ActionTile(emoji: "📜", title: store.vocab.lawsTileTitle,
-                               subtitle: store.vocab.lawsTileSub)
-                }
-            }
-        }
-        .padding(16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        tiles
+        .scrollIfNeeded()
         .background(Color(.systemGroupedBackground))
         .toolbar(.hidden, for: .navigationBar)
         .onReceive(router.$pending) { action in
@@ -80,6 +51,46 @@ struct HomeView: View {
             }
         }
     }
+
+    private var tiles: some View {
+        VStack(spacing: 12) {
+            row {
+                Button { filingType = .civil } label: {
+                    ActionTile(emoji: "😤", title: store.vocab.civilTileTitle,
+                               subtitle: store.vocab.civilTileSub,
+                               gradient: [Color(red: 0, green: 0.48, blue: 1), Color(red: 0.35, green: 0.34, blue: 0.84)])
+                }
+                Button { filingType = .criminal } label: {
+                    ActionTile(emoji: "🚨", title: store.vocab.criminalTileTitle,
+                               subtitle: store.vocab.criminalTileSub,
+                               gradient: [Color(red: 1, green: 0.23, blue: 0.19), Color(red: 1, green: 0.58, blue: 0)])
+                }
+            }
+            row {
+                NavigationLink(value: HomeDest.summons) {
+                    ActionTile(emoji: "📨", title: store.vocab.summonsTileTitle,
+                               subtitle: store.vocab.summonsTileSub(store.openCases.count),
+                               badge: store.openCases.count)
+                }
+                NavigationLink(value: HomeDest.archive) {
+                    ActionTile(emoji: "📚", title: store.vocab.archiveTileTitle,
+                               subtitle: store.vocab.archiveTileSub(store.doneCases.count))
+                }
+            }
+            row {
+                NavigationLink(value: HomeDest.learn) {
+                    ActionTile(emoji: "🎓", title: String(localized: "법원 공부하기"),
+                               subtitle: String(localized: "역할과 재판 순서 배우기"))
+                }
+                NavigationLink(value: HomeDest.laws) {
+                    ActionTile(emoji: "📜", title: store.vocab.lawsTileTitle,
+                               subtitle: store.vocab.lawsTileSub)
+                }
+            }
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
 }
 
 struct ActionTile: View {
@@ -88,18 +99,21 @@ struct ActionTile: View {
     let subtitle: String
     var gradient: [Color]? = nil
     var badge: Int = 0
+    @Environment(\.dynamicTypeSize) private var typeSize
+    @Environment(\.colorSchemeContrast) private var contrast
 
     var body: some View {
         VStack(alignment: .leading, spacing: 3) {
-            Text(emoji).font(.system(size: 30))
+            Text(emoji).scaledFont(30, relativeTo: .largeTitle)
+                .accessibilityHidden(true)
             Spacer(minLength: 4)
             Text(title)
-                .font(.system(size: 16, weight: .bold))
+                .scaledFont(16, weight: .bold, relativeTo: .callout)
                 .foregroundColor(gradient == nil ? .primary : .white)
                 .minimumScaleFactor(0.8)
-                .lineLimit(1)
+                .lineLimit(typeSize.isAccessibilitySize ? nil : 1)
             Text(subtitle)
-                .font(.system(size: 12))
+                .scaledFont(12, relativeTo: .caption)
                 .foregroundColor(gradient == nil ? .secondary : .white.opacity(0.88))
                 .multilineTextAlignment(.leading)
                 .minimumScaleFactor(0.8)
@@ -110,6 +124,8 @@ struct ActionTile: View {
             Group {
                 if let g = gradient {
                     LinearGradient(colors: g, startPoint: .topLeading, endPoint: .bottomTrailing)
+                        // '대비 증가'에서는 흰 글씨가 또렷하도록 바탕을 한 톤 눌러 준다
+                        .overlay(Color.black.opacity(contrast == .increased ? 0.3 : 0))
                 } else {
                     Color(.secondarySystemGroupedBackground)
                 }
@@ -119,7 +135,7 @@ struct ActionTile: View {
         .overlay(alignment: .topTrailing) {
             if badge > 0 {
                 Text(verbatim: "\(badge)")
-                    .font(.system(size: 13, weight: .bold))
+                    .scaledFont(13, weight: .bold, relativeTo: .footnote)
                     .foregroundColor(.white)
                     .padding(.horizontal, 7)
                     .frame(minWidth: 22, minHeight: 22)
@@ -128,6 +144,9 @@ struct ActionTile: View {
                     .padding(10)
             }
         }
+        .accessibilityElement(children: .combine)
+        // 음성 명령은 타일 제목만 말해도 누를 수 있게
+        .accessibilityInputLabels([Text(verbatim: title)])
     }
 }
 
@@ -139,13 +158,14 @@ struct CaseRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Text(courtCase.type.badgeEmoji).font(.system(size: 28))
+            Text(courtCase.type.badgeEmoji).scaledFont(28, relativeTo: .largeTitle)
+                .accessibilityLabel(store.vocab.typeName(courtCase.type))
             VStack(alignment: .leading, spacing: 2) {
                 Text(courtCase.title)
-                    .font(.system(size: 16, weight: .semibold))
+                    .scaledFont(16, weight: .semibold, relativeTo: .callout)
                     .lineLimit(1)
                 Text(String(localized: "\(courtCase.caseNo) · \(store.memName(courtCase.roles.accuser)) vs \(store.memName(courtCase.roles.accused))", comment: "Case row: case number, plaintiff vs defendant"))
-                    .font(.system(size: 13))
+                    .scaledFont(13, relativeTo: .footnote)
                     .foregroundColor(.secondary)
                     .lineLimit(1)
             }
@@ -153,6 +173,7 @@ struct CaseRow: View {
             StatusBadge(courtCase: courtCase)
         }
         .padding(.vertical, 2)
+        .accessibilityElement(children: .combine)
     }
 }
 
@@ -171,7 +192,7 @@ struct StatusBadge: View {
             }
         }()
         Text(store.vocab.statusText(courtCase))
-            .font(.system(size: 12, weight: .semibold))
+            .scaledFont(12, weight: .semibold, relativeTo: .caption)
             .foregroundColor(color)
             .padding(.horizontal, 9)
             .padding(.vertical, 3)
@@ -232,9 +253,10 @@ struct EmptyNotice: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            Text(emoji).font(.system(size: 38))
+            Text(emoji).scaledFont(38, relativeTo: .largeTitle)
+                .accessibilityHidden(true)
             Text(text)
-                .font(.system(size: 15))
+                .scaledFont(15, relativeTo: .subheadline)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
         }

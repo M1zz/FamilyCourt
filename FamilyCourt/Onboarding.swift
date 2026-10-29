@@ -7,6 +7,7 @@ struct FamilyCourtOnboardingView: View {
     var onFinish: () -> Void
 
     @State private var page = 0
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     private struct Page {
         let emoji: String
@@ -34,11 +35,12 @@ struct FamilyCourtOnboardingView: View {
             HStack {
                 Spacer()
                 Button("건너뛰기") { onFinish() }
-                    .font(.system(size: 15, weight: .semibold))
+                    .scaledFont(15, weight: .semibold, relativeTo: .subheadline)
                     .padding(.horizontal, 20)
                     .padding(.top, 16)
                     .opacity(page == pages.count - 1 ? 0 : 1)
                     .disabled(page == pages.count - 1)
+                    .accessibilityHidden(page == pages.count - 1)
             }
 
             TabView(selection: $page) {
@@ -46,13 +48,14 @@ struct FamilyCourtOnboardingView: View {
                     VStack(spacing: 20) {
                         Spacer()
                         Text(pages[i].emoji)
-                            .font(.system(size: 88))
+                            .scaledFont(88, relativeTo: .largeTitle)
                             .accessibilityHidden(true)
                         Text(pages[i].title)
-                            .font(.system(size: 26, weight: .bold))
+                            .scaledFont(26, weight: .bold, relativeTo: .largeTitle)
                             .multilineTextAlignment(.center)
+                            .accessibilityAddTraits(.isHeader)
                         Text(pages[i].body)
-                            .font(.system(size: 17))
+                            .scaledFont(17, relativeTo: .body)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
                             .lineSpacing(4)
@@ -60,6 +63,7 @@ struct FamilyCourtOnboardingView: View {
                         Spacer()
                     }
                     .padding(.horizontal, 28)
+                    .scrollIfNeeded()
                     .tag(i)
                 }
             }
@@ -68,7 +72,7 @@ struct FamilyCourtOnboardingView: View {
 
             Button {
                 if page < pages.count - 1 {
-                    withAnimation { page += 1 }
+                    withAnimation(reduceMotion ? nil : .default) { page += 1 }
                 } else {
                     onFinish()
                 }
