@@ -1,4 +1,18 @@
 import SwiftUI
+import LeeoKit
+
+/// 판결로 마무리한 다툼이 이만큼 쌓였을 때 응원을 부탁한다. 큰 것부터.
+enum FamilyCourtTipMoments {
+    static let decided = [30, 10, 5]
+
+    static func reached(decided total: Int) -> [LeeoTipMoment] {
+        decided.filter { total >= $0 }.map { threshold in
+            LeeoTipMoment(id: "decided.\(threshold)",
+                          message: String(localized: "지금까지 우리 집 다툼 \(total)건을 판결로 풀었어요",
+                                          comment: "Tip ask card: number of family disputes settled with a verdict"))
+        }
+    }
+}
 
 /// 사건 허브 — 한 사건의 접수 → 재판 → 판결 → 약속을 이 화면에서 끝까지 보조해요.
 struct CaseDetailView: View {
@@ -17,6 +31,13 @@ struct CaseDetailView: View {
                 rolesSection(c)
                 contentSection(c)
                 if let v = c.verdict { verdictSection(c, v).id("verdict") }
+                // 방금 판결이 난 자리. 풀어낸 다툼이 숫자로 보일 때만, 드물게 응원을 부탁한다.
+                if c.status == .decided {
+                    LeeoTipAskSlot<FamilyCourtSpec>(tipJar: FamilyCourtSpec.tipJar,
+                                                    reached: FamilyCourtTipMoments.reached(decided: store.doneCases.count))
+                        .listRowInsets(EdgeInsets())
+                        .listRowBackground(Color.clear)
+                }
                 actionSection(c)
             }
             #if DEBUG

@@ -13,8 +13,13 @@ enum FamilyCourtSpec: LeeoAppSpec {
         marketingURL: URL(string: "https://m1zz.github.io/FamilyCourt/")!
     )
 
-    /// 인앱 결제 없음.
+    /// 기능을 여는 인앱 결제 없음.
     static let monetization = LeeoMonetization.free
+
+    /// 개발자 응원(팁). 소모성 세 가지, 작은 것부터. 기능을 열지 않는다 — 무료 앱이라 혼자 돈다(`startStandalone`).
+    @MainActor static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.family.familycourt.tip.small", "com.family.familycourt.tip.medium", "com.family.familycourt.tip.large",
+    ]))
 
     /// App Store 앱 ID — 리뷰 링크 · 친구에게 소개하기에 쓴다.
     static var appStoreID: String? { "6790131247" }

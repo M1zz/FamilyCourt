@@ -30,6 +30,8 @@ struct FamilyCourtApp: App {
                 .environmentObject(store)
                 .onAppear { UIApplication.shared.installKeyboardDismissTap() }
                 .modifier(SatisfactionCheckIfEnabled())
+                // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.
+                .task { await FamilyCourtSpec.tipJar.startStandalone() }
         }
     }
 }
