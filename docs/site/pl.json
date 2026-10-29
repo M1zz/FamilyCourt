@@ -1,0 +1,230 @@
+{
+  "title": "Sąd Rodzinny: zabawa w rozprawę dla całej rodziny",
+  "description": "Kłótnia rodzeństwa albo złamana obietnica? Zamiast krzyczeć, otwórzcie domowy sąd. Dziecko składa pozew, rodzina sądzi i broni. Bez reklam i zakupów.",
+  "hero": {
+    "headline": "Niesprawiedliwie?\nBez łez, idziemy do sądu.",
+    "lead": "Dziecko samo składa pozew jako powód, a rodzina dzieli się rolami sędziego i obrońcy. Na każdym etapie scenariusz podpowiada, czyja kolej i co powiedzieć, więc nawet pierwsza rozprawa idzie jak prawdziwa.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Bez reklam, zakupów i rejestracji. Wszystko zostaje na tym urządzeniu."
+  },
+  "demo": {
+    "title": "Przeprowadź rozprawę",
+    "lead": "Krótka sprawa: „Brat nie chce oddać pilota”. Zmień u góry poziom słownictwa, uderz młotkiem i włącz timer. Będzie dźwięk, sprawdź głośność.",
+    "prev": "← Wstecz",
+    "next": "Dalej →",
+    "again": "Od nowa",
+    "after": "Razem z wyrokiem ustala się obietnicę, a w aplikacji odhacza się ją, gdy zostanie dotrzymana. Po rozprawie koniecznie przytulcie się i pogódźcie 🤗",
+    "note": "W aplikacji imiona członków rodziny, szczegóły sprawy i wybrane domowe prawa trafiają prosto do scenariusza.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Proces się zaczyna!",
+          "Otwarcie rozprawy",
+          "Otwarcie rozprawy"
+        ],
+        "text": "{judge}: „Otwieram posiedzenie domowego sądu rodzinnego.\nRozpatrujemy sprawę ‚Brat nie chce oddać pilota’.\nProszę wszystkich, siądźcie prosto!”"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser} opowiada",
+          "{accuser} opowiada",
+          "{accuser} opowiada"
+        ],
+        "text": "• Kiedy, gdzie i co się stało?\n• Jak się wtedy czułeś?\n• Czego chcesz?\n\n⭐ Zasady: bez krzyku, tylko to, co naprawdę się stało!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused} opowiada",
+          "{accused} opowiada",
+          "{accused} opowiada"
+        ],
+        "text": "Teraz kolej drugiej strony.\n• Czy naprawdę tak było?\n• Dlaczego tak zrobiłeś? Powiedz, co myślisz.\n\n⭐ Zasady: wysłuchaj do końca, nie przerywaj!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Parę słów na koniec",
+          "Na koniec (ostatnie słowo)",
+          "Ostatnie słowo"
+        ],
+        "text": "Po kolei każdy mówi ostatnie słowo.\n{accuser}: „Chciałbym, żeby ○○.”\n{accused}: „Od teraz będę ○○.”"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Decydujemy",
+          "Ogłoszenie wyroku",
+          "Ogłoszenie wyroku"
+        ],
+        "text": "Zamknij oczy i pomyśl dobrze przez dziesięć sekund.\nKto ma rację? Jaka obietnica pomoże wszystkim znów się dogadać?\nGdy już zdecydujesz, wybierz poniżej i ogłoś wyrok."
+      }
+    ],
+    "levelLabel": "Poziom słownictwa",
+    "levels": [
+      "Prosty",
+      "Standardowy",
+      "Sądowy"
+    ],
+    "judge": [
+      "Rozjemca",
+      "Sędzia",
+      "Przewodniczący"
+    ],
+    "accuser": [
+      "Poszkodowany",
+      "Powód",
+      "Powód"
+    ],
+    "accused": [
+      "Odpowiadający",
+      "Pozwany",
+      "Pozwany"
+    ],
+    "verdicts": [
+      [
+        "Poszkodowany ma rację",
+        "Wygrana powoda (powód ma rację)",
+        "Wygrana powoda"
+      ],
+      [
+        "Odpowiadający ma rację",
+        "Wygrana pozwanego (pozwany ma rację)",
+        "Wygrana pozwanego"
+      ],
+      [
+        "Pogódźcie się",
+        "Ugoda (każdy trochę ustępuje)",
+        "Propozycja ugody"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pauza",
+    "gavel": "Uderz młotkiem"
+  },
+  "problem": {
+    "title": "„On zaczął!” Zmęczony ciągłym rozstrzyganiem?",
+    "text": "Gdy wybucha kłótnia, zwykle rozstrzyga ją dorosły. Przegrany płacze, bo czuje się skrzywdzony, a zwycięzca nie bardzo wie, dlaczego wygrał. Sąd Rodzinny daje dzieciom kolejność: opowiedzieć całą swoją wersję i wysłuchać drugiej do końca. A wyrok kończy się obietnicą, nie tylko karą."
+  },
+  "features": [
+    {
+      "title": "Kto czuje się skrzywdzony, sam składa pozew",
+      "text": "Kto uważa, że coś jest niesprawiedliwe, zostaje powodem i składa pozew. Przeciw komu i kto będzie sędzią, decyduje składający. Dzieci mogą pozwać nawet mamę i tatę.\nWidziałeś, jak ktoś łamie domowe prawo? Zostań prokuratorem i wnieś sprawę karną. Sędzią może być tylko ktoś, kto nie jest ani powodem, ani pozwanym.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Wyrok kończy się obietnicą",
+      "text": "Razem z wyrokiem ustala się obietnicę lub karę i odhacza ją, gdy zostanie wykonana. Zakończone sprawy stają się waszymi precedensami.\nPomysły na karę zaczynają się od naprawienia szkody i załagodzenia przykrości, bardziej naprawa niż kara. Mniej gier i telewizji to ostateczność.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Wasz dom, wasze prawa",
+      "text": "Zapiszcie jako artykuły zasady ustalone w rodzinie, na przykład szacunek, sprzątanie i dotrzymywanie słowa, i dodawajcie lub zmieniajcie je w każdej chwili. W pozwie wybiera się złamane prawo.\n„Poznaj sąd” wyjaśnia, co robią sędzia, powód, prokurator i obrońca oraz jak przebiega rozprawa.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Start w trzech krokach",
+    "items": [
+      {
+        "title": "Dodaj rodzinę",
+        "text": "Wystarczy imię i emoji. Bez konta."
+      },
+      {
+        "title": "Złóż sprawę",
+        "text": "Niesprawiedliwość to sprawa cywilna, złamane domowe prawo to sprawa karna. Potem wybierz sędziego."
+      },
+      {
+        "title": "Otwórz rozprawę",
+        "text": "Mów według scenariusza, pilnuj czasu timerem i ogłoś wyrok uderzeniem młotka."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Słowa, które rosną razem z dzieckiem",
+    "rows": [
+      [
+        "Sędzia",
+        "Prosty: Rozjemca · Sądowy: Przewodniczący"
+      ],
+      [
+        "Powód",
+        "Prosty: Poszkodowany · Sądowy: Powód"
+      ],
+      [
+        "Pozwany",
+        "Prosty: Odpowiadający · Sądowy: Pozwany"
+      ],
+      [
+        "Prokurator",
+        "Prosty: Świadek · Sądowy: Prokurator"
+      ],
+      [
+        "Oskarżony",
+        "Prosty: Odpowiadający · Sądowy: Oskarżony"
+      ],
+      [
+        "Obrońca",
+        "Prosty: Pomocnik · Sądowy: Obrońca"
+      ],
+      [
+        "Sprawa cywilna",
+        "Prosty: To niesprawiedliwe · Sądowy: Sprawa cywilna"
+      ],
+      [
+        "Sprawa karna",
+        "Prosty: Złamana obietnica · Sądowy: Sprawa karna"
+      ]
+    ],
+    "note": "Wybierz poziom słownictwa w Ustawieniach, a słowa na ekranie i w scenariuszu zmienią się naraz. Dla przedszkolaków spróbuj poziomu Prosty, dla uczniów Standardowy."
+  },
+  "faq": {
+    "title": "Częste pytania",
+    "items": [
+      {
+        "q": "Od jakiego wieku?",
+        "a": "Każde dziecko, które umie czytać, może grać z rodzicem. Ze scenariuszem, podpowiedziami i poziomem Prosty mogą dołączyć też młodsze, jeśli dorosły czyta na głos."
+      },
+      {
+        "q": "Czy to naprawdę za darmo?",
+        "a": "Tak. Bez reklam i bez zakupów odblokowujących funkcje. W Ustawieniach jest dobrowolny napiwek dla twórcy, który niczego nie odblokowuje ani nie blokuje."
+      },
+      {
+        "q": "Czy potrzebny jest internet?",
+        "a": "Nie. Rozprawy i akta działają całkowicie offline. Internet i logowanie do iCloud są potrzebne tylko do wysłania opinii z Ustawień."
+      },
+      {
+        "q": "Gdzie są przechowywane dane?",
+        "a": "Rodzina, prawa, rozprawy i wyroki są zapisane tylko na urządzeniu i nie trafiają na żaden serwer. Do twórcy docierają jedynie opinie, które sam wyślesz, i anonimowe statystyki użycia, które cię nie identyfikują."
+      },
+      {
+        "q": "Czy mogę zrobić kopię lub przenieść dane na inne urządzenie?",
+        "a": "„Zapisz dane” w Ustawieniach eksportuje wszystko do pliku, a „Wczytaj dane” na drugim urządzeniu przywraca wszystko tak, jak było. Kopie ze starej wersji internetowej też da się wczytać."
+      },
+      {
+        "q": "Czy działa na iPadzie?",
+        "a": "Tak, na iPhonie i iPadzie. Duży ekran świetnie sprawdza się, gdy cała rodzina siedzi dookoła."
+      },
+      {
+        "q": "A jeśli kary będą zbyt surowe?",
+        "a": "Gdy prokurator żąda kary, scenariusz przypomina, by nie była zbyt ciężka i dała się wykonać. Pomysły na karę zaczynają się od naprawy: naprawić szkodę, załagodzić przykrość, spojrzeć oczami drugiej osoby."
+      },
+      {
+        "q": "Jak usunąć wszystko?",
+        "a": "Po usunięciu aplikacji znikają wszystkie akta z urządzenia. Nic nigdy go nie opuściło, więc nigdzie indziej nic nie zostaje. Aby usunąć wysłaną opinię, napisz do nas."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Otwórzcie dziś wieczorem\nswój sąd rodzinny",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Błędy, pomysły albo coś innego? Napisz na {email}. Opinię możesz też wysłać z ustawień aplikacji."
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "title": "Familjerätten: rättegångslek för hela familjen",
+  "description": "Syskonbråk eller ett brutet löfte? I stället för att skrika öppnar ni er egen familjerätt. Barnet stämmer, familjen dömer. Ingen reklam.",
+  "hero": {
+    "headline": "Orättvist?\nInga tårar, ta det i rätten.",
+    "lead": "Ditt barn lämnar själv in stämningen som kärande, och familjen delar på rollerna som domare och försvarare. Ett manus berättar i varje steg vems tur det är och vad som ska sägas, så redan första målet går som ett riktigt.",
+    "cta": "Hämta gratis på App Store",
+    "note": "Ingen reklam, inga köp, ingen registrering. Allt stannar på den här enheten."
+  },
+  "demo": {
+    "title": "Håll en rättegång",
+    "lead": "Ett kort mål: ”Lillebror vill inte ge mig fjärrkontrollen.” Byt ordnivå högst upp, slå med klubban och starta timern. Det låter, så kolla volymen.",
+    "prev": "← Tillbaka",
+    "next": "Nästa →",
+    "again": "Börja om",
+    "after": "Tillsammans med domen bestämmer ni ett löfte, och i appen bockar ni av det när det är hållet. Efter rättegången: kramas och bli sams 🤗",
+    "note": "I appen hamnar familjens namn, detaljerna i målet och husreglerna ni valt direkt i manuset.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Rättegången börjar!",
+          "Förhandlingen öppnas",
+          "Förhandlingen öppnas"
+        ],
+        "text": "{judge}: ”Familjerätten är härmed öppnad.\nVi behandlar målet ’Lillebror vill inte ge mig fjärrkontrollen’.\nSätt er ordentligt, allihop!”"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser} berättar",
+          "{accuser} berättar",
+          "{accuser} berättar"
+        ],
+        "text": "• När och var hände det, och vad hände?\n• Hur kändes det?\n• Vad önskar du?\n\n⭐ Regler: inga rop, säg bara det som verkligen hände!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused} berättar",
+          "{accused} berättar",
+          "{accused} berättar"
+        ],
+        "text": "Nu är det andra sidans tur.\n• Hände det verkligen så?\n• Varför gjorde du så? Säg vad du tänker.\n\n⭐ Regler: lyssna till slutet, avbryt inte!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Sista ordet",
+          "Sista ordet (slutanförande)",
+          "Slutanförande"
+        ],
+        "text": "En i taget säger alla sitt sista ord.\n{accuser}: ”Jag önskar ○○.”\n{accused}: ”Från och med nu ska jag ○○.”"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Bestäm",
+          "Domen meddelas",
+          "Domen meddelas"
+        ],
+        "text": "Blunda och tänk efter ordentligt i tio sekunder.\nVem har rätt? Vilket löfte gör att alla kan bli sams igen?\nNär du har bestämt dig, välj nedan och avkunna domen."
+      }
+    ],
+    "levelLabel": "Ordnivå",
+    "levels": [
+      "Enkel",
+      "Standard",
+      "Rättssal"
+    ],
+    "judge": [
+      "Bestämmaren",
+      "Domaren",
+      "Rättens ordförande"
+    ],
+    "accuser": [
+      "Den som tycker det är orättvist",
+      "Käranden",
+      "Käranden"
+    ],
+    "accused": [
+      "Den som ska svara",
+      "Svaranden",
+      "Svaranden"
+    ],
+    "verdicts": [
+      [
+        "Den som tyckte det var orättvist har rätt",
+        "Käranden vinner (Käranden har rätt)",
+        "Käromålet bifalls"
+      ],
+      [
+        "Den som svarade har rätt",
+        "Svaranden vinner (Svaranden har rätt)",
+        "Käromålet ogillas"
+      ],
+      [
+        "Ni blir sams igen",
+        "Förlikning (båda ger med sig lite)",
+        "Förslag om förlikning"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Paus",
+    "gavel": "Slå med klubban"
+  },
+  "problem": {
+    "title": "”Han började!” Trött på att alltid vara domare?",
+    "text": "När det blir bråk är det oftast en vuxen som avgör. Den som förlorar gråter för att det känns orättvist, och den som vinner vet inte riktigt varför. Familjerätten ger barnen en ordning: berätta hela din sida och lyssna klart på den andra. Och domen slutar med ett löfte, inte bara ett straff."
+  },
+  "features": [
+    {
+      "title": "Den som känner sig orättvist behandlad stämmer själv",
+      "text": "Den som tycker att något är orättvist blir kärande och lämnar in stämningen. Vem målet gäller och vem som blir domare väljer den som stämmer. Barn kan till och med stämma mamma och pappa.\nSåg du någon bryta en husregel? Bli åklagare och väck ett brottmål. Domare kan bara den vara som varken är kärande eller svarande.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Domar slutar med ett löfte",
+      "text": "Till domen hör ett löfte eller ett straff som ni bockar av när det är klart. Avslutade mål blir era egna prejudikat.\nStraffförslagen börjar med att ställa till rätta och laga känslor, mer reparation än bestraffning. Mindre spel eller tv kommer sist.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Ert hem, era lagar",
+      "text": "Skriv ner reglerna ni är överens om som paragrafer, som respekt, att städa och att hålla löften, och lägg till eller ändra när ni vill. I stämningen väljer ni lagen som bröts.\n”Lär dig om rätten” förklarar vad domare, kärande, åklagare och försvarare gör och hur en rättegång går till.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Igång i tre steg",
+    "items": [
+      {
+        "title": "Lägg till familjen",
+        "text": "Ett namn och en emoji räcker. Inget konto."
+      },
+      {
+        "title": "Lämna in ett mål",
+        "text": "Orättvist? Tvistemål. Husregel bruten? Brottmål. Välj sedan en domare."
+      },
+      {
+        "title": "Öppna rätten",
+        "text": "Följ manuset, håll tiden med timern och avkunna domen med klubban."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Ord som växer med ditt barn",
+    "rows": [
+      [
+        "Domaren",
+        "Enkel: Bestämmaren · Rättssal: Rättens ordförande"
+      ],
+      [
+        "Käranden",
+        "Enkel: Den som tycker det är orättvist · Rättssal: Käranden"
+      ],
+      [
+        "Svaranden",
+        "Enkel: Den som ska svara · Rättssal: Svaranden"
+      ],
+      [
+        "Åklagaren",
+        "Enkel: Den som sa till · Rättssal: Åklagaren"
+      ],
+      [
+        "Den tilltalade",
+        "Enkel: Den som ska svara · Rättssal: Den tilltalade"
+      ],
+      [
+        "Försvararen",
+        "Enkel: Hjälparen · Rättssal: Försvararen"
+      ],
+      [
+        "Tvistemål",
+        "Enkel: Orättvist! · Rättssal: Tvistemål"
+      ],
+      [
+        "Brottmål",
+        "Enkel: Brutet löfte · Rättssal: Brottmål"
+      ]
+    ],
+    "note": "Välj ordnivå i Inställningar så byts orden på skärmen och i manuset på en gång. Prova Enkel för förskolebarn och Standard för skolbarn."
+  },
+  "faq": {
+    "title": "Vanliga frågor",
+    "items": [
+      {
+        "q": "Vilken ålder passar det för?",
+        "a": "Alla barn som kan läsa kan vara med tillsammans med en förälder. Med manuset, tipsen och ordnivån Enkel kan även yngre barn delta när en vuxen läser högt."
+      },
+      {
+        "q": "Är det verkligen gratis?",
+        "a": "Ja. Ingen reklam och inga köp som låser upp funktioner. I Inställningar finns en frivillig dricks till utvecklaren, men den låser varken upp eller låser något."
+      },
+      {
+        "q": "Behövs internet?",
+        "a": "Nej. Rättegångar och arkiv fungerar helt offline. Bara för att skicka feedback från Inställningar behöver du internet och vara inloggad på iCloud."
+      },
+      {
+        "q": "Var sparas uppgifterna?",
+        "a": "Familj, lagar, rättegångar och domar sparas bara på enheten och skickas inte till någon server. Utvecklaren får bara feedback du själv skickar och anonym användningsstatistik som inte kan kopplas till dig."
+      },
+      {
+        "q": "Kan jag säkerhetskopiera eller flytta till en annan enhet?",
+        "a": "Använd ”Spara arkiv” i Inställningar för att exportera allt till en fil och ”Läs in arkiv” på den andra enheten, så är allt tillbaka precis som förut. Säkerhetskopior från den gamla webbversionen går också att läsa in."
+      },
+      {
+        "q": "Fungerar det på iPad?",
+        "a": "Ja, på både iPhone och iPad. En stor skärm passar perfekt när hela familjen sitter runt."
+      },
+      {
+        "q": "Tänk om straffen blir för hårda?",
+        "a": "När åklagaren yrkar på ett straff påminner manuset om att det inte ska vara för hårt utan går att genomföra. Förslagen börjar med att reparera: ställa till rätta, laga känslor och se det från den andras håll."
+      },
+      {
+        "q": "Hur raderar jag allt?",
+        "a": "Raderar du appen försvinner alla mål på enheten. Inget har lämnat den, så inget finns kvar någon annanstans. Vill du få skickad feedback raderad, mejla oss."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Öppna er egen familjerätt\ni kväll",
+    "cta": "Hämta gratis på App Store"
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "languages": "Språk",
+    "privacy": "Integritetspolicy",
+    "contact": "Buggar, idéer eller något annat? Skriv till {email}. Du kan också skicka feedback från appens inställningar."
+  }
+}

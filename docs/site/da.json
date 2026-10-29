@@ -1,0 +1,230 @@
+{
+  "title": "Familieretten: retssagsleg for hele familien",
+  "description": "Søskende i skænderi eller et brudt løfte? I stedet for at råbe åbner I jeres egen familieret. Barnet sagsøger, familien dømmer. Ingen reklamer.",
+  "hero": {
+    "headline": "Uretfærdigt?\nIngen tårer, tag det i retten.",
+    "lead": "Dit barn indgiver selv stævningen som sagsøger, og familien deler rollerne som dommer og forsvarer. Et manuskript fortæller ved hvert trin, hvis tur det er, og hvad der skal siges, så selv den første sag kører som en rigtig.",
+    "cta": "Hent gratis i App Store",
+    "note": "Ingen reklamer, ingen køb, ingen tilmelding. Alt bliver på denne enhed."
+  },
+  "demo": {
+    "title": "Hold en retssag",
+    "lead": "En kort sag: „Min lillebror vil ikke give mig fjernbetjeningen.“ Skift ordniveau øverst, slå med hammeren, og start timeren. Der kommer lyd, så tjek lydstyrken.",
+    "prev": "← Tilbage",
+    "next": "Næste →",
+    "again": "Forfra",
+    "after": "Sammen med dommen aftaler I et løfte, og i appen krydser I det af, når det er holdt. Efter sagen: kram og bliv gode venner igen 🤗",
+    "note": "I appen kommer familiens navne, sagens detaljer og de husregler, I har valgt, direkte ind i manuskriptet.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Så går vi i gang!",
+          "Retten sættes",
+          "Retten sættes"
+        ],
+        "text": "{judge}: „Familieretten er hermed sat.\nVi behandler sagen ‚Min lillebror vil ikke give mig fjernbetjeningen‘.\nSæt jer alle sammen pænt op!“"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Ordet har: {accuser}",
+          "Ordet har: {accuser}",
+          "Ordet har: {accuser}"
+        ],
+        "text": "• Hvornår og hvor skete det, og hvad skete der?\n• Hvordan havde du det?\n• Hvad kunne du tænke dig?\n\n⭐ Regler: ingen råben, kun det der faktisk skete!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Ordet har: {accused}",
+          "Ordet har: {accused}",
+          "Ordet har: {accused}"
+        ],
+        "text": "Nu er det den anden sides tur.\n• Skete det virkelig sådan?\n• Hvorfor gjorde du det? Sig hvad du tænker.\n\n⭐ Regler: lyt til det sidste, ingen afbrydelser!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Det sidste ord",
+          "Sidste ord (afsluttende udtalelse)",
+          "Sidste ord"
+        ],
+        "text": "Én ad gangen siger alle deres sidste ord.\n{accuser}: „Jeg vil gerne have ○○.“\n{accused}: „Fra nu af vil jeg ○○.“"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Afgør",
+          "Domsafsigelse",
+          "Domsafsigelse"
+        ],
+        "text": "Luk øjnene og tænk dig godt om i ti sekunder.\nHvem har ret? Hvilket løfte kan få alle til at være gode venner igen?\nNår du har besluttet dig, så vælg nedenfor og afsig dommen."
+      }
+    ],
+    "levelLabel": "Ordniveau",
+    "levels": [
+      "Enkelt",
+      "Standard",
+      "Retssal"
+    ],
+    "judge": [
+      "Bestemmer",
+      "Dommer",
+      "Retsformand"
+    ],
+    "accuser": [
+      "Den, der klager",
+      "Sagsøger",
+      "Sagsøger"
+    ],
+    "accused": [
+      "Den, der svarer",
+      "Sagsøgt",
+      "Sagsøgt"
+    ],
+    "verdicts": [
+      [
+        "Den, der klagede, har ret",
+        "Sagsøger vinder (sagsøger har ret)",
+        "Dom til sagsøger"
+      ],
+      [
+        "Den, der svarede, har ret",
+        "Sagsøgte vinder (sagsøgte har ret)",
+        "Frifindelse af sagsøgte"
+      ],
+      [
+        "I bliver gode venner igen",
+        "Forlig (begge giver lidt efter)",
+        "Forligsforslag"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pause",
+    "gavel": "Slå med hammeren"
+  },
+  "problem": {
+    "title": "„Det var ham, der startede!“ Træt af altid at være dommer?",
+    "text": "Når der er ballade, er det som regel en voksen, der afgør det. Taberen græder, fordi det føles uretfærdigt, og vinderen ved ikke rigtig hvorfor. Familieretten giver børn en rækkefølge: fortæl hele din side, og hør den anden side helt til ende. Og dommen slutter med et løfte, ikke kun en straf."
+  },
+  "features": [
+    {
+      "title": "Den, der føler sig uretfærdigt behandlet, sagsøger selv",
+      "text": "Den, der synes, noget er uretfærdigt, bliver sagsøger og indgiver stævningen. Hvem sagen er mod, og hvem der skal være dommer, vælger den, der sagsøger. Børn kan endda sagsøge mor og far.\nSå du nogen bryde en husregel? Bliv anklager, og rejs en straffesag. Kun en, der hverken er sagsøger eller sagsøgt, kan være dommer.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Domme slutter med et løfte",
+      "text": "Med dommen følger et løfte eller en straf, som I krydser af, når det er klaret. Afsluttede sager bliver til jeres egne domme.\nForslagene til straf starter med at gøre det godt igen og hele følelser, mere reparation end straf. Mindre spil eller tv kommer sidst.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Jeres hus, jeres love",
+      "text": "Skriv de regler, I er enige om, ned som paragraffer, fx respekt, oprydning og at holde løfter, og tilføj eller ret dem når som helst. I stævningen vælger I den lov, der blev brudt.\n„Lær om retten“ forklarer, hvad dommere, sagsøgere, anklagere og forsvarere laver, og hvordan en retssag forløber.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre trin",
+    "items": [
+      {
+        "title": "Tilføj familien",
+        "text": "Et navn og en emoji er nok. Ingen konto."
+      },
+      {
+        "title": "Indgiv en sag",
+        "text": "Uretfærdigt? Civil sag. Husregel brudt? Straffesag. Vælg så en dommer."
+      },
+      {
+        "title": "Sæt retten",
+        "text": "Følg manuskriptet, hold tiden med timeren, og afsig dommen med hammeren."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Ord, der vokser med dit barn",
+    "rows": [
+      [
+        "Dommer",
+        "Enkelt: Bestemmer · Retssal: Retsformand"
+      ],
+      [
+        "Sagsøger",
+        "Enkelt: Den, der klager · Retssal: Sagsøger"
+      ],
+      [
+        "Sagsøgt",
+        "Enkelt: Den, der svarer · Retssal: Sagsøgt"
+      ],
+      [
+        "Anklager",
+        "Enkelt: Den, der sagde det · Retssal: Anklager"
+      ],
+      [
+        "Tiltalt",
+        "Enkelt: Den, der svarer · Retssal: Tiltalt"
+      ],
+      [
+        "Forsvarer",
+        "Enkelt: Hjælper · Retssal: Forsvarer"
+      ],
+      [
+        "Civil sag",
+        "Enkelt: Uretfærdigt · Retssal: Civil sag"
+      ],
+      [
+        "Straffesag",
+        "Enkelt: Brudt regel · Retssal: Straffesag"
+      ]
+    ],
+    "note": "Vælg ordniveau i Indstillinger, så skifter ordene på skærmen og i manuskriptet på én gang. Prøv Enkelt til børnehavebørn og Standard til skolebørn."
+  },
+  "faq": {
+    "title": "Spørgsmål og svar",
+    "items": [
+      {
+        "q": "Hvilken alder passer det til?",
+        "a": "Alle børn, der kan læse, kan være med sammen med en forælder. Med manuskriptet, vejledningen og ordniveauet Enkelt kan yngre børn også være med, når en voksen læser højt."
+      },
+      {
+        "q": "Er det virkelig gratis?",
+        "a": "Ja. Ingen reklamer og ingen køb, der låser funktioner op. I Indstillinger kan man give et frivilligt drikkepenge-bidrag til udvikleren, men det låser hverken noget op eller i."
+      },
+      {
+        "q": "Skal man have internet?",
+        "a": "Nej. Retssager og arkiv virker helt offline. Kun når du sender feedback fra Indstillinger, skal du have internet og være logget ind på iCloud."
+      },
+      {
+        "q": "Hvor gemmes oplysningerne?",
+        "a": "Familie, love, retssager og domme gemmes kun på enheden og sendes ikke til nogen server. Udvikleren får kun den feedback, du selv sender, og anonym brugsstatistik, der ikke kan føres tilbage til dig."
+      },
+      {
+        "q": "Kan jeg tage backup eller flytte til en anden enhed?",
+        "a": "Brug „Gem data“ i Indstillinger til at eksportere alt til en fil, og „Hent data“ på den anden enhed, så er alt der igen præcis som før. Backups fra den gamle webversion kan også hentes."
+      },
+      {
+        "q": "Virker det på iPad?",
+        "a": "Ja, på både iPhone og iPad. En stor skærm er perfekt, når hele familien sidder rundt om."
+      },
+      {
+        "q": "Hvad hvis straffene bliver for hårde?",
+        "a": "Når anklageren beder om en straf, minder manuskriptet om, at den ikke må være for hård, men skal kunne overholdes. Forslagene starter med at reparere: gøre det godt igen, hele følelser og se det fra den andens side."
+      },
+      {
+        "q": "Hvordan sletter jeg alt?",
+        "a": "Sletter du appen, forsvinder alle sager på enheden med. Intet har forladt den, så der ligger heller intet andre steder. Vil du have slettet feedback, du har sendt, så skriv til os."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Sæt jeres egen familieret\ni aften",
+    "cta": "Hent gratis i App Store"
+  },
+  "ui": {
+    "skip": "Spring til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Fejl, idéer eller noget helt tredje? Skriv til {email}. Du kan også sende feedback fra appens indstillinger."
+  }
+}

@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perhetuomioistuin — Oikeudenkäynnit kotona lapsille ja perheille</title>
-  <meta name="description" content="Perhetuomioistuin on iOS-sovellus, jossa perhe leikkii oikeudenkäyntiä kotona ja lapset oppivat laista ja oikeudenmukaisuudesta. Kaikki tiedot pysyvät laitteellasi.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perheoikeus: koko perheen oikeudenkäyntileikki</title>
+  <meta name="description" content="Sisarukset riitelevät tai joku rikkoi lupauksen? Huutamisen sijaan avatkaa oma perheoikeus. Lapsi nostaa kanteen, perhe tuomitsee. Ei mainoksia.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/fi/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Perheoikeus: koko perheen oikeudenkäyntileikki">
+  <meta property="og:description" content="Sisarukset riitelevät tai joku rikkoi lupauksen? Huutamisen sijaan avatkaa oma perheoikeus. Lapsi nostaa kanteen, perhe tuomitsee. Ei mainoksia.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/fi/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/fi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Perhetuomioistuin</h1>
-    <div class="en">Epäoikeudenmukaisuus ratkaistaan oikeudessa</div>
-    <p class="tagline">Opi laista ja oikeudenmukaisuudesta perheen roolileikissä – iOS-sovellus, jossa lapsista tulee tuomareita ja asianajajia</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Tuki ja pelaamisen ohjeet</a>
-      <a class="btn btn-ghost" href="privacy.html">Tietosuojakäytäntö</a>
-    </div>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+  <header class="bar">
+    <a class="brand" href="../fi/"><img src="../icon.png" alt="" width="32" height="32">Perheoikeus</a>
+    <a class="lang-link" href="#languages">Kieli</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Mikä tämä sovellus on?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Jokin tuntuu epäreilulta</h3>
-          <p>Lapsi voi olla <b>kantaja</b> ja jättää haasteen. Riita-asia, joka pukee loukatut tunteet sanoiksi.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Kotisääntö rikottiin</h3>
-          <p>Kun perheen sääntö rikotaan, <b>syyttäjä</b> tuo asian oikeuteen. Tuomari päättää: syyllinen, syytön vai armo.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Reilut roolit kaikille</h3>
-          <p>Tuomarina voi toimia vain se, joka ei ole kantaja eikä vastaaja. Jokaisella on oikeus valita avustaja.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Perheemme lakikirja</h3>
-          <p>Kirjoittakaa yhdessä perheen säännöt ja seuratkaa jokaista asiaa oikeudenkäynnistä tuomioon ja lupaukseen.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Epäreilua?<br>Ei kyyneliä, vaan oikeuteen.</h1>
+        <p class="lead">Lapsi nostaa itse kanteen kantajana, ja perhe jakaa tuomarin ja asianajajan roolit. Käsikirjoitus kertoo joka vaiheessa, kenen vuoro on ja mitä sanotaan, joten jo ensimmäinen istunto sujuu kuin oikea.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Lataa ilmaiseksi App Storesta</a><a class="try" href="#try">Pidä istunto ↓</a></div>
+        <p class="muted small">Ei mainoksia, ostoja eikä rekisteröitymistä. Kaikki pysyy tällä laitteella.</p>
       </div>
+      <div class="phone"><img src="../img/fi/03-trial.jpg" alt="Epäreilua? Ei kyyneliä, vaan oikeuteen." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Näin se toimii</h2>
-      <ol class="steps">
-        <li>Päättäkää yhdessä <b>perheen lait</b> ja kirjoittakaa ne lakikirjaan.</li>
-        <li>Jätä <b>riita-asia</b>, kun jokin on epäreilua, tai <b>rikosasia</b>, kun sääntö on rikottu.</li>
-        <li>Valitkaa kantajan, vastaajan, tuomarin ja avustajan <b>roolit</b> ja avatkaa istunto.</li>
-        <li>Kuunnelkaa molempia osapuolia, minkä jälkeen tuomari antaa <b>tuomion</b>.</li>
-        <li>Sopikaa tuomion perusteella <b>lupaus</b> ja merkitkää se tehdyksi, kun se on pidetty.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Pidä istunto</h2>
+      <p class="muted">Lyhyt juttu: ”Pikkuveli ei anna kaukosäädintä.” Vaihda sanataso ylhäältä, kopauta nuijaa ja käynnistä ajastin. Siitä lähtee ääntä, joten tarkista äänenvoimakkuus.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Pidä istunto&quot;, &quot;lead&quot;: &quot;Lyhyt juttu: ”Pikkuveli ei anna kaukosäädintä.” Vaihda sanataso ylhäältä, kopauta nuijaa ja käynnistä ajastin. Siitä lähtee ääntä, joten tarkista äänenvoimakkuus.&quot;, &quot;prev&quot;: &quot;← Takaisin&quot;, &quot;next&quot;: &quot;Seuraava →&quot;, &quot;again&quot;: &quot;Alusta&quot;, &quot;after&quot;: &quot;Tuomion yhteydessä sovitaan lupaus, ja apissa se kuitataan, kun se on pidetty. Istunnon jälkeen halataan ja sovitaan 🤗&quot;, &quot;note&quot;: &quot;Apissa perheenjäsenten nimet, jutun yksityiskohdat ja valitut kodin säännöt tulevat suoraan käsikirjoitukseen.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Oikeudenkäynti alkaa!&quot;, &quot;Istunto avataan&quot;, &quot;Istunto avataan&quot;], &quot;text&quot;: &quot;{judge}: ”Kodin perheoikeuden istunto on alkanut.\nKäsittelemme juttua ’Pikkuveli ei anna kaukosäädintä’.\nKaikki istumaan suoraan!”&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;{accuser} kertoo&quot;, &quot;{accuser} kertoo&quot;, &quot;{accuser} kertoo&quot;], &quot;text&quot;: &quot;• Milloin, missä ja mitä tapahtui?\n• Miltä sinusta tuntui?\n• Mitä toivoisit?\n\n⭐ Säännöt: ei huutamista, vain se mitä oikeasti tapahtui!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;{accused} kertoo&quot;, &quot;{accused} kertoo&quot;, &quot;{accused} kertoo&quot;], &quot;text&quot;: &quot;Nyt on toisen osapuolen vuoro.\n• Tapahtuiko se todella niin?\n• Miksi teit niin? Kerro, mitä ajattelet.\n\n⭐ Säännöt: kuuntele loppuun, älä keskeytä!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Viimeinen sana&quot;, &quot;Viimeinen sana (loppulausunto)&quot;, &quot;Loppulausunto&quot;], &quot;text&quot;: &quot;Vuorotellen jokainen sanoo viimeisen sanansa.\n{accuser}: ”Toivon, että ○○.”\n{accused}: ”Tästä lähtien minä ○○.”&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Päätä&quot;, &quot;Tuomion julistaminen&quot;, &quot;Tuomion julistaminen&quot;], &quot;text&quot;: &quot;Sulje silmät ja mieti kunnolla kymmenen sekuntia.\nKuka on oikeassa? Millainen lupaus auttaa kaikkia tulemaan taas toimeen?\nKun olet päättänyt, valitse alta ja julista tuomio.&quot;}], &quot;levelLabel&quot;: &quot;Sanataso&quot;, &quot;levels&quot;: [&quot;Helppo&quot;, &quot;Perus&quot;, &quot;Oikeussali&quot;], &quot;judge&quot;: [&quot;Erotuomari&quot;, &quot;Tuomari&quot;, &quot;Puheenjohtaja&quot;], &quot;accuser&quot;: [&quot;Epäreilun kokenut&quot;, &quot;Kantaja&quot;, &quot;Kantaja&quot;], &quot;accused&quot;: [&quot;Selittäjä&quot;, &quot;Vastaaja&quot;, &quot;Vastaaja&quot;], &quot;verdicts&quot;: [[&quot;Epäreilun kokenut on oikeassa&quot;, &quot;Kantaja voittaa (Kantaja on oikeassa)&quot;, &quot;Kanne hyväksytään&quot;], [&quot;Selittäjä on oikeassa&quot;, &quot;Vastaaja voittaa (Vastaaja on oikeassa)&quot;, &quot;Kanne hylätään&quot;], [&quot;Sovitaan ja ollaan taas kavereita&quot;, &quot;Sovinto (molemmat joustavat vähän)&quot;, &quot;Sovintoehdotus&quot;]], &quot;start&quot;: &quot;▶ Aloita&quot;, &quot;pause&quot;: &quot;⏸ Tauko&quot;, &quot;gavel&quot;: &quot;Lyö nuijaa&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Turvallinen lapsille</h2>
-          <p style="color:var(--muted);">Ei rekisteröitymistä, ei mainoksia, ei seurantaa. Perheesi, lakikirja ja oikeudenkäyntien tiedot tallennetaan <b>vain laitteellesi</b>, eikä niitä lähetetä minnekään. Kehittäjä saa vain palautteen, jonka päätät lähettää Asetuksista, sekä nimettömiä käyttötilastoja, joista ketään ei voi tunnistaa. Lue lisää <a href="privacy.html" style="color:var(--accent);font-weight:700;">tietosuojakäytännöstä</a>.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>”Se alkoi!” Joko väsyttää olla aina erotuomari?</h2>
+      <p>Kun riita syttyy, ratkaisun tekee melkein aina aikuinen. Häviäjä itkee, koska se tuntuu epäreilulta, eikä voittajakaan oikein tiedä, miksi voitti. Perheoikeus antaa lapsille järjestyksen: kerro oma puolesi loppuun asti ja kuuntele toinenkin loppuun. Ja tuomio päättyy lupaukseen, ei pelkkään rangaistukseen.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Vääryyttä kokenut nostaa kanteen itse</h2>
+        <p>Joka kokee jonkin epäreiluksi, ryhtyy kantajaksi ja nostaa kanteen. Ketä vastaan ja kuka tuomitsee, päättää kantaja. Lapset voivat haastaa oikeuteen jopa äidin ja isän.<br>Näitkö jonkun rikkovan kodin sääntöä? Ryhdy syyttäjäksi ja nosta rikosjuttu. Tuomariksi kelpaa vain se, joka ei ole kantaja eikä vastaaja.</p>
       </div>
+      <div class="phone"><img src="../img/fi/02-filing.jpg" alt="Vääryyttä kokenut nostaa kanteen itse" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Tuomio päättyy lupaukseen</h2>
+        <p>Tuomioon kuuluu lupaus tai rangaistus, joka kuitataan, kun se on hoidettu. Päättyneistä jutuista tulee perheenne ennakkotapauksia.<br>Ehdotetut rangaistukset alkavat asioiden korjaamisesta ja mielipahan hyvittämisestä, enemmän sovintoa kuin rangaistusta. Pelien tai television vähentäminen tulee viimeisenä.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/04-verdict.jpg" alt="Tuomio päättyy lupaukseen" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Teidän kotinne, teidän lakinne</h2>
+        <p>Kirjatkaa yhdessä sovitut säännöt pykäliksi, kuten kunnioitus, siivoaminen ja lupausten pitäminen, ja lisätkää tai muuttakaa niitä milloin vain. Kanteeseen valitaan rikottu laki.<br>”Tutustu oikeuteen” kertoo, mitä tuomari, kantaja, syyttäjä ja asianajaja tekevät ja miten oikeudenkäynti etenee.</p>
+      </div>
+      <div class="phone"><img src="../img/fi/05-laws.jpg" alt="Teidän kotinne, teidän lakinne" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Alkuun kolmessa vaiheessa</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Lisää perhe</h3><p>Nimi ja emoji riittävät. Tiliä ei tarvita.</p></li>
+<li class="card"><span class="n">2</span><h3>Nosta juttu</h3><p>Epäreilu asia on riita-asia, rikottu kodin sääntö rikosasia. Valitse sitten tuomari.</p></li>
+<li class="card"><span class="n">3</span><h3>Avaa istunto</h3><p>Seuraa käsikirjoitusta, pidä aika ajastimella ja julista tuomio nuijalla.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Sanat, jotka kasvavat lapsen mukana</h2>
+      <div class="card table">
+        <dl><div><dt>Tuomari</dt><dd>Helppo: Erotuomari · Oikeussali: Puheenjohtaja</dd></div><div><dt>Kantaja</dt><dd>Helppo: Epäreilun kokenut · Oikeussali: Kantaja</dd></div><div><dt>Vastaaja</dt><dd>Helppo: Selittäjä · Oikeussali: Vastaaja</dd></div><div><dt>Syyttäjä</dt><dd>Helppo: Ilmoittaja · Oikeussali: Syyttäjä</dd></div><div><dt>Syytetty</dt><dd>Helppo: Selittäjä · Oikeussali: Syytetty</dd></div><div><dt>Avustaja</dt><dd>Helppo: Auttaja · Oikeussali: Avustaja</dd></div><div><dt>Riita-asia</dt><dd>Helppo: Epäreilua! · Oikeussali: Riita-asia</dd></div><div><dt>Rikosasia</dt><dd>Helppo: Rikottu lupaus · Oikeussali: Rikosasia</dd></div></dl>
+      </div>
+      <p class="muted">Valitse sanataso asetuksista, niin näytön ja käsikirjoituksen sanat vaihtuvat kerralla. Kokeile Helppoa päiväkoti-ikäisille ja Perusta koululaisille.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Usein kysyttyä</h2>
+      <div class="faq"><details><summary>Minkä ikäisille?</summary><p>Jokainen lukutaitoinen lapsi voi pelata vanhemman kanssa. Käsikirjoituksen, ohjeiden ja Helppo-sanatason avulla myös pienemmät pääsevät mukaan, kun aikuinen lukee ääneen.</p></details>
+<details><summary>Onko se oikeasti ilmainen?</summary><p>On. Ei mainoksia eikä ostoja, jotka avaisivat toimintoja. Asetuksissa voi antaa vapaaehtoisen tipin kehittäjälle, mutta se ei avaa eikä lukitse mitään.</p></details>
+<details><summary>Tarvitaanko nettiä?</summary><p>Ei. Istunnot ja arkisto toimivat täysin ilman yhteyttä. Netti ja iCloud-kirjautuminen tarvitaan vain palautteen lähettämiseen asetuksista.</p></details>
+<details><summary>Mihin tiedot tallentuvat?</summary><p>Perhe, lait, istunnot ja tuomiot tallentuvat vain laitteelle eivätkä mene millekään palvelimelle. Kehittäjälle päätyy vain itse lähettämäsi palaute ja nimettömät käyttötilastot, joista sinua ei tunnista.</p></details>
+<details><summary>Voinko varmuuskopioida tai siirtää toiselle laitteelle?</summary><p>”Tallenna arkisto” asetuksissa vie kaiken tiedostoon, ja ”Tuo arkisto” toisella laitteella palauttaa kaiken ennalleen. Myös vanhan verkkoversion varmuuskopiot voi tuoda.</p></details>
+<details><summary>Toimiiko iPadilla?</summary><p>Toimii, sekä iPhonella että iPadilla. Iso näyttö on mainio, kun koko perhe istuu ympärillä.</p></details>
+<details><summary>Entä jos rangaistukset menevät liian koviksi?</summary><p>Kun syyttäjä vaatii rangaistusta, käsikirjoitus muistuttaa, ettei se saa olla liian raskas ja että sen pitää olla toteutettavissa. Ehdotukset alkavat korjaamisesta: asian korjaaminen, mielipahan hyvittäminen ja toisen asemaan asettuminen.</p></details>
+<details><summary>Miten poistan kaiken?</summary><p>Kun poistat apin, kaikki laitteen tiedot katoavat sen mukana. Mitään ei ole koskaan lähtenyt laitteelta, joten mitään ei jää muuallekaan. Jos haluat poistaa lähettämäsi palautteen, kirjoita meille.</p></details></div>
+      <p class="contact">Virheitä, ideoita tai jotain muuta? Kirjoita osoitteeseen <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Palautetta voi lähettää myös apin asetuksista.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Avatkaa tänä iltana<br>oma perheoikeutenne</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Lataa ilmaiseksi App Storesta</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <b>Suomi</b> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Etusivu</a> <a href="privacy.html">Tietosuojakäytäntö</a> <a href="support.html">Tuki</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Perhetuomioistuin (억울해요) · Yhteystiedot: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Kieli"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi" aria-current="page">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Tietosuojakäytäntö</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

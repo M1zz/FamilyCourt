@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tòa Án Gia Đình — Phiên tòa tại nhà cho trẻ em và gia đình</title>
-  <meta name="description" content="Tòa Án Gia Đình là ứng dụng iOS để cả nhà đóng vai xử án tại nhà, giúp trẻ học về luật và sự công bằng. Mọi dữ liệu chỉ nằm trên thiết bị của bạn.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tòa Án Gia Đình: trò chơi xử án nhập vai cho cả nhà</title>
+  <meta name="description" content="Anh chị em cãi nhau hay ai đó thất hứa? Đừng quát mắng, hãy mở phiên tòa gia đình. Con làm nguyên đơn, cả nhà làm thẩm phán. Không quảng cáo.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/vi/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tòa Án Gia Đình: trò chơi xử án nhập vai cho cả nhà">
+  <meta property="og:description" content="Anh chị em cãi nhau hay ai đó thất hứa? Đừng quát mắng, hãy mở phiên tòa gia đình. Con làm nguyên đơn, cả nhà làm thẩm phán. Không quảng cáo.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Tòa Án Gia Đình</h1>
-    <div class="en">Chuyện bất công, hãy để tòa xử</div>
-    <p class="tagline">Học về luật và sự công bằng qua trò chơi đóng vai trong gia đình — ứng dụng iOS để trẻ làm thẩm phán và luật sư</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Hỗ trợ và cách chơi</a>
-      <a class="btn btn-ghost" href="privacy.html">Chính sách quyền riêng tư</a>
-    </div>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">Tòa Án Gia Đình</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Ứng dụng này là gì?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Khi thấy bất công</h3>
-          <p>Trẻ có thể làm <b>nguyên đơn</b> và nộp đơn kiện. Một vụ án dân sự giúp biến nỗi ấm ức thành lời nói.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Khi nội quy nhà bị phá vỡ</h3>
-          <p>Khi nội quy gia đình bị phá vỡ, một <b>công tố viên</b> đưa vụ việc ra tòa. Thẩm phán tuyên có tội, vô tội hoặc khoan hồng.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Vai trò công bằng cho mọi người</h3>
-          <p>Chỉ người không phải nguyên đơn hay bị đơn mới được làm thẩm phán. Ai cũng có quyền chọn luật sư.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Bộ luật của gia đình mình</h3>
-          <p>Cùng viết ra nội quy của nhà, rồi theo dõi từng vụ án từ phiên tòa đến phán quyết và lời hứa.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Thấy oan ức à?<br>Đừng khóc, ra tòa nói cho rõ</h1>
+        <p class="lead">Con tự làm nguyên đơn và nộp đơn kiện, cả nhà chia nhau làm thẩm phán và luật sư. Mỗi bước đều có lời thoại cho biết đến lượt ai và nói gì, nên lần đầu chơi vẫn diễn ra như phiên tòa thật.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Tải miễn phí trên App Store</a><a class="try" href="#try">Thử mở một phiên tòa ↓</a></div>
+        <p class="muted small">Không quảng cáo, không mua hàng, không cần đăng ký. Hồ sơ chỉ nằm trên máy này.</p>
       </div>
+      <div class="phone"><img src="../img/vi/03-trial.jpg" alt="Thấy oan ức à? Đừng khóc, ra tòa nói cho rõ" width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Cách hoạt động</h2>
-      <ol class="steps">
-        <li>Cùng quyết định <b>luật của gia đình</b> và ghi vào bộ luật.</li>
-        <li>Nộp <b>vụ án dân sự</b> khi có chuyện bất công, hoặc <b>vụ án hình sự</b> khi nội quy bị phá vỡ.</li>
-        <li>Chọn <b>vai</b> nguyên đơn, bị đơn, thẩm phán và luật sư, rồi khai mạc phiên tòa.</li>
-        <li>Nghe từng bên trình bày, rồi thẩm phán đưa ra <b>phán quyết</b>.</li>
-        <li>Đặt một <b>lời hứa</b> theo phán quyết và đánh dấu khi đã giữ được.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Thử mở một phiên tòa</h2>
+      <p class="muted">Xử nhanh vụ "Em không chịu đưa điều khiển TV cho con". Đổi mức độ từ ngữ ở phía trên, gõ búa và bật đồng hồ thử xem. Có âm thanh, nhớ chỉnh âm lượng nhé.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Thử mở một phiên tòa&quot;, &quot;lead&quot;: &quot;Xử nhanh vụ \&quot;Em không chịu đưa điều khiển TV cho con\&quot;. Đổi mức độ từ ngữ ở phía trên, gõ búa và bật đồng hồ thử xem. Có âm thanh, nhớ chỉnh âm lượng nhé.&quot;, &quot;prev&quot;: &quot;← Quay lại&quot;, &quot;next&quot;: &quot;Tiếp →&quot;, &quot;again&quot;: &quot;Làm lại từ đầu&quot;, &quot;after&quot;: &quot;Kèm theo phán quyết, cả nhà đặt ra lời hứa phải giữ, và ứng dụng cho bạn đánh dấu đến khi làm xong. Xử xong rồi thì nhớ ôm nhau làm hòa 🤗&quot;, &quot;note&quot;: &quot;Trong ứng dụng, tên người nhà, nội dung vụ việc và luật nhà đã chọn sẽ được đưa thẳng vào lời thoại.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Bắt đầu xử!&quot;, &quot;Tuyên bố khai mạc&quot;, &quot;Tuyên bố khai mạc&quot;], &quot;text&quot;: &quot;{judge}: \&quot;Phiên tòa của Tòa án gia đình nhà mình xin bắt đầu.\nĐây là vụ &#x27;Em không chịu đưa điều khiển TV&#x27;.\nMọi người ngồi ngay ngắn nào!\&quot;&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;Lời kể của {accuser}&quot;, &quot;Lời kể của {accuser}&quot;, &quot;Lời kể của {accuser}&quot;], &quot;text&quot;: &quot;• Chuyện gì đã xảy ra, khi nào, ở đâu?\n• Lúc đó con thấy thế nào?\n• Con mong điều gì?\n\n⭐ Luật: không la hét, chỉ nói sự thật!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;Lời kể của {accused}&quot;, &quot;Lời kể của {accused}&quot;, &quot;Lời kể của {accused}&quot;], &quot;text&quot;: &quot;Bây giờ đến lượt bên kia.\n• Chuyện đó có thật không?\n• Vì sao con làm vậy? Nói suy nghĩ của mình.\n\n⭐ Luật: nghe đến hết, không nói chen!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Lời cuối&quot;, &quot;Lời cuối (lời nói sau cùng)&quot;, &quot;Lời nói sau cùng&quot;], &quot;text&quot;: &quot;Từng người nói lời cuối cùng.\n{accuser}: \&quot;Con mong là ○○.\&quot;\n{accused}: \&quot;Từ nay con sẽ ○○.\&quot;&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Quyết định&quot;, &quot;Tuyên án&quot;, &quot;Tuyên án&quot;], &quot;text&quot;: &quot;Nhắm mắt suy nghĩ thật kỹ trong 10 giây.\nAi nói đúng? Hứa điều gì thì mọi người lại vui vẻ với nhau?\nNghĩ xong rồi thì chọn bên dưới và tuyên án.&quot;}], &quot;levelLabel&quot;: &quot;Mức độ từ ngữ&quot;, &quot;levels&quot;: [&quot;Dễ hiểu&quot;, &quot;Cơ bản&quot;, &quot;Từ ngữ tòa án&quot;], &quot;judge&quot;: [&quot;Trọng tài&quot;, &quot;Thẩm phán&quot;, &quot;Chủ tọa&quot;], &quot;accuser&quot;: [&quot;Người bị oan&quot;, &quot;Nguyên đơn&quot;, &quot;Nguyên đơn&quot;], &quot;accused&quot;: [&quot;Người trả lời&quot;, &quot;Bị đơn&quot;, &quot;Bị đơn&quot;], &quot;verdicts&quot;: [[&quot;Người bị oan nói đúng&quot;, &quot;Nguyên đơn thắng kiện (Nguyên đơn nói đúng)&quot;, &quot;Nguyên đơn thắng kiện&quot;], [&quot;Người trả lời nói đúng&quot;, &quot;Bị đơn thắng kiện (Bị đơn nói đúng)&quot;, &quot;Bị đơn thắng kiện&quot;], [&quot;Hai bạn làm lành nhé&quot;, &quot;Hòa giải (cả hai nhường nhau một chút)&quot;, &quot;Đề nghị hòa giải&quot;]], &quot;start&quot;: &quot;▶ Bắt đầu&quot;, &quot;pause&quot;: &quot;⏸ Dừng&quot;, &quot;gavel&quot;: &quot;Gõ búa&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">An toàn cho trẻ em</h2>
-          <p style="color:var(--muted);">Không cần đăng ký, không quảng cáo, không theo dõi. Gia đình bạn, bộ luật và hồ sơ các phiên tòa chỉ được lưu <b>trên thiết bị của bạn</b> và không gửi đi đâu cả. Nhà phát triển chỉ nhận góp ý bạn chọn gửi từ Cài đặt và thống kê sử dụng ẩn danh không thể xác định ai. Xem <a href="privacy.html" style="color:var(--accent);font-weight:700;">Chính sách quyền riêng tư</a> để biết chi tiết.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>"Tại nó trước!" Mệt vì lần nào cũng phải phân xử?</h2>
+      <p>Hễ cãi nhau là cuối cùng người lớn phán quyết, đứa thua khóc vì thấy oan, đứa thắng cũng không hiểu vì sao mình thắng. Tòa Án Gia Đình cho trẻ một trình tự: nói hết phần mình và nghe hết phần người kia. Phán quyết khép lại bằng một lời hứa, không chỉ là hình phạt.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ai thấy oan thì tự đi kiện</h2>
+        <p>Ai thấy bất công thì làm nguyên đơn và nộp đơn kiện. Kiện ai, nhờ ai làm thẩm phán, người nộp đơn tự quyết. Con cũng có thể kiện bố mẹ.<br>Thấy ai phạm luật nhà, con có thể làm công tố viên và đưa ra xử hình sự. Thẩm phán chỉ được là người không phải nguyên đơn hay bị đơn.</p>
       </div>
+      <div class="phone"><img src="../img/vi/02-filing.jpg" alt="Ai thấy oan thì tự đi kiện" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Phán quyết kết thúc bằng lời hứa</h2>
+        <p>Kèm theo phán quyết là lời hứa hoặc hình phạt cần làm, đánh dấu cho đến khi hoàn thành. Vụ đã xử xong sẽ thành án lệ của nhà mình.<br>Hình phạt gợi ý bắt đầu từ sửa lại như cũ và bù đắp tình cảm, gần với hàn gắn hơn là trừng phạt. Cắt giờ chơi game hay xem TV là cách cuối cùng.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/04-verdict.jpg" alt="Phán quyết kết thúc bằng lời hứa" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Luật nhà mình do mình đặt</h2>
+        <p>Ghi các quy tắc cả nhà đã thống nhất, như tôn trọng nhau, dọn dẹp, giữ lời hứa, thành điều luật và thêm hoặc sửa bất cứ lúc nào. Đơn kiện ghi rõ điều luật bị vi phạm.<br>Mục Học về tòa án giải thích thẩm phán, nguyên đơn, công tố viên và luật sư làm gì, phiên tòa diễn ra theo thứ tự nào.</p>
+      </div>
+      <div class="phone"><img src="../img/vi/05-laws.jpg" alt="Luật nhà mình do mình đặt" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu trong ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Thêm người nhà</h3><p>Chỉ cần tên và một biểu tượng cảm xúc. Không cần tài khoản.</p></li>
+<li class="card"><span class="n">2</span><h3>Nộp đơn</h3><p>Thấy oan thì kiện dân sự, phạm luật nhà thì kiện hình sự, rồi chọn thẩm phán.</p></li>
+<li class="card"><span class="n">3</span><h3>Mở phiên tòa</h3><p>Đọc theo lời thoại, giữ giờ bằng đồng hồ và gõ búa tuyên án.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Từ ngữ thay đổi theo tuổi của con</h2>
+      <div class="card table">
+        <dl><div><dt>Thẩm phán</dt><dd>Dễ hiểu: Trọng tài · Từ ngữ tòa án: Chủ tọa</dd></div><div><dt>Nguyên đơn</dt><dd>Dễ hiểu: Người bị oan · Từ ngữ tòa án: Nguyên đơn</dd></div><div><dt>Bị đơn</dt><dd>Dễ hiểu: Người trả lời · Từ ngữ tòa án: Bị đơn</dd></div><div><dt>Công tố viên</dt><dd>Dễ hiểu: Người báo lỗi · Từ ngữ tòa án: Công tố viên</dd></div><div><dt>Bị cáo</dt><dd>Dễ hiểu: Người trả lời · Từ ngữ tòa án: Bị cáo</dd></div><div><dt>Luật sư</dt><dd>Dễ hiểu: Người giúp đỡ · Từ ngữ tòa án: Luật sư</dd></div><div><dt>Dân sự</dt><dd>Dễ hiểu: Bị oan · Từ ngữ tòa án: Dân sự</dd></div><div><dt>Hình sự</dt><dd>Dễ hiểu: Thất hứa · Từ ngữ tòa án: Hình sự</dd></div></dl>
+      </div>
+      <p class="muted">Chọn Mức độ từ ngữ trong Cài đặt, từ ngữ trên màn hình và trong lời thoại sẽ đổi cùng lúc. Trẻ mẫu giáo nên bắt đầu từ Dễ hiểu, trẻ tiểu học từ Cơ bản.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Mấy tuổi thì chơi được?</summary><p>Trẻ biết đọc là có thể chơi cùng bố mẹ. Có lời thoại và hướng dẫn, nếu chọn mức Dễ hiểu và người lớn đọc giúp thì trẻ nhỏ hơn cũng tham gia được.</p></details>
+<details><summary>Có thật sự miễn phí không?</summary><p>Thật. Không quảng cáo, không mua hàng để mở tính năng. Trong Cài đặt có mục tặng tiền ủng hộ nhà phát triển, hoàn toàn tùy ý và không mở hay khóa tính năng nào.</p></details>
+<details><summary>Có cần Internet không?</summary><p>Không. Xử án và hồ sơ đều chạy ngoại tuyến. Chỉ khi gửi góp ý từ Cài đặt mới cần Internet và đăng nhập iCloud.</p></details>
+<details><summary>Hồ sơ được lưu ở đâu?</summary><p>Người nhà, luật nhà, phiên xử và phán quyết chỉ lưu trên máy, không gửi lên máy chủ. Thứ duy nhất đến tay nhà phát triển là góp ý bạn tự gửi và thống kê sử dụng ẩn danh không nhận ra bạn.</p></details>
+<details><summary>Có sao lưu hay chuyển sang máy khác được không?</summary><p>Dùng Lưu hồ sơ trong Cài đặt để xuất ra tệp, rồi dùng Tải hồ sơ trên máy kia để mở tệp đó, mọi thứ sẽ khôi phục y nguyên. Bản sao lưu xuất từ phiên bản web cũ cũng tải được.</p></details>
+<details><summary>Dùng trên iPad được không?</summary><p>Được, cả iPhone lẫn iPad. Màn hình lớn rất hợp để cả nhà ngồi quanh mở phiên tòa.</p></details>
+<details><summary>Lỡ hình phạt quá nặng thì sao?</summary><p>Ở bước công tố viên đề nghị hình phạt, lời thoại nhắc "đừng quá nặng, phải làm được". Hình phạt gợi ý cũng bắt đầu từ việc hàn gắn: sửa lại như cũ, bù đắp tình cảm, đặt mình vào vị trí người kia.</p></details>
+<details><summary>Tôi muốn xóa sạch dữ liệu.</summary><p>Xóa ứng dụng là mọi hồ sơ trên máy cũng bị xóa theo. Không có hồ sơ nào ra khỏi máy nên không còn lưu ở đâu khác. Muốn xóa góp ý đã gửi, hãy gửi email cho chúng tôi.</p></details></div>
+      <p class="contact">Lỗi, ý tưởng hay bất cứ điều gì, cứ viết cho <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Bạn cũng có thể gửi góp ý trong Cài đặt của ứng dụng.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Tối nay<br>thử mở phiên tòa nhà mình</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Tải miễn phí trên App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <b>Tiếng Việt</b> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Trang chủ</a> <a href="privacy.html">Chính sách quyền riêng tư</a> <a href="support.html">Hỗ trợ</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Tòa Án Gia Đình (억울해요) · Liên hệ: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

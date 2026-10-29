@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pengadilan Keluarga — Sidang di rumah untuk anak dan keluarga</title>
-  <meta name="description" content="Pengadilan Keluarga adalah aplikasi iOS tempat keluarga bermain peran sidang di rumah dan anak belajar tentang hukum dan keadilan. Semua catatan tetap ada di perangkat Anda.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengadilan Keluarga: main peran sidang untuk seisi rumah</title>
+  <meta name="description" content="Kakak adik bertengkar atau janji dilanggar? Daripada berteriak, buka sidang keluarga. Anak menggugat, keluarga jadi hakim dan pengacara. Tanpa iklan.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/id/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pengadilan Keluarga: main peran sidang untuk seisi rumah">
+  <meta property="og:description" content="Kakak adik bertengkar atau janji dilanggar? Daripada berteriak, buka sidang keluarga. Anak menggugat, keluarga jadi hakim dan pengacara. Tanpa iklan.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/id/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/id/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Pengadilan Keluarga</h1>
-    <div class="en">Soal tidak adil, selesaikan lewat sidang</div>
-    <p class="tagline">Belajar hukum dan keadilan lewat permainan peran keluarga — aplikasi iOS tempat anak jadi hakim dan pengacara</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Dukungan dan cara bermain</a>
-      <a class="btn btn-ghost" href="privacy.html">Kebijakan Privasi</a>
-    </div>
+  <a class="skip" href="#main">Langsung ke konten</a>
+  <header class="bar">
+    <a class="brand" href="../id/"><img src="../icon.png" alt="" width="32" height="32">Pengadilan Keluarga</a>
+    <a class="lang-link" href="#languages">Bahasa</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Aplikasi apa ini?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Ada yang terasa tidak adil</h3>
-          <p>Anak bisa jadi <b>penggugat</b> dan mengajukan gugatan. Sidang perdata yang mengubah rasa kesal menjadi kata-kata.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Aturan rumah dilanggar</h3>
-          <p>Saat aturan keluarga dilanggar, seorang <b>jaksa</b> membawa kasusnya. Hakim memutuskan bersalah, tidak bersalah, atau keringanan.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Peran yang adil untuk semua</h3>
-          <p>Hanya orang yang bukan penggugat atau tergugat yang bisa jadi hakim. Semua berhak memilih pembela.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Kitab hukum keluarga kita</h3>
-          <p>Tulis aturan keluarga bersama, lalu ikuti tiap kasus dari sidang sampai putusan dan janji.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Merasa tidak adil?<br>Jangan menangis, ayo sidang.</h1>
+        <p class="lead">Anak mengajukan gugatan sendiri sebagai penggugat, keluarga berbagi peran sebagai hakim dan pengacara. Di setiap tahap ada naskah yang memberi tahu giliran siapa dan apa yang diucapkan, jadi sidang pertama pun berjalan seperti sungguhan.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Unduh gratis di App Store</a><a class="try" href="#try">Coba gelar sidang ↓</a></div>
+        <p class="muted small">Tanpa iklan, tanpa pembelian, tanpa daftar. Semua tersimpan di perangkat ini saja.</p>
       </div>
+      <div class="phone"><img src="../img/id/03-trial.jpg" alt="Merasa tidak adil? Jangan menangis, ayo sidang." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Cara kerjanya</h2>
-      <ol class="steps">
-        <li>Putuskan bersama <b>hukum keluarga</b> dan tulis di kitab hukum.</li>
-        <li>Ajukan <b>kasus perdata</b> untuk hal yang tidak adil, atau <b>kasus pidana</b> saat aturan dilanggar.</li>
-        <li>Pilih <b>peran</b> penggugat, tergugat, hakim, dan pembela, lalu buka sidang.</li>
-        <li>Dengarkan tiap pihak, lalu hakim membacakan <b>putusan</b>.</li>
-        <li>Tetapkan <b>janji</b> berdasarkan putusan dan centang saat sudah ditepati.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Coba gelar sidang</h2>
+      <p class="muted">Perkara singkat: "Adik tidak mau memberikan remote TV." Ganti tingkat kosakata di atas, ketuk palu, dan nyalakan timer. Ada suaranya, jadi cek volume dulu.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Coba gelar sidang&quot;, &quot;lead&quot;: &quot;Perkara singkat: \&quot;Adik tidak mau memberikan remote TV.\&quot; Ganti tingkat kosakata di atas, ketuk palu, dan nyalakan timer. Ada suaranya, jadi cek volume dulu.&quot;, &quot;prev&quot;: &quot;← Kembali&quot;, &quot;next&quot;: &quot;Lanjut →&quot;, &quot;again&quot;: &quot;Mulai lagi&quot;, &quot;after&quot;: &quot;Bersama putusan, ditetapkan janji yang harus ditepati, dan di app bisa dicentang setelah dijalankan. Selesai sidang, jangan lupa berpelukan dan berbaikan 🤗&quot;, &quot;note&quot;: &quot;Di app, nama anggota keluarga, isi perkara, dan aturan rumah yang dipilih langsung masuk ke naskah.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Mulai sidang!&quot;, &quot;Pembukaan sidang&quot;, &quot;Pembukaan sidang&quot;], &quot;text&quot;: &quot;{judge}: \&quot;Sidang Pengadilan Keluarga rumah kita dibuka.\nKita memeriksa perkara &#x27;Adik tidak mau memberikan remote TV&#x27;.\nSemua duduk yang rapi, ya!\&quot;&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;Cerita {accuser}&quot;, &quot;Cerita {accuser}&quot;, &quot;Cerita {accuser}&quot;], &quot;text&quot;: &quot;• Kapan, di mana, dan apa yang terjadi?\n• Waktu itu kamu merasa bagaimana?\n• Kamu ingin apa?\n\n⭐ Aturan: tidak berteriak, hanya cerita yang benar terjadi!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;Cerita {accused}&quot;, &quot;Cerita {accused}&quot;, &quot;Cerita {accused}&quot;], &quot;text&quot;: &quot;Sekarang giliran pihak yang satunya.\n• Benarkah kejadiannya begitu?\n• Kenapa kamu melakukannya? Ceritakan pendapatmu.\n\n⭐ Aturan: dengarkan sampai selesai, jangan memotong!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Kata terakhir&quot;, &quot;Kata terakhir (pembelaan terakhir)&quot;, &quot;Pembelaan terakhir&quot;], &quot;text&quot;: &quot;Bergantian, setiap orang menyampaikan kata terakhir.\n{accuser}: \&quot;Aku ingin ○○.\&quot;\n{accused}: \&quot;Mulai sekarang aku akan ○○.\&quot;&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Memutuskan&quot;, &quot;Pembacaan putusan&quot;, &quot;Pembacaan putusan&quot;], &quot;text&quot;: &quot;Pejamkan mata dan pikirkan baik-baik selama sepuluh detik.\nSiapa yang benar? Janji apa yang bisa membuat semua akur lagi?\nKalau sudah memutuskan, pilih di bawah dan bacakan putusannya.&quot;}], &quot;levelLabel&quot;: &quot;Tingkat kosakata&quot;, &quot;levels&quot;: [&quot;Kata mudah&quot;, &quot;Standar&quot;, &quot;Istilah hukum&quot;], &quot;judge&quot;: [&quot;Wasit&quot;, &quot;Hakim&quot;, &quot;Hakim Ketua&quot;], &quot;accuser&quot;: [&quot;Yang Merasa Tak Adil&quot;, &quot;Penggugat&quot;, &quot;Penggugat&quot;], &quot;accused&quot;: [&quot;Yang Menjawab&quot;, &quot;Tergugat&quot;, &quot;Tergugat&quot;], &quot;verdicts&quot;: [[&quot;Yang merasa tak adil benar&quot;, &quot;Penggugat menang (kata Penggugat benar)&quot;, &quot;Gugatan dikabulkan&quot;], [&quot;Yang menjawab benar&quot;, &quot;Tergugat menang (kata Tergugat benar)&quot;, &quot;Gugatan ditolak&quot;], [&quot;Kalian berdua berbaikan&quot;, &quot;Damai (sama-sama mengalah sedikit)&quot;, &quot;Anjuran perdamaian&quot;]], &quot;start&quot;: &quot;▶ Mulai&quot;, &quot;pause&quot;: &quot;⏸ Jeda&quot;, &quot;gavel&quot;: &quot;Ketuk palu&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Aman untuk anak</h2>
-          <p style="color:var(--muted);">Tanpa pendaftaran, tanpa iklan, tanpa pelacakan. Keluarga, kitab hukum, dan catatan sidang Anda disimpan <b>hanya di perangkat Anda</b> dan tidak dikirim ke mana pun. Pengembang hanya menerima masukan yang Anda pilih untuk dikirim dari Pengaturan dan statistik penggunaan anonim yang tidak bisa mengidentifikasi siapa pun. Lihat <a href="privacy.html" style="color:var(--accent);font-weight:700;">Kebijakan Privasi</a> untuk detailnya.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>"Dia duluan!" Capek selalu jadi wasit?</h2>
+      <p>Kalau ada pertengkaran, biasanya orang dewasa yang akhirnya memutuskan. Yang kalah menangis karena merasa tidak adil, yang menang juga tidak tahu kenapa ia menang. Pengadilan Keluarga memberi anak urutan yang jelas: ceritakan sisimu sampai habis, dengarkan sisi lain sampai selesai. Putusannya diakhiri janji, bukan sekadar hukuman.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Yang merasa dirugikan menggugat sendiri</h2>
+        <p>Siapa yang merasa diperlakukan tidak adil menjadi penggugat dan mengajukan gugatan. Menggugat siapa dan siapa yang jadi hakim, penggugat yang menentukan. Anak bahkan bisa menggugat ayah dan ibu.<br>Melihat ada yang melanggar aturan rumah? Jadilah jaksa dan ajukan perkara pidana. Hakim hanya boleh orang yang bukan penggugat maupun tergugat.</p>
       </div>
+      <div class="phone"><img src="../img/id/02-filing.jpg" alt="Yang merasa dirugikan menggugat sendiri" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Putusan diakhiri dengan janji</h2>
+        <p>Bersama putusan ditetapkan janji atau hukuman, lalu dicentang sampai ditepati. Perkara yang selesai menjadi putusan-putusan keluarga kalian.<br>Saran hukuman dimulai dari memperbaiki keadaan dan memulihkan perasaan, lebih ke memperbaiki hubungan daripada menghukum. Mengurangi waktu main game atau TV jadi pilihan terakhir.</p>
+      </div>
+      <div class="phone"><img src="../img/id/04-verdict.jpg" alt="Putusan diakhiri dengan janji" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Rumah kita, hukum kita</h2>
+        <p>Tulis aturan yang disepakati keluarga sebagai pasal, misalnya saling menghormati, membereskan barang, dan menepati janji, lalu tambah atau ubah kapan saja. Di gugatan, pilih pasal yang dilanggar.<br>Belajar Pengadilan menjelaskan tugas hakim, penggugat, jaksa, dan pengacara, serta urutan jalannya sidang.</p>
+      </div>
+      <div class="phone"><img src="../img/id/05-laws.jpg" alt="Rumah kita, hukum kita" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Mulai dalam tiga langkah</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Tambahkan keluarga</h3><p>Cukup nama dan satu emoji. Tidak perlu akun.</p></li>
+<li class="card"><span class="n">2</span><h3>Ajukan perkara</h3><p>Tidak adil? Perdata. Melanggar aturan rumah? Pidana. Lalu pilih hakim.</p></li>
+<li class="card"><span class="n">3</span><h3>Buka sidang</h3><p>Ikuti naskah, jaga waktu dengan timer, dan bacakan putusan dengan palu.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Kata-kata yang tumbuh bersama anak</h2>
+      <div class="card table">
+        <dl><div><dt>Hakim</dt><dd>Kata mudah: Wasit · Istilah hukum: Hakim Ketua</dd></div><div><dt>Penggugat</dt><dd>Kata mudah: Yang Merasa Tak Adil · Istilah hukum: Penggugat</dd></div><div><dt>Tergugat</dt><dd>Kata mudah: Yang Menjawab · Istilah hukum: Tergugat</dd></div><div><dt>Jaksa</dt><dd>Kata mudah: Pelapor · Istilah hukum: Jaksa</dd></div><div><dt>Terdakwa</dt><dd>Kata mudah: Yang Menjawab · Istilah hukum: Terdakwa</dd></div><div><dt>Pembela</dt><dd>Kata mudah: Penolong · Istilah hukum: Pembela</dd></div><div><dt>Perdata</dt><dd>Kata mudah: Tak Adil · Istilah hukum: Perdata</dd></div><div><dt>Pidana</dt><dd>Kata mudah: Ingkar Janji · Istilah hukum: Pidana</dd></div></dl>
+      </div>
+      <p class="muted">Pilih tingkat kosakata di Pengaturan, kata di layar dan di naskah akan berubah sekaligus. Coba Kata mudah untuk anak TK dan Standar untuk anak SD.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Pertanyaan umum</h2>
+      <div class="faq"><details><summary>Mulai umur berapa?</summary><p>Anak yang sudah bisa membaca bisa bermain bersama orang tua. Dengan naskah, petunjuk, dan tingkat Kata mudah, anak yang lebih kecil juga bisa ikut kalau orang dewasa membacakan.</p></details>
+<details><summary>Benar-benar gratis?</summary><p>Ya. Tanpa iklan dan tanpa pembelian untuk membuka fitur. Di Pengaturan ada tip opsional untuk mendukung pengembang, yang tidak membuka maupun mengunci fitur apa pun.</p></details>
+<details><summary>Perlu internet?</summary><p>Tidak. Sidang dan catatan berjalan sepenuhnya offline. Internet dan masuk iCloud hanya diperlukan untuk mengirim masukan dari Pengaturan.</p></details>
+<details><summary>Catatan disimpan di mana?</summary><p>Data keluarga, aturan, sidang, dan putusan hanya disimpan di perangkat dan tidak dikirim ke server mana pun. Yang sampai ke pengembang hanya masukan yang kamu kirim sendiri dan statistik penggunaan anonim yang tidak mengenali dirimu.</p></details>
+<details><summary>Bisa dicadangkan atau dipindah ke perangkat lain?</summary><p>Gunakan Simpan catatan di Pengaturan untuk mengekspor semuanya ke file, lalu Muat catatan di perangkat lain, semuanya kembali seperti semula. Cadangan dari versi web lama juga bisa dimuat.</p></details>
+<details><summary>Bisa dipakai di iPad?</summary><p>Bisa, di iPhone dan iPad. Layar besar pas untuk sidang dengan seisi rumah duduk melingkar.</p></details>
+<details><summary>Bagaimana kalau hukumannya terlalu berat?</summary><p>Saat jaksa meminta hukuman, naskah mengingatkan agar tidak terlalu berat dan bisa dijalankan. Saran hukuman juga dimulai dari memperbaiki hubungan: memperbaiki keadaan, memulihkan perasaan, dan bertukar sudut pandang.</p></details>
+<details><summary>Saya ingin menghapus semua data.</summary><p>Menghapus app akan menghapus semua catatan di perangkat. Tidak ada yang pernah keluar dari perangkat, jadi tidak ada yang tersisa di tempat lain. Untuk menghapus masukan yang sudah dikirim, kirimi kami email.</p></details></div>
+      <p class="contact">Ada bug, ide, atau hal lain? Tulis ke <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Kamu juga bisa mengirim masukan dari pengaturan app.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Malam ini,<br>buka sidang keluarga di rumah</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Unduh gratis di App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <b>Bahasa Indonesia</b> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Beranda</a> <a href="privacy.html">Kebijakan Privasi</a> <a href="support.html">Dukungan</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Pengadilan Keluarga (억울해요) · Kontak: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Bahasa"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id" aria-current="page">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Kebijakan Privasi</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

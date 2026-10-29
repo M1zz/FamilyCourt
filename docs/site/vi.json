@@ -1,0 +1,230 @@
+{
+  "title": "Tòa Án Gia Đình: trò chơi xử án nhập vai cho cả nhà",
+  "description": "Anh chị em cãi nhau hay ai đó thất hứa? Đừng quát mắng, hãy mở phiên tòa gia đình. Con làm nguyên đơn, cả nhà làm thẩm phán. Không quảng cáo.",
+  "hero": {
+    "headline": "Thấy oan ức à?\nĐừng khóc, ra tòa nói cho rõ",
+    "lead": "Con tự làm nguyên đơn và nộp đơn kiện, cả nhà chia nhau làm thẩm phán và luật sư. Mỗi bước đều có lời thoại cho biết đến lượt ai và nói gì, nên lần đầu chơi vẫn diễn ra như phiên tòa thật.",
+    "cta": "Tải miễn phí trên App Store",
+    "note": "Không quảng cáo, không mua hàng, không cần đăng ký. Hồ sơ chỉ nằm trên máy này."
+  },
+  "demo": {
+    "title": "Thử mở một phiên tòa",
+    "lead": "Xử nhanh vụ \"Em không chịu đưa điều khiển TV cho con\". Đổi mức độ từ ngữ ở phía trên, gõ búa và bật đồng hồ thử xem. Có âm thanh, nhớ chỉnh âm lượng nhé.",
+    "prev": "← Quay lại",
+    "next": "Tiếp →",
+    "again": "Làm lại từ đầu",
+    "after": "Kèm theo phán quyết, cả nhà đặt ra lời hứa phải giữ, và ứng dụng cho bạn đánh dấu đến khi làm xong. Xử xong rồi thì nhớ ôm nhau làm hòa 🤗",
+    "note": "Trong ứng dụng, tên người nhà, nội dung vụ việc và luật nhà đã chọn sẽ được đưa thẳng vào lời thoại.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Bắt đầu xử!",
+          "Tuyên bố khai mạc",
+          "Tuyên bố khai mạc"
+        ],
+        "text": "{judge}: \"Phiên tòa của Tòa án gia đình nhà mình xin bắt đầu.\nĐây là vụ 'Em không chịu đưa điều khiển TV'.\nMọi người ngồi ngay ngắn nào!\""
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Lời kể của {accuser}",
+          "Lời kể của {accuser}",
+          "Lời kể của {accuser}"
+        ],
+        "text": "• Chuyện gì đã xảy ra, khi nào, ở đâu?\n• Lúc đó con thấy thế nào?\n• Con mong điều gì?\n\n⭐ Luật: không la hét, chỉ nói sự thật!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Lời kể của {accused}",
+          "Lời kể của {accused}",
+          "Lời kể của {accused}"
+        ],
+        "text": "Bây giờ đến lượt bên kia.\n• Chuyện đó có thật không?\n• Vì sao con làm vậy? Nói suy nghĩ của mình.\n\n⭐ Luật: nghe đến hết, không nói chen!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Lời cuối",
+          "Lời cuối (lời nói sau cùng)",
+          "Lời nói sau cùng"
+        ],
+        "text": "Từng người nói lời cuối cùng.\n{accuser}: \"Con mong là ○○.\"\n{accused}: \"Từ nay con sẽ ○○.\""
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Quyết định",
+          "Tuyên án",
+          "Tuyên án"
+        ],
+        "text": "Nhắm mắt suy nghĩ thật kỹ trong 10 giây.\nAi nói đúng? Hứa điều gì thì mọi người lại vui vẻ với nhau?\nNghĩ xong rồi thì chọn bên dưới và tuyên án."
+      }
+    ],
+    "levelLabel": "Mức độ từ ngữ",
+    "levels": [
+      "Dễ hiểu",
+      "Cơ bản",
+      "Từ ngữ tòa án"
+    ],
+    "judge": [
+      "Trọng tài",
+      "Thẩm phán",
+      "Chủ tọa"
+    ],
+    "accuser": [
+      "Người bị oan",
+      "Nguyên đơn",
+      "Nguyên đơn"
+    ],
+    "accused": [
+      "Người trả lời",
+      "Bị đơn",
+      "Bị đơn"
+    ],
+    "verdicts": [
+      [
+        "Người bị oan nói đúng",
+        "Nguyên đơn thắng kiện (Nguyên đơn nói đúng)",
+        "Nguyên đơn thắng kiện"
+      ],
+      [
+        "Người trả lời nói đúng",
+        "Bị đơn thắng kiện (Bị đơn nói đúng)",
+        "Bị đơn thắng kiện"
+      ],
+      [
+        "Hai bạn làm lành nhé",
+        "Hòa giải (cả hai nhường nhau một chút)",
+        "Đề nghị hòa giải"
+      ]
+    ],
+    "start": "▶ Bắt đầu",
+    "pause": "⏸ Dừng",
+    "gavel": "Gõ búa"
+  },
+  "problem": {
+    "title": "\"Tại nó trước!\" Mệt vì lần nào cũng phải phân xử?",
+    "text": "Hễ cãi nhau là cuối cùng người lớn phán quyết, đứa thua khóc vì thấy oan, đứa thắng cũng không hiểu vì sao mình thắng. Tòa Án Gia Đình cho trẻ một trình tự: nói hết phần mình và nghe hết phần người kia. Phán quyết khép lại bằng một lời hứa, không chỉ là hình phạt."
+  },
+  "features": [
+    {
+      "title": "Ai thấy oan thì tự đi kiện",
+      "text": "Ai thấy bất công thì làm nguyên đơn và nộp đơn kiện. Kiện ai, nhờ ai làm thẩm phán, người nộp đơn tự quyết. Con cũng có thể kiện bố mẹ.\nThấy ai phạm luật nhà, con có thể làm công tố viên và đưa ra xử hình sự. Thẩm phán chỉ được là người không phải nguyên đơn hay bị đơn.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Phán quyết kết thúc bằng lời hứa",
+      "text": "Kèm theo phán quyết là lời hứa hoặc hình phạt cần làm, đánh dấu cho đến khi hoàn thành. Vụ đã xử xong sẽ thành án lệ của nhà mình.\nHình phạt gợi ý bắt đầu từ sửa lại như cũ và bù đắp tình cảm, gần với hàn gắn hơn là trừng phạt. Cắt giờ chơi game hay xem TV là cách cuối cùng.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Luật nhà mình do mình đặt",
+      "text": "Ghi các quy tắc cả nhà đã thống nhất, như tôn trọng nhau, dọn dẹp, giữ lời hứa, thành điều luật và thêm hoặc sửa bất cứ lúc nào. Đơn kiện ghi rõ điều luật bị vi phạm.\nMục Học về tòa án giải thích thẩm phán, nguyên đơn, công tố viên và luật sư làm gì, phiên tòa diễn ra theo thứ tự nào.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Bắt đầu trong ba bước",
+    "items": [
+      {
+        "title": "Thêm người nhà",
+        "text": "Chỉ cần tên và một biểu tượng cảm xúc. Không cần tài khoản."
+      },
+      {
+        "title": "Nộp đơn",
+        "text": "Thấy oan thì kiện dân sự, phạm luật nhà thì kiện hình sự, rồi chọn thẩm phán."
+      },
+      {
+        "title": "Mở phiên tòa",
+        "text": "Đọc theo lời thoại, giữ giờ bằng đồng hồ và gõ búa tuyên án."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Từ ngữ thay đổi theo tuổi của con",
+    "rows": [
+      [
+        "Thẩm phán",
+        "Dễ hiểu: Trọng tài · Từ ngữ tòa án: Chủ tọa"
+      ],
+      [
+        "Nguyên đơn",
+        "Dễ hiểu: Người bị oan · Từ ngữ tòa án: Nguyên đơn"
+      ],
+      [
+        "Bị đơn",
+        "Dễ hiểu: Người trả lời · Từ ngữ tòa án: Bị đơn"
+      ],
+      [
+        "Công tố viên",
+        "Dễ hiểu: Người báo lỗi · Từ ngữ tòa án: Công tố viên"
+      ],
+      [
+        "Bị cáo",
+        "Dễ hiểu: Người trả lời · Từ ngữ tòa án: Bị cáo"
+      ],
+      [
+        "Luật sư",
+        "Dễ hiểu: Người giúp đỡ · Từ ngữ tòa án: Luật sư"
+      ],
+      [
+        "Dân sự",
+        "Dễ hiểu: Bị oan · Từ ngữ tòa án: Dân sự"
+      ],
+      [
+        "Hình sự",
+        "Dễ hiểu: Thất hứa · Từ ngữ tòa án: Hình sự"
+      ]
+    ],
+    "note": "Chọn Mức độ từ ngữ trong Cài đặt, từ ngữ trên màn hình và trong lời thoại sẽ đổi cùng lúc. Trẻ mẫu giáo nên bắt đầu từ Dễ hiểu, trẻ tiểu học từ Cơ bản."
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      {
+        "q": "Mấy tuổi thì chơi được?",
+        "a": "Trẻ biết đọc là có thể chơi cùng bố mẹ. Có lời thoại và hướng dẫn, nếu chọn mức Dễ hiểu và người lớn đọc giúp thì trẻ nhỏ hơn cũng tham gia được."
+      },
+      {
+        "q": "Có thật sự miễn phí không?",
+        "a": "Thật. Không quảng cáo, không mua hàng để mở tính năng. Trong Cài đặt có mục tặng tiền ủng hộ nhà phát triển, hoàn toàn tùy ý và không mở hay khóa tính năng nào."
+      },
+      {
+        "q": "Có cần Internet không?",
+        "a": "Không. Xử án và hồ sơ đều chạy ngoại tuyến. Chỉ khi gửi góp ý từ Cài đặt mới cần Internet và đăng nhập iCloud."
+      },
+      {
+        "q": "Hồ sơ được lưu ở đâu?",
+        "a": "Người nhà, luật nhà, phiên xử và phán quyết chỉ lưu trên máy, không gửi lên máy chủ. Thứ duy nhất đến tay nhà phát triển là góp ý bạn tự gửi và thống kê sử dụng ẩn danh không nhận ra bạn."
+      },
+      {
+        "q": "Có sao lưu hay chuyển sang máy khác được không?",
+        "a": "Dùng Lưu hồ sơ trong Cài đặt để xuất ra tệp, rồi dùng Tải hồ sơ trên máy kia để mở tệp đó, mọi thứ sẽ khôi phục y nguyên. Bản sao lưu xuất từ phiên bản web cũ cũng tải được."
+      },
+      {
+        "q": "Dùng trên iPad được không?",
+        "a": "Được, cả iPhone lẫn iPad. Màn hình lớn rất hợp để cả nhà ngồi quanh mở phiên tòa."
+      },
+      {
+        "q": "Lỡ hình phạt quá nặng thì sao?",
+        "a": "Ở bước công tố viên đề nghị hình phạt, lời thoại nhắc \"đừng quá nặng, phải làm được\". Hình phạt gợi ý cũng bắt đầu từ việc hàn gắn: sửa lại như cũ, bù đắp tình cảm, đặt mình vào vị trí người kia."
+      },
+      {
+        "q": "Tôi muốn xóa sạch dữ liệu.",
+        "a": "Xóa ứng dụng là mọi hồ sơ trên máy cũng bị xóa theo. Không có hồ sơ nào ra khỏi máy nên không còn lưu ở đâu khác. Muốn xóa góp ý đã gửi, hãy gửi email cho chúng tôi."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Tối nay\nthử mở phiên tòa nhà mình",
+    "cta": "Tải miễn phí trên App Store"
+  },
+  "ui": {
+    "skip": "Chuyển đến nội dung",
+    "languages": "Ngôn ngữ",
+    "privacy": "Chính sách quyền riêng tư",
+    "contact": "Lỗi, ý tưởng hay bất cứ điều gì, cứ viết cho {email}. Bạn cũng có thể gửi góp ý trong Cài đặt của ứng dụng."
+  }
+}

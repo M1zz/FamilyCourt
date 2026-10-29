@@ -1,0 +1,230 @@
+{
+  "title": "Tribunal Familial : le jeu de rôle du procès en famille",
+  "description": "Dispute entre frères et sœurs ou promesse non tenue ? Au lieu de crier, ouvrez votre tribunal familial. L’enfant porte plainte. Sans pub.",
+  "hero": {
+    "headline": "C’est injuste ?\nPas de larmes, on va au tribunal.",
+    "lead": "Votre enfant dépose lui-même la plainte en tant que demandeur, et la famille se répartit les rôles de juge et d’avocat. À chaque étape, un script indique à qui c’est le tour et quoi dire : même le premier procès se déroule comme un vrai.",
+    "cta": "Télécharger gratuitement sur l’App Store",
+    "note": "Pas de pub, pas d’achat, pas d’inscription. Tout reste sur cet appareil."
+  },
+  "demo": {
+    "title": "Tenez une audience",
+    "lead": "Une affaire courte : « Mon petit frère ne veut pas me donner la télécommande. » Changez le niveau de vocabulaire en haut, frappez le marteau et lancez le minuteur. Il y a du son, vérifiez le volume.",
+    "prev": "← Retour",
+    "next": "Suivant →",
+    "again": "Recommencer",
+    "after": "Avec le verdict, on fixe une promesse à tenir, et l’app permet de la cocher une fois respectée. Après le procès, on se fait un câlin et on se réconcilie 🤗",
+    "note": "Dans l’app, les prénoms de la famille, les détails de l’affaire et les règles de la maison choisies s’insèrent directement dans le script.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Le procès commence !",
+          "Ouverture de l’audience",
+          "Ouverture de l’audience"
+        ],
+        "text": "{judge} : « L’audience du tribunal familial est ouverte.\nNous examinons l’affaire “Mon petit frère ne veut pas me donner la télécommande”.\nTout le monde se tient bien droit ! »"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Raconte, {accuser} !",
+          "Raconte, {accuser} !",
+          "Raconte, {accuser} !"
+        ],
+        "text": "• Quand, où, et que s’est-il passé ?\n• Qu’as-tu ressenti ?\n• Qu’aimerais-tu ?\n\n⭐ Règles : on ne crie pas, on dit seulement ce qui s’est vraiment passé !"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Raconte, {accused} !",
+          "Raconte, {accused} !",
+          "Raconte, {accused} !"
+        ],
+        "text": "Maintenant, c’est au tour de l’autre partie.\n• Ça s’est vraiment passé comme ça ?\n• Pourquoi as-tu fait ça ? Dis ce que tu penses.\n\n⭐ Règles : on écoute jusqu’au bout, on ne coupe pas la parole !"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Le dernier mot",
+          "Le dernier mot (dernière déclaration)",
+          "Dernière déclaration"
+        ],
+        "text": "Chacun à son tour dit son dernier mot.\n{accuser} : « Je voudrais ○○. »\n{accused} : « À partir de maintenant, je vais ○○. »"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Décider",
+          "Prononcer le verdict",
+          "Prononcer le verdict"
+        ],
+        "text": "Ferme les yeux et réfléchis bien pendant dix secondes.\nQui a raison ? Quelle promesse aidera tout le monde à bien s’entendre à nouveau ?\nUne fois décidé, choisis ci-dessous et prononce le verdict."
+      }
+    ],
+    "levelLabel": "Niveau de vocabulaire",
+    "levels": [
+      "Simple",
+      "Standard",
+      "Tribunal"
+    ],
+    "judge": [
+      "Arbitre",
+      "Juge",
+      "Président"
+    ],
+    "accuser": [
+      "Celui qui se plaint",
+      "Demandeur",
+      "Demandeur"
+    ],
+    "accused": [
+      "Celui qui répond",
+      "Défendeur",
+      "Défendeur"
+    ],
+    "verdicts": [
+      [
+        "Celui qui se plaint a raison",
+        "Demandeur gagne (le demandeur a raison)",
+        "Demandeur gagne"
+      ],
+      [
+        "Celui qui répond a raison",
+        "Défendeur gagne (le défendeur a raison)",
+        "Défendeur gagne"
+      ],
+      [
+        "On fait la paix tous les deux",
+        "Conciliation (chacun cède un peu)",
+        "Conciliation proposée"
+      ]
+    ],
+    "start": "▶ Go",
+    "pause": "⏸ Pause",
+    "gavel": "Frapper le marteau"
+  },
+  "problem": {
+    "title": "« C’est lui qui a commencé ! » Fatigué d’être toujours l’arbitre ?",
+    "text": "Quand ça se dispute, c’est presque toujours un adulte qui tranche. Le perdant pleure parce que c’est injuste, et le gagnant ne sait pas trop pourquoi il a gagné. Tribunal Familial donne aux enfants un ordre à suivre : raconter toute sa version, puis écouter l’autre jusqu’au bout. Et le verdict se termine par une promesse, pas seulement par une punition."
+  },
+  "features": [
+    {
+      "title": "Celui qui se sent lésé porte plainte lui-même",
+      "text": "Celui qui trouve quelque chose injuste devient demandeur et dépose la plainte. Contre qui, et qui sera juge, c’est lui qui choisit. Les enfants peuvent même attaquer papa et maman.\nVous avez vu quelqu’un enfreindre une règle de la maison ? Devenez procureur et lancez une affaire pénale. Seule une personne qui n’est ni demandeur ni défendeur peut être juge.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Le verdict se termine par une promesse",
+      "text": "Avec le verdict vient une promesse ou une sanction, que l’on coche une fois tenue. Les affaires terminées deviennent vos propres précédents.\nLes idées de sanction commencent par réparer et apaiser, plus proche de la réconciliation que de la punition. Moins de jeux ou de télé, c’est en dernier recours.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Votre maison, vos lois",
+      "text": "Écrivez sous forme d’articles les règles décidées ensemble, comme le respect, le rangement ou tenir ses promesses, et ajoutez-en ou modifiez-les quand vous voulez. La plainte cite la loi enfreinte.\n« Découvrir le tribunal » explique ce que font le juge, le demandeur, le procureur et l’avocat, et comment se déroule un procès.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Trois étapes pour commencer",
+    "items": [
+      {
+        "title": "Ajoutez la famille",
+        "text": "Un prénom et un emoji suffisent. Pas de compte."
+      },
+      {
+        "title": "Déposez une affaire",
+        "text": "Injustice : affaire civile. Règle enfreinte : affaire pénale. Puis choisissez un juge."
+      },
+      {
+        "title": "Ouvrez l’audience",
+        "text": "Suivez le script, gardez le temps avec le minuteur et prononcez le verdict au marteau."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Des mots qui grandissent avec votre enfant",
+    "rows": [
+      [
+        "Juge",
+        "Simple: Arbitre · Tribunal: Président"
+      ],
+      [
+        "Demandeur",
+        "Simple: Celui qui se plaint · Tribunal: Demandeur"
+      ],
+      [
+        "Défendeur",
+        "Simple: Celui qui répond · Tribunal: Défendeur"
+      ],
+      [
+        "Procureur",
+        "Simple: Celui qui a vu · Tribunal: Procureur"
+      ],
+      [
+        "Accusé",
+        "Simple: Celui qui répond · Tribunal: Accusé"
+      ],
+      [
+        "Avocat",
+        "Simple: Celui qui aide · Tribunal: Avocat"
+      ],
+      [
+        "Civil",
+        "Simple: Pas juste · Tribunal: Civil"
+      ],
+      [
+        "Pénal",
+        "Simple: Promesse rompue · Tribunal: Pénal"
+      ]
+    ],
+    "note": "Choisissez le niveau de vocabulaire dans les Réglages : les mots à l’écran et dans le script changent tous ensemble. Essayez Simple pour la maternelle et Standard pour le primaire."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "À partir de quel âge ?",
+        "a": "Tout enfant qui sait lire peut jouer avec un parent. Avec le script, les consignes et le niveau Simple, les plus jeunes peuvent participer si un adulte lit à voix haute."
+      },
+      {
+        "q": "C’est vraiment gratuit ?",
+        "a": "Oui. Pas de pub et aucun achat pour débloquer des fonctions. Les Réglages proposent un pourboire facultatif pour soutenir le développeur, qui ne débloque ni ne bloque rien."
+      },
+      {
+        "q": "Faut-il Internet ?",
+        "a": "Non. Les audiences et les dossiers fonctionnent entièrement hors ligne. Il faut Internet et une connexion iCloud seulement pour envoyer un avis depuis les Réglages."
+      },
+      {
+        "q": "Où sont conservés les dossiers ?",
+        "a": "Famille, lois, audiences et verdicts restent uniquement sur l’appareil et ne sont envoyés à aucun serveur. Le développeur ne reçoit que les avis que vous envoyez vous-même et des statistiques d’usage anonymes qui ne vous identifient pas."
+      },
+      {
+        "q": "Puis-je sauvegarder ou passer à un autre appareil ?",
+        "a": "Avec « Enregistrer les données » dans les Réglages, exportez tout dans un fichier, puis « Charger les données » sur l’autre appareil pour tout retrouver à l’identique. Les sauvegardes de l’ancienne version web se chargent aussi."
+      },
+      {
+        "q": "Ça marche sur iPad ?",
+        "a": "Oui, sur iPhone et iPad. Un grand écran est idéal quand toute la famille est réunie autour."
+      },
+      {
+        "q": "Et si les sanctions deviennent trop dures ?",
+        "a": "Quand le procureur demande une sanction, le script rappelle qu’elle doit rester légère et faisable. Les idées de sanction commencent par réparer : rétablir les choses, apaiser l’autre, se mettre à sa place."
+      },
+      {
+        "q": "Comment tout effacer ?",
+        "a": "En supprimant l’app, tous les dossiers de l’appareil disparaissent avec elle. Rien n’en est jamais sorti, donc rien ne reste ailleurs. Pour effacer un avis envoyé, écrivez-nous."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Ouvrez votre tribunal familial\nce soir",
+    "cta": "Télécharger gratuitement sur l’App Store"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "languages": "Langue",
+    "privacy": "Politique de confidentialité",
+    "contact": "Bug, idée ou autre chose ? Écrivez à {email}. Vous pouvez aussi envoyer un avis depuis les réglages de l’app."
+  }
+}

@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Familierechtbank — Rechtszaken thuis voor kinderen en gezinnen</title>
-  <meta name="description" content="Familierechtbank is een iOS-app waarmee gezinnen thuis rechtszaken naspelen en kinderen leren over wetten en eerlijkheid. Alle gegevens blijven op je apparaat.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Familierechtbank: rechtszaak-rollenspel voor het hele gezin</title>
+  <meta name="description" content="Ruzie tussen broers en zussen of een gebroken belofte? In plaats van schreeuwen open je jullie eigen rechtbank. Geen advertenties, geen aankopen.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/nl/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Familierechtbank: rechtszaak-rollenspel voor het hele gezin">
+  <meta property="og:description" content="Ruzie tussen broers en zussen of een gebroken belofte? In plaats van schreeuwen open je jullie eigen rechtbank. Geen advertenties, geen aankopen.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/nl/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/nl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Familierechtbank</h1>
-    <div class="en">Onrecht los je op in de rechtbank</div>
-    <p class="tagline">Leer over wetten en eerlijkheid met een rollenspel voor het hele gezin – een iOS-app waarin kinderen rechter en advocaat worden</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Support en speluitleg</a>
-      <a class="btn btn-ghost" href="privacy.html">Privacybeleid</a>
-    </div>
+  <a class="skip" href="#main">Naar de inhoud</a>
+  <header class="bar">
+    <a class="brand" href="../nl/"><img src="../icon.png" alt="" width="32" height="32">Familierechtbank</a>
+    <a class="lang-link" href="#languages">Taal</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Wat is dit voor app?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Iets voelt oneerlijk</h3>
-          <p>Kinderen kunnen <b>eiser</b> zijn en een dagvaarding indienen. Een civiele zaak die gekwetste gevoelens onder woorden brengt.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Een huisregel is gebroken</h3>
-          <p>Als een gezinsregel wordt gebroken, brengt een <b>officier van justitie</b> de zaak voor. De rechter beslist: schuldig, niet schuldig of clementie.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Eerlijke rollen voor iedereen</h3>
-          <p>Alleen iemand die geen eiser of verdachte is, kan rechter zijn. Iedereen heeft het recht om een raadsman te kiezen.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Ons gezinswetboek</h3>
-          <p>Schrijf samen jullie eigen gezinsregels op en volg elke zaak van de zitting tot het vonnis en de belofte.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Oneerlijk?<br>Geen tranen, gewoon naar de rechter.</h1>
+        <p class="lead">Je kind dient zelf als eiser de klacht in, en het gezin verdeelt de rollen van rechter en advocaat. Bij elke stap vertelt een script wie aan de beurt is en wat die zegt, dus ook de eerste zaak loopt als een echte.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Gratis in de App Store</a><a class="try" href="#try">Houd een rechtszaak ↓</a></div>
+        <p class="muted small">Geen advertenties, geen aankopen, geen account. Alles blijft op dit apparaat.</p>
       </div>
+      <div class="phone"><img src="../img/nl/03-trial.jpg" alt="Oneerlijk? Geen tranen, gewoon naar de rechter." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Zo werkt het</h2>
-      <ol class="steps">
-        <li>Bepaal samen jullie <b>gezinswetten</b> en schrijf ze in het wetboek.</li>
-        <li>Dien een <b>civiele zaak</b> in bij iets oneerlijks, of een <b>strafzaak</b> als een regel is gebroken.</li>
-        <li>Kies de <b>rollen</b> van eiser, verdachte, rechter en raadsman en open de zitting.</li>
-        <li>Hoor beide kanten, daarna spreekt de rechter het <b>vonnis</b> uit.</li>
-        <li>Spreek op basis van het vonnis een <b>belofte</b> af en vink die af als hij is nagekomen.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Houd een rechtszaak</h2>
+      <p class="muted">Een korte zaak: ‘Mijn broertje geeft de afstandsbediening niet.’ Wissel bovenaan het woordniveau, sla met de hamer en start de timer. Er komt geluid uit, dus let op het volume.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Houd een rechtszaak&quot;, &quot;lead&quot;: &quot;Een korte zaak: ‘Mijn broertje geeft de afstandsbediening niet.’ Wissel bovenaan het woordniveau, sla met de hamer en start de timer. Er komt geluid uit, dus let op het volume.&quot;, &quot;prev&quot;: &quot;← Terug&quot;, &quot;next&quot;: &quot;Volgende →&quot;, &quot;again&quot;: &quot;Opnieuw&quot;, &quot;after&quot;: &quot;Bij het vonnis spreek je een belofte af, en in de app vink je die af zodra ze is nagekomen. Na de zaak: knuffelen en het goedmaken 🤗&quot;, &quot;note&quot;: &quot;In de app komen de namen van je gezin, de details van de zaak en de gekozen huisregels gewoon in het script.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Daar gaan we!&quot;, &quot;Opening van de zitting&quot;, &quot;Opening van de zitting&quot;], &quot;text&quot;: &quot;{judge}: ‘De familierechtbank is geopend.\nWe behandelen de zaak “Mijn broertje geeft de afstandsbediening niet”.\nIedereen netjes rechtop zitten!’&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;Aan het woord: {accuser}&quot;, &quot;Aan het woord: {accuser}&quot;, &quot;Aan het woord: {accuser}&quot;], &quot;text&quot;: &quot;• Wanneer en waar gebeurde het, en wat precies?\n• Hoe voelde je je?\n• Wat zou je graag willen?\n\n⭐ Regels: niet schreeuwen, alleen zeggen wat echt gebeurde!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;Aan het woord: {accused}&quot;, &quot;Aan het woord: {accused}&quot;, &quot;Aan het woord: {accused}&quot;], &quot;text&quot;: &quot;Nu is de andere kant aan de beurt.\n• Is het echt zo gegaan?\n• Waarom deed je het? Zeg wat je denkt.\n\n⭐ Regels: luister tot het einde, niet onderbreken!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Het laatste woord&quot;, &quot;Laatste woord (slotverklaring)&quot;, &quot;Laatste woord&quot;], &quot;text&quot;: &quot;Om de beurt zegt iedereen een laatste woord.\n{accuser}: ‘Ik wil graag ○○.’\n{accused}: ‘Vanaf nu ga ik ○○.’&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Beslissen&quot;, &quot;Uitspraak&quot;, &quot;Uitspraak&quot;], &quot;text&quot;: &quot;Doe je ogen dicht en denk tien seconden goed na.\nWie heeft gelijk? Welke belofte helpt om weer goed met elkaar om te gaan?\nBesloten? Kies hieronder en spreek het vonnis uit.&quot;}], &quot;levelLabel&quot;: &quot;Woordniveau&quot;, &quot;levels&quot;: [&quot;Makkelijk&quot;, &quot;Standaard&quot;, &quot;Rechtszaal&quot;], &quot;judge&quot;: [&quot;Scheidsrechter&quot;, &quot;Rechter&quot;, &quot;Voorzitter&quot;], &quot;accuser&quot;: [&quot;Wie het oneerlijk vindt&quot;, &quot;Eiser&quot;, &quot;Eiser&quot;], &quot;accused&quot;: [&quot;Wie antwoordt&quot;, &quot;Gedaagde&quot;, &quot;Gedaagde&quot;], &quot;verdicts&quot;: [[&quot;Wie het oneerlijk vond, heeft gelijk&quot;, &quot;Eiser wint (de eiser heeft gelijk)&quot;, &quot;Vordering toegewezen&quot;], [&quot;Wie antwoordde, heeft gelijk&quot;, &quot;Gedaagde wint (de gedaagde heeft gelijk)&quot;, &quot;Vordering afgewezen&quot;], [&quot;Jullie maken het weer goed&quot;, &quot;Schikking (allebei een beetje toegeven)&quot;, &quot;Schikkingsvoorstel&quot;]], &quot;start&quot;: &quot;▶ Start&quot;, &quot;pause&quot;: &quot;⏸ Pauze&quot;, &quot;gavel&quot;: &quot;Met de hamer slaan&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Veilig voor kinderen</h2>
-          <p style="color:var(--muted);">Geen aanmelding, geen advertenties, geen tracking. Je gezin, het wetboek en de zaakgegevens worden <b>alleen op je apparaat</b> bewaard en nergens heen gestuurd. De ontwikkelaar ontvangt alleen feedback die je zelf via Instellingen verstuurt en anonieme gebruiksstatistieken waarmee niemand te herkennen is. Lees het <a href="privacy.html" style="color:var(--accent);font-weight:700;">Privacybeleid</a> voor meer informatie.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>‘Hij begon!’ Moe van altijd de scheidsrechter zijn?</h2>
+      <p>Bij ruzie beslist uiteindelijk meestal een volwassene. Wie verliest, huilt omdat het oneerlijk voelt, en wie wint weet niet goed waarom. Familierechtbank geeft kinderen een volgorde: vertel je hele kant en luister de andere kant helemaal uit. En het vonnis eindigt met een belofte, niet alleen met straf.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Wie zich onrecht voelt aangedaan, dient zelf de klacht in</h2>
+        <p>Wie iets oneerlijk vindt, wordt eiser en dient de klacht in. Tegen wie, en wie rechter wordt, kiest de indiener zelf. Kinderen kunnen zelfs papa en mama aanklagen.<br>Zag je dat iemand een huisregel brak? Word officier van justitie en breng een strafzaak aan. Rechter kan alleen iemand zijn die geen eiser of gedaagde is.</p>
       </div>
+      <div class="phone"><img src="../img/nl/02-filing.jpg" alt="Wie zich onrecht voelt aangedaan, dient zelf de klacht in" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Vonnissen eindigen met een belofte</h2>
+        <p>Bij het vonnis hoort een belofte of straf, en je vinkt die af zodra ze is nagekomen. Afgeronde zaken worden jullie eigen uitspraken.<br>De strafideeën beginnen bij het goedmaken en gevoelens herstellen, meer herstel dan straf. Minder gamen of tv komt pas als laatste.</p>
+      </div>
+      <div class="phone"><img src="../img/nl/04-verdict.jpg" alt="Vonnissen eindigen met een belofte" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jullie huis, jullie wetten</h2>
+        <p>Schrijf de regels waar jullie het over eens zijn op als artikelen, zoals respect, opruimen en beloftes nakomen, en vul ze aan of pas ze aan wanneer je wilt. In de klacht kies je welke wet is gebroken.<br>‘Leer de rechtbank kennen’ legt uit wat rechters, eisers, officieren en advocaten doen en hoe een rechtszaak verloopt.</p>
+      </div>
+      <div class="phone"><img src="../img/nl/05-laws.jpg" alt="Jullie huis, jullie wetten" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drie stappen aan de slag</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Voeg je gezin toe</h3><p>Een naam en een emoji is genoeg. Geen account nodig.</p></li>
+<li class="card"><span class="n">2</span><h3>Dien een zaak in</h3><p>Oneerlijk? Civiele zaak. Huisregel gebroken? Strafzaak. Kies daarna een rechter.</p></li>
+<li class="card"><span class="n">3</span><h3>Open de zitting</h3><p>Volg het script, houd de tijd bij met de timer en spreek het vonnis uit met de hamer.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Woorden die meegroeien met je kind</h2>
+      <div class="card table">
+        <dl><div><dt>Rechter</dt><dd>Makkelijk: Scheidsrechter · Rechtszaal: Voorzitter</dd></div><div><dt>Eiser</dt><dd>Makkelijk: Wie het oneerlijk vindt · Rechtszaal: Eiser</dd></div><div><dt>Gedaagde</dt><dd>Makkelijk: Wie antwoordt · Rechtszaal: Gedaagde</dd></div><div><dt>Aanklager</dt><dd>Makkelijk: Melder · Rechtszaal: Aanklager</dd></div><div><dt>Verdachte</dt><dd>Makkelijk: Wie antwoordt · Rechtszaal: Verdachte</dd></div><div><dt>Advocaat</dt><dd>Makkelijk: Helper · Rechtszaal: Advocaat</dd></div><div><dt>Civiele zaak</dt><dd>Makkelijk: Oneerlijk · Rechtszaal: Civiele zaak</dd></div><div><dt>Strafzaak</dt><dd>Makkelijk: Regel gebroken · Rechtszaal: Strafzaak</dd></div></dl>
+      </div>
+      <p class="muted">Kies het woordniveau in Instellingen, dan veranderen de woorden op het scherm en in het script tegelijk. Probeer Makkelijk voor kleuters en Standaard voor schoolkinderen.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Veelgestelde vragen</h2>
+      <div class="faq"><details><summary>Vanaf welke leeftijd?</summary><p>Elk kind dat kan lezen speelt mee met een ouder. Met het script, de aanwijzingen en het woordniveau op Makkelijk doen ook jongere kinderen mee als een volwassene voorleest.</p></details>
+<details><summary>Is het echt gratis?</summary><p>Ja. Geen advertenties en geen aankopen die functies ontgrendelen. In Instellingen staat een vrijwillige fooi voor de ontwikkelaar, maar die ontgrendelt of vergrendelt niets.</p></details>
+<details><summary>Is internet nodig?</summary><p>Nee. Zittingen en dossiers werken volledig offline. Alleen om feedback te sturen vanuit Instellingen heb je internet en een iCloud-login nodig.</p></details>
+<details><summary>Waar worden de gegevens bewaard?</summary><p>Gezin, wetten, zittingen en vonnissen staan alleen op het apparaat en gaan naar geen enkele server. De ontwikkelaar krijgt alleen feedback die je zelf stuurt en anonieme gebruiksstatistieken die niet naar jou te herleiden zijn.</p></details>
+<details><summary>Kan ik een back-up maken of overzetten?</summary><p>Met ‘Gegevens bewaren’ in Instellingen exporteer je alles naar een bestand, en met ‘Gegevens laden’ op het andere apparaat staat alles er weer precies zo. Ook back-ups uit de oude webversie laden gewoon.</p></details>
+<details><summary>Werkt het op de iPad?</summary><p>Ja, op iPhone en iPad. Een groot scherm is ideaal als het hele gezin eromheen zit.</p></details>
+<details><summary>En als de straffen te zwaar worden?</summary><p>Als de officier een straf eist, herinnert het script iedereen eraan: niet te zwaar, maar haalbaar. De strafideeën beginnen bij herstel: het goedmaken, gevoelens herstellen en je in de ander verplaatsen.</p></details>
+<details><summary>Hoe verwijder ik alles?</summary><p>Verwijder je de app, dan verdwijnen alle dossiers op het apparaat mee. Er is nooit iets naar buiten gegaan, dus er blijft ook nergens iets over. Wil je verstuurde feedback laten wissen, stuur ons dan een mail.</p></details></div>
+      <p class="contact">Bugs, ideeën of iets anders? Mail naar <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Je kunt ook feedback sturen via de instellingen van de app.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Open vanavond<br>jullie eigen rechtbank</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Gratis in de App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <b>Nederlands</b> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Home</a> <a href="privacy.html">Privacybeleid</a> <a href="support.html">Support</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Familierechtbank (억울해요) · Contact: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Taal"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl" aria-current="page">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privacybeleid</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

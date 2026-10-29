@@ -1,0 +1,230 @@
+{
+  "title": "Familiengericht: Gerichtsrollenspiel für die ganze Familie",
+  "description": "Streit unter Geschwistern oder ein gebrochenes Versprechen? Statt zu schreien, eröffnet ihr euer Familiengericht. Ohne Werbung, ohne Käufe.",
+  "hero": {
+    "headline": "Ungerecht?\nKeine Tränen, ab vor Gericht.",
+    "lead": "Dein Kind reicht selbst als Kläger die Klage ein, die Familie teilt sich Richter und Verteidigung. Ein Skript sagt bei jedem Schritt, wer dran ist und was er sagt. So läuft schon der erste Prozess wie ein echter.",
+    "cta": "Kostenlos im App Store laden",
+    "note": "Keine Werbung, keine Käufe, keine Anmeldung. Alles bleibt auf diesem Gerät."
+  },
+  "demo": {
+    "title": "Eröffne einen Prozess",
+    "lead": "Ein kurzer Fall: „Mein Bruder gibt die Fernbedienung nicht her.“ Stell oben die Sprachstufe um, schlag mit dem Hammer und starte den Timer. Es gibt Töne, also achte auf die Lautstärke.",
+    "prev": "← Zurück",
+    "next": "Weiter →",
+    "again": "Von vorn",
+    "after": "Mit dem Urteil legt ihr ein Versprechen fest, und in der App hakt ihr es ab, sobald es gehalten ist. Nach dem Prozess: umarmen und vertragen 🤗",
+    "note": "In der App stehen die Namen eurer Familie, der Fall und die gewählten Hausregeln direkt im Skript.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Los geht’s!",
+          "Eröffnung",
+          "Eröffnung"
+        ],
+        "text": "{judge}: „Das Familiengericht tritt jetzt zusammen.\nVerhandelt wird der Fall ‚Mein Bruder gibt die Fernbedienung nicht her‘.\nBitte alle gerade hinsetzen!“"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Jetzt erzählt: {accuser}",
+          "Jetzt erzählt: {accuser}",
+          "Jetzt erzählt: {accuser}"
+        ],
+        "text": "• Wann und wo ist es passiert, und was genau?\n• Wie hast du dich dabei gefühlt?\n• Was wünschst du dir?\n\n⭐ Regeln: nicht schreien, nur sagen, was wirklich war!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Jetzt erzählt: {accused}",
+          "Jetzt erzählt: {accused}",
+          "Jetzt erzählt: {accused}"
+        ],
+        "text": "Jetzt ist die andere Seite dran.\n• Ist das wirklich so passiert?\n• Warum hast du das gemacht? Sag, was du denkst.\n\n⭐ Regeln: bis zum Ende zuhören, nicht dazwischenreden!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Das letzte Wort",
+          "Letztes Wort (Schlusswort)",
+          "Schlusswort"
+        ],
+        "text": "Nacheinander sagt jeder sein letztes Wort.\n{accuser}: „Ich wünsche mir ○○.“\n{accused}: „Ab jetzt werde ich ○○.“"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Entscheiden",
+          "Urteilsverkündung",
+          "Urteilsverkündung"
+        ],
+        "text": "Augen zu und zehn Sekunden gut nachdenken.\nWer hat recht? Welches Versprechen hilft, dass alle wieder gut miteinander sind?\nWenn du entschieden hast, wähle unten und verkünde es."
+      }
+    ],
+    "levelLabel": "Sprachstufe",
+    "levels": [
+      "Einfach",
+      "Standard",
+      "Gerichtssaal"
+    ],
+    "judge": [
+      "Schiri",
+      "Richter",
+      "Vorsitzender Richter"
+    ],
+    "accuser": [
+      "Wer sich beschwert",
+      "Kläger",
+      "Kläger"
+    ],
+    "accused": [
+      "Wer antwortet",
+      "Beklagter",
+      "Beklagter"
+    ],
+    "verdicts": [
+      [
+        "Wer sich beschwert, hat recht",
+        "Kläger gewinnt (Der Kläger hat recht)",
+        "Kläger obsiegt"
+      ],
+      [
+        "Wer geantwortet hat, hat recht",
+        "Beklagter gewinnt (Der Beklagte hat recht)",
+        "Beklagter obsiegt"
+      ],
+      [
+        "Ihr vertragt euch wieder",
+        "Vergleich (beide geben etwas nach)",
+        "Vergleichsvorschlag"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pause",
+    "gavel": "Mit dem Hammer klopfen"
+  },
+  "problem": {
+    "title": "„Der hat angefangen!“ Müde davon, immer Schiedsrichter zu sein?",
+    "text": "Bei Streit entscheidet am Ende meist ein Erwachsener. Wer verliert, weint, weil es ungerecht ist, und wer gewinnt, weiß nicht genau, warum. Familiengericht gibt Kindern eine Reihenfolge: die eigene Sicht ganz erzählen und die andere ganz anhören. Und das Urteil endet mit einem Versprechen, nicht nur mit einer Strafe."
+  },
+  "features": [
+    {
+      "title": "Wer sich ungerecht behandelt fühlt, klagt selbst",
+      "text": "Wer etwas ungerecht findet, wird Kläger und reicht die Klage ein. Gegen wen und wer Richter wird, entscheidet die klagende Person. Kinder können sogar Mama und Papa verklagen.\nHat jemand eine Hausregel gebrochen? Dann wirst du Staatsanwalt und erhebst Anklage. Richter kann nur sein, wer weder Kläger noch Beklagter ist.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Urteile enden mit einem Versprechen",
+      "text": "Zum Urteil gehört ein Versprechen oder eine Strafe, die ihr abhakt, sobald sie erfüllt ist. Abgeschlossene Fälle werden zu euren Urteilen.\nDie Strafvorschläge beginnen mit Wiedergutmachen und Gefühle heilen, eher Reparatur als Bestrafung. Weniger Spiele oder Fernsehen kommt zuletzt.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Eure Regeln macht ihr selbst",
+      "text": "Schreibt die Regeln, auf die ihr euch einigt, als Paragrafen auf, etwa Respekt, Aufräumen und Versprechen halten, und ergänzt oder ändert sie jederzeit. In der Klage wählt ihr die gebrochene Regel aus.\n„Das Gericht kennenlernen“ erklärt, was Richter, Kläger, Staatsanwälte und Verteidiger tun und wie ein Prozess abläuft.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten startklar",
+    "items": [
+      {
+        "title": "Familie eintragen",
+        "text": "Ein Name und ein Emoji reichen. Kein Konto nötig."
+      },
+      {
+        "title": "Fall einreichen",
+        "text": "Ungerecht? Zivilsache. Hausregel gebrochen? Strafsache. Dann einen Richter wählen."
+      },
+      {
+        "title": "Prozess eröffnen",
+        "text": "Dem Skript folgen, mit dem Timer die Zeit halten und mit dem Hammer das Urteil verkünden."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Wörter, die mit deinem Kind mitwachsen",
+    "rows": [
+      [
+        "Richter",
+        "Einfach: Schiri · Gerichtssaal: Vorsitzender Richter"
+      ],
+      [
+        "Kläger",
+        "Einfach: Wer sich beschwert · Gerichtssaal: Kläger"
+      ],
+      [
+        "Beklagter",
+        "Einfach: Wer antwortet · Gerichtssaal: Beklagter"
+      ],
+      [
+        "Staatsanwalt",
+        "Einfach: Wer es gemeldet hat · Gerichtssaal: Staatsanwalt"
+      ],
+      [
+        "Angeklagter",
+        "Einfach: Wer antwortet · Gerichtssaal: Angeklagter"
+      ],
+      [
+        "Verteidiger",
+        "Einfach: Helfer · Gerichtssaal: Verteidiger"
+      ],
+      [
+        "Zivilsache",
+        "Einfach: Ungerecht · Gerichtssaal: Zivilsache"
+      ],
+      [
+        "Strafsache",
+        "Einfach: Regel gebrochen · Gerichtssaal: Strafsache"
+      ]
+    ],
+    "note": "Wähle die Sprachstufe in den Einstellungen, und die Wörter auf dem Bildschirm und im Skript ändern sich gemeinsam. Für Kindergartenkinder passt Einfach, für Schulkinder Standard."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Ab welchem Alter?",
+        "a": "Jedes Kind, das lesen kann, spielt mit einem Elternteil mit. Mit Skript, Hinweisen und der Sprachstufe Einfach können auch Jüngere mitmachen, wenn ein Erwachsener vorliest."
+      },
+      {
+        "q": "Ist es wirklich kostenlos?",
+        "a": "Ja. Keine Werbung und keine Käufe, die Funktionen freischalten. In den Einstellungen gibt es ein freiwilliges Trinkgeld für den Entwickler, das nichts freischaltet oder sperrt."
+      },
+      {
+        "q": "Braucht es Internet?",
+        "a": "Nein. Prozesse und Akten funktionieren komplett offline. Nur um Feedback aus den Einstellungen zu senden, brauchst du Internet und eine iCloud-Anmeldung."
+      },
+      {
+        "q": "Wo werden die Daten gespeichert?",
+        "a": "Familie, Regeln, Prozesse und Urteile liegen nur auf dem Gerät und gehen an keinen Server. Beim Entwickler kommt nur Feedback an, das du selbst schickst, und anonyme Nutzungsstatistik, die dich nicht erkennbar macht."
+      },
+      {
+        "q": "Kann ich sichern oder auf ein anderes Gerät umziehen?",
+        "a": "Mit „Daten sichern“ in den Einstellungen exportierst du alles in eine Datei, mit „Daten laden“ auf dem anderen Gerät ist es wieder genau so da. Auch Sicherungen aus der alten Webversion lassen sich laden."
+      },
+      {
+        "q": "Läuft es auf dem iPad?",
+        "a": "Ja, auf iPhone und iPad. Ein großer Bildschirm ist ideal, wenn die ganze Familie drumherum sitzt."
+      },
+      {
+        "q": "Und wenn die Strafen zu hart werden?",
+        "a": "Wenn der Staatsanwalt eine Strafe fordert, erinnert das Skript daran: nicht zu schwer, sondern machbar. Die Strafvorschläge beginnen mit Wiedergutmachen, Gefühle heilen und sich in den anderen hineinversetzen."
+      },
+      {
+        "q": "Wie lösche ich alles?",
+        "a": "Wenn du die App löschst, verschwinden alle Akten auf dem Gerät mit. Nichts hat es je verlassen, also bleibt auch nirgends etwas übrig. Um gesendetes Feedback zu löschen, schreib uns einfach eine E-Mail."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Eröffnet heute Abend\neuer Familiengericht",
+    "cta": "Kostenlos im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutz",
+    "contact": "Fehler, Ideen oder sonst etwas? Schreib an {email}. Du kannst auch in den Einstellungen der App Feedback senden."
+  }
+}

@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tribunal Familial — Des procès à la maison pour les enfants et les familles</title>
-  <meta name="description" content="Tribunal Familial est une app iOS où la famille joue des procès à la maison et où les enfants découvrent la loi et l’équité. Tous les enregistrements restent sur votre appareil.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tribunal Familial : le jeu de rôle du procès en famille</title>
+  <meta name="description" content="Dispute entre frères et sœurs ou promesse non tenue ? Au lieu de crier, ouvrez votre tribunal familial. L’enfant porte plainte. Sans pub.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/fr/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tribunal Familial : le jeu de rôle du procès en famille">
+  <meta property="og:description" content="Dispute entre frères et sœurs ou promesse non tenue ? Au lieu de crier, ouvrez votre tribunal familial. L’enfant porte plainte. Sans pub.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/fr/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/fr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Tribunal Familial</h1>
-    <div class="en">Ce qui est injuste se règle au tribunal</div>
-    <p class="tagline">Apprendre la loi et l’équité avec un jeu de rôle en famille : une app iOS où les enfants deviennent juges et avocats</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Assistance et règles du jeu</a>
-      <a class="btn btn-ghost" href="privacy.html">Politique de confidentialité</a>
-    </div>
+  <a class="skip" href="#main">Aller au contenu</a>
+  <header class="bar">
+    <a class="brand" href="../fr/"><img src="../icon.png" alt="" width="32" height="32">Tribunal Familial</a>
+    <a class="lang-link" href="#languages">Langue</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>De quoi s’agit-il ?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Quelque chose semble injuste</h3>
-          <p>Les enfants peuvent être le <b>demandeur</b> et déposer une plainte. Un procès civil qui met des mots sur la peine.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Une règle de la maison a été brisée</h3>
-          <p>Quand une règle familiale est brisée, un <b>procureur</b> porte l’affaire. Le juge tranche : coupable, non coupable ou clémence.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Des rôles équitables pour tous</h3>
-          <p>Seule une personne qui n’est ni demandeur ni défendeur peut être juge. Chacun a le droit de choisir un avocat.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Notre code de la famille</h3>
-          <p>Écrivez ensemble vos règles de famille, puis suivez chaque affaire du procès au verdict, puis à la promesse.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>C’est injuste ?<br>Pas de larmes, on va au tribunal.</h1>
+        <p class="lead">Votre enfant dépose lui-même la plainte en tant que demandeur, et la famille se répartit les rôles de juge et d’avocat. À chaque étape, un script indique à qui c’est le tour et quoi dire : même le premier procès se déroule comme un vrai.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Télécharger gratuitement sur l’App Store</a><a class="try" href="#try">Tenez une audience ↓</a></div>
+        <p class="muted small">Pas de pub, pas d’achat, pas d’inscription. Tout reste sur cet appareil.</p>
       </div>
+      <div class="phone"><img src="../img/fr/03-trial.jpg" alt="C’est injuste ? Pas de larmes, on va au tribunal." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Comment ça marche</h2>
-      <ol class="steps">
-        <li>Décidez ensemble des <b>lois de la famille</b> et écrivez-les dans le code.</li>
-        <li>Déposez une <b>affaire civile</b> pour une injustice, ou une <b>affaire pénale</b> quand une règle est brisée.</li>
-        <li>Choisissez les <b>rôles</b> de demandeur, défendeur, juge et avocat, puis ouvrez l’audience.</li>
-        <li>Écoutez chaque partie, puis le juge rend son <b>verdict</b>.</li>
-        <li>Fixez une <b>promesse</b> à partir du verdict et cochez-la une fois tenue.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Tenez une audience</h2>
+      <p class="muted">Une affaire courte : « Mon petit frère ne veut pas me donner la télécommande. » Changez le niveau de vocabulaire en haut, frappez le marteau et lancez le minuteur. Il y a du son, vérifiez le volume.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Tenez une audience&quot;, &quot;lead&quot;: &quot;Une affaire courte : « Mon petit frère ne veut pas me donner la télécommande. » Changez le niveau de vocabulaire en haut, frappez le marteau et lancez le minuteur. Il y a du son, vérifiez le volume.&quot;, &quot;prev&quot;: &quot;← Retour&quot;, &quot;next&quot;: &quot;Suivant →&quot;, &quot;again&quot;: &quot;Recommencer&quot;, &quot;after&quot;: &quot;Avec le verdict, on fixe une promesse à tenir, et l’app permet de la cocher une fois respectée. Après le procès, on se fait un câlin et on se réconcilie 🤗&quot;, &quot;note&quot;: &quot;Dans l’app, les prénoms de la famille, les détails de l’affaire et les règles de la maison choisies s’insèrent directement dans le script.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Le procès commence !&quot;, &quot;Ouverture de l’audience&quot;, &quot;Ouverture de l’audience&quot;], &quot;text&quot;: &quot;{judge} : « L’audience du tribunal familial est ouverte.\nNous examinons l’affaire “Mon petit frère ne veut pas me donner la télécommande”.\nTout le monde se tient bien droit ! »&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;Raconte, {accuser} !&quot;, &quot;Raconte, {accuser} !&quot;, &quot;Raconte, {accuser} !&quot;], &quot;text&quot;: &quot;• Quand, où, et que s’est-il passé ?\n• Qu’as-tu ressenti ?\n• Qu’aimerais-tu ?\n\n⭐ Règles : on ne crie pas, on dit seulement ce qui s’est vraiment passé !&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;Raconte, {accused} !&quot;, &quot;Raconte, {accused} !&quot;, &quot;Raconte, {accused} !&quot;], &quot;text&quot;: &quot;Maintenant, c’est au tour de l’autre partie.\n• Ça s’est vraiment passé comme ça ?\n• Pourquoi as-tu fait ça ? Dis ce que tu penses.\n\n⭐ Règles : on écoute jusqu’au bout, on ne coupe pas la parole !&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Le dernier mot&quot;, &quot;Le dernier mot (dernière déclaration)&quot;, &quot;Dernière déclaration&quot;], &quot;text&quot;: &quot;Chacun à son tour dit son dernier mot.\n{accuser} : « Je voudrais ○○. »\n{accused} : « À partir de maintenant, je vais ○○. »&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Décider&quot;, &quot;Prononcer le verdict&quot;, &quot;Prononcer le verdict&quot;], &quot;text&quot;: &quot;Ferme les yeux et réfléchis bien pendant dix secondes.\nQui a raison ? Quelle promesse aidera tout le monde à bien s’entendre à nouveau ?\nUne fois décidé, choisis ci-dessous et prononce le verdict.&quot;}], &quot;levelLabel&quot;: &quot;Niveau de vocabulaire&quot;, &quot;levels&quot;: [&quot;Simple&quot;, &quot;Standard&quot;, &quot;Tribunal&quot;], &quot;judge&quot;: [&quot;Arbitre&quot;, &quot;Juge&quot;, &quot;Président&quot;], &quot;accuser&quot;: [&quot;Celui qui se plaint&quot;, &quot;Demandeur&quot;, &quot;Demandeur&quot;], &quot;accused&quot;: [&quot;Celui qui répond&quot;, &quot;Défendeur&quot;, &quot;Défendeur&quot;], &quot;verdicts&quot;: [[&quot;Celui qui se plaint a raison&quot;, &quot;Demandeur gagne (le demandeur a raison)&quot;, &quot;Demandeur gagne&quot;], [&quot;Celui qui répond a raison&quot;, &quot;Défendeur gagne (le défendeur a raison)&quot;, &quot;Défendeur gagne&quot;], [&quot;On fait la paix tous les deux&quot;, &quot;Conciliation (chacun cède un peu)&quot;, &quot;Conciliation proposée&quot;]], &quot;start&quot;: &quot;▶ Go&quot;, &quot;pause&quot;: &quot;⏸ Pause&quot;, &quot;gavel&quot;: &quot;Frapper le marteau&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Sûr pour les enfants</h2>
-          <p style="color:var(--muted);">Pas d’inscription, pas de publicité, pas de suivi. Votre famille, votre code et les procès sont enregistrés <b>uniquement sur votre appareil</b> et ne sont envoyés nulle part. Le développeur ne reçoit que les retours que vous choisissez d’envoyer depuis les Réglages et des statistiques d’utilisation anonymes qui ne permettent d’identifier personne. Consultez la <a href="privacy.html" style="color:var(--accent);font-weight:700;">Politique de confidentialité</a> pour en savoir plus.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>« C’est lui qui a commencé ! » Fatigué d’être toujours l’arbitre ?</h2>
+      <p>Quand ça se dispute, c’est presque toujours un adulte qui tranche. Le perdant pleure parce que c’est injuste, et le gagnant ne sait pas trop pourquoi il a gagné. Tribunal Familial donne aux enfants un ordre à suivre : raconter toute sa version, puis écouter l’autre jusqu’au bout. Et le verdict se termine par une promesse, pas seulement par une punition.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Celui qui se sent lésé porte plainte lui-même</h2>
+        <p>Celui qui trouve quelque chose injuste devient demandeur et dépose la plainte. Contre qui, et qui sera juge, c’est lui qui choisit. Les enfants peuvent même attaquer papa et maman.<br>Vous avez vu quelqu’un enfreindre une règle de la maison ? Devenez procureur et lancez une affaire pénale. Seule une personne qui n’est ni demandeur ni défendeur peut être juge.</p>
       </div>
+      <div class="phone"><img src="../img/fr/02-filing.jpg" alt="Celui qui se sent lésé porte plainte lui-même" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Le verdict se termine par une promesse</h2>
+        <p>Avec le verdict vient une promesse ou une sanction, que l’on coche une fois tenue. Les affaires terminées deviennent vos propres précédents.<br>Les idées de sanction commencent par réparer et apaiser, plus proche de la réconciliation que de la punition. Moins de jeux ou de télé, c’est en dernier recours.</p>
+      </div>
+      <div class="phone"><img src="../img/fr/04-verdict.jpg" alt="Le verdict se termine par une promesse" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Votre maison, vos lois</h2>
+        <p>Écrivez sous forme d’articles les règles décidées ensemble, comme le respect, le rangement ou tenir ses promesses, et ajoutez-en ou modifiez-les quand vous voulez. La plainte cite la loi enfreinte.<br>« Découvrir le tribunal » explique ce que font le juge, le demandeur, le procureur et l’avocat, et comment se déroule un procès.</p>
+      </div>
+      <div class="phone"><img src="../img/fr/05-laws.jpg" alt="Votre maison, vos lois" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Trois étapes pour commencer</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Ajoutez la famille</h3><p>Un prénom et un emoji suffisent. Pas de compte.</p></li>
+<li class="card"><span class="n">2</span><h3>Déposez une affaire</h3><p>Injustice : affaire civile. Règle enfreinte : affaire pénale. Puis choisissez un juge.</p></li>
+<li class="card"><span class="n">3</span><h3>Ouvrez l’audience</h3><p>Suivez le script, gardez le temps avec le minuteur et prononcez le verdict au marteau.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Des mots qui grandissent avec votre enfant</h2>
+      <div class="card table">
+        <dl><div><dt>Juge</dt><dd>Simple: Arbitre · Tribunal: Président</dd></div><div><dt>Demandeur</dt><dd>Simple: Celui qui se plaint · Tribunal: Demandeur</dd></div><div><dt>Défendeur</dt><dd>Simple: Celui qui répond · Tribunal: Défendeur</dd></div><div><dt>Procureur</dt><dd>Simple: Celui qui a vu · Tribunal: Procureur</dd></div><div><dt>Accusé</dt><dd>Simple: Celui qui répond · Tribunal: Accusé</dd></div><div><dt>Avocat</dt><dd>Simple: Celui qui aide · Tribunal: Avocat</dd></div><div><dt>Civil</dt><dd>Simple: Pas juste · Tribunal: Civil</dd></div><div><dt>Pénal</dt><dd>Simple: Promesse rompue · Tribunal: Pénal</dd></div></dl>
+      </div>
+      <p class="muted">Choisissez le niveau de vocabulaire dans les Réglages : les mots à l’écran et dans le script changent tous ensemble. Essayez Simple pour la maternelle et Standard pour le primaire.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Questions fréquentes</h2>
+      <div class="faq"><details><summary>À partir de quel âge ?</summary><p>Tout enfant qui sait lire peut jouer avec un parent. Avec le script, les consignes et le niveau Simple, les plus jeunes peuvent participer si un adulte lit à voix haute.</p></details>
+<details><summary>C’est vraiment gratuit ?</summary><p>Oui. Pas de pub et aucun achat pour débloquer des fonctions. Les Réglages proposent un pourboire facultatif pour soutenir le développeur, qui ne débloque ni ne bloque rien.</p></details>
+<details><summary>Faut-il Internet ?</summary><p>Non. Les audiences et les dossiers fonctionnent entièrement hors ligne. Il faut Internet et une connexion iCloud seulement pour envoyer un avis depuis les Réglages.</p></details>
+<details><summary>Où sont conservés les dossiers ?</summary><p>Famille, lois, audiences et verdicts restent uniquement sur l’appareil et ne sont envoyés à aucun serveur. Le développeur ne reçoit que les avis que vous envoyez vous-même et des statistiques d’usage anonymes qui ne vous identifient pas.</p></details>
+<details><summary>Puis-je sauvegarder ou passer à un autre appareil ?</summary><p>Avec « Enregistrer les données » dans les Réglages, exportez tout dans un fichier, puis « Charger les données » sur l’autre appareil pour tout retrouver à l’identique. Les sauvegardes de l’ancienne version web se chargent aussi.</p></details>
+<details><summary>Ça marche sur iPad ?</summary><p>Oui, sur iPhone et iPad. Un grand écran est idéal quand toute la famille est réunie autour.</p></details>
+<details><summary>Et si les sanctions deviennent trop dures ?</summary><p>Quand le procureur demande une sanction, le script rappelle qu’elle doit rester légère et faisable. Les idées de sanction commencent par réparer : rétablir les choses, apaiser l’autre, se mettre à sa place.</p></details>
+<details><summary>Comment tout effacer ?</summary><p>En supprimant l’app, tous les dossiers de l’appareil disparaissent avec elle. Rien n’en est jamais sorti, donc rien ne reste ailleurs. Pour effacer un avis envoyé, écrivez-nous.</p></details></div>
+      <p class="contact">Bug, idée ou autre chose ? Écrivez à <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Vous pouvez aussi envoyer un avis depuis les réglages de l’app.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Ouvrez votre tribunal familial<br>ce soir</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Télécharger gratuitement sur l’App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <b>Français</b> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Accueil</a> <a href="privacy.html">Politique de confidentialité</a> <a href="support.html">Assistance</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Tribunal Familial (억울해요) · Contact : <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Langue"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Politique de confidentialité</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

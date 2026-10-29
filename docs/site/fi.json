@@ -1,0 +1,230 @@
+{
+  "title": "Perheoikeus: koko perheen oikeudenkäyntileikki",
+  "description": "Sisarukset riitelevät tai joku rikkoi lupauksen? Huutamisen sijaan avatkaa oma perheoikeus. Lapsi nostaa kanteen, perhe tuomitsee. Ei mainoksia.",
+  "hero": {
+    "headline": "Epäreilua?\nEi kyyneliä, vaan oikeuteen.",
+    "lead": "Lapsi nostaa itse kanteen kantajana, ja perhe jakaa tuomarin ja asianajajan roolit. Käsikirjoitus kertoo joka vaiheessa, kenen vuoro on ja mitä sanotaan, joten jo ensimmäinen istunto sujuu kuin oikea.",
+    "cta": "Lataa ilmaiseksi App Storesta",
+    "note": "Ei mainoksia, ostoja eikä rekisteröitymistä. Kaikki pysyy tällä laitteella."
+  },
+  "demo": {
+    "title": "Pidä istunto",
+    "lead": "Lyhyt juttu: ”Pikkuveli ei anna kaukosäädintä.” Vaihda sanataso ylhäältä, kopauta nuijaa ja käynnistä ajastin. Siitä lähtee ääntä, joten tarkista äänenvoimakkuus.",
+    "prev": "← Takaisin",
+    "next": "Seuraava →",
+    "again": "Alusta",
+    "after": "Tuomion yhteydessä sovitaan lupaus, ja apissa se kuitataan, kun se on pidetty. Istunnon jälkeen halataan ja sovitaan 🤗",
+    "note": "Apissa perheenjäsenten nimet, jutun yksityiskohdat ja valitut kodin säännöt tulevat suoraan käsikirjoitukseen.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Oikeudenkäynti alkaa!",
+          "Istunto avataan",
+          "Istunto avataan"
+        ],
+        "text": "{judge}: ”Kodin perheoikeuden istunto on alkanut.\nKäsittelemme juttua ’Pikkuveli ei anna kaukosäädintä’.\nKaikki istumaan suoraan!”"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser} kertoo",
+          "{accuser} kertoo",
+          "{accuser} kertoo"
+        ],
+        "text": "• Milloin, missä ja mitä tapahtui?\n• Miltä sinusta tuntui?\n• Mitä toivoisit?\n\n⭐ Säännöt: ei huutamista, vain se mitä oikeasti tapahtui!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused} kertoo",
+          "{accused} kertoo",
+          "{accused} kertoo"
+        ],
+        "text": "Nyt on toisen osapuolen vuoro.\n• Tapahtuiko se todella niin?\n• Miksi teit niin? Kerro, mitä ajattelet.\n\n⭐ Säännöt: kuuntele loppuun, älä keskeytä!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Viimeinen sana",
+          "Viimeinen sana (loppulausunto)",
+          "Loppulausunto"
+        ],
+        "text": "Vuorotellen jokainen sanoo viimeisen sanansa.\n{accuser}: ”Toivon, että ○○.”\n{accused}: ”Tästä lähtien minä ○○.”"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Päätä",
+          "Tuomion julistaminen",
+          "Tuomion julistaminen"
+        ],
+        "text": "Sulje silmät ja mieti kunnolla kymmenen sekuntia.\nKuka on oikeassa? Millainen lupaus auttaa kaikkia tulemaan taas toimeen?\nKun olet päättänyt, valitse alta ja julista tuomio."
+      }
+    ],
+    "levelLabel": "Sanataso",
+    "levels": [
+      "Helppo",
+      "Perus",
+      "Oikeussali"
+    ],
+    "judge": [
+      "Erotuomari",
+      "Tuomari",
+      "Puheenjohtaja"
+    ],
+    "accuser": [
+      "Epäreilun kokenut",
+      "Kantaja",
+      "Kantaja"
+    ],
+    "accused": [
+      "Selittäjä",
+      "Vastaaja",
+      "Vastaaja"
+    ],
+    "verdicts": [
+      [
+        "Epäreilun kokenut on oikeassa",
+        "Kantaja voittaa (Kantaja on oikeassa)",
+        "Kanne hyväksytään"
+      ],
+      [
+        "Selittäjä on oikeassa",
+        "Vastaaja voittaa (Vastaaja on oikeassa)",
+        "Kanne hylätään"
+      ],
+      [
+        "Sovitaan ja ollaan taas kavereita",
+        "Sovinto (molemmat joustavat vähän)",
+        "Sovintoehdotus"
+      ]
+    ],
+    "start": "▶ Aloita",
+    "pause": "⏸ Tauko",
+    "gavel": "Lyö nuijaa"
+  },
+  "problem": {
+    "title": "”Se alkoi!” Joko väsyttää olla aina erotuomari?",
+    "text": "Kun riita syttyy, ratkaisun tekee melkein aina aikuinen. Häviäjä itkee, koska se tuntuu epäreilulta, eikä voittajakaan oikein tiedä, miksi voitti. Perheoikeus antaa lapsille järjestyksen: kerro oma puolesi loppuun asti ja kuuntele toinenkin loppuun. Ja tuomio päättyy lupaukseen, ei pelkkään rangaistukseen."
+  },
+  "features": [
+    {
+      "title": "Vääryyttä kokenut nostaa kanteen itse",
+      "text": "Joka kokee jonkin epäreiluksi, ryhtyy kantajaksi ja nostaa kanteen. Ketä vastaan ja kuka tuomitsee, päättää kantaja. Lapset voivat haastaa oikeuteen jopa äidin ja isän.\nNäitkö jonkun rikkovan kodin sääntöä? Ryhdy syyttäjäksi ja nosta rikosjuttu. Tuomariksi kelpaa vain se, joka ei ole kantaja eikä vastaaja.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Tuomio päättyy lupaukseen",
+      "text": "Tuomioon kuuluu lupaus tai rangaistus, joka kuitataan, kun se on hoidettu. Päättyneistä jutuista tulee perheenne ennakkotapauksia.\nEhdotetut rangaistukset alkavat asioiden korjaamisesta ja mielipahan hyvittämisestä, enemmän sovintoa kuin rangaistusta. Pelien tai television vähentäminen tulee viimeisenä.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Teidän kotinne, teidän lakinne",
+      "text": "Kirjatkaa yhdessä sovitut säännöt pykäliksi, kuten kunnioitus, siivoaminen ja lupausten pitäminen, ja lisätkää tai muuttakaa niitä milloin vain. Kanteeseen valitaan rikottu laki.\n”Tutustu oikeuteen” kertoo, mitä tuomari, kantaja, syyttäjä ja asianajaja tekevät ja miten oikeudenkäynti etenee.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Alkuun kolmessa vaiheessa",
+    "items": [
+      {
+        "title": "Lisää perhe",
+        "text": "Nimi ja emoji riittävät. Tiliä ei tarvita."
+      },
+      {
+        "title": "Nosta juttu",
+        "text": "Epäreilu asia on riita-asia, rikottu kodin sääntö rikosasia. Valitse sitten tuomari."
+      },
+      {
+        "title": "Avaa istunto",
+        "text": "Seuraa käsikirjoitusta, pidä aika ajastimella ja julista tuomio nuijalla."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Sanat, jotka kasvavat lapsen mukana",
+    "rows": [
+      [
+        "Tuomari",
+        "Helppo: Erotuomari · Oikeussali: Puheenjohtaja"
+      ],
+      [
+        "Kantaja",
+        "Helppo: Epäreilun kokenut · Oikeussali: Kantaja"
+      ],
+      [
+        "Vastaaja",
+        "Helppo: Selittäjä · Oikeussali: Vastaaja"
+      ],
+      [
+        "Syyttäjä",
+        "Helppo: Ilmoittaja · Oikeussali: Syyttäjä"
+      ],
+      [
+        "Syytetty",
+        "Helppo: Selittäjä · Oikeussali: Syytetty"
+      ],
+      [
+        "Avustaja",
+        "Helppo: Auttaja · Oikeussali: Avustaja"
+      ],
+      [
+        "Riita-asia",
+        "Helppo: Epäreilua! · Oikeussali: Riita-asia"
+      ],
+      [
+        "Rikosasia",
+        "Helppo: Rikottu lupaus · Oikeussali: Rikosasia"
+      ]
+    ],
+    "note": "Valitse sanataso asetuksista, niin näytön ja käsikirjoituksen sanat vaihtuvat kerralla. Kokeile Helppoa päiväkoti-ikäisille ja Perusta koululaisille."
+  },
+  "faq": {
+    "title": "Usein kysyttyä",
+    "items": [
+      {
+        "q": "Minkä ikäisille?",
+        "a": "Jokainen lukutaitoinen lapsi voi pelata vanhemman kanssa. Käsikirjoituksen, ohjeiden ja Helppo-sanatason avulla myös pienemmät pääsevät mukaan, kun aikuinen lukee ääneen."
+      },
+      {
+        "q": "Onko se oikeasti ilmainen?",
+        "a": "On. Ei mainoksia eikä ostoja, jotka avaisivat toimintoja. Asetuksissa voi antaa vapaaehtoisen tipin kehittäjälle, mutta se ei avaa eikä lukitse mitään."
+      },
+      {
+        "q": "Tarvitaanko nettiä?",
+        "a": "Ei. Istunnot ja arkisto toimivat täysin ilman yhteyttä. Netti ja iCloud-kirjautuminen tarvitaan vain palautteen lähettämiseen asetuksista."
+      },
+      {
+        "q": "Mihin tiedot tallentuvat?",
+        "a": "Perhe, lait, istunnot ja tuomiot tallentuvat vain laitteelle eivätkä mene millekään palvelimelle. Kehittäjälle päätyy vain itse lähettämäsi palaute ja nimettömät käyttötilastot, joista sinua ei tunnista."
+      },
+      {
+        "q": "Voinko varmuuskopioida tai siirtää toiselle laitteelle?",
+        "a": "”Tallenna arkisto” asetuksissa vie kaiken tiedostoon, ja ”Tuo arkisto” toisella laitteella palauttaa kaiken ennalleen. Myös vanhan verkkoversion varmuuskopiot voi tuoda."
+      },
+      {
+        "q": "Toimiiko iPadilla?",
+        "a": "Toimii, sekä iPhonella että iPadilla. Iso näyttö on mainio, kun koko perhe istuu ympärillä."
+      },
+      {
+        "q": "Entä jos rangaistukset menevät liian koviksi?",
+        "a": "Kun syyttäjä vaatii rangaistusta, käsikirjoitus muistuttaa, ettei se saa olla liian raskas ja että sen pitää olla toteutettavissa. Ehdotukset alkavat korjaamisesta: asian korjaaminen, mielipahan hyvittäminen ja toisen asemaan asettuminen."
+      },
+      {
+        "q": "Miten poistan kaiken?",
+        "a": "Kun poistat apin, kaikki laitteen tiedot katoavat sen mukana. Mitään ei ole koskaan lähtenyt laitteelta, joten mitään ei jää muuallekaan. Jos haluat poistaa lähettämäsi palautteen, kirjoita meille."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Avatkaa tänä iltana\noma perheoikeutenne",
+    "cta": "Lataa ilmaiseksi App Storesta"
+  },
+  "ui": {
+    "skip": "Siirry sisältöön",
+    "languages": "Kieli",
+    "privacy": "Tietosuojakäytäntö",
+    "contact": "Virheitä, ideoita tai jotain muuta? Kirjoita osoitteeseen {email}. Palautetta voi lähettää myös apin asetuksista."
+  }
+}

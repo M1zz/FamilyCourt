@@ -1,0 +1,230 @@
+{
+  "title": "Tribunal Familiar: juego de rol de juicios para toda la familia",
+  "description": "¿Pelea entre hermanos o una promesa rota? En vez de gritar, abrid vuestro propio tribunal. El niño demanda y la familia juzga. Sin anuncios.",
+  "hero": {
+    "headline": "¿Es injusto?\nSin lágrimas: a juicio.",
+    "lead": "Tu hijo presenta él mismo la demanda como demandante, y la familia se reparte los papeles de juez y abogado. En cada paso, un guion dice a quién le toca y qué decir, así que hasta el primer juicio sale como uno de verdad.",
+    "cta": "Descárgala gratis en el App Store",
+    "note": "Sin anuncios, sin compras, sin registro. Todo se queda en este dispositivo."
+  },
+  "demo": {
+    "title": "Celebra un juicio",
+    "lead": "Un caso rápido: «Mi hermano pequeño no me da el mando.» Cambia arriba el nivel de vocabulario, da un golpe de mazo y pon en marcha el temporizador. Suena, así que revisa el volumen.",
+    "prev": "← Atrás",
+    "next": "Siguiente →",
+    "again": "Empezar de nuevo",
+    "after": "Junto con la sentencia se fija una promesa, y en la app se marca cuando se cumple. Al acabar el juicio, un abrazo y a hacer las paces 🤗",
+    "note": "En la app, los nombres de la familia, los detalles del caso y las normas de casa elegidas aparecen directamente en el guion.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "¡Empieza el juicio!",
+          "Apertura de la sesión",
+          "Apertura de la sesión"
+        ],
+        "text": "{judge}: «Se abre la sesión del tribunal familiar.\nVemos el caso “Mi hermano pequeño no me da el mando”.\n¡Todos bien sentados, por favor!»"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "¡Cuenta, {accuser}!",
+          "¡Cuenta, {accuser}!",
+          "¡Cuenta, {accuser}!"
+        ],
+        "text": "• ¿Cuándo, dónde y qué pasó?\n• ¿Cómo te sentiste?\n• ¿Qué te gustaría?\n\n⭐ Reglas: nada de gritos, solo lo que pasó de verdad."
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "¡Cuenta, {accused}!",
+          "¡Cuenta, {accused}!",
+          "¡Cuenta, {accused}!"
+        ],
+        "text": "Ahora le toca a la otra parte.\n• ¿De verdad pasó así?\n• ¿Por qué lo hiciste? Di lo que piensas.\n\n⭐ Reglas: escuchar hasta el final, sin interrumpir."
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "La última palabra",
+          "La última palabra (declaración final)",
+          "Última palabra"
+        ],
+        "text": "Uno a uno, cada cual dice su última palabra.\n{accuser}: «Me gustaría ○○.»\n{accused}: «A partir de ahora voy a ○○.»"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Decidir",
+          "Dictar sentencia",
+          "Dictar sentencia"
+        ],
+        "text": "Cierra los ojos y piénsalo bien durante diez segundos.\n¿Quién tiene razón? ¿Qué promesa ayudará a que todos se lleven bien otra vez?\nCuando lo tengas, elige abajo y dicta sentencia."
+      }
+    ],
+    "levelLabel": "Nivel de vocabulario",
+    "levels": [
+      "Sencillo",
+      "Estándar",
+      "Tribunal"
+    ],
+    "judge": [
+      "Árbitro",
+      "Juez",
+      "Presidente"
+    ],
+    "accuser": [
+      "Quien se queja",
+      "Demandante",
+      "Demandante"
+    ],
+    "accused": [
+      "Quien responde",
+      "Demandado",
+      "Demandado"
+    ],
+    "verdicts": [
+      [
+        "Quien se queja tiene razón",
+        "Gana el demandante (el demandante tiene razón)",
+        "Gana el demandante"
+      ],
+      [
+        "Quien responde tiene razón",
+        "Gana el demandado (el demandado tiene razón)",
+        "Gana el demandado"
+      ],
+      [
+        "Hacéis las paces",
+        "Acuerdo (los dos ceden un poco)",
+        "Propuesta de conciliación"
+      ]
+    ],
+    "start": "▶ Empezar",
+    "pause": "⏸ Pausa",
+    "gavel": "Golpear el mazo"
+  },
+  "problem": {
+    "title": "«¡Empezó él!» ¿Cansado de ser siempre el árbitro?",
+    "text": "Cuando hay pelea, casi siempre acaba decidiendo un adulto. El que pierde llora porque le parece injusto, y el que gana no sabe muy bien por qué. Tribunal Familiar da a los niños un orden: contar toda su versión y escuchar la del otro hasta el final. Y la sentencia acaba con una promesa, no solo con un castigo."
+  },
+  "features": [
+    {
+      "title": "Quien se siente agraviado demanda él mismo",
+      "text": "Quien cree que algo es injusto se convierte en demandante y presenta la demanda. Contra quién, y quién será juez, lo decide quien demanda. Los niños pueden demandar incluso a papá y mamá.\n¿Viste a alguien saltarse una norma de casa? Hazte fiscal y presenta un caso penal. Solo puede ser juez quien no sea demandante ni demandado.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Las sentencias acaban con una promesa",
+      "text": "Con la sentencia se fija una promesa o sanción, que se marca cuando se cumple. Los casos cerrados se convierten en vuestros precedentes.\nLas sanciones sugeridas empiezan por reparar y arreglar las cosas con el otro, más cerca de reconciliar que de castigar. Quitar videojuegos o tele va al final.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Vuestra casa, vuestras leyes",
+      "text": "Escribid como artículos las normas que acordáis en familia, como el respeto, recoger o cumplir las promesas, y añadid o cambiad cuando queráis. La demanda indica qué ley se incumplió.\n«Conoce el tribunal» explica qué hacen el juez, el demandante, el fiscal y el abogado, y cómo se desarrolla un juicio.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Empieza en tres pasos",
+    "items": [
+      {
+        "title": "Añade a la familia",
+        "text": "Basta un nombre y un emoji. Sin cuenta."
+      },
+      {
+        "title": "Presenta un caso",
+        "text": "¿Injusto? Civil. ¿Norma de casa incumplida? Penal. Luego elige juez."
+      },
+      {
+        "title": "Abre el juicio",
+        "text": "Sigue el guion, controla el tiempo con el temporizador y dicta sentencia con el mazo."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Palabras que crecen con tu hijo",
+    "rows": [
+      [
+        "Juez",
+        "Sencillo: Árbitro · Tribunal: Presidente"
+      ],
+      [
+        "Demandante",
+        "Sencillo: Quien se queja · Tribunal: Demandante"
+      ],
+      [
+        "Demandado",
+        "Sencillo: Quien responde · Tribunal: Demandado"
+      ],
+      [
+        "Fiscal",
+        "Sencillo: Quien lo vio · Tribunal: Fiscal"
+      ],
+      [
+        "Acusado",
+        "Sencillo: Quien responde · Tribunal: Acusado"
+      ],
+      [
+        "Abogado",
+        "Sencillo: Quien ayuda · Tribunal: Abogado"
+      ],
+      [
+        "Civil",
+        "Sencillo: No es justo · Tribunal: Civil"
+      ],
+      [
+        "Penal",
+        "Sencillo: Promesa rota · Tribunal: Penal"
+      ]
+    ],
+    "note": "Elige el nivel de vocabulario en Ajustes y las palabras de la pantalla y del guion cambian a la vez. Prueba Sencillo para infantil y Estándar para primaria."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Desde qué edad?",
+        "a": "Cualquier niño que sepa leer puede jugar con un adulto. Con el guion, las indicaciones y el nivel Sencillo, los más pequeños también participan si un adulto lee en voz alta."
+      },
+      {
+        "q": "¿De verdad es gratis?",
+        "a": "Sí. Sin anuncios y sin compras que desbloqueen funciones. En Ajustes hay una propina opcional para apoyar al desarrollador, que no desbloquea ni bloquea nada."
+      },
+      {
+        "q": "¿Hace falta internet?",
+        "a": "No. Los juicios y el archivo funcionan sin conexión. Solo necesitas internet e iniciar sesión en iCloud para enviar comentarios desde Ajustes."
+      },
+      {
+        "q": "¿Dónde se guardan los datos?",
+        "a": "Familia, leyes, juicios y sentencias se guardan solo en el dispositivo y no se envían a ningún servidor. Al desarrollador solo le llegan los comentarios que tú envías y estadísticas de uso anónimas que no te identifican."
+      },
+      {
+        "q": "¿Puedo hacer copia o pasarlo a otro dispositivo?",
+        "a": "Con «Guardar datos» en Ajustes exportas todo a un archivo, y con «Cargar datos» en el otro dispositivo vuelve a estar tal cual. También se cargan las copias de la antigua versión web."
+      },
+      {
+        "q": "¿Funciona en iPad?",
+        "a": "Sí, en iPhone y en iPad. Una pantalla grande es ideal con toda la familia alrededor."
+      },
+      {
+        "q": "¿Y si las sanciones se pasan de duras?",
+        "a": "Cuando el fiscal pide una sanción, el guion recuerda que no sea muy dura y que se pueda cumplir. Las sanciones sugeridas empiezan por reparar: arreglar lo hecho, cuidar al otro y ponerse en su lugar."
+      },
+      {
+        "q": "¿Cómo lo borro todo?",
+        "a": "Al eliminar la app se borran todos los registros del dispositivo. Nada ha salido de él, así que no queda nada en otro sitio. Para borrar comentarios enviados, escríbenos."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Esta noche,\nabrid vuestro tribunal familiar",
+    "cta": "Descárgala gratis en el App Store"
+  },
+  "ui": {
+    "skip": "Ir al contenido",
+    "languages": "Idioma",
+    "privacy": "Política de privacidad",
+    "contact": "¿Errores, ideas o cualquier otra cosa? Escribe a {email}. También puedes enviar comentarios desde los ajustes de la app."
+  }
+}

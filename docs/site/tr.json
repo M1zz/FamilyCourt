@@ -1,0 +1,230 @@
+{
+  "title": "Aile Mahkemesi: bütün aile için mahkeme rol oyunu",
+  "description": "Kardeşler mi kavga etti, biri sözünü mü tutmadı? Bağırmak yerine kendi aile mahkemenizi açın. Çocuk dava açar, aile yargılar. Reklam yok.",
+  "hero": {
+    "headline": "Haksızlık mı?\nAğlama, mahkemeye gidelim.",
+    "lead": "Çocuğunuz davacı olarak davayı kendisi açar, aile de hâkim ve avukat rollerini paylaşır. Her adımda bir metin sıranın kimde olduğunu ve ne söyleneceğini söyler, böylece ilk duruşma bile gerçeği gibi akar.",
+    "cta": "App Store'dan ücretsiz indirin",
+    "note": "Reklam yok, satın alma yok, kayıt yok. Her şey bu cihazda kalır."
+  },
+  "demo": {
+    "title": "Bir duruşma açın",
+    "lead": "Kısa bir dava: \"Kardeşim kumandayı vermiyor.\" Üstten kelime düzeyini değiştirin, tokmağa vurun ve zamanlayıcıyı başlatın. Ses çıkar, ses düzeyini kontrol edin.",
+    "prev": "← Geri",
+    "next": "İleri →",
+    "again": "Baştan başla",
+    "after": "Kararla birlikte tutulacak bir söz belirlenir ve uygulamada tutulunca işaretlenir. Duruşma bitince sarılıp barışmayı unutmayın 🤗",
+    "note": "Uygulamada aile üyelerinin adları, davanın ayrıntıları ve seçilen ev kuralları doğrudan metne yazılır.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Duruşma başlasın!",
+          "Duruşmanın açılışı",
+          "Duruşmanın açılışı"
+        ],
+        "text": "{judge}: \"Evimizin aile mahkemesi duruşması açılmıştır.\n'Kardeşim kumandayı vermiyor' davasını görüyoruz.\nHerkes dik otursun lütfen!\""
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser} anlatıyor",
+          "{accuser} anlatıyor",
+          "{accuser} anlatıyor"
+        ],
+        "text": "• Ne zaman, nerede, ne oldu?\n• Kendini nasıl hissettin?\n• Ne olmasını istersin?\n\n⭐ Kurallar: bağırmak yok, sadece gerçekten olanı anlat!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused} anlatıyor",
+          "{accused} anlatıyor",
+          "{accused} anlatıyor"
+        ],
+        "text": "Şimdi sıra öbür tarafta.\n• Gerçekten öyle mi oldu?\n• Neden öyle yaptın? Düşündüğünü söyle.\n\n⭐ Kurallar: sonuna kadar dinle, sözü kesme!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Son bir söz",
+          "Son bir söz (son söz hakkı)",
+          "Son söz"
+        ],
+        "text": "Sırayla herkes son sözünü söyler.\n{accuser}: \"○○ olmasını istiyorum.\"\n{accused}: \"Bundan sonra ○○ yapacağım.\""
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Karar ver",
+          "Hükmü açıkla",
+          "Hükmü açıkla"
+        ],
+        "text": "Gözlerini kapat ve on saniye iyice düşün.\nKim haklı? Hangi söz herkesin yeniden iyi geçinmesine yardım eder?\nKarar verince aşağıdan seç ve kararı açıkla."
+      }
+    ],
+    "levelLabel": "Kelime düzeyi",
+    "levels": [
+      "Kolay dil",
+      "Standart",
+      "Hukuk terimleri"
+    ],
+    "judge": [
+      "Hakem",
+      "Hakim",
+      "Mahkeme Başkanı"
+    ],
+    "accuser": [
+      "Haksızlığa uğrayan",
+      "Davacı",
+      "Davacı"
+    ],
+    "accused": [
+      "Cevap veren",
+      "Davalı",
+      "Davalı"
+    ],
+    "verdicts": [
+      [
+        "Haksızlığa uğrayan haklı",
+        "Davacı kazandı (davacı haklı)",
+        "Davacı kazandı"
+      ],
+      [
+        "Cevap veren haklı",
+        "Davalı kazandı (davalı haklı)",
+        "Davalı kazandı"
+      ],
+      [
+        "İkiniz barışın",
+        "Uzlaşma (iki taraf da biraz taviz verir)",
+        "Sulh tavsiyesi"
+      ]
+    ],
+    "start": "▶ Başlat",
+    "pause": "⏸ Durdur",
+    "gavel": "Tokmağı vur"
+  },
+  "problem": {
+    "title": "\"Önce o başladı!\" Hep hakem olmaktan yoruldunuz mu?",
+    "text": "Kavga çıkınca kararı neredeyse her zaman bir yetişkin verir. Kaybeden haksızlığa uğradığını düşünüp ağlar, kazanan da neden kazandığını tam bilmez. Aile Mahkemesi çocuklara bir sıra verir: kendi tarafını sonuna kadar anlat, öbür tarafı da sonuna kadar dinle. Karar da yalnızca cezayla değil, bir sözle biter."
+  },
+  "features": [
+    {
+      "title": "Haksızlığa uğrayan davayı kendisi açar",
+      "text": "Bir şeyi haksız bulan davacı olur ve davayı açar. Kime karşı açılacağına ve kimin hâkim olacağına davacı karar verir. Çocuklar anneyle babaya bile dava açabilir.\nBirinin ev kuralını çiğnediğini mi gördünüz? Savcı olun ve ceza davası açın. Hâkim yalnızca davacı ya da davalı olmayan biri olabilir.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Karar bir sözle biter",
+      "text": "Kararla birlikte bir söz ya da ceza belirlenir ve yerine gelince işaretlenir. Kapanan davalar ailenizin geçmiş kararları olur.\nÖnerilen cezalar zararı gidermek ve gönül almakla başlar; cezalandırmaktan çok onarmaya yakındır. Oyun ya da televizyonu kısmak en son çaredir.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Eviniz sizin, kanunlarınız da",
+      "text": "Saygı, toparlanmak ve sözünü tutmak gibi ailece kararlaştırdığınız kuralları madde olarak yazın, istediğiniz zaman ekleyip değiştirin. Dava dilekçesinde çiğnenen kanun seçilir.\n\"Mahkemeyi öğren\" bölümü hâkimin, davacının, savcının ve avukatın ne yaptığını ve duruşmanın nasıl ilerlediğini anlatır.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Üç adımda başlayın",
+    "items": [
+      {
+        "title": "Aileyi ekleyin",
+        "text": "Bir ad ve bir emoji yeter. Hesap gerekmez."
+      },
+      {
+        "title": "Dava açın",
+        "text": "Haksızlık hukuk davası, ev kuralı ihlali ceza davası olur. Sonra hâkimi seçin."
+      },
+      {
+        "title": "Duruşmayı açın",
+        "text": "Metni takip edin, süreyi zamanlayıcıyla tutun ve kararı tokmakla açıklayın."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Çocuğunuzla birlikte büyüyen kelimeler",
+    "rows": [
+      [
+        "Hakim",
+        "Kolay dil: Hakem · Hukuk terimleri: Mahkeme Başkanı"
+      ],
+      [
+        "Davacı",
+        "Kolay dil: Haksızlığa uğrayan · Hukuk terimleri: Davacı"
+      ],
+      [
+        "Davalı",
+        "Kolay dil: Cevap veren · Hukuk terimleri: Davalı"
+      ],
+      [
+        "Savcı",
+        "Kolay dil: Haber veren · Hukuk terimleri: Savcı"
+      ],
+      [
+        "Sanık",
+        "Kolay dil: Cevap veren · Hukuk terimleri: Sanık"
+      ],
+      [
+        "Avukat",
+        "Kolay dil: Yardımcı · Hukuk terimleri: Avukat"
+      ],
+      [
+        "Hukuk",
+        "Kolay dil: Haksızlık · Hukuk terimleri: Hukuk"
+      ],
+      [
+        "Ceza",
+        "Kolay dil: Söz bozma · Hukuk terimleri: Ceza"
+      ]
+    ],
+    "note": "Ayarlar'dan kelime düzeyini seçin; ekrandaki ve metindeki kelimeler hep birlikte değişir. Okul öncesi için Kolay dil, ilkokul için Standart ile başlayın."
+  },
+  "faq": {
+    "title": "Sık sorulan sorular",
+    "items": [
+      {
+        "q": "Kaç yaşından itibaren?",
+        "a": "Okumayı bilen her çocuk bir ebeveynle oynayabilir. Metin, ipuçları ve Kolay dil düzeyiyle, bir yetişkin sesli okursa daha küçükler de katılabilir."
+      },
+      {
+        "q": "Gerçekten ücretsiz mi?",
+        "a": "Evet. Reklam yok, özellik açan satın alma yok. Ayarlar'da geliştiriciyi desteklemek için isteğe bağlı bir bahşiş var; hiçbir şeyi açmaz ya da kilitlemez."
+      },
+      {
+        "q": "İnternet gerekli mi?",
+        "a": "Hayır. Duruşmalar ve kayıtlar tamamen çevrimdışı çalışır. İnternet ve iCloud girişi yalnızca Ayarlar'dan geri bildirim göndermek için gerekir."
+      },
+      {
+        "q": "Kayıtlar nerede saklanıyor?",
+        "a": "Aile, kanunlar, duruşmalar ve kararlar yalnızca cihazda saklanır, hiçbir sunucuya gönderilmez. Geliştiriciye yalnızca sizin gönderdiğiniz geri bildirimler ve sizi tanımlamayan anonim kullanım istatistikleri ulaşır."
+      },
+      {
+        "q": "Yedekleyebilir veya başka cihaza taşıyabilir miyim?",
+        "a": "Ayarlar'daki \"Kayıtları dışa aktar\" ile her şeyi bir dosyaya aktarın, diğer cihazda \"Kayıtları içe aktar\" ile her şey olduğu gibi geri gelir. Eski web sürümünün yedekleri de yüklenebilir."
+      },
+      {
+        "q": "iPad'de çalışıyor mu?",
+        "a": "Evet, hem iPhone'da hem iPad'de. Bütün aile etrafında otururken büyük ekran harikadır."
+      },
+      {
+        "q": "Cezalar çok ağır olursa?",
+        "a": "Savcı ceza istediğinde metin, cezanın çok ağır olmaması ve yerine getirilebilir olması gerektiğini hatırlatır. Öneriler onarmakla başlar: zararı gidermek, gönül almak, kendini karşı tarafın yerine koymak."
+      },
+      {
+        "q": "Her şeyi nasıl silerim?",
+        "a": "Uygulamayı silince cihazdaki tüm kayıtlar da silinir. Hiçbir şey cihazdan dışarı çıkmadığı için başka yerde de bir şey kalmaz. Gönderdiğiniz geri bildirimi sildirmek için bize e-posta yazın."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Bu akşam\nkendi aile mahkemenizi açın",
+    "cta": "App Store'dan ücretsiz indirin"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "languages": "Dil",
+    "privacy": "Gizlilik Politikası",
+    "contact": "Hata, fikir ya da başka bir şey mi var? {email} adresine yazın. Uygulamanın ayarlarından da geri bildirim gönderebilirsiniz."
+  }
+}

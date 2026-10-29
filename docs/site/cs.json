@@ -1,0 +1,230 @@
+{
+  "title": "Rodinný soud: hra na soud pro celou rodinu",
+  "description": "Hádka sourozenců nebo porušený slib? Místo křiku otevřete domácí soud. Dítě podá žalobu, rodina soudí a hájí. Bez reklam a bez nákupů.",
+  "hero": {
+    "headline": "Je to nespravedlivé?\nŽádné slzy, jde se k soudu.",
+    "lead": "Dítě samo podá žalobu jako žalobce a rodina si rozdělí role soudce a obhájce. Scénář v každém kroku napoví, kdo je na řadě a co říct, takže i první líčení běží jako skutečné.",
+    "cta": "Stáhnout zdarma v App Storu",
+    "note": "Bez reklam, nákupů a registrace. Vše zůstává v tomto zařízení."
+  },
+  "demo": {
+    "title": "Uspořádejte líčení",
+    "lead": "Krátký případ: „Brácha mi nechce dát ovladač.“ Nahoře přepněte obtížnost slov, bouchněte kladívkem a spusťte časovač. Ozve se zvuk, zkontrolujte hlasitost.",
+    "prev": "← Zpět",
+    "next": "Dál →",
+    "again": "Znovu",
+    "after": "Spolu s rozsudkem se stanoví slib a v aplikaci se odškrtne, až bude splněn. Po líčení se obejměte a usmiřte 🤗",
+    "note": "V aplikaci se jména členů rodiny, podrobnosti případu a vybraná domácí pravidla dostanou rovnou do scénáře.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Soud začíná!",
+          "Zahájení líčení",
+          "Zahájení líčení"
+        ],
+        "text": "{judge}: „Zahajuji líčení domácího rodinného soudu.\nProjednáváme případ ‚Brácha mi nechce dát ovladač‘.\nVšichni se posaďte rovně!“"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser} vypráví",
+          "{accuser} vypráví",
+          "{accuser} vypráví"
+        ],
+        "text": "• Kdy, kde a co se stalo?\n• Jak ses při tom cítil?\n• Co by sis přál?\n\n⭐ Pravidla: nekřičet, říkat jen to, co se opravdu stalo!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused} vypráví",
+          "{accused} vypráví",
+          "{accused} vypráví"
+        ],
+        "text": "Teď je na řadě druhá strana.\n• Stalo se to opravdu takhle?\n• Proč jsi to udělal? Řekni, co si myslíš.\n\n⭐ Pravidla: poslouchat až do konce, neskákat do řeči!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Pár slov na konec",
+          "Na konec (poslední slovo)",
+          "Poslední slovo"
+        ],
+        "text": "Postupně každý řekne své poslední slovo.\n{accuser}: „Přál bych si, aby ○○.“\n{accused}: „Odteď budu ○○.“"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Rozhodujeme",
+          "Vyhlášení rozsudku",
+          "Vyhlášení rozsudku"
+        ],
+        "text": "Zavři oči a deset vteřin pořádně přemýšlej.\nKdo má pravdu? Jaký slib pomůže, aby spolu zase všichni vycházeli?\nAž se rozhodneš, vyber níže a vynes rozsudek."
+      }
+    ],
+    "levelLabel": "Obtížnost slov",
+    "levels": [
+      "Jednoduchá",
+      "Standardní",
+      "Soudní"
+    ],
+    "judge": [
+      "Rozhodčí",
+      "Soudce",
+      "Předseda senátu"
+    ],
+    "accuser": [
+      "Ukřivděný",
+      "Žalobce",
+      "Žalobce"
+    ],
+    "accused": [
+      "Odpovídající",
+      "Žalovaný",
+      "Žalovaný"
+    ],
+    "verdicts": [
+      [
+        "Ukřivděný má pravdu",
+        "Žalobce vyhrál (žalobce má pravdu)",
+        "Žalobě vyhověno"
+      ],
+      [
+        "Odpovídající má pravdu",
+        "Žalovaný vyhrál (žalovaný má pravdu)",
+        "Žaloba zamítnuta"
+      ],
+      [
+        "Usmiřte se",
+        "Smír (každý trochu ustoupí)",
+        "Návrh smíru"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pauza",
+    "gavel": "Bouchnout kladívkem"
+  },
+  "problem": {
+    "title": "„On začal!“ Už vás nebaví pořád dělat rozhodčího?",
+    "text": "Když se strhne hádka, rozhodne nakonec skoro vždycky dospělý. Kdo prohraje, pláče, protože mu to přijde nespravedlivé, a kdo vyhraje, pořádně neví proč. Rodinný soud dává dětem pořadí: vyprávět celou svou stranu a druhou vyslechnout až do konce. A rozsudek končí slibem, ne jen trestem."
+  },
+  "features": [
+    {
+      "title": "Kdo se cítí ukřivděný, žaluje sám",
+      "text": "Kdo si myslí, že je něco nespravedlivé, stane se žalobcem a podá žalobu. Na koho a kdo bude soudcem, rozhoduje ten, kdo žaluje. Děti můžou zažalovat i mámu s tátou.\nViděli jste někoho porušit domácí pravidlo? Staňte se státním zástupcem a podejte trestní případ. Soudcem může být jen ten, kdo není žalobce ani žalovaný.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Rozsudek končí slibem",
+      "text": "Spolu s rozsudkem se určí slib nebo trest a odškrtne se, až bude splněn. Uzavřené případy se stávají vašimi precedenty.\nNápady na trest začínají napravením škody a usmířením, víc náprava než trestání. Omezit hry nebo televizi přichází na řadu až nakonec.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Váš dům, vaše zákony",
+      "text": "Zapište jako paragrafy pravidla, na kterých se rodina shodla, třeba respekt, uklízení a dodržování slibů, a kdykoli je doplňte nebo upravte. V žalobě se vybírá porušený zákon.\n„Poznejte soud“ vysvětluje, co dělají soudce, žalobce, státní zástupce a obhájce a jak probíhá líčení.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Začnete ve třech krocích",
+    "items": [
+      {
+        "title": "Přidejte rodinu",
+        "text": "Stačí jméno a emoji. Žádný účet."
+      },
+      {
+        "title": "Podejte případ",
+        "text": "Nespravedlnost je civilní věc, porušené domácí pravidlo trestní. Pak vyberte soudce."
+      },
+      {
+        "title": "Zahajte líčení",
+        "text": "Držte se scénáře, hlídejte čas časovačem a vyneste rozsudek kladívkem."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Slova, která rostou s dítětem",
+    "rows": [
+      [
+        "Soudce",
+        "Jednoduchá: Rozhodčí · Soudní: Předseda senátu"
+      ],
+      [
+        "Žalobce",
+        "Jednoduchá: Ukřivděný · Soudní: Žalobce"
+      ],
+      [
+        "Žalovaný",
+        "Jednoduchá: Odpovídající · Soudní: Žalovaný"
+      ],
+      [
+        "Státní zástupce",
+        "Jednoduchá: Svědek · Soudní: Státní zástupce"
+      ],
+      [
+        "Obžalovaný",
+        "Jednoduchá: Odpovídající · Soudní: Obžalovaný"
+      ],
+      [
+        "Obhájce",
+        "Jednoduchá: Pomocník · Soudní: Obhájce"
+      ],
+      [
+        "Civilní případ",
+        "Jednoduchá: Nespravedlnost · Soudní: Civilní případ"
+      ],
+      [
+        "Trestní případ",
+        "Jednoduchá: Porušený slib · Soudní: Trestní případ"
+      ]
+    ],
+    "note": "V Nastavení vyberte obtížnost slov a slova na obrazovce i ve scénáři se změní najednou. Pro předškoláky zkuste Jednoduchou, pro školáky Standardní."
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "items": [
+      {
+        "q": "Od kolika let?",
+        "a": "Každé dítě, které umí číst, si může hrát s rodičem. Se scénářem, nápovědou a obtížností Jednoduchá se zapojí i menší děti, když dospělý čte nahlas."
+      },
+      {
+        "q": "Je to opravdu zdarma?",
+        "a": "Ano. Žádné reklamy ani nákupy, které by odemykaly funkce. V Nastavení je dobrovolné spropitné pro vývojáře, které nic neodemyká ani nezamyká."
+      },
+      {
+        "q": "Potřebuji internet?",
+        "a": "Ne. Líčení i záznamy fungují úplně offline. Internet a přihlášení k iCloudu potřebujete jen k odeslání zpětné vazby z Nastavení."
+      },
+      {
+        "q": "Kde se ukládají záznamy?",
+        "a": "Rodina, zákony, líčení a rozsudky se ukládají jen v zařízení a neposílají se na žádný server. K vývojáři se dostane jen zpětná vazba, kterou sami pošlete, a anonymní statistiky používání, podle kterých vás nikdo nepozná."
+      },
+      {
+        "q": "Můžu zálohovat nebo přejít na jiné zařízení?",
+        "a": "„Uložit záznamy“ v Nastavení vše vyexportuje do souboru a „Načíst záznamy“ na druhém zařízení vše obnoví tak, jak to bylo. Načtou se i zálohy ze staré webové verze."
+      },
+      {
+        "q": "Funguje to na iPadu?",
+        "a": "Ano, na iPhonu i iPadu. Velká obrazovka je ideální, když kolem sedí celá rodina."
+      },
+      {
+        "q": "Co když budou tresty moc přísné?",
+        "a": "Když státní zástupce navrhuje trest, scénář připomene, že nemá být moc těžký a musí jít splnit. Nápady na trest začínají nápravou: napravit škodu, usmířit se, podívat se na věc očima druhého."
+      },
+      {
+        "q": "Jak všechno smažu?",
+        "a": "Když aplikaci smažete, zmizí s ní všechny záznamy v zařízení. Nic z něj nikdy neodešlo, takže nikde jinde nic nezůstane. Chcete-li smazat odeslanou zpětnou vazbu, napište nám."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Dnes večer otevřete\nsvůj rodinný soud",
+    "cta": "Stáhnout zdarma v App Storu"
+  },
+  "ui": {
+    "skip": "Přeskočit na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany osobních údajů",
+    "contact": "Chyby, nápady nebo cokoli jiného? Napište na {email}. Zpětnou vazbu můžete poslat i z nastavení aplikace."
+  }
+}

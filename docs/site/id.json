@@ -1,0 +1,230 @@
+{
+  "title": "Pengadilan Keluarga: main peran sidang untuk seisi rumah",
+  "description": "Kakak adik bertengkar atau janji dilanggar? Daripada berteriak, buka sidang keluarga. Anak menggugat, keluarga jadi hakim dan pengacara. Tanpa iklan.",
+  "hero": {
+    "headline": "Merasa tidak adil?\nJangan menangis, ayo sidang.",
+    "lead": "Anak mengajukan gugatan sendiri sebagai penggugat, keluarga berbagi peran sebagai hakim dan pengacara. Di setiap tahap ada naskah yang memberi tahu giliran siapa dan apa yang diucapkan, jadi sidang pertama pun berjalan seperti sungguhan.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Tanpa iklan, tanpa pembelian, tanpa daftar. Semua tersimpan di perangkat ini saja."
+  },
+  "demo": {
+    "title": "Coba gelar sidang",
+    "lead": "Perkara singkat: \"Adik tidak mau memberikan remote TV.\" Ganti tingkat kosakata di atas, ketuk palu, dan nyalakan timer. Ada suaranya, jadi cek volume dulu.",
+    "prev": "← Kembali",
+    "next": "Lanjut →",
+    "again": "Mulai lagi",
+    "after": "Bersama putusan, ditetapkan janji yang harus ditepati, dan di app bisa dicentang setelah dijalankan. Selesai sidang, jangan lupa berpelukan dan berbaikan 🤗",
+    "note": "Di app, nama anggota keluarga, isi perkara, dan aturan rumah yang dipilih langsung masuk ke naskah.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Mulai sidang!",
+          "Pembukaan sidang",
+          "Pembukaan sidang"
+        ],
+        "text": "{judge}: \"Sidang Pengadilan Keluarga rumah kita dibuka.\nKita memeriksa perkara 'Adik tidak mau memberikan remote TV'.\nSemua duduk yang rapi, ya!\""
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Cerita {accuser}",
+          "Cerita {accuser}",
+          "Cerita {accuser}"
+        ],
+        "text": "• Kapan, di mana, dan apa yang terjadi?\n• Waktu itu kamu merasa bagaimana?\n• Kamu ingin apa?\n\n⭐ Aturan: tidak berteriak, hanya cerita yang benar terjadi!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Cerita {accused}",
+          "Cerita {accused}",
+          "Cerita {accused}"
+        ],
+        "text": "Sekarang giliran pihak yang satunya.\n• Benarkah kejadiannya begitu?\n• Kenapa kamu melakukannya? Ceritakan pendapatmu.\n\n⭐ Aturan: dengarkan sampai selesai, jangan memotong!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Kata terakhir",
+          "Kata terakhir (pembelaan terakhir)",
+          "Pembelaan terakhir"
+        ],
+        "text": "Bergantian, setiap orang menyampaikan kata terakhir.\n{accuser}: \"Aku ingin ○○.\"\n{accused}: \"Mulai sekarang aku akan ○○.\""
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Memutuskan",
+          "Pembacaan putusan",
+          "Pembacaan putusan"
+        ],
+        "text": "Pejamkan mata dan pikirkan baik-baik selama sepuluh detik.\nSiapa yang benar? Janji apa yang bisa membuat semua akur lagi?\nKalau sudah memutuskan, pilih di bawah dan bacakan putusannya."
+      }
+    ],
+    "levelLabel": "Tingkat kosakata",
+    "levels": [
+      "Kata mudah",
+      "Standar",
+      "Istilah hukum"
+    ],
+    "judge": [
+      "Wasit",
+      "Hakim",
+      "Hakim Ketua"
+    ],
+    "accuser": [
+      "Yang Merasa Tak Adil",
+      "Penggugat",
+      "Penggugat"
+    ],
+    "accused": [
+      "Yang Menjawab",
+      "Tergugat",
+      "Tergugat"
+    ],
+    "verdicts": [
+      [
+        "Yang merasa tak adil benar",
+        "Penggugat menang (kata Penggugat benar)",
+        "Gugatan dikabulkan"
+      ],
+      [
+        "Yang menjawab benar",
+        "Tergugat menang (kata Tergugat benar)",
+        "Gugatan ditolak"
+      ],
+      [
+        "Kalian berdua berbaikan",
+        "Damai (sama-sama mengalah sedikit)",
+        "Anjuran perdamaian"
+      ]
+    ],
+    "start": "▶ Mulai",
+    "pause": "⏸ Jeda",
+    "gavel": "Ketuk palu"
+  },
+  "problem": {
+    "title": "\"Dia duluan!\" Capek selalu jadi wasit?",
+    "text": "Kalau ada pertengkaran, biasanya orang dewasa yang akhirnya memutuskan. Yang kalah menangis karena merasa tidak adil, yang menang juga tidak tahu kenapa ia menang. Pengadilan Keluarga memberi anak urutan yang jelas: ceritakan sisimu sampai habis, dengarkan sisi lain sampai selesai. Putusannya diakhiri janji, bukan sekadar hukuman."
+  },
+  "features": [
+    {
+      "title": "Yang merasa dirugikan menggugat sendiri",
+      "text": "Siapa yang merasa diperlakukan tidak adil menjadi penggugat dan mengajukan gugatan. Menggugat siapa dan siapa yang jadi hakim, penggugat yang menentukan. Anak bahkan bisa menggugat ayah dan ibu.\nMelihat ada yang melanggar aturan rumah? Jadilah jaksa dan ajukan perkara pidana. Hakim hanya boleh orang yang bukan penggugat maupun tergugat.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Putusan diakhiri dengan janji",
+      "text": "Bersama putusan ditetapkan janji atau hukuman, lalu dicentang sampai ditepati. Perkara yang selesai menjadi putusan-putusan keluarga kalian.\nSaran hukuman dimulai dari memperbaiki keadaan dan memulihkan perasaan, lebih ke memperbaiki hubungan daripada menghukum. Mengurangi waktu main game atau TV jadi pilihan terakhir.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Rumah kita, hukum kita",
+      "text": "Tulis aturan yang disepakati keluarga sebagai pasal, misalnya saling menghormati, membereskan barang, dan menepati janji, lalu tambah atau ubah kapan saja. Di gugatan, pilih pasal yang dilanggar.\nBelajar Pengadilan menjelaskan tugas hakim, penggugat, jaksa, dan pengacara, serta urutan jalannya sidang.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Tambahkan keluarga",
+        "text": "Cukup nama dan satu emoji. Tidak perlu akun."
+      },
+      {
+        "title": "Ajukan perkara",
+        "text": "Tidak adil? Perdata. Melanggar aturan rumah? Pidana. Lalu pilih hakim."
+      },
+      {
+        "title": "Buka sidang",
+        "text": "Ikuti naskah, jaga waktu dengan timer, dan bacakan putusan dengan palu."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Kata-kata yang tumbuh bersama anak",
+    "rows": [
+      [
+        "Hakim",
+        "Kata mudah: Wasit · Istilah hukum: Hakim Ketua"
+      ],
+      [
+        "Penggugat",
+        "Kata mudah: Yang Merasa Tak Adil · Istilah hukum: Penggugat"
+      ],
+      [
+        "Tergugat",
+        "Kata mudah: Yang Menjawab · Istilah hukum: Tergugat"
+      ],
+      [
+        "Jaksa",
+        "Kata mudah: Pelapor · Istilah hukum: Jaksa"
+      ],
+      [
+        "Terdakwa",
+        "Kata mudah: Yang Menjawab · Istilah hukum: Terdakwa"
+      ],
+      [
+        "Pembela",
+        "Kata mudah: Penolong · Istilah hukum: Pembela"
+      ],
+      [
+        "Perdata",
+        "Kata mudah: Tak Adil · Istilah hukum: Perdata"
+      ],
+      [
+        "Pidana",
+        "Kata mudah: Ingkar Janji · Istilah hukum: Pidana"
+      ]
+    ],
+    "note": "Pilih tingkat kosakata di Pengaturan, kata di layar dan di naskah akan berubah sekaligus. Coba Kata mudah untuk anak TK dan Standar untuk anak SD."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Mulai umur berapa?",
+        "a": "Anak yang sudah bisa membaca bisa bermain bersama orang tua. Dengan naskah, petunjuk, dan tingkat Kata mudah, anak yang lebih kecil juga bisa ikut kalau orang dewasa membacakan."
+      },
+      {
+        "q": "Benar-benar gratis?",
+        "a": "Ya. Tanpa iklan dan tanpa pembelian untuk membuka fitur. Di Pengaturan ada tip opsional untuk mendukung pengembang, yang tidak membuka maupun mengunci fitur apa pun."
+      },
+      {
+        "q": "Perlu internet?",
+        "a": "Tidak. Sidang dan catatan berjalan sepenuhnya offline. Internet dan masuk iCloud hanya diperlukan untuk mengirim masukan dari Pengaturan."
+      },
+      {
+        "q": "Catatan disimpan di mana?",
+        "a": "Data keluarga, aturan, sidang, dan putusan hanya disimpan di perangkat dan tidak dikirim ke server mana pun. Yang sampai ke pengembang hanya masukan yang kamu kirim sendiri dan statistik penggunaan anonim yang tidak mengenali dirimu."
+      },
+      {
+        "q": "Bisa dicadangkan atau dipindah ke perangkat lain?",
+        "a": "Gunakan Simpan catatan di Pengaturan untuk mengekspor semuanya ke file, lalu Muat catatan di perangkat lain, semuanya kembali seperti semula. Cadangan dari versi web lama juga bisa dimuat."
+      },
+      {
+        "q": "Bisa dipakai di iPad?",
+        "a": "Bisa, di iPhone dan iPad. Layar besar pas untuk sidang dengan seisi rumah duduk melingkar."
+      },
+      {
+        "q": "Bagaimana kalau hukumannya terlalu berat?",
+        "a": "Saat jaksa meminta hukuman, naskah mengingatkan agar tidak terlalu berat dan bisa dijalankan. Saran hukuman juga dimulai dari memperbaiki hubungan: memperbaiki keadaan, memulihkan perasaan, dan bertukar sudut pandang."
+      },
+      {
+        "q": "Saya ingin menghapus semua data.",
+        "a": "Menghapus app akan menghapus semua catatan di perangkat. Tidak ada yang pernah keluar dari perangkat, jadi tidak ada yang tersisa di tempat lain. Untuk menghapus masukan yang sudah dikirim, kirimi kami email."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Malam ini,\nbuka sidang keluarga di rumah",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada bug, ide, atau hal lain? Tulis ke {email}. Kamu juga bisa mengirim masukan dari pengaturan app."
+  }
+}

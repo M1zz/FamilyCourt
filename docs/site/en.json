@@ -1,0 +1,230 @@
+{
+  "title": "Family Court: role-play trials for families",
+  "description": "Siblings squabbling? Skip the shouting and open your family courtroom. Kids file the case, the family plays judge and counsel. No ads, no purchases.",
+  "hero": {
+    "headline": "Something unfair?\nSettle it in court, not tears.",
+    "lead": "Your child files the case as plaintiff, and the family splits the roles of judge and counsel. A script tells everyone whose turn it is and what to say, so even the first trial runs like the real thing.",
+    "cta": "Get it free on the App Store",
+    "note": "No ads, no purchases, no sign-up. Records stay on this device."
+  },
+  "demo": {
+    "title": "Hold a trial",
+    "lead": "Run a quick case: “My brother won't give me the remote.” Switch the word level at the top, strike the gavel and start the timer. It makes sound, so check your volume.",
+    "prev": "← Back",
+    "next": "Next →",
+    "again": "Start over",
+    "after": "Along with the verdict you set a promise to keep, and the app lets you tick it off once it's done. After the trial, always hug and make up 🤗",
+    "note": "In the app, your family's names, the details of the case and the house rules you picked go straight into the script.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Start the Trial!",
+          "Opening of Court",
+          "Opening of Court"
+        ],
+        "text": "{judge}: “The Family Court is now in session.\nThis is the case of ‘My brother won't give me the remote.’\nEveryone, please sit up straight!”"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "{accuser}'s Side",
+          "{accuser}'s Side",
+          "{accuser}'s Side"
+        ],
+        "text": "• When and where did it happen, and what happened?\n• How did it make you feel?\n• What would you like?\n\n⭐ Rules: no shouting, only what really happened!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "{accused}'s Side",
+          "{accused}'s Side",
+          "{accused}'s Side"
+        ],
+        "text": "Now it's the other side's turn.\n• Did it really happen that way?\n• Why did you do it? Say what you think.\n\n⭐ Rules: listen to the end, no interrupting!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Last Word",
+          "Last Word (Closing Statement)",
+          "Closing Statement"
+        ],
+        "text": "One at a time, say your last word.\n{accuser}: “I'd like ○○.”\n{accused}: “From now on, I'll ○○.”"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Decide",
+          "Verdict",
+          "Verdict"
+        ],
+        "text": "Close your eyes and think for ten seconds.\nWho is right? What promise would help everyone get along again?\nWhen you've decided, choose below and announce it."
+      }
+    ],
+    "levelLabel": "Word Level",
+    "levels": [
+      "Simple",
+      "Standard",
+      "Courtroom"
+    ],
+    "judge": [
+      "Referee",
+      "Judge",
+      "Presiding Judge"
+    ],
+    "accuser": [
+      "Upset One",
+      "Plaintiff",
+      "Plaintiff"
+    ],
+    "accused": [
+      "Answerer",
+      "Defendant",
+      "Defendant"
+    ],
+    "verdicts": [
+      [
+        "The Upset One is right",
+        "Plaintiff Wins (the Plaintiff is right)",
+        "Judgment for Plaintiff"
+      ],
+      [
+        "The Answerer is right",
+        "Defendant Wins (the Defendant is right)",
+        "Judgment for Defendant"
+      ],
+      [
+        "Make up and be friends",
+        "Settlement (both give a little)",
+        "Settlement Recommended"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pause",
+    "gavel": "Strike the gavel"
+  },
+  "problem": {
+    "title": "“They started it!” Tired of being the one who always decides?",
+    "text": "When a fight breaks out, a grown-up usually hands down the ruling. The loser cries that it's unfair, and the winner never quite knows why they won. Family Court gives kids an order to follow: tell your whole side, then hear the other side all the way through. And the verdict ends with a promise, not just a punishment."
+  },
+  "features": [
+    {
+      "title": "The one who feels wronged files the case",
+      "text": "Whoever feels something was unfair becomes the plaintiff and files the complaint. They choose who the case is against and who will be the judge. Kids can even file against Mom and Dad.\nSaw a house rule broken? Become the prosecutor and bring a criminal case. Only someone who isn't the plaintiff or the defendant can be the judge.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Verdicts end with a promise",
+      "text": "Along with the verdict, set a promise or penalty and tick it off once it's kept. Finished cases become your family's past cases.\nSuggested penalties start with making things right and mending feelings, closer to repair than punishment. Cutting games or TV comes last.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Your house, your laws",
+      "text": "Write down the rules your family agrees on, such as respect, tidying up and keeping promises, and add or change them any time. A complaint names the law that was broken.\nLearn about Court explains what judges, plaintiffs, prosecutors and defense lawyers do, and how a trial runs.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Add your family",
+        "text": "A name and an emoji is all it takes. No account needed."
+      },
+      {
+        "title": "File a case",
+        "text": "Civil if something's unfair, criminal if a house rule was broken. Then pick a judge."
+      },
+      {
+        "title": "Open the trial",
+        "text": "Follow the script, keep time with the timer and announce the verdict with the gavel."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Words that grow with your child",
+    "rows": [
+      [
+        "Judge",
+        "Simple: Referee · Courtroom: Presiding Judge"
+      ],
+      [
+        "Plaintiff",
+        "Simple: Upset One · Courtroom: Plaintiff"
+      ],
+      [
+        "Defendant",
+        "Simple: Answerer · Courtroom: Defendant"
+      ],
+      [
+        "Prosecutor",
+        "Simple: Rule Spotter · Courtroom: Prosecutor"
+      ],
+      [
+        "Defendant",
+        "Simple: Answerer · Courtroom: Defendant"
+      ],
+      [
+        "Defense Lawyer",
+        "Simple: Helper · Courtroom: Defense Lawyer"
+      ],
+      [
+        "Civil",
+        "Simple: Not Fair · Courtroom: Civil"
+      ],
+      [
+        "Criminal",
+        "Simple: Broken Promise · Courtroom: Criminal"
+      ]
+    ],
+    "note": "Pick a Word Level in Settings and the words on screen and in the script all change together. Try Simple for preschoolers and Standard for school-age kids."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "What age is it for?",
+        "a": "Any child who can read can play along with a parent. With the script, the prompts and the word level set to Simple, younger kids can join in while a grown-up reads aloud."
+      },
+      {
+        "q": "Is it really free?",
+        "a": "Yes. No ads and no purchases that unlock features. Settings has an optional tip to support the developer, but it doesn't unlock or lock anything."
+      },
+      {
+        "q": "Does it need the internet?",
+        "a": "No. Trials and records all work offline. You only need the internet and an iCloud sign-in to send feedback from Settings."
+      },
+      {
+        "q": "Where are my records stored?",
+        "a": "Family members, laws, trials and verdicts are saved only on your device and never sent to a server. All that reaches the developer is feedback you choose to send and anonymous usage statistics that can't identify you."
+      },
+      {
+        "q": "Can I back up or move my records?",
+        "a": "Use Save Records in Settings to export everything to a file, then Load Records on the other device to restore it as it was. Backups exported from the old web version load too."
+      },
+      {
+        "q": "Does it work on iPad?",
+        "a": "Yes, on both iPhone and iPad. A big screen is great for the whole family gathered round."
+      },
+      {
+        "q": "What if the penalties get too harsh?",
+        "a": "When the prosecutor asks for a penalty, the script reminds everyone to keep it light and doable. Suggested penalties start with repairing things: making it right, mending feelings, seeing it from the other side."
+      },
+      {
+        "q": "How do I delete everything?",
+        "a": "Deleting the app removes every record on the device. Nothing ever left it, so nothing is kept anywhere else. To delete feedback you sent, just email us."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Open your family courtroom\ntonight",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Bugs, ideas or anything else, write to {email}. You can also use Send Feedback in the app's Settings."
+  }
+}

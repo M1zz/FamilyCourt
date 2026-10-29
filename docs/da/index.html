@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Familieretten — retssager derhjemme for børn og familier</title>
-  <meta name="description" content="Familieretten er en iOS-app, hvor familien leger retssag derhjemme, og børn lærer om lov og retfærdighed. Alle optegnelser bliver på din enhed.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Familieretten: retssagsleg for hele familien</title>
+  <meta name="description" content="Søskende i skænderi eller et brudt løfte? I stedet for at råbe åbner I jeres egen familieret. Barnet sagsøger, familien dømmer. Ingen reklamer.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/da/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Familieretten: retssagsleg for hele familien">
+  <meta property="og:description" content="Søskende i skænderi eller et brudt løfte? I stedet for at råbe åbner I jeres egen familieret. Barnet sagsøger, familien dømmer. Ingen reklamer.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/da/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/da/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Familieretten</h1>
-    <div class="en">Uretfærdigheder afgøres i retten</div>
-    <p class="tagline">Lær om lov og retfærdighed gennem rollespil i familien – en iOS-app, hvor børn bliver dommere og advokater</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Support og sådan spiller du</a>
-      <a class="btn btn-ghost" href="privacy.html">Privatlivspolitik</a>
-    </div>
+  <a class="skip" href="#main">Spring til indhold</a>
+  <header class="bar">
+    <a class="brand" href="../da/"><img src="../icon.png" alt="" width="32" height="32">Familieretten</a>
+    <a class="lang-link" href="#languages">Sprog</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Hvad er det for en app?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Noget føles uretfærdigt</h3>
-          <p>Børn kan være <b>sagsøger</b> og indgive en stævning. En civil sag, der sætter ord på sårede følelser.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>En husregel er brudt</h3>
-          <p>Når en familieregel brydes, fører en <b>anklager</b> sagen. Dommeren afgør: skyldig, ikke skyldig eller mildhed.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Retfærdige roller til alle</h3>
-          <p>Kun en, der hverken er sagsøger eller tiltalt, kan være dommer. Alle har ret til at vælge en forsvarer.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Vores familielovbog</h3>
-          <p>Skriv jeres egne familieregler sammen, og følg hver sag fra retsmødet til dommen og løftet.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Uretfærdigt?<br>Ingen tårer, tag det i retten.</h1>
+        <p class="lead">Dit barn indgiver selv stævningen som sagsøger, og familien deler rollerne som dommer og forsvarer. Et manuskript fortæller ved hvert trin, hvis tur det er, og hvad der skal siges, så selv den første sag kører som en rigtig.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Hent gratis i App Store</a><a class="try" href="#try">Hold en retssag ↓</a></div>
+        <p class="muted small">Ingen reklamer, ingen køb, ingen tilmelding. Alt bliver på denne enhed.</p>
       </div>
+      <div class="phone"><img src="../img/da/03-trial.jpg" alt="Uretfærdigt? Ingen tårer, tag det i retten." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Sådan fungerer det</h2>
-      <ol class="steps">
-        <li>Bestem jeres <b>familielove</b> sammen, og skriv dem i lovbogen.</li>
-        <li>Indgiv en <b>civil sag</b>, hvis noget er uretfærdigt, eller en <b>straffesag</b>, når en regel er brudt.</li>
-        <li>Vælg <b>rollerne</b> som sagsøger, tiltalt, dommer og forsvarer, og åbn retsmødet.</li>
-        <li>Hør begge sider, og dommeren afsiger <b>dom</b>.</li>
-        <li>Aftal et <b>løfte</b> ud fra dommen, og sæt flueben, når det er holdt.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Hold en retssag</h2>
+      <p class="muted">En kort sag: „Min lillebror vil ikke give mig fjernbetjeningen.“ Skift ordniveau øverst, slå med hammeren, og start timeren. Der kommer lyd, så tjek lydstyrken.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Hold en retssag&quot;, &quot;lead&quot;: &quot;En kort sag: „Min lillebror vil ikke give mig fjernbetjeningen.“ Skift ordniveau øverst, slå med hammeren, og start timeren. Der kommer lyd, så tjek lydstyrken.&quot;, &quot;prev&quot;: &quot;← Tilbage&quot;, &quot;next&quot;: &quot;Næste →&quot;, &quot;again&quot;: &quot;Forfra&quot;, &quot;after&quot;: &quot;Sammen med dommen aftaler I et løfte, og i appen krydser I det af, når det er holdt. Efter sagen: kram og bliv gode venner igen 🤗&quot;, &quot;note&quot;: &quot;I appen kommer familiens navne, sagens detaljer og de husregler, I har valgt, direkte ind i manuskriptet.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Så går vi i gang!&quot;, &quot;Retten sættes&quot;, &quot;Retten sættes&quot;], &quot;text&quot;: &quot;{judge}: „Familieretten er hermed sat.\nVi behandler sagen ‚Min lillebror vil ikke give mig fjernbetjeningen‘.\nSæt jer alle sammen pænt op!“&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;Ordet har: {accuser}&quot;, &quot;Ordet har: {accuser}&quot;, &quot;Ordet har: {accuser}&quot;], &quot;text&quot;: &quot;• Hvornår og hvor skete det, og hvad skete der?\n• Hvordan havde du det?\n• Hvad kunne du tænke dig?\n\n⭐ Regler: ingen råben, kun det der faktisk skete!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;Ordet har: {accused}&quot;, &quot;Ordet har: {accused}&quot;, &quot;Ordet har: {accused}&quot;], &quot;text&quot;: &quot;Nu er det den anden sides tur.\n• Skete det virkelig sådan?\n• Hvorfor gjorde du det? Sig hvad du tænker.\n\n⭐ Regler: lyt til det sidste, ingen afbrydelser!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Det sidste ord&quot;, &quot;Sidste ord (afsluttende udtalelse)&quot;, &quot;Sidste ord&quot;], &quot;text&quot;: &quot;Én ad gangen siger alle deres sidste ord.\n{accuser}: „Jeg vil gerne have ○○.“\n{accused}: „Fra nu af vil jeg ○○.“&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Afgør&quot;, &quot;Domsafsigelse&quot;, &quot;Domsafsigelse&quot;], &quot;text&quot;: &quot;Luk øjnene og tænk dig godt om i ti sekunder.\nHvem har ret? Hvilket løfte kan få alle til at være gode venner igen?\nNår du har besluttet dig, så vælg nedenfor og afsig dommen.&quot;}], &quot;levelLabel&quot;: &quot;Ordniveau&quot;, &quot;levels&quot;: [&quot;Enkelt&quot;, &quot;Standard&quot;, &quot;Retssal&quot;], &quot;judge&quot;: [&quot;Bestemmer&quot;, &quot;Dommer&quot;, &quot;Retsformand&quot;], &quot;accuser&quot;: [&quot;Den, der klager&quot;, &quot;Sagsøger&quot;, &quot;Sagsøger&quot;], &quot;accused&quot;: [&quot;Den, der svarer&quot;, &quot;Sagsøgt&quot;, &quot;Sagsøgt&quot;], &quot;verdicts&quot;: [[&quot;Den, der klagede, har ret&quot;, &quot;Sagsøger vinder (sagsøger har ret)&quot;, &quot;Dom til sagsøger&quot;], [&quot;Den, der svarede, har ret&quot;, &quot;Sagsøgte vinder (sagsøgte har ret)&quot;, &quot;Frifindelse af sagsøgte&quot;], [&quot;I bliver gode venner igen&quot;, &quot;Forlig (begge giver lidt efter)&quot;, &quot;Forligsforslag&quot;]], &quot;start&quot;: &quot;▶ Start&quot;, &quot;pause&quot;: &quot;⏸ Pause&quot;, &quot;gavel&quot;: &quot;Slå med hammeren&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Trygt for børn</h2>
-          <p style="color:var(--muted);">Ingen tilmelding, ingen reklamer, ingen sporing. Jeres familie, lovbog og retssagsoptegnelser gemmes <b>kun på din enhed</b> og sendes ingen steder hen. Udvikleren modtager kun feedback, du vælger at sende fra Indstillinger, og anonym brugsstatistik, der ikke kan identificere nogen. Læs mere i <a href="privacy.html" style="color:var(--accent);font-weight:700;">Privatlivspolitikken</a>.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>„Det var ham, der startede!“ Træt af altid at være dommer?</h2>
+      <p>Når der er ballade, er det som regel en voksen, der afgør det. Taberen græder, fordi det føles uretfærdigt, og vinderen ved ikke rigtig hvorfor. Familieretten giver børn en rækkefølge: fortæl hele din side, og hør den anden side helt til ende. Og dommen slutter med et løfte, ikke kun en straf.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Den, der føler sig uretfærdigt behandlet, sagsøger selv</h2>
+        <p>Den, der synes, noget er uretfærdigt, bliver sagsøger og indgiver stævningen. Hvem sagen er mod, og hvem der skal være dommer, vælger den, der sagsøger. Børn kan endda sagsøge mor og far.<br>Så du nogen bryde en husregel? Bliv anklager, og rejs en straffesag. Kun en, der hverken er sagsøger eller sagsøgt, kan være dommer.</p>
       </div>
+      <div class="phone"><img src="../img/da/02-filing.jpg" alt="Den, der føler sig uretfærdigt behandlet, sagsøger selv" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Domme slutter med et løfte</h2>
+        <p>Med dommen følger et løfte eller en straf, som I krydser af, når det er klaret. Afsluttede sager bliver til jeres egne domme.<br>Forslagene til straf starter med at gøre det godt igen og hele følelser, mere reparation end straf. Mindre spil eller tv kommer sidst.</p>
+      </div>
+      <div class="phone"><img src="../img/da/04-verdict.jpg" alt="Domme slutter med et løfte" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Jeres hus, jeres love</h2>
+        <p>Skriv de regler, I er enige om, ned som paragraffer, fx respekt, oprydning og at holde løfter, og tilføj eller ret dem når som helst. I stævningen vælger I den lov, der blev brudt.<br>„Lær om retten“ forklarer, hvad dommere, sagsøgere, anklagere og forsvarere laver, og hvordan en retssag forløber.</p>
+      </div>
+      <div class="phone"><img src="../img/da/05-laws.jpg" alt="Jeres hus, jeres love" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom i gang i tre trin</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Tilføj familien</h3><p>Et navn og en emoji er nok. Ingen konto.</p></li>
+<li class="card"><span class="n">2</span><h3>Indgiv en sag</h3><p>Uretfærdigt? Civil sag. Husregel brudt? Straffesag. Vælg så en dommer.</p></li>
+<li class="card"><span class="n">3</span><h3>Sæt retten</h3><p>Følg manuskriptet, hold tiden med timeren, og afsig dommen med hammeren.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Ord, der vokser med dit barn</h2>
+      <div class="card table">
+        <dl><div><dt>Dommer</dt><dd>Enkelt: Bestemmer · Retssal: Retsformand</dd></div><div><dt>Sagsøger</dt><dd>Enkelt: Den, der klager · Retssal: Sagsøger</dd></div><div><dt>Sagsøgt</dt><dd>Enkelt: Den, der svarer · Retssal: Sagsøgt</dd></div><div><dt>Anklager</dt><dd>Enkelt: Den, der sagde det · Retssal: Anklager</dd></div><div><dt>Tiltalt</dt><dd>Enkelt: Den, der svarer · Retssal: Tiltalt</dd></div><div><dt>Forsvarer</dt><dd>Enkelt: Hjælper · Retssal: Forsvarer</dd></div><div><dt>Civil sag</dt><dd>Enkelt: Uretfærdigt · Retssal: Civil sag</dd></div><div><dt>Straffesag</dt><dd>Enkelt: Brudt regel · Retssal: Straffesag</dd></div></dl>
+      </div>
+      <p class="muted">Vælg ordniveau i Indstillinger, så skifter ordene på skærmen og i manuskriptet på én gang. Prøv Enkelt til børnehavebørn og Standard til skolebørn.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Spørgsmål og svar</h2>
+      <div class="faq"><details><summary>Hvilken alder passer det til?</summary><p>Alle børn, der kan læse, kan være med sammen med en forælder. Med manuskriptet, vejledningen og ordniveauet Enkelt kan yngre børn også være med, når en voksen læser højt.</p></details>
+<details><summary>Er det virkelig gratis?</summary><p>Ja. Ingen reklamer og ingen køb, der låser funktioner op. I Indstillinger kan man give et frivilligt drikkepenge-bidrag til udvikleren, men det låser hverken noget op eller i.</p></details>
+<details><summary>Skal man have internet?</summary><p>Nej. Retssager og arkiv virker helt offline. Kun når du sender feedback fra Indstillinger, skal du have internet og være logget ind på iCloud.</p></details>
+<details><summary>Hvor gemmes oplysningerne?</summary><p>Familie, love, retssager og domme gemmes kun på enheden og sendes ikke til nogen server. Udvikleren får kun den feedback, du selv sender, og anonym brugsstatistik, der ikke kan føres tilbage til dig.</p></details>
+<details><summary>Kan jeg tage backup eller flytte til en anden enhed?</summary><p>Brug „Gem data“ i Indstillinger til at eksportere alt til en fil, og „Hent data“ på den anden enhed, så er alt der igen præcis som før. Backups fra den gamle webversion kan også hentes.</p></details>
+<details><summary>Virker det på iPad?</summary><p>Ja, på både iPhone og iPad. En stor skærm er perfekt, når hele familien sidder rundt om.</p></details>
+<details><summary>Hvad hvis straffene bliver for hårde?</summary><p>Når anklageren beder om en straf, minder manuskriptet om, at den ikke må være for hård, men skal kunne overholdes. Forslagene starter med at reparere: gøre det godt igen, hele følelser og se det fra den andens side.</p></details>
+<details><summary>Hvordan sletter jeg alt?</summary><p>Sletter du appen, forsvinder alle sager på enheden med. Intet har forladt den, så der ligger heller intet andre steder. Vil du have slettet feedback, du har sendt, så skriv til os.</p></details></div>
+      <p class="contact">Fejl, idéer eller noget helt tredje? Skriv til <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Du kan også sende feedback fra appens indstillinger.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Sæt jeres egen familieret<br>i aften</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Hent gratis i App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <b>Dansk</b> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Forside</a> <a href="privacy.html">Privatlivspolitik</a> <a href="support.html">Support</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Familieretten (억울해요) · Kontakt: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Sprog"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da" aria-current="page">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privatlivspolitik</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

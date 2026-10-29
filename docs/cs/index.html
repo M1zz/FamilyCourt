@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodinný soud — Soudní procesy doma pro děti a rodiny</title>
-  <meta name="description" content="Rodinný soud je aplikace pro iOS, ve které si rodina doma hraje na soud a děti se učí o právu a spravedlnosti. Všechny záznamy zůstávají ve vašem zařízení.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodinný soud: hra na soud pro celou rodinu</title>
+  <meta name="description" content="Hádka sourozenců nebo porušený slib? Místo křiku otevřete domácí soud. Dítě podá žalobu, rodina soudí a hájí. Bez reklam a bez nákupů.">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/cs/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rodinný soud: hra na soud pro celou rodinu">
+  <meta property="og:description" content="Hádka sourozenců nebo porušený slib? Místo křiku otevřete domácí soud. Dítě podá žalobu, rodina soudí a hájí. Bez reklam a bez nákupů.">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>Rodinný soud</h1>
-    <div class="en">Nespravedlnost řešte soudem</div>
-    <p class="tagline">Učte se právo a spravedlnost při hře na role v rodině – aplikace pro iOS, kde se z dětí stávají soudci a právníci</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">Podpora a jak hrát</a>
-      <a class="btn btn-ghost" href="privacy.html">Zásady ochrany soukromí</a>
-    </div>
+  <a class="skip" href="#main">Přeskočit na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">Rodinný soud</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>Co je to za aplikaci?</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>Něco se zdá nespravedlivé</h3>
-          <p>Dítě může být <b>žalobcem</b> a podat žalobu. Civilní proces, který převede křivdu do slov.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>Bylo porušeno pravidlo domácnosti</h3>
-          <p>Když je porušeno rodinné pravidlo, případ předloží <b>státní zástupce</b>. Soudce rozhodne: vinen, nevinen, nebo shovívavost.</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>Spravedlivé role pro všechny</h3>
-          <p>Soudcem může být jen ten, kdo není žalobce ani obžalovaný. Každý má právo vybrat si obhájce.</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>Náš rodinný zákoník</h3>
-          <p>Společně sepište rodinná pravidla a pak sledujte každý případ od líčení přes rozsudek až po slib.</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Je to nespravedlivé?<br>Žádné slzy, jde se k soudu.</h1>
+        <p class="lead">Dítě samo podá žalobu jako žalobce a rodina si rozdělí role soudce a obhájce. Scénář v každém kroku napoví, kdo je na řadě a co říct, takže i první líčení běží jako skutečné.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">Stáhnout zdarma v App Storu</a><a class="try" href="#try">Uspořádejte líčení ↓</a></div>
+        <p class="muted small">Bez reklam, nákupů a registrace. Vše zůstává v tomto zařízení.</p>
       </div>
+      <div class="phone"><img src="../img/cs/03-trial.jpg" alt="Je to nespravedlivé? Žádné slzy, jde se k soudu." width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>Jak to funguje</h2>
-      <ol class="steps">
-        <li>Společně se dohodněte na <b>rodinných zákonech</b> a zapište je do zákoníku.</li>
-        <li>Podejte <b>civilní případ</b>, když se stala křivda, nebo <b>trestní případ</b>, když bylo porušeno pravidlo.</li>
-        <li>Rozdělte <b>role</b> žalobce, obžalovaného, soudce a obhájce a zahajte jednání.</li>
-        <li>Vyslechněte každou stranu a soudce vynese <b>rozsudek</b>.</li>
-        <li>Podle rozsudku stanovte <b>slib</b> a odškrtněte ho, až bude splněn.</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>Uspořádejte líčení</h2>
+      <p class="muted">Krátký případ: „Brácha mi nechce dát ovladač.“ Nahoře přepněte obtížnost slov, bouchněte kladívkem a spusťte časovač. Ozve se zvuk, zkontrolujte hlasitost.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Uspořádejte líčení&quot;, &quot;lead&quot;: &quot;Krátký případ: „Brácha mi nechce dát ovladač.“ Nahoře přepněte obtížnost slov, bouchněte kladívkem a spusťte časovač. Ozve se zvuk, zkontrolujte hlasitost.&quot;, &quot;prev&quot;: &quot;← Zpět&quot;, &quot;next&quot;: &quot;Dál →&quot;, &quot;again&quot;: &quot;Znovu&quot;, &quot;after&quot;: &quot;Spolu s rozsudkem se stanoví slib a v aplikaci se odškrtne, až bude splněn. Po líčení se obejměte a usmiřte 🤗&quot;, &quot;note&quot;: &quot;V aplikaci se jména členů rodiny, podrobnosti případu a vybraná domácí pravidla dostanou rovnou do scénáře.&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Soud začíná!&quot;, &quot;Zahájení líčení&quot;, &quot;Zahájení líčení&quot;], &quot;text&quot;: &quot;{judge}: „Zahajuji líčení domácího rodinného soudu.\nProjednáváme případ ‚Brácha mi nechce dát ovladač‘.\nVšichni se posaďte rovně!“&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;{accuser} vypráví&quot;, &quot;{accuser} vypráví&quot;, &quot;{accuser} vypráví&quot;], &quot;text&quot;: &quot;• Kdy, kde a co se stalo?\n• Jak ses při tom cítil?\n• Co by sis přál?\n\n⭐ Pravidla: nekřičet, říkat jen to, co se opravdu stalo!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;{accused} vypráví&quot;, &quot;{accused} vypráví&quot;, &quot;{accused} vypráví&quot;], &quot;text&quot;: &quot;Teď je na řadě druhá strana.\n• Stalo se to opravdu takhle?\n• Proč jsi to udělal? Řekni, co si myslíš.\n\n⭐ Pravidla: poslouchat až do konce, neskákat do řeči!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;Pár slov na konec&quot;, &quot;Na konec (poslední slovo)&quot;, &quot;Poslední slovo&quot;], &quot;text&quot;: &quot;Postupně každý řekne své poslední slovo.\n{accuser}: „Přál bych si, aby ○○.“\n{accused}: „Odteď budu ○○.“&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;Rozhodujeme&quot;, &quot;Vyhlášení rozsudku&quot;, &quot;Vyhlášení rozsudku&quot;], &quot;text&quot;: &quot;Zavři oči a deset vteřin pořádně přemýšlej.\nKdo má pravdu? Jaký slib pomůže, aby spolu zase všichni vycházeli?\nAž se rozhodneš, vyber níže a vynes rozsudek.&quot;}], &quot;levelLabel&quot;: &quot;Obtížnost slov&quot;, &quot;levels&quot;: [&quot;Jednoduchá&quot;, &quot;Standardní&quot;, &quot;Soudní&quot;], &quot;judge&quot;: [&quot;Rozhodčí&quot;, &quot;Soudce&quot;, &quot;Předseda senátu&quot;], &quot;accuser&quot;: [&quot;Ukřivděný&quot;, &quot;Žalobce&quot;, &quot;Žalobce&quot;], &quot;accused&quot;: [&quot;Odpovídající&quot;, &quot;Žalovaný&quot;, &quot;Žalovaný&quot;], &quot;verdicts&quot;: [[&quot;Ukřivděný má pravdu&quot;, &quot;Žalobce vyhrál (žalobce má pravdu)&quot;, &quot;Žalobě vyhověno&quot;], [&quot;Odpovídající má pravdu&quot;, &quot;Žalovaný vyhrál (žalovaný má pravdu)&quot;, &quot;Žaloba zamítnuta&quot;], [&quot;Usmiřte se&quot;, &quot;Smír (každý trochu ustoupí)&quot;, &quot;Návrh smíru&quot;]], &quot;start&quot;: &quot;▶ Start&quot;, &quot;pause&quot;: &quot;⏸ Pauza&quot;, &quot;gavel&quot;: &quot;Bouchnout kladívkem&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">Bezpečné pro děti</h2>
-          <p style="color:var(--muted);">Žádná registrace, žádné reklamy, žádné sledování. Vaše rodina, zákoník a záznamy o procesech se ukládají <b>jen ve vašem zařízení</b> a nikam se neodesílají. Vývojář dostává jen zpětnou vazbu, kterou se rozhodnete odeslat z Nastavení, a anonymní statistiky používání, podle kterých nelze nikoho identifikovat. Podrobnosti najdete v <a href="privacy.html" style="color:var(--accent);font-weight:700;">Zásadách ochrany soukromí</a>.</p>
-        </div>
+    <section class="problem reveal">
+      <h2>„On začal!“ Už vás nebaví pořád dělat rozhodčího?</h2>
+      <p>Když se strhne hádka, rozhodne nakonec skoro vždycky dospělý. Kdo prohraje, pláče, protože mu to přijde nespravedlivé, a kdo vyhraje, pořádně neví proč. Rodinný soud dává dětem pořadí: vyprávět celou svou stranu a druhou vyslechnout až do konce. A rozsudek končí slibem, ne jen trestem.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Kdo se cítí ukřivděný, žaluje sám</h2>
+        <p>Kdo si myslí, že je něco nespravedlivé, stane se žalobcem a podá žalobu. Na koho a kdo bude soudcem, rozhoduje ten, kdo žaluje. Děti můžou zažalovat i mámu s tátou.<br>Viděli jste někoho porušit domácí pravidlo? Staňte se státním zástupcem a podejte trestní případ. Soudcem může být jen ten, kdo není žalobce ani žalovaný.</p>
       </div>
+      <div class="phone"><img src="../img/cs/02-filing.jpg" alt="Kdo se cítí ukřivděný, žaluje sám" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Rozsudek končí slibem</h2>
+        <p>Spolu s rozsudkem se určí slib nebo trest a odškrtne se, až bude splněn. Uzavřené případy se stávají vašimi precedenty.<br>Nápady na trest začínají napravením škody a usmířením, víc náprava než trestání. Omezit hry nebo televizi přichází na řadu až nakonec.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/04-verdict.jpg" alt="Rozsudek končí slibem" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Váš dům, vaše zákony</h2>
+        <p>Zapište jako paragrafy pravidla, na kterých se rodina shodla, třeba respekt, uklízení a dodržování slibů, a kdykoli je doplňte nebo upravte. V žalobě se vybírá porušený zákon.<br>„Poznejte soud“ vysvětluje, co dělají soudce, žalobce, státní zástupce a obhájce a jak probíhá líčení.</p>
+      </div>
+      <div class="phone"><img src="../img/cs/05-laws.jpg" alt="Váš dům, vaše zákony" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Začnete ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Přidejte rodinu</h3><p>Stačí jméno a emoji. Žádný účet.</p></li>
+<li class="card"><span class="n">2</span><h3>Podejte případ</h3><p>Nespravedlnost je civilní věc, porušené domácí pravidlo trestní. Pak vyberte soudce.</p></li>
+<li class="card"><span class="n">3</span><h3>Zahajte líčení</h3><p>Držte se scénáře, hlídejte čas časovačem a vyneste rozsudek kladívkem.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Slova, která rostou s dítětem</h2>
+      <div class="card table">
+        <dl><div><dt>Soudce</dt><dd>Jednoduchá: Rozhodčí · Soudní: Předseda senátu</dd></div><div><dt>Žalobce</dt><dd>Jednoduchá: Ukřivděný · Soudní: Žalobce</dd></div><div><dt>Žalovaný</dt><dd>Jednoduchá: Odpovídající · Soudní: Žalovaný</dd></div><div><dt>Státní zástupce</dt><dd>Jednoduchá: Svědek · Soudní: Státní zástupce</dd></div><div><dt>Obžalovaný</dt><dd>Jednoduchá: Odpovídající · Soudní: Obžalovaný</dd></div><div><dt>Obhájce</dt><dd>Jednoduchá: Pomocník · Soudní: Obhájce</dd></div><div><dt>Civilní případ</dt><dd>Jednoduchá: Nespravedlnost · Soudní: Civilní případ</dd></div><div><dt>Trestní případ</dt><dd>Jednoduchá: Porušený slib · Soudní: Trestní případ</dd></div></dl>
+      </div>
+      <p class="muted">V Nastavení vyberte obtížnost slov a slova na obrazovce i ve scénáři se změní najednou. Pro předškoláky zkuste Jednoduchou, pro školáky Standardní.</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>Časté otázky</h2>
+      <div class="faq"><details><summary>Od kolika let?</summary><p>Každé dítě, které umí číst, si může hrát s rodičem. Se scénářem, nápovědou a obtížností Jednoduchá se zapojí i menší děti, když dospělý čte nahlas.</p></details>
+<details><summary>Je to opravdu zdarma?</summary><p>Ano. Žádné reklamy ani nákupy, které by odemykaly funkce. V Nastavení je dobrovolné spropitné pro vývojáře, které nic neodemyká ani nezamyká.</p></details>
+<details><summary>Potřebuji internet?</summary><p>Ne. Líčení i záznamy fungují úplně offline. Internet a přihlášení k iCloudu potřebujete jen k odeslání zpětné vazby z Nastavení.</p></details>
+<details><summary>Kde se ukládají záznamy?</summary><p>Rodina, zákony, líčení a rozsudky se ukládají jen v zařízení a neposílají se na žádný server. K vývojáři se dostane jen zpětná vazba, kterou sami pošlete, a anonymní statistiky používání, podle kterých vás nikdo nepozná.</p></details>
+<details><summary>Můžu zálohovat nebo přejít na jiné zařízení?</summary><p>„Uložit záznamy“ v Nastavení vše vyexportuje do souboru a „Načíst záznamy“ na druhém zařízení vše obnoví tak, jak to bylo. Načtou se i zálohy ze staré webové verze.</p></details>
+<details><summary>Funguje to na iPadu?</summary><p>Ano, na iPhonu i iPadu. Velká obrazovka je ideální, když kolem sedí celá rodina.</p></details>
+<details><summary>Co když budou tresty moc přísné?</summary><p>Když státní zástupce navrhuje trest, scénář připomene, že nemá být moc těžký a musí jít splnit. Nápady na trest začínají nápravou: napravit škodu, usmířit se, podívat se na věc očima druhého.</p></details>
+<details><summary>Jak všechno smažu?</summary><p>Když aplikaci smažete, zmizí s ní všechny záznamy v zařízení. Nic z něj nikdy neodešlo, takže nikde jinde nic nezůstane. Chcete-li smazat odeslanou zpětnou vazbu, napište nám.</p></details></div>
+      <p class="contact">Chyby, nápady nebo cokoli jiného? Napište na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>. Zpětnou vazbu můžete poslat i z nastavení aplikace.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Dnes večer otevřete<br>svůj rodinný soud</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">Stáhnout zdarma v App Storu</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <b>Čeština</b> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">Domů</a> <a href="privacy.html">Zásady ochrany soukromí</a> <a href="support.html">Podpora</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 Rodinný soud (억울해요) · Kontakt: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany osobních údajů</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

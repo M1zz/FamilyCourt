@@ -1,0 +1,51 @@
+/* 억울해요 웹 체험. 법정 무대는 앱의 금빛 키 색, 의사봉은 앱처럼 둥근 버튼. */
+.demo-card { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--s5); align-items: start; }
+
+.ct-stage { background: var(--bg); border-radius: var(--r-inner); padding: var(--s5); min-height: 100%; }
+.ct-levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; padding: 2px; border-radius: 12px;
+             background: var(--line); margin-bottom: var(--s5); }
+.ct-levels button { min-height: 44px; font: inherit; font-size: .9375rem; font-weight: 600; border: 0; border-radius: 10px;
+                    cursor: pointer; color: var(--muted); background: transparent; transition: background .2s var(--ease), color .2s var(--ease); }
+.ct-levels button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgb(0 0 0 / .12); }
+
+.ct-dots { list-style: none; display: flex; gap: var(--s2); padding: 0; margin: 0 0 var(--s4); }
+.ct-dots li { width: 8px; height: 8px; border-radius: 50%; background: var(--line); transition: background .25s var(--ease), transform .25s var(--ease); }
+.ct-dots li.done { background: color-mix(in srgb, var(--accent) 45%, transparent); }
+.ct-dots li.on { background: var(--accent); transform: scale(1.4); }
+.ct-role { display: inline-block; font-size: .875rem; font-weight: 600; color: var(--accent); margin-bottom: var(--s2);
+           background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 2px var(--s3); border-radius: 999px; }
+.ct-title { font-size: 1.375rem; margin-bottom: var(--s3); }
+.ct-script { white-space: pre-line; margin: 0; background: var(--surface); border-radius: 12px; padding: var(--s4); line-height: 1.7; }
+
+.ct-panel { display: grid; gap: var(--s3); align-content: start; }
+.ct-timer { display: flex; align-items: center; justify-content: space-between; gap: var(--s3);
+            background: var(--bg); border-radius: 12px; padding: var(--s3) var(--s4); }
+.ct-timer[hidden], .ct-verdicts[hidden], .ct-gavel[hidden] { display: none; }
+.ct-clock { font-size: 2.5rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.ct-clock.warn { color: #D70015; }
+@media (prefers-color-scheme: dark) { .ct-clock.warn { color: #FF6961; } }
+
+.ct-btn { min-height: 44px; padding: 0 var(--s4); font: inherit; font-weight: 600; border-radius: 999px; cursor: pointer;
+          color: var(--text); background: var(--bg); border: 0; transition: transform .15s var(--ease), filter .15s var(--ease); }
+.ct-btn.primary { background: var(--accent); color: var(--on-accent); }
+.ct-btn:active { transform: scale(.96); }
+.ct-btn:disabled { opacity: .4; cursor: default; }
+.ct-nav { display: flex; justify-content: space-between; gap: var(--s3); }
+.ct-nav .ct-btn { flex: 1; }
+
+.ct-verdicts { display: grid; gap: var(--s2); }
+.ct-verdicts button { min-height: 48px; text-align: start; padding: var(--s2) var(--s4); font: inherit; font-weight: 600; cursor: pointer;
+                      color: var(--text); background: var(--bg); border: 0; border-radius: 12px; box-shadow: inset 0 0 0 2px transparent;
+                      transition: box-shadow .2s var(--ease); }
+.ct-verdicts button:hover { box-shadow: inset 0 0 0 2px var(--line); }
+.ct-verdicts button[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--accent); }
+
+.ct-gavel { justify-self: center; display: grid; justify-items: center; gap: var(--s1); font: inherit; font-size: .875rem; font-weight: 600;
+            color: var(--muted); background: none; border: 0; cursor: pointer; padding: var(--s2); }
+.ct-gavel span:first-child { display: grid; place-items: center; width: 88px; height: 88px; border-radius: 50%; font-size: 2.5rem;
+                             background: color-mix(in srgb, var(--accent) 16%, var(--bg)); transition: transform .12s var(--ease); }
+.ct-gavel:active span:first-child { transform: scale(.9) rotate(-12deg); }
+.ct-after { margin: 0; min-height: 1em; }
+
+@media (prefers-reduced-motion: reduce) { .ct-gavel span:first-child, .ct-dots li, .ct-btn { transition: none; } }
+@media (max-width: 760px) { .demo-card { grid-template-columns: 1fr; } }

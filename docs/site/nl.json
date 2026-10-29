@@ -1,0 +1,230 @@
+{
+  "title": "Familierechtbank: rechtszaak-rollenspel voor het hele gezin",
+  "description": "Ruzie tussen broers en zussen of een gebroken belofte? In plaats van schreeuwen open je jullie eigen rechtbank. Geen advertenties, geen aankopen.",
+  "hero": {
+    "headline": "Oneerlijk?\nGeen tranen, gewoon naar de rechter.",
+    "lead": "Je kind dient zelf als eiser de klacht in, en het gezin verdeelt de rollen van rechter en advocaat. Bij elke stap vertelt een script wie aan de beurt is en wat die zegt, dus ook de eerste zaak loopt als een echte.",
+    "cta": "Gratis in de App Store",
+    "note": "Geen advertenties, geen aankopen, geen account. Alles blijft op dit apparaat."
+  },
+  "demo": {
+    "title": "Houd een rechtszaak",
+    "lead": "Een korte zaak: ‘Mijn broertje geeft de afstandsbediening niet.’ Wissel bovenaan het woordniveau, sla met de hamer en start de timer. Er komt geluid uit, dus let op het volume.",
+    "prev": "← Terug",
+    "next": "Volgende →",
+    "again": "Opnieuw",
+    "after": "Bij het vonnis spreek je een belofte af, en in de app vink je die af zodra ze is nagekomen. Na de zaak: knuffelen en het goedmaken 🤗",
+    "note": "In de app komen de namen van je gezin, de details van de zaak en de gekozen huisregels gewoon in het script.",
+    "steps": [
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Daar gaan we!",
+          "Opening van de zitting",
+          "Opening van de zitting"
+        ],
+        "text": "{judge}: ‘De familierechtbank is geopend.\nWe behandelen de zaak “Mijn broertje geeft de afstandsbediening niet”.\nIedereen netjes rechtop zitten!’"
+      },
+      {
+        "role": "🙋 {accuser}",
+        "title": [
+          "Aan het woord: {accuser}",
+          "Aan het woord: {accuser}",
+          "Aan het woord: {accuser}"
+        ],
+        "text": "• Wanneer en waar gebeurde het, en wat precies?\n• Hoe voelde je je?\n• Wat zou je graag willen?\n\n⭐ Regels: niet schreeuwen, alleen zeggen wat echt gebeurde!"
+      },
+      {
+        "role": "🙇 {accused}",
+        "title": [
+          "Aan het woord: {accused}",
+          "Aan het woord: {accused}",
+          "Aan het woord: {accused}"
+        ],
+        "text": "Nu is de andere kant aan de beurt.\n• Is het echt zo gegaan?\n• Waarom deed je het? Zeg wat je denkt.\n\n⭐ Regels: luister tot het einde, niet onderbreken!"
+      },
+      {
+        "role": "🙋 {accuser} → 🙇 {accused}",
+        "title": [
+          "Het laatste woord",
+          "Laatste woord (slotverklaring)",
+          "Laatste woord"
+        ],
+        "text": "Om de beurt zegt iedereen een laatste woord.\n{accuser}: ‘Ik wil graag ○○.’\n{accused}: ‘Vanaf nu ga ik ○○.’"
+      },
+      {
+        "role": "👨‍⚖️ {judge}",
+        "title": [
+          "Beslissen",
+          "Uitspraak",
+          "Uitspraak"
+        ],
+        "text": "Doe je ogen dicht en denk tien seconden goed na.\nWie heeft gelijk? Welke belofte helpt om weer goed met elkaar om te gaan?\nBesloten? Kies hieronder en spreek het vonnis uit."
+      }
+    ],
+    "levelLabel": "Woordniveau",
+    "levels": [
+      "Makkelijk",
+      "Standaard",
+      "Rechtszaal"
+    ],
+    "judge": [
+      "Scheidsrechter",
+      "Rechter",
+      "Voorzitter"
+    ],
+    "accuser": [
+      "Wie het oneerlijk vindt",
+      "Eiser",
+      "Eiser"
+    ],
+    "accused": [
+      "Wie antwoordt",
+      "Gedaagde",
+      "Gedaagde"
+    ],
+    "verdicts": [
+      [
+        "Wie het oneerlijk vond, heeft gelijk",
+        "Eiser wint (de eiser heeft gelijk)",
+        "Vordering toegewezen"
+      ],
+      [
+        "Wie antwoordde, heeft gelijk",
+        "Gedaagde wint (de gedaagde heeft gelijk)",
+        "Vordering afgewezen"
+      ],
+      [
+        "Jullie maken het weer goed",
+        "Schikking (allebei een beetje toegeven)",
+        "Schikkingsvoorstel"
+      ]
+    ],
+    "start": "▶ Start",
+    "pause": "⏸ Pauze",
+    "gavel": "Met de hamer slaan"
+  },
+  "problem": {
+    "title": "‘Hij begon!’ Moe van altijd de scheidsrechter zijn?",
+    "text": "Bij ruzie beslist uiteindelijk meestal een volwassene. Wie verliest, huilt omdat het oneerlijk voelt, en wie wint weet niet goed waarom. Familierechtbank geeft kinderen een volgorde: vertel je hele kant en luister de andere kant helemaal uit. En het vonnis eindigt met een belofte, niet alleen met straf."
+  },
+  "features": [
+    {
+      "title": "Wie zich onrecht voelt aangedaan, dient zelf de klacht in",
+      "text": "Wie iets oneerlijk vindt, wordt eiser en dient de klacht in. Tegen wie, en wie rechter wordt, kiest de indiener zelf. Kinderen kunnen zelfs papa en mama aanklagen.\nZag je dat iemand een huisregel brak? Word officier van justitie en breng een strafzaak aan. Rechter kan alleen iemand zijn die geen eiser of gedaagde is.",
+      "shot": "02-filing"
+    },
+    {
+      "title": "Vonnissen eindigen met een belofte",
+      "text": "Bij het vonnis hoort een belofte of straf, en je vinkt die af zodra ze is nagekomen. Afgeronde zaken worden jullie eigen uitspraken.\nDe strafideeën beginnen bij het goedmaken en gevoelens herstellen, meer herstel dan straf. Minder gamen of tv komt pas als laatste.",
+      "shot": "04-verdict"
+    },
+    {
+      "title": "Jullie huis, jullie wetten",
+      "text": "Schrijf de regels waar jullie het over eens zijn op als artikelen, zoals respect, opruimen en beloftes nakomen, en vul ze aan of pas ze aan wanneer je wilt. In de klacht kies je welke wet is gebroken.\n‘Leer de rechtbank kennen’ legt uit wat rechters, eisers, officieren en advocaten doen en hoe een rechtszaak verloopt.",
+      "shot": "05-laws"
+    }
+  ],
+  "steps": {
+    "title": "In drie stappen aan de slag",
+    "items": [
+      {
+        "title": "Voeg je gezin toe",
+        "text": "Een naam en een emoji is genoeg. Geen account nodig."
+      },
+      {
+        "title": "Dien een zaak in",
+        "text": "Oneerlijk? Civiele zaak. Huisregel gebroken? Strafzaak. Kies daarna een rechter."
+      },
+      {
+        "title": "Open de zitting",
+        "text": "Volg het script, houd de tijd bij met de timer en spreek het vonnis uit met de hamer."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Woorden die meegroeien met je kind",
+    "rows": [
+      [
+        "Rechter",
+        "Makkelijk: Scheidsrechter · Rechtszaal: Voorzitter"
+      ],
+      [
+        "Eiser",
+        "Makkelijk: Wie het oneerlijk vindt · Rechtszaal: Eiser"
+      ],
+      [
+        "Gedaagde",
+        "Makkelijk: Wie antwoordt · Rechtszaal: Gedaagde"
+      ],
+      [
+        "Aanklager",
+        "Makkelijk: Melder · Rechtszaal: Aanklager"
+      ],
+      [
+        "Verdachte",
+        "Makkelijk: Wie antwoordt · Rechtszaal: Verdachte"
+      ],
+      [
+        "Advocaat",
+        "Makkelijk: Helper · Rechtszaal: Advocaat"
+      ],
+      [
+        "Civiele zaak",
+        "Makkelijk: Oneerlijk · Rechtszaal: Civiele zaak"
+      ],
+      [
+        "Strafzaak",
+        "Makkelijk: Regel gebroken · Rechtszaal: Strafzaak"
+      ]
+    ],
+    "note": "Kies het woordniveau in Instellingen, dan veranderen de woorden op het scherm en in het script tegelijk. Probeer Makkelijk voor kleuters en Standaard voor schoolkinderen."
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      {
+        "q": "Vanaf welke leeftijd?",
+        "a": "Elk kind dat kan lezen speelt mee met een ouder. Met het script, de aanwijzingen en het woordniveau op Makkelijk doen ook jongere kinderen mee als een volwassene voorleest."
+      },
+      {
+        "q": "Is het echt gratis?",
+        "a": "Ja. Geen advertenties en geen aankopen die functies ontgrendelen. In Instellingen staat een vrijwillige fooi voor de ontwikkelaar, maar die ontgrendelt of vergrendelt niets."
+      },
+      {
+        "q": "Is internet nodig?",
+        "a": "Nee. Zittingen en dossiers werken volledig offline. Alleen om feedback te sturen vanuit Instellingen heb je internet en een iCloud-login nodig."
+      },
+      {
+        "q": "Waar worden de gegevens bewaard?",
+        "a": "Gezin, wetten, zittingen en vonnissen staan alleen op het apparaat en gaan naar geen enkele server. De ontwikkelaar krijgt alleen feedback die je zelf stuurt en anonieme gebruiksstatistieken die niet naar jou te herleiden zijn."
+      },
+      {
+        "q": "Kan ik een back-up maken of overzetten?",
+        "a": "Met ‘Gegevens bewaren’ in Instellingen exporteer je alles naar een bestand, en met ‘Gegevens laden’ op het andere apparaat staat alles er weer precies zo. Ook back-ups uit de oude webversie laden gewoon."
+      },
+      {
+        "q": "Werkt het op de iPad?",
+        "a": "Ja, op iPhone en iPad. Een groot scherm is ideaal als het hele gezin eromheen zit."
+      },
+      {
+        "q": "En als de straffen te zwaar worden?",
+        "a": "Als de officier een straf eist, herinnert het script iedereen eraan: niet te zwaar, maar haalbaar. De strafideeën beginnen bij herstel: het goedmaken, gevoelens herstellen en je in de ander verplaatsen."
+      },
+      {
+        "q": "Hoe verwijder ik alles?",
+        "a": "Verwijder je de app, dan verdwijnen alle dossiers op het apparaat mee. Er is nooit iets naar buiten gegaan, dus er blijft ook nergens iets over. Wil je verstuurde feedback laten wissen, stuur ons dan een mail."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Open vanavond\njullie eigen rechtbank",
+    "cta": "Gratis in de App Store"
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "languages": "Taal",
+    "privacy": "Privacybeleid",
+    "contact": "Bugs, ideeën of iets anders? Mail naar {email}. Je kunt ook feedback sturen via de instellingen van de app."
+  }
+}

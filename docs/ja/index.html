@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ファミリーコート — 家族で遊ぶおうち裁判</title>
-  <meta name="description" content="ファミリーコートは、家族でおうち裁判ごっこを楽しみながら、子どもが法律と公平さを学べるiOSアプリです。記録はすべてお使いの端末の中に保存されます。">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ファミリーコート：家族でする裁判ごっこ</title>
+  <meta name="description" content="きょうだいげんかや約束やぶりのとき、怒鳴るかわりにわが家の法廷を開きましょう。子どもが原告になり、家族が裁判官と弁護人を担当。広告も課金もありません。">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/ja/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ファミリーコート：家族でする裁判ごっこ">
+  <meta property="og:description" content="きょうだいげんかや約束やぶりのとき、怒鳴るかわりにわが家の法廷を開きましょう。子どもが原告になり、家族が裁判官と弁護人を担当。広告も課金もありません。">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/ja/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>ファミリーコート</h1>
-    <div class="en">不公平なことは、裁判で解決しよう</div>
-    <p class="tagline">家族の役割ごっこで法律と公平さを学ぶ、子どもが裁判官や弁護士になれるiOSアプリ</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">サポートと遊び方</a>
-      <a class="btn btn-ghost" href="privacy.html">プライバシーポリシー</a>
-    </div>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/"><img src="../icon.png" alt="" width="32" height="32">ファミリーコート</a>
+    <a class="lang-link" href="#languages">言語</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>このアプリについて</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>「ずるい！」と思ったとき</h3>
-          <p>子どもが<b>原告</b>になって訴状を出せます。もやもやした気持ちを言葉にする民事裁判です。</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>家のルールを破ったとき</h3>
-          <p>家のルールが破られたら、<b>検察官</b>が事件を提起します。裁判官は有罪・無罪・情状酌量から判断します。</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>みんなが公平な役割で</h3>
-          <p>裁判官になれるのは、原告でも被告でもない人だけ。弁護人を選ぶ権利もみんなにあります。</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>わが家の法律書</h3>
-          <p>家族でルールを決めて書きとめ、裁判から判決、約束まで事件を最後まで見届けます。</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>くやしいことは、<br>泣かずに裁判で</h1>
+        <p class="lead">子どもが自分で原告になって訴状を出し、家族が裁判官や弁護人を分担します。段階ごとに、誰が何を話す番かをせりふで案内するので、はじめてでも本物の裁判のように進みます。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">App Storeで無料ダウンロード</a><a class="try" href="#try">裁判を開いてみよう ↓</a></div>
+        <p class="muted small">広告も課金も登録もありません。記録はこの端末の中だけに残ります。</p>
       </div>
+      <div class="phone"><img src="../img/ja/03-trial.jpg" alt="くやしいことは、 泣かずに裁判で" width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>遊び方</h2>
-      <ol class="steps">
-        <li>まず家族で<b>家の法律</b>を決めて、法律書に書きます。</li>
-        <li>不公平なことがあれば<b>民事事件</b>、ルール違反があれば<b>刑事事件</b>を提起します。</li>
-        <li>原告・被告・裁判官・弁護人の<b>役割</b>を決めて、開廷します。</li>
-        <li>それぞれの言い分を聞いたら、裁判官が<b>判決</b>を言い渡します。</li>
-        <li>判決をもとに<b>約束</b>を決め、守れたらチェックします。</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>裁判を開いてみよう</h2>
+      <p class="muted">「弟がリモコンを貸してくれない」事件を短く開いてみましょう。上でことばのレベルを切り替えたり、木槌をたたいたり、タイマーを動かしたりしてみてください。音が出るので音量にご注意を。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;裁判を開いてみよう&quot;, &quot;lead&quot;: &quot;「弟がリモコンを貸してくれない」事件を短く開いてみましょう。上でことばのレベルを切り替えたり、木槌をたたいたり、タイマーを動かしたりしてみてください。音が出るので音量にご注意を。&quot;, &quot;prev&quot;: &quot;← もどる&quot;, &quot;next&quot;: &quot;つぎへ →&quot;, &quot;again&quot;: &quot;はじめから&quot;, &quot;after&quot;: &quot;判決といっしょに守る約束を決めると、守れたかどうかをアプリで最後までチェックできます。裁判が終わったら、かならずハグして仲直り 🤗&quot;, &quot;note&quot;: &quot;アプリでは、家族の名前や事件の内容、選んだわが家の法律がそのまませりふに入ります。&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;裁判スタート！&quot;, &quot;開廷の宣言&quot;, &quot;開廷の宣言&quot;], &quot;text&quot;: &quot;{judge}：「ただいまより、わが家の家庭裁判所の裁判を始めます。\n『弟がリモコンを貸してくれない』事件です。\nみなさん、姿勢を正してください！」&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;{accuser}の言い分&quot;, &quot;{accuser}の言い分&quot;, &quot;{accuser}の言い分&quot;], &quot;text&quot;: &quot;・いつ、どこで、何があった？\n・どんな気持ちになった？\n・どうしてほしい？\n\n⭐ ルール：大声を出さない、本当のことだけ話す！&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;{accused}の言い分&quot;, &quot;{accused}の言い分&quot;, &quot;{accused}の言い分&quot;], &quot;text&quot;: &quot;今度はこちらの番です。\n・本当にそんなことがあった？\n・どうしてそうしたの？自分の考えを話そう。\n\n⭐ ルール：最後まで聞いて、口をはさまない！&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;さいごのひとこと&quot;, &quot;最後のひとこと（最終陳述）&quot;, &quot;最終陳述&quot;], &quot;text&quot;: &quot;ひとりずつ、最後に言いたいことを話します。\n{accuser}：「わたしは○○してほしいです。」\n{accused}：「これからは○○します。」&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;きめよう&quot;, &quot;判決の言いわたし&quot;, &quot;判決の言いわたし&quot;], &quot;text&quot;: &quot;目を閉じて10秒、じっくり考えます。\nどっちの言い分が正しい？どんな約束をしたら、また仲よくできる？\n決まったら、下から選んで言いわたそう。&quot;}], &quot;levelLabel&quot;: &quot;ことばのレベル&quot;, &quot;levels&quot;: [&quot;やさしいことば&quot;, &quot;ふつう&quot;, &quot;法廷用語&quot;], &quot;judge&quot;: [&quot;しんぱん&quot;, &quot;裁判官&quot;, &quot;裁判長&quot;], &quot;accuser&quot;: [&quot;くやしい思いをした人&quot;, &quot;原告&quot;, &quot;原告&quot;], &quot;accused&quot;: [&quot;こたえる人&quot;, &quot;被告&quot;, &quot;被告&quot;], &quot;verdicts&quot;: [[&quot;くやしい思いをした人が正しい&quot;, &quot;原告勝訴（原告の言うとおり）&quot;, &quot;原告勝訴&quot;], [&quot;こたえた人が正しい&quot;, &quot;被告勝訴（被告の言うとおり）&quot;, &quot;被告勝訴&quot;], [&quot;ふたりでなかよくしよう&quot;, &quot;和解（どちらも少しずつゆずる）&quot;, &quot;和解勧告&quot;]], &quot;start&quot;: &quot;▶ スタート&quot;, &quot;pause&quot;: &quot;⏸ ストップ&quot;, &quot;gavel&quot;: &quot;木槌をたたく&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">子どもも安心</h2>
-          <p style="color:var(--muted);">会員登録も広告も、追跡もありません。家族の情報、法律書、裁判の記録は<b>お使いの端末の中だけ</b>に保存され、外部には送られません。開発者に届くのは、設定からご自身で送ったご意見と、個人を特定できない匿名の利用統計だけです。詳しくは<a href="privacy.html" style="color:var(--accent);font-weight:700;">プライバシーポリシー</a>をご覧ください。</p>
-        </div>
+    <section class="problem reveal">
+      <h2>「先にやったのはあっち！」毎回どっちが正しいか決めるの、疲れませんか？</h2>
+      <p>けんかが起きると、結局は大人が判決を出し、負けた子はくやしくて泣き、勝った子はなぜ勝ったのかわからないまま。ファミリーコートは、自分の言い分を最後まで話し、相手の言い分も最後まで聞く順番を子どもに渡します。判決は罰より約束で終わります。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>くやしい人が自分で訴えます</h2>
+        <p>くやしいことがあったら、その人が原告になって訴状を出します。誰を訴えるか、誰が裁判官をするかも、訴える人が決めます。子どもがお父さんお母さんを訴えることもできます。<br>わが家の法律がやぶられたのを見たら、検察官になって刑事裁判にかけることも。裁判官は原告と被告以外の人しかなれません。</p>
       </div>
+      <div class="phone"><img src="../img/ja/02-filing.jpg" alt="くやしい人が自分で訴えます" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>罰より約束で終わります</h2>
+        <p>判決といっしょに守る約束や罰を決め、守れたかどうかを最後までチェックします。終わった事件はわが家の判例として積み重なります。<br>おすすめの罰は「元にもどす」「気持ちを返す」のように、罰するより関係を取りもどすものから表示。ゲームやテレビを減らすのは最後の手段です。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/04-verdict.jpg" alt="罰より約束で終わります" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>わが家の法律はわが家で決める</h2>
+        <p>思いやり、片づけ、約束など、家族で決めたルールを条文にして書いておき、いつでも追加・修正できます。訴状には、やぶられた法律を選んで書きます。<br>「裁判所を学ぼう」では、裁判官・原告・検察官・弁護人の役目と裁判の流れを学べます。</p>
+      </div>
+      <div class="phone"><img src="../img/ja/05-laws.jpg" alt="わが家の法律はわが家で決める" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>始めるのは3ステップ</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>家族を登録</h3><p>名前と絵文字だけでOK。アカウントはいりません。</p></li>
+<li class="card"><span class="n">2</span><h3>事件を受けつける</h3><p>くやしいことは民事、わが家の法律違反は刑事で受けつけて、裁判官を選びます。</p></li>
+<li class="card"><span class="n">3</span><h3>裁判を開く</h3><p>せりふをなぞり、タイマーで時間を守り、木槌で判決を言いわたします。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>子どもの年に合わせて変わることば</h2>
+      <div class="card table">
+        <dl><div><dt>裁判官</dt><dd>やさしいことば: しんぱん · 法廷用語: 裁判長</dd></div><div><dt>原告</dt><dd>やさしいことば: くやしい思いをした人 · 法廷用語: 原告</dd></div><div><dt>被告</dt><dd>やさしいことば: こたえる人 · 法廷用語: 被告</dd></div><div><dt>検察官</dt><dd>やさしいことば: しらせた人 · 法廷用語: 検察官</dd></div><div><dt>被告人</dt><dd>やさしいことば: こたえる人 · 法廷用語: 被告人</dd></div><div><dt>弁護人</dt><dd>やさしいことば: たすける人 · 法廷用語: 弁護人</dd></div><div><dt>民事</dt><dd>やさしいことば: もやもや · 法廷用語: 民事</dd></div><div><dt>刑事</dt><dd>やさしいことば: やくそくやぶり · 法廷用語: 刑事</dd></div></dl>
+      </div>
+      <p class="muted">設定の「ことばのレベル」で選ぶと、画面とせりふのことばがまとめて切り替わります。幼稚園児は「やさしいことば」、小学生は「ふつう」から試してみてください。</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>何歳から使えますか？</summary><p>字が読める子なら、親といっしょに楽しめます。せりふと案内があり、ことばのレベルを「やさしいことば」にすれば、大人が読んであげながら、もっと小さな子も参加できます。</p></details>
+<details><summary>本当に無料ですか？</summary><p>はい。広告も、機能を開く課金もありません。設定に開発者を応援するチップがありますが任意で、どの機能も開いたり閉じたりしません。</p></details>
+<details><summary>インターネットは必要ですか？</summary><p>必要ありません。裁判も記録もすべてオフラインで動きます。設定から意見を送るときだけ、インターネットとiCloudへのサインインが必要です。</p></details>
+<details><summary>記録はどこに保存されますか？</summary><p>家族・法律・裁判・判決の記録は端末の中だけに保存され、サーバーには送られません。開発者に届くのは、自分で送った意見と、誰が使ったかわからない匿名の利用統計だけです。</p></details>
+<details><summary>記録をバックアップしたり、ほかの端末に移したりできますか？</summary><p>設定の「記録を保存」でファイルに書き出し、ほかの端末で「記録を読み込む」からそのファイルを開けば、そのまま復元されます。以前のウェブ版で書き出したバックアップも読み込めます。</p></details>
+<details><summary>iPadでも使えますか？</summary><p>はい。iPhoneとiPadの両方で使えます。大きな画面を囲んで家族で裁判するのにぴったりです。</p></details>
+<details><summary>罰が重くなりすぎたら？</summary><p>検察官が罰を求める段階で、せりふが「重すぎず、守れるものに」と念を押します。おすすめの罰も、元にもどす、気持ちを返す、立場を入れかえて考えるなど、関係を取りもどすものから表示します。</p></details>
+<details><summary>データを完全に消したいです。</summary><p>アプリを削除すると、端末に保存された記録はすべていっしょに消えます。外に出た記録はないので、ほかに残る場所もありません。送った意見を消したい場合はメールでお知らせください。</p></details></div>
+      <p class="contact">不具合、機能のアイデア、そのほか何でも <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> までお気軽にどうぞ。アプリの設定から意見を送ることもできます。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>今夜は<br>わが家の法廷を開こう</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">App Storeで無料ダウンロード</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <b>日本語</b> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../th/" hreflang="th" lang="th">ไทย</a> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">ホーム</a> <a href="privacy.html">プライバシーポリシー</a> <a href="support.html">サポート</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 ファミリーコート (억울해요) · お問い合わせ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">プライバシーポリシー</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

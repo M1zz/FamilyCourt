@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ศาลครอบครัว — เล่นศาลที่บ้านสำหรับเด็กและครอบครัว</title>
-  <meta name="description" content="ศาลครอบครัวเป็นแอป iOS ที่ให้ทั้งบ้านเล่นบทบาทสมมติพิจารณาคดีด้วยกัน และให้เด็ก ๆ ได้เรียนรู้เรื่องกฎหมายและความยุติธรรม ข้อมูลทั้งหมดอยู่ในอุปกรณ์ของคุณเท่านั้น">
-  <meta name="color-scheme" content="light dark">
-  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/en/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ศาลครอบครัว: เกมเล่นศาลสวมบทบาทที่ทั้งบ้านเล่นด้วยกัน</title>
+  <meta name="description" content="เวลาพี่น้องทะเลาะหรือมีคนผิดสัญญา แทนที่จะตะโกนใส่กัน ลองเปิดศาลในบ้าน ให้ลูกเป็นโจทก์ ครอบครัวเป็นผู้พิพากษาและทนาย ไม่มีโฆษณา ไม่มีการซื้อ">
+  <meta name="theme-color" content="#8A6D0F" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0d0f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6790131247">
+  <link rel="canonical" href="https://m1zz.github.io/FamilyCourt/th/">
   <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/FamilyCourt/">
   <link rel="alternate" hreflang="en" href="https://m1zz.github.io/FamilyCourt/en/">
-  <link rel="alternate" hreflang="en-GB" href="https://m1zz.github.io/FamilyCourt/en/">
   <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/FamilyCourt/zh-Hans/">
   <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/FamilyCourt/zh-Hant/">
   <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/FamilyCourt/ja/">
@@ -32,169 +33,142 @@
   <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/FamilyCourt/sv/">
   <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/FamilyCourt/tr/">
   <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/FamilyCourt/">
-  <style>
-    :root {
-      --bg: #fdf9f0;
-      --card: #ffffff;
-      --ink: #2b2118;
-      --muted: #6f6152;
-      --accent: #c8892e;
-      --accent-soft: #f5e6c8;
-      --line: #eaddc4;
-      --shadow: 0 10px 40px rgba(120, 90, 30, 0.10);
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #1c1712;
-        --card: #26201a;
-        --ink: #f3ebde;
-        --muted: #b4a48f;
-        --accent: #e6ac52;
-        --accent-soft: #3a2f20;
-        --line: #3a3025;
-        --shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      }
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
-    header.hero {
-      text-align: center;
-      padding: 80px 24px 64px;
-      background: radial-gradient(120% 100% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
-    }
-    .badge {
-      font-size: 72px;
-      display: inline-block;
-      filter: drop-shadow(0 6px 12px rgba(200, 137, 46, 0.35));
-      animation: tap 2.4s ease-in-out infinite;
-    }
-    @keyframes tap {
-      0%, 88%, 100% { transform: rotate(0deg); }
-      92% { transform: rotate(-18deg); }
-      96% { transform: rotate(4deg); }
-    }
-    h1 { font-size: 2.4rem; margin: 18px 0 6px; letter-spacing: -0.02em; }
-    .en { color: var(--accent); font-weight: 700; letter-spacing: 0.04em; }
-    .tagline { color: var(--muted); font-size: 1.15rem; margin-top: 8px; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-block; padding: 13px 24px; border-radius: 14px;
-      font-weight: 700; text-decoration: none; font-size: 1rem;
-      transition: transform 0.12s ease, box-shadow 0.12s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow); }
-    .btn-ghost { background: var(--card); color: var(--ink); border: 1.5px solid var(--line); }
-    section { padding: 40px 0; }
-    h2 { font-size: 1.5rem; margin-bottom: 20px; letter-spacing: -0.01em; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-    .card {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px; box-shadow: var(--shadow);
-    }
-    .card .ico { font-size: 32px; margin-bottom: 10px; }
-    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
-    .card p { color: var(--muted); font-size: 0.96rem; }
-    .steps { counter-reset: step; list-style: none; }
-    .steps li {
-      position: relative; padding: 14px 0 14px 52px; border-bottom: 1px dashed var(--line);
-    }
-    .steps li:last-child { border-bottom: none; }
-    .steps li::before {
-      counter-increment: step; content: counter(step);
-      position: absolute; left: 0; top: 12px;
-      width: 34px; height: 34px; border-radius: 50%;
-      background: var(--accent-soft); color: var(--accent);
-      font-weight: 800; display: grid; place-items: center;
-    }
-    .safe {
-      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
-      padding: 28px; box-shadow: var(--shadow); display: flex; gap: 18px; align-items: flex-start;
-    }
-    .safe .lock { font-size: 40px; }
-    footer {
-      text-align: center; padding: 48px 24px; color: var(--muted);
-      border-top: 1px solid var(--line); margin-top: 32px; font-size: 0.9rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-    .langs { display: flex; gap: 6px 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; font-size: 0.85rem; }
-    .langs a { color: var(--muted); text-decoration: none; }
-    .langs a:hover { text-decoration: underline; }
-    .langs b { color: var(--ink); }
-  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ศาลครอบครัว: เกมเล่นศาลสวมบทบาทที่ทั้งบ้านเล่นด้วยกัน">
+  <meta property="og:description" content="เวลาพี่น้องทะเลาะหรือมีคนผิดสัญญา แทนที่จะตะโกนใส่กัน ลองเปิดศาลในบ้าน ให้ลูกเป็นโจทก์ ครอบครัวเป็นผู้พิพากษาและทนาย ไม่มีโฆษณา ไม่มีการซื้อ">
+  <meta property="og:url" content="https://m1zz.github.io/FamilyCourt/th/">
+  <meta property="og:image" content="https://m1zz.github.io/FamilyCourt/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#8A6D0F}@media (prefers-color-scheme:dark){:root{--accent:#E0B83C}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <header class="hero">
-    <div class="badge">⚖️</div>
-    <h1>ศาลครอบครัว</h1>
-    <div class="en">เรื่องไม่ยุติธรรม ให้ศาลตัดสิน</div>
-    <p class="tagline">เรียนรู้กฎหมายและความยุติธรรมผ่านการเล่นบทบาทสมมติในครอบครัว แอป iOS ที่ให้เด็ก ๆ เป็นผู้พิพากษาและทนายความ</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="support.html">การสนับสนุนและวิธีเล่น</a>
-      <a class="btn btn-ghost" href="privacy.html">นโยบายความเป็นส่วนตัว</a>
-    </div>
+  <a class="skip" href="#main">ข้ามไปที่เนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">ศาลครอบครัว</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
   </header>
 
-  <main class="wrap">
-    <section>
-      <h2>แอปนี้คืออะไร</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="ico">😤</div>
-          <h3>รู้สึกว่าไม่ยุติธรรม</h3>
-          <p>เด็ก ๆ เป็น<b>โจทก์</b>และยื่นฟ้องได้ เป็นคดีแพ่งที่ช่วยให้พูดความรู้สึกที่เจ็บใจออกมาเป็นคำพูด</p>
-        </div>
-        <div class="card">
-          <div class="ico">🚨</div>
-          <h3>กฎของบ้านถูกละเมิด</h3>
-          <p>เมื่อกฎของครอบครัวถูกละเมิด <b>อัยการ</b>จะนำคดีขึ้นสู่ศาล ผู้พิพากษาตัดสินว่ามีความผิด ไม่มีความผิด หรือให้ความปรานี</p>
-        </div>
-        <div class="card">
-          <div class="ico">🧑‍⚖️</div>
-          <h3>บทบาทที่ยุติธรรมสำหรับทุกคน</h3>
-          <p>เฉพาะคนที่ไม่ใช่โจทก์หรือจำเลยเท่านั้นที่เป็นผู้พิพากษาได้ ทุกคนมีสิทธิ์เลือกทนายความ</p>
-        </div>
-        <div class="card">
-          <div class="ico">📖</div>
-          <h3>ประมวลกฎหมายของบ้านเรา</h3>
-          <p>ช่วยกันเขียนกฎของครอบครัว แล้วติดตามแต่ละคดีตั้งแต่การพิจารณา คำตัดสิน ไปจนถึงคำสัญญา</p>
-        </div>
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>ไม่ยุติธรรมใช่ไหม<br>อย่าร้องไห้ มาขึ้นศาลกัน</h1>
+        <p class="lead">ลูกยื่นฟ้องเองในฐานะโจทก์ ส่วนคนในครอบครัวแบ่งกันเป็นผู้พิพากษาและทนาย ทุกขั้นมีบทพูดบอกว่าถึงตาใครและต้องพูดอะไร ครั้งแรกก็ดำเนินไปได้เหมือนศาลจริง</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6790131247">ดาวน์โหลดฟรีบน App Store</a><a class="try" href="#try">ลองเปิดศาลดูสักครั้ง ↓</a></div>
+        <p class="muted small">ไม่มีโฆษณา ไม่มีการซื้อ ไม่ต้องสมัคร บันทึกอยู่ในเครื่องนี้เท่านั้น</p>
       </div>
+      <div class="phone"><img src="../img/th/03-trial.jpg" alt="ไม่ยุติธรรมใช่ไหม อย่าร้องไห้ มาขึ้นศาลกัน" width="600" height="1303" decoding="async"></div>
     </section>
 
-    <section>
-      <h2>วิธีเล่น</h2>
-      <ol class="steps">
-        <li>ช่วยกันกำหนด<b>กฎหมายของครอบครัว</b> แล้วเขียนลงในประมวลกฎหมาย</li>
-        <li>ยื่น<b>คดีแพ่ง</b>เมื่อมีเรื่องไม่ยุติธรรม หรือ<b>คดีอาญา</b>เมื่อมีการละเมิดกฎ</li>
-        <li>เลือก<b>บทบาท</b>โจทก์ จำเลย ผู้พิพากษา และทนายความ แล้วเปิดศาล</li>
-        <li>ฟังทั้งสองฝ่าย แล้วผู้พิพากษาจะอ่าน<b>คำตัดสิน</b></li>
-        <li>กำหนด<b>คำสัญญา</b>ตามคำตัดสิน และติ๊กเมื่อทำได้แล้ว</li>
-      </ol>
+
+    <section class="reveal" id="try">
+      <h2>ลองเปิดศาลดูสักครั้ง</h2>
+      <p class="muted">ลองพิจารณาคดีสั้น ๆ "น้องไม่ยอมให้รีโมต" สลับระดับคำศัพท์ด้านบน เคาะค้อน แล้วลองเปิดตัวจับเวลา มีเสียงด้วย อย่าลืมดูระดับเสียง</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองเปิดศาลดูสักครั้ง&quot;, &quot;lead&quot;: &quot;ลองพิจารณาคดีสั้น ๆ \&quot;น้องไม่ยอมให้รีโมต\&quot; สลับระดับคำศัพท์ด้านบน เคาะค้อน แล้วลองเปิดตัวจับเวลา มีเสียงด้วย อย่าลืมดูระดับเสียง&quot;, &quot;prev&quot;: &quot;← ย้อนกลับ&quot;, &quot;next&quot;: &quot;ถัดไป →&quot;, &quot;again&quot;: &quot;เริ่มใหม่&quot;, &quot;after&quot;: &quot;พร้อมคำตัดสิน ให้ตั้งสัญญาที่ต้องทำ แล้วในแอปจะติ๊กได้จนกว่าจะทำสำเร็จ จบการพิจารณาแล้ว อย่าลืมกอดกันและคืนดีกันนะ 🤗&quot;, &quot;note&quot;: &quot;ในแอป ชื่อคนในครอบครัว รายละเอียดคดี และกฎบ้านที่เลือกไว้จะใส่ลงในบทพูดโดยอัตโนมัติ&quot;, &quot;steps&quot;: [{&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;เริ่มพิจารณาคดี!&quot;, &quot;ประกาศเปิดศาล&quot;, &quot;ประกาศเปิดศาล&quot;], &quot;text&quot;: &quot;{judge}: \&quot;ขอเปิดการพิจารณาคดีของศาลครอบครัวบ้านเรา ณ บัดนี้\nคดีนี้คือ &#x27;น้องไม่ยอมให้รีโมต&#x27;\nทุกคนนั่งตัวตรงนะ!\&quot;&quot;}, {&quot;role&quot;: &quot;🙋 {accuser}&quot;, &quot;title&quot;: [&quot;เรื่องเล่าของ{accuser}&quot;, &quot;เรื่องเล่าของ{accuser}&quot;, &quot;เรื่องเล่าของ{accuser}&quot;], &quot;text&quot;: &quot;• เกิดอะไรขึ้น เมื่อไร ที่ไหน\n• ตอนนั้นรู้สึกอย่างไร\n• อยากให้เป็นอย่างไร\n\n⭐ กติกา: ไม่ตะโกน พูดแต่เรื่องจริง!&quot;}, {&quot;role&quot;: &quot;🙇 {accused}&quot;, &quot;title&quot;: [&quot;เรื่องเล่าของ{accused}&quot;, &quot;เรื่องเล่าของ{accused}&quot;, &quot;เรื่องเล่าของ{accused}&quot;], &quot;text&quot;: &quot;คราวนี้ถึงตาอีกฝ่าย\n• เรื่องนั้นเกิดขึ้นจริงไหม\n• ทำไมถึงทำแบบนั้น เล่าความคิดของตัวเอง\n\n⭐ กติกา: ฟังให้จบ ไม่พูดแทรก!&quot;}, {&quot;role&quot;: &quot;🙋 {accuser} → 🙇 {accused}&quot;, &quot;title&quot;: [&quot;คำพูดสุดท้าย&quot;, &quot;คำพูดสุดท้าย (คำแถลงปิดคดี)&quot;, &quot;คำแถลงปิดคดี&quot;], &quot;text&quot;: &quot;ผลัดกันพูดสิ่งสุดท้ายที่อยากพูดทีละคน\n{accuser}: \&quot;หนูอยากให้ ○○\&quot;\n{accused}: \&quot;ต่อไปหนูจะ ○○\&quot;&quot;}, {&quot;role&quot;: &quot;👨‍⚖️ {judge}&quot;, &quot;title&quot;: [&quot;ตัดสินใจ&quot;, &quot;อ่านคำพิพากษา&quot;, &quot;อ่านคำพิพากษา&quot;], &quot;text&quot;: &quot;หลับตาแล้วคิดให้ดี 10 วินาที\nใครพูดถูก ตั้งสัญญาแบบไหนถึงจะกลับมาดีกันได้\nคิดได้แล้ว เลือกจากด้านล่างแล้วประกาศคำตัดสิน&quot;}], &quot;levelLabel&quot;: &quot;ระดับคำศัพท์&quot;, &quot;levels&quot;: [&quot;คำง่าย ๆ&quot;, &quot;มาตรฐาน&quot;, &quot;ศัพท์ศาล&quot;], &quot;judge&quot;: [&quot;กรรมการ&quot;, &quot;ผู้พิพากษา&quot;, &quot;ผู้พิพากษาหัวหน้าคณะ&quot;], &quot;accuser&quot;: [&quot;คนที่รู้สึกไม่ยุติธรรม&quot;, &quot;โจทก์&quot;, &quot;โจทก์&quot;], &quot;accused&quot;: [&quot;คนที่ต้องตอบ&quot;, &quot;จำเลย&quot;, &quot;จำเลย&quot;], &quot;verdicts&quot;: [[&quot;คนที่รู้สึกไม่ยุติธรรมพูดถูก&quot;, &quot;โจทก์ชนะคดี (โจทก์พูดถูก)&quot;, &quot;โจทก์ชนะคดี&quot;], [&quot;คนที่ตอบพูดถูก&quot;, &quot;จำเลยชนะคดี (จำเลยพูดถูก)&quot;, &quot;จำเลยชนะคดี&quot;], [&quot;ทั้งคู่คืนดีกัน&quot;, &quot;ประนีประนอม (ต่างคนต่างยอมกันนิดหน่อย)&quot;, &quot;เสนอให้ประนีประนอม&quot;]], &quot;start&quot;: &quot;▶ เริ่ม&quot;, &quot;pause&quot;: &quot;⏸ หยุด&quot;, &quot;gavel&quot;: &quot;เคาะค้อน&quot;}"></div>
     </section>
 
-    <section>
-      <div class="safe">
-        <div class="lock">🔒</div>
-        <div>
-          <h2 style="margin-bottom:6px;">ปลอดภัยสำหรับเด็ก</h2>
-          <p style="color:var(--muted);">ไม่ต้องสมัครสมาชิก ไม่มีโฆษณา ไม่มีการติดตาม ข้อมูลครอบครัว ประมวลกฎหมาย และบันทึกการพิจารณาคดีจะเก็บ<b>ไว้ในอุปกรณ์ของคุณเท่านั้น</b> และไม่ถูกส่งไปที่ใด ผู้พัฒนาได้รับเฉพาะความคิดเห็นที่คุณเลือกส่งจากการตั้งค่า และสถิติการใช้งานแบบไม่ระบุตัวตนที่ไม่สามารถบอกได้ว่าเป็นใคร ดูรายละเอียดใน<a href="privacy.html" style="color:var(--accent);font-weight:700;">นโยบายความเป็นส่วนตัว</a></p>
-        </div>
+    <section class="problem reveal">
+      <h2>"เขาเริ่มก่อน!" เหนื่อยไหมที่ต้องเป็นคนตัดสินทุกครั้ง</h2>
+      <p>พอทะเลาะกัน สุดท้ายผู้ใหญ่ก็เป็นคนตัดสิน คนแพ้ร้องไห้เพราะรู้สึกไม่ยุติธรรม คนชนะก็ไม่รู้ว่าชนะเพราะอะไร ศาลครอบครัวให้ลำดับกับเด็ก ๆ คือเล่าเรื่องของตัวเองให้จบ และฟังอีกฝ่ายให้จบ คำตัดสินจบลงด้วยสัญญา ไม่ใช่แค่การลงโทษ</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>คนที่รู้สึกไม่ยุติธรรมฟ้องเองได้</h2>
+        <p>ใครรู้สึกไม่ยุติธรรม คนนั้นเป็นโจทก์และยื่นฟ้องเอง จะฟ้องใคร ให้ใครเป็นผู้พิพากษา คนยื่นฟ้องเป็นคนเลือก เด็ก ๆ ฟ้องพ่อแม่ก็ได้<br>เห็นใครทำผิดกฎบ้าน ก็เป็นอัยการแล้วยื่นฟ้องคดีอาญาได้ ผู้พิพากษาต้องเป็นคนที่ไม่ใช่โจทก์หรือจำเลยเท่านั้น</p>
       </div>
+      <div class="phone"><img src="../img/th/02-filing.jpg" alt="คนที่รู้สึกไม่ยุติธรรมฟ้องเองได้" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>คำตัดสินจบด้วยสัญญา</h2>
+        <p>พร้อมคำตัดสิน ให้ตั้งสัญญาหรือบทลงโทษ แล้วติ๊กจนกว่าจะทำได้ คดีที่จบแล้วจะสะสมเป็นคดีตัวอย่างของบ้านเรา<br>บทลงโทษแนะนำจะเริ่มจากการแก้ไขให้เหมือนเดิม และการชดเชยความรู้สึก ซึ่งเน้นซ่อมความสัมพันธ์มากกว่าลงโทษ การลดเวลาเกมหรือทีวีเป็นทางสุดท้าย</p>
+      </div>
+      <div class="phone"><img src="../img/th/04-verdict.jpg" alt="คำตัดสินจบด้วยสัญญา" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>กฎบ้านเรา เราตั้งเอง</h2>
+        <p>เขียนกฎที่ทั้งบ้านตกลงกัน เช่น ให้เกียรติกัน เก็บของ รักษาสัญญา เป็นมาตรา แล้วเพิ่มหรือแก้ได้ทุกเมื่อ ในคำฟ้องก็เลือกมาตราที่ถูกฝ่าฝืนได้<br>ส่วนเรียนรู้เรื่องศาล อธิบายว่าผู้พิพากษา โจทก์ อัยการ และทนาย ทำหน้าที่อะไร และการพิจารณาคดีเป็นไปตามลำดับอย่างไร</p>
+      </div>
+      <div class="phone"><img src="../img/th/05-laws.jpg" alt="กฎบ้านเรา เราตั้งเอง" width="600" height="1303" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>เริ่มได้ในสามขั้น</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>เพิ่มคนในครอบครัว</h3><p>ใช้แค่ชื่อกับอีโมจิ ไม่ต้องมีบัญชี</p></li>
+<li class="card"><span class="n">2</span><h3>ยื่นฟ้อง</h3><p>ไม่ยุติธรรมยื่นเป็นคดีแพ่ง ผิดกฎบ้านยื่นเป็นคดีอาญา แล้วเลือกผู้พิพากษา</p></li>
+<li class="card"><span class="n">3</span><h3>เปิดศาล</h3><p>พูดตามบท คุมเวลาด้วยตัวจับเวลา แล้วเคาะค้อนประกาศคำตัดสิน</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>คำที่เปลี่ยนไปตามวัยของลูก</h2>
+      <div class="card table">
+        <dl><div><dt>ผู้พิพากษา</dt><dd>คำง่าย ๆ: กรรมการ · ศัพท์ศาล: ผู้พิพากษาหัวหน้าคณะ</dd></div><div><dt>โจทก์</dt><dd>คำง่าย ๆ: คนที่รู้สึกไม่ยุติธรรม · ศัพท์ศาล: โจทก์</dd></div><div><dt>จำเลย</dt><dd>คำง่าย ๆ: คนที่ต้องตอบ · ศัพท์ศาล: จำเลย</dd></div><div><dt>อัยการ</dt><dd>คำง่าย ๆ: คนที่แจ้งเรื่อง · ศัพท์ศาล: อัยการ</dd></div><div><dt>จำเลย</dt><dd>คำง่าย ๆ: คนที่ต้องตอบ · ศัพท์ศาล: จำเลย</dd></div><div><dt>ทนายความ</dt><dd>คำง่าย ๆ: คนช่วยพูด · ศัพท์ศาล: ทนายความ</dd></div><div><dt>แพ่ง</dt><dd>คำง่าย ๆ: ไม่แฟร์ · ศัพท์ศาล: แพ่ง</dd></div><div><dt>อาญา</dt><dd>คำง่าย ๆ: ผิดสัญญา · ศัพท์ศาล: อาญา</dd></div></dl>
+      </div>
+      <p class="muted">เลือกระดับคำศัพท์ในการตั้งค่า คำบนหน้าจอและในบทพูดจะเปลี่ยนพร้อมกันทั้งหมด เด็กอนุบาลลองเริ่มจากคำง่าย ๆ เด็กประถมลองเริ่มจากมาตรฐาน</p>
+    </section>
+
+
+
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>เล่นได้ตั้งแต่อายุเท่าไร</summary><p>เด็กที่อ่านหนังสือได้เล่นกับพ่อแม่ได้เลย มีบทพูดและคำแนะนำ ถ้าตั้งระดับคำศัพท์เป็นคำง่าย ๆ แล้วให้ผู้ใหญ่อ่านให้ฟัง เด็กเล็กกว่านั้นก็ร่วมเล่นได้</p></details>
+<details><summary>ฟรีจริงไหม</summary><p>ฟรีจริง ไม่มีโฆษณา และไม่มีการซื้อเพื่อปลดล็อกฟีเจอร์ ในการตั้งค่ามีทิปสนับสนุนนักพัฒนา จะให้หรือไม่ก็ได้ และไม่ได้เปิดหรือล็อกฟีเจอร์ใด ๆ</p></details>
+<details><summary>ต้องต่ออินเทอร์เน็ตไหม</summary><p>ไม่ต้อง การพิจารณาคดีและบันทึกทั้งหมดใช้งานแบบออฟไลน์ได้ ต้องใช้อินเทอร์เน็ตและลงชื่อเข้า iCloud เฉพาะตอนส่งความคิดเห็นจากการตั้งค่า</p></details>
+<details><summary>บันทึกเก็บไว้ที่ไหน</summary><p>ข้อมูลครอบครัว กฎบ้าน การพิจารณาคดี และคำตัดสิน เก็บไว้ในเครื่องเท่านั้น ไม่ส่งขึ้นเซิร์ฟเวอร์ สิ่งที่ถึงมือนักพัฒนามีเพียงความคิดเห็นที่คุณส่งเอง และสถิติการใช้งานแบบไม่ระบุตัวตน</p></details>
+<details><summary>สำรองหรือย้ายไปเครื่องอื่นได้ไหม</summary><p>ใช้บันทึกข้อมูลในการตั้งค่าเพื่อส่งออกเป็นไฟล์ แล้วใช้โหลดข้อมูลในอีกเครื่องเพื่อเปิดไฟล์นั้น ข้อมูลจะกลับมาเหมือนเดิม ไฟล์สำรองจากเวอร์ชันเว็บเดิมก็โหลดได้</p></details>
+<details><summary>ใช้บน iPad ได้ไหม</summary><p>ได้ ใช้ได้ทั้ง iPhone และ iPad จอใหญ่เหมาะกับการนั่งล้อมวงพิจารณาคดีกันทั้งบ้าน</p></details>
+<details><summary>ถ้าบทลงโทษหนักเกินไปล่ะ</summary><p>ตอนที่อัยการเสนอบทลงโทษ บทพูดจะเตือนว่า "อย่าให้หนักเกินไป ต้องทำได้จริง" บทลงโทษแนะนำก็เริ่มจากสิ่งที่ซ่อมความสัมพันธ์ เช่น แก้ไขให้เหมือนเดิม ชดเชยความรู้สึก หรือลองคิดแบบอีกฝ่าย</p></details>
+<details><summary>อยากลบข้อมูลทั้งหมด</summary><p>ลบแอปแล้วบันทึกทั้งหมดในเครื่องจะหายไปด้วย ไม่มีบันทึกออกไปนอกเครื่อง จึงไม่มีที่ไหนเหลือเก็บไว้ ถ้าอยากลบความคิดเห็นที่เคยส่งมา ส่งอีเมลบอกได้เลย</p></details></div>
+      <p class="contact">เจอบั๊ก มีไอเดีย หรืออะไรก็ตาม เขียนมาที่ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> ได้เลย หรือส่งความคิดเห็นจากการตั้งค่าในแอปก็ได้</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>คืนนี้<br>ลองเปิดศาลในบ้านดูสิ</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6790131247">ดาวน์โหลดฟรีบน App Store</a>
     </section>
   </main>
 
   <footer>
-    <!--langs--><div class="langs"><a href="../" hreflang="ko" lang="ko">한국어</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../ru/" hreflang="ru" lang="ru">Русский</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../it/" hreflang="it" lang="it">Italiano</a> <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <b>ไทย</b> <a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a> <a href="../cs/" hreflang="cs" lang="cs">Čeština</a> <a href="../da/" hreflang="da" lang="da">Dansk</a> <a href="../el/" hreflang="el" lang="el">Ελληνικά</a> <a href="../fi/" hreflang="fi" lang="fi">Suomi</a> <a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a> <a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a> <a href="../nl/" hreflang="nl" lang="nl">Nederlands</a> <a href="../pl/" hreflang="pl" lang="pl">Polski</a> <a href="../sv/" hreflang="sv" lang="sv">Svenska</a> <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></div><!--/langs-->
-    <div class="foot-links"> <a href="index.html">หน้าแรก</a> <a href="privacy.html">นโยบายความเป็นส่วนตัว</a> <a href="support.html">การสนับสนุน</a> <a href="https://github.com/M1zz/FamilyCourt">GitHub</a> </div> <div>© 2026 ศาลครอบครัว (억울해요) · ติดต่อ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></div></footer>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 Family Court</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>
