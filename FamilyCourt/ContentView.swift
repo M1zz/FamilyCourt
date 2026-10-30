@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 struct ContentView: View {
     @EnvironmentObject var store: Store
@@ -30,24 +31,59 @@ struct ContentView: View {
                     hasSeenOnboarding = true
                     showOnboarding = false
                 }
+                .foldConfined()
             }
     }
 
     private var tabs: some View {
+        // 아이폰 듀오를 펴면 탭마다 왼쪽(세로면 아래)은 그 탭, 오른쪽(위)은 재판을 기다리는 사건이다.
+        // 접혀 있거나 보통 아이폰이면 탭만 그린다. 지금 화면 그대로다.
         TabView(selection: $tab) {
             HomeTab()
+                .foldWithOpenCases()
                 .tabItem { Label("법원", systemImage: "building.columns.fill") }
                 .tag(0)
             NavigationStack { LawsView() }
+                .foldWithOpenCases()
                 .tabItem { Label("법전", systemImage: "book.closed.fill") }
                 .tag(1)
             NavigationStack { FamilyView() }
+                .foldWithOpenCases()
                 .tabItem { Label("가족", systemImage: "person.3.fill") }
                 .tag(2)
             NavigationStack { SettingsView() }
+                .foldWithOpenCases()
                 .tabItem { Label("설정", systemImage: "gearshape.fill") }
                 .tag(3)
         }
+        // 펴면 시스템 탭바 대신 고르는 쪽 판 바닥에 막대가 선다 (가로로 펴면 시스템 탭바가 접힌 선을 가로지른다).
+        .foldTabBar(items: [
+            .init(value: 0, title: String(localized: "법원"), symbol: "building.columns.fill"),
+            .init(value: 1, title: String(localized: "법전"), symbol: "book.closed.fill"),
+            .init(value: 2, title: String(localized: "가족"), symbol: "person.3.fill"),
+            .init(value: 3, title: String(localized: "설정"), symbol: "gearshape.fill"),
+        ], selected: tab) { tab = $0 }
+    }
+}
+
+// MARK: - 아이폰 듀오 (LeeoKit Fold)
+
+private extension View {
+    /// 탭 하나를 접힌 선 양쪽으로 나눈다. 왼쪽(아래)은 이 탭, 오른쪽(위)은 재판을 기다리는 사건.
+    func foldWithOpenCases() -> some View {
+        FoldSplitView { self } result: { FoldOpenCasesPane() }
+            .foldTabBarRoom()
+    }
+}
+
+/// 펼친 화면의 결과 쪽: 소환 요청 목록. 사건을 누르면 이 판 안에서 그 사건이 열린다.
+private struct FoldOpenCasesPane: View {
+    var body: some View {
+        NavigationStack {
+            SummonsView()
+                .navigationDestination(for: HomeDest.self) { $0.screen }
+        }
+        .environment(\.foldLayout, .single)
     }
 }
 
@@ -61,15 +97,7 @@ struct HomeTab: View {
     var body: some View {
         NavigationStack(path: $path) {
             HomeView(path: $path)
-                .navigationDestination(for: HomeDest.self) { dest in
-                    switch dest {
-                    case .caseDetail(let id): CaseDetailView(caseId: id)
-                    case .summons: SummonsView()
-                    case .archive: ArchiveView()
-                    case .learn: LearnView()
-                    case .laws: LawsView()
-                    }
-                }
+                .navigationDestination(for: HomeDest.self) { $0.screen }
         }
         #if DEBUG
         .onAppear {

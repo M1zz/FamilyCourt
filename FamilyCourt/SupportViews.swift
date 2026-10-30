@@ -94,7 +94,7 @@ struct LawFormView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button { dismiss() } label: { Label("취소", systemImage: "xmark") }
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button {
@@ -105,7 +105,7 @@ struct LawFormView: View {
                         else { store.addLaw(title: t, text: x) }
                         dismiss()
                     } label: {
-                        if law == nil { Text("법전에 올리기") } else { Text("저장") }
+                        if law == nil { Label("법전에 올리기", systemImage: "checkmark") } else { Label("저장", systemImage: "checkmark") }
                     }
                     .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty ||
                               text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)

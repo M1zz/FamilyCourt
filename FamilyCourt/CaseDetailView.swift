@@ -55,6 +55,7 @@ struct CaseDetailView: View {
             .navigationBarTitleDisplayMode(.inline)
             .fullScreenCover(isPresented: $showTrial) {
                 TrialFlowView(caseId: caseId)
+                    .foldConfined()
             }
             .confirmationDialog("이 사건을 삭제할까요?", isPresented: $confirmDelete, titleVisibility: .visible) {
                 Button("삭제하기", role: .destructive) {

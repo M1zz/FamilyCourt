@@ -112,7 +112,7 @@ struct TrialPrepView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .cancellationAction) {
-                Button("닫기") { onCancel() }
+                Button { onCancel() } label: { Label("닫기", systemImage: "xmark") }
             }
         }
         .onAppear {
@@ -461,7 +461,7 @@ struct PenaltySuggestionsView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("닫기") { dismiss() }
+                    Button { dismiss() } label: { Label("닫기", systemImage: "xmark") }
                 }
             }
         }

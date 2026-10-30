@@ -10,6 +10,20 @@ enum HomeDest: Hashable {
     case laws
 }
 
+extension HomeDest {
+    /// 이 자리에 서는 화면. 법원 탭과 펼친 화면의 사건 판이 같이 쓴다.
+    @ViewBuilder
+    var screen: some View {
+        switch self {
+        case .caseDetail(let id): CaseDetailView(caseId: id)
+        case .summons: SummonsView()
+        case .archive: ArchiveView()
+        case .learn: LearnView()
+        case .laws: LawsView()
+        }
+    }
+}
+
 // MARK: - 홈 (액션 런처)
 
 struct HomeView: View {
