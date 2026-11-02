@@ -14,10 +14,14 @@ final class Store: ObservableObject {
     }()
 
     init() {
-        if let raw = try? Data(contentsOf: fileURL),
-           let saved = try? JSONDecoder().decode(AppState.self, from: raw) {
+        let raw = try? Data(contentsOf: fileURL)
+        if let raw, let saved = try? JSONDecoder().decode(AppState.self, from: raw) {
             data = saved
         } else {
+            if raw != nil {
+                // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
+                try? FileManager.default.copyItem(at: fileURL, to: fileURL.appendingPathExtension("unreadable"))
+            }
             var fresh = AppState()
             fresh.laws = AppState.defaultLaws
             data = fresh
