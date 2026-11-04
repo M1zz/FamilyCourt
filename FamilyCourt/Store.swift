@@ -8,10 +8,19 @@ final class Store: ObservableObject {
         didSet { persist() }
     }
 
-    private let fileURL: URL = {
+    private let fileURL = Store.fileURL
+
+    nonisolated private static var fileURL: URL {
         let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         return dir.appendingPathComponent("familycourt.json")
-    }()
+    }
+
+    /// 저장된 사건을 파일에서 바로 읽는다. 앱 밖(Siri · Spotlight)에서 부른다.
+    nonisolated static func savedCases() -> [CourtCase] {
+        guard let raw = try? Data(contentsOf: fileURL),
+              let saved = try? JSONDecoder().decode(AppState.self, from: raw) else { return [] }
+        return saved.cases
+    }
 
     init() {
         let raw = try? Data(contentsOf: fileURL)

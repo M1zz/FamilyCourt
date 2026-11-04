@@ -6,6 +6,7 @@ import TipKit
 @main
 struct FamilyCourtApp: App {
     @StateObject private var store = Store()
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         // 사용량 기록 · 익명 사용 통계 · 원격 킬스위치 갱신 (FeedbackHub).
@@ -34,6 +35,11 @@ struct FamilyCourtApp: App {
                 .modifier(SatisfactionCheckIfEnabled())
                 // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.
                 .task { await FamilyCourtSpec.tipJar.startStandalone() }
+                // 사건을 Siri · Spotlight 가 찾게 — 열 때와 뒤로 보낼 때 맞춘다.
+                .task { await CaseIndex.reindex(store.data.cases) }
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .background { Task { await CaseIndex.reindex(store.data.cases) } }
+                }
         }
     }
 }

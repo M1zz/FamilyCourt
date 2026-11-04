@@ -54,6 +54,10 @@ struct HomeView: View {
                 filingType = nil
                 path = NavigationPath()
                 path.append(HomeDest.summons)
+            case .openCase(let id):
+                filingType = nil
+                path = NavigationPath()
+                path.append(HomeDest.caseDetail(id))
             }
         }
         #if DEBUG
