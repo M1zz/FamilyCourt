@@ -1,11 +1,11 @@
 {
   "title": "Sąd Rodzinny: zabawa w rozprawę dla całej rodziny",
-  "description": "Kłótnia rodzeństwa albo złamana obietnica? Zamiast krzyczeć, otwórzcie domowy sąd. Dziecko składa pozew, rodzina sądzi i broni. Bez reklam i zakupów.",
+  "description": "Kłótnia rodzeństwa albo złamana obietnica? Zamiast krzyczeć, otwórzcie domowy sąd. Dziecko składa pozew, rodzina sądzi i broni. Rozprawy za darmo, bez reklam.",
   "hero": {
     "headline": "Niesprawiedliwie?\nBez łez, idziemy do sądu.",
     "lead": "Dziecko samo składa pozew jako powód, a rodzina dzieli się rolami sędziego i obrońcy. Na każdym etapie scenariusz podpowiada, czyja kolej i co powiedzieć, więc nawet pierwsza rozprawa idzie jak prawdziwa.",
     "cta": "Pobierz za darmo z App Store",
-    "note": "Bez reklam, zakupów i rejestracji. Wszystko zostaje na tym urządzeniu."
+    "note": "Rozprawy są zawsze za darmo. Bez reklam i rejestracji. Wszystko zostaje na tym urządzeniu."
   },
   "demo": {
     "title": "Przeprowadź rozprawę",
@@ -189,7 +189,7 @@
       },
       {
         "q": "Czy to naprawdę za darmo?",
-        "a": "Tak. Bez reklam i bez zakupów odblokowujących funkcje. W Ustawieniach jest dobrowolny napiwek dla twórcy, który niczego nie odblokowuje ani nie blokuje."
+        "a": "Prowadzenie rozprawy, wydawanie wyroku i pilnowanie obietnic są zawsze bezpłatne i bez reklam. Za darmo wpiszecie do 6 członków rodziny i 12 przepisów. Z Pro dodacie więcej osób i przepisów, będziecie składać pozwy prosto przez Siri i Skróty i nadacie własnemu sądowi nazwę. Wybierzcie subskrypcję tygodniową, miesięczną lub roczną albo jednorazowy zakup na zawsze. Ekran zakupu otwiera się dopiero po sprawdzeniu przez dorosłego. Dobrowolny napiwek w Ustawieniach to osobna sprawa i niczego nie odblokowuje."
       },
       {
         "q": "Czy potrzebny jest internet?",

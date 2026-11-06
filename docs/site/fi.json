@@ -5,7 +5,7 @@
     "headline": "Epäreilua?\nEi kyyneliä, vaan oikeuteen.",
     "lead": "Lapsi nostaa itse kanteen kantajana, ja perhe jakaa tuomarin ja asianajajan roolit. Käsikirjoitus kertoo joka vaiheessa, kenen vuoro on ja mitä sanotaan, joten jo ensimmäinen istunto sujuu kuin oikea.",
     "cta": "Lataa ilmaiseksi App Storesta",
-    "note": "Ei mainoksia, ostoja eikä rekisteröitymistä. Kaikki pysyy tällä laitteella."
+    "note": "Oikeudenkäynnit ovat aina ilmaisia. Ei mainoksia eikä rekisteröitymistä. Kaikki pysyy tällä laitteella."
   },
   "demo": {
     "title": "Pidä istunto",
@@ -189,7 +189,7 @@
       },
       {
         "q": "Onko se oikeasti ilmainen?",
-        "a": "On. Ei mainoksia eikä ostoja, jotka avaisivat toimintoja. Asetuksissa voi antaa vapaaehtoisen tipin kehittäjälle, mutta se ei avaa eikä lukitse mitään."
+        "a": "Oikeudenkäynnin pitäminen, tuomion antaminen ja lupausten seuraaminen on aina ilmaista, eikä mainoksia ole. Ilmaiseksi perheluetteloon mahtuu 6 henkilöä ja lakikirjaan 12 lakia. Prolla voitte lisätä enemmän perheenjäseniä ja lakeja, jättää asian suoraan Sirillä ja Pikakomennoilla ja antaa omalle tuomioistuimellenne nimen. Valitse viikko-, kuukausi- tai vuositilaus tai kertaostos pysyvästi. Ostonäkymä aukeaa vasta aikuisen tarkistuksen jälkeen. Asetusten vapaaehtoinen tippi on erillinen eikä avaa mitään."
       },
       {
         "q": "Tarvitaanko nettiä?",

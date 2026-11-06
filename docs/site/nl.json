@@ -1,11 +1,11 @@
 {
   "title": "Familierechtbank: rechtszaak-rollenspel voor het hele gezin",
-  "description": "Ruzie tussen broers en zussen of een gebroken belofte? In plaats van schreeuwen open je jullie eigen rechtbank. Geen advertenties, geen aankopen.",
+  "description": "Ruzie tussen broers en zussen of een gebroken belofte? In plaats van schreeuwen open je jullie eigen rechtbank. Rechtszaken gratis, zonder advertenties.",
   "hero": {
     "headline": "Oneerlijk?\nGeen tranen, gewoon naar de rechter.",
     "lead": "Je kind dient zelf als eiser de klacht in, en het gezin verdeelt de rollen van rechter en advocaat. Bij elke stap vertelt een script wie aan de beurt is en wat die zegt, dus ook de eerste zaak loopt als een echte.",
     "cta": "Gratis in de App Store",
-    "note": "Geen advertenties, geen aankopen, geen account. Alles blijft op dit apparaat."
+    "note": "Rechtszaken zijn altijd gratis. Geen advertenties, geen account. Alles blijft op dit apparaat."
   },
   "demo": {
     "title": "Houd een rechtszaak",
@@ -189,7 +189,7 @@
       },
       {
         "q": "Is het echt gratis?",
-        "a": "Ja. Geen advertenties en geen aankopen die functies ontgrendelen. In Instellingen staat een vrijwillige fooi voor de ontwikkelaar, maar die ontgrendelt of vergrendelt niets."
+        "a": "Een rechtszaak houden, vonnis wijzen en beloftes bijhouden is altijd gratis, en er zijn geen advertenties. Gratis kun je tot 6 gezinsleden en 12 wetten toevoegen. Met Pro voeg je meer familie en meer wetten toe, dien je direct in via Siri en Opdrachten en geef je je eigen rechtbank een naam. Kies een week-, maand- of jaarabonnement, of een eenmalige aankoop voor altijd. Het aankoopscherm opent pas na een controle door een volwassene. De vrijwillige fooi in Instellingen staat daar los van en ontgrendelt niets."
       },
       {
         "q": "Is internet nodig?",

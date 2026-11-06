@@ -1,11 +1,11 @@
 {
   "title": "Family Court: role-play trials for families",
-  "description": "Siblings squabbling? Skip the shouting and open your family courtroom. Kids file the case, the family plays judge and counsel. No ads, no purchases.",
+  "description": "Siblings squabbling? Skip the shouting and open your family courtroom. Kids file the case, the family plays judge and counsel. Trials are free, with no ads.",
   "hero": {
     "headline": "Something unfair?\nSettle it in court, not tears.",
     "lead": "Your child files the case as plaintiff, and the family splits the roles of judge and counsel. A script tells everyone whose turn it is and what to say, so even the first trial runs like the real thing.",
     "cta": "Get it free on the App Store",
-    "note": "No ads, no purchases, no sign-up. Records stay on this device."
+    "note": "Trials are always free. No ads, no sign-up. Records stay on this device."
   },
   "demo": {
     "title": "Hold a trial",
@@ -189,7 +189,7 @@
       },
       {
         "q": "Is it really free?",
-        "a": "Yes. No ads and no purchases that unlock features. Settings has an optional tip to support the developer, but it doesn't unlock or lock anything."
+        "a": "Holding a trial, reaching a verdict and tracking promises are always free, and there are no ads. For free you can add up to 6 family members and 12 house laws. Pro opens room for bigger families and longer law books, filing straight from Siri and Shortcuts, and naming your own court. Pick a weekly, monthly or yearly subscription, or pay once for lifetime. The purchase screen only opens after a grown-up check. The optional tip in Settings is separate and unlocks nothing."
       },
       {
         "q": "Does it need the internet?",

@@ -1,11 +1,11 @@
 {
   "title": "Rodinný soud: hra na soud pro celou rodinu",
-  "description": "Hádka sourozenců nebo porušený slib? Místo křiku otevřete domácí soud. Dítě podá žalobu, rodina soudí a hájí. Bez reklam a bez nákupů.",
+  "description": "Hádka sourozenců nebo porušený slib? Místo křiku otevřete domácí soud. Dítě podá žalobu, rodina soudí a hájí. Soudy zdarma a bez reklam.",
   "hero": {
     "headline": "Je to nespravedlivé?\nŽádné slzy, jde se k soudu.",
     "lead": "Dítě samo podá žalobu jako žalobce a rodina si rozdělí role soudce a obhájce. Scénář v každém kroku napoví, kdo je na řadě a co říct, takže i první líčení běží jako skutečné.",
     "cta": "Stáhnout zdarma v App Storu",
-    "note": "Bez reklam, nákupů a registrace. Vše zůstává v tomto zařízení."
+    "note": "Soudit můžete vždy zdarma. Bez reklam a registrace. Vše zůstává v tomto zařízení."
   },
   "demo": {
     "title": "Uspořádejte líčení",
@@ -189,7 +189,7 @@
       },
       {
         "q": "Je to opravdu zdarma?",
-        "a": "Ano. Žádné reklamy ani nákupy, které by odemykaly funkce. V Nastavení je dobrovolné spropitné pro vývojáře, které nic neodemyká ani nezamyká."
+        "a": "Vést soud, vynést rozsudek a hlídat sliby je vždy zdarma a bez reklam. Zdarma zapíšete až 6 členů rodiny a 12 zákonů. S Pro přidáte další příbuzné i zákony, budete podávat žaloby rovnou přes Siri a Zkratky a dáte svému soudu vlastní název. Vyberte si týdenní, měsíční nebo roční předplatné, nebo jednorázový nákup navždy. Obrazovka nákupu se otevře jen po ověření dospělým. Dobrovolné spropitné v Nastavení je zvlášť a nic neodemyká."
       },
       {
         "q": "Potřebuji internet?",
