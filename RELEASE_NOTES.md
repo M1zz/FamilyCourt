@@ -3,6 +3,176 @@
 App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이다.
 평문만 쓴다. 한 줄에 한 문장, 3~5줄, 한 줄 40자 이내.
 
+## 1.0.3
+
+### 앱스토어 (한국어)
+
+매일 기록을 자동으로 백업해요
+iCloud나 파일에서 기록을 되살릴 수 있어요
+iPhone 검색에서 사건을 바로 찾아 열어요
+드물게 기록이 사라지던 문제를 고쳤어요
+
+### 앱스토어 (en)
+
+Your records are backed up every day
+Restore records from iCloud or a file
+Find and open cases from iPhone search
+Fixed a rare loss of saved records
+
+### 앱스토어 (en-GB)
+
+Your records are backed up every day
+Restore records from iCloud or a file
+Find and open cases from iPhone search
+Fixed a rare loss of saved records
+
+### 앱스토어 (ja)
+
+毎日、記録を自動でバックアップします
+iCloudやファイルから記録を復元できます
+iPhoneの検索から事件をすぐ開けます
+まれに記録が消える問題を修正しました
+
+### 앱스토어 (zh-Hans)
+
+每天自动备份你的记录
+可从 iCloud 或文件恢复记录
+在 iPhone 搜索中直接找到并打开案件
+修复了记录偶尔丢失的问题
+
+### 앱스토어 (zh-Hant)
+
+每天自動備份你的紀錄
+可從 iCloud 或檔案還原紀錄
+在 iPhone 搜尋中直接找到並打開案件
+修正了紀錄偶爾遺失的問題
+
+### 앱스토어 (Русский)
+
+Автоматическая копия каждый день
+Восстановите записи из iCloud или файла
+Находите дела прямо в поиске iPhone
+Исправлена редкая потеря записей
+
+### 앱스토어 (Español)
+
+Copia de seguridad diaria automática
+Restaura desde iCloud o un archivo
+Abre casos desde la búsqueda del iPhone
+Corregida una rara pérdida de datos
+
+### 앱스토어 (Deutsch)
+
+Tägliches automatisches Backup
+Aus iCloud oder Datei wiederherstellen
+Fälle direkt in der iPhone-Suche öffnen
+Seltener Datenverlust behoben
+
+### 앱스토어 (Français)
+
+Sauvegarde automatique chaque jour
+Restauration via iCloud ou un fichier
+Ouvrez une affaire depuis la recherche
+Correction d’une rare perte de données
+
+### 앱스토어 (Italiano)
+
+Backup automatico ogni giorno
+Ripristina i dati da iCloud o da un file
+Apri i casi dalla ricerca di iPhone
+Risolta una rara perdita di dati
+
+### 앱스토어 (pt-BR)
+
+Backup automático todos os dias
+Restaure seus dados do iCloud ou arquivo
+Abra casos direto pela busca do iPhone
+Corrigimos uma rara perda de dados
+
+### 앱스토어 (ไทย)
+
+สำรองข้อมูลให้อัตโนมัติทุกวัน
+กู้คืนข้อมูลจาก iCloud หรือไฟล์ได้
+เปิดคดีได้จากการค้นหาบน iPhone
+แก้ปัญหาข้อมูลหายที่เกิดขึ้นได้ยาก
+
+### 앱스토어 (Tiếng Việt)
+
+Tự động sao lưu dữ liệu mỗi ngày
+Khôi phục dữ liệu từ iCloud hoặc tệp
+Mở vụ việc ngay từ tìm kiếm trên iPhone
+Đã sửa lỗi hiếm gặp làm mất dữ liệu
+
+### 앱스토어 (Čeština)
+
+Každý den automatická záloha
+Obnova dat z iCloudu nebo ze souboru
+Případy najdete přímo v hledání iPhonu
+Opravena vzácná ztráta dat
+
+### 앱스토어 (Dansk)
+
+Automatisk backup hver dag
+Gendan data fra iCloud eller en fil
+Åbn sager direkte fra søgning på iPhone
+Rettet et sjældent tab af data
+
+### 앱스토어 (Ελληνικά)
+
+Αυτόματο αντίγραφο ασφαλείας κάθε μέρα
+Επαναφορά από iCloud ή από αρχείο
+Ανοίξτε υποθέσεις από την αναζήτηση
+Διορθώθηκε σπάνια απώλεια δεδομένων
+
+### 앱스토어 (Suomi)
+
+Automaattinen varmuuskopio joka päivä
+Palautus iCloudista tai tiedostosta
+Avaa jutut suoraan iPhonen hausta
+Korjattu harvinainen tietojen katoaminen
+
+### 앱스토어 (Bahasa Indonesia)
+
+Cadangan otomatis setiap hari
+Pulihkan data dari iCloud atau file
+Buka kasus dari pencarian iPhone
+Memperbaiki masalah langka data hilang
+
+### 앱스토어 (Norsk bokmål)
+
+Automatisk sikkerhetskopi hver dag
+Gjenopprett data fra iCloud eller en fil
+Åpne saker rett fra søk på iPhone
+Rettet et sjeldent tap av data
+
+### 앱스토어 (Nederlands)
+
+Elke dag een automatische back-up
+Zet gegevens terug uit iCloud of bestand
+Open zaken direct via zoeken op iPhone
+Zeldzaam verlies van gegevens opgelost
+
+### 앱스토어 (Polski)
+
+Codzienna automatyczna kopia zapasowa
+Przywróć dane z iCloud lub z pliku
+Otwieraj sprawy z wyszukiwania iPhone’a
+Naprawiono rzadką utratę danych
+
+### 앱스토어 (Svenska)
+
+Automatisk säkerhetskopia varje dag
+Återställ data från iCloud eller en fil
+Öppna fall direkt från sök på iPhone
+Åtgärdat en sällsynt dataförlust
+
+### 앱스토어 (Türkçe)
+
+Her gün otomatik yedekleme
+iCloud’dan veya dosyadan geri yükleyin
+Davaları iPhone aramasından hemen açın
+Nadiren yaşanan veri kaybı düzeltildi
+
 ## 1.0.2
 
 ### 앱스토어 (한국어)
