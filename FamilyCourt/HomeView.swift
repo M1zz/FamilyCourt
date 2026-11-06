@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 // MARK: - 홈 탭에서 이동하는 곳들
 
@@ -32,6 +33,10 @@ struct HomeView: View {
     @State private var filingType: CaseType?
     @ObservedObject private var router = ShortcutRouter.shared
     @Environment(\.dynamicTypeSize) private var typeSize
+    @EnvironmentObject private var pro: LeeoStore
+    @State private var lock: ProLock?
+    /// 무료로 단축어를 한 번 써 봤는가. 처음 한 번은 그대로 열고, 다음 실행부터 Pro 를 안내한다.
+    @AppStorage("pro.triedShortcut") private var triedShortcut = false
 
     /// 타일 두 개씩 한 줄 — 아주 큰 글씨에서는 한 줄에 하나씩, 화면을 넘치면 스크롤
     private var row: AnyLayout {
@@ -47,6 +52,15 @@ struct HomeView: View {
             guard let action else { return }
             // 다른 구독자(ContentView 의 탭 전환)도 같은 값을 받은 뒤에 비운다.
             DispatchQueue.main.async { router.pending = nil }
+            // Siri · 단축어(접수 · 신고 · 기다리는 재판)는 Pro. Spotlight 에서 사건 하나 여는 건 잠그지 않는다.
+            if case .openCase = action {} else if !pro.gate.allows(Pro.Gate.siri) {
+                if triedShortcut {
+                    filingType = nil
+                    lock = .siri
+                    return
+                }
+                triedShortcut = true
+            }
             switch action {
             case .file(let type):
                 filingType = type
@@ -68,6 +82,7 @@ struct HomeView: View {
                 path.append(HomeDest.caseDetail(newId))
             }
         }
+        .unlockSheet($lock)
     }
 
     private var tiles: some View {

@@ -1,4 +1,5 @@
 import XCTest
+import LeeoKit
 @testable import FamilyCourt
 
 /// 재판 대본의 문장을 만드는 조사 규칙 — 틀리면 아이가 읽는 대본이 어색해진다.
@@ -115,5 +116,31 @@ final class BackupCompatibilityTests: XCTestCase {
         XCTAssertEqual(back.members, s.members)
         XCTAssertEqual(back.caseSeq, 3)
         XCTAssertEqual(back.vocabLevel, .formal)
+    }
+}
+
+/// 억울해요 Pro 의 무료 한도 — 어긋나면 무료 가족이 일곱 번째 식구를 못 넣기 전에 막히거나, 끝없이 열린다.
+final class ProGateTests: XCTestCase {
+    func testFreeFamilyGetsSixMembersAndTwelveLaws() {
+        let free = LeeoGate(policy: Pro.gatePolicy, hasPro: false, isTrialActive: false)
+        XCTAssertTrue(free.evaluate(Pro.Gate.members, current: 5).isAllowed)    // 여섯 번째
+        XCTAssertFalse(free.evaluate(Pro.Gate.members, current: 6).isAllowed)   // 일곱 번째
+        XCTAssertTrue(free.evaluate(Pro.Gate.laws, current: 11).isAllowed)      // 열두 번째
+        XCTAssertFalse(free.evaluate(Pro.Gate.laws, current: 12).isAllowed)     // 열세 번째
+        XCTAssertFalse(free.allows(Pro.Gate.siri))
+        XCTAssertFalse(free.allows(Pro.Gate.courtName))
+    }
+
+    func testProOpensEverything() {
+        let pro = LeeoGate(policy: Pro.gatePolicy, hasPro: true, isTrialActive: false)
+        XCTAssertTrue(pro.evaluate(Pro.Gate.members, current: 30).isAllowed)
+        XCTAssertTrue(pro.evaluate(Pro.Gate.laws, current: 99).isAllowed)
+        XCTAssertTrue(pro.allows(Pro.Gate.siri))
+        XCTAssertTrue(pro.allows(Pro.Gate.courtName))
+    }
+
+    func testTipsNeverUnlockPro() {
+        XCTAssertTrue(Set(Pro.tipProductIDs).isDisjoint(with: FamilyCourtSpec.paywall?.entitlementIDs ?? []))
+        XCTAssertTrue(FamilyCourtSpec.paywall?.entitlementIDs.contains(Pro.graduateID) == true)
     }
 }

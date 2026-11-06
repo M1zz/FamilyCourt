@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB00000000000000000000B1 /* Pro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00000000000000000000B1 /* Pro.swift */; };
+		AB00000000000000000000B2 /* UnlockSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00000000000000000000B2 /* UnlockSheet.swift */; };
 		AB00000000000000000000A1 /* AppShortcuts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AF00000000000000000000A1 /* AppShortcuts.xcstrings */; };
 		AB00000000000000000000A2 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AF00000000000000000000A2 /* InfoPlist.xcstrings */; };
 		02FDC2C3E1442EC5807EEEE6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C8EE31398E644771F6C1D142 /* Localizable.xcstrings */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF00000000000000000000B1 /* Pro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro.swift; sourceTree = "<group>"; };
+		AF00000000000000000000B2 /* UnlockSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockSheet.swift; sourceTree = "<group>"; };
+		AF00000000000000000000B3 /* FamilyCourt.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = FamilyCourt.storekit; sourceTree = "<group>"; };
 		1069729DA885377BE9BF60F4 /* FamilyCourtSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilyCourtSpec.swift; sourceTree = "<group>"; };
 		4FC3B8A76FB59A4B52C1AC2B /* FamilyCourtRoadmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FamilyCourtRoadmap.swift; sourceTree = "<group>"; };
 		AF0000000000000000000001 /* FamilyCourtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCourtApp.swift; sourceTree = "<group>"; };
@@ -115,6 +120,9 @@
 				AF0000000000000000000015 /* Onboarding.swift */,
 				AF0000000000000000000014 /* FamilyCourtFlags.swift */,
 				4FC3B8A76FB59A4B52C1AC2B /* FamilyCourtRoadmap.swift */,
+				AF00000000000000000000B1 /* Pro.swift */,
+				AF00000000000000000000B2 /* UnlockSheet.swift */,
+				AF00000000000000000000B3 /* FamilyCourt.storekit */,
 				C8EE31398E644771F6C1D142 /* Localizable.xcstrings */,
 				AF00000000000000000000A1 /* AppShortcuts.xcstrings */,
 				AF00000000000000000000A2 /* InfoPlist.xcstrings */,
@@ -278,6 +286,8 @@
 				AB0000000000000000000015 /* Onboarding.swift in Sources */,
 				AB0000000000000000000014 /* FamilyCourtFlags.swift in Sources */,
 				B85CE49C0268AC480C8F6FC0 /* FamilyCourtRoadmap.swift in Sources */,
+				AB00000000000000000000B1 /* Pro.swift in Sources */,
+				AB00000000000000000000B2 /* UnlockSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,11 @@ struct CaseDetailView: View {
     let caseId: String
     @State private var showTrial = false
     @State private var confirmDelete = false
+    @EnvironmentObject private var pro: LeeoStore
+    @State private var lock: ProLock?
+    /// 세 번째 판결 뒤 판결 화면에서 Pro 를 한 번만 알린다.
+    @AppStorage("pro.verdictNudgeShown") private var verdictNudgeShown = false
+    @State private var showsNudge = false
 
     var body: some View {
         if let c = store.courtCase(caseId) {
@@ -31,12 +36,16 @@ struct CaseDetailView: View {
                 rolesSection(c)
                 contentSection(c)
                 if let v = c.verdict { verdictSection(c, v).id("verdict") }
-                // 방금 판결이 난 자리. 풀어낸 다툼이 숫자로 보일 때만, 드물게 응원을 부탁한다.
                 if c.status == .decided {
-                    LeeoTipAskSlot<FamilyCourtSpec>(tipJar: FamilyCourtSpec.tipJar,
-                                                    reached: FamilyCourtTipMoments.reached(decided: store.doneCases.count))
-                        .listRowInsets(EdgeInsets())
-                        .listRowBackground(Color.clear)
+                    if showsNudge {
+                        proNudgeSection
+                    } else if pro.hasPro, let tipJar = pro.tipJar {
+                        // 방금 판결이 난 자리. Pro 를 가진 집에만, 풀어낸 다툼이 숫자로 보일 때 드물게 응원을 부탁한다.
+                        LeeoTipAskSlot<FamilyCourtSpec>(tipJar: tipJar,
+                                                        reached: FamilyCourtTipMoments.reached(decided: store.doneCases.count))
+                            .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.clear)
+                    }
                 }
                 actionSection(c)
             }
@@ -53,6 +62,9 @@ struct CaseDetailView: View {
             }
             .navigationTitle(c.caseNo)
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear(perform: nudgeIfDue)
+            .onChange(of: store.doneCases.count) { nudgeIfDue() }
+            .unlockSheet($lock)
             .fullScreenCover(isPresented: $showTrial) {
                 TrialFlowView(caseId: caseId)
                     .foldConfined()
@@ -66,6 +78,29 @@ struct CaseDetailView: View {
         } else {
             Text("사건을 찾을 수 없어요")
                 .foregroundColor(.secondary)
+        }
+    }
+
+    // MARK: - Pro 안내 (세 번째 판결 뒤 한 번)
+
+    private func nudgeIfDue() {
+        guard !verdictNudgeShown, !pro.hasPro, store.doneCases.count >= 3,
+              store.courtCase(caseId)?.status == .decided else { return }
+        verdictNudgeShown = true
+        showsNudge = true
+    }
+
+    private var proNudgeSection: some View {
+        Section {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("판결이 벌써 \(store.doneCases.count)건 쌓였어요. 재판은 언제나 무료예요. 식구가 많고 법이 많은 집이라면 Pro도 둘러보세요.",
+                     comment: "Case screen, once after the third verdict. %lld = number of verdicts")
+                    .fixedSize(horizontal: false, vertical: true)
+                Button { lock = .browse } label: {
+                    Label("억울해요 Pro 알아보기", systemImage: "crown.fill")
+                }
+            }
+            .padding(.vertical, 4)
         }
     }
 

@@ -6,6 +6,8 @@ import TipKit
 @main
 struct FamilyCourtApp: App {
     @StateObject private var store = Store()
+    /// 억울해요 Pro 권한 · 상품 · 팁 (→ Pro.swift).
+    @StateObject private var pro = Pro.makeStore()
     @Environment(\.scenePhase) private var scenePhase
 
     init() {
@@ -29,12 +31,11 @@ struct FamilyCourtApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(store)
+                .environmentObject(pro)
                 // 아이폰 듀오: 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
                 .onAppear { UIApplication.shared.installKeyboardDismissTap() }
                 .modifier(SatisfactionCheckIfEnabled())
-                // 팁 상품을 불러오고 끝나지 않은 팁을 마저 센다.
-                .task { await FamilyCourtSpec.tipJar.startStandalone() }
                 // 사건을 Siri · Spotlight 가 찾게 — 열 때와 뒤로 보낼 때 맞춘다.
                 .task { await CaseIndex.reindex(store.data.cases) }
                 .onChange(of: scenePhase) { _, phase in

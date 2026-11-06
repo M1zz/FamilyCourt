@@ -7,8 +7,10 @@ import LeeoKit
 
 struct LawsView: View {
     @EnvironmentObject var store: Store
+    @EnvironmentObject private var pro: LeeoStore
     @State private var editingLaw: Law?
     @State private var showAdd = false
+    @State private var lock: ProLock?
     private let swipeTip = LawSwipeTip()
 
     var body: some View {
@@ -53,12 +55,20 @@ struct LawsView: View {
         .navigationTitle("우리 집 법전")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                Button { showAdd = true } label: { Image(systemName: "plus") }
+                Button {
+                    // 열세 번째 조문부터 Pro. 이미 있는 조문은 몇 개든 그대로 보이고 쓰인다.
+                    if pro.gate.evaluate(Pro.Gate.laws, current: store.data.laws.count).isAllowed {
+                        showAdd = true
+                    } else {
+                        lock = .laws
+                    }
+                } label: { Image(systemName: "plus") }
                     .accessibilityLabel("새로운 법 만들기")
             }
         }
         .sheet(isPresented: $showAdd) { LawFormView(law: nil) }
         .sheet(item: $editingLaw) { law in LawFormView(law: law) }
+        .unlockSheet($lock)
     }
 }
 
@@ -125,6 +135,8 @@ struct LawFormView: View {
 
 struct FamilyView: View {
     @EnvironmentObject var store: Store
+    @EnvironmentObject private var pro: LeeoStore
+    @State private var lock: ProLock?
 
     private static let emojis = ["👨","👩","👧","👦","👶","👴","👵","🧑","🦁","🐰","🐻","🐱","🐶","🦊","🐼","🦄"]
 
@@ -177,6 +189,11 @@ struct FamilyView: View {
                 Button {
                     let n = name.trimmingCharacters(in: .whitespaces)
                     guard !n.isEmpty else { return }
+                    // 일곱 번째 식구부터 Pro. 이미 등록된 식구는 몇 명이든 그대로 재판에 나온다.
+                    guard pro.gate.evaluate(Pro.Gate.members, current: store.data.members.count).isAllowed else {
+                        lock = .members
+                        return
+                    }
                     store.addMember(name: n, emoji: pickedEmoji)
                     name = ""
                 } label: {
@@ -188,6 +205,7 @@ struct FamilyView: View {
             }
         }
         .navigationTitle("우리 가족")
+        .unlockSheet($lock)
     }
 }
 
@@ -195,6 +213,8 @@ struct FamilyView: View {
 
 struct SettingsView: View {
     @EnvironmentObject var store: Store
+    @EnvironmentObject private var pro: LeeoStore
+    @State private var lock: ProLock?
 
     @State private var courtName = ""
     @State private var importing = false
@@ -216,10 +236,16 @@ struct SettingsView: View {
                 Button("이름 바꾸기") {
                     let n = courtName.trimmingCharacters(in: .whitespaces)
                     guard !n.isEmpty else { return }
+                    guard pro.gate.allows(Pro.Gate.courtName) else {
+                        lock = .courtName
+                        return
+                    }
                     store.data.courtName = n
                 }
                 .disabled(courtName.trimmingCharacters(in: .whitespaces).isEmpty)
             }
+
+            ProSettingsSection(lock: $lock)
 
             Section(header: Text("어휘 난이도"),
                     footer: Text(store.data.vocabLevel.caption)) {
@@ -276,7 +302,9 @@ struct SettingsView: View {
                 // 앞으로 만들 기능 — 원본은 FamilyCourtRoadmap.swift
                 NavigationLink(LeeoRoadmapText.entry) { RoadmapScreen() }
                 LeeoShareAppLink<FamilyCourtSpec>()
-                LeeoTipJarLink<FamilyCourtSpec>(tipJar: FamilyCourtSpec.tipJar)
+                if let tipJar = pro.tipJar {
+                    LeeoTipJarLink<FamilyCourtSpec>(tipJar: tipJar)
+                }
                 LeeoSupportSection<FamilyCourtSpec>()
             } header: {
                 Text("지원")
@@ -295,6 +323,7 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("설정")
+        .unlockSheet($lock)
         .onAppear { courtName = store.data.courtName }
         .sheet(isPresented: $showOnboarding) {
             FamilyCourtOnboardingView { showOnboarding = false }

@@ -7,6 +7,9 @@ struct ContentView: View {
     @State private var showOnboarding = false
     @ObservedObject private var router = ShortcutRouter.shared
     @State private var tab = 0
+    @EnvironmentObject private var pro: LeeoStore
+    /// 구독 졸업 제안(어른 확인 뒤).
+    @State private var lock: ProLock?
 
     var body: some View {
         tabs
@@ -26,6 +29,8 @@ struct ContentView: View {
             #if DEBUG
             .onAppear { if ScreenshotScene.current == .laws { tab = 1 } }
             #endif
+            .task { await offerGraduationIfDue() }
+            .unlockSheet($lock)
             .fullScreenCover(isPresented: $showOnboarding) {
                 FamilyCourtOnboardingView {
                     hasSeenOnboarding = true
@@ -33,6 +38,17 @@ struct ContentView: View {
                 }
                 .foldConfined()
             }
+    }
+
+    /// 구독 6개월째와 연 갱신 7일 전에 한 번씩 구독 졸업 Pro 평생을 제안한다(→ LeeoGraduation).
+    /// 졸업가 상품이 스토어에 서 있을 때만.
+    private func offerGraduationIfDue() async {
+        guard let subscription = await LeeoGraduation.currentSubscription(among: Pro.subscriptionIDs),
+              LeeoGraduation.isDue(subscription, lastOffered: LeeoGraduation.lastOffered()) else { return }
+        await pro.loadProducts()
+        guard pro.products.contains(where: { $0.id == Pro.graduateID }) else { return }
+        LeeoGraduation.markOffered()
+        lock = .graduate
     }
 
     private var tabs: some View {

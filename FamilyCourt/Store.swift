@@ -26,7 +26,10 @@ final class Store: ObservableObject {
         let raw = try? Data(contentsOf: fileURL)
         if let raw, let saved = try? JSONDecoder().decode(AppState.self, from: raw) {
             data = saved
+            // Pro 가 생긴 빌드를 처음 켤 때 이미 기록이 있으면 먼저 쓰던 가족이다 (→ Pro.isLegacyInstall).
+            Pro.noteFirstLaunch(hadRecords: !saved.members.isEmpty || !saved.cases.isEmpty)
         } else {
+            Pro.noteFirstLaunch(hadRecords: raw != nil)   // 못 읽은 기록도 기록이다
             if raw != nil {
                 // 못 읽은 원본을 옆에 남긴다 — 빈 목록으로 시작해 다음 저장이 덮어써도 되찾을 수 있게
                 try? FileManager.default.copyItem(at: fileURL, to: fileURL.appendingPathExtension("unreadable"))
