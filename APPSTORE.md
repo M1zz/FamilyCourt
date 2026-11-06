@@ -61,6 +61,11 @@ https://m1zz.github.io/FamilyCourt/
 
 모든 기록은 이 기기 안에 저장되며 계정이 필요 없습니다. 기록 파일로 내보내고 다시 불러올 수 있습니다.
 
+구독 안내
+억울해요 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/FamilyCourt/privacy.html
+
 ## en
 
 ### 지원 URL
@@ -121,6 +126,11 @@ Past cases and court lessons
 Finished cases are kept as precedents, and the Learn about Court section explains what judges, plaintiffs, prosecutors and counsel do and how a trial runs.
 
 All records stay on this device and no account is needed. You can export your records to a file and import them again later.
+
+Subscriptions
+Family Court Pro is an auto-renewing subscription. Payment is charged to your Apple Account, and the subscription renews unless canceled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/FamilyCourt/en/privacy.html
 
 ## en-GB
 
@@ -183,6 +193,11 @@ Finished cases are kept as precedents, and the Learn about Court section explain
 
 All records stay on this device and no account is needed. You can export your records to a file and import them again later.
 
+Subscriptions
+Family Court Pro is an auto-renewing subscription. Payment is charged to your Apple Account, and the subscription renews unless cancelled at least 24 hours before the period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/FamilyCourt/en/privacy.html
+
 ## ja
 
 ### 지원 URL
@@ -243,6 +258,11 @@ https://m1zz.github.io/FamilyCourt/ja/
 終わった事件は判例としてたまり、「裁判所を学ぼう」で、裁判官・原告・検察官・弁護人の仕事や裁判の流れを学べます。
 
 記録はすべてこの端末に保存され、アカウントは不要です。記録はファイルに書き出して、あとから読み込めます。
+
+サブスクリプションについて
+ファミリーコートのProは自動更新のサブスクリプションです。期間終了の24時間前までに解約しない限り、Apple Accountに自動で請求されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/FamilyCourt/ja/privacy.html
 
 ## zh-Hans
 
@@ -305,6 +325,11 @@ https://m1zz.github.io/FamilyCourt/zh-Hans/
 
 所有记录都保存在这台设备上，无需账号。记录可以导出为文件，以后再导入。
 
+订阅说明
+家庭法庭 Pro 为自动续期订阅。费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/FamilyCourt/zh-Hans/privacy.html
+
 ## zh-Hant
 
 ### 지원 URL
@@ -365,6 +390,11 @@ https://m1zz.github.io/FamilyCourt/zh-Hant/
 結案的案件會作為判例保存下來，「認識法院」裡介紹了法官、原告、檢察官和辯護人的職責，以及庭審的流程。
 
 所有紀錄都儲存在這台裝置上，不需要帳號。紀錄可以匯出成檔案，之後再匯入。
+
+訂閱說明
+家庭法庭 Pro 為自動續訂訂閱。費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/FamilyCourt/zh-Hant/privacy.html
 
 ## ru
 
@@ -427,6 +457,11 @@ https://m1zz.github.io/FamilyCourt/ru/
 
 Все записи хранятся на этом устройстве, учётная запись не нужна. Записи можно выгрузить в файл и позже загрузить обратно.
 
+Подписки
+Семейный суд Pro — подписка с автопродлением. Оплата списывается с вашего Apple Account, а подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/FamilyCourt/ru/privacy.html
+
 ## es
 
 ### 지원 URL
@@ -487,6 +522,11 @@ Casos anteriores y lecciones sobre los tribunales
 Los casos terminados se guardan como precedentes, y la sección Conoce el tribunal explica qué hacen jueces, demandantes, fiscales y abogados y cómo transcurre un juicio.
 
 Todos los registros se quedan en este dispositivo y no hace falta cuenta. Puedes exportar tus registros a un archivo e importarlos de nuevo más adelante.
+
+Suscripciones
+Tribunal Familiar Pro es una suscripción de renovación automática. El cargo se realiza en tu cuenta de Apple y la suscripción se renueva salvo que la canceles al menos 24 horas antes de que termine el periodo. Puedes gestionarla o cancelarla cuando quieras en Ajustes.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/FamilyCourt/es/privacy.html
 
 ## de
 
@@ -549,6 +589,11 @@ Abgeschlossene Fälle bleiben als Präzedenzfälle erhalten, und der Bereich „
 
 Alle Protokolle bleiben auf diesem Gerät, ein Konto ist nicht nötig. Du kannst deine Protokolle in eine Datei exportieren und später wieder importieren.
 
+Abonnements
+Familiengericht Pro ist ein Abo mit automatischer Verlängerung. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du es jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/FamilyCourt/de/privacy.html
+
 ## fr
 
 ### 지원 URL
@@ -609,6 +654,11 @@ Anciennes affaires et leçons sur la justice
 Les affaires terminées sont conservées comme précédents, et la rubrique Découvrir le tribunal explique ce que font juges, demandeurs, procureurs et avocats et comment se déroule un procès.
 
 Toutes les données restent sur cet appareil et aucun compte n’est nécessaire. Vous pouvez exporter vos données dans un fichier et les réimporter plus tard.
+
+Abonnements
+Tribunal Familial Pro est un abonnement à renouvellement automatique. Le paiement est débité sur votre compte Apple, et l’abonnement se renouvelle sauf résiliation au moins 24 heures avant la fin de la période. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d'utilisation (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité: https://m1zz.github.io/FamilyCourt/fr/privacy.html
 
 ## it
 
@@ -671,6 +721,11 @@ I casi conclusi restano come precedenti, e la sezione Scopri il tribunale spiega
 
 Tutti i dati restano su questo dispositivo e non serve alcun account. Puoi esportare i dati in un file e importarli di nuovo in seguito.
 
+Abbonamenti
+Tribunale di Famiglia Pro è un abbonamento a rinnovo automatico. Il pagamento viene addebitato sul tuo Apple Account e l’abbonamento si rinnova se non lo disdici almeno 24 ore prima della scadenza. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d'uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/FamilyCourt/it/privacy.html
+
 ## pt-BR
 
 ### 지원 URL
@@ -731,6 +786,11 @@ Casos anteriores e aulas sobre o tribunal
 Os casos encerrados ficam guardados como precedentes, e a seção Conheça o Tribunal explica o que fazem juízes, autores, promotores e defensores e como funciona um julgamento.
 
 Todos os registros ficam neste dispositivo e não é preciso conta. Você pode exportar seus registros para um arquivo e importá-los de novo depois.
+
+Assinaturas
+Tribunal da Família Pro é uma assinatura com renovação automática. A cobrança é feita na sua Conta Apple e a assinatura é renovada, a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/FamilyCourt/pt-BR/privacy.html
 
 ## th
 
@@ -793,6 +853,11 @@ https://m1zz.github.io/FamilyCourt/th/
 
 ข้อมูลทั้งหมดอยู่ในอุปกรณ์เครื่องนี้ ไม่ต้องมีบัญชี ส่งออกข้อมูลเป็นไฟล์และนำเข้ามาใหม่ภายหลังได้
 
+การสมัครสมาชิก
+ศาลครอบครัว Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุเว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/FamilyCourt/th/privacy.html
+
 ## vi
 
 ### 지원 URL
@@ -853,6 +918,11 @@ Vụ án cũ và bài học về tòa án
 Các vụ đã xong được lưu thành án lệ, và mục Tìm hiểu về tòa án giải thích thẩm phán, nguyên đơn, công tố viên và luật sư làm gì cũng như một phiên tòa diễn ra thế nào.
 
 Mọi hồ sơ đều nằm trên thiết bị này và không cần tài khoản. Bạn có thể xuất hồ sơ ra tệp và nhập lại sau.
+
+Gói đăng ký
+Tòa Án Gia Đình Pro là gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/FamilyCourt/vi/privacy.html
 
 ## cs
 
@@ -915,6 +985,11 @@ Uzavřené případy se uchovávají jako precedenty a část Poznejte soud vysv
 
 Všechny záznamy zůstávají v tomto zařízení a účet není potřeba. Záznamy můžete exportovat do souboru a později znovu importovat.
 
+Předplatné
+Rodinný soud Pro je automaticky obnovované předplatné. Platba se strhává z vašeho účtu Apple a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/FamilyCourt/cs/privacy.html
+
 ## da
 
 ### 지원 URL
@@ -975,6 +1050,11 @@ Tidligere sager og lektioner om retten
 Afsluttede sager gemmes som præcedens, og afsnittet Lær om retten forklarer, hvad dommere, sagsøgere, anklagere og forsvarere gør, og hvordan en retssag forløber.
 
 Alle optegnelser bliver på denne enhed, og ingen konto er nødvendig. Du kan eksportere dine optegnelser til en fil og importere dem igen senere.
+
+Abonnementer
+Familieretten Pro er et abonnement, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/FamilyCourt/da/privacy.html
 
 ## el
 
@@ -1037,6 +1117,11 @@ https://m1zz.github.io/FamilyCourt/el/
 
 Όλα τα αρχεία μένουν σε αυτή τη συσκευή και δεν χρειάζεται λογαριασμός. Μπορείτε να εξαγάγετε τα αρχεία σας σε αρχείο και να τα εισαγάγετε ξανά αργότερα.
 
+Συνδρομές
+Η συνδρομή Οικογενειακό Δικαστήριο Pro ανανεώνεται αυτόματα. Η χρέωση γίνεται στον λογαριασμό Apple σας και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Μπορείτε να τη διαχειριστείτε ή να την ακυρώσετε οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/FamilyCourt/el/privacy.html
+
 ## fi
 
 ### 지원 URL
@@ -1097,6 +1182,11 @@ Aiemmat asiat ja oikeussalioppitunnit
 Päättyneet asiat tallentuvat ennakkotapauksiksi, ja Tutustu oikeuteen -osio kertoo, mitä tuomarit, kantajat, syyttäjät ja avustajat tekevät ja miten oikeudenkäynti etenee.
 
 Kaikki tiedot pysyvät tällä laitteella, eikä tiliä tarvita. Voit viedä tietosi tiedostoon ja tuoda ne myöhemmin takaisin.
+
+Tilaukset
+Perhetuomioistuin Pro on automaattisesti uusiutuva tilaus. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru tilaus milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/FamilyCourt/fi/privacy.html
 
 ## id
 
@@ -1159,6 +1249,11 @@ Kasus yang selesai disimpan sebagai yurisprudensi, dan bagian Kenali Pengadilan 
 
 Semua catatan tetap ada di perangkat ini dan tidak perlu akun. Anda bisa mengekspor catatan ke berkas dan mengimpornya lagi nanti.
 
+Langganan
+Pengadilan Keluarga Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/FamilyCourt/id/privacy.html
+
 ## nb
 
 ### 지원 URL
@@ -1219,6 +1314,11 @@ Tidligere saker og leksjoner om retten
 Avsluttede saker lagres som presedens, og delen Lær om retten forklarer hva dommere, saksøkere, aktorer og forsvarere gjør, og hvordan en rettssak forløper.
 
 Alle oppføringer blir på denne enheten, og ingen konto trengs. Du kan eksportere oppføringene dine til en fil og importere dem igjen senere.
+
+Abonnementer
+Familieretten Pro er et abonnement som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/FamilyCourt/nb/privacy.html
 
 ## nl
 
@@ -1281,6 +1381,11 @@ Afgeronde zaken blijven bewaard als jurisprudentie en het onderdeel Leer over de
 
 Alle gegevens blijven op dit apparaat en een account is niet nodig. Je kunt je gegevens naar een bestand exporteren en later weer importeren.
 
+Abonnementen
+Familierechtbank Pro is een automatisch verlengend abonnement. De betaling loopt via je Apple Account en het abonnement wordt verlengd tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/FamilyCourt/nl/privacy.html
+
 ## pl
 
 ### 지원 URL
@@ -1341,6 +1446,11 @@ Dawne sprawy i lekcje o sądzie
 Zakończone sprawy są zachowywane jako precedensy, a dział Poznaj sąd wyjaśnia, co robią sędziowie, powodowie, prokuratorzy i obrońcy oraz jak przebiega proces.
 
 Wszystkie zapisy zostają na tym urządzeniu i nie trzeba mieć konta. Możesz wyeksportować zapisy do pliku i później zaimportować je ponownie.
+
+Subskrypcje
+Sąd Rodzinny Pro to subskrypcja odnawiana automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj nią lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/FamilyCourt/pl/privacy.html
 
 ## sv
 
@@ -1403,6 +1513,11 @@ Avslutade mål sparas som prejudikat, och avsnittet Lär dig om rätten förklar
 
 Alla uppgifter stannar på den här enheten och inget konto behövs. Du kan exportera dina uppgifter till en fil och importera dem igen senare.
 
+Prenumerationer
+Familjerätten Pro är en prenumeration som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/FamilyCourt/sv/privacy.html
+
 ## tr
 
 ### 지원 URL
@@ -1463,6 +1578,11 @@ Geçmiş davalar ve mahkeme dersleri
 Biten davalar emsal olarak saklanır; Mahkemeyi Öğren bölümü hakimlerin, davacıların, savcıların ve avukatların ne yaptığını ve bir davanın nasıl ilerlediğini anlatır.
 
 Tüm kayıtlar bu cihazda kalır ve hesap gerekmez. Kayıtlarınızı bir dosyaya aktarabilir ve daha sonra yeniden içe aktarabilirsiniz.
+
+Abonelikler
+Aile Mahkemesi Pro otomatik yenilenen bir aboneliktir. Ödeme Apple Hesabınızdan alınır ve dönem bitmeden en az 24 saat önce iptal edilmezse abonelik yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/FamilyCourt/tr/privacy.html
 
 ## 손쉬운 사용
 
