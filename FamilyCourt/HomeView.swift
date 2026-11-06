@@ -53,7 +53,7 @@ struct HomeView: View {
             // 다른 구독자(ContentView 의 탭 전환)도 같은 값을 받은 뒤에 비운다.
             DispatchQueue.main.async { router.pending = nil }
             // Siri · 단축어(접수 · 신고 · 기다리는 재판)는 Pro. Spotlight 에서 사건 하나 여는 건 잠그지 않는다.
-            if case .openCase = action {} else if !pro.gate.allows(Pro.Gate.siri) {
+            if case .openCase = action {} else if !pro.limits.allows(Pro.Gate.siri) {
                 if triedShortcut {
                     filingType = nil
                     lock = .siri

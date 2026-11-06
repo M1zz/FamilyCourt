@@ -38,6 +38,9 @@ struct FamilyCourtApp: App {
                 .modifier(SatisfactionCheckIfEnabled())
                 // 사건을 Siri · Spotlight 가 찾게 — 열 때와 뒤로 보낼 때 맞춘다.
                 .task { await CaseIndex.reindex(store.data.cases) }
+                // 상품을 한 번이라도 불러와야 무료 한도가 선다 (→ Pro.isSelling).
+                .task { await pro.loadProducts() }
+                .onReceive(pro.$products) { Pro.noteProducts($0) }
                 .onChange(of: scenePhase) { _, phase in
                     if phase == .background { Task { await CaseIndex.reindex(store.data.cases) } }
                 }

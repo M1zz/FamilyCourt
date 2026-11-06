@@ -57,7 +57,7 @@ struct LawsView: View {
             ToolbarItem(placement: .primaryAction) {
                 Button {
                     // 열세 번째 조문부터 Pro. 이미 있는 조문은 몇 개든 그대로 보이고 쓰인다.
-                    if pro.gate.evaluate(Pro.Gate.laws, current: store.data.laws.count).isAllowed {
+                    if pro.limits.evaluate(Pro.Gate.laws, current: store.data.laws.count).isAllowed {
                         showAdd = true
                     } else {
                         lock = .laws
@@ -190,7 +190,7 @@ struct FamilyView: View {
                     let n = name.trimmingCharacters(in: .whitespaces)
                     guard !n.isEmpty else { return }
                     // 일곱 번째 식구부터 Pro. 이미 등록된 식구는 몇 명이든 그대로 재판에 나온다.
-                    guard pro.gate.evaluate(Pro.Gate.members, current: store.data.members.count).isAllowed else {
+                    guard pro.limits.evaluate(Pro.Gate.members, current: store.data.members.count).isAllowed else {
                         lock = .members
                         return
                     }
@@ -236,7 +236,7 @@ struct SettingsView: View {
                 Button("이름 바꾸기") {
                     let n = courtName.trimmingCharacters(in: .whitespaces)
                     guard !n.isEmpty else { return }
-                    guard pro.gate.allows(Pro.Gate.courtName) else {
+                    guard pro.limits.allows(Pro.Gate.courtName) else {
                         lock = .courtName
                         return
                     }

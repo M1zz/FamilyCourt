@@ -88,6 +88,21 @@ enum Pro {
         return build <= lastFreeBuild
     }
 
+    // MARK: - 팔기 시작했는가
+
+    private static let onSaleKey = "plans.onSale"
+
+    /// **팔기 시작했는가.** Pro 상품을 하나도 못 불러온 기기는 한도로 막지 않는다 (→ `LeeoStore.limits`).
+    /// ⚠️ App Store Connect 에 상품이 서기 전에 빌드가 나가면, 살 수 없는데 막히는 사람이 생긴다.
+    ///    한 번이라도 불러온 기기는 기억해 둔다 — 그 뒤로 잠깐 오프라인이어도 다시 한도가 선다.
+    static var isSelling: Bool { UserDefaults.standard.bool(forKey: onSaleKey) }
+
+    /// 불러온 상품에 Pro 상품이 있으면 적어 둔다. 앱이 상품 목록이 바뀔 때마다 부른다.
+    static func noteProducts(_ products: [Product]) {
+        guard !isSelling, products.contains(where: { productIDs.contains($0.id) }) else { return }
+        UserDefaults.standard.set(true, forKey: onSaleKey)
+    }
+
     // MARK: -
 
     @MainActor
@@ -97,6 +112,11 @@ enum Pro {
         }
         return LeeoStore(config: config, grandfather: { await isLegacyInstall() })
     }
+}
+
+extension LeeoStore {
+    /// 무료 한도 판정기. 화면은 `gate` 대신 이것을 본다 — 팔기 전(`Pro.isSelling`)이면 아무것도 막지 않는다.
+    var limits: LeeoGate { LeeoGate(policy: config.gate, hasPro: hasPro || !Pro.isSelling) }
 }
 
 // MARK: - 잠긴 자리
