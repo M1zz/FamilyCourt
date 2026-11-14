@@ -11,6 +11,7 @@ App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이
 iCloud나 파일에서 기록을 되살릴 수 있어요
 iPhone 검색에서 사건을 바로 찾아 열어요
 드물게 기록이 사라지던 문제를 고쳤어요
+iPad를 식탁 가운데 두고 다 같이 재판해요
 
 ### 앱스토어 (en)
 
@@ -18,6 +19,7 @@ Your records are backed up every day
 Restore records from iCloud or a file
 Find and open cases from iPhone search
 Fixed a rare loss of saved records
+Hold court together around an iPad
 
 ### 앱스토어 (en-GB)
 
@@ -25,6 +27,7 @@ Your records are backed up every day
 Restore records from iCloud or a file
 Find and open cases from iPhone search
 Fixed a rare loss of saved records
+Hold court together around an iPad
 
 ### 앱스토어 (ja)
 
@@ -32,6 +35,7 @@ Fixed a rare loss of saved records
 iCloudやファイルから記録を復元できます
 iPhoneの検索から事件をすぐ開けます
 まれに記録が消える問題を修正しました
+iPadを囲んで家族みんなで裁判できます
 
 ### 앱스토어 (zh-Hans)
 
@@ -39,6 +43,7 @@ iPhoneの検索から事件をすぐ開けます
 可从 iCloud 或文件恢复记录
 在 iPhone 搜索中直接找到并打开案件
 修复了记录偶尔丢失的问题
+把 iPad 放在桌上，全家一起开庭
 
 ### 앱스토어 (zh-Hant)
 
@@ -46,6 +51,7 @@ iPhoneの検索から事件をすぐ開けます
 可從 iCloud 或檔案還原紀錄
 在 iPhone 搜尋中直接找到並打開案件
 修正了紀錄偶爾遺失的問題
+把 iPad 放在桌上，全家一起開庭
 
 ### 앱스토어 (Русский)
 
@@ -53,6 +59,7 @@ iPhoneの検索から事件をすぐ開けます
 Восстановите записи из iCloud или файла
 Находите дела прямо в поиске iPhone
 Исправлена редкая потеря записей
+Судите всей семьёй вокруг iPad
 
 ### 앱스토어 (Español)
 
@@ -60,6 +67,7 @@ Copia de seguridad diaria automática
 Restaura desde iCloud o un archivo
 Abre casos desde la búsqueda del iPhone
 Corregida una rara pérdida de datos
+Celebrad el juicio juntos con el iPad
 
 ### 앱스토어 (Deutsch)
 
@@ -67,6 +75,7 @@ Tägliches automatisches Backup
 Aus iCloud oder Datei wiederherstellen
 Fälle direkt in der iPhone-Suche öffnen
 Seltener Datenverlust behoben
+Verhandelt gemeinsam rund um das iPad
 
 ### 앱스토어 (Français)
 
@@ -74,6 +83,7 @@ Sauvegarde automatique chaque jour
 Restauration via iCloud ou un fichier
 Ouvrez une affaire depuis la recherche
 Correction d’une rare perte de données
+L’audience en famille autour de l’iPad
 
 ### 앱스토어 (Italiano)
 
@@ -81,6 +91,7 @@ Backup automatico ogni giorno
 Ripristina i dati da iCloud o da un file
 Apri i casi dalla ricerca di iPhone
 Risolta una rara perdita di dati
+Il processo insieme intorno all’iPad
 
 ### 앱스토어 (pt-BR)
 
@@ -88,6 +99,7 @@ Backup automático todos os dias
 Restaure seus dados do iCloud ou arquivo
 Abra casos direto pela busca do iPhone
 Corrigimos uma rara perda de dados
+O julgamento em família ao redor do iPad
 
 ### 앱스토어 (ไทย)
 
@@ -95,6 +107,7 @@ Corrigimos uma rara perda de dados
 กู้คืนข้อมูลจาก iCloud หรือไฟล์ได้
 เปิดคดีได้จากการค้นหาบน iPhone
 แก้ปัญหาข้อมูลหายที่เกิดขึ้นได้ยาก
+วาง iPad กลางโต๊ะ แล้วพิจารณาคดีด้วยกัน
 
 ### 앱스토어 (Tiếng Việt)
 
@@ -102,6 +115,7 @@ Tự động sao lưu dữ liệu mỗi ngày
 Khôi phục dữ liệu từ iCloud hoặc tệp
 Mở vụ việc ngay từ tìm kiếm trên iPhone
 Đã sửa lỗi hiếm gặp làm mất dữ liệu
+Cả nhà cùng xử án quanh chiếc iPad
 
 ### 앱스토어 (Čeština)
 
@@ -109,6 +123,7 @@ Každý den automatická záloha
 Obnova dat z iCloudu nebo ze souboru
 Případy najdete přímo v hledání iPhonu
 Opravena vzácná ztráta dat
+Soudíte společně kolem iPadu
 
 ### 앱스토어 (Dansk)
 
@@ -116,6 +131,7 @@ Automatisk backup hver dag
 Gendan data fra iCloud eller en fil
 Åbn sager direkte fra søgning på iPhone
 Rettet et sjældent tab af data
+Hold retsmøde sammen rundt om en iPad
 
 ### 앱스토어 (Ελληνικά)
 
@@ -123,6 +139,7 @@ Rettet et sjældent tab af data
 Επαναφορά από iCloud ή από αρχείο
 Ανοίξτε υποθέσεις από την αναζήτηση
 Διορθώθηκε σπάνια απώλεια δεδομένων
+Δικάστε όλοι μαζί γύρω από το iPad
 
 ### 앱스토어 (Suomi)
 
@@ -130,6 +147,7 @@ Automaattinen varmuuskopio joka päivä
 Palautus iCloudista tai tiedostosta
 Avaa jutut suoraan iPhonen hausta
 Korjattu harvinainen tietojen katoaminen
+Pitäkää oikeutta yhdessä iPadin ääressä
 
 ### 앱스토어 (Bahasa Indonesia)
 
@@ -137,6 +155,7 @@ Cadangan otomatis setiap hari
 Pulihkan data dari iCloud atau file
 Buka kasus dari pencarian iPhone
 Memperbaiki masalah langka data hilang
+Sidang bersama di sekeliling iPad
 
 ### 앱스토어 (Norsk bokmål)
 
@@ -144,6 +163,7 @@ Automatisk sikkerhetskopi hver dag
 Gjenopprett data fra iCloud eller en fil
 Åpne saker rett fra søk på iPhone
 Rettet et sjeldent tap av data
+Hold rettssak sammen rundt en iPad
 
 ### 앱스토어 (Nederlands)
 
@@ -151,6 +171,7 @@ Elke dag een automatische back-up
 Zet gegevens terug uit iCloud of bestand
 Open zaken direct via zoeken op iPhone
 Zeldzaam verlies van gegevens opgelost
+Houd samen rechtszaak rond de iPad
 
 ### 앱스토어 (Polski)
 
@@ -158,6 +179,7 @@ Codzienna automatyczna kopia zapasowa
 Przywróć dane z iCloud lub z pliku
 Otwieraj sprawy z wyszukiwania iPhone’a
 Naprawiono rzadką utratę danych
+Rozprawa całą rodziną przy iPadzie
 
 ### 앱스토어 (Svenska)
 
@@ -165,6 +187,7 @@ Automatisk säkerhetskopia varje dag
 Återställ data från iCloud eller en fil
 Öppna fall direkt från sök på iPhone
 Åtgärdat en sällsynt dataförlust
+Håll rättegång tillsammans runt en iPad
 
 ### 앱스토어 (Türkçe)
 
@@ -172,6 +195,7 @@ Her gün otomatik yedekleme
 iCloud’dan veya dosyadan geri yükleyin
 Davaları iPhone aramasından hemen açın
 Nadiren yaşanan veri kaybı düzeltildi
+iPad'in başında hep birlikte yargılayın
 
 ## 1.0.2
 

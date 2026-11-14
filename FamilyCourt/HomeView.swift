@@ -33,6 +33,8 @@ struct HomeView: View {
     @State private var filingType: CaseType?
     @ObservedObject private var router = ShortcutRouter.shared
     @Environment(\.dynamicTypeSize) private var typeSize
+    /// 넓은 아이패드의 왼쪽 판은 아이폰보다 훨씬 길다 — 타일이 끝까지 늘어나지 않게 아이폰 한 화면 높이로 묶는다
+    @Environment(\.isWidePadPanes) private var widePad
     @EnvironmentObject private var pro: LeeoStore
     @State private var lock: ProLock?
     /// 무료로 단축어를 한 번 써 봤는가. 처음 한 번은 그대로 열고, 다음 실행부터 Pro 를 안내한다.
@@ -122,7 +124,8 @@ struct HomeView: View {
             }
         }
         .padding(16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxHeight: widePad ? 760 : .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }
 }
 

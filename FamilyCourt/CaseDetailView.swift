@@ -67,7 +67,7 @@ struct CaseDetailView: View {
             .unlockSheet($lock)
             .fullScreenCover(isPresented: $showTrial) {
                 TrialFlowView(caseId: caseId)
-                    .foldConfined()
+                    .coverConfined()
             }
             .confirmationDialog("이 사건을 삭제할까요?", isPresented: $confirmDelete, titleVisibility: .visible) {
                 Button("삭제하기", role: .destructive) {

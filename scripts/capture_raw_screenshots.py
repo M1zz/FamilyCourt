@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """스토어 스크린샷 원본 캡처 — 언어마다 그 언어 화면과 그 언어 예시 기록으로 찍는다.
 
-사용법: python3 scripts/capture_raw_screenshots.py <시뮬레이터 UDID> <앱 경로(.app, Debug)> [언어 ...] [--scenes caseTop,filing]
+사용법: python3 scripts/capture_raw_screenshots.py <시뮬레이터 UDID> <앱 경로(.app, Debug)> [언어 ...] [--scenes caseTop,filing] [--ipad]
         (언어가 없으면 ko 빼고 전부, --scenes 가 없으면 모든 장면)
+  --ipad  iPad 13" 시뮬레이터로 꾸미지 않은 2064x2752 를 docs/screenshots/marketing/<스토어 로케일>/ipad-0N-….png 에 바로 둔다.
+          넓은 아이패드는 왼쪽 탭 | 오른쪽 재판을 기다리는 사건 두 쪽이다(ContentView.swift 의 WidePadPanes).
+          상태 막대의 날짜 · 창 이름은 시스템 언어를 따르므로 언어마다 시스템 언어를 바꾸고 SpringBoard 를 다시 띄운다.
 
   1. 예시 기록(scripts/screenshot_demo.json + Localizable.xcstrings 의 법원 이름·기본 법·사건번호 꼴)을
      앱 Documents/familycourt.json 에 넣고
@@ -90,17 +93,44 @@ def demo_state(lang):
     }
 
 
+IPAD_SHOTS = [("ipad-01-home.png", "home"), ("ipad-02-trial.png", "trial"),
+              ("ipad-03-verdict.png", "verdict"), ("ipad-04-laws.png", "laws")]
+STORE = {"en": "en-US", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "nl": "nl-NL"}   # 나머지는 앱 언어 그대로
+
+
+def has_bar(png):
+    """iPad 상태 막대(시각 · 날짜)가 그려졌는가 — 앱을 띄운 직후엔 가끔 통째로 비어 찍힌다."""
+    from PIL import Image
+    px = list(Image.open(png).convert("L").crop((40, 12, 420, 52)).getdata())
+    return max(px) - min(px) >= 40
+
+
+def set_system_language(udid, lang):
+    sh("xcrun", "simctl", "spawn", udid, "defaults", "write", ".GlobalPreferences", "AppleLanguages", "-array", lang)
+    sh("xcrun", "simctl", "spawn", udid, "defaults", "write", ".GlobalPreferences", "AppleLocale", LOCALE[lang])
+    sh("xcrun", "simctl", "spawn", udid, "launchctl", "stop", "com.apple.SpringBoard", check=False)
+    time.sleep(30)   # 홈이 다시 서고 상태 막대가 돌아올 때까지
+    status_bar(udid)
+
+
+def status_bar(udid):
+    sh("xcrun", "simctl", "status_bar", udid, "override", "--time", "9:41", "--batteryState", "charged",
+       "--batteryLevel", "100", "--cellularBars", "4", "--wifiBars", "3", "--dataNetwork", "wifi", check=False)
+
+
 def sh(*args, check=True):
     return subprocess.run(args, check=check, capture_output=True, text=True)
 
 
-def capture(udid, lang, only=None):
+def capture(udid, lang, only=None, ipad=False):
     d = DEMO[lang]
     container = pathlib.Path(sh("xcrun", "simctl", "get_app_container", udid, BUNDLE, "data").stdout.strip())
-    out = RAW / lang
+    out = (ROOT / "docs" / "screenshots" / "marketing" / STORE.get(lang, lang)) if ipad else RAW / lang
     out.mkdir(parents=True, exist_ok=True)
     state = json.dumps(demo_state(lang), ensure_ascii=False)
-    for fname, scene in SHOTS + [("caseTop", "caseTop")]:
+    if ipad:
+        set_system_language(udid, lang)
+    for fname, scene in (IPAD_SHOTS if ipad else SHOTS + [("caseTop", "caseTop")]):
         if only and scene not in only:
             continue
         sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
@@ -115,13 +145,20 @@ def capture(udid, lang, only=None):
         if scene == "filing":
             args += ["-FCTitle", d["filing_title"], "-FCDesc", d["filing_desc"], "-FCAccuser", "m3",
                      "-FCAccused", "m4", "-FCJudge", "m2", "-FCLaw", "l4"]
-        sh(*args)
-        time.sleep(6)   # 화면이 다 그려질 때까지 (부하가 있으면 늦다)
         target = (RAW / "creative" / lang / "02-verdict.png") if scene == "caseTop" else out / fname
         target.parent.mkdir(parents=True, exist_ok=True)
-        sh("xcrun", "simctl", "io", udid, "screenshot", str(target))
-        print("captured", target.relative_to(ROOT))
-    if not only or "home" in only:
+        for _ in range(4):
+            sh(*args)
+            time.sleep(6)   # 화면이 다 그려질 때까지 (부하가 있으면 늦다)
+            # 시뮬레이터는 Documents 아래에 직접 못 쓸 때가 있다 → 임시 파일로 찍고 옮긴다
+            tmp = pathlib.Path("/tmp") / f"familycourt-shot-{lang}.png"
+            sh("xcrun", "simctl", "io", udid, "screenshot", str(tmp))
+            if not ipad or has_bar(tmp):
+                shutil.move(tmp, target)
+                break
+            sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
+        print("captured" if target.exists() else "✗", target.relative_to(ROOT))
+    if not ipad and (not only or "home" in only):
         shutil.copy(out / "01-home.png", RAW / "creative" / lang / "01-home.png")
     sh("xcrun", "simctl", "terminate", udid, BUNDLE, check=False)
 
@@ -130,17 +167,18 @@ def main():
     udid, app = sys.argv[1], sys.argv[2]
     rest = sys.argv[3:]
     only = None
+    ipad = "--ipad" in rest
+    rest = [a for a in rest if a != "--ipad"]
     if "--scenes" in rest:   # 일부 장면만 다시 찍기: --scenes caseTop,filing
         i = rest.index("--scenes")
         only = set(rest[i + 1].split(","))
         rest = rest[:i] + rest[i + 2:]
     langs = rest or [l for l in DEMO if l != "ko"]
     sh("xcrun", "simctl", "bootstatus", udid, "-b")
-    sh("xcrun", "simctl", "status_bar", udid, "override", "--time", "9:41", "--batteryState", "charged",
-       "--batteryLevel", "100", "--cellularBars", "4", "--wifiBars", "3", "--dataNetwork", "wifi")
+    status_bar(udid)
     sh("xcrun", "simctl", "install", udid, app)
     for lang in langs:
-        capture(udid, lang, only)
+        capture(udid, lang, only, ipad)
 
 
 if __name__ == "__main__":
