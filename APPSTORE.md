@@ -90,7 +90,7 @@ Role-play trials for families
 
 ### 키워드
 
-kids,judge,lawyer,fairness,siblings,rules,chores,parenting,gavel,verdict,justice,law,teach,civics
+fairness,siblings,ethics,manners,argument,debate,courtroom,sibling,mock trial,dispute,pretend play
 
 ### 프로모션 텍스트
 
@@ -222,7 +222,7 @@ https://m1zz.github.io/FamilyCourt/ja/
 
 ### 키워드
 
-子供,兄弟,きょうだい,けんか,ルール,しつけ,法律,学習,裁判官,弁護士,検察官,判決,ロールプレイ,親子,小学生,知育,公平,法廷,約束,模擬裁判,家庭教育,社会科,道徳,判例,法律書
+検察官,判決,法廷,模擬裁判,道徳,法律書,兄弟げんか,ディベート,裁判員,裁判ゲーム,話し合い,公平,家庭教育,約束,弁護士,判例,親子,裁判官,法律,ルール,きょうだい,社会科,兄弟,小学生,知育
 
 ### 프로모션 텍스트
 
@@ -288,7 +288,7 @@ https://m1zz.github.io/FamilyCourt/zh-Hans/
 
 ### 키워드
 
-孩子,亲子,游戏,模拟法庭,法官,律师,检察官,判决,兄弟姐妹,吵架,规矩,家规,法律,公平,家教,家庭会议,小学生,启蒙,惩罚,承诺,法典,家庭教育,社会课,角色扮演,民事,刑事,法槌,公民教育
+模拟法庭,检察官,判决,兄弟姐妹,规矩,家规,家庭会议,承诺,社会课,民事,法槌,公民教育,兄弟吵架,法庭游戏,辩论,情商,过家家,吵架,法官,刑事,家教,法典,公平,孩子,惩罚,律师,法律,家庭教育
 
 ### 프로모션 텍스트
 
