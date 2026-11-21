@@ -79,13 +79,19 @@ enum Pro {
     }
 
     /// 유료 칸이 생기기 전에 받은 사람인가.
+    ///
+    /// ⚠️ App Store 에서 받은 앱(`.production`)만 먼저 써 준 가족이 될 수 있다.
+    ///    샌드박스 · TestFlight · Xcode 는 스토어에서 받은 적이 없는 설치다. 여기서 기록만 보고 Pro 를 열면,
+    ///    앞 빌드를 깔아 둔 심사 기기에서 결제 화면이 통째로 사라져 2.1(b)(인앱 결제를 찾을 수 없음)로 거절된다.
     @MainActor
     static func isLegacyInstall() async -> Bool {
-        if UserDefaults.standard.bool(forKey: legacyKey) { return true }
-        // 처음 받은 빌드 번호. 샌드박스 · TestFlight 는 "1.0" 이라 숫자가 아니므로 여기서 걸리지 않는다.
-        guard case .verified(let app) = try? await AppTransaction.shared,
-              let build = Int(app.originalAppVersion) else { return false }
-        return build <= lastFreeBuild
+        if case .verified(let app)? = try? await AppTransaction.shared {
+            guard app.environment == .production else { return false }
+            // 처음 받은 빌드 번호.
+            if let build = Int(app.originalAppVersion), build <= lastFreeBuild { return true }
+        }
+        // 영수증을 못 읽은 날(오프라인)은 처음 켤 때 적어 둔 기록을 믿는다.
+        return UserDefaults.standard.bool(forKey: legacyKey)
     }
 
     // MARK: - 팔기 시작했는가
