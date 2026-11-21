@@ -38,6 +38,8 @@ struct FamilyCourtApp: App {
                 .modifier(SatisfactionCheckIfEnabled())
                 // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
                 .leeoFeedbackReplyNotice(FamilyCourtSpec.self)
+                // 유료가 되면 축하, 모든 사용자가 한 번은 감사를 받는다 (LeeoKit).
+                .leeoCelebrations(appName: FamilyCourtSpec.displayName)
                 // 사건을 Siri · Spotlight 가 찾게 — 열 때와 뒤로 보낼 때 맞춘다.
                 .task { await CaseIndex.reindex(store.data.cases) }
                 // 상품을 한 번이라도 불러와야 무료 한도가 선다 (→ Pro.isSelling).
