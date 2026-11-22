@@ -149,6 +149,12 @@
             "state" : "translated",
             "value" : "Aile Mahkemesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محكمة العائلة"
+          }
         }
       }
     }

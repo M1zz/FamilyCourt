@@ -148,6 +148,12 @@
             "state" : "translated",
             "value" : "${applicationName} ile dava aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب محاكمة في ${applicationName}"
+          }
         }
       }
     },
@@ -296,6 +302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "${applicationName} ile haksızlığı bildir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم شكوى في ${applicationName}"
           }
         }
       }
@@ -446,6 +458,12 @@
             "state" : "translated",
             "value" : "${applicationName} ile bozulan sözü bildir"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإبلاغ عن إخلاف وعد في ${applicationName}"
+          }
         }
       }
     },
@@ -594,6 +612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "${applicationName} ile kural ihlalini bildir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإبلاغ عن مخالفة قانون في ${applicationName}"
           }
         }
       }
@@ -744,6 +768,12 @@
             "state" : "translated",
             "value" : "${applicationName} bekleyen duruşmaları göster"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض المحاكمات المنتظرة في ${applicationName}"
+          }
         }
       }
     },
@@ -892,6 +922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "${applicationName} ile bekleyen davaları gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستدعاءات في ${applicationName}"
           }
         }
       }

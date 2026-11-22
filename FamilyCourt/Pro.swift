@@ -153,10 +153,10 @@ enum ProLock: String, Identifiable {
         switch self {
         case .members:
             String(localized: "가족 등록부는 \(Pro.freeMembers)명까지 무료예요. Pro면 할머니 · 할아버지 · 사촌까지 모두 법정에 불러요.",
-                   comment: "Paywall reason: family member limit reached. %lld = free member limit")
+                   locale: .app, comment: "Paywall reason: family member limit reached. %lld = free member limit")
         case .laws:
             String(localized: "우리 집 법전은 \(Pro.freeLaws)조까지 무료예요. Pro면 가족회의에서 만든 법을 끝없이 더해요.",
-                   comment: "Paywall reason: house law limit reached. %lld = free law limit")
+                   locale: .app, comment: "Paywall reason: house law limit reached. %lld = free law limit")
         case .siri:
             String(localized: "Siri와 단축어로 바로 접수하는 건 Pro에서 열려요. 앱에서 접수하는 건 언제나 무료예요.",
                    comment: "Paywall reason: Siri / Shortcuts are Pro")

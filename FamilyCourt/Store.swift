@@ -61,7 +61,7 @@ final class Store: ObservableObject {
 
     func lawLabel(_ id: String) -> String? {
         guard let i = data.laws.firstIndex(where: { $0.id == id }) else { return nil }
-        return String(localized: "제\(i + 1)조 \(data.laws[i].title)", comment: "House law label: article number, title")
+        return String(localized: "제\(i + 1)조 \(data.laws[i].title)", locale: .app, comment: "House law label: article number, title")
     }
 
     func lawLabels(_ ids: [String]) -> String {
@@ -79,7 +79,9 @@ final class Store: ObservableObject {
         let c = Calendar.current
         let now = Date()
         // 한국어는 예전 기록과 같은 꼴(2026. 10. 5.), 다른 언어는 그 지역 날짜 꼴(05/10/2026 등)
-        guard Vocab.usesKoreanParticles else { return now.formatted(date: .numeric, time: .omitted) }
+        guard Vocab.usesKoreanParticles else {
+            return now.formatted(Date.FormatStyle(date: .numeric, time: .omitted, locale: .app, calendar: .app))
+        }
         return "\(c.component(.year, from: now)). \(c.component(.month, from: now)). \(c.component(.day, from: now))."
     }
 
@@ -115,7 +117,7 @@ final class Store: ObservableObject {
     func fileCase(type: CaseType, title: String, desc: String, want: String,
                   lawIds: [String], judge: String, accuser: String, accused: String) -> String {
         data.caseSeq += 1
-        let year = Calendar.current.component(.year, from: Date())
+        let year = Calendar.app.component(.year, from: Date())
         let newCase = CourtCase(
             id: UUID().uuidString,
             caseNo: type.caseNumber(year: year, seq: data.caseSeq),
@@ -226,7 +228,7 @@ final class Store: ObservableObject {
             TrialStep(title: v.defenseTitle, role: defenseTag,
                       script: String(localized: "\(defenseIntro):\n\n\"\(accusedWord)에게도 이런 사정이 있었습니다...\"\n\"\(v.neun(accusedWord)) 이렇게 반성하고 있습니다...\"\n\n\(v.eul(accusedWord)) 지켜 주는 좋은 이유를 찾아보세요!"),
                       timer: 90),
-            TrialStep(title: v.lastWordTitle, role: "\(accuserTag) → \(accusedTag)",
+            TrialStep(title: v.lastWordTitle, role: "\(accuserTag) \(AppText.arrow) \(accusedTag)",
                       script: String(localized: "\(v.wa(accuserWord)) \(v.ga(accusedWord)) 한 사람씩 마지막으로 하고 싶은 말을 해요.\n\n\(accuserWord): \"저는 ○○을 바랍니다.\"\n\(accusedWord): \"저는 ○○하겠습니다.\"\n\n한 사람당 30초씩!"),
                       timer: 60),
             TrialStep(title: v.verdictPrepTitle, role: judgeTag,

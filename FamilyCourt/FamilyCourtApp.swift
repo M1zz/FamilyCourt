@@ -40,6 +40,8 @@ struct FamilyCourtApp: App {
                 .leeoFeedbackReplyNotice(FamilyCourtSpec.self)
                 // 유료가 되면 축하, 모든 사용자가 한 번은 감사를 받는다 (LeeoKit).
                 .leeoCelebrations(appName: FamilyCourtSpec.displayName)
+                // 숫자 0-9 · 양력 (아랍어에서 ١٢٣ 과 섞이지 않게 → Locale.app)
+                .environment(\.locale, .app)
                 // 사건을 Siri · Spotlight 가 찾게 — 열 때와 뒤로 보낼 때 맞춘다.
                 .task { await CaseIndex.reindex(store.data.cases) }
                 // 상품을 한 번이라도 불러와야 무료 한도가 선다 (→ Pro.isSelling).

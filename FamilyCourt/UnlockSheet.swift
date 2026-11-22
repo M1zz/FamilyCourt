@@ -99,7 +99,7 @@ struct ParentGateView: View {
                 }
 
                 HStack(spacing: 14) {
-                    Text(verbatim: "\(a) × \(b) =")
+                    Text(verbatim: AppText.ltr("\(a) × \(b) ="))
                     Text(verbatim: answer.isEmpty ? "?" : answer)
                         .frame(minWidth: 72)
                         .foregroundStyle(answer.isEmpty ? .secondary : .primary)
@@ -124,7 +124,7 @@ struct ParentGateView: View {
                         Button { press(key) } label: {
                             Group {
                                 switch key {
-                                case "⌫": Image(systemName: "delete.left")
+                                case "⌫": Image(systemName: "delete.backward")
                                         .accessibilityLabel(Text("한 칸 지우기"))
                                 case "✓": Image(systemName: "checkmark")
                                         .accessibilityLabel(Text("확인"))
@@ -140,6 +140,8 @@ struct ParentGateView: View {
                 }
             }
         }
+        // 전화 키패드처럼 1 2 3 은 어느 언어에서나 왼쪽부터 (아랍어 화면도 같다)
+        .environment(\.layoutDirection, .leftToRight)
     }
 
     private func press(_ key: String) {
@@ -440,9 +442,9 @@ private struct ComparisonTable: View {
             (String(localized: "어휘 난이도", comment: "Paywall table row"), .yes, .yes),
             (String(localized: "지난 사건 · 백업", comment: "Paywall table row"), .yes, .yes),
             (String(localized: "가족 구성원", comment: "Paywall table row"),
-             .text(String(localized: "\(Pro.freeMembers)명", comment: "Paywall table: free member limit. %lld = count")), .text(unlimited)),
+             .text(String(localized: "\(Pro.freeMembers)명", locale: .app, comment: "Paywall table: free member limit. %lld = count")), .text(unlimited)),
             (String(localized: "법전 조문", comment: "Paywall table row"),
-             .text(String(localized: "\(Pro.freeLaws)조", comment: "Paywall table: free law limit. %lld = count")), .text(unlimited)),
+             .text(String(localized: "\(Pro.freeLaws)조", locale: .app, comment: "Paywall table: free law limit. %lld = count")), .text(unlimited)),
             (String(localized: "Siri · 단축어", comment: "Paywall table row"), .no, .yes),
             (String(localized: "법원 이름 정하기", comment: "Paywall table row"), .no, .yes),
         ]

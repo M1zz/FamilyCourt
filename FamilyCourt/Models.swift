@@ -1,5 +1,36 @@
 import Foundation
 
+// MARK: - 아랍어: 숫자 · 달력 · 글 방향
+
+enum AppText {
+    /// 앱이 아랍어(오른쪽에서 왼쪽)로 떠 있는가
+    static let isArabic = (Bundle.main.preferredLocalizations.first ?? "ko") == "ar"
+
+    /// 글 방향을 따르는 화살표 ("원고 → 피고"). 아랍어에서는 ←.
+    static var arrow: String { isArabic ? "←" : "→" }
+
+    /// 수식 · 기호가 붙은 숫자를 왼쪽에서 오른쪽으로 떼어 둔다 (아랍어에서 "3 × 4 =" 가 "= 4 × 3" 으로 뒤집히지 않게).
+    static func ltr(_ s: String) -> String { "\u{2066}\(s)\u{2069}" }
+}
+
+extension Locale {
+    /// 화면에 쓰는 로케일. 아랍어에서는 숫자를 0-9, 달력을 양력으로 맞춘다 — 사우디 기기는 ١٢٣ 이 기본이라
+    /// 그대로 찍는 숫자(타이머 · 곱셈 문제)와 문구 속 숫자가 한 화면에 섞였다. 다른 언어는 기기 그대로.
+    static let app: Locale = {
+        let current = Locale.current
+        guard AppText.isArabic else { return current }
+        var parts = Locale.Components(locale: current)
+        parts.numberingSystem = Locale.NumberingSystem("latn")
+        parts.calendar = .gregorian
+        return Locale(components: parts)
+    }()
+}
+
+extension Calendar {
+    /// 사건번호의 해 · 판결일을 셀 달력. 아랍어는 양력(사우디 기기는 히즈라력이 기본이라 1448년이 나온다), 다른 언어는 기기 그대로.
+    static var app: Calendar { AppText.isArabic ? Calendar(identifier: .gregorian) : .current }
+}
+
 // MARK: - 어휘 난이도
 
 enum VocabLevel: String, Codable, CaseIterable, Identifiable {
@@ -43,11 +74,14 @@ struct Vocab {
     /// (LocalizedStringResource 로 받아서 컴파일러가 세 말을 모두 String Catalog 에 올린다.)
     private func pick(_ easy: LocalizedStringResource, _ standard: LocalizedStringResource,
                       _ formal: LocalizedStringResource) -> String {
+        var resource: LocalizedStringResource
         switch level {
-        case .easy: return String(localized: easy)
-        case .standard: return String(localized: standard)
-        case .formal: return String(localized: formal)
+        case .easy: resource = easy
+        case .standard: resource = standard
+        case .formal: resource = formal
         }
+        resource.locale = .app   // "재판 3건" 의 숫자도 아랍어에서 0-9 로
+        return String(localized: resource)
     }
 
     /// 한국어 화면에서만 조사를 붙인다. 다른 언어 문장은 조사 없는 낱말을 그대로 받는다.
@@ -235,8 +269,8 @@ enum CaseType: String, Codable, CaseIterable, Identifiable {
     /// 사건번호 — 접수할 때 그 기기 언어로 한 번 만들어 저장한다 (예: 2026민사3호).
     func caseNumber(year: Int, seq: Int) -> String {
         self == .civil
-        ? String(localized: "\(year)민사\(seq)호", comment: "Civil case number: year, sequence")
-        : String(localized: "\(year)형사\(seq)호", comment: "Criminal case number: year, sequence")
+        ? String(localized: "\(year)민사\(seq)호", locale: .app, comment: "Civil case number: year, sequence")
+        : String(localized: "\(year)형사\(seq)호", locale: .app, comment: "Criminal case number: year, sequence")
     }
     var badgeEmoji: String { self == .civil ? "⚖️" : "🚨" }
     var accuserEmoji: String { self == .civil ? "🙋" : "🕵️" }

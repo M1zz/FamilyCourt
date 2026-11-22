@@ -140,6 +140,12 @@
             "state" : "translated",
             "value" : "%@ ve %@ seçilmeli"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى اختيار %@ و%@"
+          }
         }
       }
     },
@@ -281,6 +287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ ve %@ farklı kişiler olmalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب أن يكون %@ و%@ شخصين مختلفين"
           }
         }
       }
@@ -424,6 +436,12 @@
             "state" : "translated",
             "value" : "%@, %@ için konuşur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتحدث %@ دفاعًا عن %@"
+          }
         }
       }
     },
@@ -565,6 +583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ okur; hatayı yapan: %@\n\n“%@ %@, ev kanunumuzu şöyle çiğnemiştir:”\n\n📄 Olay: %@\n📜 Çiğnenen kanun: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ %1$@ ما فعله %2$@ من خطأ:\n\n«خالف %3$@ %4$@ قوانين بيتنا على النحو الآتي.»\n\n📄 تفاصيل القضية: %5$@\n📜 القانون المخالَف: %6$@"
           }
         }
       }
@@ -708,6 +732,12 @@
             "state" : "translated",
             "value" : "%@ ve %@ birbirine merak ettiklerini sorar:\n\n“O zaman neden öyle yaptın?”\n“Senin için ne yapmamı istersin?”\n\n⭐ Kural: Sırayla, sinirlenmeden!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتبادل %@ و%@ الأسئلة:\n\n«لماذا فعلت ذلك؟»\n«ماذا تريدني أن أفعل؟»\n\n⭐ القاعدة: واحدًا تلو الآخر، ومن دون غضب!"
+          }
         }
       }
     },
@@ -850,6 +880,12 @@
             "state" : "translated",
             "value" : "%@ ve %@ sırayla son sözlerini söyler.\n\n%@: “○○ istiyorum.”\n%@: “○○ yapacağım.”\n\nKişi başı 30 saniye!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقول %@ و%@ الكلمة الأخيرة، كلٌّ بدوره.\n\n%@: «أتمنى أن ...»\n%@: «سأحرص على أن ...»\n\n30 ثانية لكلٍّ منهما!"
+          }
         }
       }
     },
@@ -991,6 +1027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ soruyor, %@ cevaplıyor:\n\n“○○ yaptığın doğru mu?”\n“Neden öyle yaptın?”\n\n%@ dürüstçe cevap verir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يطرح %@ أسئلته على %@:\n\n«هل صحيح أنك ...؟»\n«لماذا فعلت ذلك؟»\n\nويجيب %@ بصدق."
           }
         }
       }
@@ -1135,6 +1177,12 @@
             "state" : "translated",
             "value" : "%@ / ay"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / شهر"
+          }
         }
       }
     },
@@ -1277,6 +1325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ / hafta"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ / أسبوع"
           }
         }
       }
@@ -1421,6 +1475,12 @@
             "state" : "translated",
             "value" : "%@ · %@ – %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ ضد %@"
+          }
         }
       }
     },
@@ -1562,6 +1622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ seçilmeli"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى اختيار %@"
           }
         }
       }
@@ -1705,6 +1771,12 @@
             "state" : "translated",
             "value" : "%@ gözlerini kapatıp 10 saniye düşünür. 🤔\n\n• Kim haklı?\n• Ev kanunlarımıza göre nasıl?\n• Hangi sözle yeniden iyi anlaşabilirler?\n\nHazır olunca [İleri] düğmesine dokun!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يغمض %@ عينيه ويفكر جيدًا لمدة 10 ثوانٍ. 🤔\n\n• كلام مَن هو الصحيح؟\n• ماذا تقول قوانين بيتنا؟\n• أي وعد يعيد الجميع إلى الوفاق؟\n\nعند الاستعداد، اضغطوا [التالي]!"
+          }
         }
       }
     },
@@ -1846,6 +1918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ gözlerini kapatıp 10 saniye düşünür. 🤔\n\n• Gerçekten kanunu çiğnedi mi?\n• Pişman mı?\n• Hangi ceza onu bir daha yapmaktan alıkoyar? Yoksa affetmeli mi?\n\nHazır olunca [İleri] düğmesine dokun!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يغمض %@ عينيه ويفكر جيدًا لمدة 10 ثوانٍ. 🤔\n\n• هل خالف القانون حقًا؟\n• هل هو نادم؟\n• أي عقوبة تمنع تكرار ذلك؟ أم نسامحه هذه المرة؟\n\nعند الاستعداد، اضغطوا [التالي]!"
           }
         }
       }
@@ -1989,6 +2067,12 @@
             "state" : "translated",
             "value" : "%@ yardım eder"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يساعد %@"
+          }
         }
       }
     },
@@ -2130,6 +2214,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ son olarak söylemek istediğini söyler:\n\n“○○ yaptığım için özür dilerim.”\n“Bundan sonra ○○ yapacağım.”\n\nİçtenlikle konuş."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقول %@ كلمته الأخيرة:\n\n«أعتذر لأنني ...»\n«ومن الآن فصاعدًا سأحرص على أن ...»\n\nبكل صدق ومن القلب."
           }
         }
       }
@@ -2273,6 +2363,12 @@
             "state" : "translated",
             "value" : "%@ istediği cezayı söyler (%@)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يطلب %@ العقوبة التي يراها مناسبة (%@)"
+          }
         }
       }
     },
@@ -2414,6 +2510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ davayla ilgisi olmayan biri olmalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب أن يكون %@ شخصًا لا علاقة له بالقضية"
           }
         }
       }
@@ -2557,6 +2659,12 @@
             "state" : "translated",
             "value" : "%@ davayı okur:\n\n“Bu dava, %@ %@ tarafından, %@ %@ ile yaşanan olay için açılmıştır.”\n\n📄 Olay: %@\n📜 Çiğnenen kanun: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض %1$@ القضية:\n\n«رفع %2$@ %3$@ هذه القضية طالبًا النظر فيما حدث بينه وبين %4$@ %5$@.»\n\n📄 تفاصيل القضية: %6$@\n📜 القانون المخالَف: %7$@"
+          }
         }
       }
     },
@@ -2698,6 +2806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ iki tarafı da dikkatle dinler ve adil karar verir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستمع %@ جيدًا إلى الطرفين ثم يحكم بعدل."
           }
         }
       }
@@ -2841,6 +2955,12 @@
             "state" : "translated",
             "value" : "%@ çiğnenen kanunu okur (%@)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ %@ القانون المخالَف (%@)"
+          }
         }
       }
     },
@@ -2982,6 +3102,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ hangi cezanın uygun olduğunu söyler:\n\n“%@ için şu cezayı talep ediyorum:\n%@”\n\n⭐ Ceza çok ağır olmasın, yapılabilir olsun!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقترح %@ العقوبة المناسبة:\n\n«أطلب أن يُطبَّق على %@ ما يلي:\n%@»\n\n⭐ عقوبة خفيفة يمكن الالتزام بها فعلًا!"
           }
         }
       }
@@ -3125,6 +3251,12 @@
             "state" : "translated",
             "value" : "%@ yaşadığı haksızlığı anlatır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشرح %@ لماذا يشعر بالظلم"
+          }
         }
       }
     },
@@ -3266,6 +3398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ yok, bu yüzden %@ kendini kendisi savunur"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد %@، فيدافع %@ عن نفسه"
           }
         }
       }
@@ -3409,6 +3547,12 @@
             "state" : "translated",
             "value" : "%@ anlatır:\n\n• Ne zaman, nerede, ne oldu?\n• Nasıl hissettin?\n• Ne istiyorsun? %@\n\n⭐ Kural: Bağırma, sadece doğruları söyle!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يروي %@ ما حدث:\n\n• متى وأين حدث ذلك، وماذا جرى؟\n• بماذا شعرت؟\n• ماذا تتمنى؟ %@\n\n⭐ القاعدة: لا صراخ، والحقائق فقط!"
+          }
         }
       }
     },
@@ -3550,6 +3694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ anlatır:\n\n• Gerçekten böyle bir şey oldu mu? Doğru mu, değil mi?\n• Neden öyle yaptın? Kendi düşünceni anlat.\n\n⭐ Kural: Dürüst konuş, bağırma!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتحدث %@ الآن:\n\n• هل حدث ذلك فعلًا؟ صحيح أم لا؟\n• لماذا فعلت ذلك؟ قل رأيك.\n\n⭐ القاعدة: الصدق، ولا صراخ!"
           }
         }
       }
@@ -3693,6 +3843,12 @@
             "state" : "translated",
             "value" : "%@ kendi tarafını anlatır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يروي %@ روايته"
+          }
         }
       }
     },
@@ -3834,6 +3990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ duruşmayı başlatır (%@) 🔨"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعلن %@ بدء المحاكمة (%@) 🔨"
           }
         }
       }
@@ -3977,6 +4139,12 @@
             "state" : "translated",
             "value" : "%@ duruşmayı başlatır 🔨"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعلن %@ بدء المحاكمة 🔨"
+          }
         }
       }
     },
@@ -4118,6 +4286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ karar verir: %@ · %@ · %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرر %@: %@ · %@ · %@"
           }
         }
       }
@@ -4261,6 +4435,12 @@
             "state" : "translated",
             "value" : "%@ soru sorar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يطرح %@ الأسئلة"
+          }
         }
       }
     },
@@ -4402,6 +4582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ yüksek sesle söyler:\n\n“%@ şimdi toplanıyor: %@ davası.\nDava numarası %@, ‘%@’ davası.\nHerkes düzgünce otursun lütfen!”"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقول %1$@ بصوت عالٍ:\n\n«تُفتتح الآن جلسة %2$@ في المحاكمة (%3$@).\nالقضية %4$@: \"%5$@\".\nليجلس الجميع جلسة مستقيمة!»"
           }
         }
       }
@@ -4545,6 +4731,12 @@
             "state" : "translated",
             "value" : "Sıra: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حان وقت %@"
+          }
         }
       }
     },
@@ -4687,6 +4879,12 @@
             "state" : "translated",
             "value" : "%@:\n\n“%@ tarafının da böyle bir sebebi vardı...”\n“%@ bu konuda gerçekten pişman...”\n\n%@ için iyi savunma nedenleri bul!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:\n\n«كان لدى %@ سببه أيضًا...»\n«و%@ نادم، وهذا ما يدل على ندمه...»\n\nابحثوا عن أسباب وجيهة للدفاع عن %@!"
+          }
         }
       }
     },
@@ -4828,6 +5026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ (%1$@)"
           }
         }
       }
@@ -4972,6 +5176,12 @@
             "state" : "translated",
             "value" : "%@ — %@: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$@ (%1$@): %3$@"
+          }
         }
       }
     },
@@ -5113,6 +5323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ anlatıyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رواية %@"
           }
         }
       }
@@ -5257,6 +5473,48 @@
             "state" : "translated",
             "value" : "%lld kişi"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld أفراد"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "فرد واحد"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "فردان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld أفراد"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld فردًا"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld فرد"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -5400,6 +5658,12 @@
             "state" : "translated",
             "value" : "Hukuk %lld/%lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$lld لسنة %1$lld مدني"
+          }
         }
       }
     },
@@ -5541,6 +5805,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld dk %lld sn"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدقائق %1$lld، الثواني %2$lld"
           }
         }
       }
@@ -5685,6 +5955,48 @@
             "state" : "translated",
             "value" : "%lld madde"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld مواد"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "مادة واحدة"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "مادتان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld مواد"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld مادة"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld مادة"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -5827,6 +6139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceza %lld/%lld"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%2$lld لسنة %1$lld جنائي"
           }
         }
       }
@@ -5971,6 +6289,12 @@
             "state" : "translated",
             "value" : "(“%@”)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(«%@»)"
+          }
         }
       }
     },
@@ -6112,6 +6436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "(Kanun seçilmedi)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(لم يُختر قانون)"
           }
         }
       }
@@ -6255,6 +6585,12 @@
             "state" : "translated",
             "value" : "(İçerik yok)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(لا تفاصيل)"
+          }
         }
       }
     },
@@ -6396,6 +6732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "(İstediğin cezayı söyle)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(اذكروا العقوبة المطلوبة)"
           }
         }
       }
@@ -6539,6 +6881,12 @@
             "state" : "translated",
             "value" : "(Bir şey yazılmamış)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(لم يُكتب شيء)"
+          }
         }
       }
     },
@@ -6680,6 +7028,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "+30 sn"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⁦+30⁩ ث"
           }
         }
       }
@@ -6823,6 +7177,12 @@
             "state" : "translated",
             "value" : "30 saniye ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة 30 ثانية"
+          }
         }
       }
     },
@@ -6964,6 +7324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 gün boyunca ayakkabıları düzenlemek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ترتيب الأحذية لمدة 3 أيام"
           }
         }
       }
@@ -7114,6 +7480,12 @@
             "state" : "translated",
             "value" : "Face ID kilidi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قفل Face ID"
+          }
         }
       }
     },
@@ -7263,6 +7635,12 @@
             "state" : "translated",
             "value" : "Ailenizin kayıtlarını gizli tutmak için uygulamayı Face ID veya Touch ID ile kilitleyin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قفل التطبيق باستخدام Face ID أو Touch ID لحماية سجلات عائلتك."
+          }
         }
       }
     },
@@ -7405,6 +7783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro'yu aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احصل على Pro"
           }
         }
       }
@@ -7549,6 +7933,12 @@
             "state" : "translated",
             "value" : "Pro kullanıyorsunuz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لديك اشتراك Pro"
+          }
         }
       }
     },
@@ -7692,6 +8082,12 @@
             "state" : "translated",
             "value" : "Siri · Kestirmeler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاختصارات وSiri"
+          }
         }
       }
     },
@@ -7834,6 +8230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri ve Kestirmeler ile doğrudan dava açmak Pro'da var. Uygulamada dava açmak her zaman ücretsiz."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم الدعوى مباشرةً من Siri والاختصارات متاح مع Pro. أما التقديم داخل التطبيق فمجاني دائمًا."
           }
         }
       }
@@ -7984,6 +8386,12 @@
             "state" : "translated",
             "value" : "Daha iyi VoiceOver desteği"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تجربة أفضل مع VoiceOver"
+          }
         }
       }
     },
@@ -8127,6 +8535,12 @@
             "state" : "translated",
             "value" : "[%@ %@] Destek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استفسار [%@ %@]"
+          }
         }
       }
     },
@@ -8268,6 +8682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "[Aile] sekmesinden duruşmalara katılacak kişileri ekle.\nDavaya göre herkes hakim, davacı\nya da avukat olabilir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضيفوا من تبويب [العائلة] كل من سيشارك في المحاكمة.\nوحسب القضية، يمكن لأي أحد أن يكون\nالقاضي أو المدّعي أو المحامي."
           }
         }
       }
@@ -8411,6 +8831,12 @@
             "state" : "translated",
             "value" : "[Mahkeme] sekmesinden haksızlıkları hukuk davası,\nev kanunu ihlallerini ceza davası olarak aç.\nKimi çağıracağını, kimin hakim olacağını da sen seç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من تبويب [المحكمة] قدّموا ما فيه ظلم كدعوى مدنية،\nومخالفة قوانين البيت كدعوى جنائية.\nوأنتم تختارون من تستدعون ومن يكون القاضي."
+          }
         }
       }
     },
@@ -8552,6 +8978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "— Yok —"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "— لا أحد —"
           }
         }
       }
@@ -8695,6 +9127,12 @@
             "state" : "translated",
             "value" : "← Geri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "→ السابق"
+          }
         }
       }
     },
@@ -8836,6 +9274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "↺ Baştan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↺ من جديد"
           }
         }
       }
@@ -8979,6 +9423,12 @@
             "state" : "translated",
             "value" : "⏸ Durdur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⏸ إيقاف"
+          }
         }
       }
     },
@@ -9120,6 +9570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "▶ Başlat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "▶ ابدأ"
           }
         }
       }
@@ -9263,6 +9719,12 @@
             "state" : "translated",
             "value" : "⚖️ Hukuk davası böyle işler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚖️ هكذا تسير المحاكمة المدنية"
+          }
         }
       }
     },
@@ -9404,6 +9866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚡ Ceza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡ العقوبة"
           }
         }
       }
@@ -9547,6 +10015,12 @@
             "state" : "translated",
             "value" : "⚡ Ceza (yapılacaklar)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡ العقوبة (ما يجب فعله)"
+          }
         }
       }
     },
@@ -9688,6 +10162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚡ Suçlu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡ مُدان"
           }
         }
       }
@@ -9831,6 +10311,12 @@
             "state" : "translated",
             "value" : "⚡ Hata yapmış"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡ ثبت الخطأ"
+          }
         }
       }
     },
@@ -9973,6 +10459,12 @@
             "state" : "translated",
             "value" : "⚡ Yaptırım (ceza)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚡ الجزاء (العقوبة)"
+          }
         }
       }
     },
@@ -10114,6 +10606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "✏️ Kanunu düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "✏️ تعديل القانون"
           }
         }
       }
@@ -10258,6 +10756,12 @@
             "state" : "translated",
             "value" : "❓ Seçilmedi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❓ لم يُحدَّد"
+          }
         }
       }
     },
@@ -10399,6 +10903,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "➕ Yeni kanun yap"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "➕ سنّ قانون جديد"
           }
         }
       }
@@ -10543,6 +11053,12 @@
             "state" : "translated",
             "value" : "Aile Mahkemesi Kayıtları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجلات محكمة العائلة"
+          }
         }
       }
     },
@@ -10684,6 +11200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aile"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العائلة"
           }
         }
       }
@@ -10828,6 +11350,12 @@
             "state" : "translated",
             "value" : "Aile Paylaşımı ile tüm aile birlikte kullanır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدمه جميع أفراد العائلة عبر المشاركة العائلية"
+          }
         }
       }
     },
@@ -10971,6 +11499,12 @@
             "state" : "translated",
             "value" : "Aile üyeleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أفراد العائلة"
+          }
         }
       }
     },
@@ -11112,6 +11646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aileye yardım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساعدة العائلة"
           }
         }
       }
@@ -11256,6 +11796,48 @@
             "state" : "translated",
             "value" : "Aile kaydı %lld kişiye kadar ücretsiz. Pro ile büyükanne, büyükbaba ve kuzenleri de mahkemeye çağırın."
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني حتى %lld أفراد. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني لفرد واحد. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني حتى فردين. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني حتى %lld أفراد. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني حتى %lld فردًا. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "سجل العائلة مجاني حتى %lld فرد. ومع Pro استدعوا الجدة والجد وأبناء العمومة إلى المحكمة أيضًا."
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -11397,6 +11979,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bunlar tüm ailenin birlikte koyduğu ev kanunlarıdır. Ceza davası, bu kanunlardan biri çiğnendiğinde açılabilir. Aile toplantısında herkes kabul ederse kanun eklenebilir ya da değiştirilebilir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هذه قوانين بيتنا التي اتفقت عليها العائلة كلها. تُفتح الدعوى الجنائية عند مخالفة أحد قوانين هذا الكتاب. ويمكن سنّ القوانين أو تعديلها إذا وافق الجميع في اجتماع العائلة."
           }
         }
       }
@@ -11540,6 +12128,12 @@
             "state" : "translated",
             "value" : "Aile üyesi ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة فرد من العائلة"
+          }
         }
       }
     },
@@ -11682,6 +12276,12 @@
             "state" : "translated",
             "value" : "Aile bireyleri birbirine kötü ya da kırıcı sözler söylemez."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يقول أفراد العائلة كلامًا سيئًا أو جارحًا لبعضهم."
+          }
         }
       }
     },
@@ -11823,6 +12423,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geliştiriciye sor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مراسلة المطوّر مباشرة"
           }
         }
       }
@@ -11967,6 +12573,12 @@
             "state" : "translated",
             "value" : "Gizlilik Politikası"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسة الخصوصية"
+          }
         }
       }
     },
@@ -12108,6 +12720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmanın açılışı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "افتتاح الجلسة"
           }
         }
       }
@@ -12251,6 +12869,12 @@
             "state" : "translated",
             "value" : "Atla"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطي"
+          }
         }
       }
     },
@@ -12392,6 +13016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Savcı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدّعي العام"
           }
         }
       }
@@ -12535,6 +13165,12 @@
             "state" : "translated",
             "value" : "Savcı olarak\niddianame veririm (ceza)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم لائحة الاتهام\nبصفة المدّعي العام (جنائي)"
+          }
         }
       }
     },
@@ -12676,6 +13312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Savcının ceza talebi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب المدّعي العام"
           }
         }
       }
@@ -12819,6 +13461,12 @@
             "state" : "translated",
             "value" : "Savcının soruları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسئلة المدّعي العام"
+          }
         }
       }
     },
@@ -12960,6 +13608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oyun ve TV kısıtlaması kısa olsun, sadece son çare olarak!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقليل الألعاب أو التلفاز لوقت قصير، وكحلٍّ أخير فقط!"
           }
         }
       }
@@ -13103,6 +13757,12 @@
             "state" : "translated",
             "value" : "Sonuç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النتيجة"
+          }
         }
       }
     },
@@ -13244,6 +13904,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karara hazırlık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستعداد للقرار"
           }
         }
       }
@@ -13387,6 +14053,12 @@
             "state" : "translated",
             "value" : "Kararın nedeni (hakemin sözleri)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سبب القرار (كلام الحَكَم)"
+          }
         }
       }
     },
@@ -13528,6 +14200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Derdest dava: %lld"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قضايا منظورة: %lld"
           }
         }
       }
@@ -13671,6 +14349,12 @@
             "state" : "translated",
             "value" : "Davacı davayı bizzat açar. Davalıyı ve mahkeme başkanını davayı açan kişi belirler; dava, başvuru anında başlar."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرفع المدّعي الدعوى بنفسه، ويحدد المدّعى عليه ورئيس الجلسة، وتبدأ الإجراءات فور تقديمها."
+          }
         }
       }
     },
@@ -13812,6 +14496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل"
           }
         }
       }
@@ -13955,6 +14645,12 @@
             "state" : "translated",
             "value" : "Seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر"
+          }
         }
       }
     },
@@ -14096,6 +14792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İddianamenin okunması"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تلاوة قرار الاتهام"
           }
         }
       }
@@ -14239,6 +14941,12 @@
             "state" : "translated",
             "value" : "Suçlamayı oku (iddianame)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قراءة التهمة (الاتهام)"
+          }
         }
       }
     },
@@ -14380,6 +15088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celseyi aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بدء الجلسة"
           }
         }
       }
@@ -14523,6 +15237,12 @@
             "state" : "translated",
             "value" : "Celse bekliyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بانتظار الجلسة"
+          }
         }
       }
     },
@@ -14665,6 +15385,12 @@
             "state" : "translated",
             "value" : "Celseye devam et"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة الجلسة"
+          }
         }
       }
     },
@@ -14806,6 +15532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celse sürüyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجلسة منعقدة"
           }
         }
       }
@@ -14950,6 +15682,12 @@
             "state" : "translated",
             "value" : "Aboneliği yönet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدارة الاشتراك"
+          }
         }
       }
     },
@@ -15092,6 +15830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonelikler, dönem bitmeden en az 24 saat önce iptal edilmezse aynı fiyattan otomatik olarak yenilenir. Ödeme Apple Hesabınızdan alınır; aboneliği istediğiniz zaman cihazınızdaki Apple Hesabı ayarlarından iptal edebilirsiniz. Ömür boyu seçeneği tek seferlik ödemedir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتجدد الاشتراك تلقائيًا بالسعر نفسه ما لم يُلغَ قبل انتهاء المدة بـ24 ساعة على الأقل. يُخصم المبلغ من حساب Apple، ويمكنك الإلغاء في أي وقت من إعدادات حساب Apple على جهازك. أما خيار مدى الحياة فيُدفع مرة واحدة."
           }
         }
       }
@@ -15236,6 +15980,12 @@
             "state" : "translated",
             "value" : "Satın alımları geri yükle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استعادة المشتريات"
+          }
         }
       }
     },
@@ -15378,6 +16128,12 @@
             "state" : "translated",
             "value" : "Ceza talebi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب العقوبة"
+          }
         }
       }
     },
@@ -15519,6 +16275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Merak ettiklerini sor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقت الأسئلة"
           }
         }
       }
@@ -15669,6 +16431,12 @@
             "state" : "translated",
             "value" : "Metni büyüttüğünüzde ekranlar kesilmek yerine düzgünce yeniden yerleşir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُعاد ترتيب الشاشات بشكل مرتب بدل أن يُقتطع النص عند تكبير الخط."
+          }
         }
       }
     },
@@ -15818,6 +16586,12 @@
             "state" : "translated",
             "value" : "Cihazlar arası eşitleme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المزامنة بين الأجهزة"
+          }
         }
       }
     },
@@ -15959,6 +16733,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bekleyen duruşmalar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمات بالانتظار"
           }
         }
       }
@@ -16102,6 +16882,12 @@
             "state" : "translated",
             "value" : "Bekleyen duruşma: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمات بالانتظار: %lld"
+          }
         }
       }
     },
@@ -16243,6 +17029,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bekleyen duruşmaları gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض المحاكمات المنتظرة"
           }
         }
       }
@@ -16386,6 +17178,12 @@
             "state" : "translated",
             "value" : "Arşiv (yedekleme)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أرشيف السجلات (نسخ احتياطي)"
+          }
         }
       }
     },
@@ -16527,6 +17325,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kayıtları içe aktar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استيراد السجلات"
           }
         }
       }
@@ -16670,6 +17474,12 @@
             "state" : "translated",
             "value" : "Kayıtları dışa aktar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ السجلات"
+          }
         }
       }
     },
@@ -16812,6 +17622,12 @@
             "state" : "translated",
             "value" : "Kayıtlar yüklendi!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم استيراد السجلات!"
+          }
         }
       }
     },
@@ -16953,6 +17769,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kayıtlar biriktikçe evimizin geçmiş kararları oluşur!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلما تراكمت القضايا صارت سوابق قضائية لعائلتكم!"
           }
         }
       }
@@ -17097,6 +17919,12 @@
             "state" : "translated",
             "value" : "Standart"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عادي"
+          }
         }
       }
     },
@@ -17238,6 +18066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gerçek mahkeme kelimeleri, yanında kolay açıklamalarla.\nÖrn. Davacı kazandı (davacı haklı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مصطلحات المحكمة الحقيقية مع شرح بسيط.\nمثال: الحكم للمدّعي (كلام المدّعي صحيح)"
           }
         }
       }
@@ -17381,6 +18215,12 @@
             "state" : "translated",
             "value" : "Biten dava kaydı: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجلات القضايا المنتهية: %lld"
+          }
         }
       }
     },
@@ -17522,6 +18362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biten davalar ve kararlar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القضايا المنتهية وأحكامها"
           }
         }
       }
@@ -17665,6 +18511,12 @@
             "state" : "translated",
             "value" : "Biten duruşma: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمات انتهت: %lld"
+          }
         }
       }
     },
@@ -17806,6 +18658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Biten duruşmaların hikâyesi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حكايات المحاكمات المنتهية"
           }
         }
       }
@@ -17949,6 +18807,12 @@
             "state" : "translated",
             "value" : "Bitti"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهى"
+          }
         }
       }
     },
@@ -18090,6 +18954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bitti ✔"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منتهية ✔"
           }
         }
       }
@@ -18233,6 +19103,12 @@
             "state" : "translated",
             "value" : "Bitti"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهى كل شيء"
+          }
         }
       }
     },
@@ -18374,6 +19250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kalan süre"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوقت المتبقي"
           }
         }
       }
@@ -18524,6 +19406,12 @@
             "state" : "translated",
             "value" : "Tüm verilerimi sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف كل بياناتي دفعة واحدة"
+          }
         }
       }
     },
@@ -18667,6 +19555,12 @@
             "state" : "translated",
             "value" : "Benim eşyam, senin eşyan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أغراضي وأغراض غيري"
+          }
         }
       }
     },
@@ -18808,6 +19702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Savcı olur,\ndavayı açarım (ceza)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أكون المدّعي العام\nوأُحيل القضية (جنائي)"
           }
         }
       }
@@ -18951,6 +19851,12 @@
             "state" : "translated",
             "value" : "Davacı olur,\nkendim dava açarım (hukuk)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أكون المدّعي\nوأرفع الدعوى بنفسي (مدني)"
+          }
         }
       }
     },
@@ -19092,6 +19998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmayı ben\nbaşlatırım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أطلب المحاكمة\nبنفسي"
           }
         }
       }
@@ -19235,6 +20147,12 @@
             "state" : "translated",
             "value" : "İçerik"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التفاصيل"
+          }
         }
       }
     },
@@ -19377,6 +20295,12 @@
             "state" : "translated",
             "value" : "Yarın bütün gün TV yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا تلفاز طوال يوم غد"
+          }
         }
       }
     },
@@ -19518,6 +20442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hepsi yapıldı! 🎉"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم الوفاء بالكامل! 🎉"
           }
         }
       }
@@ -19662,6 +20592,12 @@
             "state" : "translated",
             "value" : "Diğer süreleri göster"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض خطط أخرى"
+          }
         }
       }
     },
@@ -19804,6 +20740,12 @@
             "state" : "translated",
             "value" : "Başkası konuşurken sonuna kadar dinleriz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نستمع للآخر حتى ينتهي من كلامه"
+          }
         }
       }
     },
@@ -19945,6 +20887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Başkasının eşyası, sahibinden izin alınarak kullanılır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُستأذن صاحب الشيء قبل استخدام أغراض الآخرين."
           }
         }
       }
@@ -20089,6 +21037,12 @@
             "state" : "translated",
             "value" : "Tekrar dene"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة المحاولة"
+          }
         }
       }
     },
@@ -20230,6 +21184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir daha yapmama sözü"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وعد بعدم التكرار"
           }
         }
       }
@@ -20373,6 +21333,12 @@
             "state" : "translated",
             "value" : "İleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التالي"
+          }
         }
       }
     },
@@ -20514,6 +21480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İleri →"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التالي ←"
           }
         }
       }
@@ -20657,6 +21629,12 @@
             "state" : "translated",
             "value" : "Bir sonraki duruşmada karşı tarafın yardımcısı olmak"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تولّي دور مساعد الطرف الآخر في المحاكمة القادمة"
+          }
         }
       }
     },
@@ -20798,6 +21776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir dahaki sefere sinirlenince ne yapacağını planlayıp ailene anlatmak"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع خطة لما سنفعله عند الغضب في المرة القادمة، وعرضها أمام العائلة"
           }
         }
       }
@@ -20948,6 +21932,12 @@
             "state" : "translated",
             "value" : "Koyu Mod"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوضع الداكن"
+          }
         }
       }
     },
@@ -21089,6 +22079,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adım adım senaryo, zamanlayıcı ve tokmak\nduruşmada size yardım eder.\nKarar çıkınca mutlaka sarılıp barışın 🤗"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نصوص خطوة بخطوة ومؤقّت ومطرقة\nتساعد في إدارة المحاكمة.\nوبعد الحكم، تعانقوا وتصالحوا دائمًا 🤗"
           }
         }
       }
@@ -21232,6 +22228,12 @@
             "state" : "translated",
             "value" : "Kapat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
         }
       }
     },
@@ -21373,6 +22375,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yanıt gerektiren sorular için e-posta, kısa sohbetler için Instagram DM gönderin."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "للأسئلة التي تحتاج إلى رد، راسلنا بالبريد. وللدردشة السريعة، أرسل رسالة على Instagram."
           }
         }
       }
@@ -21516,6 +22524,12 @@
             "state" : "translated",
             "value" : "Cevap veren"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المُجيب"
+          }
         }
       }
     },
@@ -21658,6 +22672,12 @@
             "state" : "translated",
             "value" : "Cevap veren haklı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلام المُجيب صحيح"
+          }
         }
       }
     },
@@ -21799,6 +22819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Senaryoyla duruşma yap"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمة باتباع النص"
           }
         }
       }
@@ -21949,6 +22975,12 @@
             "state" : "translated",
             "value" : "Kontrastı Artır açıkken ya da renkleri ayırt etmek zorsa bile her şeyi kolayca okuyun."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قراءة كل شيء بسهولة حتى مع زيادة التباين أو صعوبة تمييز الألوان."
+          }
         }
       }
     },
@@ -22097,6 +23129,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamayı daha fazla dilde kullanın."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام التطبيق بمزيد من اللغات."
           }
         }
       }
@@ -22247,6 +23285,12 @@
             "state" : "translated",
             "value" : "Daha fazla dil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مزيد من اللغات"
+          }
         }
       }
     },
@@ -22388,6 +23432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yardım zamanı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقت المساعدة"
           }
         }
       }
@@ -22531,6 +23581,12 @@
             "state" : "translated",
             "value" : "Yardımcı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المساعد"
+          }
         }
       }
     },
@@ -22672,6 +23728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yardımcı rol (isteğe bağlı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دور المساعد (اختياري)"
           }
         }
       }
@@ -22815,6 +23877,12 @@
             "state" : "translated",
             "value" : "Telafi etmek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إصلاح ما حدث"
+          }
         }
       }
     },
@@ -22956,6 +24024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İkiniz barışın"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتصالح الاثنان ويعودان صديقين"
           }
         }
       }
@@ -23099,6 +24173,12 @@
             "state" : "translated",
             "value" : "Ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة"
+          }
         }
       }
     },
@@ -23240,6 +24320,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gönül almak"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جبر الخاطر"
           }
         }
       }
@@ -23383,6 +24469,12 @@
             "state" : "translated",
             "value" : "Son bir söz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمة الأخيرة"
+          }
         }
       }
     },
@@ -23524,6 +24616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Son bir söz (son söz hakkı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمة الأخيرة (الإفادة الختامية)"
           }
         }
       }
@@ -23667,6 +24765,12 @@
             "state" : "translated",
             "value" : "Herkes son sözünü söyler (%@)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقول كلٌّ كلمته الأخيرة (%@)"
+          }
         }
       }
     },
@@ -23808,6 +24912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bozduğunu ya da yediğini telafi etmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعويض ما كُسر أو أُكل"
           }
         }
       }
@@ -23951,6 +25061,12 @@
             "state" : "translated",
             "value" : "Bozulan şeyi birlikte tamir etmek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إصلاح ما انكسر معًا"
+          }
         }
       }
     },
@@ -24093,6 +25209,12 @@
             "state" : "translated",
             "value" : "Önce [Aile] sekmesinden en az 3 kişi kaydet (%@ için de biri lazım!)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضيفوا أولًا 3 أفراد على الأقل من تبويب [العائلة] (نحتاج إلى %@ أيضًا!)"
+          }
         }
       }
     },
@@ -24234,6 +25356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önce aileni kaydet"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضيفوا عائلتكم أولًا"
           }
         }
       }
@@ -24378,6 +25506,12 @@
             "state" : "translated",
             "value" : "Aileniz baştan beri bizimle olduğu için Pro ömür boyu sizin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عائلتكم من أوائل المستخدمين، لذا Pro مفتوح لكم مدى الحياة."
+          }
         }
       }
     },
@@ -24519,6 +25653,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "E-postayla sor (%@)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "راسلنا بالبريد (%@)"
           }
         }
       }
@@ -24663,6 +25803,12 @@
             "state" : "translated",
             "value" : "Ücretsiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجاني"
+          }
         }
       }
     },
@@ -24805,6 +25951,12 @@
             "state" : "translated",
             "value" : "Ne oldu?"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا حدث؟"
+          }
         }
       }
     },
@@ -24946,6 +26098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne oldu, dinleyelim"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاستماع لما حدث"
           }
         }
       }
@@ -25090,6 +26248,12 @@
             "state" : "translated",
             "value" : "Sınırsız"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بلا حدود"
+          }
         }
       }
     },
@@ -25231,6 +26395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suçsuz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بريء"
           }
         }
       }
@@ -25374,6 +26544,12 @@
             "state" : "translated",
             "value" : "Suçsuz (kanunu çiğnememiş)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بريء (لم يخالف القانون)"
+          }
         }
       }
     },
@@ -25515,6 +26691,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önizleme"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معاينة"
           }
         }
       }
@@ -25658,6 +26840,12 @@
             "state" : "translated",
             "value" : "Hukuk"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدنية"
+          }
         }
       }
     },
@@ -25799,6 +26987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hukuk davası (dava dilekçesi)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رفع دعوى مدنية (صحيفة الدعوى)"
           }
         }
       }
@@ -25942,6 +27136,12 @@
             "state" : "translated",
             "value" : "Hukuk davası aç (dilekçe)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم دعوى مدنية (صحيفة الدعوى)"
+          }
         }
       }
     },
@@ -26083,6 +27283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hukuk davası aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رفع دعوى مدنية"
           }
         }
       }
@@ -26226,6 +27432,12 @@
             "state" : "translated",
             "value" : "İstediği şey"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما أتمناه"
+          }
         }
       }
     },
@@ -26367,6 +27579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İstediği ceza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العقوبة التي أريدها"
           }
         }
       }
@@ -26510,6 +27728,12 @@
             "state" : "translated",
             "value" : "İstenen cezayı söyle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب العقوبة"
+          }
         }
       }
     },
@@ -26651,6 +27875,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pişman, affedildi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نادم، فنسامحه"
           }
         }
       }
@@ -26794,6 +28024,12 @@
             "state" : "translated",
             "value" : "Cezalar kısa ve yapılabilir olsun! %@ kendi önerdiği cezayı en iyi şekilde yerine getirir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اجعلوا العقوبة قصيرة وممكنة! وأكثر عقوبة يُلتزم بها هي التي يقترحها %@ بنفسه."
+          }
         }
       }
     },
@@ -26935,6 +28171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kural ihlalini bildir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإبلاغ عن مخالفة"
           }
         }
       }
@@ -27078,6 +28320,12 @@
             "state" : "translated",
             "value" : "Kanun ihlaline tanık olan kişi savcı sıfatıyla kamu davası açar. Sanığı ve mahkeme başkanını savcı belirler."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتولى من شهد المخالفة دور المدّعي العام ويقدّم الاتهام، ويحدد المتهم ورئيس الجلسة."
+          }
         }
       }
     },
@@ -27219,6 +28467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kanunun adı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم القانون"
           }
         }
       }
@@ -27362,6 +28616,12 @@
             "state" : "translated",
             "value" : "Mahkeme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحكمة"
+          }
         }
       }
     },
@@ -27503,6 +28763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mahkemeyi öğren"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلّم عن المحكمة"
           }
         }
       }
@@ -27646,6 +28912,12 @@
             "state" : "translated",
             "value" : "Zabıt kâtibi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كاتب المحكمة"
+          }
         }
       }
     },
@@ -27787,6 +29059,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mahkemenin adı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم المحكمة"
           }
         }
       }
@@ -27931,6 +29209,12 @@
             "state" : "translated",
             "value" : "Mahkemeye isim verme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسمية المحكمة"
+          }
         }
       }
     },
@@ -28072,6 +29356,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kanunu kaydırıp düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسحب القانون لتعديله"
           }
         }
       }
@@ -28215,6 +29505,12 @@
             "state" : "translated",
             "value" : "Bir kanunu sola kaydırınca [Düzenle] ve [Sil] çıkar. Aile toplantısında herkes kabul ettiğinde değiştirin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسحب القانون إلى اليمين لتظهر [تعديل] و[حذف]. ولا تغيّروه إلا إذا وافق الجميع في اجتماع العائلة."
+          }
         }
       }
     },
@@ -28356,6 +29652,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kanunlar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القوانين"
           }
         }
       }
@@ -28500,6 +29802,12 @@
             "state" : "translated",
             "value" : "Kanun maddeleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مواد القوانين"
+          }
         }
       }
     },
@@ -28642,6 +29950,12 @@
             "state" : "translated",
             "value" : "Kanunlara ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة إلى القوانين"
+          }
         }
       }
     },
@@ -28783,6 +30097,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kanun listesi boş."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كتاب القوانين فارغ."
           }
         }
       }
@@ -28927,6 +30247,12 @@
             "state" : "translated",
             "value" : "Hukuk terimleri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لغة المحكمة"
+          }
         }
       }
     },
@@ -29068,6 +30394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Savunma zamanı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وقت الدفاع"
           }
         }
       }
@@ -29211,6 +30543,12 @@
             "state" : "translated",
             "value" : "Avukat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحامي"
+          }
         }
       }
     },
@@ -29352,6 +30690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avukatın savunması"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مرافعة الدفاع"
           }
         }
       }
@@ -29502,6 +30846,12 @@
             "state" : "translated",
             "value" : "Daha rahat renkler ve kontrast"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ألوان وتباين أوضح"
+          }
         }
       }
     },
@@ -29645,6 +30995,12 @@
             "state" : "translated",
             "value" : "Ebeveyn kontrolü: aşağıdaki işlemin cevabını girin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحقّق وليّ الأمر: اضغط على إجابة المسألة أدناه."
+          }
         }
       }
     },
@@ -29786,6 +31142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "2 kez çamaşır katlamaya yardım etmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المساعدة في طي الغسيل مرتين"
           }
         }
       }
@@ -29929,6 +31291,12 @@
             "state" : "translated",
             "value" : "Dava içeriği"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تفاصيل القضية"
+          }
         }
       }
     },
@@ -30070,6 +31438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davanın tanıtımı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض القضية"
           }
         }
       }
@@ -30213,6 +31587,12 @@
             "state" : "translated",
             "value" : "Davanın özeti"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بيان موجز القضية"
+          }
         }
       }
     },
@@ -30354,6 +31734,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davanın başlığı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عنوان القضية"
           }
         }
       }
@@ -30497,6 +31883,12 @@
             "state" : "translated",
             "value" : "Davanın başlığını yaz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى كتابة عنوان القضية"
+          }
         }
       }
     },
@@ -30638,6 +32030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dava tanıtılır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تُعرض القضية على الجميع"
           }
         }
       }
@@ -30781,6 +32179,12 @@
             "state" : "translated",
             "value" : "Dava bulunamadı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر العثور على القضية"
+          }
         }
       }
     },
@@ -30922,6 +32326,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sadece doğruları söyleriz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نقول الحقائق فقط"
           }
         }
       }
@@ -31065,6 +32475,12 @@
             "state" : "translated",
             "value" : "Nasıl kullanılır? Tekrar göster"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الشرح مجددًا"
+          }
         }
       }
     },
@@ -31206,6 +32622,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
           }
         }
       }
@@ -31349,6 +32771,12 @@
             "state" : "translated",
             "value" : "Karşıdakinin duygularını hayal etme alıştırmasıdır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمرين جيد على تخيّل مشاعر الآخر."
+          }
         }
       }
     },
@@ -31490,6 +32918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O günü karşı tarafın gözünden yeniden anlatmak"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة رواية ما حدث من وجهة نظر الطرف الآخر"
           }
         }
       }
@@ -31633,6 +33067,12 @@
             "state" : "translated",
             "value" : "Karşıdakinin sevdiği bir oyunu 30 dakika birlikte oynamak"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اللعب مع الطرف الآخر لعبته المفضلة 30 دقيقة"
+          }
         }
       }
     },
@@ -31775,6 +33215,12 @@
             "state" : "translated",
             "value" : "Karşıdakinin duygularını önemsemek empatiyi geliştirir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاهتمام بمشاعر الآخرين ينمّي التعاطف."
+          }
         }
       }
     },
@@ -31916,6 +33362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karşıdakinin 3 güzel yönünü söylemek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذكر 3 أشياء جميلة في الطرف الآخر"
           }
         }
       }
@@ -32060,6 +33512,12 @@
             "state" : "translated",
             "value" : "Satın alma seçenekleri yüklenemedi."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل خيارات الشراء."
+          }
         }
       }
     },
@@ -32201,6 +33659,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yeni kanun yap"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سنّ قانون جديد"
           }
         }
       }
@@ -32344,6 +33808,12 @@
             "state" : "translated",
             "value" : "Kâtip"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكاتب"
+          }
         }
       }
     },
@@ -32485,6 +33955,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karşılıklı soru-cevap"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سؤال وجواب"
           }
         }
       }
@@ -32628,6 +34104,12 @@
             "state" : "translated",
             "value" : "Karşılıklı soru-cevap"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتبادلان الأسئلة والأجوبة"
+          }
         }
       }
     },
@@ -32769,6 +34251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoşgörü"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرأفة"
           }
         }
       }
@@ -32912,6 +34400,12 @@
             "state" : "translated",
             "value" : "Hoşgörü (pişman olduğu için affedildi)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرأفة (يُسامَح لأنه نادم)"
+          }
         }
       }
     },
@@ -33053,6 +34547,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3 kez bulaşığa yardım etmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المساعدة في غسل الصحون 3 مرات"
           }
         }
       }
@@ -33196,6 +34696,12 @@
             "state" : "translated",
             "value" : "Ayarlar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإعدادات"
+          }
         }
       }
     },
@@ -33338,6 +34844,12 @@
             "state" : "translated",
             "value" : "Ayarlar’daki [Kelime düzeyi] bölümünden “Kolay dil”i seçerseniz Hakim yerine Hakem, Davacı yerine Haksızlığa uğrayan gibi kolay kelimeler görünür."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختاروا «سهل» في [مستوى الكلمات] بالإعدادات، فتصبح كلمات مثل القاضي والمدّعي «الحَكَم» و«صاحب الشكوى»."
+          }
         }
       }
     },
@@ -33479,6 +34991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bağırmayız"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا نصرخ"
           }
         }
       }
@@ -33629,6 +35147,12 @@
             "state" : "translated",
             "value" : "Bir davada yazdıklarınız, uygulama yarıda kapansa bile yerinde kalır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يبقى ما كتبته في القضية محفوظًا حتى لو أُغلق التطبيق فجأة."
+          }
         }
       }
     },
@@ -33770,6 +35294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çağrıları gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الاستدعاءات"
           }
         }
       }
@@ -33913,6 +35443,12 @@
             "state" : "translated",
             "value" : "Çağrılan herkes toplansın ve duruşmayı açsın!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يا من استُدعيتم، اجتمعوا وافتحوا المحاكمة!"
+          }
         }
       }
     },
@@ -34054,6 +35590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Celpnameleri incele"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مراجعة أوامر الحضور"
           }
         }
       }
@@ -34198,6 +35740,12 @@
             "state" : "translated",
             "value" : "Kolay dil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سهل"
+          }
         }
       }
     },
@@ -34339,6 +35887,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İnsanın kendi yaptığı plan daha kalıcıdır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطة التي نضعها بأنفسنا تدوم طويلًا."
           }
         }
       }
@@ -34482,6 +36036,12 @@
             "state" : "translated",
             "value" : "Haber veren"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المُبلِّغ"
+          }
         }
       }
     },
@@ -34623,6 +36183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gerçek mahkemede kullanılan terimler.\nÖrn. Mahkeme Başkanı, Son söz, Ceza talebi, İddianamenin okunması"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المصطلحات كما تُستخدم في المحكمة الحقيقية.\nمثال: رئيس الجلسة، الإفادة الختامية، طلب العقوبة، تلاوة قرار الاتهام"
           }
         }
       }
@@ -34766,6 +36332,12 @@
             "state" : "translated",
             "value" : "Hakem"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحَكَم"
+          }
         }
       }
     },
@@ -34907,6 +36479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hakemi de davayı açan kişi seçer. Kavgayla ilgisi olmayan biri en iyisi!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يختار طالب المحاكمة الحَكَم أيضًا. والأفضل أن يكون شخصًا خارج الخلاف!"
           }
         }
       }
@@ -35057,6 +36635,12 @@
             "state" : "translated",
             "value" : "Kaldığınız yerden devam edin"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إكمال القضية من حيث توقفت"
+          }
         }
       }
     },
@@ -35199,6 +36783,12 @@
             "state" : "translated",
             "value" : "Kısıtlama"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقليل الامتيازات"
+          }
         }
       }
     },
@@ -35340,6 +36930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çocuğun yaşına uygun kelimeler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمات تناسب عمر طفلك"
           }
         }
       }
@@ -35490,6 +37086,12 @@
             "state" : "translated",
             "value" : "iPad’de ana özellikleri yalnızca klavyeyle kullanın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام الميزات الرئيسية على iPad بلوحة المفاتيح فقط."
+          }
         }
       }
     },
@@ -35639,6 +37241,12 @@
             "state" : "translated",
             "value" : "iPhone ve iPad’inizde aynı kayıtları kullanın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السجلات نفسها على iPhone وiPad."
+          }
         }
       }
     },
@@ -35780,6 +37388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Henüz değil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس بعد"
           }
         }
       }
@@ -35923,6 +37537,12 @@
             "state" : "translated",
             "value" : "Henüz biten dava yok."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد قضايا منتهية بعد."
+          }
         }
       }
     },
@@ -36064,6 +37684,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Henüz kayıtlı aile üyesi yok.\nAşağıdan ekleyebilirsin!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد أفراد بعد.\nأضيفوا أفراد العائلة من الأسفل!"
           }
         }
       }
@@ -36207,6 +37833,12 @@
             "state" : "translated",
             "value" : "Henüz duruşması açılmamış davaları listeler."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعرض القضايا التي لم تُعقد محاكمتها بعد."
+          }
         }
       }
     },
@@ -36348,6 +37980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamam"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسنًا"
           }
         }
       }
@@ -36498,6 +38136,12 @@
             "state" : "translated",
             "value" : "Hatırlatıcılar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التذكيرات"
+          }
         }
       }
     },
@@ -36646,6 +38290,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamayı açmadan devam eden davaları doğrudan Ana Ekran’dan kontrol edin."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة القضايا الجارية مباشرةً من الشاشة الرئيسية دون فتح التطبيق."
           }
         }
       }
@@ -36796,6 +38446,12 @@
             "state" : "translated",
             "value" : "Uygulamanın tamamını İngilizce de kullanın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام التطبيق كاملًا باللغة الإنجليزية."
+          }
         }
       }
     },
@@ -36937,6 +38593,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamadaki tüm kayıtları (aile, kanunlar, davalar, kararlar) bir dosyaya kaydedebilir ya da geri yükleyebilirsiniz. Cihaz değiştirirken kullanın."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احفظوا كل سجلات التطبيق (العائلة، القوانين، القضايا، الأحكام) في ملف أو استوردوها من جديد. مفيد عند تغيير الجهاز."
           }
         }
       }
@@ -37081,6 +38743,12 @@
             "state" : "translated",
             "value" : "Söz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوعد"
+          }
         }
       }
     },
@@ -37222,6 +38890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Söz bekliyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وعد معلّق"
           }
         }
       }
@@ -37365,6 +39039,12 @@
             "state" : "translated",
             "value" : "Sözünü tutmayanı\nduruşmaya getiririm"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أحضِر مَن أخلف الوعد\nإلى المحاكمة"
+          }
         }
       }
     },
@@ -37506,6 +39186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Söz bozma"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إخلاف وعد"
           }
         }
       }
@@ -37649,6 +39335,12 @@
             "state" : "translated",
             "value" : "Bozulan söz bildir"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بلاغ إخلاف وعد"
+          }
         }
       }
     },
@@ -37790,6 +39482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bozulan sözü bildir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإبلاغ عن إخلاف وعد"
           }
         }
       }
@@ -37933,6 +39631,12 @@
             "state" : "translated",
             "value" : "Söz bozma davası aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمة إخلاف وعد"
+          }
         }
       }
     },
@@ -38074,6 +39778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Söz tutuluyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوفاء جارٍ"
           }
         }
       }
@@ -38217,6 +39927,12 @@
             "state" : "translated",
             "value" : "Sözünü tutmayan birini gördüysen duruşma başlatabilirsin. Anne baba da başlatabilir! Bunu kimin yaptığını ve kimin hakem olacağını sen seçersin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رأيتم من لم يفِ بوعده؟ اطلبوا محاكمة! حتى ماما وبابا يمكنهما الطلب! وأنتم تختارون من فعلها ومن يكون الحَكَم."
+          }
         }
       }
     },
@@ -38358,6 +40074,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Söz tutulmadı!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وعدٌ لم يُوفَ!"
           }
         }
       }
@@ -38501,6 +40223,12 @@
             "state" : "translated",
             "value" : "İki tarafı da sonuna kadar dinler ve adil karar verir. Davayla ilgisi olmayan biri olmalı; onu davayı açan kişi seçer."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستمع إلى الطرفين حتى النهاية ويحكم بعدل. يتولاه شخص لا علاقة له بالقضية، ويختاره من يطلب المحاكمة."
+          }
         }
       }
     },
@@ -38643,6 +40371,12 @@
             "state" : "translated",
             "value" : "Çiğnenen kanunu seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختيار القانون المخالَف"
+          }
         }
       }
     },
@@ -38784,6 +40518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çiğnenen kanun: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القانون المخالَف: %@"
           }
         }
       }
@@ -38934,6 +40674,12 @@
             "state" : "translated",
             "value" : "Metin ve düğmeler Koyu Mod’da net ve belirgin kalır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقى النصوص والأزرار واضحة في الوضع الداكن."
+          }
         }
       }
     },
@@ -39075,6 +40821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne yapalım?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ماذا نقرر؟"
           }
         }
       }
@@ -39219,6 +40971,12 @@
             "state" : "translated",
             "value" : "Bunu bir büyüğüne göster"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أرِ هذه الشاشة لأحد الكبار"
+          }
         }
       }
     },
@@ -39360,6 +41118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Küçük çocukların bile anlayacağı kolay kelimeler.\nÖrn. Hakim → Hakem, Davacı → Haksızlığa uğrayan, Hüküm → Karar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلمات سهلة يفهمها حتى الصغار.\nمثال: القاضي ← الحَكَم، المدّعي ← صاحب الشكوى، الحكم ← القرار"
           }
         }
       }
@@ -39503,6 +41267,12 @@
             "state" : "translated",
             "value" : "Dağıttığı yeri kendisi toplamak"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ترتيب المكان الذي بعثرته بنفسك"
+          }
         }
       }
     },
@@ -39644,6 +41414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kelime düzeyi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مستوى الكلمات"
           }
         }
       }
@@ -39787,6 +41563,12 @@
             "state" : "translated",
             "value" : "Haksızlığa uğradıysan dava aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشعر بالظلم؟ قدّم الدعوى بنفسك"
+          }
         }
       }
     },
@@ -39928,6 +41710,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlığa uğrayan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صاحب الشكوى"
           }
         }
       }
@@ -40071,6 +41859,12 @@
             "state" : "translated",
             "value" : "Haksızlığa uğrayan haklı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلام صاحب الشكوى صحيح"
+          }
         }
       }
     },
@@ -40212,6 +42006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlık bildir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم شكوى"
           }
         }
       }
@@ -40355,6 +42155,12 @@
             "state" : "translated",
             "value" : "Haksızlık davası aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم شكوى ظلم"
+          }
         }
       }
     },
@@ -40496,6 +42302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlıkları da tutulmayan sözleri de\nailece kurulan bir mahkemede çözün.\nBirbirinizi sonuna kadar dinlemeyi öğrenirsiniz."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المواقف الظالمة والوعود المكسورة\nتُحلّ في محاكمة عائلية.\nتمرين رائع على الإصغاء لبعضنا."
           }
         }
       }
@@ -40639,6 +42451,12 @@
             "state" : "translated",
             "value" : "Haksızlığa uğradığı için davayı açan kişidir. Duruşmada (%@) ilk o konuşur."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هو من شعر بالظلم فطلب المحاكمة، ويكون أول من يتكلم في المحاكمة (%@)."
+          }
         }
       }
     },
@@ -40780,6 +42598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlık için hukuk davası açma ekranını açar."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح شاشة تقديم الشكوى كدعوى مدنية."
           }
         }
       }
@@ -40923,6 +42747,12 @@
             "state" : "translated",
             "value" : "Haksızlığı çözüp özür ya da telafi almak için yapılan duruşmadır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمة لحل موقف ظالم والحصول على اعتذار أو تعويض."
+          }
         }
       }
     },
@@ -41064,6 +42894,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlığa uğrayan kişi davayı kendisi açar. Kime dava açılacağını ve hakimin kim olacağını o seçer. Dava açılır açılmaz süreç başlar!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقدّم صاحب الشكوى الدعوى بنفسه، ويختار من يدّعي عليه ومن يكون القاضي. وبمجرد التقديم تبدأ القضية!"
           }
         }
       }
@@ -41207,6 +43043,12 @@
             "state" : "translated",
             "value" : "Haksızlığa uğradıysan duruşmayı kendin başlatırsın. Seni kimin üzdüğünü ve kimin hakem olacağını sen seçersin!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إذا حدث شيء ليس عدلًا، اطلب المحاكمة بنفسك. أنت تختار من سبّب ذلك ومن يكون الحَكَم!"
+          }
         }
       }
     },
@@ -41349,6 +43191,12 @@
             "state" : "translated",
             "value" : "Haksızlığı anlat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض شكوى"
+          }
         }
       }
     },
@@ -41490,6 +43338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس عدلًا"
           }
         }
       }
@@ -41634,6 +43488,12 @@
             "state" : "translated",
             "value" : "Aile Mahkemesi Pro"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محكمة العائلة Pro"
+          }
         }
       }
     },
@@ -41777,6 +43637,12 @@
             "state" : "translated",
             "value" : "Aile Mahkemesi Pro'yu keşfet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتشف محكمة العائلة Pro"
+          }
         }
       }
     },
@@ -41918,6 +43784,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haksızlık davası aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "طلب محاكمة شكوى"
           }
         }
       }
@@ -42061,6 +43933,12 @@
             "state" : "translated",
             "value" : "Haksızlık bu!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس عدلًا!"
+          }
         }
       }
     },
@@ -42202,6 +44080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ne zaman, nerede, ne olduğunu ayrıntılı yaz."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اكتبوا بالتفصيل متى وأين وماذا حدث."
           }
         }
       }
@@ -42352,6 +44236,12 @@
             "state" : "translated",
             "value" : "Güncellemeden sonra uygulamayı ilk açışınızda nelerin yeni olduğunu görün."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند أول فتح بعد التحديث، تعرّف على الجديد."
+          }
         }
       }
     },
@@ -42501,6 +44391,12 @@
             "state" : "translated",
             "value" : "Yenilikler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الجديد"
+          }
         }
       }
     },
@@ -42642,6 +44538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
           }
         }
       }
@@ -42786,6 +44688,12 @@
             "state" : "translated",
             "value" : "Yok"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غير متضمَّن"
+          }
         }
       }
     },
@@ -42929,6 +44837,12 @@
             "state" : "translated",
             "value" : "Roller · senaryo · zamanlayıcı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأدوار · النصوص · المؤقّتات"
+          }
         }
       }
     },
@@ -43071,6 +44985,12 @@
             "state" : "translated",
             "value" : "Rolleri ve duruşma sırasını öğren"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعلّم الأدوار وخطوات المحاكمة"
+          }
         }
       }
     },
@@ -43212,6 +45132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rolleri davayı açan kişi zaten seçti. Yargılanan kişi kendine yardım edecek birini seçebilir (%@)!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدّد طالب المحاكمة الأدوار مسبقًا. ويمكن للمُحال إلى المحاكمة أن يختار %@ ليساعده!"
           }
         }
       }
@@ -43362,6 +45288,12 @@
             "state" : "translated",
             "value" : "Tam İngilizce desteği"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دعم كامل للإنجليزية"
+          }
         }
       }
     },
@@ -43503,6 +45435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Örn. Aile bireyleri birbirine kötü söz söylemez."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: لا يقول أفراد العائلة كلامًا سيئًا لبعضهم."
           }
         }
       }
@@ -43646,6 +45584,12 @@
             "state" : "translated",
             "value" : "Örn. Yılmaz Ailesi Mahkemesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: محكمة آل سالم"
+          }
         }
       }
     },
@@ -43787,6 +45731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Örn. Kurabiyemin gizlice yenmesi olayı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: قضية الحلوى المأكولة سرًّا"
           }
         }
       }
@@ -43930,6 +45880,12 @@
             "state" : "translated",
             "value" : "Örn. Kurabiyemi izinsiz yediği için 2. Madde’yi çiğnemiştir..."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: أكل حلوتي دون استئذان، وهذا يخالف المادة 2، لذلك..."
+          }
         }
       }
     },
@@ -44071,6 +46027,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Örn. Özür mektubu yazmak, 3 kez bulaşığa yardım etmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: كتابة رسالة اعتذار، المساعدة في غسل الصحون 3 مرات"
           }
         }
       }
@@ -44214,6 +46176,12 @@
             "state" : "translated",
             "value" : "Örn. Özür istiyorum / Kurabiyemi geri ödesin"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: أريد اعتذارًا / تعويض حلوتي"
+          }
         }
       }
     },
@@ -44355,6 +46323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Örn. Bir hafta oyun yasağı / 3 kez bulaşığa yardım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: منع الألعاب أسبوعًا / المساعدة في غسل الصحون 3 مرات"
           }
         }
       }
@@ -44498,6 +46472,12 @@
             "state" : "translated",
             "value" : "Örn. Saygı, Düzen, Oyun saati"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مثال: الاحترام، الترتيب، وقت الألعاب"
+          }
         }
       }
     },
@@ -44639,6 +46619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bugünkü oyun süresini yarıya indirmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقليل وقت الألعاب اليوم إلى النصف"
           }
         }
       }
@@ -44782,6 +46768,12 @@
             "state" : "translated",
             "value" : "Ailemiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عائلتنا"
+          }
         }
       }
     },
@@ -44924,6 +46916,12 @@
             "state" : "translated",
             "value" : "Aile kaydı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل العائلة"
+          }
         }
       }
     },
@@ -45065,6 +47063,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mahkememiz böyle işler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هكذا تعمل محكمتنا"
           }
         }
       }
@@ -45209,6 +47213,12 @@
             "state" : "translated",
             "value" : "Evimizin Aile Mahkemesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محكمة عائلتنا"
+          }
         }
       }
     },
@@ -45350,6 +47360,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aile Mahkemesi’ne\nhoş geldiniz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أهلًا بكم في\nمحكمة عائلتنا"
           }
         }
       }
@@ -45494,6 +47510,12 @@
             "state" : "translated",
             "value" : "Pro ile kendi mahkemenize isim verebilirsiniz."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تسمية محكمتكم متاحة مع Pro."
+          }
         }
       }
     },
@@ -45635,6 +47657,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ev kanunlarının çiğnendiğini gören kişi savcı olur ve davayı açar. Anne baba da savcı olabilir! Kimin yargılanacağını ve hakimin kim olacağını savcı seçer."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من رأى أحدًا يخالف قانون البيت يصبح المدّعي العام ويقدّم القضية. ويمكن للوالدين أيضًا القيام بهذا الدور! والمدّعي العام يختار من يُحال إلى المحاكمة ومن يكون القاضي."
           }
         }
       }
@@ -45778,6 +47806,12 @@
             "state" : "translated",
             "value" : "Ev kanunlarını çiğneyen kişinin cezasını belirleyen duruşmadır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محاكمة لتحديد عقوبة من خالف قانون البيت."
+          }
         }
       }
     },
@@ -45919,6 +47953,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ev kanunlarının çiğnendiğini ortaya koyan kişidir. Duruşmayı (%@) başlatır ve ceza verilmesini ister. Anne baba da olabilir!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هو من يكشف مخالفة قانون البيت. يفتح المحاكمة (%@) ويطلب عقوبة. ويمكن للوالدين القيام بذلك أيضًا!"
           }
         }
       }
@@ -46062,6 +48102,12 @@
             "state" : "translated",
             "value" : "Ev kanunu ihlali için ceza davası açma ekranını açar."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح شاشة تقديم مخالفة قانون البيت كدعوى جنائية."
+          }
         }
       }
     },
@@ -46203,6 +48249,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evimizin Kanunları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قوانين بيتنا"
           }
         }
       }
@@ -46347,6 +48399,48 @@
             "state" : "translated",
             "value" : "Evimizin Kanunları %lld maddeye kadar ücretsiz. Pro ile aile toplantısında alınan her kuralı sınırsızca ekleyin."
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية حتى %lld مواد. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية لمادة واحدة. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية حتى مادتين. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية حتى %lld مواد. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية حتى %lld مادة. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "قوانين بيتنا مجانية حتى %lld مادة. ومع Pro أضيفوا بلا حدود كل قانون يسنّه اجتماع العائلة."
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -46488,6 +48582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evimizin kuralları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وعود بيتنا"
           }
         }
       }
@@ -46631,6 +48731,12 @@
             "state" : "translated",
             "value" : "Evimizin geçmiş kararları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل قضايانا"
+          }
         }
       }
     },
@@ -46773,6 +48879,12 @@
             "state" : "translated",
             "value" : "Koyduğumuz kuralları gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الوعود التي اتفقنا عليها"
+          }
         }
       }
     },
@@ -46914,6 +49026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Birlikte koyduğumuz kanunları gör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض القوانين التي وضعناها معًا"
           }
         }
       }
@@ -47064,6 +49182,12 @@
             "state" : "translated",
             "value" : "Hareketi Azalt"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقليل الحركة"
+          }
         }
       }
     },
@@ -47213,6 +49337,12 @@
             "state" : "translated",
             "value" : "Hareketi Azalt açıkken ekran efektleri sakinleşir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند تشغيل «تقليل الحركة» تصبح تأثيرات الشاشة أهدأ."
+          }
         }
       }
     },
@@ -47354,6 +49484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davacı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدّعي"
           }
         }
       }
@@ -47497,6 +49633,12 @@
             "state" : "translated",
             "value" : "Davacı kazandı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحكم لصالح المدّعي"
+          }
         }
       }
     },
@@ -47638,6 +49780,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davacı kazandı (davacı haklı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحكم للمدّعي (كلام المدّعي صحيح)"
           }
         }
       }
@@ -47781,6 +49929,12 @@
             "state" : "translated",
             "value" : "Davacı olarak dava\ndilekçesi veririm (hukuk)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رفع صحيفة دعوى\nبصفة المدّعي (مدني)"
+          }
         }
       }
     },
@@ -47922,6 +50076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İstenen"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما أريده"
           }
         }
       }
@@ -48072,6 +50232,12 @@
             "state" : "translated",
             "value" : "İstediğiniz zaman tüm kayıtlarınızı uygulama içinden tek seferde silin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح كل السجلات دفعة واحدة من داخل التطبيق متى شئت."
+          }
         }
       }
     },
@@ -48215,6 +50381,12 @@
             "state" : "translated",
             "value" : "Aylık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شهري"
+          }
         }
       }
     },
@@ -48356,6 +50528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suçlu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مُدان"
           }
         }
       }
@@ -48499,6 +50677,12 @@
             "state" : "translated",
             "value" : "Suçlu (kanunu çiğnemiş)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مُدان (خالف القانون فعلًا)"
+          }
         }
       }
     },
@@ -48641,6 +50825,12 @@
             "state" : "translated",
             "value" : "Tokmağı vur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الطرق بالمطرقة"
+          }
         }
       }
     },
@@ -48782,6 +50972,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tokmağa dokun! (Tak tak tak)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغطوا المطرقة! (طَق طَق طَق)"
           }
         }
       }
@@ -48926,6 +51122,12 @@
             "state" : "translated",
             "value" : "Bu Apple Hesabında satın alım bulunamadı."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم نعثر على مشتريات في حساب Apple هذا."
+          }
         }
       }
     },
@@ -49067,6 +51269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu kişiyi temsil edecek bir resim seç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر صورة تمثّل هذا الفرد"
           }
         }
       }
@@ -49210,6 +51418,12 @@
             "state" : "translated",
             "value" : "Bu cezayı karara ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة هذه العقوبة إلى الحكم"
+          }
         }
       }
     },
@@ -49351,6 +51565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu mahkemenin belirli bir patronu yok.\n① Haksızlığa uğrayan kişi davayı kendisi açar → ② kime dava açacağını ve kimin hakim olacağını kendisi seçer.\n③ Dava açıldığı anda süreç başlar → ④ duruşmada sorun adilce çözülür.\nDuruşma bitince mutlaka sarılıp barışın. 🤗"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد رئيس دائم لهذه المحكمة.\n① يقدّم صاحب الشكوى الدعوى بنفسه ← ② ويختار من يدّعي عليه ومن يكون القاضي.\n③ تبدأ القضية لحظة تقديمها ← ④ وتحسمها محاكمة عادلة.\nوعند انتهاء المحاكمة، تعانقوا وتصالحوا دائمًا. 🤗"
           }
         }
       }
@@ -49494,6 +51714,12 @@
             "state" : "translated",
             "value" : "Bu davayı sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف هذه القضية"
+          }
         }
       }
     },
@@ -49635,6 +51861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu dava silinsin mi?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف هذه القضية؟"
           }
         }
       }
@@ -49778,6 +52010,12 @@
             "state" : "translated",
             "value" : "Bu davadaki roller"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأدوار في هذه القضية"
+          }
         }
       }
     },
@@ -49919,6 +52157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu davanın rolleri — seçen: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأدوار في هذه القضية: اختارها %@"
           }
         }
       }
@@ -50062,6 +52306,12 @@
             "state" : "translated",
             "value" : "Ad (lakap da olur)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاسم (يصلح اللقب أيضًا)"
+          }
         }
       }
     },
@@ -50203,6 +52453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adı değiştir"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة التسمية"
           }
         }
       }
@@ -50346,6 +52602,12 @@
             "state" : "translated",
             "value" : "Bu olaydan öğrendiklerini yeni bir ev kanunu olarak önermek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اقتراح قانون جديد للبيت مما تعلّمناه من هذا الموقف"
+          }
         }
       }
     },
@@ -50487,6 +52749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şimdi söz sırası: %@\n\n• Gerçekten böyle bir şey oldu mu?\n• Neden öyle yaptın? Kendi düşünceni anlat.\n\n⭐ Kural: Sonuna kadar dinle, sözünü kesme!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الآن دور %@:\n\n• هل حدث ذلك فعلًا؟\n• لماذا فعلت ذلك؟ قل رأيك.\n\n⭐ القاعدة: نستمع حتى النهاية، ولا نقاطع!"
           }
         }
       }
@@ -50631,6 +52899,12 @@
             "state" : "translated",
             "value" : "Kullanım Koşulları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شروط الاستخدام"
+          }
         }
       }
     },
@@ -50772,6 +53046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İfa bekliyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بانتظار التنفيذ"
           }
         }
       }
@@ -50915,6 +53195,12 @@
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رسالة على Instagram (⁦@lee25_ios⁩)"
+          }
         }
       }
     },
@@ -51056,6 +53342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kendini onun yerine koy"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبادل المواقف"
           }
         }
       }
@@ -51199,6 +53491,12 @@
             "state" : "translated",
             "value" : "Herkes kendi dağıttığını kendisi toplar."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كلٌّ يرتب الفوضى التي أحدثها."
+          }
         }
       }
     },
@@ -51340,6 +53638,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hatayla bağlantılı cezalar en öğretici olanlardır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العقوبة المرتبطة بالخطأ هي الأكثر فائدة تربوية."
           }
         }
       }
@@ -51483,6 +53787,12 @@
             "state" : "translated",
             "value" : "Hata yapmamış"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا، ليس خطأ"
+          }
         }
       }
     },
@@ -51624,6 +53934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evet, hata yapmış"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نعم، هذا خطأ"
           }
         }
       }
@@ -51767,6 +54083,12 @@
             "state" : "translated",
             "value" : "Yapılan hatayı oku"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قراءة ما حدث من خطأ"
+          }
         }
       }
     },
@@ -51908,6 +54230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir dakika!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لحظة من فضلك!"
           }
         }
       }
@@ -52052,6 +54380,12 @@
             "state" : "translated",
             "value" : "Duruşma"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحاكمة"
+          }
         }
       }
     },
@@ -52193,6 +54527,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sırada"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنتظر المحاكمة"
           }
         }
       }
@@ -52336,6 +54676,12 @@
             "state" : "translated",
             "value" : "Bekliyor"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بانتظار المحاكمة"
+          }
         }
       }
     },
@@ -52477,6 +54823,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşma başlasın!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لتبدأ المحاكمة!"
           }
         }
       }
@@ -52620,6 +54972,12 @@
             "state" : "translated",
             "value" : "Duruşmaya başla"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لنبدأ"
+          }
         }
       }
     },
@@ -52761,6 +55119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmayı aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح المحاكمة"
           }
         }
       }
@@ -52905,6 +55269,12 @@
             "state" : "translated",
             "value" : "Duruşma açma (hukuk · ceza)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عقد المحاكمات (مدنية · جنائية)"
+          }
         }
       }
     },
@@ -53046,6 +55416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmaya devam et"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة المحاكمة"
           }
         }
       }
@@ -53189,6 +55565,12 @@
             "state" : "translated",
             "value" : "Duruşmaya ara ver"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف المحاكمة مؤقتًا"
+          }
         }
       }
     },
@@ -53330,6 +55712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşma sürüyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحاكمة جارية"
           }
         }
       }
@@ -53473,6 +55861,12 @@
             "state" : "translated",
             "value" : "Duruşmaya toplanın"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اجتمعوا للمحاكمة"
+          }
         }
       }
     },
@@ -53614,6 +56008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmaya çağrılan kişinin yanında olur, ona yardım eder. Onu savunmak için iyi nedenler bulur."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقف إلى جانب المُحال إلى المحاكمة، ويبحث عن أسباب وجيهة للدفاع عنه."
           }
         }
       }
@@ -53757,6 +56157,12 @@
             "state" : "translated",
             "value" : "Duruşmaya çağrılan kişidir. Kendi düşüncesini anlatma hakkı vardır ve bir yardımcı seçebilir (%@)."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هو المُحال إلى المحاكمة. له الحق في عرض روايته، ويمكنه اختيار %@."
+          }
         }
       }
     },
@@ -53899,6 +56305,12 @@
             "state" : "translated",
             "value" : "Duruşmalara katılacak tüm aileyi kaydedin. Davaya göre herkes davacı da, savcı da, hakim de olabilir!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضيفوا كل من سيشارك في المحاكمات. وحسب القضية، يمكن لأي أحد أن يكون المدّعي أو المدّعي العام أو القاضي!"
+          }
         }
       }
     },
@@ -54040,6 +56452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşmada konuşulanları not eden kişidir. Olmasa da duruşma yapılabilir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يدوّن ما يُقال في المحاكمة. ويمكن عقد المحاكمة من دونه."
           }
         }
       }
@@ -54184,6 +56602,12 @@
             "state" : "translated",
             "value" : "Duruşmalar her zaman ücretsiz. Pro, kalabalık ve kuralı bol aileler için. Yıllık ya da ömür boyu seçin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحاكمات مجانية دائمًا. وPro مخصص للعائلات الكبيرة ذات القوانين الكثيرة. اختاروا الاشتراك السنوي أو مدى الحياة."
+          }
         }
       }
     },
@@ -54325,6 +56749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşma bekleyen dava: %lld"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قضايا بانتظار المحاكمة: %lld"
           }
         }
       }
@@ -54468,6 +56898,12 @@
             "state" : "translated",
             "value" : "Duruşma bekleyen dava yok.\nEvimizde huzur var!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا توجد قضايا بانتظار المحاكمة.\nالسلام يعمّ بيتنا!"
+          }
         }
       }
     },
@@ -54609,6 +57045,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşma için en az 3 aile üyesi gerekir (hakim de lazım!). Önce [Aile] sekmesinden kaydet."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحتاج المحاكمة إلى 3 أفراد على الأقل (ونحتاج إلى قاضٍ أيضًا!). أضيفوهم أولًا من تبويب [العائلة]."
           }
         }
       }
@@ -54752,6 +57194,12 @@
             "state" : "translated",
             "value" : "Duruşma bitince, sonuç ne olursa olsun, birbirimize sarılıp barışırız."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعد انتهاء المحاكمة، أيًّا كانت النتيجة، نتعانق ونتصالح."
+          }
         }
       }
     },
@@ -54893,6 +57341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duruşma bitince mutlaka sarılıp barışırız 🤗"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعد المحاكمة، تعانقوا وتصالحوا دائمًا 🤗"
           }
         }
       }
@@ -55036,6 +57490,12 @@
             "state" : "translated",
             "value" : "Mahkeme Başkanı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رئيس الجلسة"
+          }
         }
       }
     },
@@ -55177,6 +57637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mahkeme başkanını davayı açan kişi belirler. Tarafsızlık için davayla çıkarı olmayan biri olmalıdır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُعيّن رافع الدعوى رئيسَ الجلسة. ولضمان العدل، يجب ألا تكون له مصلحة في القضية."
           }
         }
       }
@@ -55320,6 +57786,12 @@
             "state" : "translated",
             "value" : "Duruşmada"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قيد المحاكمة"
+          }
         }
       }
     },
@@ -55462,6 +57934,12 @@
             "state" : "translated",
             "value" : "Kaydet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ"
+          }
         }
       }
     },
@@ -55603,6 +58081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not tutan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدوِّن"
           }
         }
       }
@@ -55747,6 +58231,12 @@
             "state" : "translated",
             "value" : "Başvuru"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقديم"
+          }
         }
       }
     },
@@ -55889,6 +58379,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düzen"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الترتيب"
           }
         }
       }
@@ -56033,6 +58529,12 @@
             "state" : "translated",
             "value" : "Madde %lld: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المادة %lld: %@"
+          }
         }
       }
     },
@@ -56174,6 +58676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Madde %lld (%@)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المادة %lld (%@)"
           }
         }
       }
@@ -56318,6 +58826,12 @@
             "state" : "translated",
             "value" : "Saygı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاحترام"
+          }
         }
       }
     },
@@ -56459,6 +58973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kapandı ✔"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مُغلقة ✔"
           }
         }
       }
@@ -56602,6 +59122,12 @@
             "state" : "translated",
             "value" : "Kapanan dava: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قضايا مُغلقة: %lld"
+          }
         }
       }
     },
@@ -56744,6 +59270,12 @@
             "state" : "translated",
             "value" : "Kapanan dava kayıtları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سجل القضايا المُغلقة"
+          }
         }
       }
     },
@@ -56885,6 +59417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İyi bir ceza, hatayı telafi eder ve kırılan kalpleri onarır. Listede üstte olanlar daha öğreticidir. Birini seçip evinize göre değiştirebilirsiniz!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العقوبة الجيدة تُصلح الخطأ وتداوي المشاعر، وكلما كانت أعلى في القائمة كانت أنفع تربويًا. اختاروا واحدة وعدّلوها بما يناسب عائلتكم!"
           }
         }
       }
@@ -57029,6 +59567,12 @@
             "state" : "translated",
             "value" : "Haftalık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسبوعي"
+          }
         }
       }
     },
@@ -57171,6 +59715,12 @@
             "state" : "translated",
             "value" : "Hüküm (kararın sonucu)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "منطوق الحكم (النتيجة)"
+          }
         }
       }
     },
@@ -57312,6 +59862,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şu anki adım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخطوة الحالية"
           }
         }
       }
@@ -57691,6 +60247,48 @@
             "state" : "translated",
             "value" : "到目前為止，家裡已有 %lld 場爭執靠判決化解"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لم تحسم عائلتكم أي خلاف بحكم بعد"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "حسمت عائلتكم حتى الآن خلافًا واحدًا بحكم"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "حسمت عائلتكم حتى الآن خلافين بحكم"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "حسمت عائلتكم حتى الآن %lld خلافات بحكم"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "حسمت عائلتكم حتى الآن %lld خلافًا بحكم"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "حسمت عائلتكم حتى الآن %lld خلاف بحكم"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -57832,6 +60430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şimdilik her şey sakin 🕊️"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الهدوء يعمّ الآن 🕊️"
           }
         }
       }
@@ -57976,6 +60580,12 @@
             "state" : "translated",
             "value" : "Geçmiş davalar · yedekleme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القضايا السابقة · النسخ الاحتياطي"
+          }
         }
       }
     },
@@ -58117,6 +60727,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçmiş duruşmalar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المحاكمات السابقة"
           }
         }
       }
@@ -58260,6 +60876,12 @@
             "state" : "translated",
             "value" : "Destek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدعم"
+          }
         }
       }
     },
@@ -58401,6 +61023,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İçten bir özür mektubu ya da resim hediye etmek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إهداء رسالة اعتذار صادقة أو رسمة"
           }
         }
       }
@@ -58544,6 +61172,12 @@
             "state" : "translated",
             "value" : "Katılanları seç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختيار المشاركين"
+          }
         }
       }
     },
@@ -58685,6 +61319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Talep sonucu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الطلبات"
           }
         }
       }
@@ -58828,6 +61468,12 @@
             "state" : "translated",
             "value" : "Son söz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإفادة الختامية"
+          }
         }
       }
     },
@@ -58970,6 +61616,12 @@
             "state" : "translated",
             "value" : "Önerilen cezaları gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض العقوبات المقترحة"
+          }
         }
       }
     },
@@ -59111,6 +61763,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vazgeç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
           }
         }
       }
@@ -59261,6 +61919,12 @@
             "state" : "translated",
             "value" : "Büyük metne uygun düzenler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطيط يناسب الخط الكبير"
+          }
         }
       }
     },
@@ -59410,6 +62074,12 @@
             "state" : "translated",
             "value" : "Klavyeyle kontrol"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التحكم بلوحة المفاتيح"
+          }
         }
       }
     },
@@ -59551,6 +62221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zamanlayıcıyı durdur"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف المؤقّت"
           }
         }
       }
@@ -59694,6 +62370,12 @@
             "state" : "translated",
             "value" : "Zamanlayıcıyı başlat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشغيل المؤقّت"
+          }
         }
       }
     },
@@ -59836,6 +62518,12 @@
             "state" : "translated",
             "value" : "Zamanlayıcıyı sıfırla"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة المؤقّت من البداية"
+          }
         }
       }
     },
@@ -59977,6 +62665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dosya okunamadı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّرت قراءة الملف"
           }
         }
       }
@@ -60121,6 +62815,12 @@
             "state" : "translated",
             "value" : "Karar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحكم"
+          }
         }
       }
     },
@@ -60264,6 +62964,12 @@
             "state" : "translated",
             "value" : "Karar · ceza önerisi · söz takibi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأحكام · عقوبات مقترحة · متابعة الوعود"
+          }
         }
       }
     },
@@ -60405,6 +63111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kararın sonucu"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نتيجة الحكم"
           }
         }
       }
@@ -60548,6 +63260,12 @@
             "state" : "translated",
             "value" : "Karara geç 📜"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلى النطق بالحكم 📜"
+          }
         }
       }
     },
@@ -60689,6 +63407,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hükme hazırlık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التحضير للحكم"
           }
         }
       }
@@ -60832,6 +63556,12 @@
             "state" : "translated",
             "value" : "Kararı kesinleştir (Tak tak tak!)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تثبيت الحكم (طَق طَق!)"
+          }
         }
       }
     },
@@ -60973,6 +63703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gerekçeli karar (hüküm ve gerekçe)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نص الحكم (المنطوق والأسباب)"
           }
         }
       }
@@ -61116,6 +63852,12 @@
             "state" : "translated",
             "value" : "Gerekçeli karar (hakimin sözleri)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نص الحكم (كلام القاضي)"
+          }
         }
       }
     },
@@ -61257,6 +63999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kararı yaz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يُرجى كتابة نص الحكم"
           }
         }
       }
@@ -61407,6 +64155,12 @@
             "state" : "translated",
             "value" : "Kararın neye hükmettiğini kimse unutmasın diye doğru zamanda hatırlatma alın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكير في الوقت المناسب حتى لا ينسى أحد ما قرره الحكم."
+          }
         }
       }
     },
@@ -61548,6 +64302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karar çıkınca kabul ederiz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نقبل الحكم"
           }
         }
       }
@@ -61692,6 +64452,12 @@
             "state" : "translated",
             "value" : "Şimdiden %lld karar verildi. Duruşmalar her zaman ücretsiz. Aileniz kalabalık ve kuralınız çoksa Pro'ya bir göz atın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد الأحكام حتى الآن: %lld. المحاكمات مجانية دائمًا، وإن كانت عائلتكم كبيرة وقوانينها كثيرة فألقوا نظرة على Pro."
+          }
         }
       }
     },
@@ -61833,6 +64599,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karar tarihi %@ · %@ %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تاريخ الحكم %@ · %@ %@"
           }
         }
       }
@@ -61976,6 +64748,12 @@
             "state" : "translated",
             "value" : "Geçmiş kararları gör"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القضايا السابقة"
+          }
         }
       }
     },
@@ -62117,6 +64895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İçtihat arşivi"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الاطلاع على السوابق"
           }
         }
       }
@@ -62260,6 +65044,12 @@
             "state" : "translated",
             "value" : "Hakim"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القاضي"
+          }
         }
       }
     },
@@ -62401,6 +65191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hakimi de davayı açan kişi seçer. Davayla ilgisi olmayan biri en iyisi!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يختار مقدّم الدعوى القاضي أيضًا. والأفضل شخص لا علاقة له بالقضية!"
           }
         }
       }
@@ -62551,6 +65347,12 @@
             "state" : "translated",
             "value" : "Katlanabilir iPhone düzeni"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شاشة iPhone القابل للطي"
+          }
         }
       }
     },
@@ -62700,6 +65502,12 @@
             "state" : "translated",
             "value" : "Katlanabilir iPhone’un geniş ekranını yan yana iki bölme olarak kullanın."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام الشاشة العريضة في iPhone القابل للطي كجزأين متجاورين."
+          }
         }
       }
     },
@@ -62843,6 +65651,12 @@
             "state" : "translated",
             "value" : "Var"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متضمَّن"
+          }
         }
       }
     },
@@ -62984,6 +65798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davalı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المدّعى عليه"
           }
         }
       }
@@ -63127,6 +65947,12 @@
             "state" : "translated",
             "value" : "Davalı kazandı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحكم لصالح المدّعى عليه"
+          }
         }
       }
     },
@@ -63268,6 +66094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Davalı kazandı (davalı haklı)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الحكم للمدّعى عليه (كلامه صحيح)"
           }
         }
       }
@@ -63411,6 +66243,12 @@
             "state" : "translated",
             "value" : "Sanık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المتهم"
+          }
         }
       }
     },
@@ -63553,6 +66391,12 @@
             "state" : "translated",
             "value" : "Sanığın sorgusu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استجواب المتهم"
+          }
         }
       }
     },
@@ -63694,6 +66538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verilen söz tutulur. Tutmak zor olacaksa önceden söylenir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من وعد وفى، وإن صعب عليه الوفاء أخبر بذلك مسبقًا."
           }
         }
       }
@@ -63838,6 +66688,12 @@
             "state" : "translated",
             "value" : "Sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف رقم"
+          }
         }
       }
     },
@@ -63979,6 +66835,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جنائية"
           }
         }
       }
@@ -64122,6 +66984,12 @@
             "state" : "translated",
             "value" : "Kamu davası aç"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحريك دعوى جنائية"
+          }
         }
       }
     },
@@ -64263,6 +67131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamu davası (iddianame)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحريك الدعوى الجنائية (لائحة الاتهام)"
           }
         }
       }
@@ -64406,6 +67280,12 @@
             "state" : "translated",
             "value" : "Ceza davası aç (iddianame)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقديم دعوى جنائية (لائحة الاتهام)"
+          }
         }
       }
     },
@@ -64548,6 +67428,12 @@
             "state" : "translated",
             "value" : "Ceza davası için çiğnenen kanunu mutlaka seçmelisin"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب اختيار القانون المخالَف في الدعوى الجنائية"
+          }
         }
       }
     },
@@ -64689,6 +67575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ceza davası için çiğnenen kanunu mutlaka seçmelisin."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجب اختيار القانون المخالَف في الدعوى الجنائية."
           }
         }
       }
@@ -64839,6 +67731,12 @@
             "state" : "translated",
             "value" : "Ana Ekran widget’ları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدوات الشاشة الرئيسية"
+          }
         }
       }
     },
@@ -64988,6 +67886,12 @@
             "state" : "translated",
             "value" : "VoiceOver her düğmeyi ve ayrıntıyı doğru sırayla okur."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ VoiceOver كل زر وكل تفصيل بالترتيب الصحيح."
+          }
         }
       }
     },
@@ -65131,6 +68035,12 @@
             "state" : "translated",
             "value" : "Barışma"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصلح"
+          }
         }
       }
     },
@@ -65272,6 +68182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uzlaşma (iki taraf da biraz taviz verir)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصلح (يتنازل الطرفان قليلًا)"
           }
         }
       }
@@ -65415,6 +68331,12 @@
             "state" : "translated",
             "value" : "Sulh tavsiyesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التوصية بالصلح"
+          }
         }
       }
     },
@@ -65556,6 +68478,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamam"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موافق"
           }
         }
       }
@@ -65699,6 +68627,12 @@
             "state" : "translated",
             "value" : "Kaç kez yapılacağını belirle; kısa ve net olsun!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حدّدوا عدد المرات، وليكن قصيرًا ومحددًا!"
+          }
         }
       }
     },
@@ -65840,6 +68774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🎉 Bu dava tamamen bitti. Sarılıp barıştınız mı?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎉 انتهت هذه القضية تمامًا. هل تعانقتم وتصالحتم؟"
           }
         }
       }
@@ -65983,6 +68923,12 @@
             "state" : "translated",
             "value" : "🎭 Kim ne yapar?"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎭 من يفعل ماذا؟"
+          }
         }
       }
     },
@@ -66124,6 +69070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🎭 Rolleri kontrol et"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎭 مراجعة الأدوار"
           }
         }
       }
@@ -66267,6 +69219,12 @@
             "state" : "translated",
             "value" : "🎯 Ceza talebi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 طلب العقوبة"
+          }
         }
       }
     },
@@ -66408,6 +69366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🎯 Ceza talebi (savcının istediği ceza)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 طلب العقوبة (ما يطلبه المدّعي العام)"
           }
         }
       }
@@ -66551,6 +69515,12 @@
             "state" : "translated",
             "value" : "🎯 Ne istiyorum?"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 ما أتمناه"
+          }
         }
       }
     },
@@ -66692,6 +69662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🎯 İstenen ceza"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 العقوبة التي أريدها"
           }
         }
       }
@@ -66835,6 +69811,12 @@
             "state" : "translated",
             "value" : "🎯 İstenen"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 ما أريده"
+          }
         }
       }
     },
@@ -66976,6 +69958,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🎯 Talep sonucu (istenen)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🎯 الطلبات (ما أريده)"
           }
         }
       }
@@ -67119,6 +70107,12 @@
             "state" : "translated",
             "value" : "👉 Sıradaki adım: %@ sözünü tutunca aşağıdan işaretleyin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "👉 الخطوة التالية: عندما يفي %@ بالوعد، ضعوا علامة بالأسفل."
+          }
         }
       }
     },
@@ -67260,6 +70254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "👉 Sıradaki adım: Aileyi toplayıp duruşmayı açın. Yöneten: %@ %@."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "👉 الخطوة التالية: اجمعوا العائلة وافتحوا المحاكمة. يتولى %@ %@ إدارة الجلسة."
           }
         }
       }
@@ -67403,6 +70403,12 @@
             "state" : "translated",
             "value" : "👉 Duruşma sürüyor. Kaldığınız yerden devam edin!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "👉 المحاكمة جارية. تابعوا من حيث توقفتم!"
+          }
         }
       }
     },
@@ -67544,6 +70550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "💡 Önerilen cezalar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💡 عقوبات مقترحة"
           }
         }
       }
@@ -67687,6 +70699,12 @@
             "state" : "translated",
             "value" : "📜 Karar ver"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📜 اتخاذ القرار"
+          }
         }
       }
     },
@@ -67829,6 +70847,12 @@
             "state" : "translated",
             "value" : "📜 Hükmü açıkla"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📜 النطق بالحكم"
+          }
         }
       }
     },
@@ -67970,6 +70994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "📩 Başvur ve davayı başlat!"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📩 تقديم الدعوى وبدء القضية!"
           }
         }
       }
@@ -68116,6 +71146,12 @@
             "state" : "translated",
             "value" : "🕊️ Suçsuz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🕊️ بريء"
+          }
         }
       }
     },
@@ -68257,6 +71293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🕊️ Hata yok"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🕊️ لا خطأ"
           }
         }
       }
@@ -68400,6 +71442,12 @@
             "state" : "translated",
             "value" : "🕵️ Savcı (iddia makamı = ben)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🕵️ المدّعي العام (مقدّم الاتهام = أنا)"
+          }
         }
       }
     },
@@ -68541,6 +71589,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🕵️ Savcı (davayı açan = ben)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🕵️ المدّعي العام (من يوجّه الاتهام = أنا)"
           }
         }
       }
@@ -68684,6 +71738,12 @@
             "state" : "translated",
             "value" : "🕵️ Haber veren (= ben)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🕵️ المُبلِّغ (= أنا)"
+          }
         }
       }
     },
@@ -68825,6 +71885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙇 Cevap veren (sözünü tutmayan)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المُجيب (من أخلف الوعد)"
           }
         }
       }
@@ -68968,6 +72034,12 @@
             "state" : "translated",
             "value" : "🙇 Cevap veren (haksızlık yapan)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المُجيب (من تسبّب في الظلم)"
+          }
         }
       }
     },
@@ -69109,6 +72181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙇 Cevap veren haklı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 فاز المُجيب"
           }
         }
       }
@@ -69252,6 +72330,12 @@
             "state" : "translated",
             "value" : "🙇 Davalı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المدّعى عليه"
+          }
         }
       }
     },
@@ -69393,6 +72477,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙇 Davalı (dava açılan kişi)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المدّعى عليه (الخصم)"
           }
         }
       }
@@ -69536,6 +72626,12 @@
             "state" : "translated",
             "value" : "🙇 Davalı kazandı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 الحكم للمدّعى عليه"
+          }
         }
       }
     },
@@ -69677,6 +72773,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙇 Sanık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المتهم"
           }
         }
       }
@@ -69820,6 +72922,12 @@
             "state" : "translated",
             "value" : "🙇 Sanık (kanunu çiğneyen)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙇 المتهم (من خالف القانون)"
+          }
         }
       }
     },
@@ -69961,6 +73069,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙋 Haksızlığa uğrayan (= ben)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙋 صاحب الشكوى (= أنا)"
           }
         }
       }
@@ -70104,6 +73218,12 @@
             "state" : "translated",
             "value" : "🙋 Haksızlığa uğrayan haklı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙋 فاز صاحب الشكوى"
+          }
         }
       }
     },
@@ -70245,6 +73365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙋 Davacı (= ben)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙋 المدّعي (رافع الدعوى = أنا)"
           }
         }
       }
@@ -70388,6 +73514,12 @@
             "state" : "translated",
             "value" : "🙋 Davacı (dava açan = ben)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙋 المدّعي (من يرفع الدعوى = أنا)"
+          }
         }
       }
     },
@@ -70529,6 +73661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🙋 Davacı kazandı"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🙋 الحكم للمدّعي"
           }
         }
       }
@@ -70672,6 +73810,12 @@
             "state" : "translated",
             "value" : "🚨 Ceza davası böyle işler"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🚨 هكذا تسير المحاكمة الجنائية"
+          }
         }
       }
     },
@@ -70813,6 +73957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤗 Hoşgörü"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤗 الرأفة"
           }
         }
       }
@@ -70956,6 +74106,12 @@
             "state" : "translated",
             "value" : "🤗 Affedildi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤗 تم العفو"
+          }
         }
       }
     },
@@ -71097,6 +74253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤙 Söz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤙 الوعد"
           }
         }
       }
@@ -71240,6 +74402,12 @@
             "state" : "translated",
             "value" : "🤙 Söz · telafi (yapılacaklar)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤙 وعد · تعويض (ما يجب فعله)"
+          }
         }
       }
     },
@@ -71381,6 +74549,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤙 Yerine getirilecekler (söz·telafi)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤙 ما يجب تنفيذه (وعد · تعويض)"
           }
         }
       }
@@ -71524,6 +74698,12 @@
             "state" : "translated",
             "value" : "🤙 Tutulacak söz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤙 وعد للوفاء"
+          }
         }
       }
     },
@@ -71665,6 +74845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤝 Barıştılar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤝 صلح ووفاق"
           }
         }
       }
@@ -71808,6 +74994,12 @@
             "state" : "translated",
             "value" : "🤝 Duruşmanın 5 kuralı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤝 5 وعود للمحاكمة"
+          }
         }
       }
     },
@@ -71949,6 +75141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤝 Uzlaşma"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤝 الصلح"
           }
         }
       }
@@ -72092,6 +75290,12 @@
             "state" : "translated",
             "value" : "🤝 Sulh tavsiyesi"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🤝 التوصية بالصلح"
+          }
         }
       }
     },
@@ -72234,6 +75438,12 @@
             "state" : "translated",
             "value" : "İlerleme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقدّم"
+          }
         }
       }
     },
@@ -72375,6 +75585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geri"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السابق"
           }
         }
       }
@@ -72525,6 +75741,12 @@
             "state" : "translated",
             "value" : "案件"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قضية"
+          }
         }
       }
     },
@@ -72673,6 +75895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "打開案件"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فتح قضية"
           }
         }
       }
@@ -72823,6 +76051,12 @@
             "state" : "translated",
             "value" : "打開已提交的案件，繼續審理或查看判決。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يفتح قضية مقدَّمة لمتابعة المحاكمة أو الاطلاع على الحكم."
+          }
         }
       }
     },
@@ -72971,6 +76205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "要打開的案件"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "القضية المراد فتحها"
           }
         }
       }
@@ -73121,6 +76361,12 @@
             "state" : "translated",
             "value" : "用 Siri 直接找到"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البحث مباشرة عبر Siri"
+          }
         }
       }
     },
@@ -73269,6 +76515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不必說出 App 名稱，Siri 也能找到案件並立即打開。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يجد Siri قضيتك ويفتحها فورًا حتى لو لم تذكر اسم التطبيق."
           }
         }
       }

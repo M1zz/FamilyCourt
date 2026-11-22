@@ -9,6 +9,7 @@ enum FamilyCourtTipMoments {
         decided.filter { total >= $0 }.map { threshold in
             LeeoTipMoment(id: "decided.\(threshold)",
                           message: String(localized: "지금까지 우리 집 다툼 \(total)건을 판결로 풀었어요",
+                                          locale: .app,
                                           comment: "Tip ask card: number of family disputes settled with a verdict"))
         }
     }
