@@ -4,7 +4,7 @@
            "it": "Tribunale di Famiglia", "pt-BR": "Tribunal da Família", "th": "ศาลครอบครัว", "vi": "Tòa Án Gia Đình",
            "cs": "Rodinný soud", "da": "Familieretten", "el": "Οικογενειακό Δικαστήριο", "fi": "Perheoikeus",
            "id": "Pengadilan Keluarga", "nb": "Familieretten", "nl": "Familierechtbank", "pl": "Sąd Rodzinny",
-           "sv": "Familjerätten", "tr": "Aile Mahkemesi"},
+           "sv": "Familjerätten", "tr": "Aile Mahkemesi", "ar": "محكمة العائلة"},
   "url": "https://m1zz.github.io/FamilyCourt/",
   "appStoreId": "6790131247",
   "email": "leeo@kakao.com",
@@ -38,6 +38,7 @@
     {"code": "nl", "path": "nl/", "name": "Nederlands"},
     {"code": "pl", "path": "pl/", "name": "Polski"},
     {"code": "sv", "path": "sv/", "name": "Svenska"},
-    {"code": "tr", "path": "tr/", "name": "Türkçe"}
+    {"code": "tr", "path": "tr/", "name": "Türkçe"},
+    {"code": "ar", "path": "ar/", "name": "العربية"}
   ]
 }
