@@ -22,7 +22,7 @@ ICON = ROOT / "FamilyCourt" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr", "ar": "ar"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -57,6 +57,7 @@ SEARCH = {
     "pl": ("Sąd Rodzinny", "Niesprawiedliwie?<br>Do sądu!", "Rodzina gra<br>sędziego i obrońcę"),
     "sv": ("Familjerätten", "Något orättvist?<br>Öppna rätten", "Familjen spelar<br>domare och försvarare"),
     "tr": ("Aile Mahkemesi", "Haksızlık mı var?<br>Duruşmayı açın", "Aile hakim ve<br>avukat olur"),
+    "ar": ("محكمة العائلة", "تشعر بالظلم؟<br>افتح المحكمة", "القاضي والمحامي<br>من أهل البيت"),
 }
 
 # 헤더는 한 가지 약속: 다툼을 가족 역할극 재판으로 공정하게 푼다.
@@ -85,6 +86,7 @@ HEADER = {
     "pl": ("Sąd rodzinny dla dzieci", "Rozwiążcie to procesem,<br>nie kłótnią"),
     "sv": ("En familjerätt för barn", "Lös det i rätten,<br>inte med bråk"),
     "tr": ("Çocuklar için aile mahkemesi", "Kavga etmeyin,<br>dava ile çözün"),
+    "ar": ("محكمة عائلية للأطفال", "لا للشجار<br>نحلّها بمحاكمة"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(크림빛 바탕의 나무 망치)과 AccentColor(#C9A227) 에서 왔다.
@@ -106,6 +108,8 @@ body:lang(zh-Hant) { font-family:"PingFang TC", system-ui, sans-serif; }
 .sub { font-weight:600; color:#8A6440; letter-spacing:-0.01em; line-height:1.35; text-wrap:balance; }
 /* 한국어는 낱말 중간에서 끊지 않는다. */
 :lang(ko) .headline, :lang(ko) .sub, :lang(ko) .eyebrow { word-break:keep-all; }
+/* 아랍어는 글자 사이를 좁히지 않는다(낱말이 붙는다). */
+:lang(ar) .headline, :lang(ar) .sub, :lang(ar) .eyebrow { letter-spacing:0; }
 .phone { position:absolute; background:#2a1d12; border:6px solid #6b4a2c; padding:40px; border-radius:190px;
   box-shadow: 0 60px 140px rgba(120,70,10,.35); }
 .phone img { width:100%%; display:block; border-radius:152px; }
@@ -155,11 +159,15 @@ def search_html(lang):
     # 기기는 안전 영역 오른쪽 몫에 서서, 위아래로 넘쳐 화면 밖까지 이어진다(기기 그림은 잘려도 된다).
     ph_w = 1040
     ph_left = l + col + int(sw * 0.04)
+    text_left = l
+    if lang == "ar":   # 오른쪽에서 왼쪽: 글은 안전 영역 오른쪽, 기기는 왼쪽(거울 배치)
+        ph_left = l + r - ph_left - ph_w
+        text_left = r - col
     img = (RAW / lang / "01-home.png").as_uri()
     return f"""
 <div class="glow" style="left:{ph_left - 300}px;top:500px;width:1700px;height:1700px;background:rgba(255,255,255,.55)"></div>
 {phone(img, ph_left, t - 360, ph_w, 0)}
-<div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
+<div class="text" style="left:{text_left}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:96px">{eyebrow}</div>
   <div class="headline" data-max="250" data-min="140" style="margin-top:36px">{headline}</div>
   <div class="sub" style="font-size:84px;margin-top:52px">{sub}</div>
@@ -196,7 +204,8 @@ def html_lang(lang):
 def render(lang, kind):
     W, H, _ = SPEC[kind]
     body = search_html(lang) if kind == "search" else header_html(lang)
-    page = (f'<!doctype html><html lang="{html_lang(lang)}"><head><meta charset="utf-8"><style>'
+    rtl = ' dir="rtl"' if lang == "ar" else ""
+    page = (f'<!doctype html><html lang="{html_lang(lang)}"{rtl}><head><meta charset="utf-8"><style>'
             f'{BASE_CSS % {"W": W, "H": H}}</style></head><body>{body}{FIT_JS}</body></html>')
     html_path = pathlib.Path(tempfile.gettempdir()) / f"familycourt-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")

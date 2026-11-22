@@ -17,7 +17,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1242, 2688   # 이 계정의 아이폰 제출 규격
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ru": "ru", "es": "es-ES", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "nb", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr", "ar": "ar"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -44,7 +44,8 @@ SHOTS = [
         "nl": ("Iets oneerlijk?<br>Open de zitting", "Kinderen en ouders kunnen een zaak aanspannen"),
         "pl": ("Coś niesprawiedliwego?<br>Otwórzcie rozprawę", "Dzieci i rodzice mogą wnieść sprawę"),
         "sv": ("Något orättvist?<br>Öppna rätten", "Både barn och föräldrar kan väcka talan"),
-        "tr": ("Haksızlık mı var?<br>Duruşmayı açın", "Çocuklar da ebeveynler de dava açabilir")}),
+        "tr": ("Haksızlık mı var?<br>Duruşmayı açın", "Çocuklar da ebeveynler de dava açabilir"),
+        "ar": ("تشعر بالظلم؟<br>افتح المحكمة", "الأطفال والوالدان يرفعون الدعوى بأنفسهم")}),
     ("02-filing.png",  "left-text",   {"ko": ("고소장은<br>내가 직접 써요", "피고도 판사도 접수하는 사람이 골라요"),
         "en": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
         "en-GB": ("File the complaint<br>yourself", "The filer picks the defendant and the judge"),
@@ -68,7 +69,8 @@ SHOTS = [
         "nl": ("Schrijf de dagvaarding<br>zelf", "Wie indient, kiest verdachte en rechter"),
         "pl": ("Pozew napiszesz<br>sam", "Składający wybiera pozwanego i sędziego"),
         "sv": ("Skriv stämningen<br>själv", "Den som lämnar in väljer åtalad och domare"),
-        "tr": ("Dilekçeyi<br>kendin yaz", "Davayı açan sanığı ve hakimi seçer")}),
+        "tr": ("Dilekçeyi<br>kendin yaz", "Davayı açan sanığı ve hakimi seçer"),
+        "ar": ("اكتب صحيفة الدعوى<br>بنفسك", "مقدّم الدعوى يختار المدّعى عليه والقاضي")}),
     ("03-trial.png",   "text-bottom", {"ko": ("대사를 따라 하면<br>진짜 재판이 돼요", "누가 무슨 말을 할 차례인지 알려줘요"),
         "en": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
         "en-GB": ("Follow the script<br>for a real trial", "Every line tells you whose turn it is"),
@@ -92,7 +94,8 @@ SHOTS = [
         "nl": ("Volg het script<br>voor een echt proces", "Elke regel zegt wie er aan de beurt is"),
         "pl": ("Idź za scenariuszem<br>jak na prawdziwym procesie", "Każda kwestia mówi, czyja kolej"),
         "sv": ("Följ manuset<br>för en riktig rättegång", "Varje replik visar vems tur det är"),
-        "tr": ("Metni izle,<br>gerçek dava olsun", "Her satır sıranın kimde olduğunu söyler")}),
+        "tr": ("Metni izle,<br>gerçek dava olsun", "Her satır sıranın kimde olduğunu söyler"),
+        "ar": ("اتبعوا النص<br>لمحاكمة حقيقية", "كل سطر يخبركم بدور من الآن")}),
     ("04-verdict.png", "flat-rotate", {"ko": ("판결은 벌보다<br>약속으로", "지킬 약속을 정하고 끝까지 체크해요"),
         "en": ("Verdicts end with<br>a promise", "Set a promise and check it off to the end"),
         "en-GB": ("Verdicts end with<br>a promise", "Set a promise and tick it off to the end"),
@@ -116,7 +119,8 @@ SHOTS = [
         "nl": ("Vonnissen eindigen<br>met een belofte", "Spreek een belofte af en vink af tot het einde"),
         "pl": ("Wyrok kończy się<br>obietnicą", "Ustal obietnicę i odhaczaj ją do końca"),
         "sv": ("Domen slutar<br>med ett löfte", "Bestäm ett löfte och bocka av det hela vägen"),
-        "tr": ("Karar bir sözle<br>biter", "Bir söz belirle, sonuna kadar işaretle")}),
+        "tr": ("Karar bir sözle<br>biter", "Bir söz belirle, sonuna kadar işaretle"),
+        "ar": ("حكمٌ ينتهي<br>بوعد لا بعقاب", "حدّدوا وعدًا وتابعوه حتى الوفاء")}),
     ("05-laws.png",    "dark",        {"ko": ("우리 집 법은<br>가족이 함께 정해요", "조문을 더하고 고칠 수 있어요"),
         "en": ("Write your family<br>laws together", "Add and edit articles any time"),
         "en-GB": ("Write your family<br>laws together", "Add and edit articles any time"),
@@ -140,7 +144,8 @@ SHOTS = [
         "nl": ("Schrijf samen de<br>wetten van het huis", "Voeg artikelen toe en pas ze aan wanneer je wilt"),
         "pl": ("Prawa domu<br>spiszcie razem", "Dodawaj i zmieniaj artykuły, kiedy chcesz"),
         "sv": ("Skriv husets lagar<br>tillsammans", "Lägg till och ändra paragrafer när som helst"),
-        "tr": ("Evin kanunlarını<br>birlikte yazın", "Maddeleri istediğiniz zaman ekleyin ve değiştirin")}),
+        "tr": ("Evin kanunlarını<br>birlikte yazın", "Maddeleri istediğiniz zaman ekleyin ve değiştirin"),
+        "ar": ("قوانين بيتكم<br>تكتبونها معًا", "أضيفوا المواد وعدّلوها متى شئتم")}),
     ("06-learn.png",   "left-text",   {"ko": ("판사, 원고, 변호인<br>모두 배워요", "역할과 재판 순서를 쉬운 말로 알려줘요"),
         "en": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
         "en-GB": ("Judge, plaintiff, counsel:<br>learn every role", "Roles and trial steps in plain words"),
@@ -164,7 +169,8 @@ SHOTS = [
         "nl": ("Rechter, eiser, raadsman:<br>leer elke rol", "Rollen en stappen van het proces in gewone taal"),
         "pl": ("Sędzia, powód, obrońca:<br>poznaj każdą rolę", "Role i etapy procesu prostymi słowami"),
         "sv": ("Domare, kärande, försvarare:<br>lär dig varje roll", "Roller och steg i rättegången med enkla ord"),
-        "tr": ("Hakim, davacı, avukat:<br>her rolü öğren", "Roller ve dava adımları sade sözlerle")}),
+        "tr": ("Hakim, davacı, avukat:<br>her rolü öğren", "Roller ve dava adımları sade sözlerle"),
+        "ar": ("قاضٍ ومدّعٍ ومحامٍ<br>تعلّموا كل دور", "الأدوار وخطوات المحاكمة بكلمات بسيطة")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.
@@ -184,6 +190,8 @@ body:lang(zh-Hant) { font-family:"PingFang TC", system-ui, sans-serif; }
 .headline { font-size:96px; font-weight:800; color:%(ink)s; letter-spacing:-2px; line-height:1.22; text-wrap:balance; }
 .sub { font-size:50px; font-weight:500; color:%(sub)s; letter-spacing:-1px; line-height:1.35; text-wrap:balance; }
 :lang(ko) .headline, :lang(ko) .sub { word-break:keep-all; }
+/* 아랍어: 글자 사이를 좁히면 낱말이 붙는다. 오른쪽에서 왼쪽 배치는 RTL_CSS */
+:lang(ar) .headline, :lang(ar) .sub { letter-spacing:0; }
 .phone { background:%(frame)s; border-radius:112px; border:3px solid %(rim)s; padding:24px;
   box-shadow: 60px 90px 120px rgba(0,0,0,.24), 20px 30px 50px rgba(0,0,0,.14); }
 .phone img { width:100%%; display:block; border-radius:89px; }
@@ -223,9 +231,19 @@ body { background:%(dark_bg)s; }
 """,
 }
 
+# 아랍어: 왼쪽 글 배치(left-text)를 거울처럼 — 글은 오른쪽, 기기는 왼쪽으로 기운다
+RTL_CSS = {
+    "left-text": """
+.headline { text-align:right; margin:280px 105px 0 90px; }
+.sub { text-align:right; margin:44px 109px 0 90px; }
+.wrap { left:auto; right:290px; perspective-origin:70% 30%; }
+.phone { transform:rotateY(-16deg) rotateX(2deg); }
+""",
+}
+
 TEXT_FIRST = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="wrap"><div class="phone"><img src="{img}"></div></div>'
 PHONE_FIRST = '<div class="wrap"><div class="phone"><img src="{img}"></div></div><div class="headline">{h}</div><div class="sub">{s}</div>'
-HTML = '<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
+HTML = '<!doctype html><html lang="{lang}" dir="{dir}"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
 
 
 def raw_for(lang, fname):
@@ -245,8 +263,10 @@ def main(langs):
             assert src.exists(), f"원본 없음: {src}"
             tpl = PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST
             css = BASE_CSS % vals + LAYOUTS[layout] % vals if "%(" in LAYOUTS[layout] else BASE_CSS % vals + LAYOUTS[layout]
+            if lang == "ar":
+                css += RTL_CSS.get(layout, "")
             html = tmp / f"{lang}-{fname}.html"
-            html.write_text(HTML.format(lang=lang, css=css, body=tpl.format(h=h, s=s, img=src.as_uri())), encoding="utf-8")
+            html.write_text(HTML.format(lang=lang, dir="rtl" if lang == "ar" else "ltr", css=css, body=tpl.format(h=h, s=s, img=src.as_uri())), encoding="utf-8")
             out = out_dir / fname
             # Chrome 은 가끔 아무것도 안 그리고 끝나거나 멈춘다. 세 번까지 한다.
             for _ in range(3):

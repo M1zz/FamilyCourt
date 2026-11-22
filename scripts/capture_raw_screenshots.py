@@ -30,7 +30,8 @@ DEMO = json.loads((ROOT / "scripts" / "screenshot_demo.json").read_text(encoding
 LOCALE = {"ko": "ko_KR", "en": "en_US", "en-GB": "en_GB", "ja": "ja_JP", "zh-Hans": "zh_CN", "zh-Hant": "zh_TW",
           "ru": "ru_RU", "es": "es_ES", "de": "de_DE", "fr": "fr_FR", "it": "it_IT", "pt-BR": "pt_BR", "th": "th_TH",
           "vi": "vi_VN", "cs": "cs_CZ", "da": "da_DK", "el": "el_GR", "fi": "fi_FI", "id": "id_ID", "nb": "nb_NO",
-          "nl": "nl_NL", "pl": "pl_PL", "sv": "sv_SE", "tr": "tr_TR"}
+          "nl": "nl_NL", "pl": "pl_PL", "sv": "sv_SE", "tr": "tr_TR",
+          "ar": "ar_SA@calendar=gregorian;numbers=latn"}
 
 SHOTS = [  # (파일, 장면)
     ("01-home.png", "home"), ("02-filing.png", "filing"), ("03-trial.png", "trial"),
@@ -137,7 +138,9 @@ def capture(udid, lang, only=None, ipad=False):
         (container / "Documents").mkdir(parents=True, exist_ok=True)
         (container / "Documents" / "familycourt.json").write_text(state, encoding="utf-8")
         args = ["xcrun", "simctl", "launch", udid, BUNDLE, "-AppleLanguages", f"({lang})", "-AppleLocale",
-                LOCALE[lang], "-hasSeenOnboarding", "YES", "-FCScene", scene]
+                LOCALE[lang], "-hasSeenOnboarding", "YES", "-FCScene", scene,
+                # LeeoKit 축하 · 감사 창(처음 한 번 뜬다)이 화면을 덮지 않게 이미 본 것으로 둔다
+                "-leeo.celebration.done", "(welcome,tier.pro)"]
         if scene in ("trial",):
             args += ["-FCCase", "c4"]
         if scene in ("verdict", "caseTop"):
