@@ -3,6 +3,158 @@
 App Store 의 "이 버전의 새로운 기능" 에 그대로 올라가는 글이다.
 평문만 쓴다. 한 줄에 한 문장, 3~5줄, 한 줄 40자 이내.
 
+## 1.0.4
+
+### 앱스토어 (한국어)
+
+이제 아랍어로도 우리 집 재판을 열 수 있어요
+아랍어 화면은 오른쪽에서 왼쪽으로 읽기 편하게 놓여요
+아랍어에서도 사건번호와 날짜가 바르게 나와요
+
+### 앱스토어 (en)
+
+You can now hold family trials in Arabic
+Arabic screens read from right to left
+Correct case numbers and dates in Arabic
+
+### 앱스토어 (en-GB)
+
+You can now hold family trials in Arabic
+Arabic screens read from right to left
+Correct case numbers and dates in Arabic
+
+### 앱스토어 (ja)
+
+アラビア語でも家族の裁判を開けます
+アラビア語の画面は右から左へ読みやすく並びます
+アラビア語でも事件番号と日付が正しく表示されます
+
+### 앱스토어 (zh-Hans)
+
+现在也可以用阿拉伯语开家庭法庭了
+阿拉伯语界面从右到左排列，阅读更自然
+阿拉伯语下案件编号和日期也能正确显示
+
+### 앱스토어 (zh-Hant)
+
+現在也可以用阿拉伯語開家庭法庭了
+阿拉伯語介面由右至左排列，閱讀更自然
+阿拉伯語下案件編號和日期也能正確顯示
+
+### 앱스토어 (Русский)
+
+Семейный суд теперь и на арабском
+Арабский экран читается справа налево
+Номера дел и даты верны на арабском
+
+### 앱스토어 (Español)
+
+Ahora podéis celebrar juicios en árabe
+En árabe se lee de derecha a izquierda
+Números y fechas correctos en árabe
+
+### 앱스토어 (Deutsch)
+
+Familienprozesse jetzt auch auf Arabisch
+Arabisch läuft von rechts nach links
+Richtige Aktenzeichen und Daten
+
+### 앱스토어 (Français)
+
+Le tribunal familial parle aussi arabe
+L’arabe se lit de droite à gauche
+Numéros et dates exacts en arabe
+
+### 앱스토어 (Italiano)
+
+Ora potete fare processi anche in arabo
+In arabo si legge da destra a sinistra
+Numeri di causa e date corretti in arabo
+
+### 앱스토어 (pt-BR)
+
+Agora dá para fazer julgamentos em árabe
+Árabe com leitura da direita à esquerda
+Números de caso e datas certos em árabe
+
+### 앱스토어 (ไทย)
+
+เปิดศาลครอบครัวเป็นภาษาอาหรับได้แล้ว
+หน้าจอภาษาอาหรับเรียงจากขวาไปซ้าย
+เลขคดีและวันที่ถูกต้องในภาษาอาหรับ
+
+### 앱스토어 (Tiếng Việt)
+
+Giờ đã có thể xử án bằng tiếng Ả Rập
+Tiếng Ả Rập hiển thị từ phải sang trái
+Số vụ và ngày đúng trong tiếng Ả Rập
+
+### 앱스토어 (Čeština)
+
+Rodinný soud je nově i v arabštině
+Arabština se čte zprava doleva
+Čísla případů a data v arabštině sedí
+
+### 앱스토어 (Dansk)
+
+Nu kan I holde retsmøde på arabisk
+Arabisk vises fra højre mod venstre
+Rigtige sagsnumre og datoer på arabisk
+
+### 앱스토어 (Ελληνικά)
+
+Δίκες πλέον και στα αραβικά
+Τα αραβικά διαβάζονται από τα δεξιά
+Σωστοί αριθμοί υποθέσεων στα αραβικά
+
+### 앱스토어 (Suomi)
+
+Perheoikeutta nyt myös arabiaksi
+Arabia luetaan oikealta vasemmalle
+Oikeat juttunumerot ja päivät arabiaksi
+
+### 앱스토어 (Bahasa Indonesia)
+
+Kini bisa bersidang dalam bahasa Arab
+Tampilan bahasa Arab dari kanan ke kiri
+Nomor kasus dan tanggal tampil benar
+
+### 앱스토어 (Norsk bokmål)
+
+Nå kan dere holde rettssak på arabisk
+Arabisk vises fra høyre mot venstre
+Riktige saksnumre og datoer på arabisk
+
+### 앱스토어 (Nederlands)
+
+Rechtszaken nu ook in het Arabisch
+Arabisch leest van rechts naar links
+Zaaknummers en data kloppen nu
+
+### 앱스토어 (Polski)
+
+Rozprawy teraz także po arabsku
+Arabski czyta się od prawej do lewej
+Poprawne numery spraw i daty po arabsku
+
+### 앱스토어 (Svenska)
+
+Nu kan ni hålla rättegång på arabiska
+Arabiska visas från höger till vänster
+Rätt målnummer och datum på arabiska
+
+### 앱스토어 (Türkçe)
+
+Artık Arapça da duruşma yapabilirsiniz
+Arapça ekran sağdan sola düzenlenir
+Arapçada doğru dava numarası ve tarih
+
+### 앱스토어 (아랍어)
+
+محاكمات العائلة متاحة الآن بالعربية
+تُعرض الشاشات من اليمين إلى اليسار
+تظهر أرقام القضايا والتواريخ بشكل صحيح
+
 ## 1.0.3
 
 ### 앱스토어 (한국어)
