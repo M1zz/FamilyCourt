@@ -31,6 +31,8 @@ struct ContentView: View {
             .onAppear { if ScreenshotScene.current == .laws { tab = 1 } }
             #endif
             .task { await offerGraduationIfDue() }
+            // 할인 기간이면 앱을 연 뒤 한 번 할인 배너를 띄운다. 단추는 어른 확인을 거쳐 요금제를 연다 (LeeoKit).
+            .leeoSaleBanner { if lock == nil { lock = .browse } }
             .unlockSheet($lock)
             .fullScreenCover(isPresented: $showOnboarding) {
                 FamilyCourtOnboardingView {
