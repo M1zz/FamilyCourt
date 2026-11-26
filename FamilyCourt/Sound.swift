@@ -3,41 +3,58 @@ import UIKit
 import LeeoKit
 
 /// 의사봉(탕탕탕)과 타이머 종료음을 합성해서 재생해요.
-final class SoundPlayer {
+///
+/// 오디오 세션 · 엔진은 메인 스레드에서 다루지 않는다. `setActive(true)` 는 시스템 오디오 서버를
+/// 기다리는 동기 호출이고 `engine.start()` 는 첫 재생과 백그라운드에서 돌아온 뒤마다 오디오 장치를
+/// 다시 여는데, 다른 앱이 소리를 쥐고 있거나 이어폰이 바뀌는 중이면 수백 ms 까지 걸려
+/// 의사봉을 두드리는 순간 화면이 멈칫했다. 진동만 메인에서 바로 내고, 소리는 전용 큐에서 낸다.
+final class SoundPlayer: @unchecked Sendable {
 
     static let shared = SoundPlayer()
 
     private let engine = AVAudioEngine()
     private let player = AVAudioPlayerNode()
     private let sampleRate: Double = 44100
+    /// 엔진 · 세션 · 버퍼는 이 큐에서만 만진다.
+    private let queue = DispatchQueue(label: "familycourt.sound", qos: .userInitiated)
+    private var isSetUp = false
+    /// 합성은 한 번만 — 같은 소리를 두드릴 때마다 다시 만들 까닭이 없다.
+    private lazy var gavelSound = gavelBuffer()
+    private lazy var beepSound = beepBuffer()
 
-    private init() {
-        engine.attach(player)
-        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-        engine.connect(player, to: engine.mainMixerNode, format: format)
-        try? AVAudioSession.sharedInstance().setCategory(.ambient, options: [.mixWithOthers])
-    }
+    private init() {}
 
     func gavel() {
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
-        guard let buffer = gavelBuffer() else { return }
-        play(buffer)
+        play { $0.gavelSound }
     }
 
     func beep() {
         UINotificationFeedbackGenerator().notificationOccurred(.warning)
-        guard let buffer = beepBuffer() else { return }
-        play(buffer)
+        play { $0.beepSound }
     }
 
-    private func play(_ buffer: AVAudioPCMBuffer) {
+    private func play(_ sound: @escaping (SoundPlayer) -> AVAudioPCMBuffer?) {
         // 원격 킬스위치 — 끄면 소리만 쉬고 진동은 위에서 이미 났다.
         guard LeeoRemoteFlags.isEnabled(FamilyCourtFlag.synthSoundEnabled) else { return }
-        try? AVAudioSession.sharedInstance().setActive(true)
-        if !engine.isRunning { try? engine.start() }
-        player.stop()
-        player.scheduleBuffer(buffer, at: nil, options: .interrupts)
-        player.play()
+        queue.async { [self] in
+            guard let buffer = sound(self) else { return }
+            setUpIfNeeded()
+            try? AVAudioSession.sharedInstance().setActive(true)
+            if !engine.isRunning { try? engine.start() }
+            player.stop()
+            player.scheduleBuffer(buffer, at: nil, options: .interrupts)
+            player.play()
+        }
+    }
+
+    private func setUpIfNeeded() {
+        guard !isSetUp else { return }
+        isSetUp = true
+        engine.attach(player)
+        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
+        engine.connect(player, to: engine.mainMixerNode, format: format)
+        try? AVAudioSession.sharedInstance().setCategory(.ambient, options: [.mixWithOthers])
     }
 
     private func emptyBuffer(duration: Double) -> AVAudioPCMBuffer? {
