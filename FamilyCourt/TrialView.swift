@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 /// 재판 세션 — 역할 확인 → 재판 진행 → 판결 선고까지 한 번에 진행해요.
 struct TrialFlowView: View {
@@ -417,6 +418,8 @@ struct VerdictFormView: View {
             $0.status = .decided
         }
         SoundPlayer.shared.gavel()
+        // 허브 품질 탭의 '핵심 기능' 칸 (docs/usage-spec.json 의 coreAction)
+        LeeoAnalyticsCenter.track(.custom(name: "verdict_delivered", parameters: [:]))
         onDone()
     }
 }

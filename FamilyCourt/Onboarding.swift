@@ -1,4 +1,5 @@
 import SwiftUI
+import LeeoKit
 
 /// 첫 실행 안내 — 이 법원이 어떻게 움직이는지 네 장으로 보여 줘요.
 /// 다 보면 `hasSeenOnboarding` 이 켜지고, 설정의 [사용법 다시 보기]로 언제든 다시 열 수 있어요.
@@ -34,7 +35,7 @@ struct FamilyCourtOnboardingView: View {
         VStack(spacing: 0) {
             HStack {
                 Spacer()
-                Button("건너뛰기") { onFinish() }
+                Button("건너뛰기") { finish(skipped: true) }
                     .scaledFont(15, weight: .semibold, relativeTo: .subheadline)
                     .padding(.horizontal, 20)
                     .padding(.top, 16)
@@ -74,7 +75,7 @@ struct FamilyCourtOnboardingView: View {
                 if page < pages.count - 1 {
                     withAnimation(reduceMotion ? nil : .default) { page += 1 }
                 } else {
-                    onFinish()
+                    finish(skipped: false)
                 }
             } label: {
                 Group { if page < pages.count - 1 { Text("다음") } else { Text("재판 시작하기") } }
@@ -87,5 +88,13 @@ struct FamilyCourtOnboardingView: View {
             .padding(.bottom, 24)
         }
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
+    }
+
+    /// 설정에서 다시 연 안내는 세지 않는다 — 처음 한 번만 허브로 보낸다.
+    private func finish(skipped: Bool) {
+        if !UserDefaults.standard.bool(forKey: "hasSeenOnboarding") {
+            LeeoAnalyticsCenter.track(.custom(name: skipped ? "onboarding_skipped" : "onboarding_completed", parameters: [:]))
+        }
+        onFinish()
     }
 }
